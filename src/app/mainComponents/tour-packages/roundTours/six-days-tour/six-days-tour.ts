@@ -308,15 +308,7 @@ images: string[] = [
             description:
               'Enjoy a scenic boat safari through the mangrove forests and small islands of the Madu River. Discover local cinnamon cultivation and diverse wetland wildlife.',
             image: 'assets/img/6daysTours/madu.jpg',
-          },
-          {
-            type: 'Departure',
-            title: {
-              title: 'Departure Transfer',
-              icon: 'fa-plane',
-              color: '#2c3e50',
-            },
-          },
+          }
         ],
       },
     ],

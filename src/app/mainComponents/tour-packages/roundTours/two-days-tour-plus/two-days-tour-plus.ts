@@ -160,16 +160,6 @@ tour = {
           description:
             'Observe elephants bathing and feeding at the famous Pinnawala Elephant Orphanage.',
           image: 'assets/img/2daysTours/pinnawala.jpg',
-        },
-        {
-          type: 'Drop Off',
-          title: {
-            title: 'Airport or Hotel Drop Off',
-            icon: 'fa-plane',
-            color: '#2c3e50',
-          },
-          description:
-            'Comfortable drop-off at Bandaranaike International Airport or your hotel.',
         }
       ],
     },

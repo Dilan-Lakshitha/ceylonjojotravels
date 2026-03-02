@@ -405,11 +405,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
               'Breakfast at Kamili Beach Resort or Similar hotel - HB Basis',
             image: 'assets/img/7daystour/2024-07-27.jpg',
             extra: ['Hotel 4 stars (Premium)', 'Private bathroom', 'Breakfast'],
-          },
-          {
-            type: 'Departure',
-            title: { title: 'Departure', icon: 'fa-plane', color: '#2c3e50' },
-          },
+          }
         ],
       },
     ],

@@ -291,10 +291,6 @@ export class EightdaysComponent {
             description:
               'Experience a scenic boat safari through the mangrove forests and small islands of the Madu River. Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems.',
             image: 'assets/img/10daysTours/madu-river.jpg',
-          },
-          {
-            type: 'Departure',
-            title: { title: 'Departure', icon: 'fa-plane', color: '#2c3e50' },
           }
         ],
       },

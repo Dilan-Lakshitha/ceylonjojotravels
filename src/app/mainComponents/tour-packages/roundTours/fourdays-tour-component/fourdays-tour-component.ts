@@ -193,13 +193,7 @@ tour = {
           description:
             'Enjoy a peaceful boat ride through mangroves and small islands in one of Sri Lanka’s richest wetland ecosystems.',
           image: 'assets/img/4daysTours/madu.jpg',
-        },
-        {
-          type: 'Departure',
-          title: { title: 'Airport Drop Off', icon: 'fa-plane', color: '#2c3e50' },
-          description:
-            'Comfortable transfer to Bandaranaike International Airport or your hotel.',
-        },
+        }
       ],
     },
   ],
