@@ -39,9 +39,7 @@
               "src/assets/lib/tempusdominus/js/moment-timezone.min.js",
               "src/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js",
               "src/assets/js/main.js"
-            ],
-            "server": "src/main.server.ts",
-            "ssr": true
+            ]
           },
           "configurations": {
             "production": {
