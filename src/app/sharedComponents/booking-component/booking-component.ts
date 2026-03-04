@@ -4,10 +4,10 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../../environment';
-import { ToastrService } from 'ngx-toastr';
 import countriesData from './../../../assets/data/countries.json';
 import countryCode from './../../../assets/data/countryCode.json';
 import { catchError } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-booking-component',
@@ -17,9 +17,6 @@ import { catchError } from 'rxjs';
   styleUrl: './booking-component.css',
 })
 export class BookingComponent {
-  @ViewChild('toastContainer', { read: ElementRef })
-  toastContainer!: ElementRef;
-
   tour: any;
   travelers: number = 1;
   amountPaid: number = 0;
@@ -35,7 +32,6 @@ export class BookingComponent {
   firstName = '';
   lastName = '';
   email = '';
-  successMessage = '';
   country: string = '';
   countries: string[] = [];
   countriesList = countryCode;
@@ -49,8 +45,8 @@ export class BookingComponent {
     private router: Router,
     private http: HttpClient,
     private toastr: ToastrService,
-    private route:ActivatedRoute,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private route: ActivatedRoute,
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
   }
@@ -102,7 +98,7 @@ export class BookingComponent {
         };
       }
     }
-    
+
     if (this.filecode) {
       this.loadTourPrices(this.filecode);
     }
@@ -132,10 +128,10 @@ export class BookingComponent {
       .pipe(
         catchError((err) => {
           console.warn(
-            `Price file not found for ${this.userCountry}, loading default prices`
+            `Price file not found for ${this.userCountry}, loading default prices`,
           );
           return this.http.get(defaultFile);
-        })
+        }),
       )
       .subscribe((data: any) => {
         this.prices = data.price;
@@ -179,7 +175,8 @@ export class BookingComponent {
     this.updateAmounts();
 
     if (this.travelers >= 7) {
-        this.groupNotice ='For groups of 7 or more travelers, please contact sundowntoursrilanka@gmail.com for a customized group tour arrangement.'
+      this.groupNotice =
+        'For groups of 7 or more travelers, please contact sundowntoursrilanka@gmail.com for a customized group tour arrangement.';
     } else {
       this.groupNotice = '';
     }
@@ -213,20 +210,26 @@ export class BookingComponent {
       travelDate: this.travelDate,
     };
 
-    this.successMessage = 'Processing your booking...';
+    this.toastr.info('Processing your booking...', 'Please wait');
     this.http
       .post(`${environment.backendUrl}/send-booking-email`, bookingDetails)
       .subscribe({
         next: (res: any) => {
-          this.successMessage = 'Your booking has been completed successfully!';
+          this.toastr.success(
+            'Your booking has been completed successfully!',
+            'Booking Confirmed',
+          );
           setTimeout(() => {
             this.bookingCompleted = true;
-          }, 2000);
+          }, 1500);
         },
         error: (err) => {
           console.error('Email error:', err);
-          this.successMessage =
-            'There was an error processing your booking. Please try again later.';
+
+          this.toastr.error(
+            'There was an error processing your booking. Please try again later.',
+            'Booking Failed',
+          );
         },
       });
   }
@@ -237,9 +240,9 @@ export class BookingComponent {
     const originalContents = document.body.innerHTML;
 
     if (isPlatformBrowser(this.platformId)) {
-    if (printContents) {
-      const printWindow = window.open('', '', 'height=700,width=900');
-      printWindow!.document.write(`
+      if (printContents) {
+        const printWindow = window.open('', '', 'height=700,width=900');
+        printWindow!.document.write(`
       <html>
         <head>
           <title>Booking Invoice</title>
@@ -274,10 +277,10 @@ export class BookingComponent {
         </body>
       </html>
     `);
-      printWindow!.document.close();
-      printWindow!.print();
+        printWindow!.document.close();
+        printWindow!.print();
+      }
     }
-  }
   }
 
   onTravelDateChange(dateString: string) {

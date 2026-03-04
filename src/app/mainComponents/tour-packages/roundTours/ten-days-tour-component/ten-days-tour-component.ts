@@ -530,15 +530,14 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
     return new Promise((resolve) => {
 
       this.http.get(countryFile).subscribe({
-        next: (data: any) => resolve(data.price?.[1] ?? 0),
+        next: (data: any) => resolve(data?.price?.['2'] ?? 0),
         error: () => {
           this.http.get(defaultFile).subscribe({
-            next: (data: any) => resolve(data.price?.[1] ?? 0),
+            next: (data: any) => resolve(data?.price?.['2'] ?? 0),
             error: () => resolve(0)
           });
-        },
+        }
       });
-
     });
   }
 

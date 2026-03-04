@@ -68,6 +68,9 @@
                             <small class="text-danger" *ngIf="travelersCtrl.invalid && travelersCtrl.touched">
                                 Please enter travelers (1–20)
                             </small>
+                            <small class="text-success">
+                                Infants (0–2 years) travel FREE
+                            </small>
                         </div>
                         <div class="col-lg-6">
                             <label class="form-label">Select Travel Date</label>
@@ -159,9 +162,6 @@
                     </button>
                 </form>
             </div>
-            <div *ngIf="successMessage" class="alert alert-success text-end mt-3">
-                {{ successMessage }}
-            </div>
         </div>
 
         <div class="col-12" *ngIf="bookingCompleted">
@@ -236,5 +236,3 @@
         </div>
     </div>
 </div>
-
-<div #toastContainer></div>
