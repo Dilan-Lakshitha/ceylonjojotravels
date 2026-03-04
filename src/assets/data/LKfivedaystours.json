@@ -1,25 +1,22 @@
 {
-    "name": "fivedaystours",
+    "name": "5-day-sri-lanka-tour",
+    "title": "Sri Lanka Five Days Tour",
+    "duration": "5 Days",
+    "tourType": "Round Tour",
+    "overview": "Experience the best of Sri Lanka in 5 days covering Sigiriya, Kandy, Ella, Yala, Galle and Bentota with premium 4-star accommodation and private transport.",
+    "images": [
+        "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
+        "assets/img/5daysTours/m5mz7zqwjql44ydc4wyl.jpg",
+        "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg",
+        "assets/img/5daysTours/dp8fjrahvepdlhdudxj0.jpg",
+        "assets/img/5daysTours/slqwoimy5yhfgcicn8ob.jpg"
+    ],
     "price": {
-        "1": 989.50,
-        "2": 1612.50,
-        "3": 1856.25,
-        "4": 2375.00,
-        "5": 2812.50,
-        "6": 3375.00,
-        "7": 3937.50,
-        "8": 4500.00,
-        "9": 5062.50,
-        "10": 5625.00,
-        "11": 6187.50,
-        "12": 6750.00,
-        "13": 7312.50,
-        "14": 7875.00,
-        "15": 8437.50,
-        "16": 9000.00,
-        "17": 9562.50,
-        "18": 10125.00,
-        "19": 10687.50,
-        "20": 11250.00
+        "1": 990.00,
+        "2": 1400.00,
+        "3": 1700.00,
+        "4": 2100.00,
+        "5": 2400.00,
+        "6": 2700.00
     }
 }

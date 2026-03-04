@@ -538,6 +538,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
           });
         }
       });
+
     });
   }
 

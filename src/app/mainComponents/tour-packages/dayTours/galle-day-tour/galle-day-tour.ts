@@ -212,16 +212,15 @@ Ideal for couples, families, and small groups looking for a comfortable and enri
     if (!isPlatformBrowser(this.platformId)) {
       return Promise.resolve(0);
     }
-
     const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
     const defaultFile = `assets/data/US${filecode}.json`;
 
     return new Promise((resolve) => {
       this.http.get(countryFile).subscribe({
-        next: (data: any) => resolve(data?.price?.[1] ?? 0),
+        next: (data: any) => resolve(data?.price?.['2'] ?? 0),
         error: () => {
           this.http.get(defaultFile).subscribe({
-            next: (data: any) => resolve(data?.price?.[1] ?? 0),
+            next: (data: any) => resolve(data?.price?.['2'] ?? 0),
             error: () => resolve(0)
           });
         }

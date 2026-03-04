@@ -4,9 +4,9 @@
       "id": 2,
       "title": "Ella Day Tour - Departing from Any Location in Sri Lanka",
       "days": "1 day",
-      "persons": "2-20 Persons",
+      "persons": "1-20 Persons",
       "rating": 5,
-      "filecode": "daytour-ella",
+      "filecode": "ella-day-tour",
       "image": "assets/img/onedayTour/ella/7.jpeg",
       "routerLink": "/ella-day-tour"
     },
@@ -16,7 +16,7 @@
       "days": "1 day",
       "persons": "1-20 Persons",
       "rating": 5,
-      "filecode": "daytour-galle",
+      "filecode": "galle-day-tour",
       "image": "assets/img/onedayTour/Galle/7.jpg",
       "routerLink": "/galle-day-tour"
     },
@@ -26,7 +26,7 @@
       "days": "1 day",
       "persons": "1-20 Persons",
       "rating": 5,
-      "filecode": "daytour-kandy",
+      "filecode": "kandy-day-tour",
       "image": "assets/img/onedayTour/kandy/3.jpg",
       "routerLink": "/kandy-day-tour"
     },
