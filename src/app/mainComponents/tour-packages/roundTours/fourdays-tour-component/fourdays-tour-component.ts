@@ -304,6 +304,7 @@ tour = {
     const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
     const defaultFile = `assets/data/US${filecode}.json`;
 
+    console.log(countryFile,defaultFile);
     return new Promise((resolve) => {
       this.http.get(countryFile).subscribe({
         next: (data: any) => resolve(data?.price?.['2'] ?? 0),

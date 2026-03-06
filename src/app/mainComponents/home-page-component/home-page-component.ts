@@ -75,13 +75,23 @@ export class HomePageComponent {
   ) {}
 
   async ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
+    const isBrowser = isPlatformBrowser(this.platformId);
+    if (!isBrowser) {
+      this.userCountry = 'US';
+      this.multiDayTours = toursData.multiDayTours.slice(0, 3);
+      return;
+    }
+    
+    
+    try {
       this.userCountry = await this.countryService.detectCountry();
       this.dayTours = await this.loadToursWithPrices(toursData.dayTours);
       this.multiDayTours = await this.loadToursWithPrices(
         toursData.multiDayTours,
       );
       this.autoSlide();
+    } catch (error) {
+      console.error('Browser data load failed:', error);
     }
   }
 
@@ -105,6 +115,7 @@ export class HomePageComponent {
 
     const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
     const defaultFile = `assets/data/US${filecode}.json`;
+    console.log(countryFile,'default',defaultFile)
 
     return new Promise((resolve) => {
       this.http.get(countryFile).subscribe({
