@@ -36,7 +36,7 @@
       "days": "1 day",
       "persons": "1-20 Persons",
       "rating": 5,
-      "filecode": "daytour-sigiriya",
+      "filecode": "sigiriya-day-tour",
       "image": "assets/img/onedayTour/Sigiriya/3.jpg",
       "routerLink": "/sigiriya-day-tour"
     }

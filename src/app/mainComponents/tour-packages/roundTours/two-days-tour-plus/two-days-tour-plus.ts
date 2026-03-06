@@ -65,7 +65,7 @@ tour = {
           },
           description:
             'Visit the Udawalawa Elephant Transit Home to observe rescued baby elephants being cared for and rehabilitated before returning to the wild.',
-          image: 'assets/img/2daysTours/udawalawa.jpg',
+          image: 'assets/img/2daysTours/7.jpg',
         },
         {
           type: 'Scenic Visit',
@@ -76,7 +76,7 @@ tour = {
           },
           description:
             'Explore the iconic Nine Arch Bridge in Ella, surrounded by lush greenery and breathtaking hill country views.',
-          image: 'assets/img/2daysTours/nine-arch.jpg',
+          image: 'assets/img/2daysTours/5.jpg',
         },
         {
           type: 'Hiking',
@@ -87,7 +87,7 @@ tour = {
           },
           description:
             'Enjoy a short scenic hike to Little Adam’s Peak for panoramic views of Ella Gap and the surrounding tea plantations.',
-          image: 'assets/img/2daysTours/little-adams.jpg',
+          image: 'assets/img/2daysTours/9.jpg',
         },
         {
           type: 'Adventure',
@@ -98,7 +98,7 @@ tour = {
           },
           description:
             'Experience thrilling zip-lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.',
-          image: 'assets/img/2daysTours/flying-ravana.jpg',
+          image: 'assets/img/2daysTours/10.jpg',
         },
         {
           type: 'Waterfall Visit',
@@ -109,7 +109,7 @@ tour = {
           },
           description:
             'Visit the beautiful Ravana Falls, one of Sri Lanka’s most famous waterfalls located near Ella.',
-          image: 'assets/img/2daysTours/ravana-falls.jpg',
+          image: 'assets/img/2daysTours/11.jpg',
         }
       ],
     },
@@ -126,7 +126,7 @@ tour = {
           },
           description:
             'Stop at Ramboda Falls, a stunning waterfall nestled in Sri Lanka’s scenic hill country.',
-          image: 'assets/img/2daysTours/ramboda.jpg',
+          image: 'assets/img/2daysTours/13.jpg',
         },
         {
           type: 'Scenic Tower Visit',
@@ -137,7 +137,7 @@ tour = {
           },
           description:
             'Climb the unique Ambuluwawa Biodiversity Tower for breathtaking 360-degree views of the surrounding mountains.',
-          image: 'assets/img/2daysTours/ambuluwawa.jpg',
+          image: 'assets/img/2daysTours/12.jpg',
         },
         {
           type: 'Cultural Visit',
@@ -148,7 +148,7 @@ tour = {
           },
           description:
             'Visit the sacred Temple of the Tooth in Kandy, one of the most important Buddhist sites in the world.',
-          image: 'assets/img/2daysTours/temple-tooth.jpg',
+          image: 'assets/img/2daysTours/4.jpg',
         },
         {
           type: 'Wildlife Experience',
@@ -159,7 +159,7 @@ tour = {
           },
           description:
             'Observe elephants bathing and feeding at the famous Pinnawala Elephant Orphanage.',
-          image: 'assets/img/2daysTours/pinnawala.jpg',
+          image: 'assets/img/2daysTours/7.jpg',
         }
       ],
     },

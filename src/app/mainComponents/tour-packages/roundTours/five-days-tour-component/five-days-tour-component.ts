@@ -30,7 +30,7 @@ import { CountryService } from '../../../../Services/country.service';
 })
 export class FiveDaysTourComponent implements OnInit, OnDestroy {
   images: string[] = [
-    'assets/img/5daysTours/m5mz7zqwjql44ydc4wyl.jpg',
+    'assets/img/5daysTours/beqnuxidbmckapjcag2m.jpg',
     'assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg',
     'assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg',
     'assets/img/5daysTours/dp8fjrahvepdlhdudxj0.jpg',
@@ -78,7 +78,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Visit Pinnawala Elephant Orphanage, a renowned sanctuary caring for rescued and orphaned elephants. Observe elephants up close and, depending on timing, witness their memorable river bathing session.',
-            image: 'assets/img/6daysTours/pinnawala.jpg',
+            image: 'assets/img/5daysTours/7.jpg',
           },
           {
             type: 'Safari',
@@ -89,14 +89,14 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering” — one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.',
-            image: 'assets/img/6daysTours/minneriya.jpg',
+            image: 'assets/img/5daysTours/24.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
-            image: 'assets/img/8daysTours/fresco.jpg',
+            image: 'assets/img/5daysTours/c.jpg',
             extra: ['Breakfast & Dinner Included', '3.5 Star Hotel'],
           },
         ],

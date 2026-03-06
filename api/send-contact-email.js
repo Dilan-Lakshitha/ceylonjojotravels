@@ -59,7 +59,7 @@ res.setHeader("Access-Control-Allow-Headers", "Content-Type");
     });
 
     await transporter.sendMail({
-      from: '"Sun Down Tours"',
+      from: '"Sundown Tours"',
       to: email,
       subject: `We received your message, ${name}`,
       html: `
@@ -67,7 +67,7 @@ res.setHeader("Access-Control-Allow-Headers", "Content-Type");
           <h2>Thank you for contacting us, ${name}!</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p><strong>Your Message:</strong> ${message}</p>
-          <p>Best regards,<br/>Sun Down Tours Team</p>
+          <p>Best regards,<br/>Sundown Tours Team</p>
         </div>
       `,
     });

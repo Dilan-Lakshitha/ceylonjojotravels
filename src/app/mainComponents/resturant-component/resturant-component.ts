@@ -30,7 +30,7 @@ export class ResturantComponent {
     if (isPlatformBrowser(this.platformId)) {
       register();
     }
-    this.title.setTitle('Luxury Restaurant in Sri Lanka | Sun Down Tours');
+    this.title.setTitle('Luxury Restaurant in Sri Lanka | Sundown Tours');
 
     this.meta.updateTag({
       name: 'description',
@@ -56,7 +56,7 @@ export class ResturantComponent {
       script.text = JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Event',
-        name: 'Private Event Packages - Sun Down Tours',
+        name: 'Private Event Packages - Sundown Tours',
         location: {
           '@type': 'Place',
           name: 'Sri Lanka',

@@ -79,7 +79,7 @@ app.post("/send-booking-email", async (req, res) => {
     await transporter.sendMail(mailOptions);
 
     const customerMailOptions = {
-      from: '"Sun Down Tours"',
+      from: '"Sundown Tours"',
       to: email,
       subject: `Thank you for your booking! - ${tour.title}`,
       html: `
@@ -112,7 +112,7 @@ app.post("/send-booking-email", async (req, res) => {
 
       <p style="margin-top: 30px; font-weight: bold; color: #FF5722;">
         Best regards,<br/>
-        Sun Down Tours Team
+        Sundown Tours Team
       </p>
     </div>
   `,
@@ -162,7 +162,7 @@ app.post("/send-contact-email", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: '"Sun Down Tours"',
+      from: '"Sundown Tours"',
       to: email,
       subject: `✅ We received your message, ${name}`,
       html: `
@@ -170,7 +170,7 @@ app.post("/send-contact-email", async (req, res) => {
           <h2>Thank you for contacting us, ${name}!</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p><strong>Your Message:</strong> ${message}</p>
-          <p>Best regards,<br/>Sun Down Tours Team</p>
+          <p>Best regards,<br/>Sundown Tours Team</p>
         </div>
       `,
     });

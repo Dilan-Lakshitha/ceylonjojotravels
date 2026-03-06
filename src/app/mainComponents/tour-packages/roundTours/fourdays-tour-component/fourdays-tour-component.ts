@@ -21,7 +21,7 @@ import toursData from '../../../../databaseJson/tours.json';
 })
 export class FourdaysTourComponent {
 images: string[] = [
-    'assets/img/5daysTours/m5mz7zqwjql44ydc4wyl.jpg',
+    'assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg',
     'assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg',
     'assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg',
     'assets/img/5daysTours/dp8fjrahvepdlhdudxj0.jpg',
@@ -59,28 +59,28 @@ tour = {
           title: { title: 'Pinnawala Elephant Orphanage', icon: 'fa-paw', color: '#27ae60' },
           description:
             'Visit the famous Pinnawala Elephant Orphanage where rescued elephants are cared for and protected. Observe elephants bathing in the river and learn about conservation efforts.',
-          image: 'assets/img/4daysTours/pinnawala.jpg',
+          image: 'assets/img/5daysTours/7.jpg',
         },
         {
           type: 'Cultural Visit',
           title: { title: 'Temple of the Sacred Tooth Relic', icon: 'fa-place-of-worship', color: '#2980b9' },
           description:
             'Explore Sri Dalada Maligawa, one of the most sacred Buddhist temples in the world, home to the sacred tooth relic of Lord Buddha.',
-          image: 'assets/img/4daysTours/tooth-temple.jpg',
+          image: 'assets/img/5daysTours/14.jpg',
         },
         {
           type: 'Cultural Experience',
           title: { title: 'Kandy Cultural Dance Show', icon: 'fa-theater-masks', color: '#e74c3c' },
           description:
             'Enjoy a traditional Kandyan dance performance featuring fire walking, drumming and vibrant cultural costumes.',
-          image: 'assets/img/4daysTours/dance-show.jpg',
+          image: 'assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg',
         },
         {
           type: 'Scenic View',
           title: { title: 'Kandy View Point', icon: 'fa-mountain', color: '#8e44ad' },
           description:
             'Stop at Kandy View Point for panoramic views of Kandy city, the lake and surrounding hills.',
-          image: 'assets/img/4daysTours/kandy-view.jpg',
+          image: 'assets/img/5daysTours/476465443_947365727374414_5703532547629723678_n.jpg',
         },
         {
           type: 'Accommodation',
@@ -101,28 +101,28 @@ tour = {
           title: { title: 'Royal Botanic Gardens Peradeniya', icon: 'fa-tree', color: '#2ecc71' },
           description:
             'Walk through one of Asia’s most beautiful botanical gardens featuring orchids, palms, bamboo and tropical plants.',
-          image: 'assets/img/4daysTours/botanical.jpg',
+          image: 'assets/img/5daysTours/himbgjcj6zckm6de1mhe.jpg',
         },
         {
           type: 'Tea Experience',
           title: { title: 'Glenloch Tea Factory Visit', icon: 'fa-mug-hot', color: '#8B4513' },
           description:
             'Discover how world-famous Ceylon tea is produced and enjoy a fresh cup while overlooking scenic tea plantations.',
-          image: 'assets/img/4daysTours/tea-factory.jpg',
+          image: 'assets/img/5daysTours/17.jpg',
         },
         {
           type: 'Scenic Visit',
           title: { title: 'Nine Arch Bridge', icon: 'fa-bridge', color: '#A9A9A9' },
           description:
             'Visit the iconic colonial-era Nine Arch Bridge surrounded by lush greenery and rolling hills.',
-          image: 'assets/img/4daysTours/nine-arch.jpg',
+          image: 'assets/img/5daysTours/5.jpg',
         },
         {
           type: 'Hiking',
           title: { title: "Little Adam's Peak", icon: 'fa-mountain', color: '#f39c12' },
           description:
             'Enjoy a gentle hike offering panoramic views over Ella Gap and the surrounding mountain range.',
-          image: 'assets/img/4daysTours/little-adams.jpg',
+          image: 'assets/img/5daysTours/9.jpg',
         },
         {
           type: 'Accommodation',
@@ -143,21 +143,21 @@ tour = {
           title: { title: 'Ravana Falls', icon: 'fa-water', color: '#3498db' },
           description:
             'Stop at Ravana Falls, one of Sri Lanka’s most picturesque waterfalls located along the Ella–Wellawaya road.',
-          image: 'assets/img/4daysTours/ravana.jpg',
+          image: 'assets/img/5daysTours/n0oxsxmicxgleixkq2rx.jpg',
         },
         {
           type: 'Historical Site',
           title: { title: 'Buduruwagala Temple', icon: 'fa-landmark', color: '#e67e22' },
           description:
             'Visit this ancient rock temple complex featuring impressive carved Buddha statues.',
-          image: 'assets/img/4daysTours/buduruwagala.jpg',
+          image: 'assets/img/5daysTours/18.jpg',
         },
         {
           type: 'Safari',
           title: { title: 'Yala National Park Safari', icon: 'fa-paw', color: '#27ae60' },
           description:
             'Experience a thrilling jeep safari in Yala National Park, home to leopards, elephants, crocodiles and diverse wildlife.',
-          image: 'assets/img/4daysTours/yala.jpg',
+          image: 'assets/img/5daysTours/xj7qybc2bk5bwnxdkubp.jpg',
         },
         {
           type: 'Accommodation',
@@ -178,21 +178,21 @@ tour = {
           title: { title: 'Mirissa Beach', icon: 'fa-umbrella-beach', color: '#f39c12' },
           description:
             'Relax at Mirissa Beach or enjoy optional whale watching and coastal views.',
-          image: 'assets/img/4daysTours/mirissa.jpg',
+          image: 'assets/img/5daysTours/21.jpg',
         },
         {
           type: 'Heritage',
           title: { title: 'Galle Dutch Fort', icon: 'fa-landmark', color: '#8e44ad' },
           description:
             'Explore the UNESCO-listed Galle Fort with colonial architecture, ramparts and ocean views.',
-          image: 'assets/img/4daysTours/galle.jpg',
+          image: 'assets/img/5daysTours/22.jpg',
         },
         {
           type: 'Boat Safari',
           title: { title: 'Madu River Safari', icon: 'fa-ship', color: '#3498db' },
           description:
             'Enjoy a peaceful boat ride through mangroves and small islands in one of Sri Lanka’s richest wetland ecosystems.',
-          image: 'assets/img/4daysTours/madu.jpg',
+          image: 'assets/img/5daysTours/23.jpg',
         }
       ],
     },

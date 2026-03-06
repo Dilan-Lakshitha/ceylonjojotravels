@@ -52,7 +52,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
     persons: '20 Persons',
     filecode: '7-day-sri-lanka-tour',
     overview: `We are here for you to organize the perfect holiday you always dreamed of in 'Paradise Island', Sri Lanka.
-    Our 7days(6 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to Sun Down Tours while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.
+    Our 7days(6 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to Sundown Tours while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.
     Yala Safari, Sigiriya, Ella Nine Arches Bridge, Ella train journey, Kandy Sacred Tooth Relic Temple, Ramboda watefall, Little Adam's Peak hike, Nuwara Eliya, Galle Fort, Bentota River tour are just to name a few main attractions that you'll cover during the journey.
     Altogether you'll be visiting 28 attractions in total covering 10 districts of Sri Lanka while enjoing private trasportation.`,
     tourType: 'Round Tour',
