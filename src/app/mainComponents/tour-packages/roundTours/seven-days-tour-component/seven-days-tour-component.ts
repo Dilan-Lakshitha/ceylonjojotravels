@@ -30,11 +30,11 @@ import { CountryService } from '../../../../Services/country.service';
 })
 export class SevenDaysTourComponent implements OnInit, OnDestroy {
   images: string[] = [
-    'assets/img/7dayschange/2.jpeg',
-    'assets/img/7dayschange/1.jpeg',
-    'assets/img/7dayschange/w3a48osbcocecoaaq9hd.jpg',
-    'assets/img/7dayschange/tijr5ztiozgdesbxotm4.jpg',
-    'assets/img/7dayschange/dqzhbtiaqzhf0hxbbrar.jpg',
+    'assets/img/5daysTours/1.jpeg',
+    'assets/img/5daysTours/18.jpg',
+    'assets/img/5daysTours/28.png',
+    'assets/img/5daysTours/24.jpg',
+    'assets/img/5daysTours/34.jpg',
   ];
 
   currentIndex = 0;
@@ -75,7 +75,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Little hike to Pidurangala Rock and enjoy the scenery.',
-            image: 'assets/img/7dayschange/dqzhbtiaqzhf0hxbbrar.jpg',
+            image: 'assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg',
           },
           {
             type: 'Accommodation',
@@ -115,7 +115,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               "Let's get some traditional Sri Lankan village experience!!! A visit to the hamlet of Hiriwadunna in Sri Lanka showcases the laid-back rhythms of small village life.",
-            image: 'assets/img/razprmdf9mzx6wtlgac7.jpg',
+            image: 'assets/img/5daysTours/36.jpg',
           },
           {
             type: 'Guided tour',
@@ -126,7 +126,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'After refreshing at Hiriwadunna Village, next up you ll be heading to Dambulla Royal Cave Temple A sacred pilgrimage site for 22 centuries.',
-            image: 'assets/img/d2ap1r8hoijw6wsm5xgy.jpg',
+            image: 'assets/img/7dayschange/d2ap1r8hoijw6wsm5xgy.jpg',
           },
           {
             type: 'Guided tour',
@@ -137,7 +137,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Enjoy fresh fruits and vegetables at Dambulla market.',
-            image: 'assets/img/v54wmh9aukt4toblznpu.jpg',
+            image: 'assets/img/7dayschange/v54wmh9aukt4toblznpu.jpg',
           },
           {
             type: 'Accommodation',
@@ -147,7 +147,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
               color: '#27ae60',
             },
             description: 'Stay overnight with HB basis',
-            image: 'assets/img/f4yqlbw3bjsz3szp3hbq.jpg',
+            image: 'assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg',
             extra: ['Breakfast', 'Dinner'],
           },
         ],
@@ -375,7 +375,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Visit a sea turtle conservation center along the south coast and learn about marine wildlife protection, hatchery programs and rehabilitation efforts.',
-            image: 'assets/img/6daysTours/turtle.jpg',
+            image: 'assets/img/5daysTours/31.jpg',
           },
           {
             type: 'Boat Safari',
@@ -386,7 +386,7 @@ export class SevenDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Enjoy a scenic boat safari through the mangrove forests and small islands of the Madu River. Discover local cinnamon cultivation and diverse wetland wildlife.',
-            image: 'assets/img/6daysTours/madu.jpg',
+            image: 'assets/img/5daysTours/32.jpg',
           },
           {
             type: 'Departure',

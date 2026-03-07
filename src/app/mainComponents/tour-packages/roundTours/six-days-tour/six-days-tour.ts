@@ -70,7 +70,7 @@ images: string[] = [
             },
             description:
               'Visit Pinnawala Elephant Orphanage, a renowned sanctuary caring for rescued and orphaned elephants. Observe elephants up close and, depending on timing, witness their memorable river bathing session.',
-            image: 'assets/img/6daysTours/pinnawala.jpg',
+            image: 'assets/img/5daysTours/33.jpg',
           },
           {
             type: 'Safari',
@@ -81,21 +81,21 @@ images: string[] = [
             },
             description:
               'Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering” — one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.',
-            image: 'assets/img/6daysTours/minneriya.jpg',
+            image: 'assets/img/5daysTours/24.jpg',
           },
           {
             type: 'Village Experience',
             title: { title: 'Hiriwadunna Village Tour', icon: 'fa-leaf', color: '#27ae60' },
             description:
               'Experience authentic rural Sri Lankan village life.',
-            image: 'assets/img/8daysTours/village.jpg',
+            image: 'assets/img/5daysTours/34.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
-            image: 'assets/img/8daysTours/fresco.jpg',
+            image: 'assets/img/5daysTours/c.jpg',
             extra: ['Breakfast & Dinner Included', '3.5 Star Hotel'],
           },
         ],
@@ -114,7 +114,7 @@ images: string[] = [
             },
             description:
               'Climb the UNESCO-listed Sigiriya Lion Rock Fortress, a 5th-century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.',
-            image: 'assets/img/6daysTours/sigiriya.jpg',
+            image: 'assets/img/5daysTours/imbkh8kscrihzyrtdllf.jpg',
           },
           {
             type: 'Guided tour',
@@ -125,7 +125,7 @@ images: string[] = [
             },
             description:
               'Visit Sri Dalada Maligawa in Kandy, one of the most sacred Buddhist temples in the world. Witness traditional rituals and admire the temple’s beautiful Kandyan architecture.',
-            image: 'assets/img/6daysTours/tooth-temple.jpg',
+            image: 'assets/img/5daysTours/14.jpg',
           },
           {
             type: 'Cultural Experience',
@@ -136,14 +136,14 @@ images: string[] = [
             },
             description:
               'Enjoy an evening cultural dance performance featuring traditional Kandyan drumming, fire walking and vibrant costumes that showcase Sri Lanka’s rich artistic heritage.',
-            image: 'assets/img/6daysTours/dance-show.jpg',
+            image: 'assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Hotel Topaz – Kandy', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Hotel Topaz (or similar).',
-            image: 'assets/img/8daysTours/kandy-hotel.jpg',
+            image: 'assets/img/5daysTours/25.jpg',
             extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
           },
         ],
@@ -162,7 +162,7 @@ images: string[] = [
             },
             description:
               'Explore one of Asia’s finest botanical gardens featuring exotic orchids, towering palm avenues, medicinal plants and beautifully landscaped grounds along the Mahaweli River.',
-            image: 'assets/img/6daysTours/botanical.jpg',
+            image: 'assets/img/5daysTours/26.jpg',
           },
           {
             type: 'Nature',
@@ -173,7 +173,7 @@ images: string[] = [
             },
             description:
               'Stop at Ramboda Falls, one of Sri Lanka’s tallest waterfalls, surrounded by scenic tea estates and cool mountain air.',
-            image: 'assets/img/6daysTours/ramboda.jpg',
+            image: 'assets/img/5daysTours/27.jpg',
           },
           {
             type: 'Tea Experience',
@@ -184,14 +184,14 @@ images: string[] = [
             },
             description:
               'Discover how world-famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.',
-            image: 'assets/img/6daysTours/tea.jpg',
+            image: 'assets/img/5daysTours/28.png',
           },
           {
             type: 'Accommodation',
             title: { title: 'Ramboda Falls Hotel', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Ramboda Falls Hotel (or similar).',
-            image: 'assets/img/6daysTours/ramboda-hotel.jpg',
+            image: 'assets/img/5daysTours/gn4ipm14don7nlmrz52v.jpg',
             extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
           },
         ],
@@ -210,7 +210,7 @@ images: string[] = [
             },
             description:
               'Embark on an exciting safari in Yala National Park, one of the best places in Sri Lanka to see wild elephants in their natural habitat. Spot elephants, crocodiles, deer and birdlife across open grasslands.',
-            image: 'assets/img/6daysTours/yala.jpg',
+            image: 'assets/img/5daysTours/xj7qybc2bk5bwnxdkubp.jpg',
           },
           {
             type: 'Accommodation',
@@ -272,7 +272,7 @@ images: string[] = [
               color: '#2c3e50',
               description:
                 'Accommodation in Somerset Mirissa Hotel or Similar hotel - HB Basis',
-              image: 'assets/img/7daystour/s0dhmdjem8sw5klqayjp.jpg',
+              image: 'assets/img/5daystour/35.jpg',
               extra: [
                 'Hotel 4 stars (Premium)',
                 'Breakfast',
@@ -296,7 +296,7 @@ images: string[] = [
             },
             description:
               'Visit a sea turtle conservation center along the south coast and learn about marine wildlife protection, hatchery programs and rehabilitation efforts.',
-            image: 'assets/img/6daysTours/turtle.jpg',
+            image: 'assets/img/5daysTours/31.jpg',
           },
           {
             type: 'Boat Safari',
@@ -307,7 +307,7 @@ images: string[] = [
             },
             description:
               'Enjoy a scenic boat safari through the mangrove forests and small islands of the Madu River. Discover local cinnamon cultivation and diverse wetland wildlife.',
-            image: 'assets/img/6daysTours/madu.jpg',
+            image: 'assets/img/5daysTours/32.jpg',
           }
         ],
       },

@@ -115,7 +115,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Climb the UNESCO-listed Sigiriya Lion Rock Fortress, a 5th-century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.',
-            image: 'assets/img/6daysTours/sigiriya.jpg',
+            image: 'assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg',
           },
           {
             type: 'Guided tour',
@@ -126,7 +126,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Visit Sri Dalada Maligawa in Kandy, one of the most sacred Buddhist temples in the world. Witness traditional rituals and admire the temple’s beautiful Kandyan architecture.',
-            image: 'assets/img/6daysTours/tooth-temple.jpg',
+            image: 'assets/img/5daysTours/4.jpg',
           },
           {
             type: 'Cultural Experience',
@@ -137,14 +137,14 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Enjoy an evening cultural dance performance featuring traditional Kandyan drumming, fire walking and vibrant costumes that showcase Sri Lanka’s rich artistic heritage.',
-            image: 'assets/img/6daysTours/dance-show.jpg',
+            image: 'assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Hotel Topaz – Kandy', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Hotel Topaz (or similar).',
-            image: 'assets/img/8daysTours/kandy-hotel.jpg',
+            image: 'assets/img/5daysTours/25.jpg',
             extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
           },
         ],
@@ -163,7 +163,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Explore one of Asia’s finest botanical gardens featuring exotic orchids, towering palm avenues, medicinal plants and beautifully landscaped grounds along the Mahaweli River.',
-            image: 'assets/img/6daysTours/botanical.jpg',
+            image: 'assets/img/5daysTours/26.jpg',
           },
           {
             type: 'Nature',
@@ -174,7 +174,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Stop at Ramboda Falls, one of Sri Lanka’s tallest waterfalls, surrounded by scenic tea estates and cool mountain air.',
-            image: 'assets/img/6daysTours/ramboda.jpg',
+            image: 'assets/img/5daysTours/27.jpg',
           },
           {
             type: 'Tea Experience',
@@ -185,14 +185,14 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Discover how world-famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.',
-            image: 'assets/img/6daysTours/tea.jpg',
+            image: 'assets/img/5daysTours/28.png',
           },
           {
             type: 'Accommodation',
-            title: { title: 'Hotel Grand Tamarind Lake', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Hotel Yara Nuwara Eliya', icon: 'fa-hotel', color: '#16a085' },
             description:
-              'Overnight stay at Grand Tamarind Lake (or similar).',
-            image: 'assets/img/8daysTours/kandy-hotel.jpg',
+              'Overnight stay at Yara Nuwara Eliya (or similar).',
+            image: 'assets/img/5daysTours/29.jpg',
             extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
           },
         ],
@@ -211,7 +211,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'The majestic Nine Arch Bridge is one of the many reasons for that. The glorious Nine Arch Bridge between Ella and Demodara station is one of the engineering marvels in the early 20th century.',
-            image: 'assets/img/7dayschange/yka3mpx2nahiftrb0lpu.jpg',
+            image: 'assets/img/5daysTours/5.jpg',
           },
           {
             type: 'Guided tour',
@@ -222,7 +222,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'It is 1141 m in height and from the entrance it takes up to 30-45 min for the hike. Views from the summit are incredible. 360 degrees panoramic views with clouds rolling in, is a treat to watch.',
-            image: 'assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg',
+            image: 'assets/img/5daysTours/9.jpg',
           },
           {
             type: 'Accommodation',
@@ -233,7 +233,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Accommodation in Oak Ray Ella Gap Hotel or Similar - HB Basis',
-            image: 'assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg',
+            image: 'assets/img/5daysTours/30.jpg',
             extra: ['Hotel 4 stars (Premium)', 'Private bathroom'],
           },
         ],
@@ -251,7 +251,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Visit a sea turtle conservation center along the south coast and learn about marine wildlife protection, hatchery programs and rehabilitation efforts.',
-            image: 'assets/img/6daysTours/turtle.jpg',
+            image: 'assets/img/5daysTours/31.jpg',
           },
           {
             type: 'Boat Safari',
@@ -262,7 +262,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             },
             description:
               'Enjoy a scenic boat safari through the mangrove forests and small islands of the Madu River. Discover local cinnamon cultivation and diverse wetland wildlife.',
-            image: 'assets/img/6daysTours/madu.jpg',
+            image: 'assets/img/5daysTours/32.jpg',
           }
         ],
       }

@@ -58,14 +58,14 @@ export class EightdaysComponent {
             title: { title: 'Wilpattu National Park Safari', icon: 'fa-paw', color: '#27ae60' },
             description:
               'Explore Sri Lanka’s largest national park on a 5-hour 4x4 jeep safari. Spot leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife.',
-            image: 'assets/img/8daysTours/wilpattu.jpg',
+            image: 'assets/img/5daysTours/37.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Thimbiri Wewa Resort – Wilpattu', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Thimbiri Wewa Resort Wilpattu (or similar). Half Board basis.',
-            image: 'assets/img/8daysTours/wilpattu-hotel.jpg',
+            image: 'assets/img/5daysTours/38.jpg',
             extra: ['Dinner Included', 'Star Class Hotel'],
           },
         ],
@@ -80,28 +80,28 @@ export class EightdaysComponent {
             title: { title: 'Sri Maha Bodhi Temple', icon: 'fa-place-of-worship', color: '#8e44ad' },
             description:
               'Visit the sacred Sri Maha Bodhi Tree in Anuradhapura.',
-            image: 'assets/img/8daysTours/sri-maha-bodhi.jpg',
+            image: 'assets/img/5daysTours/39.jpg',
           },
           {
             type: 'Historical Visit',
             title: { title: 'Ruwanweli Maha Seya', icon: 'fa-landmark', color: '#e67e22' },
             description:
               'Explore one of Sri Lanka’s most sacred Buddhist monuments.',
-            image: 'assets/img/8daysTours/ruwanweli.jpg',
+            image: 'assets/img/5daysTours/40.jpg',
           },
           {
             type: 'Scenic Hike',
             title: { title: 'Pidurangala Rock Sunset', icon: 'fa-mountain', color: '#e74c3c' },
             description:
               'Climb Pidurangala Rock for breathtaking sunset views.',
-            image: 'assets/img/8daysTours/pidurangala.jpg',
+            image: 'assets/img/5daysTours/41.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
-            image: 'assets/img/8daysTours/fresco.jpg',
+            image: 'assets/img/5daysTours/c.jpg',
             extra: ['Breakfast & Dinner Included', '3.5 Star Hotel'],
           },
         ],
@@ -116,35 +116,35 @@ export class EightdaysComponent {
             title: { title: 'Sigiriya Lion Rock Fortress', icon: 'fa-mountain', color: '#c0392b' },
             description:
               'Climb the UNESCO-listed Sigiriya Rock Fortress.',
-            image: 'assets/img/8daysTours/sigiriya.jpg',
+            image: 'assets/img/5daysTours/42.jpg',
           },
           {
             type: 'Village Experience',
             title: { title: 'Hiriwadunna Village Tour', icon: 'fa-leaf', color: '#27ae60' },
             description:
               'Experience authentic rural Sri Lankan village life.',
-            image: 'assets/img/8daysTours/village.jpg',
+            image: 'assets/img/5daysTours/34.jpg',
           },
           {
             type: 'Safari',
             title: { title: 'Minneriya Safari', icon: 'fa-paw', color: '#2ecc71' },
             description:
               'Enjoy a 4x4 jeep safari famous for elephant gatherings.',
-            image: 'assets/img/8daysTours/minneriya.jpg',
+            image: 'assets/img/5daysTours/24.jpg',
           },
           {
             type: 'Wellness',
             title: { title: 'Ayurveda Massage', icon: 'fa-spa', color: '#9b59b6' },
             description:
               'Relax with a traditional herbal oil massage.',
-            image: 'assets/img/8daysTours/ayurveda.jpg',
+            image: 'assets/img/5daysTours/43.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
-            image: 'assets/img/8daysTours/fresco.jpg',
+            image: 'assets/img/5daysTours/c.jpg',
             extra: ['Breakfast & Dinner Included', '3.5 Star Hotel'],
           },
         ],
@@ -159,28 +159,28 @@ export class EightdaysComponent {
             title: { title: 'Matale Spice Garden', icon: 'fa-seedling', color: '#32CD32' },
             description:
               'Discover Sri Lanka’s famous spices and herbs.',
-            image: 'assets/img/8daysTours/spice.jpg',
+            image: 'assets/img/5daysTours/44.jpg',
           },
           {
             type: 'UNESCO Site',
             title: { title: 'Temple of the Sacred Tooth Relic', icon: 'fa-place-of-worship', color: '#2980b9' },
             description:
               'Visit Sri Lanka’s most sacred Buddhist temple in Kandy.',
-            image: 'assets/img/8daysTours/tooth-temple.jpg',
+            image: 'assets/img/5daysTours/14.jpg',
           },
           {
             type: 'Cultural Show',
             title: { title: 'Kandy Cultural Dance Show', icon: 'fa-theater-masks', color: '#e74c3c' },
             description:
               'Enjoy traditional Kandyan dance performances.',
-            image: 'assets/img/8daysTours/cultural-show.jpg',
+            image: 'assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Hotel Topaz – Kandy', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Hotel Topaz (or similar).',
-            image: 'assets/img/8daysTours/kandy-hotel.jpg',
+            image: 'assets/img/5daysTours/25.jpg',
             extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
           },
         ],
@@ -195,21 +195,21 @@ export class EightdaysComponent {
             title: { title: 'Blue Field Tea Factory', icon: 'fa-mug-hot', color: '#8B4513' },
             description:
               'Learn how world-famous Ceylon tea is produced.',
-            image: 'assets/img/8daysTours/tea-factory.jpg',
+            image: 'assets/img/5daysTours/28.png',
           },
           {
             type: 'Nature',
             title: { title: 'Ramboda Waterfall', icon: 'fa-water', color: '#3498db' },
             description:
               'Visit one of Sri Lanka’s tallest waterfalls.',
-            image: 'assets/img/8daysTours/ramboda.jpg',
+            image: 'assets/img/5daysTours/13.jpg',
           },
           {
             type: 'Accommodation',
             title: { title: 'Oak Ray Ella Gap Hotel', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay in Ella.',
-            image: 'assets/img/8daysTours/ella-hotel.jpg',
+            image: 'assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg',
             extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
           },
         ],
@@ -224,23 +224,28 @@ export class EightdaysComponent {
             title: { title: 'Nine Arch Bridge', icon: 'fa-bridge', color: '#A9A9A9' },
             description:
               'Visit the famous colonial-era railway bridge.',
-            image: 'assets/img/8daysTours/ninearch.jpg',
+            image: 'assets/img/5daysTours/3.jpeg',
           },
           {
             type: 'Wildlife',
             title: { title: 'Elephant Transit Home', icon: 'fa-elephant', color: '#2ecc71' },
             description:
               'Observe rescued baby elephants.',
-            image: 'assets/img/8daysTours/elephant-transit.jpg',
+            image: 'assets/img/5daysTours/7.jpg',
           },
           {
             type: 'Accommodation',
-            title: { title: 'Refresh Hotel – Hikkaduwa', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Somerset Mirissa Hotel', icon: 'fa-hotel', color: '#16a085' },
             description:
-              'Overnight stay in Hikkaduwa.',
-            image: 'assets/img/8daysTours/hikkaduwa-hotel.jpg',
-            extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
-          },
+              'Accommodation in Somerset Mirissa Hotel or Similar hotel - HB Basis',
+            image: 'assets/img/5daysTours/35.jpg',
+              extra: [
+                'Hotel 4 stars (Premium)',
+                'Breakfast',
+                'Private bathroom',
+                'Dinner',
+              ],
+          }
         ],
       },
 
@@ -253,15 +258,20 @@ export class EightdaysComponent {
             title: { title: 'Hikkaduwa Beach', icon: 'fa-umbrella-beach', color: '#f1c40f' },
             description:
               'Relax on golden beaches and swim in the Indian Ocean.',
-            image: 'assets/img/8daysTours/hikkaduwa-beach.jpg',
+            image: 'assets/img/5daysTours/45.jpg',
           },
           {
             type: 'Accommodation',
-            title: { title: 'Refresh Hotel – Hikkaduwa', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Somerset Mirissa Hotel', icon: 'fa-hotel', color: '#16a085' },
             description:
-              'Overnight stay in Hikkaduwa.',
-            image: 'assets/img/8daysTours/hikkaduwa-hotel.jpg',
-            extra: ['Breakfast & Dinner Included', '4 Star Hotel'],
+              'Accommodation in Somerset Mirissa Hotel or Similar hotel - HB Basis',
+            image: 'assets/img/5daysTours/35.jpg',
+              extra: [
+                'Hotel 4 stars (Premium)',
+                'Breakfast',
+                'Private bathroom',
+                'Dinner',
+              ],
           }
         ],
       },
@@ -279,7 +289,7 @@ export class EightdaysComponent {
             },
             description:
               'Visit the Koggala Turtle Hatchery and Conservation Center where endangered sea turtles are protected and rehabilitated. Learn about Sri Lanka’s marine conservation efforts, observe baby turtles in hatchery pools and understand how rescued turtles are released back into the Indian Ocean.',
-            image: 'assets/img/10daysTours/koggala-turtle-hatchery.jpg',
+            image: 'assets/img/5daysTours/31.jpg',
           },
           {
             type: 'Boat Safari',
@@ -290,7 +300,7 @@ export class EightdaysComponent {
             },
             description:
               'Experience a scenic boat safari through the mangrove forests and small islands of the Madu River. Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems.',
-            image: 'assets/img/10daysTours/madu-river.jpg',
+            image: 'assets/img/5daysTours/32.jpg',
           }
         ],
       },
