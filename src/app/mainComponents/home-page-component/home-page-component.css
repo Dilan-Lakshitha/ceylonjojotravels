@@ -239,5 +239,19 @@ html, body {
     padding: 0;
     scroll-behavior: smooth !important;
 }
+.destination-card img{
+height:180px;
+object-fit:cover;
+}
 
+.destination-card{
+border-radius:12px;
+transition:all .3s;
+cursor:pointer;
+}
+
+.destination-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
 
