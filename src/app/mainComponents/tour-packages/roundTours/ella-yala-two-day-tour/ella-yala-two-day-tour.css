@@ -1,0 +1,156 @@
+/* Main image */
+.main-img {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+  display: block;
+  margin-left: 5%;
+}
+
+.main-image-container {
+  flex: 1 1 auto;    /* take remaining space */
+  min-width: 0;      /* allow shrinking to prevent overflow */
+}
+
+
+/* Indicators */
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Dots */
+.indicator-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.active-indicator {
+  background-color: #022d41;
+}
+
+/* Thumbnail container */
+.thumbs {
+  max-height: 750px; 
+  overflow-y: hidden; 
+  display: flex;
+  flex-direction: column; /* This seems to be missing in your provided CSS but is needed for vertical layout */
+  align-items: center; /* Centers thumbnails horizontally */
+  justify-content: flex-start; /* Aligns thumbnails to the top */
+}
+
+/* New CSS: show scrollbar on hover */
+.thumbs:hover {
+  overflow-y: auto;
+}
+
+.thumb-img {
+  width: 140px;
+  height: 80px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumb-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px #022d41;
+}
+
+.package-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.package-item img {
+  transition: transform 0.3s ease;
+}
+
+.package-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px #022d41;
+}
+
+.package-item:hover img {
+  transform: scale(1.05);
+}
+
+.package-item a.h5 {
+  transition: color 0.3s ease;
+}
+
+.package-item:hover a.h5 {
+  color: #022d41; /* primary color or any highlight color */
+}
+
+.package-item .border-top {
+  transition: border-color 0.3s ease;
+}
+
+.package-item:hover .border-top {
+  border-color: #022d41;
+}
+
+/* === Floating Booking Button === */
+.fixed-booking-btn {
+  position: fixed;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  background-color: #022d41;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 26px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 8px 20px #022d41;
+  transition: all 0.3s ease;
+  
+  /* Floating animation */
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* Smooth hover */
+.fixed-booking-btn:hover {
+  background-color: #022d41;
+  box-shadow: 0 10px 25px #022d41;
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* Add star glow animation */
+.fixed-booking-btn i {
+  margin-right: 8px;
+  color: #ffd700; /* golden star color */
+  animation: glowStar 1.2s ease-in-out infinite alternate;
+}
+
+/* Floating up and down */
+@keyframes floatUpDown {
+  0% { transform: translateY(-50%) translateY(0); }
+  50% { transform: translateY(-50%) translateY(-8px); }
+  100% { transform: translateY(-50%) translateY(0); }
+}
+
+/* Star glowing effect */
+@keyframes glowStar {
+  from { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffc107; }
+  to { text-shadow: 0 0 15px #ffea00, 0 0 25px #ffcc00; }
+}

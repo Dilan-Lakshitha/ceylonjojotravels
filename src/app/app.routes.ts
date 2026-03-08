@@ -21,6 +21,7 @@ import { TwoDaysTourPlus } from "./mainComponents/tour-packages/roundTours/two-d
 import { SixDaysTour } from "./mainComponents/tour-packages/roundTours/six-days-tour/six-days-tour";
 import { EightdaysComponent } from "./mainComponents/tour-packages/roundTours/eightdays-component/eightdays-component";
 import { FourdaysTourComponent } from "./mainComponents/tour-packages/roundTours/fourdays-tour-component/fourdays-tour-component";
+import { EllaYalaTwoDayTour } from "./mainComponents/tour-packages/roundTours/ella-yala-two-day-tour/ella-yala-two-day-tour";
 
 export const routes: Routes = [
   {
@@ -202,6 +203,15 @@ export const routes: Routes = [
           title: '2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa | Airport or Hotel Drop',
           description: 'Book a 2 day Sri Lanka private tour covering Udawalawa Elephant Transit Home, Ella highlights, Ramboda Falls, Ambuluwawa Tower and Kandy Temple of the Tooth. Airport or hotel drop included.',
           keywords: '2 day Sri Lanka tour, Ella Kandy 2 day tour, Sri Lanka private tour, Udawalawa safari tour, Sri Lanka hill country tour'
+        }
+      },
+      {
+        path: '2-day-ella-yala-private-tour-sri-lanka',
+        component: EllaYalaTwoDayTour,
+        data: {
+          title: '2 Day Ella & Yala Safari Private Tour | Sri Lanka Wildlife Experience',
+          description: 'Enjoy a 2 day private tour covering Ella highlights including Nine Arch Bridge, Little Adam’s Peak and Ravana Falls, followed by an exciting Yala National Park jeep safari to see leopards, elephants and wildlife.',
+          keywords: 'Ella Yala safari tour, 2 day Sri Lanka safari tour, Ella Yala private tour, Yala national park safari tour Sri Lanka'
         }
       },
       {

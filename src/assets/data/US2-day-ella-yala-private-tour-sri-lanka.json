@@ -1,0 +1,20 @@
+{
+  "name": "2-day-ella-yala-private-tour-sri-lanka",
+  "title": "2 Day Ella & Yala Safari Private Tour Sri Lanka",
+  "duration": "Two Days",
+  "tourType": "Round Tour",
+  "overview": "Experience the beauty of Sri Lanka’s hill country and wildlife in this 2 day private tour. Visit the famous Nine Arch Bridge, Little Adam’s Peak and Ravana Falls in Ella before heading to Yala National Park for an exciting jeep safari where you may spot leopards, elephants and many other wild animals.",
+  "images": [
+    "assets/img/2daysTours/1.jpeg",
+    "assets/img/2daysTours/2.jpeg",
+    "assets/img/2daysTours/3.jpeg"
+  ],
+  "price": {
+    "1": 400.00,
+    "2": 550.00,
+    "3": 640.00,
+    "4": 750.00,
+    "5": 880.00,
+    "6": 990.00
+  }
+}

@@ -44,6 +44,16 @@
 
   "multiDayTours": [
     {
+      "id": 1,
+      "title": "2 Day Ella & Yala Safari Tour with 4 Star Hotels and Private Transportation",
+      "days": "2 days",
+      "persons": "1-20 Persons",
+      "rating": 5,
+      "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+      "image": "assets/img/5daysTours/24.jpg",
+      "routerLink": "/2-day-ella-yala-private-tour-sri-lanka"
+    },
+    {
       "id": 9,
       "title": "2 Day Ella & Kandy Private Tour with 4 Star Hotels and Private Transportation",
       "days": "2 days",

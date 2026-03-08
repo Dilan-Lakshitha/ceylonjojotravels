@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import toursData from '../../databaseJson/tours.json';
 import { PackageItemComponent } from '../../sharedComponents/package-item-component/package-item-component';
 import { HttpClient } from '@angular/common/http';
@@ -22,7 +22,8 @@ export class TourPackages {
 
   constructor(
     private http: HttpClient,
-    private countryService: CountryService
+    private countryService: CountryService,
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {}
 
   async ngOnInit() {
@@ -41,21 +42,23 @@ export class TourPackages {
   }
 
   loadPrice(filecode: string): Promise<number> {
-    const countryFile = `/assets/data/${this.userCountry}${filecode}.json`;
-    const defaultFile = `/assets/data/US${filecode}.json`;
+    if (!isPlatformBrowser(this.platformId)) {
+      return Promise.resolve(0);
+    }
+
+    const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
+    const defaultFile = `assets/data/US${filecode}.json`;
+    console.log(countryFile,'default',defaultFile)
 
     return new Promise((resolve) => {
       this.http.get(countryFile).subscribe({
-        next: (data: any) => {
-          if (data && data.price && data.price[1] != null) {
-            resolve(data.price[1]);
-          } else {
-            this.loadDefaultPrice(defaultFile, resolve);
-          }
-        },
+        next: (data: any) => resolve(data?.price?.['2'] ?? 0),
         error: () => {
-          this.loadDefaultPrice(defaultFile, resolve);
-        },
+          this.http.get(defaultFile).subscribe({
+            next: (data: any) => resolve(data?.price?.['2'] ?? 0),
+            error: () => resolve(0)
+          });
+        }
       });
     });
   }
