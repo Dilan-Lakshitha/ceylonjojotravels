@@ -97,7 +97,18 @@
             ]
           }
         },
-        "prerender": false
+        "prerender": {
+          "routes": [
+            "/",
+            "/tour-packages",
+            "/7-day-sri-lanka-tour",
+            "/8-day-sri-lanka-private-tour",
+            "/ella-day-tour",
+            "/galle-day-tour",
+            "/kandy-day-tour",
+            "/sigiriya-day-tour"
+          ]
+        }
       }
     }
   },
