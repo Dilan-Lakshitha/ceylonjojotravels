@@ -89,12 +89,13 @@
     </div>
 </div>
 <!-- Carousel End -->
-<section class="container py-5 text-center">
-<h2>Sri Lanka Tours with Local Experts</h2>
+<section class="container text-center">
+    <h2>Sri Lanka Tours with Local Experts</h2>
 
-<p>
-Sundown Tours Sri Lanka offers private tours, chauffeur driver services and tailor-made holiday packages across Sri Lanka. Explore Sigiriya, Kandy, Ella, Yala safari and stunning beaches with experienced local guides.
-</p>
+    <p>
+        Sundown Tours Sri Lanka offers private tours, chauffeur driver services and tailor-made holiday packages across
+        Sri Lanka. Explore Sigiriya, Kandy, Ella, Yala safari and stunning beaches with experienced local guides.
+    </p>
 </section>
 <!-- Destination Start -->
 <div class="container-fluid py-5">
@@ -103,174 +104,130 @@ Sundown Tours Sri Lanka offers private tours, chauffeur driver services and tail
         <div class="text-center mb-5">
             <h1>Top Sri Lanka Destinations for Your Tour</h1>
             <p class="text-center mb-4">
-                Explore the most popular destinations included in our Sri Lanka tour packages including Sigiriya, Ella, Yala Safari, Kandy and Galle.
+                Explore the most popular destinations included in our Sri Lanka tour packages including Sigiriya, Ella,
+                Yala Safari, Kandy and Galle.
             </p>
         </div>
 
         <div class="row g-4">
             <!-- Sigiriya -->
-            <div class="col-lg-4 col-md-6 pb-2">
-                <div class="card border-0 shadow-sm h-100 destination-card" (click)="scrollToSection('packages')">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-5">
-                            <img src="assets/img/destination-1.jpg" class="img-fluid rounded-start"
-                                alt="Sigiriya Lion Rock Sri Lanka Tour">
-                        </div>
-                        <div class="col-7 p-3">
-                            <h5 class="mb-1">Sigiriya</h5>
-
-                            <p class="mb-1 small text-muted">
-                                Explore the famous Sigiriya Lion Rock and ancient royal gardens.
-                            </p>
-                            <small class="text-primary fw-bold">
-                                Included in: Sigiriya Day Tour, 5 Day Sri Lanka Tour, 6 Day Sri Lanka Tour, 7 Day Tour,
-                                8 Day Tour & 10 Day Tour
-                            </small>
-                        </div>
-
+            <div class="col-lg-4 col-md-6  mb-2">
+                <div class="destination-card" (click)="scrollToSection('packages')">
+                    <div class="card-image">
+                        <img src="assets/img/destination-1.jpg" alt="Sigiriya Lion Rock Sri Lanka Tour">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sigiriya</h3>
+                        <p class="card-description">Explore the famous Sigiriya Lion Rock and ancient royal gardens.</p>
+                        <p class="card-packages">
+                            <strong>Included in:</strong> Sigiriya Day Tour, 5 Day Tour, 6 Day Tour, 7 Day Tour, 8 Day
+                            Tour & 10 Day Tour
+                        </p>
+                        <a href="#packages" class="card-link">
+                            View Tours <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Ella -->
-            <div class="col-lg-4 col-md-6 pb-2">
-                <div class="card border-0 shadow-sm h-100 destination-card" (click)="scrollToSection('packages')">
-                    <div class="row g-0 align-items-center">
-
-                        <div class="col-5">
-                            <img src="assets/img/destination-2.jpg" class="img-fluid rounded-start"
-                                alt="Ella Sri Lanka Nine Arches Bridge Tour">
-                        </div>
-
-                        <div class="col-7 p-3">
-                            <h5 class="mb-1">Ella</h5>
-
-                            <p class="mb-1 small text-muted">
-                                Visit Nine Arches Bridge, Little Adam's Peak and Ravana Falls.
-                            </p>
-
-                            <small class="text-primary fw-bold">
-                                Included in: Ella Day Tour, 2 Day Tour, 4 Day Tour, 5 Day Tour, 7 Day Tour, 8 Day Tour &
-                                10 Day Tour
-                            </small>
-
-                        </div>
-
+            <div class="col-lg-4 col-md-6  mb-2">
+                <div class="destination-card" (click)="scrollToSection('packages')">
+                    <div class="card-image">
+                        <img src="assets/img/destination-2.jpg" alt="Ella Sri Lanka Nine Arches Bridge Tour">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ella</h3>
+                        <p class="card-description">Visit Nine Arches Bridge, Little Adam's Peak and Ravana Falls.</p>
+                        <p class="card-packages">
+                            <strong>Included in:</strong> Ella Day Tour, 2 Day Tour, 4 Day Tour, 5 Day Tour, 7 Day Tour,
+                            8 Day Tour & 10 Day Tour
+                        </p>
+                        <a href="#packages" class="card-link">
+                            View Tours <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Yala -->
-            <div class="col-lg-4 col-md-6 pb-2">
-                <div class="card border-0 shadow-sm h-100 destination-card" (click)="scrollToSection('packages')">
-                    <div class="row g-0 align-items-center">
-
-                        <div class="col-5">
-                            <img src="assets/img/destination-3.jpg" class="img-fluid rounded-start"
-                                alt="Yala National Park Safari Sri Lanka">
-                        </div>
-
-                        <div class="col-7 p-3">
-                            <h5 class="mb-1">Yala Safari</h5>
-
-                            <p class="mb-1 small text-muted">
-                                Experience wildlife safari and see leopards and elephants.
-                            </p>
-
-                            <small class="text-primary fw-bold">
-                                Included in: Yala Safari 2 Day Tour, 4 Day Tour, 6 Day Tour & 7 Day Tour
-                            </small>
-
-                        </div>
-
+            <!-- Yala Safari -->
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="destination-card" (click)="scrollToSection('packages')">
+                    <div class="card-image">
+                        <img src="assets/img/destination-3.jpg" alt="Yala National Park Safari Sri Lanka">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Yala Safari</h3>
+                        <p class="card-description">Experience wildlife safari and see leopards and elephants.</p>
+                        <p class="card-packages">
+                            <strong>Included in:</strong> Yala Safari 2 Day Tour, 4 Day Tour, 6 Day Tour & 7 Day Tour
+                        </p>
+                        <a href="#packages" class="card-link">
+                            View Tours <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Kandy -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 destination-card" (click)="scrollToSection('packages')">
-                    <div class="row g-0 align-items-center">
-
-                        <div class="col-5">
-                            <img src="assets/img/destination-4.jpg" class="img-fluid rounded-start"
-                                alt="Kandy Temple of the Tooth Sri Lanka Tour">
-                        </div>
-
-                        <div class="col-7 p-3">
-                            <h5 class="mb-1">Kandy</h5>
-
-                            <p class="mb-1 small text-muted">
-                                Discover the Temple of the Tooth and scenic Kandy city.
-                            </p>
-
-                            <small class="text-primary fw-bold">
-                                Included in: Kandy Day Tour, 2 Day Tour, 4 Day Tour, 5 Day Tour, 6 Day Tour, 7 Day Tour,
-                                8 Day Tour & 10 Day Tour
-                            </small>
-
-                        </div>
-
+                <div class="destination-card" (click)="scrollToSection('packages')">
+                    <div class="card-image">
+                        <img src="assets/img/destination-4.jpg" alt="Kandy Temple of the Tooth Sri Lanka Tour">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kandy</h3>
+                        <p class="card-description">Discover the Temple of the Tooth and scenic Kandy city.</p>
+                        <p class="card-packages">
+                            <strong>Included in:</strong> Kandy Day Tour, 2 Day Tour, 4 Day Tour, 5 Day Tour, 6 Day
+                            Tour, 7 Day Tour, 8 Day Tour & 10 Day Tour
+                        </p>
+                        <a href="#packages" class="card-link">
+                            View Tours <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Dambulla -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 destination-card" (click)="scrollToSection('packages')">
-                    <div class="row g-0 align-items-center">
-
-                        <div class="col-5">
-                            <img src="assets/img/destination-5.jpg" class="img-fluid rounded-start"
-                                alt="Dambulla Cave Temple Sri Lanka">
-                        </div>
-
-                        <div class="col-7 p-3">
-                            <h5 class="mb-1">Dambulla</h5>
-
-                            <p class="mb-1 small text-muted">
-                                Visit the famous Golden Cave Temple and cultural heritage sites.
-                            </p>
-
-                            <small class="text-primary fw-bold">
-                                Included in: Sigiriya & Dambulla Day Tour, 5 Day Sri Lanka Tour, 6 Day Sri Lanka Tour, 7
-                                Day Tour, 8 Day Tour & 10 Day Tour
-                            </small>
-
-                        </div>
-
+                <div class="destination-card" (click)="scrollToSection('packages')">
+                    <div class="card-image">
+                        <img src="assets/img/destination-5.jpg" alt="Dambulla Cave Temple Sri Lanka">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Dambulla</h3>
+                        <p class="card-description">Visit the famous Golden Cave Temple and cultural heritage sites.</p>
+                        <p class="card-packages">
+                            <strong>Included in:</strong> Sigiriya & Dambulla Day Tour, 5 Day Tour, 6 Day Tour, 7 Day
+                            Tour, 8 Day Tour & 10 Day Tour
+                        </p>
+                        <a href="#packages" class="card-link">
+                            View Tours <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Galle -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 destination-card" (click)="scrollToSection('packages')">
-                    <div class="row g-0 align-items-center">
-
-                        <div class="col-5">
-                            <img src="assets/img/destination-6.jpg" class="img-fluid rounded-start"
-                                alt="Galle Fort Sri Lanka Beach Tour">
-                        </div>
-
-                        <div class="col-7 p-3">
-                            <h5 class="mb-1">Galle</h5>
-
-                            <p class="mb-1 small text-muted">
-                                Explore the historic Galle Fort and beautiful southern beaches.
-                            </p>
-
-                            <small class="text-primary fw-bold">
-                                Included in: Galle Day Tour, 4 Day Tour, 5 Day Tour, 6 Day Tour, 7 Day Tour, 8 Day Tour
-                                & 10 Day Tour
-                            </small>
-
-                        </div>
-
+                <div class="destination-card" (click)="scrollToSection('packages')">
+                    <div class="card-image">
+                        <img src="assets/img/destination-6.jpg" alt="Galle Fort Sri Lanka Beach Tour">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Galle</h3>
+                        <p class="card-description">Explore the historic Galle Fort and beautiful southern beaches.</p>
+                        <p class="card-packages">
+                            <strong>Included in:</strong> Galle Day Tour, 4 Day Tour, 5 Day Tour, 6 Day Tour, 7 Day
+                            Tour, 8 Day Tour & 10 Day Tour
+                        </p>
+                        <a href="#packages" class="card-link">
+                            View Tours <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-
         </div>
 
     </div>
@@ -284,12 +241,13 @@ Sundown Tours Sri Lanka offers private tours, chauffeur driver services and tail
             <h6 class="text-primary text-uppercase tracking-widest">Packages</h6>
             <h1 class="font-bold text-4xl">Explore Our Best Tours</h1>
             <p class="text-center mb-3">
-                Choose from our best-selling Sri Lanka tour packages or customize your own private tour with a driver guide.
+                Choose from our best-selling Sri Lanka tour packages or customize your own private tour with a driver
+                guide.
             </p>
         </div>
-        <section class="container text-center py-4">
-        <h3>Trusted by Travelers Worldwide ⭐⭐⭐⭐⭐</h3>
-        <p>5.0 rating on TripAdvisor • 100+ happy customers</p>
+        <section class="container text-center py-2">
+            <h3>Trusted by Travelers Worldwide ⭐⭐⭐⭐⭐</h3>
+            <p>5.0 rating on TripAdvisor • 100+ happy customers</p>
         </section>
 
         <div class="flex text-center mb-4">
@@ -526,53 +484,49 @@ Sundown Tours Sri Lanka offers private tours, chauffeur driver services and tail
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Team</h6>
             <h1>Our Global Associates</h1>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-                <div class="team-item bg-white mb-4">
-                    <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="assets/img/Team/1.jpeg" alt="">
-                        <div class="team-social">
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                        </div>
+        <div class="row row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-10 pb-4">
+                <div class="team-card">
+
+                    <!-- IMAGE -->
+                    <div class="team-image">
+                        <img src="assets/img/Team/1.jpeg" alt="Dilan Lakshitha">
+                        <div class="overlay"></div>
                     </div>
-                    <div class="text-center py-4">
-                        <h5 class="text-truncate">Dilan Lakshitha</h5>
-                        <p class="m-0">Owner</p>
-                        <p class="m-0">Sri Lanka</p>
-                        <p class="m-0">
-                            <a href="https://wa.me/94714293585" target="_blank"
-                                style="color: #25D366; text-decoration: none;">
-                                <i class="fab fa-whatsapp"></i> +94 71 429 3585
-                            </a>
-                        </p>
+
+                    <!-- CONTENT -->
+                    <div class="team-info text-center">
+                        <h4>Dilan Lakshitha</h4>
+                        <span class="role">Owner</span>
+                        <p class="country">Sri Lanka</p>
+
+                        <a href="https://wa.me/94714293585" target="_blank" class="chat-btn">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
                     </div>
+
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 pb-2">
-                <div class="team-item bg-white mb-4">
-                    <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="assets/img/Team/2.jpg" alt="">
-                        <div class="team-social">
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                        </div>
+            <div class="col-lg-5 col-md-6 col-sm-10 pb-4">
+                <div class="team-card">
+
+                    <!-- IMAGE -->
+                    <div class="team-image">
+                        <img src="assets/img/Team/2.jpg" alt="Dilan Lakshitha">
+                        <div class="overlay"></div>
                     </div>
-                    <div class="text-center py-4">
-                        <h5 class="text-truncate">Yohan Malshika</h5>
-                        <p class="m-0">Senior Consultant</p>
-                        <p class="m-0">Malasiya</p>
-                        <p class="m-0">
-                            <a href="https://wa.me/94714293585" target="_blank"
-                                style="color: #25D366; text-decoration: none;">
-                                <i class="fab fa-whatsapp"></i> +94 76 361 07 38
-                            </a>
-                        </p>
+
+                    <!-- CONTENT -->
+                    <div class="team-info text-center">
+                        <h4>Yohan Malshika</h4>
+                        <span class="role">Senior Consultant</span>
+                        <p class="country">Malasiya</p>
+
+                        <a href="https://wa.me/94714293585" target="_blank" class="chat-btn">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
                     </div>
+
                 </div>
             </div>
             <!-- <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
@@ -659,33 +613,33 @@ Sundown Tours Sri Lanka offers private tours, chauffeur driver services and tail
     </div>
 </div>
 <section class="container py-5 text-center">
-  <h2 class="mb-4">Popular Sri Lanka Tours</h2>
+    <h2 class="mb-4">Popular Sri Lanka Tours</h2>
 
-  <div class="row justify-content-center">
-    <div class="col-md-3 mb-3">
-      <a href="/7-day-sri-lanka-tour" class="btn btn-outline-primary w-100">
-        7 Day Sri Lanka Tour
-      </a>
-    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-3">
+            <a href="/7-day-sri-lanka-tour" class="btn btn-outline-primary w-100">
+                7 Day Sri Lanka Tour
+            </a>
+        </div>
 
-    <div class="col-md-3 mb-3">
-      <a href="/8-day-sri-lanka-private-tour" class="btn btn-outline-primary w-100">
-        8 Day Private Tour
-      </a>
-    </div>
+        <div class="col-md-3 mb-3">
+            <a href="/8-day-sri-lanka-private-tour" class="btn btn-outline-primary w-100">
+                8 Day Private Tour
+            </a>
+        </div>
 
-    <div class="col-md-3 mb-3">
-      <a href="/ella-day-tour" class="btn btn-outline-primary w-100">
-        Ella Day Tour
-      </a>
-    </div>
+        <div class="col-md-3 mb-3">
+            <a href="/ella-day-tour" class="btn btn-outline-primary w-100">
+                Ella Day Tour
+            </a>
+        </div>
 
-    <div class="col-md-3 mb-3">
-      <a href="/sigiriya-day-tour" class="btn btn-outline-primary w-100">
-        Sigiriya Day Tour
-      </a>
+        <div class="col-md-3 mb-3">
+            <a href="/sigiriya-day-tour" class="btn btn-outline-primary w-100">
+                Sigiriya Day Tour
+            </a>
+        </div>
     </div>
-  </div>
 </section>
 <!-- Testimonial End -->
 
