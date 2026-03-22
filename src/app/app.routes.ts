@@ -148,7 +148,7 @@ export const routes: Routes = [
         data: {
           title: 'Book Your Sri Lanka Tour | Private & Customized Travel',
           description: 'Book your private Sri Lanka tour with our customizable packages and expert local guides.',
-          keywords: 'Sri Lanka booking, private Sri Lanka tour booking'
+          keywords: 'Sri Lanka booking, private Sri Lanka tour booking',
         }
       },
       {

@@ -24,6 +24,6 @@ bootstrapApplication(AppComponent, {
         preventDuplicates: true,
         newestOnTop: true,
       }),
-    ), provideClientHydration(withEventReplay()),
+    ), provideClientHydration(withEventReplay()), provideClientHydration(withEventReplay()),
   ],
 });

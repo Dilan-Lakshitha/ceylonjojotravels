@@ -39,7 +39,12 @@
               "src/assets/lib/tempusdominus/js/moment-timezone.min.js",
               "src/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js",
               "src/assets/js/main.js"
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -97,17 +102,30 @@
             ]
           }
         },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/Travelwebsite/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          }
+        },
         "prerender": {
-          "routes": [
-            "/",
-            "/tour-packages",
-            "/7-day-sri-lanka-tour",
-            "/8-day-sri-lanka-private-tour",
-            "/ella-day-tour",
-            "/galle-day-tour",
-            "/kandy-day-tour",
-            "/sigiriya-day-tour"
-          ]
+          "builder": "@angular/build:application",
+          "options": {
+                "browserTarget": "Travelwebsite:build:production",
+               "serverTarget": "Travelwebsite:server:production",
+            "routes": [
+              "/",
+              "/tour-packages",
+              "/7-day-sri-lanka-tour",
+              "/8-day-sri-lanka-private-tour",
+              "/ella-day-tour",
+              "/galle-day-tour",
+              "/kandy-day-tour",
+              "/sigiriya-day-tour"
+            ]
+          }
         }
       }
     }
