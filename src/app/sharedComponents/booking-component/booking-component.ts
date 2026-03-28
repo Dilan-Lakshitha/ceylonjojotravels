@@ -224,8 +224,6 @@ export class BookingComponent {
           }, 1500);
         },
         error: (err) => {
-          console.error('Email error:', err);
-
           this.toastr.error(
             'There was an error processing your booking. Please try again later.',
             'Booking Failed',

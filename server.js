@@ -36,7 +36,7 @@ app.post("/send-booking-email", async (req, res) => {
     const adminEmails = [
       "ceylonjojotravels@gmail.com",
       "dilanlakshitha194@gmail.com",
-      "shanikamadushani468@gmail.com"
+      "danulanimneth@gmail.com"
     ];
     const mailOptions = {
       from: '"Tour Booking" <ceylonjojotravels@gmail.com>',
