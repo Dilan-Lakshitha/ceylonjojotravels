@@ -104,16 +104,6 @@
       "routerLink": "/7-day-sri-lanka-tour"
     },
     {
-      "id": 12,
-      "title": "8 Day Sri Lanka Private Tour with 4 Star Hotels, Safari & Beach Stay",
-      "days": "8 days",
-      "persons": "1-20 Persons",
-      "rating": 5,
-      "filecode": "8-day-sri-lanka-private-tour",
-      "image": "assets/img/package-6.jpeg",
-      "routerLink": "/8-day-sri-lanka-private-tour"
-    },
-    {
       "id": 5,
       "title": "10 Day Sri Lanka Tour with 4 Star Hotels and Private Transportation",
       "days": "10 days",
