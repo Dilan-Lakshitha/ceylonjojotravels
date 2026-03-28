@@ -17,6 +17,8 @@ export class PackageItemComponent {
   @Input() price!: number;
   @Input() title!: string;
   @Input() routerLink!: string;
+  @Input() isBestseller: boolean = false;
+  @Input() isLimited: boolean = false;
 
   ngOnInit() {
   }
