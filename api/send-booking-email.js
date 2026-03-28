@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://sundowntours.com");
+  res.setHeader("Access-Control-Allow-Origin", "https://ceylonjojotravels.com");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
@@ -39,9 +39,9 @@ export default async function handler(req, res) {
     });
 
     const adminEmails = [
-      "sundowntoursrilanka@gmail.com",
+      "ceylonjojotravels@gmail.com",
       "dilanlakshitha194@gmail.com",
-      "shanikamadushani468@gmail.com",
+      "danulanimneth@gmail.com",
     ];
 
     const mailOptions = {
@@ -58,7 +58,7 @@ export default async function handler(req, res) {
               New Booking Notification
             </h1>
             <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">
-              Sundown Tours - Booking System
+              CEYLON JOJO TRAVElS - Booking System
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default async function handler(req, res) {
 
           <!-- Footer -->
           <div style="background-color: #f1f5f9; padding: 15px; text-align: center; font-size: 12px; color: #6b7280;">
-            © ${new Date().getFullYear()} Sundown Tours. All rights reserved.
+            © ${new Date().getFullYear()} CEYLON JOJO TRAVElS. All rights reserved.
           </div>
 
         </div>
@@ -155,7 +155,7 @@ export default async function handler(req, res) {
     await transporter.sendMail(mailOptions);
 
     const customerMailOptions = {
-      from: '"Sundown Tours"',
+      from: '"CEYLON JOJO TRAVElS"',
       to: email,
       subject: `Thank you for your booking! - ${tour.title}`,
       html: `
@@ -168,7 +168,7 @@ export default async function handler(req, res) {
               Booking Confirmation
             </h1>
             <p style="color:#cbd5e1;margin:5px 0 0;font-size:14px;">
-              Sundown Tours – Sri Lanka
+              CEYLON JOJO TRAVElS – Sri Lanka
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default async function handler(req, res) {
             </p>
 
             <p style="font-size:15px;line-height:1.6;">
-              Thank you for choosing <strong>Sundown Tours</strong>. 
+              Thank you for choosing <strong>CEYLON JOJO TRAVElS</strong>. 
               Your booking has been successfully received and confirmed. 
               Below are your booking details for your reference.
             </p>
@@ -228,8 +228,8 @@ export default async function handler(req, res) {
 
             <p style="margin-top:30px;font-size:15px;line-height:1.6;">
               Kind regards,<br/>
-              <strong>Sundown Tours Team</strong><br/>
-              No 302, Mahawaskaduwa,<br/>
+              <strong>CEYLON JOJO TRAVElS Team</strong><br/>
+              No 111/3 , Dediyawala Rd, Mahawaskaduwa,<br/>
               Waskaduwa, Kalutara North,<br/>
               Sri Lanka
             </p>
@@ -238,22 +238,22 @@ export default async function handler(req, res) {
 
             <p style="font-size:14px;line-height:1.6;color:#555;">
               📞 WhatsApp: 
-              <a href="https://wa.me/94763610738" 
+              <a href="https://wa.me/447375612946" 
                 style="color:#1e3a8a;text-decoration:none;font-weight:bold;">
-                +94 76 361 07 38
+                +44 73 75 612 946
               </a><br/>
               
               📧 Email: 
-              <a href="mailto:sundowntoursrilanka@gmail.com" 
+              <a href="mailto:ceylonjojotravels@gmail.com" 
                 style="color:#1e3a8a;text-decoration:none;">
-                sundowntoursrilanka@gmail.com
+                ceylonjojotravels@gmail.com
               </a>
             </p>
           </div>
 
           <!-- Footer -->
           <div style="background:#f1f5f9;padding:15px;text-align:center;font-size:12px;color:#6b7280;">
-            © ${new Date().getFullYear()} Sundown Tours. All rights reserved.
+            © ${new Date().getFullYear()} CEYLON JOJO TRAVElS. All rights reserved.
           </div>
 
         </div>

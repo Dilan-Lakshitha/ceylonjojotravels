@@ -1,5 +1,5 @@
   .uniform-icon {
-    color: #c05305; /* Bootstrap primary blue */
+    color: #023a2c; /* Bootstrap primary blue */
   }
 
   h5 {
@@ -35,7 +35,7 @@ ul {
 }
 
 .itinerary-header:hover {
-  background-color: #c05305;
+  background-color: #023a2c;
   color: #fff;
   transform: translateX(5px);
 }
@@ -81,7 +81,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #c05305 with 85% opacity */
+  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,7 @@ ul {
   position: absolute;
   top: 20px;
   right: 30px;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #c05305 with 85% opacity */
+  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
   border: none;
   color: white;
   font-size: 2rem;
@@ -116,11 +116,11 @@ ul {
 }
 
 .close-btn:hover {
-  background: rgba(192, 83, 5, 0.9); /* Updated to use #c05305 with 90% opacity */
+  background: rgba(192, 83, 5, 0.9); /* Updated to use #023a2c with 90% opacity */
 }
 
   .uniform-icon {
-    color: #c05305; /* Bootstrap primary blue */
+    color: #023a2c; /* Bootstrap primary blue */
   }
 
   h5 {
@@ -156,7 +156,7 @@ ul {
 }
 
 .itinerary-header:hover {
-  background-color: #c05305;
+  background-color: #023a2c;
   color: #fff;
   transform: translateX(5px);
 }
@@ -202,7 +202,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #c05305 with 85% opacity */
+  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +222,7 @@ ul {
   position: absolute;
   top: 20px;
   right: 30px;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #c05305 with 85% opacity */
+  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
   border: none;
   color: white;
   font-size: 2rem;
@@ -237,7 +237,7 @@ ul {
 }
 
 .close-btn:hover {
-  background: rgba(192, 83, 5, 0.9); /* Updated to use #c05305 with 90% opacity */
+  background: rgba(192, 83, 5, 0.9); /* Updated to use #023a2c with 90% opacity */
 }
 
 /* Scrollable area inside itinerary when too tall */

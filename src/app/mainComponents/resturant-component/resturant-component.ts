@@ -31,7 +31,7 @@ export class ResturantComponent {
       register();
     }
     this.title.setTitle(
-      'Sundown Beach Restaurant | Seafood & Sri Lankan Food in Waskaduwa',
+      'Ceylon JOJO Beach Restaurant | Seafood & Sri Lankan Food in Waskaduwa',
     );
 
     this.meta.updateTag({
@@ -58,7 +58,7 @@ export class ResturantComponent {
       script.text = JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Event',
-        name: 'Private Event Packages - Sundown Tours',
+        name: 'Private Event Packages - CEYLON JOJO TRAVElS',
         location: {
           '@type': 'Place',
           name: 'Sri Lanka',

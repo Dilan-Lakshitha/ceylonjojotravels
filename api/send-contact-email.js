@@ -36,9 +36,9 @@ res.setHeader("Access-Control-Allow-Headers", "Content-Type");
       },
     });
     const adminEmails = [
-      "sundowntoursrilanka@gmail.com",
+      "ceylonjojotravels@gmail.com",
       "dilanlakshitha194@gmail.com",
-      "shanikamadushani468@gmail.com"
+      "danulanimneth@gmail.com"
     ];
 
 
@@ -59,7 +59,7 @@ res.setHeader("Access-Control-Allow-Headers", "Content-Type");
     });
 
     await transporter.sendMail({
-      from: '"Sundown Tours"',
+      from: '"CEYLON JOJO TRAVElS"',
       to: email,
       subject: `We received your message, ${name}`,
       html: `
@@ -67,7 +67,7 @@ res.setHeader("Access-Control-Allow-Headers", "Content-Type");
           <h2>Thank you for contacting us, ${name}!</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p><strong>Your Message:</strong> ${message}</p>
-          <p>Best regards,<br/>Sundown Tours Team</p>
+          <p>Best regards,<br/>CEYLON JOJO TRAVElS Team</p>
         </div>
       `,
     });

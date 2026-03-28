@@ -17,30 +17,30 @@ body { top: 0px !important; }
     position: sticky;
     top: 0;
     z-index: 9999;
-    background: linear-gradient(90deg,#022d41, #c05305);
+    background: linear-gradient(90deg,#155A65, #023a2c);
 }
 
 .navbar-color .nav-link,
 .navbar-color .navbar-brand h1 {
-    color: #ffffff; /* White text */
+    color: #FAB92E; /* White text */
 }
 
 .navbar-color .nav-link:hover,
 .navbar-color .nav-link.active {
-    color: #ffffff; /* Optional: lighter shade for hover/active */
+    color: #FAB92E; /* Optional: lighter shade for hover/active */
 }
 
 .navbar-color .dropdown-menu {
-    background-color:#c96929; /* Match navbar background */
+    background-color:#155A65; /* Match navbar background */
 }
 
 .navbar-color .dropdown-item {
-    color: #c96929; /* Text color */
+    color: #155A65; /* Text color */
 }
 
 .navbar-color .dropdown-item:hover {
-    background-color: #ffffff; /* Lighter hover effect */
-    color: #c96929; /* Text color on hover */
+    background-color: #FAB92E; /* Lighter hover effect */
+    color: #155A65; /* Text color on hover */
 }
 @media (max-width: 768px) {
 
@@ -116,7 +116,7 @@ body { top: 0px !important; }
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #b34c02;        /* dark pill */
+  background: #023a2c;        /* dark pill */
   padding: 4px 8px;
   border-radius: 999px;
   margin-right: 12px;

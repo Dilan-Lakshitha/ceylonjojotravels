@@ -176,7 +176,7 @@ export class BookingComponent {
 
     if (this.travelers >= 7) {
       this.groupNotice =
-        'For groups of 7 or more travelers, please contact sundowntoursrilanka@gmail.com for a customized group tour arrangement.';
+        'For groups of 7 or more travelers, please contact ceylonjojotravels@gmail.com for a customized group tour arrangement.';
     } else {
       this.groupNotice = '';
     }

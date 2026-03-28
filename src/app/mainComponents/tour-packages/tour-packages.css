@@ -3,9 +3,9 @@
   font-weight: 600;
   font-size: 1.1rem;
   background: transparent;
-  border: 2px solid #c05305; /* primary outline */
+  border: 2px solid #023a2c; /* primary outline */
   border-radius: 50px;
-  color: #c05305;
+  color: #023a2c;
   cursor: pointer;
   margin:10px 10px 10px 10px;
   transition: all 0.4s ease;
@@ -13,14 +13,14 @@
 }
 
 .tab-btn-outline:hover {
-  background-color: #c05305;
+  background-color: #023a2c;
   color: white;
 }
 
 .tab-btn-outline.active {
-  background-color: #c05305;
+  background-color: #023a2c;
   color: white;
-  box-shadow: 0 8px 20px #c05305;
+  box-shadow: 0 8px 20px #023a2c;
 }
 
 
@@ -30,7 +30,7 @@
 }
 .package-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 20px 35px #c05305;
+  box-shadow: 0 20px 35px #023a2c;
 }
 
 /* Optional: fade in animation for cards */
