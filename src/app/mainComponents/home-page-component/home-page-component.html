@@ -588,43 +588,8 @@
 <!-- Team End -->
 
 
-<!-- Testimonial Start -->
-<div class="testimonial-section text-center">
-    <h6 class="text-primary text-uppercase" style="letter-spacing:5px;">Testimonials</h6>
-    <h1>Customer Reviews</h1>
+<div class="elfsight-app-0b6d4072-a733-446b-8aaa-c737f5a83c4a" data-elfsight-app-lazy></div>
 
-    <div class="testimonial-slider position-relative">
-        <!-- Previous Button
-        <button class="nav-btn prev" (click)="prev()">&#10094;</button> -->
-
-        <!-- Review Cards -->
-        <div class="testimonial-cards">
-            <div class="testimonial-card" *ngFor="let review of reviews; let i = index"
-                [class.active]="i === currentIndex">
-                <div class="speech-bubble">
-                    <div class="rating">
-                        <i *ngFor="let r of [].constructor(review.rating)" class="fa fa-circle text-success"></i>
-                    </div>
-                    <p>{{ review.comment }}</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-                <div class="profile-image">
-                    <img [src]="review.photo" alt="{{review.name}}">
-                    <h5>{{ review.name }}</h5>
-                    <small>{{ review.date }}</small>
-                </div>
-            </div>
-        </div>
-
-        <!-- Next Button -->
-        <!-- <button class="nav-btn next" (click)="next()">&#10095;</button> -->
-
-        <!-- Dots -->
-        <div class="dots">
-            <span *ngFor="let r of reviews; let i = index" (click)="goTo(i)" [class.active]="i === currentIndex"></span>
-        </div>
-    </div>
-</div>
 <section class="container py-5 text-center">
     <h2 class="mb-4">Popular Sri Lanka Tours</h2>
 
