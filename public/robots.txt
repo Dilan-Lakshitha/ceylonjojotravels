@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ceylonjojotravels.com/sitemap.xml
+Sitemap: https://ceylonjojotravels.com/sitemap.xml
