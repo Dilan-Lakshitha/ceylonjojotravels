@@ -1,17 +1,4 @@
-#google_translate_element select,
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
-.goog-te-banner-frame.skiptranslate { display: none !important; }
 body { top: 0px !important; }
-
-.translate-flags img {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  margin: 0 5px;
-}
 
 .navbar-color {
     position: sticky;

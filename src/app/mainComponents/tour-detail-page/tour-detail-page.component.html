@@ -1,0 +1,57 @@
+<div class="container-fluid" *ngIf="tour">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-7 text-center">
+      <div class="d-flex align-items-start">
+        <div class="main-image-container">
+          <img [src]="currentImage" class="main-img rounded shadow" [alt]="tour.title" />
+          <div class="indicators">
+            <span
+              *ngFor="let img of images; let i = index"
+              (click)="goToImage(i)"
+              [class.active-indicator]="i === currentIndex"
+              class="indicator-dot"
+            ></span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column thumbs">
+          <div *ngFor="let img of nextImages" class="thumb-img" (click)="goToImageFromThumb(img.index)">
+            <img [src]="img.src" class="img-thumbnail rounded" alt="Preview" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-4" *ngIf="tour">
+  <app-tour-details-component [tour]="tour"></app-tour-details-component>
+</div>
+
+<div class="container-fluid py-5" *transloco="let t; scope: 'common'; prefix: 'common'">
+  <div class="container pt-5 pb-3">
+    <div class="text-center mb-3 pb-3">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('packages.header') }}</h6>
+      <h1>{{ t('packages.title') }}</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let item of selectedTours">
+        <app-package-item-component
+          [image]="item.image"
+          [days]="item.days"
+          [persons]="item.persons"
+          [rating]="item.rating"
+          [price]="item.price"
+          [title]="item.title"
+          [routerLink]="item.link"
+          [isBestseller]="!!item.isBestseller"
+          [isLimited]="!!item.isLimited"
+        ></app-package-item-component>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="fixed-booking-btn" (click)="bookNow()" *transloco="let t; scope: 'common'; prefix: 'common'">
+  <i class="fa fa-calendar-check mr-2"></i> {{ t('btn.bookNow') }}
+</button>

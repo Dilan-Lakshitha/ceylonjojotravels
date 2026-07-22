@@ -1,11 +1,17 @@
-import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
-import toursData from '../../databaseJson/tours.json';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { PackageItemComponent } from '../../sharedComponents/package-item-component/package-item-component';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from '../../sharedComponents/contact-us-component/contact-us-component';
 import { HttpClient } from '@angular/common/http';
+import { TranslocoModule } from '@jsverse/transloco';
+import { Subscription } from 'rxjs';
 import { CountryService } from '../../Services/country.service';
+import { TourContentService, TourCatalogItem } from '../../i18n/tour-content.service';
+import { LocalizedRouterService } from '../../i18n/localized-router.service';
+import { TourId } from '../../i18n/tour-slug-map';
+
+type PricedTour = TourCatalogItem & { price: number; link: any[] };
 
 @Component({
   selector: 'app-home-page-component',
@@ -15,19 +21,24 @@ import { CountryService } from '../../Services/country.service';
     PackageItemComponent,
     RouterModule,
     ContactUsComponent,
+    TranslocoModule,
   ],
   templateUrl: './home-page-component.html',
   styleUrl: './home-page-component.css',
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit, OnDestroy {
   homecontact = true;
-  dayTours: any[] = [];
-  multiDayTours: any[] = [];
+  dayTours: PricedTour[] = [];
+  multiDayTours: PricedTour[] = [];
   currentIndex = 0;
   interval: any;
   userCountry = 'US';
-
   activeTab: 'multi' | 'day' = 'multi';
+  contactLink: any[] = ['/', 'en', 'contact'];
+  tour7Link: any[] = ['/', 'en', 'tours', '7-day-sri-lanka-tour'];
+  tour8Link: any[] = ['/', 'en', 'tours', '8-day-sri-lanka-private-tour'];
+  ellaLink: any[] = ['/', 'en', 'tours', 'ella-day-tour'];
+  sigiriyaLink: any[] = ['/', 'en', 'tours', 'sigiriya-day-tour'];
 
   reviews = [
     {
@@ -68,42 +79,45 @@ export class HomePageComponent {
     },
   ];
 
-  constructor(
-    private http: HttpClient,
-    private countryService: CountryService,
-    @Inject(PLATFORM_ID) private platformId: Object,
-  ) {}
+  private readonly http = inject(HttpClient);
+  private readonly countryService = inject(CountryService);
+  private readonly tourContent = inject(TourContentService);
+  private readonly localizedRouter = inject(LocalizedRouterService);
+  private sub?: Subscription;
 
-  async ngOnInit() {
-    const isBrowser = isPlatformBrowser(this.platformId);
-    if (!isBrowser) {
-      this.userCountry = 'US';
-      this.multiDayTours = toursData.multiDayTours.slice(0, 3);
-      return;
-    }
-    
-    
-    try {
-      this.userCountry = await this.countryService.detectCountry();
-      this.dayTours = await this.loadToursWithPrices(toursData.dayTours);
-      this.multiDayTours = await this.loadToursWithPrices(
-        toursData.multiDayTours,
-      );
-      this.autoSlide();
-    } catch (error) {
-      console.error('Browser data load failed:', error);
-    }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit(): void {
+    this.contactLink = this.localizedRouter.commandsFor('contact');
+    this.tour7Link = this.localizedRouter.tourLinkCommands('7-day-sri-lanka-tour');
+    this.tour8Link = this.localizedRouter.tourLinkCommands('8-day-sri-lanka-private-tour');
+    this.ellaLink = this.localizedRouter.tourLinkCommands('ella-day-tour');
+    this.sigiriyaLink = this.localizedRouter.tourLinkCommands('sigiriya-day-tour');
+
+    this.sub = this.tourContent.getCatalog().subscribe(async (catalog) => {
+      if (isPlatformBrowser(this.platformId)) {
+        this.userCountry = await this.countryService.detectCountry();
+        this.autoSlide();
+      }
+      this.dayTours = await this.withPrices(catalog.dayTours);
+      this.multiDayTours = await this.withPrices(catalog.multiDayTours);
+    });
   }
 
   setTab(tab: 'multi' | 'day') {
     this.activeTab = tab;
   }
 
-  async loadToursWithPrices(tours: any[]) {
+  private async withPrices(tours: TourCatalogItem[]): Promise<PricedTour[]> {
     return Promise.all(
       tours.map(async (tour) => {
         const price = await this.loadPrice(tour.filecode);
-        return { ...tour, price };
+        const tourId = (tour.filecode || tour.id) as TourId;
+        return {
+          ...tour,
+          price,
+          link: this.localizedRouter.tourLinkCommands(tourId),
+        };
       }),
     );
   }
@@ -112,20 +126,17 @@ export class HomePageComponent {
     if (!isPlatformBrowser(this.platformId)) {
       return Promise.resolve(0);
     }
-
     const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
     const defaultFile = `assets/data/US${filecode}.json`;
-    console.log(countryFile,'default',defaultFile)
-
     return new Promise((resolve) => {
       this.http.get(countryFile).subscribe({
         next: (data: any) => resolve(data?.price?.['2'] ?? 0),
         error: () => {
           this.http.get(defaultFile).subscribe({
             next: (data: any) => resolve(data?.price?.['2'] ?? 0),
-            error: () => resolve(0)
+            error: () => resolve(0),
           });
-        }
+        },
       });
     });
   }
@@ -148,12 +159,20 @@ export class HomePageComponent {
       this.next();
     }, 5000);
   }
+
   scrollToSection(sectionId: string) {
     if (isPlatformBrowser(this.platformId)) {
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.sub?.unsubscribe();
+    if (this.interval) {
+      clearInterval(this.interval);
     }
   }
 }

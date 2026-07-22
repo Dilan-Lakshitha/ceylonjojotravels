@@ -1,0 +1,2726 @@
+{
+  "catalog": {
+    "dayTours": [
+      {
+        "id": "ella-day-tour",
+        "title": "Ella Tagesausflug",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "ella-day-tour",
+        "image": "assets/img/onedayTour/ella/7.jpeg",
+        "routerLink": "/ella-tagesausflug",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "ella-tagesausflug"
+      },
+      {
+        "id": "galle-day-tour",
+        "title": "Galle Tagesausflug",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "galle-day-tour",
+        "image": "assets/img/onedayTour/Galle/7.jpg",
+        "routerLink": "/galle-tagesausflug",
+        "isBestseller": true,
+        "isLimited": false,
+        "slug": "galle-tagesausflug"
+      },
+      {
+        "id": "kandy-day-tour",
+        "title": "Kandy Tagesausflug",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "kandy-day-tour",
+        "image": "assets/img/onedayTour/kandy/3.jpg",
+        "routerLink": "/kandy-tagesausflug",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "kandy-tagesausflug"
+      },
+      {
+        "id": "sigiriya-day-tour",
+        "title": "Sigiriya Tagesausflug",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "sigiriya-day-tour",
+        "image": "assets/img/onedayTour/Sigiriya/3.jpg",
+        "routerLink": "/sigiriya-tagesausflug",
+        "isBestseller": true,
+        "isLimited": false,
+        "slug": "sigiriya-tagesausflug"
+      }
+    ],
+    "multiDayTours": [
+      {
+        "id": "2-day-ella-yala-private-tour-sri-lanka",
+        "title": "2 Tage: Ella & Yala-Safari",
+        "days": "2 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+        "image": "assets/img/5daysTours/24.jpg",
+        "routerLink": "/2-tage-ella-yala-safari",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "2-tage-ella-yala-safari"
+      },
+      {
+        "id": "2-day-ella-kandy-private-tour-sri-lanka",
+        "title": "2 Tage: Ella & Kandy",
+        "days": "2 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+        "image": "assets/img/package-3.jpg",
+        "routerLink": "/2-tage-ella-kandy-privattour",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "2-tage-ella-kandy-privattour"
+      },
+      {
+        "id": "4-day-sri-lanka-tour",
+        "title": "4-Tage Sri-Lanka-Rundreise",
+        "days": "4 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "4-day-sri-lanka-tour",
+        "image": "assets/img/package-8.jpeg",
+        "routerLink": "/4-tage-sri-lanka-rundreise",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "4-tage-sri-lanka-rundreise"
+      },
+      {
+        "id": "5-day-sri-lanka-tour",
+        "title": "5-Tage Sri-Lanka-Rundreise",
+        "days": "5 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "5-day-sri-lanka-tour",
+        "image": "assets/img/package-4.jpeg",
+        "routerLink": "/5-tage-sri-lanka-rundreise",
+        "isBestseller": false,
+        "isLimited": true,
+        "slug": "5-tage-sri-lanka-rundreise"
+      },
+      {
+        "id": "6-day-sri-lanka-private-tour",
+        "title": "6-Tage private Rundreise",
+        "days": "6 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "6-day-sri-lanka-private-tour",
+        "image": "assets/img/package-7.jpeg",
+        "routerLink": "/6-tage-sri-lanka-privattour",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "6-tage-sri-lanka-privattour"
+      },
+      {
+        "id": "7-day-sri-lanka-tour",
+        "title": "7-Tage Sri-Lanka-Rundreise",
+        "days": "7 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "7-day-sri-lanka-tour",
+        "image": "assets/img/package-1.jpeg",
+        "routerLink": "/7-tage-sri-lanka-rundreise",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "7-tage-sri-lanka-rundreise"
+      },
+      {
+        "id": "10-day-sri-lanka-tour",
+        "title": "10-Tage Sri-Lanka-Rundreise",
+        "days": "10 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "10-day-sri-lanka-tour",
+        "image": "assets/img/package-2.jpg",
+        "routerLink": "/10-tage-sri-lanka-rundreise",
+        "isBestseller": false,
+        "isLimited": true,
+        "slug": "10-tage-sri-lanka-rundreise"
+      },
+      {
+        "id": "8-day-sri-lanka-private-tour",
+        "title": "8-Tage private Rundreise",
+        "days": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "8-day-sri-lanka-private-tour",
+        "image": "assets/img/7dayschange/2.jpeg",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "8-tage-sri-lanka-privattour"
+      }
+    ]
+  },
+  "details": {
+    "ella-day-tour": {
+      "id": "ella-day-tour",
+      "slug": "ella-tagesausflug",
+      "title": "Ella Tagesausflug",
+      "description": "Privater Ausflug: Nine Arches Bridge, Little Adam’s Peak und Ravana-Fälle.",
+      "duration": "Ein Tag",
+      "persons": "20 Persons",
+      "filecode": "ella-day-tour",
+      "overview": "Privater Ausflug: Nine Arches Bridge, Little Adam’s Peak und Ravana-Fälle.",
+      "tourType": "Tagestour",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Neun-Bogen-Brücke",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Neun-Bogen-Brücke",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Die majestätische Neunbogenbrücke ist einer der vielen Gründe dafür. Die prächtige Neun-Bogen-Brücke zwischen Ella und dem Bahnhof Demodara ist eines der Ingenieurswunder des frühen 20. Jahrhunderts",
+              "image": "assets/img/onedayTour/ella/1.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Ella Zugfahrten",
+                "icon": "fa-train",
+                "color": "#063764ff"
+              },
+              "description": "Ella Zugfahrt ist die schönste Zugfahrt in Sri Lanka, wenn nicht in der Welt! Steigen Sie in den Zug und erleben Sie atemberaubende Ausblicke auf üppige Grünteeplantagen, Berge, Viadukte, Täler usw.",
+              "image": "assets/img/onedayTour/ella/3.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Little Adams Peak",
+                "icon": "fa-leaf",
+                "color": "#0f6935ff"
+              },
+              "description": "Es ist 1141 m hoch und vom Eingang dauert es bis zu 30-45 Minuten für die Wanderung. Die Aussicht vom Gipfel ist unglaublich. 360-Grad-Panoramablick.",
+              "image": "assets/img/onedayTour/ella/6.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Wasserfall Ravana",
+                "icon": "fa-water",
+                "color": "#8e44ad"
+              },
+              "description": "Ravana Falls, einer der breitesten Wasserfälle des Landes. Die Wasserfälle sind ziemlich beeindruckend, und Sie können über einige der Felsen klettern, um einen genaueren Blick darauf zu werfen.",
+              "image": "assets/img/onedayTour/ella/2.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "elefantenwaisenhaus udawalawa",
+                "icon": "fa-elephant",
+                "color": "#8e44ad"
+              },
+              "description": "4. Halt: Sie können eine animierte Gruppe von etwa 20 oder 30 jugendlichen und jugendlichen Dickhäutern beobachten, die viermal täglich gefüttert werden.",
+              "image": "assets/img/onedayTour/ella/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Unterkunft & Verpflegung des Fahrers",
+        "Abholung und Rückfahrt",
+        "Kraftstoff- und Parkgebühren",
+        "24-Stunden-Betrieb",
+        "Unbegrenzte Kilometerzahl für die gesamte Rundtour",
+        "Ihre Unterkunft"
+      ],
+      "excludes": [
+        "Restaurant & Bar",
+        "Eintritts- & Aktivitätsgebühren"
+      ]
+    },
+    "galle-day-tour": {
+      "id": "galle-day-tour",
+      "slug": "galle-tagesausflug",
+      "title": "Galle Tagesausflug",
+      "description": "Fort Galle und die Südküste in einer privaten Tour.",
+      "duration": "Ein Tag",
+      "persons": "20 Persons",
+      "filecode": "galle-day-tour",
+      "overview": "Fort Galle und die Südküste in einer privaten Tour.",
+      "tourType": "Tagestour",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Tagesausflugsroute durch Galle",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Tagesausflugsroute durch Galle",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Besuchen Sie eine Meeresschildkrötenbrüterei und erfahren Sie mehr über Naturschutzbemühungen, während Sie verschiedene Schildkrötenarten beobachten.",
+              "image": "assets/img/onedayTour/Galle/6.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Niederländisches Fort Galle",
+                "icon": "fa-Galle Dutch Fort",
+                "color": "#8e44ad"
+              },
+              "description": "Erkunden Sie das UNESCO-Weltkulturerbe Galle Dutch Fort, das reich an kolonialer Geschichte und atemberaubendem Meerblick ist.",
+              "image": "assets/img/onedayTour/Galle/5.jpg"
+            },
+            {
+              "type": "Aktivität",
+              "title": {
+                "title": "Bootsfahrt auf dem Bentota River",
+                "icon": "fa-ship",
+                "color": "#2980b9"
+              },
+              "description": "Genießen Sie eine entspannende Bootsfahrt entlang des Bentota-Flusses, umgeben von Mangroven und Wildtieren.",
+              "image": "assets/img/onedayTour/Galle/3.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Tsunami-Denkmal",
+                "icon": "fa-monument",
+                "color": "#c0392b"
+              },
+              "description": "Besuchen Sie das Tsunami-Denkmal und erfahren Sie mehr über den Tsunami von 2004 und seine Auswirkungen auf Sri Lanka.",
+              "image": "assets/img/onedayTour/Galle/8.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Mondstein-Minenzentrum",
+                "icon": "fa-gem",
+                "color": "#f39c12"
+              },
+              "description": "Entdecken Sie, wie Sri Lankas berühmte Mondsteine abgebaut und verarbeitet werden.",
+              "image": "assets/img/onedayTour/Galle/9.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Alle Eintrittsgelder für Attraktionen",
+        "Autobahnfahrkarten und Parkgebühren",
+        "Englischsprachiger Berufskraftfahrer",
+        "Privates klimatisiertes Fahrzeug"
+      ],
+      "excludes": [
+        "Restaurant & Bar",
+        "Eintritts- & Aktivitätsgebühren"
+      ]
+    },
+    "kandy-day-tour": {
+      "id": "kandy-day-tour",
+      "slug": "kandy-tagesausflug",
+      "title": "Kandy Tagesausflug",
+      "description": "Zahntempel und Highlights der Stadt Kandy.",
+      "duration": "Ein Tag",
+      "persons": "20 Persons",
+      "filecode": "kandy-day-tour",
+      "overview": "Zahntempel und Highlights der Stadt Kandy.",
+      "tourType": "Tagestour",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Tagesausflug nach Kandy",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Tagesausflug nach Kandy",
+                "icon": "fa-car",
+                "color": "#f39c12"
+              },
+              "description": "Beobachten Sie Elefanten aus nächster Nähe und erfahren Sie mehr über Elefantenpflege und -schutz.",
+              "image": "assets/img/onedayTour/kandy/3.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Millennium Elephant Foundation / Pinnawala Elefantenwaisenhaus",
+                "icon": "fa-elephant",
+                "color": "#8e44ad"
+              },
+              "description": "Beobachten Sie Elefanten aus nächster Nähe und erfahren Sie mehr über Elefantenpflege und -schutz.",
+              "image": "assets/img/onedayTour/kandy/1.jpg"
+            },
+            {
+              "type": "Aktivität",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Besuchen Sie den heiligsten buddhistischen Tempel Sri Lankas im Herzen von Kandy.",
+              "image": "assets/img/onedayTour/kandy/3.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Teefabrik & Teeplantage",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Erkunden Sie eine Teefabrik und Plantage und erfahren Sie, wie der weltberühmte Ceylon-Tee hergestellt wird.",
+              "image": "assets/img/onedayTour/kandy/5.jpg"
+            },
+            {
+              "type": "Sehenswürdigkeiten",
+              "title": {
+                "title": "Kandy Lake & Aussichtspunkt",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Genießen Sie die malerische Aussicht auf die Stadt Kandy und entspannen Sie sich am malerischen Kandy Lake.",
+              "image": "assets/img/onedayTour/kandy/6.jpg"
+            },
+            {
+              "type": "Optionaler Besuch",
+              "title": {
+                "title": "Kräuter- & Gewürzgarten",
+                "icon": "fa-seedling",
+                "color": "#16a085"
+              },
+              "description": "Optional besuchen Sie einen Kräuter- und Gewürzgarten, um mehr über srilankische Gewürze und Kräuter zu erfahren.",
+              "image": "assets/img/onedayTour/kandy/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Alle Eintrittsgelder für Attraktionen",
+        "Autobahnfahrkarten und Parkgebühren",
+        "Englischsprachiger Berufskraftfahrer",
+        "Privates klimatisiertes Fahrzeug"
+      ],
+      "excludes": [
+        "Restaurant & Bar",
+        "Eintritts- & Aktivitätsgebühren"
+      ]
+    },
+    "sigiriya-day-tour": {
+      "id": "sigiriya-day-tour",
+      "slug": "sigiriya-tagesausflug",
+      "title": "Sigiriya Tagesausflug",
+      "description": "Löwenfelsen Sigiriya und königliche Gärten.",
+      "duration": "Ein Tag",
+      "persons": "20 Persons",
+      "filecode": "sigiriya-day-tour",
+      "overview": "Löwenfelsen Sigiriya und königliche Gärten.",
+      "tourType": "Tagestour",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Tagesausflug nach Sigiriya",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Tagesausflug nach Sigiriya",
+                "icon": "fa-car",
+                "color": "#f39c12"
+              },
+              "description": "Abholung von Ihrem Hotel in einem komfortablen privaten klimatisierten Fahrzeug.",
+              "image": "assets/img/onedayTour/Sigiriya/1.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Goldener Höhlentempel – Dambulla",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Besuchen Sie den zum UNESCO-Weltkulturerbe gehörenden Höhlentempel Dambulla, der für seine antiken Wandgemälde und Buddha-Statuen berühmt ist.",
+              "image": "assets/img/onedayTour/Sigiriya/6.jpg"
+            },
+            {
+              "type": "Aktivität",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Besuchen Sie den heiligsten buddhistischen Tempel Sri Lankas im Herzen von Kandy.",
+              "image": "assets/img/onedayTour/Sigiriya/7.jpg"
+            },
+            {
+              "type": "Abenteuer",
+              "title": {
+                "title": "Sigiriya oder Pidurangala Klettern",
+                "icon": "fa-mountain",
+                "color": "#f39c12"
+              },
+              "description": "Erklimmen Sie entweder die berühmte Sigiriya-Felsenfestung oder den Pidurangala-Felsen, um einen atemberaubenden Panoramablick zu genießen.",
+              "image": "assets/img/onedayTour/Sigiriya/8.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari mit wilden Elefanten",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Erleben Sie eine aufregende Safari mit wilden Elefanten in einem Nationalpark (Jeep & Eintrittskarten nicht inbegriffen).",
+              "image": "assets/img/onedayTour/Sigiriya/9.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Alle Eintrittsgelder für Attraktionen (außer Safarieintritt und Jeep)",
+        "Autobahnfahrkarten und Parkgebühren",
+        "Englischsprachiger Berufskraftfahrer",
+        "Privates klimatisiertes Fahrzeug",
+        "Mittagessen"
+      ],
+      "excludes": [
+        "Safari-Eintrittskarten und Jeep",
+        "Personal expenses"
+      ]
+    },
+    "2-day-ella-kandy-private-tour-sri-lanka": {
+      "id": "2-day-ella-kandy-private-tour-sri-lanka",
+      "slug": "2-tage-ella-kandy-privattour",
+      "title": "2 Tage: Ella & Kandy",
+      "description": "Udawalawe, Ella, Ramboda und Zahntempel.",
+      "duration": "2 Tage",
+      "persons": "Private Tour (1-20 Persons)",
+      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+      "overview": "Udawalawe, Ella, Ramboda und Zahntempel.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Abenteuer in Udawalawa & Ella",
+          "activities": [
+            {
+              "type": "Wildlife-Entdeckung",
+              "title": {
+                "title": "Udawalawa Elephant Transit Home",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Besuchen Sie das Udawalawa Elephant Transit Home und beobachten Sie, wie gerettete Elefantenbabys gepflegt und rehabilitiert werden, bevor sie in die Wildnis zurückkehren.",
+              "image": "assets/img/2daysTours/7.jpg"
+            },
+            {
+              "type": "Malerischer Besuch",
+              "title": {
+                "title": "Neunbogenbrücke",
+                "icon": "fa-train",
+                "color": "#8e44ad"
+              },
+              "description": "Erkunden Sie die legendäre Nine Arch Bridge in Ella, umgeben von üppigem Grün und atemberaubenden Ausblicken auf die Hügel.",
+              "image": "assets/img/2daysTours/5.jpg"
+            },
+            {
+              "type": "Wandern",
+              "title": {
+                "title": "Little Adam's Peak",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Genießen Sie eine kurze malerische Wanderung zum Little Adam's Peak mit Panoramablick auf Ella Gap und die umliegenden Teeplantagen.",
+              "image": "assets/img/2daysTours/9.jpg"
+            },
+            {
+              "type": "Abenteuer",
+              "title": {
+                "title": "Flying Ravana Seilrutsche",
+                "icon": "fa-bolt",
+                "color": "#e74c3c"
+              },
+              "description": "Erleben Sie aufregendes Zip-Lining im Flying Ravana Adventure Park mit Blick auf die atemberaubende Ella-Landschaft.",
+              "image": "assets/img/2daysTours/10.jpg"
+            },
+            {
+              "type": "Wasserfallbesuch",
+              "title": {
+                "title": "Ravana Falls",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie die wunderschönen Ravana-Wasserfälle, einen der berühmtesten Wasserfälle Sri Lankas in der Nähe von Ella.",
+              "image": "assets/img/2daysTours/11.jpg"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Kulturelle Tour durch das Hügelland & Kandy",
+          "activities": [
+            {
+              "type": "Wasserfallbesuch",
+              "title": {
+                "title": "Ramboda Falls",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Halten Sie an den Ramboda-Wasserfällen, einem atemberaubenden Wasserfall in Sri Lankas malerischem Hügelland.",
+              "image": "assets/img/2daysTours/13.jpg"
+            },
+            {
+              "type": "Besichtigung des malerischen Turms",
+              "title": {
+                "title": "Ambuluwawa-Turm",
+                "icon": "fa-mountain",
+                "color": "#9b59b6"
+              },
+              "description": "Erklimmen Sie den einzigartigen Ambuluwawa Biodiversity Tower und genießen Sie einen atemberaubenden 360-Grad-Blick auf die umliegenden Berge.",
+              "image": "assets/img/2daysTours/12.jpg"
+            },
+            {
+              "type": "Kulturbesuch",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-place-of-worship",
+                "color": "#d35400"
+              },
+              "description": "Besuchen Sie den heiligen Zahntempel in Kandy, eine der wichtigsten buddhistischen Stätten der Welt.",
+              "image": "assets/img/2daysTours/4.jpg"
+            },
+            {
+              "type": "Wildlife-Entdeckung",
+              "title": {
+                "title": "Pinnawala Elefantenwaisenhaus",
+                "icon": "fa-paw",
+                "color": "#16a085"
+              },
+              "description": "Beobachten Sie Elefanten beim Baden und Füttern im berühmten Pinnawala Elephant Orphanage.",
+              "image": "assets/img/2daysTours/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Unterkunft & Verpflegung des Fahrers",
+        "Abholung & Rückgabe am Flughafen/Hotel",
+        "Kraftstoff- und Parkgebühren",
+        "24-Stunden-Betrieb",
+        "Unbegrenzte Kilometer für die gesamte Tour"
+      ],
+      "excludes": [
+        "Eintritts- & Aktivitätsgebühren",
+        "Restaurant & Bar",
+        "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ]
+    },
+    "2-day-ella-yala-private-tour-sri-lanka": {
+      "id": "2-day-ella-yala-private-tour-sri-lanka",
+      "slug": "2-tage-ella-yala-safari",
+      "title": "2 Tage: Ella & Yala-Safari",
+      "description": "Ella und Safari im Yala-Nationalpark.",
+      "duration": "2 Tage",
+      "persons": "Private Tour (1-20 Persons)",
+      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+      "overview": "Ella und Safari im Yala-Nationalpark.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Ella-Abenteuer",
+          "activities": [
+            {
+              "type": "Malerischer Besuch",
+              "title": {
+                "title": "Neunbogenbrücke",
+                "icon": "fa-train",
+                "color": "#8e44ad"
+              },
+              "description": "Erkunden Sie die legendäre Nine Arch Bridge in Ella, umgeben von üppigem Grün und atemberaubenden Ausblicken auf die Hügel.",
+              "image": "assets/img/2daysTours/5.jpg"
+            },
+            {
+              "type": "Wandern",
+              "title": {
+                "title": "Little Adam's Peak",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Genießen Sie eine kurze malerische Wanderung zum Little Adam's Peak mit Panoramablick auf Ella Gap und die umliegenden Teeplantagen.",
+              "image": "assets/img/2daysTours/9.jpg"
+            },
+            {
+              "type": "Abenteuer",
+              "title": {
+                "title": "Flying Ravana Seilrutsche",
+                "icon": "fa-bolt",
+                "color": "#e74c3c"
+              },
+              "description": "Erleben Sie aufregendes Zip-Lining im Flying Ravana Adventure Park mit Blick auf die atemberaubende Ella-Landschaft.",
+              "image": "assets/img/2daysTours/10.jpg"
+            },
+            {
+              "type": "Wasserfallbesuch",
+              "title": {
+                "title": "Ravana Falls",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie die wunderschönen Ravana-Wasserfälle, einen der berühmtesten Wasserfälle Sri Lankas in der Nähe von Ella.",
+              "image": "assets/img/2daysTours/11.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Eiche Ray Ella Gap Hotel",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Unterkunft im Oak Ray Ella Gap Hotel oder ähnlich - HB Basis",
+              "image": "assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Yala Safari",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Nationalpark",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Yala ist die Heimat von 44 Säugetierarten und 215 Vogelarten. Zu den berühmtesten Bewohnern gehört die weltweit größte Konzentration von Leoparden",
+              "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Ravana Falls",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Die Ravana Falls sind in Mythen und Folklore verwurzelt. Es wird angenommen, dass der Dämonenkönig Ravana aus dem epischen Ramayan Sita in der Höhle hinter dem Wasserfall versteckte, nachdem er sie entführt und zurückgebracht hatte",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Unterkunft & Verpflegung des Fahrers",
+        "Abholung & Rückgabe am Flughafen/Hotel",
+        "Kraftstoff- und Parkgebühren",
+        "24-Stunden-Betrieb",
+        "Unbegrenzte Kilometer für die gesamte Tour"
+      ],
+      "excludes": [
+        "Eintritts- & Aktivitätsgebühren",
+        "Restaurant & Bar",
+        "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ]
+    },
+    "4-day-sri-lanka-tour": {
+      "id": "4-day-sri-lanka-tour",
+      "slug": "4-tage-sri-lanka-rundreise",
+      "title": "4-Tage Sri-Lanka-Rundreise",
+      "description": "Sigiriya, Kandy, Ella und Yala in 4 Tagen.",
+      "duration": "4 Tage",
+      "persons": "1-20 Persons",
+      "filecode": "4-day-sri-lanka-tour",
+      "overview": "Sigiriya, Kandy, Ella und Yala in 4 Tagen.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Flughafen / Hotel – Kandy Kulturerlebnis",
+          "activities": [
+            {
+              "type": "Wildlife-Entdeckung",
+              "title": {
+                "title": "Pinnawala Elefantenwaisenhaus",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Besuchen Sie das berühmte Pinnawala Elephant Orphanage, in dem gerettete Elefanten gepflegt und geschützt werden. Beobachten Sie Elefanten beim Baden im Fluss und erfahren Sie mehr über Naturschutzbemühungen.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Kulturbesuch",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Erkunden Sie Sri Dalada Maligawa, einen der heiligsten buddhistischen Tempel der Welt, der die heilige Zahnreliquie von Lord Buddha beherbergt.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Kulturerlebnis",
+              "title": {
+                "title": "Kandy Kulturelle Tanzshow",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Genießen Sie eine traditionelle Kandyan-Tanzperformance mit Feuerspaziergang, Trommeln und lebendigen kulturellen Kostümen.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Schöne Aussicht",
+              "title": {
+                "title": "Aussichtspunkt Kandy",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Halten Sie am Kandy View Point, um einen Panoramablick auf die Stadt Kandy, den See und die umliegenden Hügel zu genießen.",
+              "image": "assets/img/5daysTours/476465443_947365727374414_5703532547629723678_n.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Übernachtung im Topez Hotel in Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachten Sie in einem komfortablen Sterne-Hotel in Kandy mit Halbpension.",
+              "extra": [
+                "Abendessen inbegriffen",
+                "Privates Zimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Kandy – Ella Hill Country Reise",
+          "activities": [
+            {
+              "type": "natur",
+              "title": {
+                "title": "Königlicher Botanischer Garten Peradeniya",
+                "icon": "fa-tree",
+                "color": "#2ecc71"
+              },
+              "description": "Spazieren Sie durch einen der schönsten botanischen Gärten Asiens mit Orchideen, Palmen, Bambus und tropischen Pflanzen.",
+              "image": "assets/img/5daysTours/himbgjcj6zckm6de1mhe.jpg"
+            },
+            {
+              "type": "Tee-Entdeckung",
+              "title": {
+                "title": "Besuch der Teefabrik Glenloch",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Entdecken Sie, wie der weltberühmte Ceylon-Tee hergestellt wird, und genießen Sie eine frische Tasse, während Sie die malerischen Teeplantagen überblicken.",
+              "image": "assets/img/5daysTours/17.jpg"
+            },
+            {
+              "type": "Malerischer Besuch",
+              "title": {
+                "title": "Neunbogenbrücke",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Besuchen Sie die ikonische Neunbogenbrücke aus der Kolonialzeit, die von üppigem Grün und sanften Hügeln umgeben ist.",
+              "image": "assets/img/5daysTours/5.jpg"
+            },
+            {
+              "type": "Wandern",
+              "title": {
+                "title": "Little Adam's Peak",
+                "icon": "fa-mountain",
+                "color": "#f39c12"
+              },
+              "description": "Genießen Sie eine sanfte Wanderung mit Panoramablick über Ella Gap und die umliegende Bergkette.",
+              "image": "assets/img/5daysTours/9.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Übernachtung Oak Ray Ella Gap Hotel oder ähnlich - HB Basis in Ella",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in einem malerischen Berglandhotel mit Halbpension.",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Privates Zimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Ella – Yala Wildtiersafari",
+          "activities": [
+            {
+              "type": "Wasser- fall",
+              "title": {
+                "title": "Ravana Falls",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Halten Sie an den Ravana-Wasserfällen, einem der malerischsten Wasserfälle Sri Lankas entlang der Ella-Wellawaya-Straße.",
+              "image": "assets/img/5daysTours/n0oxsxmicxgleixkq2rx.jpg"
+            },
+            {
+              "type": "Historische Stätte",
+              "title": {
+                "title": "Buduruwagala-Tempel",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Besuchen Sie diesen alten Felsentempelkomplex mit beeindruckenden geschnitzten Buddha-Statuen.",
+              "image": "assets/img/5daysTours/18.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Yala-Nationalpark-Safari",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Erleben Sie eine aufregende Jeep-Safari im Yala-Nationalpark, in dem Leoparden, Elefanten, Krokodile und eine vielfältige Tierwelt leben.",
+              "image": "assets/img/5daysTours/xj7qybc2bk5bwnxdkubp.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Übernachtung in Yala",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in einem komfortablen Safari-Hotel mit Halbpension.",
+              "extra": [
+                "Frühstück & Abendessen inklusive"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Yala – Galle – Bentota – Flughafen",
+          "activities": [
+            {
+              "type": "Strandbesuch",
+              "title": {
+                "title": "Mirissa Beach",
+                "icon": "fa-umbrella-beach",
+                "color": "#f39c12"
+              },
+              "description": "Entspannen Sie sich am Mirissa Beach oder genießen Sie die optionale Walbeobachtung und die Aussicht auf die Küste.",
+              "image": "assets/img/5daysTours/21.jpg"
+            },
+            {
+              "type": "Geschichte des Unternehmens",
+              "title": {
+                "title": "Niederländisches Fort Galle",
+                "icon": "fa-landmark",
+                "color": "#8e44ad"
+              },
+              "description": "Erkunden Sie das zum UNESCO-Weltkulturerbe gehörende Galle Fort mit kolonialer Architektur, Stadtmauern und Meerblick.",
+              "image": "assets/img/5daysTours/22.jpg"
+            },
+            {
+              "type": "Boot Safari",
+              "title": {
+                "title": "Madu River Safari",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Genießen Sie eine friedliche Bootsfahrt durch Mangroven und kleine Inseln in einem der reichsten Feuchtgebietsökosysteme Sri Lankas.",
+              "image": "assets/img/5daysTours/23.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Unterkünfte mit Halbpension",
+        "Abholung und Rückgabe am Flughafen",
+        "Kraftstoff- und Parkgebühren"
+      ],
+      "excludes": [
+        "Eintrittsgebühren",
+        "Mittagessen & Getränke",
+        "Persönliche Ausgaben"
+      ]
+    },
+    "5-day-sri-lanka-tour": {
+      "id": "5-day-sri-lanka-tour",
+      "slug": "5-tage-sri-lanka-rundreise",
+      "title": "5-Tage Sri-Lanka-Rundreise",
+      "description": "Kultur, Natur und Wildlife in 5 Tagen.",
+      "duration": "5 Tage",
+      "persons": "1-20 Persons",
+      "filecode": "5-day-sri-lanka-tour",
+      "overview": "Kultur, Natur und Wildlife in 5 Tagen.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Flughafen nach Sigiriya – Elefanten & Safari-Abenteuer",
+          "activities": [
+            {
+              "type": "Ankunft",
+              "title": {
+                "title": "Abholung am Flughafen",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              },
+              "description": "Treffen Sie Ihren professionellen Fahrer am internationalen Flughafen Bandaranaike und beginnen Sie Ihre private Sri Lanka-Reise in Richtung Kulturdreieck."
+            },
+            {
+              "type": "Wildlife-Entdeckung",
+              "title": {
+                "title": "Pinnawala Elefantenwaisenhaus",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Besuchen Sie das Pinnawala Elephant Orphanage, ein renommiertes Schutzgebiet für gerettete und verwaiste Elefanten. Beobachten Sie Elefanten aus nächster Nähe und erleben Sie je nach Zeitpunkt ein unvergessliches Flussbad.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Minneriya-Nationalpark-Safari",
+                "icon": "fa-leaf",
+                "color": "#8e44ad"
+              },
+              "description": "Freuen Sie sich auf eine aufregende Jeep-Safari im Minneriya-Nationalpark, der für „The Gathering“ — eine der größten wilden Elefantengemeinden Asiens - berühmt ist. Beobachten Sie Elefanten, Hirsche, Büffel und verschiedene Vogelarten.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Sigiriya nach Kandy – Kulturerbe",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Festung Sigiriya Rock",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Erklimmen Sie die zum UNESCO-Weltkulturerbe gehörende Festung Sigiriya Lion Rock, einen Königspalast aus dem 5. Jahrhundert, der sich dramatisch über den Dschungelebenen erhebt. Erkunden Sie alte Fresken, die Spiegelwand und den Panoramablick auf den Gipfel.",
+              "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie Sri Dalada Maligawa in Kandy, einen der heiligsten buddhistischen Tempel der Welt. Erleben Sie traditionelle Rituale und bewundern Sie die wunderschöne Kandyan-Architektur des Tempels.",
+              "image": "assets/img/5daysTours/4.jpg"
+            },
+            {
+              "type": "Kulturerlebnis",
+              "title": {
+                "title": "Kandy Kulturelle Tanzshow",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Genießen Sie eine abendliche kulturelle Tanzperformance mit traditionellem Kandyan-Trommeln, Feuerspaziergang und lebhaften Kostümen, die das reiche künstlerische Erbe Sri Lankas zeigen.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Hotel Topas – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Hotel Topaz (oder ähnlich).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Von Kandy nach Nuwara Eliya – malerisches Teeland",
+          "activities": [
+            {
+              "type": "natur",
+              "title": {
+                "title": "Königlicher Botanischer Garten Peradeniya",
+                "icon": "fa-tree",
+                "color": "#16a085"
+              },
+              "description": "Erkunden Sie einen der schönsten botanischen Gärten Asiens mit exotischen Orchideen, hoch aufragenden Palmenalleen, Heilpflanzen und wunderschön angelegten Anlagen entlang des Mahaweli-Flusses.",
+              "image": "assets/img/5daysTours/26.jpg"
+            },
+            {
+              "type": "natur",
+              "title": {
+                "title": "Ramboda-Wasserfall",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Halten Sie an den Ramboda-Wasserfällen, einem der höchsten Wasserfälle Sri Lankas, umgeben von malerischen Teeplantagen und kühler Bergluft.",
+              "image": "assets/img/5daysTours/27.jpg"
+            },
+            {
+              "type": "Tee-Entdeckung",
+              "title": {
+                "title": "Teefabrik & Plantagenbesuch",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Entdecken Sie, wie der weltberühmte Ceylon-Tee von Blatt zu Tasse hergestellt wird. Spazieren Sie durch üppige Teeplantagen und genießen Sie eine Verkostung von frischem Tee in Sri Lankas Hügelland.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Hotel Yara Nuwara Eliya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Yara Nuwara Eliya (oder ähnlich).",
+              "image": "assets/img/5daysTours/29.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Nuwara Eliya nach Ella – Berglandschaft",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Neun-Bogen-Brücke",
+                "icon": "fa-bridge",
+                "color": "#c0392b"
+              },
+              "description": "Die majestätische Neunbogenbrücke ist einer der vielen Gründe dafür. Die prächtige Neunbogenbrücke zwischen Ella und dem Bahnhof Demodara ist eines der technischen Wunderwerke des frühen 20. Jahrhunderts.",
+              "image": "assets/img/5daysTours/5.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Little Adam's Peak",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Es ist 1141 m hoch und vom Eingang dauert es bis zu 30-45 Minuten für die Wanderung. Die Aussicht vom Gipfel ist unglaublich. 360-Grad-Panoramablick mit hereinrollenden Wolken ist ein Genuss.",
+              "image": "assets/img/5daysTours/9.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Eiche Ray Ella Gap Hotel",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Unterkunft im Oak Ray Ella Gap Hotel oder ähnlich - HB Basis",
+              "image": "assets/img/5daysTours/30.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Von Udawalawa zur Südwestküste – Fluss & Naturschutz",
+          "activities": [
+            {
+              "type": "Erhaltung",
+              "title": {
+                "title": "Meeresschildkröten-Schutzprojekt",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie ein Meeresschildkröten-Schutzzentrum entlang der Südküste und erfahren Sie mehr über den Schutz der Meerestiere, Brütereiprogramme und Rehabilitationsmaßnahmen.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Boot Safari",
+              "title": {
+                "title": "Madu River Safari",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Genießen Sie eine malerische Bootssafari durch die Mangrovenwälder und kleinen Inseln des Madu-Flusses. Entdecken Sie den lokalen Zimtanbau und die vielfältige Tierwelt in Feuchtgebieten.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Abholung & Rückgabe am Flughafen",
+        "Kraftstoff- und Parkgebühren",
+        "Unbegrenzte Kilometerzahl für die gesamte Tour"
+      ],
+      "excludes": [
+        "Eintritts- & Aktivitätsgebühren",
+        "Restaurant & Bar",
+        "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ]
+    },
+    "6-day-sri-lanka-private-tour": {
+      "id": "6-day-sri-lanka-private-tour",
+      "slug": "6-tage-sri-lanka-privattour",
+      "title": "6-Tage private Rundreise",
+      "description": "Sigiriya, Kandy, Ella, Yala und Strand.",
+      "duration": "6 Tage",
+      "persons": "2-20 Persons",
+      "filecode": "6-day-sri-lanka-private-tour",
+      "overview": "Sigiriya, Kandy, Ella, Yala und Strand.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Ankunft  & Pidurangala Rock",
+          "activities": [
+            {
+              "type": "Ankunft",
+              "title": {
+                "title": "Ankunft",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              }
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Pidurangala-Felsen",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Kleine Wanderung zum Pidurangala-Felsen und genießen Sie die Landschaft.",
+              "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Unterkunft im Hotel Fresco Water Villa oder ähnlichem Hotel - HB Basis",
+              "image": "assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Sigiriya & Dambulla",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Sigiriya Löwenfelsen",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Zum Auftakt des zweiten Tages besuchen Sie ein UNESCO-Weltkulturerbe - die Felsenfestung Sigiriya.",
+              "image": "assets/img/7dayschange/ihyw8fdom33yg8zqkmfi.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Hiriwadunna Village & See-Abenteuer",
+                "icon": "fa-leaf",
+                "color": "#8e44ad"
+              },
+              "description": "Lass uns ein traditionelles srilankisches Dorferlebnis machen!!! Ein Besuch des Weilers Hiriwadunna in Sri Lanka zeigt die entspannten Rhythmen des kleinen Dorflebens.",
+              "image": "assets/img/5daysTours/36.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Dambulla-Höhlentempel",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Nach der Erfrischung im Hiriwadunna Village fahren Sie weiter zum Königlichen Höhlentempel von Dambulla, der seit 22 Jahrhunderten ein heiliger Wallfahrtsort ist.",
+              "image": "assets/img/7dayschange/d2ap1r8hoijw6wsm5xgy.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Dediziertes Wirtschaftszentrum Dambulla",
+                "icon": "fa-shopping-basket",
+                "color": "#16a085"
+              },
+              "description": "Genießen Sie frisches Obst und Gemüse auf dem Dambulla-Markt.",
+              "image": "assets/img/7dayschange/v54wmh9aukt4toblznpu.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Übernachtung auf HB-Basis",
+              "image": "assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg",
+              "extra": [
+                "Frühstück",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Stadtrundfahrt in Kandy",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Sri Dalada Maligawa",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Du wirst endlich den Tempel besuchen, der die heilige Zahnreliquie des Buddha beherbergt und einer der heiligsten Schreine der gesamten buddhistischen Welt ist!!!",
+              "image": "assets/img/7dayschange/f3pqyx8y4gpwmqhzleh0.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Kandy Lake Club - Kulturelle Tanzshow",
+                "icon": "fa-theater-masks",
+                "color": "#8e44ad"
+              },
+              "description": "Die Kandy Lake Club Cultural Dance Show ist eine anregende srilankische Kunst-, Tanz- und Kulturerbe-Show, die ein Muss für jeden Besucher ist, der die historische Stadt Kandy besucht.",
+              "image": "assets/img/7dayschange/upxn0ge9htdg20ycpgp6.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Sri-Muthumariamman-Tempel",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Der Sri Muthumariamman Hindu-Tempel ist eines der großartigen Beispiele, um zu beweisen, dass Sri Lanka in all den Jahren ein multikulturelles Land war.",
+              "image": "assets/img/7dayschange/gt14exwu7ogp3rz9aun9.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Nalanda Gedige",
+                "icon": "fa-landmark",
+                "color": "#16a085"
+              },
+              "description": "Ein altes und geheimnisvolles Gebäude in der Nähe von Matale, das die Forscher mit seiner seltsamen Mischung aus hinduistischer und buddhistischer Architektur verwirrt hat. Es wird angenommen, dass die Struktur mindestens tausend Jahre alt ist",
+              "image": "assets/img/7dayschange/u9901tv9mcxlz9rd9mgw.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Hotel Topaz",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Unterkunft im Hotel Topaz o.ä. - HB Basis",
+              "image": "assets/img/7dayschange/sxapeujg7mpergbd5nic.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Nuwara Eliya über Ella",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Königlicher Botanischer Garten",
+                "icon": "fa-leaf",
+                "color": "#2ecc71"
+              },
+              "description": "Die Gärten zeigen über 4 000 verschiedene Pflanzenarten, die zu den überlegensten in Asien gehören.",
+              "image": "assets/img/7dayschange/asojmlldivxq8vforwxt.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Ambuluwawa-Turm",
+                "icon": "fa-mountain",
+                "color": "#e67e22"
+              },
+              "description": "Als nächstes... eine einfache Wanderung, die Ihnen einen 360-Grad-Blick auf die umliegenden Berge, Wälder, Flüsse und Städte in Kandy bietet!",
+              "image": "assets/img/7dayschange/w3a48osbcocecoaaq9hd.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Bluefield Teefabrik",
+                "icon": "fa-coffee",
+                "color": "#8e44ad"
+              },
+              "description": "Als Land des Tees verfügt Nuwara Eliya über eine Vielzahl von Teefabriken, Teehäusern und Teefeldern. Die Bluefield Teefabrik in Nuwara Eliya ist eine der beliebtesten Teefabriken in Sri Lanka.",
+              "image": "assets/img/7dayschange/tijr5ztiozgdesbxotm4.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Aussichtspunkt Ramboda Falls",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Ramboda Falls liegt im Stadtteil Pussellawa in der Stadt Kandy. Die Gegend ist bekannt für herrliche Landschaften, die sich aus Hochland, Bergrücken, Ebenen, Bächen und hügeligen Bergen zusammensetzen.",
+              "image": "assets/img/7dayschange/ovdxsgglrdreodbe1tmv.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Neun-Bogen-Brücke",
+                "icon": "fa-bridge",
+                "color": "#c0392b"
+              },
+              "description": "Die majestätische Neunbogenbrücke ist einer der vielen Gründe dafür. Die prächtige Neunbogenbrücke zwischen Ella und dem Bahnhof Demodara ist eines der technischen Wunderwerke des frühen 20. Jahrhunderts.",
+              "image": "assets/img/7dayschange/yka3mpx2nahiftrb0lpu.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Little Adam's Peak",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Es ist 1141 m hoch und vom Eingang dauert es bis zu 30-45 Minuten für die Wanderung. Die Aussicht vom Gipfel ist unglaublich. 360-Grad-Panoramablick mit hereinrollenden Wolken ist ein Genuss.",
+              "image": "assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Eiche Ray Ella Gap Hotel",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Unterkunft im Oak Ray Ella Gap Hotel oder ähnlich - HB Basis",
+              "image": "assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Yala-Nationalpark & Ravana-Wasserfälle",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Ravana Falls",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Die Ravana Falls sind in Mythen und Folklore verwurzelt. Es wird angenommen, dass der Dämonenkönig Ravana aus dem epischen Ramayan Sita in der Höhle hinter dem Wasserfall versteckte, nachdem er sie entführt und zurückgebracht hatte",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Nationalpark",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Yala ist die Heimat von 44 Säugetierarten und 215 Vogelarten. Zu den berühmtesten Bewohnern gehört die weltweit größte Konzentration von Leoparden",
+              "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Grand Tamarind Lake Hotel",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Unterkunft im Grand Tamarind Lake Hotel oder ähnlich - HB Basis",
+              "image": "assets/img/7dayschange/ipbxv6o0ovr2tfbc6pge.jpg",
+              "extra": [
+                "Hotel 5 Sterne (Luxus)",
+                "Eigenes Badezimmer"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Mirissa & Abreise",
+          "activities": [
+            {
+              "type": "Erhaltung",
+              "title": {
+                "title": "Meeresschildkröten-Schutzprojekt",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie ein Meeresschildkröten-Schutzzentrum entlang der Südküste und erfahren Sie mehr über den Schutz der Meerestiere, Brütereiprogramme und Rehabilitationsmaßnahmen.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Boot Safari",
+              "title": {
+                "title": "Madu River Safari",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Genießen Sie eine malerische Bootssafari durch die Mangrovenwälder und kleinen Inseln des Madu-Flusses. Entdecken Sie den lokalen Zimtanbau und die vielfältige Tierwelt in Feuchtgebieten.",
+              "image": "assets/img/5daysTours/32.jpg"
+            },
+            {
+              "type": "Abreise",
+              "title": {
+                "title": "Transfer bei Abreise",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              }
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Abholung & Rückgabe am Flughafen",
+        "Kraftstoff- und Parkgebühren",
+        "Unbegrenzte Kilometerzahl für die gesamte Tour"
+      ],
+      "excludes": [
+        "Eintritts- & Aktivitätsgebühren",
+        "Restaurant & Bar",
+        "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ]
+    },
+    "7-day-sri-lanka-tour": {
+      "id": "7-day-sri-lanka-tour",
+      "slug": "7-tage-sri-lanka-rundreise",
+      "title": "7-Tage Sri-Lanka-Rundreise",
+      "description": "Sigiriya, Kandy, Ella und Yala-Safari in 7 Tagen.",
+      "duration": "7 Tage",
+      "persons": "20 Persons",
+      "filecode": "7-day-sri-lanka-tour",
+      "overview": "Sigiriya, Kandy, Ella und Yala-Safari in 7 Tagen.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Flughafen / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Wilpattu-Nationalpark-Safari",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Erkunden Sie Sri Lankas größten Nationalpark auf einer 5-stündigen Jeep-Safari im Geländewagen. Entdecken Sie Leoparden, Faultiere, Elefanten, Hirsche, Krokodile und eine vielfältige Vogelwelt.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Thimbiri Wewa Resort Wilpattu (oder ähnlich). Halbpension.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Abendessen inbegriffen",
+                "Star Class Hotel"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "activities": [
+            {
+              "type": "Religiöser Besuch",
+              "title": {
+                "title": "Sri Maha Bodhi Tempel",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Besuchen Sie den heiligen Sri Maha Bodhi-Baum in Anuradhapura.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Historischer Besuch",
+              "title": {
+                "title": "Ruwanweli Maha Seya",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Erkunden Sie eines der heiligsten buddhistischen Monumente Sri Lankas.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Malerische Wanderung",
+              "title": {
+                "title": "Pidurangala Rock Sonnenuntergang",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Besteigen Sie den Pidurangala-Felsen, um einen atemberaubenden Blick auf den Sonnenuntergang zu genießen.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Sigiriya Kulturdreieck",
+          "activities": [
+            {
+              "type": "UNESCO-Stätte",
+              "title": {
+                "title": "Sigiriya Löwenfelsenfestung",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Besteigen Sie die zum UNESCO-Weltkulturerbe gehörende Felsenfestung Sigiriya.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Erlebnisse im Dorf",
+              "title": {
+                "title": "Dorfbesichtigung Hiriwadunna",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Erlebe das authentische ländliche Dorfleben Sri Lankas.",
+              "image": "assets/img/5daysTours/34.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Minneriya-Safari",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Genießen Sie eine Jeep-Safari im Geländewagen, die für Elefantenversammlungen bekannt ist.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Wellness",
+              "title": {
+                "title": "Ayurveda Massage",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Entspannen Sie sich bei einer traditionellen Kräuterölmassage.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Sigiriya – Kandy",
+          "activities": [
+            {
+              "type": "Kulturbesuch",
+              "title": {
+                "title": "Matale Gewürzgarten",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Entdecken Sie die berühmten Gewürze und Kräuter Sri Lankas.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "UNESCO-Stätte",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie Sri Lankas heiligsten buddhistischen Tempel in Kandy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Kulturelle Show",
+              "title": {
+                "title": "Kandy Kulturelle Tanzshow",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Genießen Sie traditionelle Kandyan-Tanzaufführungen.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Hotel Topas – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Hotel Topaz (oder ähnlich).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kandy – Nuwara Eliya – Ella",
+          "activities": [
+            {
+              "type": "Tee-Entdeckung",
+              "title": {
+                "title": "Blue Field Teefabrik",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Erfahren Sie, wie der weltberühmte Ceylon-Tee hergestellt wird.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "natur",
+              "title": {
+                "title": "Ramboda-Wasserfall",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Besuchen Sie einen der höchsten Wasserfälle Sri Lankas.",
+              "image": "assets/img/5daysTours/13.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Little Adam's Peak",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Es ist 1141 m hoch und vom Eingang dauert es bis zu 30-45 Minuten für die Wanderung. Die Aussicht vom Gipfel ist unglaublich. 360-Grad-Panoramablick mit hereinrollenden Wolken ist ein Genuss.",
+              "image": "assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Eiche Ray Ella Gap Hotel",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in Ella.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 27 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 27 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "Neunbogenbrücke",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "Ravana Falls",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Die Ravana Falls sind in Mythen und Folklore verwurzelt. Es wird angenommen, dass der Dämonenkönig Ravana aus dem epischen Ramayan Sita in der Höhle hinter dem Wasserfall versteckte, nachdem er sie entführt und zurückgebracht hatte",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            },
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Frühstück",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Boot Safari",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 23 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "Unterkunft & Verpflegung des Fahrers",
+        "Abholung und Rückfahrt",
+        "Kraftstoff- und Parkgebühren",
+        "24-Stunden-Betrieb",
+        "Unbegrenzte Kilometerzahl für die gesamte Rundtour",
+        "Ihre Unterkunft"
+      ],
+      "excludes": [
+        "Restaurant & Bar",
+        "Eintritts- & Aktivitätsgebühren"
+      ]
+    },
+    "8-day-sri-lanka-private-tour": {
+      "id": "8-day-sri-lanka-private-tour",
+      "slug": "8-tage-sri-lanka-privattour",
+      "title": "8-Tage private Rundreise",
+      "description": "Wilpattu, Sigiriya, Kandy, Ella und Strand.",
+      "duration": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+      "persons": "1-20 Persons",
+      "filecode": "8-day-sri-lanka-private-tour",
+      "overview": "Wilpattu, Sigiriya, Kandy, Ella und Strand.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Flughafen / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Wilpattu-Nationalpark-Safari",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Erkunden Sie Sri Lankas größten Nationalpark auf einer 5-stündigen Jeep-Safari im Geländewagen. Entdecken Sie Leoparden, Faultiere, Elefanten, Hirsche, Krokodile und eine vielfältige Vogelwelt.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Thimbiri Wewa Resort Wilpattu (oder ähnlich). Halbpension.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Abendessen inbegriffen",
+                "Star Class Hotel"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "activities": [
+            {
+              "type": "Religiöser Besuch",
+              "title": {
+                "title": "Sri Maha Bodhi Tempel",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Besuchen Sie den heiligen Sri Maha Bodhi-Baum in Anuradhapura.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Historischer Besuch",
+              "title": {
+                "title": "Ruwanweli Maha Seya",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Erkunden Sie eines der heiligsten buddhistischen Monumente Sri Lankas.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Malerische Wanderung",
+              "title": {
+                "title": "Pidurangala Rock Sonnenuntergang",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Besteigen Sie den Pidurangala-Felsen, um einen atemberaubenden Blick auf den Sonnenuntergang zu genießen.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Sigiriya Kulturdreieck",
+          "activities": [
+            {
+              "type": "UNESCO-Stätte",
+              "title": {
+                "title": "Sigiriya Löwenfelsenfestung",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Besteigen Sie die zum UNESCO-Weltkulturerbe gehörende Felsenfestung Sigiriya.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Erlebnisse im Dorf",
+              "title": {
+                "title": "Dorfbesichtigung Hiriwadunna",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Erlebe das authentische ländliche Dorfleben Sri Lankas.",
+              "image": "assets/img/5daysTours/34.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Minneriya-Safari",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Genießen Sie eine Jeep-Safari im Geländewagen, die für Elefantenversammlungen bekannt ist.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Wellness",
+              "title": {
+                "title": "Ayurveda Massage",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Entspannen Sie sich bei einer traditionellen Kräuterölmassage.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Sigiriya – Kandy",
+          "activities": [
+            {
+              "type": "Kulturbesuch",
+              "title": {
+                "title": "Matale Gewürzgarten",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Entdecken Sie die berühmten Gewürze und Kräuter Sri Lankas.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "UNESCO-Stätte",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie Sri Lankas heiligsten buddhistischen Tempel in Kandy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Kulturelle Show",
+              "title": {
+                "title": "Kandy Kulturelle Tanzshow",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Genießen Sie traditionelle Kandyan-Tanzaufführungen.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Hotel Topas – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Hotel Topaz (oder ähnlich).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kandy – Nuwara Eliya – Ella",
+          "activities": [
+            {
+              "type": "Tee-Entdeckung",
+              "title": {
+                "title": "Blue Field Teefabrik",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Erfahren Sie, wie der weltberühmte Ceylon-Tee hergestellt wird.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "natur",
+              "title": {
+                "title": "Ramboda-Wasserfall",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Besuchen Sie einen der höchsten Wasserfälle Sri Lankas.",
+              "image": "assets/img/5daysTours/13.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Eiche Ray Ella Gap Hotel",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in Ella.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 27 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 27 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "Neunbogenbrücke",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Frühstück",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Frühstück",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Boot Safari",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 23 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 21 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+        "Kraftstoff- und Parkgebühren",
+        "Abholung und Rückgabe am Flughafen"
+      ],
+      "excludes": [
+        "Eintritts- & Aktivitätsgebühren",
+        "Mittagessen & Getränke",
+        "Persönliche Ausgaben"
+      ]
+    },
+    "10-day-sri-lanka-tour": {
+      "id": "10-day-sri-lanka-tour",
+      "slug": "10-tage-sri-lanka-rundreise",
+      "title": "10-Tage Sri-Lanka-Rundreise",
+      "description": "Strände, Safari, Berge und Kultur in 10 Tagen.",
+      "duration": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 21 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+      "persons": "1-20 Persons",
+      "filecode": "10-day-sri-lanka-tour",
+      "overview": "Strände, Safari, Berge und Kultur in 10 Tagen.",
+      "tourType": "Rundgang",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Flughafen / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Wilpattu-Nationalpark-Safari",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Erkunden Sie Sri Lankas größten Nationalpark auf einer 5-stündigen Jeep-Safari im Geländewagen. Entdecken Sie Leoparden, Faultiere, Elefanten, Hirsche, Krokodile und eine vielfältige Vogelwelt.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung im Thimbiri Wewa Resort Wilpattu (oder ähnlich). Halbpension.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Abendessen inbegriffen",
+                "Star Class Hotel"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "activities": [
+            {
+              "type": "Religiöser Besuch",
+              "title": {
+                "title": "Sri Maha Bodhi Tempel",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Besuchen Sie den heiligen Sri Maha Bodhi-Baum in Anuradhapura.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Historischer Besuch",
+              "title": {
+                "title": "Ruwanweli Maha Seya",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Erkunden Sie eines der heiligsten buddhistischen Monumente Sri Lankas.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Malerische Wanderung",
+              "title": {
+                "title": "Pidurangala Rock Sonnenuntergang",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Besteigen Sie den Pidurangala-Felsen, um einen atemberaubenden Blick auf den Sonnenuntergang zu genießen.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Sigiriya Kulturdreieck",
+          "activities": [
+            {
+              "type": "UNESCO-Stätte",
+              "title": {
+                "title": "Sigiriya Löwenfelsenfestung",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Besteigen Sie die zum UNESCO-Weltkulturerbe gehörende Felsenfestung Sigiriya.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Erlebnisse im Dorf",
+              "title": {
+                "title": "Dorfbesichtigung Hiriwadunna",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Erlebe das authentische ländliche Dorfleben Sri Lankas.",
+              "image": "assets/img/5daysTours/36.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Minneriya-Safari",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Genießen Sie eine Jeep-Safari im Geländewagen, die für Elefantenversammlungen bekannt ist.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Wellness",
+              "title": {
+                "title": "Ayurveda Massage",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Entspannen Sie sich bei einer traditionellen Kräuterölmassage.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Fresko-Wasser-Villa - Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Übernachtung in der Fresco Water Villa (oder ähnlich).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Frühstück & Abendessen inklusive",
+                "Comenzar"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Sigiriya – Kandy",
+          "activities": [
+            {
+              "type": "Kulturbesuch",
+              "title": {
+                "title": "Matale Gewürzgarten",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Entdecken Sie die berühmten Gewürze und Kräuter Sri Lankas.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "UNESCO-Stätte",
+              "title": {
+                "title": "Tempel der heiligen Zahnreliquie",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Besuchen Sie Sri Lankas heiligsten buddhistischen Tempel in Kandy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Kulturelle Show",
+              "title": {
+                "title": "Kandy Kulturelle Tanzshow",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Genießen Sie traditionelle Kandyan-Tanzaufführungen.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "Hotel Topas – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 21 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer",
+                "Frühstück",
+                "Abendessen inbegriffen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kandy – Nuwara Eliya – Ella",
+          "activities": [
+            {
+              "type": "Tee-Entdeckung",
+              "title": {
+                "title": "Blue Field Teefabrik",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Erfahren Sie, wie der weltberühmte Ceylon-Tee hergestellt wird.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "natur",
+              "title": {
+                "title": "Ramboda-Wasserfall",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Besuchen Sie einen der höchsten Wasserfälle Sri Lankas.",
+              "image": "assets/img/5daysTours/27.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 20 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 20 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer",
+                "Frühstück",
+                "Abendessen inbegriffen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 27 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 27 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "Neunbogenbrücke",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 26 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Frühstück",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Frühstück",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 22 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 25 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Frühstück",
+                "Eigenes Badezimmer",
+                "Abendessen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 20 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 20 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-monument",
+                "color": "#FF8C00"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 19 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
+            },
+            {
+              "type": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Boot Safari",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 24 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 23 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/32.jpg"
+            },
+            {
+              "type": "Beherbergung",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 19 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 19 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/5daysTours/46.jpg",
+              "extra": [
+                "Hotel 4 Sterne (Premium)",
+                "Eigenes Badezimmer",
+                "Frühstück",
+                "Abendessen inbegriffen"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 19 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+          "activities": [
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 20 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-monument",
+                "color": "#FF8C00"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 19 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 18 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-landmark",
+                "color": "#A9A9A9"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 18 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/fsrleaf7977wcxityzu8.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 18 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-landmark",
+                "color": "#FFD700"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 17 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/fn10nlk7fc0dzyawswa5.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 17 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-park",
+                "color": "#32CD32"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 17 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/qu0e7cjpkcfhfds1zeem.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 17 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-store",
+                "color": "#FF4500"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 16 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/vlk48jx8ywhuzyqlvqg8.jpg"
+            },
+            {
+              "type": "Führung durch PLC",
+              "title": {
+                "title": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 16 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+                "icon": "fa-mosque",
+                "color": "#FF0000"
+              },
+              "description": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 15 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+              "image": "assets/img/7daystour/owzua0jhk0zazg9d8hcn.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatisiertes Privatfahrzeug",
+        "Englischsprachiger Berufskraftfahrer",
+        "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  07 HOURS 42 MINUTES 21 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE",
+        "Kraftstoff- und Parkgebühren",
+        "Abholung und Rückgabe am Flughafen"
+      ],
+      "excludes": [
+        "Eintritts- & Aktivitätsgebühren",
+        "Mittagessen & Getränke",
+        "Persönliche Ausgaben"
+      ]
+    }
+  }
+}

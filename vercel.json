@@ -1,9 +1,121 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/en/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/our-services",
+      "destination": "/en/our-services",
+      "permanent": true
+    },
+    {
+      "source": "/tour-packages",
+      "destination": "/en/tours",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/en/contact",
+      "permanent": true
+    },
+    {
+      "source": "/destinations-sri-lanka",
+      "destination": "/en/destinations",
+      "permanent": true
+    },
+    {
+      "source": "/customer-testimonials",
+      "destination": "/en/customer-testimonials",
+      "permanent": true
+    },
+    {
+      "source": "/sri-lanka-travel-guides",
+      "destination": "/en/travel-guides",
+      "permanent": true
+    },
+    {
+      "source": "/restaurants-in-sri-lanka",
+      "destination": "/en/restaurants",
+      "permanent": true
+    },
+    {
+      "source": "/booking/:filecode",
+      "destination": "/en/booking/:filecode",
+      "permanent": true
+    },
+    {
+      "source": "/ella-day-tour",
+      "destination": "/en/tours/ella-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/galle-day-tour",
+      "destination": "/en/tours/galle-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/kandy-day-tour",
+      "destination": "/en/tours/kandy-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/sigiriya-day-tour",
+      "destination": "/en/tours/sigiriya-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/2-day-ella-kandy-private-tour-sri-lanka",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/2-day-ella-yala-private-tour-sri-lanka",
+      "destination": "/en/tours/2-day-ella-yala-safari",
+      "permanent": true
+    },
+    {
+      "source": "/4-day-sri-lanka-tour",
+      "destination": "/en/tours/4-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/5-day-sri-lanka-tour",
+      "destination": "/en/tours/5-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/6-day-sri-lanka-private-tour",
+      "destination": "/en/tours/6-day-sri-lanka-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/7-day-sri-lanka-tour",
+      "destination": "/en/tours/7-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/8-day-sri-lanka-private-tour",
+      "destination": "/en/tours/8-day-sri-lanka-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/10-day-sri-lanka-tour",
+      "destination": "/en/tours/10-day-sri-lanka-tour",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { 
-      "source": "/(.*)", 
-      "destination": "/index.html" 
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

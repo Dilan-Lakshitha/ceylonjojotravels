@@ -1,91 +1,81 @@
-import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { ScrollToToComponent } from '../../sharedComponents/scroll-to-to-component/scroll-to-to-component';
+import { LocalizedRouterService } from '../../i18n/localized-router.service';
+import { AVAILABLE_LANGS, AppLang, isAppLang } from '../../i18n/language.constants';
 
 @Component({
   selector: 'app-layout-component',
   standalone: true,
-  imports: [CommonModule, ScrollToToComponent, RouterModule],
+  imports: [CommonModule, ScrollToToComponent, RouterModule, TranslocoModule],
   templateUrl: './layout-component.html',
   styleUrl: './layout-component.css',
 })
 export class LayoutComponent implements OnInit {
-  activeLang = 'en';
+  activeLang: AppLang = 'en';
+  readonly langs = AVAILABLE_LANGS;
+
+  private readonly localizedRouter = inject(LocalizedRouterService);
+  private readonly transloco = inject(TranslocoService);
+
+  homeLink: any[] = ['/', 'en'];
+  toursLink: any[] = ['/', 'en', 'tours'];
+  servicesLink: any[] = ['/', 'en', 'our-services'];
+  aboutLink: any[] = ['/', 'en', 'about-us'];
+  contactLink: any[] = ['/', 'en', 'contact'];
+  destinationsLink: any[] = ['/', 'en', 'destinations'];
+  guidesLink: any[] = ['/', 'en', 'travel-guides'];
+  testimonialsLink: any[] = ['/', 'en', 'customer-testimonials'];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-  
-  async ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      const savedLang = localStorage.getItem('preferred_lang');
 
-      if (savedLang && savedLang !== 'en') {
-        this.activeLang = savedLang;
-        this.applyGoogleTranslate(savedLang);
+  ngOnInit(): void {
+    this.activeLang = this.localizedRouter.currentLang();
+    this.refreshLinks();
+    this.transloco.langChanges$.subscribe((lang) => {
+      if (isAppLang(lang)) {
+        this.activeLang = lang;
+        this.refreshLinks();
       }
-    }
-
-    // try {
-    //   const res = await fetch('https://ipapi.co/json/');
-    //   const data = await res.json();
-    //   console.log('Detected country:', data.country);
-
-    //   const countryToLang: Record<string, string> = {
-    //     LK: 'si',
-    //     IT: 'it',
-    //     FR: 'fr',
-    //     DE: 'de',
-    //     ES: 'es',
-    //   };
-
-    //   const detectedLang = countryToLang[data.country];
-
-    //   if (detectedLang) {
-    //     this.activeLang = detectedLang;
-    //     localStorage.setItem('preferred_lang', detectedLang);
-    //     this.applyGoogleTranslate(detectedLang);
-    //   }
-    // } catch (e) {
-    //   console.warn('IP detection failed');
-    // }
-
-    
+    });
   }
 
-  changeLang(lang: string) {
+  changeLang(lang: AppLang): void {
+    if (lang === this.activeLang) {
+      return;
+    }
     this.activeLang = lang;
-    localStorage.setItem('preferred_lang', lang);
-    if (lang === 'en') {
-      this.resetGoogleTranslate();
-      return;
-    }
-
-    this.applyGoogleTranslate(lang);
+    this.localizedRouter.switchLanguage(lang);
   }
 
-  private applyGoogleTranslate(lang: string) {
-    if (isPlatformBrowser(this.platformId)) {
-      const interval = setInterval(() => {
-        const select = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-        if (select) {
-          select.value = lang;
-          select.dispatchEvent(new Event('change'));
-          clearInterval(interval);
-        }
-      }, 300);
-    }
+  private refreshLinks(): void {
+    const lang = this.activeLang;
+    this.homeLink = this.localizedRouter.commandsFor('home', { lang });
+    this.toursLink = this.localizedRouter.commandsFor('tours', { lang });
+    this.servicesLink = this.localizedRouter.commandsFor('services', { lang });
+    this.aboutLink = this.localizedRouter.commandsFor('about', { lang });
+    this.contactLink = this.localizedRouter.commandsFor('contact', { lang });
+    this.destinationsLink = this.localizedRouter.commandsFor('destinations', { lang });
+    this.guidesLink = this.localizedRouter.commandsFor('guides', { lang });
+    this.testimonialsLink = this.localizedRouter.commandsFor('testimonials', { lang });
   }
 
-  private resetGoogleTranslate() {
-    if (!isPlatformBrowser(this.platformId)) {
-      return;
-    }
+  flagCode(lang: AppLang): string {
+    return lang === 'en' ? 'us' : lang;
+  }
 
-    document.cookie = 'googtrans=;path=/;domain=' + location.hostname;
-    document.cookie = 'googtrans=;path=/';
-
-    setTimeout(() => {
-      window.location.reload();
-    }, 100);
+  langTitle(lang: AppLang): string {
+    const titles: Record<AppLang, string> = {
+      en: 'English',
+      de: 'Deutsch',
+      fr: 'Français',
+      it: 'Italiano',
+      es: 'Español',
+      pl: 'Polski',
+      ru: 'Русский',
+    };
+    return titles[lang];
   }
 }

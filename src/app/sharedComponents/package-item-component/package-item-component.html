@@ -1,4 +1,4 @@
-<div class="tour-card" [routerLink]="routerLink">
+<div class="tour-card" *transloco="let t; scope: 'common'; prefix: 'common'" [routerLink]="routerLink">
 
   <!-- IMAGE -->
   <div class="tour-image">
@@ -12,11 +12,11 @@
     <div class="top-badges">
 
   <span *ngIf="isBestseller" class="badge bestseller">
-    🔥 Bestseller
+    🔥 {{ t('badge.bestseller') }}
   </span>
 
   <span *ngIf="isLimited" class="badge limited">
-    ⚡ Limited Seats
+    ⚡ {{ t('badge.limited') }}
   </span>
 
 </div>
@@ -30,7 +30,7 @@
     <!-- Price -->
     <div class="price-badge">
       $ {{ (price/2) | number:'1.0-0' }}
-      <span>/ person</span>
+      <span>{{ t('card.perPerson') }}</span>
     </div>
 
   </div>
@@ -56,9 +56,9 @@
 
     <!-- Trust badges -->
     <div class="tour-tags">
-      <span><i class="fa fa-check-circle"></i> Free Cancel</span>
-      <span><i class="fa fa-bolt"></i> Instant Confirm</span>
-      <span><i class="fa fa-credit-card"></i> Pay Later</span>
+      <span><i class="fa fa-check-circle"></i> {{ t('card.freeCancel') }}</span>
+      <span><i class="fa fa-bolt"></i> {{ t('card.instantConfirm') }}</span>
+      <span><i class="fa fa-credit-card"></i> {{ t('card.payLater') }}</span>
     </div>
 
   </div>

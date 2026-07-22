@@ -1,63 +1,66 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { RouterModule, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { Title, Meta } from '@angular/platform-browser';
-import { filter, map, mergeMap } from 'rxjs/operators';
-import { isPlatformBrowser } from '@angular/common';
+import { filter, map, Subscription } from 'rxjs';
+import { TranslocoService } from '@jsverse/transloco';
+import { SeoService } from './i18n/seo.service';
+import { AppLang, isAppLang } from './i18n/language.constants';
+import { RouteId } from './i18n/route-map';
+import { TourId } from './i18n/tour-slug-map';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
-  imports: [RouterModule]
+  imports: [RouterModule],
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
+  private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
+  private readonly seo = inject(SeoService);
+  private readonly transloco = inject(TranslocoService);
+  private sub?: Subscription;
 
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-    private titleService: Title,
-    private metaService: Meta,
-    @Inject(PLATFORM_ID) private platformId: Object
-  ) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-    this.router.events
+  ngOnInit(): void {
+    this.transloco.load(`common/${this.transloco.getActiveLang()}`).subscribe();
+
+    this.sub = this.router.events
       .pipe(
-        filter(event => event instanceof NavigationEnd),
-        map(() => this.route),
-        map(route => {
-          while (route.firstChild) route = route.firstChild;
+        filter((event) => event instanceof NavigationEnd),
+        map(() => {
+          let route = this.route;
+          while (route.firstChild) {
+            route = route.firstChild;
+          }
           return route;
         }),
-        mergeMap(route => route.data)
       )
-      .subscribe(data => {
+      .subscribe(async (route) => {
+        const data = route.snapshot.data;
+        const langParam =
+          route.parent?.snapshot.paramMap.get('lang') ||
+          this.router.url.split('/').filter(Boolean)[0] ||
+          'en';
+        const lang: AppLang = isAppLang(langParam) ? langParam : 'en';
+        const routeId = (data['routeId'] as RouteId) || 'home';
+        const tourId = data['tourId'] as TourId | undefined;
+        const filecode = route.snapshot.paramMap.get('filecode') || undefined;
 
-        if (data['title']) {
-          this.titleService.setTitle(data['title']);
+        if (tourId) {
+          return;
         }
 
-        if (data['description']) {
-          this.metaService.updateTag({
-            name: 'description',
-            content: data['description']
-          });
-        }
-
-        if (data['keywords']) {
-          this.metaService.updateTag({
-            name: 'keywords',
-            content: data['keywords']
-          });
-        }
-
-        const url = this.router.url;
-        if (isPlatformBrowser(this.platformId)) {
-          const canonical = document.querySelector("link[rel='canonical']") || document.createElement('link');
-          canonical.setAttribute('rel', 'canonical');
-          canonical.setAttribute('href', 'https://yourdomain.com' + url);
-          document.head.appendChild(canonical);
-        }
+        await this.seo.applyPageSeo({
+          routeId,
+          lang,
+          filecode: filecode || undefined,
+        });
       });
+  }
+
+  ngOnDestroy(): void {
+    this.sub?.unsubscribe();
   }
 }

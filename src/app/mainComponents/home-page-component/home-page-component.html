@@ -1,21 +1,15 @@
 <!-- Carousel Start -->
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" *transloco="let t; scope: 'home'; prefix: 'home'">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="w-100" src="assets/img/mainpage/1.jpg" alt="Sigiriya Rock tour Sri Lanka">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <!-- <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4> -->
-                        <h1 class="display-3 text-white mb-md-4">
-                            Sri Lanka Tours & Private Driver Services
-                        </h1>
-                        <p class="text-white mb-3">
-                            Discover tailor-made Sri Lanka tours, private drivers, safari experiences and beach holidays
-                            with trusted local experts.
-                        </p>
+                        <h1 class="display-3 text-white mb-md-4">{{ t('hero1') }}</h1>
+                        <p class="text-white mb-3">{{ t('hero1sub') }}</p>
                         <a href="https://wa.me/447375612946" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                            WhatsApp
+                            {{ t('whatsapp') }}
                         </a>
                     </div>
                 </div>
@@ -24,10 +18,9 @@
                 <img class="w-100" src="assets/img/5daysTours/32.jpg" alt="Sigiriya tour Sri Lanka">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <!-- <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4> -->
-                        <h1 class="display-3 text-white mb-md-4">Unforgettable Sri Lanka Tour Packages</h1>
+                        <h1 class="display-3 text-white mb-md-4">{{ t('hero2') }}</h1>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">Explore Tours</button>
+                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
@@ -35,10 +28,9 @@
                 <img class="w-100" src="assets/img/5daysTours/28.png" alt="Sri Lanka wildlife safari tour">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <!-- <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4> -->
-                        <h1 class="display-3 text-white mb-md-4">Private Tours Across Beautiful Sri Lanka</h1>
+                        <h1 class="display-3 text-white mb-md-4">{{ t('hero3') }}</h1>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">Explore Tours</button>
+                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
@@ -46,10 +38,9 @@
                 <img class="w-100" src="assets/img/5daysTours/41.jpg" alt="Ella Nine Arches Bridge Sri Lanka tour">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <!-- <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4> -->
-                        <h1 class="display-3 text-white mb-md-4">Discover Sigiriya, Ella & Sri Lanka Highlights</h1>
+                        <h1 class="display-3 text-white mb-md-4">{{ t('hero4') }}</h1>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">Explore Tours</button>
+                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
@@ -266,8 +257,8 @@
             <div *ngFor="let tour of activeTab==='day' ? dayTours : multiDayTours; let i = index"
                 class="col-lg-4 col-md-6 mb-4 package-card-wrapper" [style.--i]="i">
                 <app-package-item-component [image]="tour.image" [days]="tour.days" [persons]="tour.persons"
-                    [rating]="tour.rating" [price]="tour.price" [title]="tour.title" [routerLink]="tour.routerLink" [isBestseller]="tour.isBestseller"
-                    [isLimited]="tour.isLimited"
+                    [rating]="tour.rating" [price]="tour.price" [title]="tour.title" [routerLink]="tour.link"                     [isBestseller]="!!tour.isBestseller"
+                    [isLimited]="!!tour.isLimited"
                     class="package-card">
                 </app-package-item-component>
             </div>
@@ -325,7 +316,7 @@
                         and enjoy safe, comfortable, and unforgettable travel experiences.
                     </p>
 
-                    <a href="/contact-us" class="btn btn-primary py-md-3 px-md-5 mt-2">
+                    <a [routerLink]="contactLink" class="btn btn-primary py-md-3 px-md-5 mt-2">
                         Plan Your Sri Lanka Tour
                     </a>
                 </div>
@@ -595,25 +586,25 @@
 
     <div class="row justify-content-center">
         <div class="col-md-3 mb-3">
-            <a href="/7-day-sri-lanka-tour" class="btn btn-outline-primary w-100">
+            <a [routerLink]="tour7Link" class="btn btn-outline-primary w-100">
                 7 Day Sri Lanka Tour
             </a>
         </div>
 
         <div class="col-md-3 mb-3">
-            <a href="/8-day-sri-lanka-private-tour" class="btn btn-outline-primary w-100">
+            <a [routerLink]="tour8Link" class="btn btn-outline-primary w-100">
                 8 Day Private Tour
             </a>
         </div>
 
         <div class="col-md-3 mb-3">
-            <a href="/ella-day-tour" class="btn btn-outline-primary w-100">
+            <a [routerLink]="ellaLink" class="btn btn-outline-primary w-100">
                 Ella Day Tour
             </a>
         </div>
 
         <div class="col-md-3 mb-3">
-            <a href="/sigiriya-day-tour" class="btn btn-outline-primary w-100">
+            <a [routerLink]="sigiriyaLink" class="btn btn-outline-primary w-100">
                 Sigiriya Day Tour
             </a>
         </div>

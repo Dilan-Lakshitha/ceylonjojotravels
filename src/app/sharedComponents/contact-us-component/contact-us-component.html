@@ -1,11 +1,12 @@
+<ng-container *transloco="let t; scope: 'contact'; prefix: 'contact'">
 <div *ngIf="!homecontact" class="container-fluid page-header">
   <div class="container">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-      <h3 class="display-4 text-white text-uppercase">Contact</h3>
+      <h3 class="display-4 text-white text-uppercase">{{ t('header.title') }}</h3>
       <div class="d-inline-flex text-white">
-        <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+        <p class="m-0 text-uppercase"><a class="text-white" [routerLink]="homeLink"><ng-container *transloco="let c; scope: 'common'; prefix: 'common'">{{ c('nav.home') }}</ng-container></a></p>
         <i class="fa fa-angle-double-right pt-1 px-3"></i>
-        <p class="m-0 text-uppercase">Contact</p>
+        <p class="m-0 text-uppercase">{{ t('header.title') }}</p>
       </div>
     </div>
   </div>
@@ -15,49 +16,47 @@
 
 <div class="container my-5" [ngClass]="{'white-text': homecontact}">
   <div class="text-center mb-5 pb-3">
-    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact</h6>
-    <h1>Contact For Any Query</h1>
+    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('eyebrow') }}</h6>
+    <h1>{{ t('heading') }}</h1>
   </div>
   <div class="row">
     <!-- Contact Details -->
     <div class="col-md-5 mb-4">
-      <h3>Contact Information</h3>
-      <p><strong>Address:</strong> No 111/3 , Dediyawala Rd, Maha Waskaduwa ,Waskaduwa, Kalutara North, Sri Lanka</p>
-      <p><strong>WhatsApp / Voice:</strong> +44 73 75 612 946</p>
-      <p><strong>Email:</strong> ceylonjojotravels@gmail.com</p>
-      <p><strong>Business Hours:</strong> Open 24 Hours | 7 Days</p>
+      <h3>{{ t('info.title') }}</h3>
+      <p><strong>{{ t('info.addressLabel') }}</strong> {{ t('info.addressValue') }}</p>
+      <p><strong>{{ t('info.phoneLabel') }}</strong> {{ t('info.phoneValue') }}</p>
+      <p><strong>{{ t('info.emailLabel') }}</strong> {{ t('info.emailValue') }}</p>
+      <p><strong>{{ t('info.hoursLabel') }}</strong> {{ t('info.hoursValue') }}</p>
       <hr>
-      <h5>Get in Touch With Us</h5>
+      <h5>{{ t('getInTouch.title') }}</h5>
       <p>
-        Everything you need is at your fingertips. For any questions or queries please use the form below or
-        alternatively email us at <a href="mailto:info@driversinsrilanka.com">ceylonjojotravels@gmail.com</a>, talk to
-        us
-        via <a href="tel:+94773531693">+44 73 75 612 946</a>. We are always here for your assistance.
+        {{ t('getInTouch.text') }} <a href="mailto:info@driversinsrilanka.com">{{ t('info.emailValue') }}</a>, {{ t('getInTouch.orCall') }}
+        <a href="tel:+94773531693">{{ t('info.phoneValue') }}</a>. {{ t('getInTouch.closing') }}
       </p>
     </div>
 
     <!-- Contact Form -->
     <div class="col-md-7">
-      <h3>Send a Message</h3>
+      <h3>{{ t('form.title') }}</h3>
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="mb-3">
-          <label for="name" class="form-label">Your Name *</label>
+          <label for="name" class="form-label">{{ t('form.nameLabel') }}</label>
           <input id="name" type="text" class="form-control" formControlName="name" />
           <div class="text-danger" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
-            Name is required
+            {{ t('form.nameRequired') }}
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">Your Email *</label>
+          <label for="email" class="form-label">{{ t('form.emailLabel') }}</label>
           <input id="email" type="email" class="form-control" formControlName="email" />
           <div class="text-danger" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
-            Please enter a valid email
+            {{ t('form.emailInvalid') }}
           </div>
         </div>
 
         <div class="mb-3">
-          <label class="form-label">Contact Phone *</label>
+          <label class="form-label">{{ t('form.phoneLabel') }}</label>
           <div class="d-flex">
 
             <select class="w-50 me-2" [(ngModel)]="selectedCountryCode" name="countryCode" [ngModelOptions]="{standalone: true}" required>
@@ -67,24 +66,24 @@
             </select>
 
 
-            <input type="tel" class="form-control" placeholder="712345678" formControlName="contactPhone" required
+            <input type="tel" class="form-control" [placeholder]="t('form.phonePlaceholder')" formControlName="contactPhone" required
               pattern="^\d{7,15}$" />
           </div>
           <small class="text-danger"
             *ngIf="contactForm.get('contactPhone')?.invalid && contactForm.get('contactPhone')?.touched">
-            Valid phone number is required
+            {{ t('form.phoneInvalid') }}
           </small>
         </div>
 
         <div class="mb-3">
-          <label for="message" class="form-label">Message *</label>
+          <label for="message" class="form-label">{{ t('form.messageLabel') }}</label>
           <textarea id="message" rows="5" class="form-control" formControlName="message"></textarea>
           <div class="text-danger" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
-            Message is required
+            {{ t('form.messageRequired') }}
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send</button>
+        <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">{{ t('form.send') }}</button>
       </form>
 
       <div *ngIf="successMessage" class="alert alert-success text-end mt-3">
@@ -93,3 +92,4 @@
     </div>
   </div>
 </div>
+</ng-container>

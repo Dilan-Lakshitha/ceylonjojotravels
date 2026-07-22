@@ -1,56 +1,50 @@
-<!-- Header Start -->
-<div class="container-fluid page-header">
+<div class="container-fluid page-header" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-4 text-white text-uppercase">Packages</h3>
+            <h3 class="display-4 text-white text-uppercase">{{ t('packages.header') }}</h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" [routerLink]="homeLink">{{ t('nav.home') }}</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">Packages</p>
+                <p class="m-0 text-uppercase">{{ t('packages.header') }}</p>
             </div>
         </div>
     </div>
 </div>
-<!-- Header End -->
 
-
-<!-- Packages Start -->
-<div class="container-fluid  bg-light">
+<div class="container-fluid bg-light" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container pt-5 pb-3">
-        <div class="text-center ">
-            <h6 class="text-primary text-uppercase tracking-widest">Packages</h6>
-            <h1 class="font-bold text-4xl">Perfect Tour Packages</h1>
+        <div class="text-center">
+            <h6 class="text-primary text-uppercase tracking-widest">{{ t('packages.header') }}</h6>
+            <h1 class="font-bold text-4xl">{{ t('packages.title') }}</h1>
         </div>
 
         <div class="flex text-center mb-4 relative">
             <button class="tab-btn-outline" [class.active]="activeTab==='multi'" (click)="setTab('multi')">
-                Multi-Day Tours
+                {{ t('packages.multiDay') }}
             </button>
             <button class="tab-btn-outline" [class.active]="activeTab==='day'" (click)="setTab('day')">
-                Day Tours
+                {{ t('packages.dayTours') }}
             </button>
-
         </div>
 
-
-        <!-- Tab Content -->
         <div class="row">
             <div *ngFor="let tour of activeTab==='day' ? dayTours : multiDayTours; let i = index"
                 class="col-lg-4 col-md-6 mb-4 package-card-wrapper" [style.--i]="i">
-                <app-package-item-component [image]="tour.image" [days]="tour.days" [persons]="tour.persons"
-                    [rating]="tour.rating" [price]="tour.price" [title]="tour.title" [routerLink]="tour.routerLink" [isBestseller]="tour.isBestseller"
-  [isLimited]="tour.isLimited"
+                <app-package-item-component
+                    [image]="tour.image"
+                    [days]="tour.days"
+                    [persons]="tour.persons"
+                    [rating]="tour.rating"
+                    [price]="tour.price"
+                    [title]="tour.title"
+                    [routerLink]="tour.link"
+                    [isBestseller]="!!tour.isBestseller"
+                    [isLimited]="!!tour.isLimited"
                     class="package-card">
                 </app-package-item-component>
             </div>
         </div>
-
     </div>
 </div>
 
-
-
-<!-- Packages End -->
-
 <router-outlet></router-outlet>
-<!-- Destination Start -->

@@ -13,11 +13,11 @@
   <meta property="og:image" content="https://ceylonjojotravels.com/assets/img/package-2.jpg">
   <meta property="og:description"
     content="Discover Sri Lanka with private tours, chauffeur driver services and tailor-made holiday packages. Explore Sigiriya, Ella, Yala safari and beaches with local experts.">
-  <meta property="og:url" content="https://ceylonjojotravels.com/">
+  <meta property="og:url" content="https://ceylonjojotravels.com/en">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CEYLON JOJO TRAVElS">
-  <link rel="alternate" hreflang="en" href="https://ceylonjojotravels.com/" />
-  <link rel="alternate" hreflang="x-default" href="https://ceylonjojotravels.com/" />
+  <link rel="alternate" hreflang="en" href="https://ceylonjojotravels.com/en" />
+  <link rel="alternate" hreflang="x-default" href="https://ceylonjojotravels.com/en" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
   <link rel="icon" type="image/png" sizes="48x48" href="https://ceylonjojotravels.com/assets/img/favicon.png">
@@ -28,7 +28,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="google" content="notranslate">
   <script src="https://elfsightcdn.com/platform.js" async></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLPJM9Z3P4"></script>
   <script type="application/ld+json">
@@ -62,97 +61,19 @@
   </noscript>
   <app-root></app-root>
 
-  <!-- <script src="https://elfsightcdn.com/platform.js" async></script> -->
-  <div id="google_translate_element" style="display:none;"></div>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLPJM9Z3P4"></script>
-
   <script>
     (function () {
-      if (window.trustedTypes && trustedTypes.createPolicy) {
-        try {
-          trustedTypes.createPolicy('default', {
-            createScriptURL: function (url) { return url; },
-            createHTML: function (html) { return html; }
-          });
-        } catch (e) { /* already registered */ }
-      }
-
-      window.googleTranslateElementInit = function () {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'en,de,it,fr,es,zh-CN,ru,pl',
-          autoDisplay: false
-        }, 'google_translate_element');
-
-        window.googleTranslateReady = true;
-        window.dispatchEvent(new CustomEvent('google-translate-ready'));
-
-        if (location.pathname.match(/^\/(pl|ru|zh|zh-CN|fr|de|it|es)/)) {
-          var meta = document.createElement('meta');
-          meta.name = 'robots';
-          meta.content = 'noindex, follow';
-          document.head.appendChild(meta);
-        }
-      };
-
-      window.loadGoogleTranslate = function () {
-        if (window.translateLoaded) return;
-        window.translateLoaded = true;
-
-        var url = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        var script = document.createElement('script');
-        script.defer = true;
-
-        if (window.trustedTypes && trustedTypes.createPolicy) {
-          try {
-            var ttPolicy = trustedTypes.createPolicy('translate-loader', {
-              createScriptURL: function (u) { return u; }
-            });
-            script.src = ttPolicy.createScriptURL(url);
-          } catch (e) {
-            script.src = url;
-          }
-        } else {
-          script.src = url;
-        }
-
-        document.body.appendChild(script);
-      };
-
       window.addEventListener('load', function () {
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(function () {
-            window.loadGoogleTranslate();
-            loadAnalytics();
-          }, { timeout: 2500 });
-        } else {
-          setTimeout(function () {
-            window.loadGoogleTranslate();
-            loadAnalytics();
-          }, 500);
-        }
-      });
-
-      function loadAnalytics() {
         if (window.gtagLoaded) return;
         window.gtagLoaded = true;
-
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         window.gtag = gtag;
         gtag('js', new Date());
         gtag('config', 'G-ZLPJM9Z3P4');
-        gtag('config', 'AW-1234567890');
-
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZLPJM9Z3P4';
-        document.head.appendChild(s);
-      }
+      });
     })();
   </script>
-
 </body>
 
 </html>

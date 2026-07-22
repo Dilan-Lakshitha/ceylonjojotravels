@@ -1,0 +1,2726 @@
+{
+  "catalog": {
+    "dayTours": [
+      {
+        "id": "ella-day-tour",
+        "title": "Однодневный тур в Эллу",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "ella-day-tour",
+        "image": "assets/img/onedayTour/ella/7.jpeg",
+        "routerLink": "/odnodnevnyy-tur-ella",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "odnodnevnyy-tur-ella"
+      },
+      {
+        "id": "galle-day-tour",
+        "title": "Однодневный тур в Галле",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "galle-day-tour",
+        "image": "assets/img/onedayTour/Galle/7.jpg",
+        "routerLink": "/odnodnevnyy-tur-galle",
+        "isBestseller": true,
+        "isLimited": false,
+        "slug": "odnodnevnyy-tur-galle"
+      },
+      {
+        "id": "kandy-day-tour",
+        "title": "Однодневный тур в Канди",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "kandy-day-tour",
+        "image": "assets/img/onedayTour/kandy/3.jpg",
+        "routerLink": "/odnodnevnyy-tur-kandy",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "odnodnevnyy-tur-kandy"
+      },
+      {
+        "id": "sigiriya-day-tour",
+        "title": "Однодневный тур в Сигирию",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "sigiriya-day-tour",
+        "image": "assets/img/onedayTour/Sigiriya/3.jpg",
+        "routerLink": "/odnodnevnyy-tur-sigiriya",
+        "isBestseller": true,
+        "isLimited": false,
+        "slug": "odnodnevnyy-tur-sigiriya"
+      }
+    ],
+    "multiDayTours": [
+      {
+        "id": "2-day-ella-yala-private-tour-sri-lanka",
+        "title": "2 дня: Элла и сафари Яла",
+        "days": "2 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+        "image": "assets/img/5daysTours/24.jpg",
+        "routerLink": "/2-dnya-ella-yala",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "2-dnya-ella-yala"
+      },
+      {
+        "id": "2-day-ella-kandy-private-tour-sri-lanka",
+        "title": "2 дня: Элла и Канди",
+        "days": "2 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+        "image": "assets/img/package-3.jpg",
+        "routerLink": "/2-dnya-ella-kandy",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "2-dnya-ella-kandy"
+      },
+      {
+        "id": "4-day-sri-lanka-tour",
+        "title": "4-дневный тур по Шри-Ланке",
+        "days": "4 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "4-day-sri-lanka-tour",
+        "image": "assets/img/package-8.jpeg",
+        "routerLink": "/4-dnya-shri-lanka",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "4-dnya-shri-lanka"
+      },
+      {
+        "id": "5-day-sri-lanka-tour",
+        "title": "5-дневный тур по Шри-Ланке",
+        "days": "5 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "5-day-sri-lanka-tour",
+        "image": "assets/img/package-4.jpeg",
+        "routerLink": "/5-dney-shri-lanka",
+        "isBestseller": false,
+        "isLimited": true,
+        "slug": "5-dney-shri-lanka"
+      },
+      {
+        "id": "6-day-sri-lanka-private-tour",
+        "title": "6-дневный частный тур",
+        "days": "6 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "6-day-sri-lanka-private-tour",
+        "image": "assets/img/package-7.jpeg",
+        "routerLink": "/6-dney-shri-lanka",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "6-dney-shri-lanka"
+      },
+      {
+        "id": "7-day-sri-lanka-tour",
+        "title": "7-дневный тур по Шри-Ланке",
+        "days": "7 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "7-day-sri-lanka-tour",
+        "image": "assets/img/package-1.jpeg",
+        "routerLink": "/7-dney-shri-lanka",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "7-dney-shri-lanka"
+      },
+      {
+        "id": "10-day-sri-lanka-tour",
+        "title": "10-дневный тур по Шри-Ланке",
+        "days": "10 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "10-day-sri-lanka-tour",
+        "image": "assets/img/package-2.jpg",
+        "routerLink": "/10-dney-shri-lanka",
+        "isBestseller": false,
+        "isLimited": true,
+        "slug": "10-dney-shri-lanka"
+      },
+      {
+        "id": "8-day-sri-lanka-private-tour",
+        "title": "8-дневный частный тур",
+        "days": "8 дней",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "8-day-sri-lanka-private-tour",
+        "image": "assets/img/7dayschange/2.jpeg",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "8-dney-shri-lanka"
+      }
+    ]
+  },
+  "details": {
+    "ella-day-tour": {
+      "id": "ella-day-tour",
+      "slug": "odnodnevnyy-tur-ella",
+      "title": "Однодневный тур в Эллу",
+      "description": "Частный тур: Девятиарочный мост, Малый пик Адама и водопад Равана.",
+      "duration": "one Day",
+      "persons": "20 Persons",
+      "filecode": "ella-day-tour",
+      "overview": "Частный тур: Девятиарочный мост, Малый пик Адама и водопад Равана.",
+      "tourType": "Дневной тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Девятиарочный мост",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Величественный Девятиарочный мост – одна из многих причин этого. Великолепный девятиарочный мост между Эллой и станцией Демодара — одно из инженерных чудес начала 20 века.",
+              "image": "assets/img/onedayTour/ella/1.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Элла Путешествия на поезде",
+                "icon": "fa-train",
+                "color": "#063764ff"
+              },
+              "description": "Поездка на поезде в Элле – самая красивая поездка на поезде на Шри-Ланке, если не в мире! Сядьте на поезд и насладитесь захватывающим видом на пышные плантации зеленого чая, горы, виадуки, долины и т. д.",
+              "image": "assets/img/onedayTour/ella/3.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маленький Пик Адамса",
+                "icon": "fa-leaf",
+                "color": "#0f6935ff"
+              },
+              "description": "Ее высота 1141 м, а время подъема от входа занимает 30-45 минут. Виды с вершины невероятные. Панорамный вид на 360 градусов.",
+              "image": "assets/img/onedayTour/ella/6.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#8e44ad"
+              },
+              "description": "Водопад Равана, один из самых широких водопадов в стране. Водопад весьма впечатляет, и вы можете перелезть через некоторые скалы, чтобы рассмотреть его поближе.",
+              "image": "assets/img/onedayTour/ella/2.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "слоновий приют Удавалава",
+                "icon": "fa-elephant",
+                "color": "#8e44ad"
+              },
+              "description": "4-я остановка: вы можете наблюдать за оживленной группой из 20 или 30 молодых и подростков толстокожих, которых кормят четыре раза в день.",
+              "image": "assets/img/onedayTour/ella/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание и питание водителя",
+        "Пикап и высадка",
+        "Плата за топливо и парковку",
+        "24-часовое обслуживание",
+        "Неограниченный пробег на весь тур",
+        "Ваше размещение"
+      ],
+      "excludes": [
+        "Еда и напитки",
+        "Плата за вход и мероприятия"
+      ]
+    },
+    "galle-day-tour": {
+      "id": "galle-day-tour",
+      "slug": "odnodnevnyy-tur-galle",
+      "title": "Однодневный тур в Галле",
+      "description": "Форт Галле и южное побережье в частном туре.",
+      "duration": "one Day",
+      "persons": "20 Persons",
+      "filecode": "galle-day-tour",
+      "overview": "Форт Галле и южное побережье в частном туре.",
+      "tourType": "Дневной тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Маршрут однодневного тура в Галле",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маршрут однодневного тура в Галле",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Посетите питомник морских черепах и узнайте о мерах по сохранению, наблюдая за различными видами черепах.",
+              "image": "assets/img/onedayTour/Galle/6.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Голландский форт Галле",
+                "icon": "fa-Galle Dutch Fort",
+                "color": "#8e44ad"
+              },
+              "description": "Исследуйте голландский форт Галле, внесенный в список Всемирного наследия ЮНЕСКО, с богатой колониальной историей и потрясающими видами на океан.",
+              "image": "assets/img/onedayTour/Galle/5.jpg"
+            },
+            {
+              "type": "Активность",
+              "title": {
+                "title": "Поездка на лодке по реке Бентота",
+                "icon": "fa-ship",
+                "color": "#2980b9"
+              },
+              "description": "Наслаждайтесь расслабляющей прогулкой на лодке по реке Бентота в окружении мангровых зарослей и дикой природы.",
+              "image": "assets/img/onedayTour/Galle/3.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Мемориал Цунами",
+                "icon": "fa-monument",
+                "color": "#c0392b"
+              },
+              "description": "Посетите Мемориал цунами и узнайте о цунами 2004 года и его влиянии на Шри-Ланку.",
+              "image": "assets/img/onedayTour/Galle/8.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Центр добычи лунного камня",
+                "icon": "fa-gem",
+                "color": "#f39c12"
+              },
+              "description": "Узнайте, как добывают и обрабатывают знаменитые лунные камни Шри-Ланки.",
+              "image": "assets/img/onedayTour/Galle/9.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Все входные билеты на аттракционы",
+        "Дорожные билеты и плата за парковку",
+        "Профессиональный англоговорящий водитель",
+        "Частный автомобиль с кондиционером"
+      ],
+      "excludes": [
+        "Еда и напитки",
+        "Плата за вход и мероприятия"
+      ]
+    },
+    "kandy-day-tour": {
+      "id": "kandy-day-tour",
+      "slug": "odnodnevnyy-tur-kandy",
+      "title": "Однодневный тур в Канди",
+      "description": "Храм Зуба Будды и главные достопримечательности Канди.",
+      "duration": "Один день",
+      "persons": "20 Persons",
+      "filecode": "kandy-day-tour",
+      "overview": "Храм Зуба Будды и главные достопримечательности Канди.",
+      "tourType": "Дневной тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Маршрут однодневного тура в Канди",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маршрут однодневного тура в Канди",
+                "icon": "fa-car",
+                "color": "#f39c12"
+              },
+              "description": "Понаблюдайте за слонами вблизи и узнайте об уходе за слонами и их сохранении.",
+              "image": "assets/img/onedayTour/kandy/3.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Millennium Elephant Foundation / Pinnawala Elephant Orphanage",
+                "icon": "fa-elephant",
+                "color": "#8e44ad"
+              },
+              "description": "Понаблюдайте за слонами вблизи и узнайте об уходе за слонами и их сохранении.",
+              "image": "assets/img/onedayTour/kandy/1.jpg"
+            },
+            {
+              "type": "Активность",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Посетите самый священный буддийский храм Шри-Ланки, расположенный в самом сердце Канди.",
+              "image": "assets/img/onedayTour/kandy/3.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Чайная фабрика и чайная плантация",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Исследуйте чайную фабрику и плантацию и узнайте, как производится всемирно известный цейлонский чай.",
+              "image": "assets/img/onedayTour/kandy/5.jpg"
+            },
+            {
+              "type": "Осмотр достопримечательностей",
+              "title": {
+                "title": "Озеро Канди и смотровая площадка",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Насладитесь живописным видом на город Канди и отдохните у живописного озера Канди.",
+              "image": "assets/img/onedayTour/kandy/6.jpg"
+            },
+            {
+              "type": "Дополнительное посещение",
+              "title": {
+                "title": "Сад трав и специй",
+                "icon": "fa-seedling",
+                "color": "#16a085"
+              },
+              "description": "Дополнительное посещение сада трав и специй, чтобы узнать о специях и травах Шри-Ланки.",
+              "image": "assets/img/onedayTour/kandy/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Все входные билеты на аттракционы",
+        "Дорожные билеты и плата за парковку",
+        "Профессиональный англоговорящий водитель",
+        "Частный автомобиль с кондиционером"
+      ],
+      "excludes": [
+        "Еда и напитки",
+        "Плата за вход и мероприятия"
+      ]
+    },
+    "sigiriya-day-tour": {
+      "id": "sigiriya-day-tour",
+      "slug": "odnodnevnyy-tur-sigiriya",
+      "title": "Однодневный тур в Сигирию",
+      "description": "Скала Сигирия и королевские сады.",
+      "duration": "Один день",
+      "persons": "20 Persons",
+      "filecode": "sigiriya-day-tour",
+      "overview": "Скала Сигирия и королевские сады.",
+      "tourType": "Дневной тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Маршрут однодневного тура в Сигирию",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маршрут однодневного тура в Сигирию",
+                "icon": "fa-car",
+                "color": "#f39c12"
+              },
+              "description": "Самовывоз из отеля на комфортабельном частном автомобиле с кондиционером.",
+              "image": "assets/img/onedayTour/Sigiriya/1.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Золотой пещерный храм – Дамбулла",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Посетите пещерный храм Дамбулла, внесенный в список Всемирного наследия ЮНЕСКО, известный своими древними фресками и статуями Будды.",
+              "image": "assets/img/onedayTour/Sigiriya/6.jpg"
+            },
+            {
+              "type": "Активность",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Посетите самый священный буддийский храм Шри-Ланки, расположенный в самом сердце Канди.",
+              "image": "assets/img/onedayTour/Sigiriya/7.jpg"
+            },
+            {
+              "type": "Приключение",
+              "title": {
+                "title": "Скалолазание Сигирия или Пидурангала",
+                "icon": "fa-mountain",
+                "color": "#f39c12"
+              },
+              "description": "Поднимитесь на знаменитую скальную крепость Сигирия или скалу Пидурангала, чтобы полюбоваться потрясающими панорамными видами.",
+              "image": "assets/img/onedayTour/Sigiriya/8.jpg"
+            },
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Сафари на диких слонах",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Отправьтесь на захватывающее сафари на диких слонах в национальном парке (джип и входные билеты не включены).",
+              "image": "assets/img/onedayTour/Sigiriya/9.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Все входные билеты на аттракционы (за исключением входа на сафари и джипа)",
+        "Дорожные билеты и плата за парковку",
+        "Профессиональный англоговорящий водитель",
+        "Частный автомобиль с кондиционером",
+        "Обед"
+      ],
+      "excludes": [
+        "Входные билеты на сафари и джип",
+        "Личные расходы"
+      ]
+    },
+    "2-day-ella-kandy-private-tour-sri-lanka": {
+      "id": "2-day-ella-kandy-private-tour-sri-lanka",
+      "slug": "2-dnya-ella-kandy",
+      "title": "2 дня: Элла и Канди",
+      "description": "Удавалаве, Элла, Рамбода и Храм Зуба Будды.",
+      "duration": "2 дня",
+      "persons": "Private Tour (1-20 Persons)",
+      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+      "overview": "Удавалаве, Элла, Рамбода и Храм Зуба Будды.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Удавалава и Элла Приключение",
+          "activities": [
+            {
+              "type": "Опыт дикой природы",
+              "title": {
+                "title": "Приют для слонов в Удавалаве",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Посетите транзитный приют для слонов в Удавалаве, чтобы увидеть, как за спасенными слонятами ухаживают и реабилитируют их перед возвращением в дикую природу.",
+              "image": "assets/img/2daysTours/7.jpg"
+            },
+            {
+              "type": "Живописный визит",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-train",
+                "color": "#8e44ad"
+              },
+              "description": "Исследуйте знаменитый Девятиарочный мост в Элле, окруженный пышной зеленью и захватывающими видами на холмистую местность.",
+              "image": "assets/img/2daysTours/5.jpg"
+            },
+            {
+              "type": "Пеший туризм",
+              "title": {
+                "title": "Маленький Пик Адама",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Наслаждайтесь короткой живописной прогулкой к Малому Пику Адама, откуда открывается панорамный вид на Эллу Гэп и окружающие чайные плантации.",
+              "image": "assets/img/2daysTours/9.jpg"
+            },
+            {
+              "type": "Приключение",
+              "title": {
+                "title": "Зиплайн Flying Ravana",
+                "icon": "fa-bolt",
+                "color": "#e74c3c"
+              },
+              "description": "Испытайте захватывающий зиплайн в парке приключений Flying Ravana с видом на потрясающий пейзаж Эллы.",
+              "image": "assets/img/2daysTours/10.jpg"
+            },
+            {
+              "type": "Посещение водопада",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Посетите красивый водопад Равана, один из самых известных водопадов Шри-Ланки, расположенный недалеко от Эллы.",
+              "image": "assets/img/2daysTours/11.jpg"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Культурный тур по холмам и Канди",
+          "activities": [
+            {
+              "type": "Посещение водопада",
+              "title": {
+                "title": "Рамбода-Фолс",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Остановитесь у водопада Рамбода, потрясающего водопада, расположенного в живописной холмистой местности Шри-Ланки.",
+              "image": "assets/img/2daysTours/13.jpg"
+            },
+            {
+              "type": "Посещение живописной башни",
+              "title": {
+                "title": "Башня Амбулувава",
+                "icon": "fa-mountain",
+                "color": "#9b59b6"
+              },
+              "description": "Поднимитесь на уникальную Башню биоразнообразия Амбулувава, чтобы полюбоваться захватывающим 360-градусным видом на окружающие горы.",
+              "image": "assets/img/2daysTours/12.jpg"
+            },
+            {
+              "type": "Культурный визит",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-place-of-worship",
+                "color": "#d35400"
+              },
+              "description": "Посетите священный Храм Зуба в Канди, одно из самых важных буддийских мест в мире.",
+              "image": "assets/img/2daysTours/4.jpg"
+            },
+            {
+              "type": "Опыт дикой природы",
+              "title": {
+                "title": "Слоновий приют Пиннавала",
+                "icon": "fa-paw",
+                "color": "#16a085"
+              },
+              "description": "Понаблюдайте за купанием и кормлением слонов в знаменитом слоновьем приюте Пиннавала.",
+              "image": "assets/img/2daysTours/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание и питание водителя",
+        "Трансфер из/в аэропорт или отель",
+        "Плата за топливо и парковку",
+        "24-часовое обслуживание",
+        "Неограниченный пробег на весь тур"
+      ],
+      "excludes": [
+        "Входные билеты и плата за мероприятия",
+        "Еда и напитки",
+        "Проживание (можно организовать по запросу)"
+      ]
+    },
+    "2-day-ella-yala-private-tour-sri-lanka": {
+      "id": "2-day-ella-yala-private-tour-sri-lanka",
+      "slug": "2-dnya-ella-yala",
+      "title": "2 дня: Элла и сафари Яла",
+      "description": "Элла и сафари в национальном парке Яла.",
+      "duration": "2 дня",
+      "persons": "Private Tour (1-20 Persons)",
+      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+      "overview": "Элла и сафари в национальном парке Яла.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Элла Приключения",
+          "activities": [
+            {
+              "type": "Живописный визит",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-train",
+                "color": "#8e44ad"
+              },
+              "description": "Исследуйте знаменитый Девятиарочный мост в Элле, окруженный пышной зеленью и захватывающими видами на холмистую местность.",
+              "image": "assets/img/2daysTours/5.jpg"
+            },
+            {
+              "type": "Пеший туризм",
+              "title": {
+                "title": "Маленький Пик Адама",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Наслаждайтесь короткой живописной прогулкой к Малому Пику Адама, откуда открывается панорамный вид на Эллу Гэп и окружающие чайные плантации.",
+              "image": "assets/img/2daysTours/9.jpg"
+            },
+            {
+              "type": "Приключение",
+              "title": {
+                "title": "Зиплайн Flying Ravana",
+                "icon": "fa-bolt",
+                "color": "#e74c3c"
+              },
+              "description": "Испытайте захватывающий зиплайн в парке приключений Flying Ravana с видом на потрясающий пейзаж Эллы.",
+              "image": "assets/img/2daysTours/10.jpg"
+            },
+            {
+              "type": "Посещение водопада",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Посетите красивый водопад Равана, один из самых известных водопадов Шри-Ланки, расположенный недалеко от Эллы.",
+              "image": "assets/img/2daysTours/11.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Oak Ray Элла Гэп",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Проживание в отеле Oak Ray Ella Gap или аналогичном отеле - HB на базе HB",
+              "image": "assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Яла Сафари",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Национальный парк Яла",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Яла является домом для 44 видов млекопитающих и 215 видов птиц. Среди его наиболее известных жителей — самая большая в мире концентрация леопардов.",
+              "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Водопад Равана окутан мифами и фольклором. Считается, что царь демонов Равана из эпоса Рамайана спрятал Ситу в пещере за водопадом после того, как похитил ее и вернул обратно.",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание и питание водителя",
+        "Трансфер из/в аэропорт или отель",
+        "Плата за топливо и парковку",
+        "24-часовое обслуживание",
+        "Неограниченный пробег на весь тур"
+      ],
+      "excludes": [
+        "Входные билеты и плата за мероприятия",
+        "Еда и напитки",
+        "Проживание (можно организовать по запросу)"
+      ]
+    },
+    "4-day-sri-lanka-tour": {
+      "id": "4-day-sri-lanka-tour",
+      "slug": "4-dnya-shri-lanka",
+      "title": "4-дневный тур по Шри-Ланке",
+      "description": "Сигирия, Канди, Элла и Яла за 4 дня.",
+      "duration": "4 дня",
+      "persons": "1-20 Persons",
+      "filecode": "4-day-sri-lanka-tour",
+      "overview": "Сигирия, Канди, Элла и Яла за 4 дня.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Kandy Cultural Experience",
+          "activities": [
+            {
+              "type": "Опыт дикой природы",
+              "title": {
+                "title": "Слоновий приют Пиннавала",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Посетите знаменитый слоновий приют Пиннавала, где о спасенных слонах заботятся и защищают. Понаблюдайте за слонами, купающимися в реке, и узнайте об усилиях по сохранению природы.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Культурный визит",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Исследуйте Шри Далада Малигава, один из самых священных буддийских храмов в мире, где хранится священная реликвия зуба Господа Будды.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Культурный опыт",
+              "title": {
+                "title": "Культурное танцевальное шоу в Канди",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Наслаждайтесь традиционным танцевальным представлением Канди с хождением по огню, игрой на барабанах и яркими культурными костюмами.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Живописный вид",
+              "title": {
+                "title": "Смотровая площадка Канди",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Остановитесь на смотровой площадке Канди, чтобы полюбоваться панорамным видом на город Канди, озеро и окружающие холмы.",
+              "image": "assets/img/5daysTours/476465443_947365727374414_5703532547629723678_n.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Ночевка в отеле Topez в Канди",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Остановитесь на ночь в комфортабельном отеле звездного класса в Канди на базе полупансиона.",
+              "extra": [
+                "Ужин включен",
+                "Отдельная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Канди – путешествие по стране Эллы Хилл",
+          "activities": [
+            {
+              "type": "Природа",
+              "title": {
+                "title": "Королевский ботанический сад Перадения",
+                "icon": "fa-tree",
+                "color": "#2ecc71"
+              },
+              "description": "Прогуляйтесь по одному из самых красивых ботанических садов Азии с орхидеями, пальмами, бамбуком и тропическими растениями.",
+              "image": "assets/img/5daysTours/himbgjcj6zckm6de1mhe.jpg"
+            },
+            {
+              "type": "Чайный опыт",
+              "title": {
+                "title": "Посещение чайной фабрики Гленлох",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Узнайте, как производится всемирно известный цейлонский чай, и насладитесь свежей чашкой, любуясь живописными чайными плантациями.",
+              "image": "assets/img/5daysTours/17.jpg"
+            },
+            {
+              "type": "Живописный визит",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Посетите знаменитый Девятиарочный мост колониальной эпохи, окруженный пышной зеленью и холмами.",
+              "image": "assets/img/5daysTours/5.jpg"
+            },
+            {
+              "type": "Пеший туризм",
+              "title": {
+                "title": "Маленький Пик Адама",
+                "icon": "fa-mountain",
+                "color": "#f39c12"
+              },
+              "description": "Наслаждайтесь легкой прогулкой с панорамным видом на Элла Гэп и окружающий горный массив.",
+              "image": "assets/img/5daysTours/9.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Ночевка в отеле Oak Ray Ella Gap или аналогичном отеле — HB на базе в Элле",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в живописном загородном отеле на холме с полупансионом.",
+              "extra": [
+                "Завтрак и ужин включены",
+                "Отдельная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Элла – Сафари по дикой природе Ялы",
+          "activities": [
+            {
+              "type": "Водопад",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Остановитесь у водопада Равана, одного из самых живописных водопадов Шри-Ланки, расположенного вдоль дороги Элла-Веллавайя.",
+              "image": "assets/img/5daysTours/n0oxsxmicxgleixkq2rx.jpg"
+            },
+            {
+              "type": "Историческое место",
+              "title": {
+                "title": "Храм Будурувагала",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Посетите этот древний скальный храмовый комплекс с впечатляющими резными статуями Будды.",
+              "image": "assets/img/5daysTours/18.jpg"
+            },
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Сафари в национальном парке Яла",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Отправьтесь на захватывающее сафари на джипах в национальный парк Яла, где обитают леопарды, слоны, крокодилы и разнообразные дикие животные.",
+              "image": "assets/img/5daysTours/xj7qybc2bk5bwnxdkubp.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Ночевка в Яле.",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в комфортабельном отеле в зоне сафари с полупансионом.",
+              "extra": [
+                "Завтрак и ужин включены"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Яла – Галле – Бентота – Аэропорт",
+          "activities": [
+            {
+              "type": "Посещение пляжа",
+              "title": {
+                "title": "Мирисса Бич",
+                "icon": "fa-umbrella-beach",
+                "color": "#f39c12"
+              },
+              "description": "Отдохните на пляже Мирисса или насладитесь дополнительным наблюдением за китами и видом на побережье.",
+              "image": "assets/img/5daysTours/21.jpg"
+            },
+            {
+              "type": "Наследство",
+              "title": {
+                "title": "Голландский форт Галле",
+                "icon": "fa-landmark",
+                "color": "#8e44ad"
+              },
+              "description": "Исследуйте форт Галле, внесенный в список Всемирного наследия ЮНЕСКО, с колониальной архитектурой, крепостными валами и видом на океан.",
+              "image": "assets/img/5daysTours/22.jpg"
+            },
+            {
+              "type": "Лодочное сафари",
+              "title": {
+                "title": "Сафари по реке Маду",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Наслаждайтесь спокойной прогулкой на лодке по мангровым зарослям и небольшим островам в одной из самых богатых водно-болотных экосистем Шри-Ланки.",
+              "image": "assets/img/5daysTours/23.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание с полупансионом",
+        "Встреча в аэропорту и высадка",
+        "Плата за топливо и парковку"
+      ],
+      "excludes": [
+        "Входные билеты",
+        "Обед и напитки",
+        "Личные расходы"
+      ]
+    },
+    "5-day-sri-lanka-tour": {
+      "id": "5-day-sri-lanka-tour",
+      "slug": "5-dney-shri-lanka",
+      "title": "5-дневный тур по Шри-Ланке",
+      "description": "Культура, природа и дикая природа за 5 дней.",
+      "duration": "5 дней",
+      "persons": "1-20 Persons",
+      "filecode": "5-day-sri-lanka-tour",
+      "overview": "Культура, природа и дикая природа за 5 дней.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Из аэропорта в Сигирию – приключение на слонах и сафари",
+          "activities": [
+            {
+              "type": "Прибытие",
+              "title": {
+                "title": "Встреча в аэропорту",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              },
+              "description": "Познакомьтесь с вашим профессиональным гидом-водителем в международном аэропорту Бандаранаике и начните свое частное путешествие по Шри-Ланке, направляясь к Культурному треугольнику."
+            },
+            {
+              "type": "Опыт дикой природы",
+              "title": {
+                "title": "Слоновий приют Пиннавала",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Посетите слоновий приют Пиннавала, известный заповедник, в котором заботятся о спасенных и осиротевших слонах. Понаблюдайте за слонами вблизи и, в зависимости от времени, станьте свидетелем их незабываемого купания в реке.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Сафари в национальном парке Миннерия",
+                "icon": "fa-leaf",
+                "color": "#8e44ad"
+              },
+              "description": "Насладитесь захватывающим сафари на джипах 4x4 в национальном парке Миннерия, известном благодаря «Сбору» — одному из крупнейших скоплений диких слонов в Азии. Найдите слонов, оленей, буйволов и разнообразные виды птиц.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "3,5-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "От Сигирии до Канди – культурное наследие",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Скальная крепость Сигирия",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Поднимитесь на скальную крепость Сигирия-Льв, внесенную в список Всемирного наследия ЮНЕСКО, королевский дворец V века, резко возвышающийся над равнинами джунглей. Исследуйте древние фрески, Зеркальную стену и панорамный вид на вершину.",
+              "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Посетите Шри Даладу Малигаву в Канди, один из самых священных буддийских храмов в мире. Станьте свидетелем традиционных ритуалов и полюбуйтесь красивой кандийской архитектурой храма.",
+              "image": "assets/img/5daysTours/4.jpg"
+            },
+            {
+              "type": "Культурный опыт",
+              "title": {
+                "title": "Культурное танцевальное шоу в Канди",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Наслаждайтесь вечерним культурным танцевальным представлением с традиционной кандийской игрой на барабанах, хождением по огню и яркими костюмами, демонстрирующими богатое художественное наследие Шри-Ланки.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Топаз – Канди",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в отеле Топаз (или аналогичном).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "От Канди до Нувара Элии – живописной чайной страны",
+          "activities": [
+            {
+              "type": "Природа",
+              "title": {
+                "title": "Королевский ботанический сад Перадения",
+                "icon": "fa-tree",
+                "color": "#16a085"
+              },
+              "description": "Исследуйте один из лучших ботанических садов Азии с экзотическими орхидеями, высокими пальмовыми аллеями, лекарственными растениями и красивыми ландшафтными территориями вдоль реки Махавели.",
+              "image": "assets/img/5daysTours/26.jpg"
+            },
+            {
+              "type": "Природа",
+              "title": {
+                "title": "Водопад Рамбода",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Остановитесь у водопада Рамбода, одного из самых высоких водопадов Шри-Ланки, окруженного живописными чайными плантациями и прохладным горным воздухом.",
+              "image": "assets/img/5daysTours/27.jpg"
+            },
+            {
+              "type": "Чайный опыт",
+              "title": {
+                "title": "Посещение чайной фабрики и плантации",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Узнайте, как производится всемирно известный цейлонский чай от листа до чашки. Прогуляйтесь по пышным чайным плантациям и насладитесь дегустацией свежего чая в горной местности Шри-Ланки.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Yara Нувара Элия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночь в отеле Yara Nuwara Eliya (или аналогичном).",
+              "image": "assets/img/5daysTours/29.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "От Нувара-Элии до Эллы – горные пейзажи",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-bridge",
+                "color": "#c0392b"
+              },
+              "description": "Величественный Девятиарочный мост – одна из многих причин этого. Великолепный девятиарочный мост между Эллой и станцией Демодара — одно из инженерных чудес начала 20 века.",
+              "image": "assets/img/5daysTours/5.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маленький Пик Адама",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Ее высота 1141 м, а время подъема от входа занимает 30-45 минут. Виды с вершины невероятные. Панорамный вид на 360 градусов с катящимися облаками — настоящее удовольствие.",
+              "image": "assets/img/5daysTours/9.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Oak Ray Элла Гэп",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Проживание в отеле Oak Ray Ella Gap или аналогичном отеле - HB на базе HB",
+              "image": "assets/img/5daysTours/30.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "От Удавалавы до юго-западного побережья – река и заповедник",
+          "activities": [
+            {
+              "type": "Сохранение",
+              "title": {
+                "title": "Проект по сохранению морских черепах",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Посетите центр сохранения морских черепах на южном побережье и узнайте о защите морской дикой природы, программах инкубации и усилиях по реабилитации.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Лодочное сафари",
+              "title": {
+                "title": "Сафари по реке Маду",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Насладитесь живописным сафари на лодке по мангровым лесам и небольшим островам реки Маду. Откройте для себя местное выращивание корицы и разнообразную дикую природу водно-болотных угодий.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Встреча и высадка в аэропорту",
+        "Плата за топливо и парковку",
+        "Неограниченный пробег на весь тур"
+      ],
+      "excludes": [
+        "Входные билеты и плата за мероприятия",
+        "Еда и напитки",
+        "Проживание (можно организовать по запросу)"
+      ]
+    },
+    "6-day-sri-lanka-private-tour": {
+      "id": "6-day-sri-lanka-private-tour",
+      "slug": "6-dney-shri-lanka",
+      "title": "6-дневный частный тур",
+      "description": "Сигирия, Канди, Элла, Яла и пляж.",
+      "duration": "6 дней",
+      "persons": "2-20 Persons",
+      "filecode": "6-day-sri-lanka-private-tour",
+      "overview": "Сигирия, Канди, Элла, Яла и пляж.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Прибытие и скала Пидурангала",
+          "activities": [
+            {
+              "type": "Прибытие",
+              "title": {
+                "title": "Прибытие",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              }
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Скала Пидурангала",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Небольшой поход к скале Пидурангала и наслаждение пейзажами.",
+              "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла «Фреско Уотер»",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Проживание в отеле Fresco Water Villa или аналогичном отеле - HB на базе HB",
+              "image": "assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Сигирия и Дамбулла",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Сигирия Львиная скала",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "В начале второго дня вы посетите объект Всемирного наследия ЮНЕСКО — скальную крепость Сигирия.",
+              "image": "assets/img/7dayschange/ihyw8fdom33yg8zqkmfi.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Деревня Хиривадунна и озеро Приключения",
+                "icon": "fa-leaf",
+                "color": "#8e44ad"
+              },
+              "description": "Давайте познакомимся с традиционной деревней Шри-Ланки!!! Посещение деревни Хиривадунна в Шри-Ланке демонстрирует непринужденный ритм жизни маленькой деревни.",
+              "image": "assets/img/5daysTours/36.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Пещерный храм Дамбулла",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "После отдыха в деревне Хиривадунна вы отправитесь в Королевский пещерный храм Дамбуллы, священное место паломничества на протяжении 22 веков.",
+              "image": "assets/img/7dayschange/d2ap1r8hoijw6wsm5xgy.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Специализированный экономический центр Дамбуллы",
+                "icon": "fa-shopping-basket",
+                "color": "#16a085"
+              },
+              "description": "Наслаждайтесь свежими фруктами и овощами на рынке Дамбулла.",
+              "image": "assets/img/7dayschange/v54wmh9aukt4toblznpu.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла «Фреско Уотер»",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Ночевка с полупансионом",
+              "image": "assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg",
+              "extra": [
+                "Завтрак",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Экскурсия по Канди",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Шри Далада Малигава",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Наконец-то вы посетите храм, в котором хранится Священная реликвия Зуба Будды, одна из самых святых святынь во всем буддийском мире!!!",
+              "image": "assets/img/7dayschange/f3pqyx8y4gpwmqhzleh0.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Клуб Kandy Lake - Культурное танцевальное шоу",
+                "icon": "fa-theater-masks",
+                "color": "#8e44ad"
+              },
+              "description": "Культурное танцевальное шоу Kandy Lake Club — это захватывающее шоу искусства, танцев и культурного наследия Шри-Ланки, которое обязательно должен увидеть каждый посетитель, посещающий исторический город Канди.",
+              "image": "assets/img/7dayschange/upxn0ge9htdg20ycpgp6.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Храм Шри Мутумариаммана",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Индуистский храм Шри Мутумариамман является одним из замечательных примеров, доказывающих, что Шри-Ланка на протяжении всех этих лет была многокультурной страной.",
+              "image": "assets/img/7dayschange/gt14exwu7ogp3rz9aun9.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Наланда Гедиге",
+                "icon": "fa-landmark",
+                "color": "#16a085"
+              },
+              "description": "Древнее и загадочное здание недалеко от Матале, которое сбило с толку исследователей своим странным сочетанием индуистской и буддийской архитектуры. Считается, что этому сооружению не менее тысячи лет.",
+              "image": "assets/img/7dayschange/u9901tv9mcxlz9rd9mgw.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Топаз",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Проживание в отеле «Топаз» или аналогичном отеле - HB на базе",
+              "image": "assets/img/7dayschange/sxapeujg7mpergbd5nic.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Нувара Элия через Эллу",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Королевский ботанический сад",
+                "icon": "fa-leaf",
+                "color": "#2ecc71"
+              },
+              "description": "В садах растет более 4000 различных видов растений, считающихся одними из самых лучших в Азии.",
+              "image": "assets/img/7dayschange/asojmlldivxq8vforwxt.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Башня Амбулувава",
+                "icon": "fa-mountain",
+                "color": "#e67e22"
+              },
+              "description": "Далее... легкий поход, который откроет вам 360-градусный вид на окружающие горы, леса, реки и города Канди!",
+              "image": "assets/img/7dayschange/w3a48osbcocecoaaq9hd.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Чайная фабрика Блюфилд",
+                "icon": "fa-coffee",
+                "color": "#8e44ad"
+              },
+              "description": "Как земля чая, Нувара Элия имеет довольно большое количество чайных фабрик, чайных домов и чайных полей. Чайная фабрика Bluefield в Нувара-Элии — одна из самых популярных чайных фабрик Шри-Ланки.",
+              "image": "assets/img/7dayschange/tijr5ztiozgdesbxotm4.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Смотровая площадка на водопад Рамбода",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Водопад Рамбода находится в районе Пусселлава города Канди. Этот район известен чудесными пейзажами, состоящими из высокогорья, хребтов, равнин, ручьев и холмистых гор.",
+              "image": "assets/img/7dayschange/ovdxsgglrdreodbe1tmv.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-bridge",
+                "color": "#c0392b"
+              },
+              "description": "Величественный Девятиарочный мост – одна из многих причин этого. Великолепный девятиарочный мост между Эллой и станцией Демодара — одно из инженерных чудес начала 20 века.",
+              "image": "assets/img/7dayschange/yka3mpx2nahiftrb0lpu.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маленький Пик Адама",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Ее высота 1141 м, а время подъема от входа занимает 30-45 минут. Виды с вершины невероятные. Панорамный вид на 360 градусов с катящимися облаками — настоящее удовольствие.",
+              "image": "assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Oak Ray Элла Гэп",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Проживание в отеле Oak Ray Ella Gap или аналогичном отеле - HB на базе HB",
+              "image": "assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Национальный парк Яла и водопад Равана",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Водопад Равана окутан мифами и фольклором. Считается, что царь демонов Равана из эпоса Рамайана спрятал Ситу в пещере за водопадом после того, как похитил ее и вернул обратно.",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Национальный парк Яла",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Яла является домом для 44 видов млекопитающих и 215 видов птиц. Среди его наиболее известных жителей — самая большая в мире концентрация леопардов.",
+              "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Гранд Тамаринд Лейк Отель",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Проживание в отеле Grand Tamarind Lake или аналогичном отеле - на базе HB",
+              "image": "assets/img/7dayschange/ipbxv6o0ovr2tfbc6pge.jpg",
+              "extra": [
+                "Отель 5 звезд (Люкс)",
+                "Отдельная ванная комната"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Мирисса и отъезд",
+          "activities": [
+            {
+              "type": "Сохранение",
+              "title": {
+                "title": "Проект по сохранению морских черепах",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Посетите центр сохранения морских черепах на южном побережье и узнайте о защите морской дикой природы, программах инкубации и усилиях по реабилитации.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Лодочное сафари",
+              "title": {
+                "title": "Сафари по реке Маду",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Насладитесь живописным сафари на лодке по мангровым лесам и небольшим островам реки Маду. Откройте для себя местное выращивание корицы и разнообразную дикую природу водно-болотных угодий.",
+              "image": "assets/img/5daysTours/32.jpg"
+            },
+            {
+              "type": "Отправление",
+              "title": {
+                "title": "Отправление Трансфер",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              }
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Встреча и высадка в аэропорту",
+        "Плата за топливо и парковку",
+        "Неограниченный пробег на весь тур"
+      ],
+      "excludes": [
+        "Входные билеты и плата за мероприятия",
+        "Еда и напитки",
+        "Проживание (можно организовать по запросу)"
+      ]
+    },
+    "7-day-sri-lanka-tour": {
+      "id": "7-day-sri-lanka-tour",
+      "slug": "7-dney-shri-lanka",
+      "title": "7-дневный тур по Шри-Ланке",
+      "description": "Сигирия, Канди, Элла и сафари Яла за 7 дней.",
+      "duration": "7 дней",
+      "persons": "20 Persons",
+      "filecode": "7-day-sri-lanka-tour",
+      "overview": "Сигирия, Канди, Элла и сафари Яла за 7 дней.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Сафари в национальном парке Уилпатту",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Исследуйте крупнейший национальный парк Шри-Ланки на 5-часовом сафари на джипах 4x4. Найдите леопардов, медведей-ленивцев, слонов, оленей, крокодилов и разнообразных птиц.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Thimbiri Wewa Resort – Вилпатту",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночь в отеле Thimbiri Wewa Resort Wilpattu (или аналогичном). Полупансион.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Ужин включен",
+                "Отель Стар Класс"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Вилпатту – Анурадхапура – ​​Сигирия",
+          "activities": [
+            {
+              "type": "Религиозный визит",
+              "title": {
+                "title": "Храм Шри Маха Бодхи",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Посетите священное дерево Шри Маха Бодхи в Анурадхапуре.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Исторический визит",
+              "title": {
+                "title": "Руванвели Маха Сейя",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Исследуйте один из самых священных буддийских памятников Шри-Ланки.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Живописный поход",
+              "title": {
+                "title": "Пидурангала Рок Сансет",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Поднимитесь на скалу Пидурангала, чтобы полюбоваться захватывающим видом на закат.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "3,5-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Культурный треугольник Сигирии",
+          "activities": [
+            {
+              "type": "Сайт ЮНЕСКО",
+              "title": {
+                "title": "Сигирия Львиная скальная крепость",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Поднимитесь на скальную крепость Сигирия, внесенную в список Всемирного наследия ЮНЕСКО.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Деревенский опыт",
+              "title": {
+                "title": "Тур по деревне Хиривадунна",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Почувствуйте настоящую сельскую деревенскую жизнь Шри-Ланки.",
+              "image": "assets/img/5daysTours/34.jpg"
+            },
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Миннерия Сафари",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Наслаждайтесь сафари на джипах 4x4, известном скоплениями слонов.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Оздоровление",
+              "title": {
+                "title": "Аюрведический массаж",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Расслабьтесь с помощью традиционного массажа с травяными маслами.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "3,5-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Сигирия – Канди",
+          "activities": [
+            {
+              "type": "Культурный визит",
+              "title": {
+                "title": "Сад специй Матале",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Откройте для себя знаменитые специи и травы Шри-Ланки.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "Сайт ЮНЕСКО",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Посетите самый священный буддийский храм Шри-Ланки в Канди.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Культурное шоу",
+              "title": {
+                "title": "Культурное танцевальное шоу в Канди",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Наслаждайтесь традиционными танцевальными представлениями Канди.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Топаз – Канди",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в отеле Топаз (или аналогичном).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Канди – Нувара Элия – Элла",
+          "activities": [
+            {
+              "type": "Чайный опыт",
+              "title": {
+                "title": "Чайная фабрика «Голубое поле»",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Узнайте, как производят всемирно известный цейлонский чай.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Природа",
+              "title": {
+                "title": "Водопад Рамбода",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Посетите один из самых высоких водопадов Шри-Ланки.",
+              "image": "assets/img/5daysTours/13.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Маленький Пик Адама",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Ее высота 1141 м, а время подъема от входа занимает 30-45 минут. Виды с вершины невероятные. Панорамный вид на 360 градусов с катящимися облаками — настоящее удовольствие.",
+              "image": "assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Oak Ray Элла Гэп",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в Элле.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Элла – Хиккадува",
+          "activities": [
+            {
+              "type": "Ориентир",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Посетите знаменитый железнодорожный мост колониальной эпохи.",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Водопад Равана",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Водопад Равана окутан мифами и фольклором. Считается, что царь демонов Равана из эпоса Рамайана спрятал Ситу в пещере за водопадом после того, как похитил ее и вернул обратно.",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            },
+            {
+              "type": "Дикая природа",
+              "title": {
+                "title": "Слоновий транзитный дом",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "Понаблюдайте за спасенными слонятами.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Сомерсет Мирисса Отель",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Проживание в отеле Somerset Mirissa или аналогичном отеле - на базе HB",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Завтрак",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "водные развлечения и отъезд",
+          "activities": [
+            {
+              "type": "Охрана дикой природы",
+              "title": {
+                "title": "Посещение черепахового инкубатория Коггала",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "Посетите черепаховый инкубаторий и центр охраны Коггала, где охраняются и реабилитируются находящиеся под угрозой исчезновения морские черепахи. Узнайте об усилиях Шри-Ланки по сохранению морской среды, понаблюдайте за маленькими черепахами в бассейнах инкубаторов и узнайте, как спасенных черепах выпускают обратно в Индийский океан.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Лодочное сафари",
+              "title": {
+                "title": "Сафари на лодке по реке Маду",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "Отправьтесь в живописное сафари на лодке по мангровым лесам и небольшим островам реки Маду. Посетите традиционные плантации корицы и исследуйте одну из самых красивых водно-болотных экосистем Шри-Ланки.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание и питание водителя",
+        "Пикап и высадка",
+        "Плата за топливо и парковку",
+        "24-часовое обслуживание",
+        "Неограниченный пробег на весь тур",
+        "Ваше размещение"
+      ],
+      "excludes": [
+        "Еда и напитки",
+        "Плата за вход и мероприятия"
+      ]
+    },
+    "8-day-sri-lanka-private-tour": {
+      "id": "8-day-sri-lanka-private-tour",
+      "slug": "8-dney-shri-lanka",
+      "title": "8-дневный частный тур",
+      "description": "Вилпатту, Сигирия, Канди, Элла и пляж.",
+      "duration": "8 дней",
+      "persons": "1-20 Persons",
+      "filecode": "8-day-sri-lanka-private-tour",
+      "overview": "Вилпатту, Сигирия, Канди, Элла и пляж.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Сафари в национальном парке Уилпатту",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Исследуйте крупнейший национальный парк Шри-Ланки на 5-часовом сафари на джипах 4x4. Найдите леопардов, медведей-ленивцев, слонов, оленей, крокодилов и разнообразных птиц.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Thimbiri Wewa Resort – Вилпатту",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночь в отеле Thimbiri Wewa Resort Wilpattu (или аналогичном). Полупансион.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Ужин включен",
+                "Отель Стар Класс"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Вилпатту – Анурадхапура – ​​Сигирия",
+          "activities": [
+            {
+              "type": "Религиозный визит",
+              "title": {
+                "title": "Храм Шри Маха Бодхи",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Посетите священное дерево Шри Маха Бодхи в Анурадхапуре.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Исторический визит",
+              "title": {
+                "title": "Руванвели Маха Сейя",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Исследуйте один из самых священных буддийских памятников Шри-Ланки.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Живописный поход",
+              "title": {
+                "title": "Пидурангала Рок Сансет",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Поднимитесь на скалу Пидурангала, чтобы полюбоваться захватывающим видом на закат.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "3,5-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Культурный треугольник Сигирии",
+          "activities": [
+            {
+              "type": "Сайт ЮНЕСКО",
+              "title": {
+                "title": "Сигирия Львиная скальная крепость",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Поднимитесь на скальную крепость Сигирия, внесенную в список Всемирного наследия ЮНЕСКО.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Деревенский опыт",
+              "title": {
+                "title": "Тур по деревне Хиривадунна",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Почувствуйте настоящую сельскую деревенскую жизнь Шри-Ланки.",
+              "image": "assets/img/5daysTours/34.jpg"
+            },
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Миннерия Сафари",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Наслаждайтесь сафари на джипах 4x4, известном скоплениями слонов.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Оздоровление",
+              "title": {
+                "title": "Аюрведический массаж",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Расслабьтесь с помощью традиционного массажа с травяными маслами.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "3,5-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Сигирия – Канди",
+          "activities": [
+            {
+              "type": "Культурный визит",
+              "title": {
+                "title": "Сад специй Матале",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Откройте для себя знаменитые специи и травы Шри-Ланки.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "Сайт ЮНЕСКО",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Посетите самый священный буддийский храм Шри-Ланки в Канди.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Культурное шоу",
+              "title": {
+                "title": "Культурное танцевальное шоу в Канди",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Наслаждайтесь традиционными танцевальными представлениями Канди.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Топаз – Канди",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в отеле Топаз (или аналогичном).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Канди – Нувара Элия – Элла",
+          "activities": [
+            {
+              "type": "Чайный опыт",
+              "title": {
+                "title": "Чайная фабрика «Голубое поле»",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Узнайте, как производят всемирно известный цейлонский чай.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Природа",
+              "title": {
+                "title": "Водопад Рамбода",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Посетите один из самых высоких водопадов Шри-Ланки.",
+              "image": "assets/img/5daysTours/13.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Oak Ray Элла Гэп",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в Элле.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Элла – Хиккадува",
+          "activities": [
+            {
+              "type": "Ориентир",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Посетите знаменитый железнодорожный мост колониальной эпохи.",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Дикая природа",
+              "title": {
+                "title": "Слоновий транзитный дом",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "Понаблюдайте за спасенными слонятами.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Сомерсет Мирисса Отель",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Проживание в отеле Somerset Mirissa или аналогичном отеле - на базе HB",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Завтрак",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Пляж Хиккадува",
+          "activities": [
+            {
+              "type": "Пляжный отдых",
+              "title": {
+                "title": "Пляж Хиккадува",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "Отдохните на золотых пляжах и искупайтесь в Индийском океане.",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Сомерсет Мирисса Отель",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Проживание в отеле Somerset Mirissa или аналогичном отеле - на базе HB",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Завтрак",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "title": "водные развлечения и отъезд",
+          "activities": [
+            {
+              "type": "Охрана дикой природы",
+              "title": {
+                "title": "Посещение черепахового инкубатория Коггала",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "Посетите черепаховый инкубаторий и центр охраны Коггала, где охраняются и реабилитируются находящиеся под угрозой исчезновения морские черепахи. Узнайте об усилиях Шри-Ланки по сохранению морской среды, понаблюдайте за маленькими черепахами в бассейнах инкубаторов и узнайте, как спасенных черепах выпускают обратно в Индийский океан.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Лодочное сафари",
+              "title": {
+                "title": "Сафари на лодке по реке Маду",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "Отправьтесь в живописное сафари на лодке по мангровым лесам и небольшим островам реки Маду. Посетите традиционные плантации корицы и исследуйте одну из самых красивых водно-болотных экосистем Шри-Ланки.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание с полупансионом (7 ночей)",
+        "Плата за топливо и парковку",
+        "Встреча в аэропорту и высадка"
+      ],
+      "excludes": [
+        "Входные билеты и плата за мероприятия",
+        "Обед и напитки",
+        "Личные расходы"
+      ]
+    },
+    "10-day-sri-lanka-tour": {
+      "id": "10-day-sri-lanka-tour",
+      "slug": "10-dney-shri-lanka",
+      "title": "10-дневный тур по Шри-Ланке",
+      "description": "Пляжи, сафари, горы и культура за 10 дней.",
+      "duration": "10 дней",
+      "persons": "1-20 Persons",
+      "filecode": "10-day-sri-lanka-tour",
+      "overview": "Пляжи, сафари, горы и культура за 10 дней.",
+      "tourType": "Круглый тур",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Сафари в национальном парке Уилпатту",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Исследуйте крупнейший национальный парк Шри-Ланки на 5-часовом сафари на джипах 4x4. Найдите леопардов, медведей-ленивцев, слонов, оленей, крокодилов и разнообразных птиц.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Thimbiri Wewa Resort – Вилпатту",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночь в отеле Thimbiri Wewa Resort Wilpattu (или аналогичном). Полупансион.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Ужин включен",
+                "Отель Стар Класс"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Вилпатту – Анурадхапура – ​​Сигирия",
+          "activities": [
+            {
+              "type": "Религиозный визит",
+              "title": {
+                "title": "Храм Шри Маха Бодхи",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Посетите священное дерево Шри Маха Бодхи в Анурадхапуре.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Исторический визит",
+              "title": {
+                "title": "Руванвели Маха Сейя",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Исследуйте один из самых священных буддийских памятников Шри-Ланки.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Живописный поход",
+              "title": {
+                "title": "Пидурангала Рок Сансет",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Поднимитесь на скалу Пидурангала, чтобы полюбоваться захватывающим видом на закат.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Культурный треугольник Сигирии",
+          "activities": [
+            {
+              "type": "Сайт ЮНЕСКО",
+              "title": {
+                "title": "Сигирия Львиная скальная крепость",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Поднимитесь на скальную крепость Сигирия, внесенную в список Всемирного наследия ЮНЕСКО.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Деревенский опыт",
+              "title": {
+                "title": "Тур по деревне Хиривадунна",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Почувствуйте настоящую сельскую деревенскую жизнь Шри-Ланки.",
+              "image": "assets/img/5daysTours/36.jpg"
+            },
+            {
+              "type": "Сафари",
+              "title": {
+                "title": "Миннерия Сафари",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Наслаждайтесь сафари на джипах 4x4, известном скоплениями слонов.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Оздоровление",
+              "title": {
+                "title": "Аюрведический массаж",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Расслабьтесь с помощью традиционного массажа с травяными маслами.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Вилла Fresco Water – Сигирия",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка на вилле Fresco Water Villa (или аналогичной).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Завтрак и ужин включены",
+                "4-звездочный отель"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Сигирия – Канди",
+          "activities": [
+            {
+              "type": "Культурный визит",
+              "title": {
+                "title": "Сад специй Матале",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Откройте для себя знаменитые специи и травы Шри-Ланки.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "Сайт ЮНЕСКО",
+              "title": {
+                "title": "Храм Священного Зуба Будды",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Посетите самый священный буддийский храм Шри-Ланки в Канди.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Культурное шоу",
+              "title": {
+                "title": "Культурное танцевальное шоу в Канди",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Наслаждайтесь традиционными танцевальными представлениями Канди.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Топаз – Канди",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в отеле Topaz (или аналогичном) в Канди. Полупансион.",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната",
+                "Завтрак",
+                "Ужин включен"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Канди – Нувара Элия – Элла",
+          "activities": [
+            {
+              "type": "Чайный опыт",
+              "title": {
+                "title": "Чайная фабрика «Голубое поле»",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Узнайте, как производят всемирно известный цейлонский чай.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Природа",
+              "title": {
+                "title": "Водопад Рамбода",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Посетите один из самых высоких водопадов Шри-Ланки.",
+              "image": "assets/img/5daysTours/27.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Отель Oak Ray Ella Gap (или аналогичный) — на базе HB",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в отеле Oak Ray Ella Gap (или аналогичном) - на базе полупансиона.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната",
+                "Завтрак",
+                "Ужин включен"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Элла – Хиккадува",
+          "activities": [
+            {
+              "type": "Ориентир",
+              "title": {
+                "title": "Девятиарочный мост",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Посетите знаменитый железнодорожный мост колониальной эпохи.",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Дикая природа",
+              "title": {
+                "title": "Слоновий транзитный дом",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "Понаблюдайте за спасенными слонятами.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Сомерсет Мирисса Отель",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Проживание в отеле Somerset Mirissa или аналогичном отеле - на базе HB",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Завтрак",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Пляж Хиккадува",
+          "activities": [
+            {
+              "type": "Пляжный отдых",
+              "title": {
+                "title": "Пляж Хиккадува",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "Отдохните на золотых пляжах и искупайтесь в Индийском океане.",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Сомерсет Мирисса Отель",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Проживание в отеле Somerset Mirissa или аналогичном отеле - на базе HB",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Завтрак",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Пляж Хиккадува",
+          "activities": [
+            {
+              "type": "Пляжный отдых",
+              "title": {
+                "title": "Пляж Хиккадува",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "Отдохните на золотых пляжах и искупайтесь в Индийском океане.",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Сомерсет Мирисса Отель",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Проживание в отеле Somerset Mirissa или аналогичном отеле - на базе HB",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Завтрак",
+                "Отдельная ванная комната",
+                "Ужин"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "title": "водные развлечения в Калутаре",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Мемориал Пералии Цунами",
+                "icon": "fa-monument",
+                "color": "#FF8C00"
+              },
+              "description": "Мемориал цунами Пералия чтит память жертв цунами 2004 года и представляет собой высокую статую Будды как символ мира и памяти недалеко от места самого страшного цунами в Шри-Ланке.",
+              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
+            },
+            {
+              "type": "Охрана дикой природы",
+              "title": {
+                "title": "Посещение черепахового инкубатория Коггала",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "Посетите черепаховый инкубаторий и центр охраны Коггала, где охраняются и реабилитируются находящиеся под угрозой исчезновения морские черепахи. Узнайте об усилиях Шри-Ланки по сохранению морской среды, понаблюдайте за маленькими черепахами в бассейнах инкубаторов и узнайте, как спасенных черепах выпускают обратно в Индийский океан.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Лодочное сафари",
+              "title": {
+                "title": "Сафари на лодке по реке Маду",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "Отправьтесь в живописное сафари на лодке по мангровым лесам и небольшим островам реки Маду. Посетите традиционные плантации корицы и исследуйте одну из самых красивых водно-болотных экосистем Шри-Ланки.",
+              "image": "assets/img/5daysTours/32.jpg"
+            },
+            {
+              "type": "Размещение",
+              "title": {
+                "title": "Kamili Beach Resort (или аналогичный) - HB",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Ночевка в отеле Kamili Beach Resort (или аналогичном) - на базе HB.",
+              "image": "assets/img/5daysTours/46.jpg",
+              "extra": [
+                "Отель 4 звезды (Премиум)",
+                "Отдельная ванная комната",
+                "Завтрак",
+                "Ужин включен"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "title": "Отправление из Коломбо",
+          "activities": [
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Мемориал Пералии Цунами",
+                "icon": "fa-monument",
+                "color": "#FF8C00"
+              },
+              "description": "Мемориал цунами Пералия чтит память жертв цунами 2004 года и представляет собой высокую статую Будды как символ мира и памяти недалеко от места самого страшного цунами в Шри-Ланке.",
+              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Мемориальный зал Независимости",
+                "icon": "fa-landmark",
+                "color": "#A9A9A9"
+              },
+              "description": "Площадь Независимости в Коломбо — историческая достопримечательность, построенная в ознаменование независимости Шри-Ланки, отличающаяся величественной колониальной архитектурой, пышными садами и спокойной атмосферой для посетителей.",
+              "image": "assets/img/7daystour/fsrleaf7977wcxityzu8.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Храм Гангарамайя",
+                "icon": "fa-landmark",
+                "color": "#FFD700"
+              },
+              "description": "Храм Гангарамайя в Коломбо — красивый буддийский храм, сочетающий в себе архитектуру Шри-Ланки, Тайланда и Китая, со статуями, реликвиями и безмятежной обстановкой на берегу озера.",
+              "image": "assets/img/7daystour/fn10nlk7fc0dzyawswa5.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Галле Фейс Грин",
+                "icon": "fa-park",
+                "color": "#32CD32"
+              },
+              "description": "Галле Фейс Грин в Коломбо — это живописная набережная на берегу океана, идеально подходящая для расслабляющих прогулок, потрясающих закатов и наслаждения уличной едой, предлагающая оживленную атмосферу на берегу Индийского океана.",
+              "image": "assets/img/7daystour/qu0e7cjpkcfhfds1zeem.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Рынок Петта",
+                "icon": "fa-store",
+                "color": "#FF4500"
+              },
+              "description": "Colombo Fort Market — это оживленный торговый центр, предлагающий разнообразные местные товары, одежду, специи и уличную еду, что обеспечивает незабываемые впечатления от покупок в самом центре города.",
+              "image": "assets/img/7daystour/vlk48jx8ywhuzyqlvqg8.jpg"
+            },
+            {
+              "type": "Экскурсия",
+              "title": {
+                "title": "Красная мечеть (Мечеть Джами Уль-Альфара)",
+                "icon": "fa-mosque",
+                "color": "#FF0000"
+              },
+              "description": "Мечеть Джами Уль-Альфар, или Красная мечеть в Коломбо, — знаковая достопримечательность с яркой красно-белой архитектурой, позволяющая заглянуть в богатое исламское наследие Шри-Ланки.",
+              "image": "assets/img/7daystour/owzua0jhk0zazg9d8hcn.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Частный автомобиль с кондиционером",
+        "Англоговорящий профессиональный водитель",
+        "Проживание с полупансионом (7 ночей)",
+        "Плата за топливо и парковку",
+        "Встреча в аэропорту и высадка"
+      ],
+      "excludes": [
+        "Входные билеты и плата за мероприятия",
+        "Обед и напитки",
+        "Личные расходы"
+      ]
+    }
+  }
+}

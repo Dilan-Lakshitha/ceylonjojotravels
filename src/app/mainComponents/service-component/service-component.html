@@ -1,98 +1,67 @@
-
-    <!-- Header Start -->
+<ng-container *transloco="let t; scope: 'services'; prefix: 'services'">
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Services</h3>
+                <h3 class="display-4 text-white text-uppercase">{{ t('header.title') }}</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0 text-uppercase"><a class="text-white" [routerLink]="homeLink"><ng-container *transloco="let c; scope: 'common'; prefix: 'common'">{{ c('nav.home') }}</ng-container></a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Services</p>
+                    <p class="m-0 text-uppercase">{{ t('header.title') }}</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-
-<!-- Service Start -->
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
 
         <div class="text-center mb-5">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h6>
-            <h1>Travel & Hospitality Services by Ceylon JOJO Travels</h1>
-            <p class="text-muted">
-                We provide comfortable travel experiences, guided tours and authentic Sri Lankan hospitality.
-            </p>
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('eyebrow') }}</h6>
+            <h1>{{ t('heading') }}</h1>
+            <p class="text-muted">{{ t('intro') }}</p>
         </div>
 
         <div class="row">
-
-            <!-- Private Tours -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center py-5 px-4 shadow-sm">
                     <i class="fa fa-2x fa-route text-primary mx-auto mb-4"></i>
-                    <h5 class="mb-3">Private Sri Lanka Tours</h5>
-                    <p class="m-0">
-                        Explore Sri Lanka with customized private tours including cultural sites,
-                        beaches, wildlife safaris and scenic hill country.
-                    </p>
+                    <h5 class="mb-3">{{ t('items.private.title') }}</h5>
+                    <p class="m-0">{{ t('items.private.desc') }}</p>
                 </div>
             </div>
 
-            <!-- Chauffeur Guide -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center py-5 px-4 shadow-sm">
                     <i class="fa fa-2x fa-car text-primary mx-auto mb-4"></i>
-                    <h5 class="mb-3">Chauffeur Guide Service</h5>
-                    <p class="m-0">
-                        Travel safely with experienced local chauffeur guides and modern
-                        air-conditioned vehicles for a comfortable journey across Sri Lanka.
-                    </p>
+                    <h5 class="mb-3">{{ t('items.chauffeur.title') }}</h5>
+                    <p class="m-0">{{ t('items.chauffeur.desc') }}</p>
                 </div>
             </div>
 
-            <!-- Tour Packages -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center py-5 px-4 shadow-sm">
                     <i class="fa fa-2x fa-suitcase text-primary mx-auto mb-4"></i>
-                    <h5 class="mb-3">Tailor-Made Tour Packages</h5>
-                    <p class="m-0">
-                        Choose from day tours, multi-day round tours and customized travel
-                        itineraries designed for your budget and interests.
-                    </p>
+                    <h5 class="mb-3">{{ t('items.packages.title') }}</h5>
+                    <p class="m-0">{{ t('items.packages.desc') }}</p>
                 </div>
             </div>
 
-            <!-- Airport Transfer -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center py-5 px-4 shadow-sm">
                     <i class="fa fa-2x fa-plane text-primary mx-auto mb-4"></i>
-                    <h5 class="mb-3">Airport Transfers</h5>
-                    <p class="m-0">
-                        Reliable airport pickup and drop-off services from Bandaranaike
-                        International Airport to any destination in Sri Lanka.
-                    </p>
+                    <h5 class="mb-3">{{ t('items.airport.title') }}</h5>
+                    <p class="m-0">{{ t('items.airport.desc') }}</p>
                 </div>
             </div>
 
-            <!-- Wildlife Safari -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center py-5 px-4 shadow-sm">
                     <i class="fa fa-2x fa-paw text-primary mx-auto mb-4"></i>
-                    <h5 class="mb-3">Wildlife Safari Tours</h5>
-                    <p class="m-0">
-                        Experience unforgettable safari adventures in Yala and Udawalawe
-                        National Parks to see elephants, leopards and exotic wildlife.
-                    </p>
+                    <h5 class="mb-3">{{ t('items.safari.title') }}</h5>
+                    <p class="m-0">{{ t('items.safari.desc') }}</p>
                 </div>
             </div>
-
-            
-
         </div>
-
     </div>
 </div>
-    <!-- Service End -->
+</ng-container>

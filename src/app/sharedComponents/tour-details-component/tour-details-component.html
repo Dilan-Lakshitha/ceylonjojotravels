@@ -1,4 +1,4 @@
-<div class="container-fluid booking mt-1">
+<div class="container-fluid booking mt-1" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="container">
     <h2 class="text-center text-primary text-uppercase mb-3" style="letter-spacing: 3px;">
       {{ tour.title }}
@@ -8,25 +8,25 @@
 
         <div class="col-6 col-md-3">
           <i class="fas fa-clock fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">Duration</h6>
+          <h6 class="mb-1">{{ t('label.duration') }}</h6>
           <p class="fw-bold mb-0">{{ tour.duration }}</p>
         </div>
 
         <div class="col-6 col-md-3">
           <i class="fas fa-users fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">Max People</h6>
+          <h6 class="mb-1">{{ t('label.maxPeople') }}</h6>
           <p class="fw-bold mb-0">{{ tour.persons }}</p>
         </div>
 
         <div class="col-6 col-md-3">
           <i class="fas fa-dollar-sign fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">Price</h6>
-          <p class="fw-bold mb-0">$ {{ tour.price }} (based on 2 people)</p>
+          <h6 class="mb-1">{{ t('label.price') }}</h6>
+          <p class="fw-bold mb-0">$ {{ tour.price }} ({{ t('label.priceBasedOn2') }})</p>
         </div>
 
         <div class="col-6 col-md-3">
           <i class="fas fa-map-marked-alt fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">Tour Type</h6>
+          <h6 class="mb-1">{{ t('label.tourType') }}</h6>
           <p class="fw-bold mb-0">{{ tour.tourType }}</p>
         </div>
 
@@ -35,14 +35,13 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 ">
         <div class="d-flex flex-column">
           <div class="bg-white p-4 p-lg-5 my-lg-3">
-            <h2 class="text-primary text-uppercase justify-content-start" style="letter-spacing: 5px;">Tour
-              Overview</h2>
+            <h2 class="text-primary text-uppercase justify-content-start" style="letter-spacing: 5px;">{{ t('label.overview') }}</h2>
             <p>{{tour.overview}}</p>
           </div>
         </div>
@@ -51,17 +50,17 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 mb-4">
         <div class="bg-white p-2 p-lg-5 shadow-sm">
           <div *ngIf="tour.itinerary">
-            <h3 class="mb-3">Tour Plan</h3>
+            <h3 class="mb-3">{{ t('label.itinerary') }}</h3>
             <div *ngFor="let day of tour.itinerary" class=" border-bottom">
               <h5 (click)="toggleDay(day.day)" class="itinerary-header">
                 <i class="fas fa-map-marker-alt location-icon me-2"></i>
-                <span class="mx-2">Day {{ day.day }}: {{ day.title }}</span>
+                <span class="mx-2">{{ t('label.day') }} {{ day.day }}: {{ day.title }}</span>
                 <span [class.expanded]="expandedDays[day.day]" style="float: right;">
                   ▲
                 </span>
@@ -93,16 +92,14 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="container">
     <div class="row">
-
-      <!-- Included Section -->
       <div class="col-md-6 mb-4">
         <div class="card shadow-sm h-100">
           <div class="card-header bg-white d-flex align-items-center border-bottom border-primary">
             <i class="fas fa-check-circle mr-2 text-primary"></i>
-            <h5 class="mb-0 text-primary">Included</h5>
+            <h5 class="mb-0 text-primary">{{ t('label.includes') }}</h5>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mb-0">
@@ -116,12 +113,11 @@
           </div>
         </div>
       </div>
-      <!-- Excluded Section -->
       <div class="col-md-6 mb-4">
         <div class="card shadow-sm h-100 border" style="border-color: #ada878;">
           <div class="card-header bg-white d-flex align-items-center" style="border-bottom: 2px solid #ada878;">
             <i class="fas fa-times-circle mr-2" style="color: #ada878;"></i>
-            <h5 class="mb-0" style="color: #ada878;">Excluded</h5>
+            <h5 class="mb-0" style="color: #ada878;">{{ t('label.excludes') }}</h5>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mb-0">
@@ -135,8 +131,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 </div>

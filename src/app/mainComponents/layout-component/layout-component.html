@@ -1,69 +1,35 @@
-<div class="navbar-color py-1 px-3">
+<div class="navbar-color py-1 px-3" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container-fluid">
         <div class="row align-items-center">
 
-            <!-- Left side: email & phone -->
             <div class="col-lg-6 d-none d-lg-flex align-items-center">
-
-                <!-- Email -->
                 <p class="mb-0 nav-link">
                     <a href="mailto:ceylonjojotravels@gmail.com" class="text-decoration-none nav-link">
                         <i class="fa fa-envelope mr-2"></i>
                         ceylonjojotravels@gmail.com
                     </a>
                 </p>
-
                 <p class="text-body px-3 mb-0">|</p>
-
-                <!-- Phone -->
                 <p class="mb-0 nav-link">
                     <a href="tel:+447375612946" class="text-decoration-none nav-link">
                         <i class="fa fa-phone-alt mr-2"></i>
                         +44 7375 612946
                     </a>
                 </p>
-
             </div>
 
-            <!-- Right side: social icons -->
             <div class="col-12 col-lg-6 d-flex justify-content-between justify-content-lg-end align-items-center">
                 <div class="lang-pill d-flex flex-wrap">
-                    <button class="lang-flag" [class.active]="activeLang === 'en'" (click)="changeLang('en')"
-                        title="English">
-                        <img src="https://flagcdn.com/w20/us.png" alt="EN">
+                    <button
+                        *ngFor="let lang of langs"
+                        type="button"
+                        class="lang-flag"
+                        [class.active]="activeLang === lang"
+                        (click)="changeLang(lang)"
+                        [title]="langTitle(lang)"
+                    >
+                        <img [src]="'https://flagcdn.com/w20/' + flagCode(lang) + '.png'" [alt]="lang">
                     </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'de'" (click)="changeLang('de')"
-                        title="Deutsch">
-                        <img src="https://flagcdn.com/w20/de.png" alt="DE">
-                    </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'it'" (click)="changeLang('it')"
-                        title="Italiano">
-                        <img src="https://flagcdn.com/w20/it.png" alt="IT">
-                    </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'fr'" (click)="changeLang('fr')"
-                        title="Français">
-                        <img src="https://flagcdn.com/w20/fr.png" alt="FR">
-                    </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'es'" (click)="changeLang('es')"
-                        title="spanish">
-                        <img src="https://flagcdn.com/w20/es.png" alt="es">
-                    </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'ru'" (click)="changeLang('ru')"
-                        title="Русский">
-                        <img src="https://flagcdn.com/w20/ru.png" alt="RU">
-                    </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'pl'" (click)="changeLang('pl')"
-                        title="Polski">
-                        <img src="https://flagcdn.com/w20/pl.png" alt="PL">
-                    </button>
-                    <button class="lang-flag" [class.active]="activeLang === 'zh-CN'" (click)="changeLang('zh-CN')"
-                        title="中文">
-                        <img src="https://flagcdn.com/w20/cn.png" alt="cn">
-                    </button>
-                    <!-- 
-            <button class="lang-flag" [class.active]="activeLang === 'si'" (click)="changeLang('si')" title="සිංහල">
-                <img src="https://flagcdn.com/w20/lk.png" alt="SI">
-            </button> -->
                 </div>
                 <div class="d-flex ml-2">
                     <a class="btn btn-sm btn-square text-white mr-2" href="https://www.facebook.com/ceylonjojotravels/">
@@ -75,7 +41,7 @@
                     </a>
                     <a class="btn btn-sm btn-square text-white"
                         href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
-                        target="_blank">
+                        target="_blank" rel="noopener">
                         <i class="fab fa-tripadvisor"></i>
                     </a>
                 </div>
@@ -84,18 +50,15 @@
     </div>
 </div>
 
-<!-- Topbar End -->
-
 <app-scroll-to-to-component></app-scroll-to-to-component>
-<a href="https://wa.me/447375612946" target="_blank" class="whatsapp-float">
+<a href="https://wa.me/447375612946" target="_blank" rel="noopener" class="whatsapp-float">
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- Navbar Start -->
-<div class="position-relative nav-bar p-0">
+<div class="position-relative nav-bar p-0" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="position-relative p-0 px-lg-3" style="z-index: 100;">
         <nav class="navbar navbar-expand-lg navbar-color navbar-light shadow-lg  py-lg-0 ">
-            <a href="" class="navbar-brand">
+            <a [routerLink]="homeLink" class="navbar-brand">
                 <h1 class="m-0 nav-link"><span class="text-white">
                         <img src="assets/img/logos/2.png" alt="Logo" style="width: 70px; height: 70px;">
                         CEYLON JOJO TRAVE</span>lS</h1>
@@ -105,86 +68,75 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                 <div class="navbar-nav ml-auto py-0">
-                    <a href="/" class="nav-item nav-link active nav-link">Home</a>
-                    <!-- <a href="/restaurants-in-sri-lanka" class="nav-item nav-link nav-link"> Restaurant</a> -->
-                    <a href="/tour-packages" class="nav-item nav-link nav-link">Tour Packages</a>
-                    <a href="/our-services" class="nav-item nav-link nav-link">Services</a>
-                    <a href="/about-us" class="nav-item nav-link nav-link">About</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle nav-link" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu border-0 rounded-0 m-0">
-                            <a href="/destination" class="dropdown-item nav-link text-white">Destination</a>
-                            <a href="/travel-guides" class="dropdown-item nav-link text-white">Travel Guides</a>
-                            <a href="/testimonial" class="dropdown-item nav-link text-white">Testimonial</a>
-                        </div>
-                    </div> -->
-                    <a href="/contact-us" class="nav-item nav-link nav-link">Contact</a>
+                    <a [routerLink]="homeLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">{{ t('nav.home') }}</a>
+                    <a [routerLink]="toursLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.tours') }}</a>
+                    <a [routerLink]="servicesLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.services') }}</a>
+                    <a [routerLink]="aboutLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.about') }}</a>
+                    <a [routerLink]="contactLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.contact') }}</a>
                 </div>
             </div>
         </nav>
     </div>
 </div>
-<!-- Navbar End -->
+
 <router-outlet></router-outlet>
-<!-- Footer Start -->
-<div class="container-fluid bg-primary text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+
+<div class="container-fluid bg-primary text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="row pt-5">
         <div class="col-lg-3 col-md-6">
-            <a class="navbar-brand">
-                <h5 class=""><span class="text-white">
-                        CEYLON JOJO TRAVElS</span></h5>
+            <a class="navbar-brand" [routerLink]="homeLink">
+                <h5 class=""><span class="text-white">CEYLON JOJO TRAVElS</span></h5>
             </a>
-            <p>Your trusted travel partner in Sri Lanka, offering guided tours, round trips, and tailor-made holiday
-                experiences with reliable service.</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <p>{{ t('footer.tagline') }}</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">{{ t('footer.follow') }}</h6>
             <div class="d-flex justify-content-start">
                 <a class="btn nav-link btn-square mr-2" href="https://www.facebook.com/ceylonjojotravels/"
-                    target="_blank">
+                    target="_blank" rel="noopener">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a class="btn nav-link btn-square nav-link px-3" href="https://www.instagram.com/ceylon_jojo_travels"><i
                         class="fab fa-instagram"></i></a>
                 <a class="btn nav-link btn-square mr-2"
                     href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
-                    target="_blank">
+                    target="_blank" rel="noopener">
                     <i class="fab fa-tripadvisor"></i>
                 </a>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{ t('footer.services') }}</h5>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                <a class="text-white-50 mb-2" [routerLink]="aboutLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.about') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="destinationsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.destination') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Quick Menu</h5>
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{ t('footer.menu') }}</h5>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sri Lankan Day Tours</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Multi Days Tours </a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
+                <a class="text-white-50 mb-2" [routerLink]="testimonialsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.testimonials') }}</a>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{ t('footer.contact') }}</h5>
             <p><i class="fa fa-map-marker-alt mr-2"></i> No 111/3 , Dediyawala Rd, Maha Waskaduwa ,Waskaduwa, Kalutara
                 North, Sri Lanka</p>
             <p><i class="fa fa-phone-alt mr-2"></i>+44 73 75 612 946</p>
             <p><i class="fa fa-envelope mr-2"></i>ceylonjojotravels@gmail.com</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">{{ t('footer.newsletter') }}</h6>
             <div class="w-100">
                 <div class="input-group">
                     <input type="text" class="form-control border-light" style="padding: 25px;"
-                        placeholder="Your Email">
+                        [placeholder]="t('footer.emailPlaceholder')">
                     <div class="input-group-append">
-                        <button routerLink="/contact-us" class="btn btn-primary px-3">Sign Up</button>
+                        <button [routerLink]="contactLink" class="btn btn-primary px-3">{{ t('footer.signup') }}</button>
                     </div>
                 </div>
             </div>
@@ -192,15 +144,13 @@
     </div>
 </div>
 <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-    style="border-color: rgba(256, 256, 256, .1) !important;">
+    style="border-color: rgba(256, 256, 256, .1) !important;" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.
-            </p>
+            <p class="m-0 text-white-50">{{ t('footer.copyright') }}</p>
         </div>
         <div class="col-lg-6 text-center text-md-right">
-            <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">Dilalak Tec</a>
-            </p>
+            <p class="m-0 text-white-50">{{ t('footer.designed') }}</p>
         </div>
     </div>
 </div>

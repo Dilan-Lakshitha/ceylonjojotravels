@@ -1,0 +1,2726 @@
+{
+  "catalog": {
+    "dayTours": [
+      {
+        "id": "ella-day-tour",
+        "title": "Wycieczka do Elli",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "ella-day-tour",
+        "image": "assets/img/onedayTour/ella/7.jpeg",
+        "routerLink": "/wycieczka-ella",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "wycieczka-ella"
+      },
+      {
+        "id": "galle-day-tour",
+        "title": "Wycieczka do Galle",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "galle-day-tour",
+        "image": "assets/img/onedayTour/Galle/7.jpg",
+        "routerLink": "/wycieczka-galle",
+        "isBestseller": true,
+        "isLimited": false,
+        "slug": "wycieczka-galle"
+      },
+      {
+        "id": "kandy-day-tour",
+        "title": "Wycieczka do Kandy",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "kandy-day-tour",
+        "image": "assets/img/onedayTour/kandy/3.jpg",
+        "routerLink": "/wycieczka-kandy",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "wycieczka-kandy"
+      },
+      {
+        "id": "sigiriya-day-tour",
+        "title": "Wycieczka do Sigirii",
+        "days": "1 day",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "sigiriya-day-tour",
+        "image": "assets/img/onedayTour/Sigiriya/3.jpg",
+        "routerLink": "/wycieczka-sigiriya",
+        "isBestseller": true,
+        "isLimited": false,
+        "slug": "wycieczka-sigiriya"
+      }
+    ],
+    "multiDayTours": [
+      {
+        "id": "2-day-ella-yala-private-tour-sri-lanka",
+        "title": "2 dni: Ella i safari Yala",
+        "days": "2 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+        "image": "assets/img/5daysTours/24.jpg",
+        "routerLink": "/2-dni-ella-yala",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "2-dni-ella-yala"
+      },
+      {
+        "id": "2-day-ella-kandy-private-tour-sri-lanka",
+        "title": "2 dni: Ella i Kandy",
+        "days": "2 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+        "image": "assets/img/package-3.jpg",
+        "routerLink": "/2-dni-ella-kandy",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "2-dni-ella-kandy"
+      },
+      {
+        "id": "4-day-sri-lanka-tour",
+        "title": "4-dniowa wycieczka po Sri Lance",
+        "days": "4 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "4-day-sri-lanka-tour",
+        "image": "assets/img/package-8.jpeg",
+        "routerLink": "/4-dni-sri-lanka",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "4-dni-sri-lanka"
+      },
+      {
+        "id": "5-day-sri-lanka-tour",
+        "title": "5-dniowa wycieczka po Sri Lance",
+        "days": "5 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "5-day-sri-lanka-tour",
+        "image": "assets/img/package-4.jpeg",
+        "routerLink": "/5-dni-sri-lanka",
+        "isBestseller": false,
+        "isLimited": true,
+        "slug": "5-dni-sri-lanka"
+      },
+      {
+        "id": "6-day-sri-lanka-private-tour",
+        "title": "6-dniowa prywatna wycieczka",
+        "days": "6 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "6-day-sri-lanka-private-tour",
+        "image": "assets/img/package-7.jpeg",
+        "routerLink": "/6-dni-prywatny-sri-lanka",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "6-dni-prywatny-sri-lanka"
+      },
+      {
+        "id": "7-day-sri-lanka-tour",
+        "title": "7-dniowa wycieczka po Sri Lance",
+        "days": "7 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "7-day-sri-lanka-tour",
+        "image": "assets/img/package-1.jpeg",
+        "routerLink": "/7-dni-sri-lanka",
+        "isBestseller": true,
+        "isLimited": true,
+        "slug": "7-dni-sri-lanka"
+      },
+      {
+        "id": "10-day-sri-lanka-tour",
+        "title": "10-dniowa wycieczka po Sri Lance",
+        "days": "10 days",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "10-day-sri-lanka-tour",
+        "image": "assets/img/package-2.jpg",
+        "routerLink": "/10-dni-sri-lanka",
+        "isBestseller": false,
+        "isLimited": true,
+        "slug": "10-dni-sri-lanka"
+      },
+      {
+        "id": "8-day-sri-lanka-private-tour",
+        "title": "8-dniowa prywatna wycieczka",
+        "days": "8 dni",
+        "persons": "1-20 Persons",
+        "rating": 5,
+        "filecode": "8-day-sri-lanka-private-tour",
+        "image": "assets/img/7dayschange/2.jpeg",
+        "isBestseller": false,
+        "isLimited": false,
+        "slug": "8-dni-prywatny-sri-lanka"
+      }
+    ]
+  },
+  "details": {
+    "ella-day-tour": {
+      "id": "ella-day-tour",
+      "slug": "wycieczka-ella",
+      "title": "Wycieczka do Elli",
+      "description": "Prywatna wycieczka: Most Dziewięciu Łuków, Little Adam’s Peak i wodospady Ravana.",
+      "duration": "one Day",
+      "persons": "20 Persons",
+      "filecode": "ella-day-tour",
+      "overview": "Prywatna wycieczka: Most Dziewięciu Łuków, Little Adam’s Peak i wodospady Ravana.",
+      "tourType": "Wycieczka jednodniowa",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Most Dziewięciu Łuków",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Majestatyczny most Dziewięciu Łuków jest jednym z wielu powodów. Wspaniały most Dziewięciu Łuków pomiędzy Ellą a stacją Demodara to jeden z cudów inżynierii początku XX wieku",
+              "image": "assets/img/onedayTour/ella/1.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wycieczki pociągiem Elli",
+                "icon": "fa-train",
+                "color": "#063764ff"
+              },
+              "description": "Przejażdżka pociągiem Ella to najpiękniejsza przejażdżka pociągiem na Sri Lance, jeśli nie na świecie! Wsiądź do pociągu i podziwiaj zapierające dech w piersiach widoki na bujne plantacje zielonej herbaty, góry, wiadukty, doliny itp.",
+              "image": "assets/img/onedayTour/ella/3.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Mały Szczyt Adamsa",
+                "icon": "fa-leaf",
+                "color": "#0f6935ff"
+              },
+              "description": "Ma wysokość 1141 m, a przejście od wejścia zajmuje od 30 do 45 minut. Widoki ze szczytu są niesamowite. Panoramiczne widoki 360 stopni.",
+              "image": "assets/img/onedayTour/ella/6.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#8e44ad"
+              },
+              "description": "Wodospad Ravana, jeden z najszerszych w kraju. Wodospady robią wrażenie i można wspiąć się po niektórych skałach, aby przyjrzeć się bliżej.",
+              "image": "assets/img/onedayTour/ella/2.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "sierociniec dla słoni udawalawa",
+                "icon": "fa-elephant",
+                "color": "#8e44ad"
+              },
+              "description": "Przystanek 4: Możesz obserwować animowaną grupę około 20 lub 30 młodych i nastoletnich pachydermów, które są karmione cztery razy dziennie.",
+              "image": "assets/img/onedayTour/ella/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie i wyżywienie kierowcy",
+        "Odbiór i dowóz",
+        "Opłaty za paliwo i parking",
+        "Serwis 24-godzinny",
+        "Nielimitowany przebieg na całą wycieczkę",
+        "Twoje zakwaterowanie"
+      ],
+      "excludes": [
+        "Jedzenie i napoje",
+        "Opłaty za wstęp i zajęcia"
+      ]
+    },
+    "galle-day-tour": {
+      "id": "galle-day-tour",
+      "slug": "wycieczka-galle",
+      "title": "Wycieczka do Galle",
+      "description": "Fort Galle i południowe wybrzeże w prywatnej wycieczce.",
+      "duration": "one Day",
+      "persons": "20 Persons",
+      "filecode": "galle-day-tour",
+      "overview": "Fort Galle i południowe wybrzeże w prywatnej wycieczce.",
+      "tourType": "Wycieczka jednodniowa",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Plan wycieczki do Galle",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Plan wycieczki do Galle",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Odwiedź wylęgarnię żółwi morskich i dowiedz się o działaniach ochronnych, obserwując różne gatunki żółwi.",
+              "image": "assets/img/onedayTour/Galle/6.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Holenderski Fort Galle",
+                "icon": "fa-Galle Dutch Fort",
+                "color": "#8e44ad"
+              },
+              "description": "Odkryj wpisany na Listę Światowego Dziedzictwa UNESCO holenderski fort Galle, bogaty w historię kolonialną i wspaniałe widoki na ocean.",
+              "image": "assets/img/onedayTour/Galle/5.jpg"
+            },
+            {
+              "type": "Działalność",
+              "title": {
+                "title": "Rejs łodzią po rzece Bentota",
+                "icon": "fa-ship",
+                "color": "#2980b9"
+              },
+              "description": "Wybierz się na relaksujący rejs łodzią wzdłuż rzeki Bentota w otoczeniu lasów namorzynowych i dzikiej przyrody.",
+              "image": "assets/img/onedayTour/Galle/3.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Pomnik Tsunami",
+                "icon": "fa-monument",
+                "color": "#c0392b"
+              },
+              "description": "Odwiedź Pomnik Tsunami i dowiedz się o tsunami w 2004 roku i jego wpływie na Sri Lankę.",
+              "image": "assets/img/onedayTour/Galle/8.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Centrum Kopalni Kamienia Księżycowego",
+                "icon": "fa-gem",
+                "color": "#f39c12"
+              },
+              "description": "Odkryj, jak wydobywa się i przetwarza słynne kamienie księżycowe na Sri Lance.",
+              "image": "assets/img/onedayTour/Galle/9.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Wszystkie opłaty za wstęp do atrakcji",
+        "Bilety autostradowe i opłaty parkingowe",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Prywatny, klimatyzowany pojazd"
+      ],
+      "excludes": [
+        "Jedzenie i napoje",
+        "Opłaty za wstęp i zajęcia"
+      ]
+    },
+    "kandy-day-tour": {
+      "id": "kandy-day-tour",
+      "slug": "wycieczka-kandy",
+      "title": "Wycieczka do Kandy",
+      "description": "Świątynia Zęba Buddy i atrakcje Kandy.",
+      "duration": "Jeden dzień",
+      "persons": "20 Persons",
+      "filecode": "kandy-day-tour",
+      "overview": "Świątynia Zęba Buddy i atrakcje Kandy.",
+      "tourType": "Wycieczka jednodniowa",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Plan wycieczki po Kandy",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Plan wycieczki po Kandy",
+                "icon": "fa-car",
+                "color": "#f39c12"
+              },
+              "description": "Przyjrzyj się słoniom z bliska i dowiedz się, jak dbać o nie i chronić je.",
+              "image": "assets/img/onedayTour/kandy/3.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Millennium Elephant Foundation / Pinnawala Elephant Orphanage",
+                "icon": "fa-elephant",
+                "color": "#8e44ad"
+              },
+              "description": "Przyjrzyj się słoniom z bliska i dowiedz się, jak dbać o nie i chronić je.",
+              "image": "assets/img/onedayTour/kandy/1.jpg"
+            },
+            {
+              "type": "Działalność",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Odwiedź najświętszą świątynię buddyjską na Sri Lance, położoną w sercu Kandy.",
+              "image": "assets/img/onedayTour/kandy/3.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Fabryka herbaty i plantacja herbaty",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Poznaj fabrykę i plantację herbaty oraz dowiedz się, jak produkowana jest słynna na całym świecie herbata cejlońska.",
+              "image": "assets/img/onedayTour/kandy/5.jpg"
+            },
+            {
+              "type": "Zwiedzanie",
+              "title": {
+                "title": "Jezioro Kandy i punkt widokowy",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Podziwiaj malownicze widoki na miasto Kandy i zrelaksuj się nad malowniczym jeziorem Kandy.",
+              "image": "assets/img/onedayTour/kandy/6.jpg"
+            },
+            {
+              "type": "Opcjonalna wizyta",
+              "title": {
+                "title": "Ogród ziołowy i przyprawowy",
+                "icon": "fa-seedling",
+                "color": "#16a085"
+              },
+              "description": "Opcjonalna wizyta w ogrodzie ziołowo-przyprawowym w celu poznania przypraw i ziół ze Sri Lanki.",
+              "image": "assets/img/onedayTour/kandy/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Wszystkie opłaty za wstęp do atrakcji",
+        "Bilety autostradowe i opłaty parkingowe",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Prywatny, klimatyzowany pojazd"
+      ],
+      "excludes": [
+        "Jedzenie i napoje",
+        "Opłaty za wstęp i zajęcia"
+      ]
+    },
+    "sigiriya-day-tour": {
+      "id": "sigiriya-day-tour",
+      "slug": "wycieczka-sigiriya",
+      "title": "Wycieczka do Sigirii",
+      "description": "Skała Lwa w Sigirii i królewskie ogrody.",
+      "duration": "Jeden dzień",
+      "persons": "20 Persons",
+      "filecode": "sigiriya-day-tour",
+      "overview": "Skała Lwa w Sigirii i królewskie ogrody.",
+      "tourType": "Wycieczka jednodniowa",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Plan wycieczki do Sigiriya",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Plan wycieczki do Sigiriya",
+                "icon": "fa-car",
+                "color": "#f39c12"
+              },
+              "description": "Odbiór z hotelu wygodnym prywatnym, klimatyzowanym pojazdem.",
+              "image": "assets/img/onedayTour/Sigiriya/1.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Świątynia Złotej Jaskini – Dambulla",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Odwiedź wpisaną na Listę Światowego Dziedzictwa UNESCO świątynię w jaskini Dambulla, słynącą ze starożytnych malowideł ściennych i posągów Buddy.",
+              "image": "assets/img/onedayTour/Sigiriya/6.jpg"
+            },
+            {
+              "type": "Działalność",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-gopuram",
+                "color": "#c0392b"
+              },
+              "description": "Odwiedź najświętszą świątynię buddyjską na Sri Lance, położoną w sercu Kandy.",
+              "image": "assets/img/onedayTour/Sigiriya/7.jpg"
+            },
+            {
+              "type": "Przygoda",
+              "title": {
+                "title": "Wspinaczka skałkowa Sigiriya lub Pidurangala",
+                "icon": "fa-mountain",
+                "color": "#f39c12"
+              },
+              "description": "Wejdź na słynną twierdzę Sigiriya Rock lub na skałę Pidurangala, aby podziwiać wspaniałe panoramiczne widoki.",
+              "image": "assets/img/onedayTour/Sigiriya/8.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari na dzikich słoniach",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Weź udział w ekscytującym safari na dzikich słoniach w parku narodowym (bilety na jeep i wstęp nie są wliczone w cenę).",
+              "image": "assets/img/onedayTour/Sigiriya/9.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Wszystkie opłaty za wstęp do atrakcji (z wyłączeniem wejścia na safari i jeepa)",
+        "Bilety autostradowe i opłaty parkingowe",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Prywatny, klimatyzowany pojazd",
+        "Obiad"
+      ],
+      "excludes": [
+        "Bilety wstępu na safari i jeep",
+        "Wydatki osobiste"
+      ]
+    },
+    "2-day-ella-kandy-private-tour-sri-lanka": {
+      "id": "2-day-ella-kandy-private-tour-sri-lanka",
+      "slug": "2-dni-ella-kandy",
+      "title": "2 dni: Ella i Kandy",
+      "description": "Udawalawe, Ella, Ramboda i Świątynia Zęba Buddy.",
+      "duration": "2 dni",
+      "persons": "Private Tour (1-20 Persons)",
+      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+      "overview": "Udawalawe, Ella, Ramboda i Świątynia Zęba Buddy.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Przygoda Udawalawy i Elli",
+          "activities": [
+            {
+              "type": "Doświadczenie dzikiej przyrody",
+              "title": {
+                "title": "Dom tranzytowy dla słoni Udawalawa",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Odwiedź ośrodek tranzytowy dla słoni w Udawalawa, aby zobaczyć, jak uratowane słoniątka są otoczone opieką i rehabilitacją przed powrotem na wolność.",
+              "image": "assets/img/2daysTours/7.jpg"
+            },
+            {
+              "type": "Wizyta sceniczna",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-train",
+                "color": "#8e44ad"
+              },
+              "description": "Odkryj kultowy most Dziewięciu Łuków w Ella, otoczony bujną zielenią i zapierającymi dech w piersiach widokami na wzgórza.",
+              "image": "assets/img/2daysTours/5.jpg"
+            },
+            {
+              "type": "Turystyka piesza",
+              "title": {
+                "title": "Mały Szczyt Adama",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Wybierz się na krótką malowniczą wędrówkę na szczyt Little Adam’s Peak, skąd roztacza się panoramiczny widok na Ella Gap i okoliczne plantacje herbaty.",
+              "image": "assets/img/2daysTours/9.jpg"
+            },
+            {
+              "type": "Przygoda",
+              "title": {
+                "title": "Latająca linia Zip Ravana",
+                "icon": "fa-bolt",
+                "color": "#e74c3c"
+              },
+              "description": "Przeżyj ekscytujący zjazd na tyrolce w Flying Ravana Adventure Park z widokiem na oszałamiający krajobraz Elli.",
+              "image": "assets/img/2daysTours/10.jpg"
+            },
+            {
+              "type": "Wizyta w wodospadzie",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź piękny wodospad Ravana, jeden z najsłynniejszych wodospadów na Sri Lance, położony w pobliżu Elli.",
+              "image": "assets/img/2daysTours/11.jpg"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wycieczka kulturalna po Hill Country i Kandy",
+          "activities": [
+            {
+              "type": "Wizyta w wodospadzie",
+              "title": {
+                "title": "Wodospad Rambody",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Zatrzymaj się przy wodospadzie Ramboda, oszałamiającym wodospadzie położonym na malowniczych wzgórzach Sri Lanki.",
+              "image": "assets/img/2daysTours/13.jpg"
+            },
+            {
+              "type": "Wizyta w wieży widokowej",
+              "title": {
+                "title": "Wieża Ambuluwawy",
+                "icon": "fa-mountain",
+                "color": "#9b59b6"
+              },
+              "description": "Wejdź na wyjątkową Wieżę Bioróżnorodności Ambuluwawa, aby podziwiać zapierające dech w piersiach 360-stopniowe widoki na okoliczne góry.",
+              "image": "assets/img/2daysTours/12.jpg"
+            },
+            {
+              "type": "Wizyta Kulturalna",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-place-of-worship",
+                "color": "#d35400"
+              },
+              "description": "Odwiedź świętą Świątynię Zęba w Kandy, jedno z najważniejszych miejsc buddyjskich na świecie.",
+              "image": "assets/img/2daysTours/4.jpg"
+            },
+            {
+              "type": "Doświadczenie dzikiej przyrody",
+              "title": {
+                "title": "Sierociniec dla słoni w Pinnawala",
+                "icon": "fa-paw",
+                "color": "#16a085"
+              },
+              "description": "Obserwuj słonie kąpiące się i karmiące w słynnym sierocińcu dla słoni Pinnawala.",
+              "image": "assets/img/2daysTours/7.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie i wyżywienie kierowcy",
+        "Odbiór i transfer lotnisko/hotel",
+        "Opłaty za paliwo i parking",
+        "Serwis 24-godzinny",
+        "Nielimitowany przebieg przez całą wycieczkę"
+      ],
+      "excludes": [
+        "Opłaty za wstęp i aktywność",
+        "Jedzenie i napoje",
+        "Zakwaterowanie (można zorganizować na życzenie)"
+      ]
+    },
+    "2-day-ella-yala-private-tour-sri-lanka": {
+      "id": "2-day-ella-yala-private-tour-sri-lanka",
+      "slug": "2-dni-ella-yala",
+      "title": "2 dni: Ella i safari Yala",
+      "description": "Ella i safari w Parku Narodowym Yala.",
+      "duration": "2 dni",
+      "persons": "Private Tour (1-20 Persons)",
+      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
+      "overview": "Ella i safari w Parku Narodowym Yala.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Przygoda Elli",
+          "activities": [
+            {
+              "type": "Wizyta sceniczna",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-train",
+                "color": "#8e44ad"
+              },
+              "description": "Odkryj kultowy most Dziewięciu Łuków w Ella, otoczony bujną zielenią i zapierającymi dech w piersiach widokami na wzgórza.",
+              "image": "assets/img/2daysTours/5.jpg"
+            },
+            {
+              "type": "Turystyka piesza",
+              "title": {
+                "title": "Mały Szczyt Adama",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Wybierz się na krótką malowniczą wędrówkę na szczyt Little Adam’s Peak, skąd roztacza się panoramiczny widok na Ella Gap i okoliczne plantacje herbaty.",
+              "image": "assets/img/2daysTours/9.jpg"
+            },
+            {
+              "type": "Przygoda",
+              "title": {
+                "title": "Latająca linia Zip Ravana",
+                "icon": "fa-bolt",
+                "color": "#e74c3c"
+              },
+              "description": "Przeżyj ekscytujący zjazd na tyrolce w Flying Ravana Adventure Park z widokiem na oszałamiający krajobraz Elli.",
+              "image": "assets/img/2daysTours/10.jpg"
+            },
+            {
+              "type": "Wizyta w wodospadzie",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź piękny wodospad Ravana, jeden z najsłynniejszych wodospadów na Sri Lance, położony w pobliżu Elli.",
+              "image": "assets/img/2daysTours/11.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Oak Ray Ella Gap",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zakwaterowanie w hotelu Oak Ray Ella Gap lub podobnym – HB Basis",
+              "image": "assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Safari w Yali",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Park Narodowy Yala",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Yala jest domem dla 44 odmian ssaków i 215 gatunków ptaków. Do jego bardziej znanych mieszkańców należy największe na świecie skupisko lampartów",
+              "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Wodospad Ravana jest zakorzeniony w mitach i folklorze. Uważa się, że demoniczny król Rawana z eposu Ramajan ukrył Sitę w jaskini za wodospadem po tym, jak ją porwał i sprowadził z powrotem",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie i wyżywienie kierowcy",
+        "Odbiór i transfer lotnisko/hotel",
+        "Opłaty za paliwo i parking",
+        "Serwis 24-godzinny",
+        "Nielimitowany przebieg przez całą wycieczkę"
+      ],
+      "excludes": [
+        "Opłaty za wstęp i aktywność",
+        "Jedzenie i napoje",
+        "Zakwaterowanie (można zorganizować na życzenie)"
+      ]
+    },
+    "4-day-sri-lanka-tour": {
+      "id": "4-day-sri-lanka-tour",
+      "slug": "4-dni-sri-lanka",
+      "title": "4-dniowa wycieczka po Sri Lance",
+      "description": "Sigirija, Kandy, Ella i Yala w 4 dni.",
+      "duration": "4 dni",
+      "persons": "1-20 Persons",
+      "filecode": "4-day-sri-lanka-tour",
+      "overview": "Sigirija, Kandy, Ella i Yala w 4 dni.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Kandy Cultural Experience",
+          "activities": [
+            {
+              "type": "Doświadczenie dzikiej przyrody",
+              "title": {
+                "title": "Sierociniec dla słoni w Pinnawala",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Odwiedź słynny sierociniec dla słoni Pinnawala, gdzie uratowane słonie są otoczone opieką i ochroną. Obserwuj słonie kąpiące się w rzece i dowiedz się o działaniach ochronnych.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Wizyta Kulturalna",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Poznaj Sri Dalada Maligawa, jedną z najświętszych świątyń buddyjskich na świecie, w której znajduje się święta relikwia zęba Pana Buddy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Doświadczenie kulturowe",
+              "title": {
+                "title": "Pokaz tańca kulturalnego w Kandy",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Weź udział w tradycyjnym występie tańca Kandyan z chodzeniem po ogniu, grą na bębnach i żywymi kostiumami kulturowymi.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Malowniczy widok",
+              "title": {
+                "title": "Punkt widokowy w Kandy",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Zatrzymaj się w punkcie widokowym Kandy, aby podziwiać panoramiczne widoki na miasto Kandy, jezioro i okoliczne wzgórza.",
+              "image": "assets/img/5daysTours/476465443_947365727374414_5703532547629723678_n.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Nocleg w hotelu Topez w Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zatrzymaj się na noc w komfortowym hotelu klasy gwiazdkowej w Kandy z niepełnym wyżywieniem.",
+              "extra": [
+                "Kolacja wliczona w cenę",
+                "Prywatny pokój"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Kandy – podróż po kraju Ella Hill",
+          "activities": [
+            {
+              "type": "Natura",
+              "title": {
+                "title": "Królewskie Ogrody Botaniczne Peradeniya",
+                "icon": "fa-tree",
+                "color": "#2ecc71"
+              },
+              "description": "Przejdź się po jednym z najpiękniejszych ogrodów botanicznych w Azji, w którym rosną orchidee, palmy, bambusy i rośliny tropikalne.",
+              "image": "assets/img/5daysTours/himbgjcj6zckm6de1mhe.jpg"
+            },
+            {
+              "type": "Doświadczenie herbaciane",
+              "title": {
+                "title": "Wizyta w fabryce herbaty Glenloch",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Odkryj, jak produkowana jest słynna na całym świecie herbata cejlońska i napij się świeżej filiżanki, podziwiając malownicze plantacje herbaty.",
+              "image": "assets/img/5daysTours/17.jpg"
+            },
+            {
+              "type": "Wizyta sceniczna",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Odwiedź kultowy most Dziewięciu Łuków z epoki kolonialnej otoczony bujną zielenią i pagórkami.",
+              "image": "assets/img/5daysTours/5.jpg"
+            },
+            {
+              "type": "Turystyka piesza",
+              "title": {
+                "title": "Mały Szczyt Adama",
+                "icon": "fa-mountain",
+                "color": "#f39c12"
+              },
+              "description": "Wybierz się na łagodną wędrówkę z panoramicznym widokiem na Ella Gap i okoliczne pasma górskie.",
+              "image": "assets/img/5daysTours/9.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Nocleg w hotelu Oak Ray Ella Gap lub podobnym – HB Basis w Ella",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w malowniczym hotelu na wzgórzu z opcją niepełnego wyżywienia.",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Prywatny pokój"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Ella – safari dzikiej przyrody w Yala",
+          "activities": [
+            {
+              "type": "Wodospad",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Zatrzymaj się przy wodospadzie Ravana, jednym z najbardziej malowniczych wodospadów na Sri Lance, położonym wzdłuż drogi Ella – Wellawaya.",
+              "image": "assets/img/5daysTours/n0oxsxmicxgleixkq2rx.jpg"
+            },
+            {
+              "type": "Miejsce historyczne",
+              "title": {
+                "title": "Świątynia Buduruwagala",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Odwiedź ten starożytny skalny kompleks świątynny z imponującymi rzeźbionymi posągami Buddy.",
+              "image": "assets/img/5daysTours/18.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Parku Narodowym Yala",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Przeżyj ekscytujące safari jeepem w Parku Narodowym Yala, który jest domem dla lampartów, słoni, krokodyli i różnorodnej dzikiej przyrody.",
+              "image": "assets/img/5daysTours/xj7qybc2bk5bwnxdkubp.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Nocleg w Yala",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w komfortowym hotelu na terenie safari z niepełnym wyżywieniem.",
+              "extra": [
+                "Śniadanie i kolacja w cenie"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Yala – Galle – Bentota – Lotnisko",
+          "activities": [
+            {
+              "type": "Wizyta na plaży",
+              "title": {
+                "title": "Plaża Mirissy",
+                "icon": "fa-umbrella-beach",
+                "color": "#f39c12"
+              },
+              "description": "Zrelaksuj się na plaży Mirissa lub opcjonalnie podziwiaj wieloryby i widoki na wybrzeże.",
+              "image": "assets/img/5daysTours/21.jpg"
+            },
+            {
+              "type": "Dziedzictwo",
+              "title": {
+                "title": "Holenderski Fort Galle",
+                "icon": "fa-landmark",
+                "color": "#8e44ad"
+              },
+              "description": "Poznaj wpisany na listę UNESCO Fort Galle z kolonialną architekturą, murami obronnymi i widokiem na ocean.",
+              "image": "assets/img/5daysTours/22.jpg"
+            },
+            {
+              "type": "Safari łodzią",
+              "title": {
+                "title": "Safari nad rzeką Madu",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Ciesz się spokojną przejażdżką łodzią przez lasy namorzynowe i małe wyspy w jednym z najbogatszych ekosystemów podmokłych Sri Lanki.",
+              "image": "assets/img/5daysTours/23.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie z niepełnym wyżywieniem",
+        "Odbiór i dowóz z lotniska",
+        "Opłaty za paliwo i parking"
+      ],
+      "excludes": [
+        "Opłaty za wstęp",
+        "Lunch i napoje",
+        "Wydatki osobiste"
+      ]
+    },
+    "5-day-sri-lanka-tour": {
+      "id": "5-day-sri-lanka-tour",
+      "slug": "5-dni-sri-lanka",
+      "title": "5-dniowa wycieczka po Sri Lance",
+      "description": "Kultura, przyroda i fauna w 5 dni.",
+      "duration": "5 dni",
+      "persons": "1-20 Persons",
+      "filecode": "5-day-sri-lanka-tour",
+      "overview": "Kultura, przyroda i fauna w 5 dni.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Z lotniska do Sigiriya – słonie i safari",
+          "activities": [
+            {
+              "type": "Przyjazd",
+              "title": {
+                "title": "Odbiór z lotniska",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              },
+              "description": "Spotkaj się ze swoim profesjonalnym przewodnikiem kierowcy na międzynarodowym lotnisku Bandaranaike i rozpocznij prywatną podróż po Sri Lance w kierunku Trójkąta Kulturowego."
+            },
+            {
+              "type": "Doświadczenie dzikiej przyrody",
+              "title": {
+                "title": "Sierociniec dla słoni w Pinnawala",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Odwiedź sierociniec dla słoni Pinnawala, znane sanktuarium opiekujące się uratowanymi i osieroconymi słoniami. Przyjrzyj się słoniom z bliska i, w zależności od czasu, bądź świadkiem ich niezapomnianej sesji kąpieli w rzece.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Parku Narodowym Minneriya",
+                "icon": "fa-leaf",
+                "color": "#8e44ad"
+              },
+              "description": "Weź udział w ekscytującym safari jeepem 4x4 w Parku Narodowym Minneriya, znanym z „The Gathering” — jednego z największych zgromadzeń dzikich słoni w Azji. Zobacz słonie, jelenie, bawoły i różnorodne gatunki ptaków.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 3,5-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Z Sigiriya do Kandy – Dziedzictwo Kulturowe",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Twierdza skalna Sigiriya",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Wejdź na wpisaną na Listę Światowego Dziedzictwa UNESCO Twierdzę Sigiriya Lion Rock, pałac królewski z V wieku, wznoszący się dramatycznie nad równinami dżungli. Odkryj starożytne freski, Lustrzaną Ścianę i panoramiczne widoki na szczyt.",
+              "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź Sri Dalada Maligawę w Kandy, jedną z najświętszych świątyń buddyjskich na świecie. Bądź świadkiem tradycyjnych rytuałów i podziwiaj piękną architekturę kandyjską świątyni.",
+              "image": "assets/img/5daysTours/4.jpg"
+            },
+            {
+              "type": "Doświadczenie kulturowe",
+              "title": {
+                "title": "Pokaz tańca kulturalnego w Kandy",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Weź udział w wieczornym występie tańca kulturalnego z tradycyjną grą na bębnach Kandyan, chodzeniem po ogniu i żywymi kostiumami, które ukazują bogate dziedzictwo artystyczne Sri Lanki.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Topaz – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w hotelu Topaz (lub podobnym).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Z Kandy do Nuwara Eliya – malowniczego kraju herbaty",
+          "activities": [
+            {
+              "type": "Natura",
+              "title": {
+                "title": "Królewskie Ogrody Botaniczne Peradeniya",
+                "icon": "fa-tree",
+                "color": "#16a085"
+              },
+              "description": "Odkryj jeden z najlepszych ogrodów botanicznych w Azji, w którym znajdują się egzotyczne orchidee, wysokie aleje palmowe, rośliny lecznicze i pięknie zagospodarowane tereny wzdłuż rzeki Mahaweli.",
+              "image": "assets/img/5daysTours/26.jpg"
+            },
+            {
+              "type": "Natura",
+              "title": {
+                "title": "Wodospad Rambody",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Zatrzymaj się przy wodospadzie Ramboda, jednym z najwyższych wodospadów na Sri Lance, otoczonym malowniczymi plantacjami herbaty i chłodnym górskim powietrzem.",
+              "image": "assets/img/5daysTours/27.jpg"
+            },
+            {
+              "type": "Doświadczenie herbaciane",
+              "title": {
+                "title": "Wizyta w fabryce herbaty i plantacji",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Odkryj, jak produkowana jest słynna na całym świecie herbata cejlońska od liścia do filiżanki. Spaceruj po bujnych plantacjach herbaty i ciesz się degustacją świeżej herbaty na wzgórzach Sri Lanki.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Yara Nuwara Eliya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Yara Nuwara Eliya (lub podobnym).",
+              "image": "assets/img/5daysTours/29.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Nuwara Eliya do Ella – Górska sceneria",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-bridge",
+                "color": "#c0392b"
+              },
+              "description": "Majestatyczny most Dziewięciu Łuków jest jednym z wielu powodów. Wspaniały most Dziewięciu Łuków pomiędzy Ellą a stacją Demodara to jeden z cudów inżynierii początku XX wieku.",
+              "image": "assets/img/5daysTours/5.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Mały Szczyt Adama",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Ma wysokość 1141 m, a przejście od wejścia zajmuje od 30 do 45 minut. Widoki ze szczytu są niesamowite. Panoramiczne widoki 360 stopni z napływającymi chmurami to przyjemność oglądać.",
+              "image": "assets/img/5daysTours/9.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Oak Ray Ella Gap",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zakwaterowanie w hotelu Oak Ray Ella Gap lub podobnym – HB Basis",
+              "image": "assets/img/5daysTours/30.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Udawalawa do południowo-zachodniego wybrzeża – rzeka i ochrona",
+          "activities": [
+            {
+              "type": "Ochrona",
+              "title": {
+                "title": "Projekt ochrony żółwi morskich",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź centrum ochrony żółwi morskich na południowym wybrzeżu i dowiedz się o ochronie dzikiej przyrody morskiej, programach wylęgowych i działaniach rehabilitacyjnych.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Safari łodzią",
+              "title": {
+                "title": "Safari nad rzeką Madu",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Wybierz się na malownicze safari łodzią po lasach namorzynowych i małych wyspach na rzece Madu. Odkryj lokalną uprawę cynamonu i różnorodną przyrodę terenów podmokłych.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Odbiór i dowóz na lotnisko",
+        "Opłaty za paliwo i parking",
+        "Nieograniczony przebieg przez całą wycieczkę"
+      ],
+      "excludes": [
+        "Opłaty za wstęp i aktywność",
+        "Jedzenie i napoje",
+        "Zakwaterowanie (można zorganizować na życzenie)"
+      ]
+    },
+    "6-day-sri-lanka-private-tour": {
+      "id": "6-day-sri-lanka-private-tour",
+      "slug": "6-dni-prywatny-sri-lanka",
+      "title": "6-dniowa prywatna wycieczka",
+      "description": "Sigirija, Kandy, Ella, Yala i plaża.",
+      "duration": "6 dni",
+      "persons": "2-20 Persons",
+      "filecode": "6-day-sri-lanka-private-tour",
+      "overview": "Sigirija, Kandy, Ella, Yala i plaża.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Przyjazd i skała Pidurangala",
+          "activities": [
+            {
+              "type": "Przyjazd",
+              "title": {
+                "title": "Przyjazd",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              }
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Skała Pidurangala",
+                "icon": "fa-hiking",
+                "color": "#f39c12"
+              },
+              "description": "Mała wycieczka do skały Pidurangala i podziwianie krajobrazów.",
+              "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zakwaterowanie w hotelu Fresco Water Villa lub podobnym hotelu - HB Basis",
+              "image": "assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Sigiriya i Dambulla",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Lwia Skała Sigiriya",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Aby rozpocząć drugi dzień, odwiedzisz wpisaną na Listę Światowego Dziedzictwa UNESCO skalną fortecę Sigiriya.",
+              "image": "assets/img/7dayschange/ihyw8fdom33yg8zqkmfi.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wioska Hiriwadunna i przygoda nad jeziorem",
+                "icon": "fa-leaf",
+                "color": "#8e44ad"
+              },
+              "description": "Zdobądźmy trochę tradycyjnego doświadczenia wioski na Sri Lance!!! Wizyta w wiosce Hiriwadunna na Sri Lance ukazuje wyluzowany rytm życia małej wioski.",
+              "image": "assets/img/5daysTours/36.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Świątynia w jaskini Dambulla",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Po odświeżeniu się w wiosce Hiriwadunna udasz się do świątyni w jaskini królewskiej Dambulla, świętego miejsca pielgrzymek od 22 wieków.",
+              "image": "assets/img/7dayschange/d2ap1r8hoijw6wsm5xgy.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Dedykowane Centrum Ekonomiczne Dambulla",
+                "icon": "fa-shopping-basket",
+                "color": "#16a085"
+              },
+              "description": "Ciesz się świeżymi owocami i warzywami na targu Dambulla.",
+              "image": "assets/img/7dayschange/v54wmh9aukt4toblznpu.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zostań na noc z bazą HB",
+              "image": "assets/img/7dayschange/f4yqlbw3bjsz3szp3hbq.jpg",
+              "extra": [
+                "Śniadanie",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Wycieczka po mieście Kandy",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Śri Dalada Maligawa",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "W końcu odwiedzisz świątynię, w której znajduje się Relikwia Najświętszego Zęba Buddy, która jest jedną z najświętszych świątyń w całym buddyjskim świecie!!!",
+              "image": "assets/img/7dayschange/f3pqyx8y4gpwmqhzleh0.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Klub Kandy Lake – pokaz tańca kulturalnego",
+                "icon": "fa-theater-masks",
+                "color": "#8e44ad"
+              },
+              "description": "Kulturalny pokaz tańca Kandy Lake Club to stymulujący pokaz sztuki, tańca i dziedzictwa kulturowego Sri Lanki, który jest obowiązkowym punktem programu dla każdego odwiedzającego historyczne miasto Kandy.",
+              "image": "assets/img/7dayschange/upxn0ge9htdg20ycpgp6.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Świątynia Sri Muthumariammana",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Świątynia hinduistyczna Sri Muthumariamman jest jednym ze wspaniałych przykładów potwierdzających, że Sri Lanka przez te wszystkie lata była krajem wielokulturowym.",
+              "image": "assets/img/7dayschange/gt14exwu7ogp3rz9aun9.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Nalandę Gedige",
+                "icon": "fa-landmark",
+                "color": "#16a085"
+              },
+              "description": "Starożytna i tajemnicza budowla w pobliżu Matale, która wprawiła badaczy w zakłopotanie dziwną mieszanką architektury hinduskiej i buddyjskiej. Uważa się, że konstrukcja ma co najmniej tysiąc lat",
+              "image": "assets/img/7dayschange/u9901tv9mcxlz9rd9mgw.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "hotelu Topaz",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zakwaterowanie w Hotelu Topaz lub podobnym - HB Basis",
+              "image": "assets/img/7dayschange/sxapeujg7mpergbd5nic.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Nuwara Eliya przez Ellę",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Królewski Ogród Botaniczny",
+                "icon": "fa-leaf",
+                "color": "#2ecc71"
+              },
+              "description": "W ogrodach rośnie ponad 4 000 różnych gatunków roślin, uważanych za jedne z najlepszych w Azji.",
+              "image": "assets/img/7dayschange/asojmlldivxq8vforwxt.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wieża Ambuluwawy",
+                "icon": "fa-mountain",
+                "color": "#e67e22"
+              },
+              "description": "Następny w kolejce.. łatwa wędrówka, z której roztacza się 360-stopniowy widok na okoliczne góry, lasy, rzeki i miasta w Kandy!",
+              "image": "assets/img/7dayschange/w3a48osbcocecoaaq9hd.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Fabryka herbaty Bluefield",
+                "icon": "fa-coffee",
+                "color": "#8e44ad"
+              },
+              "description": "Jako kraina herbaty, Nuwara Eliya posiada dość dużą liczbę fabryk herbaty, herbaciarni i pól herbacianych. Bluefield Tea Factory w Nuwara Eliya to jedna z najpopularniejszych fabryk herbaty na Sri Lance.",
+              "image": "assets/img/7dayschange/tijr5ztiozgdesbxotm4.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Punkt widokowy na wodospad Ramboda",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Wodospad Ramboda leży w dzielnicy Pussellawa, w mieście Kandy. Obszar ten znany jest ze wspaniałych krajobrazów obejmujących wyżyny, grzbiety, równiny, strumienie i pagórkowate góry.",
+              "image": "assets/img/7dayschange/ovdxsgglrdreodbe1tmv.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-bridge",
+                "color": "#c0392b"
+              },
+              "description": "Majestatyczny most Dziewięciu Łuków jest jednym z wielu powodów. Wspaniały most Dziewięciu Łuków pomiędzy Ellą a stacją Demodara to jeden z cudów inżynierii początku XX wieku.",
+              "image": "assets/img/7dayschange/yka3mpx2nahiftrb0lpu.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Mały Szczyt Adama",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Ma wysokość 1141 m, a przejście od wejścia zajmuje od 30 do 45 minut. Widoki ze szczytu są niesamowite. Panoramiczne widoki 360 stopni z napływającymi chmurami to przyjemność oglądać.",
+              "image": "assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Oak Ray Ella Gap",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zakwaterowanie w hotelu Oak Ray Ella Gap lub podobnym – HB Basis",
+              "image": "assets/img/7dayschange/nhm6ktdm7nimqwwrgtbm.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Park Narodowy Yala i wodospady Ravana",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Wodospad Ravana jest zakorzeniony w mitach i folklorze. Uważa się, że demoniczny król Rawana z eposu Ramajan ukrył Sitę w jaskini za wodospadem po tym, jak ją porwał i sprowadził z powrotem",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Park Narodowy Yala",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Yala jest domem dla 44 odmian ssaków i 215 gatunków ptaków. Do jego bardziej znanych mieszkańców należy największe na świecie skupisko lampartów",
+              "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Grand Tamarind Lake",
+                "icon": "fa-hotel",
+                "color": "#27ae60"
+              },
+              "description": "Zakwaterowanie w hotelu Grand Tamarind Lake lub podobnym – HB Basis",
+              "image": "assets/img/7dayschange/ipbxv6o0ovr2tfbc6pge.jpg",
+              "extra": [
+                "Hotel 5 gwiazdek (luksusowy)",
+                "Prywatna łazienka"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Mirisa i wyjazd",
+          "activities": [
+            {
+              "type": "Ochrona",
+              "title": {
+                "title": "Projekt ochrony żółwi morskich",
+                "icon": "fa-water",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź centrum ochrony żółwi morskich na południowym wybrzeżu i dowiedz się o ochronie dzikiej przyrody morskiej, programach wylęgowych i działaniach rehabilitacyjnych.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Safari łodzią",
+              "title": {
+                "title": "Safari nad rzeką Madu",
+                "icon": "fa-ship",
+                "color": "#3498db"
+              },
+              "description": "Wybierz się na malownicze safari łodzią po lasach namorzynowych i małych wyspach na rzece Madu. Odkryj lokalną uprawę cynamonu i różnorodną przyrodę terenów podmokłych.",
+              "image": "assets/img/5daysTours/32.jpg"
+            },
+            {
+              "type": "Wyjazd",
+              "title": {
+                "title": "Transfer wyjazdowy",
+                "icon": "fa-plane",
+                "color": "#2c3e50"
+              }
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Odbiór i dowóz na lotnisko",
+        "Opłaty za paliwo i parking",
+        "Nieograniczony przebieg przez całą wycieczkę"
+      ],
+      "excludes": [
+        "Opłaty za wstęp i aktywność",
+        "Jedzenie i napoje",
+        "Zakwaterowanie (można zorganizować na życzenie)"
+      ]
+    },
+    "7-day-sri-lanka-tour": {
+      "id": "7-day-sri-lanka-tour",
+      "slug": "7-dni-sri-lanka",
+      "title": "7-dniowa wycieczka po Sri Lance",
+      "description": "Sigirija, Kandy, Ella i safari Yala w 7 dni.",
+      "duration": "7 dni",
+      "persons": "20 Persons",
+      "filecode": "7-day-sri-lanka-tour",
+      "overview": "Sigirija, Kandy, Ella i safari Yala w 7 dni.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Parku Narodowym Wilpattu",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Odkryj największy park narodowy Sri Lanki podczas 5-godzinnego safari jeepem 4x4. Zobacz lamparty, leniwce, słonie, jelenie, krokodyle i różnorodne ptactwo.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Ośrodek Thimbiri Wewa – Wilpattu",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Thimbiri Wewa Resort Wilpattu (lub podobnym). Opcja niepełnego wyżywienia.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Kolacja wliczona w cenę",
+                "Hotel klasy gwiazdowej"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "activities": [
+            {
+              "type": "Wizyta religijna",
+              "title": {
+                "title": "Świątynia Sri Maha Bodhi",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Odwiedź święte drzewo Sri Maha Bodhi w Anuradhapurze.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Wizyta historyczna",
+              "title": {
+                "title": "Ruwanweli Maha Seya",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Poznaj jeden z najświętszych zabytków buddyjskich na Sri Lance.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Malownicza wędrówka",
+              "title": {
+                "title": "Zachód słońca na skale Pidurangala",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Wspinaj się na skałę Pidurangala, aby podziwiać zapierające dech w piersiach widoki na zachód słońca.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 3,5-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Trójkąt Kulturowy Sigiriya",
+          "activities": [
+            {
+              "type": "Miejsce UNESCO",
+              "title": {
+                "title": "Twierdza Sigiriya Lwia Skała",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Wejdź na wpisaną na listę UNESCO twierdzę skalną Sigiriya.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Doświadczenie wsi",
+              "title": {
+                "title": "Wycieczka do wioski Hiriwadunna",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Przeżyj autentyczne wiejskie życie na Sri Lance.",
+              "image": "assets/img/5daysTours/34.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Minnerii",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Weź udział w safari jeepem 4x4, słynącym ze spotkań słoni.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Dobra kondycja",
+              "title": {
+                "title": "Masaż Ajurwedy",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Zrelaksuj się podczas tradycyjnego masażu olejkami ziołowymi.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 3,5-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Sigiriya – Kandy",
+          "activities": [
+            {
+              "type": "Wizyta Kulturalna",
+              "title": {
+                "title": "Ogród Przypraw Matale",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Odkryj słynne przyprawy i zioła Sri Lanki.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "Miejsce UNESCO",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź najświętszą świątynię buddyjską na Sri Lance w Kandy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Pokaz kulturalny",
+              "title": {
+                "title": "Pokaz tańca kulturalnego w Kandy",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Ciesz się tradycyjnymi występami tańca Kandyan.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Topaz – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w hotelu Topaz (lub podobnym).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kandy – Nuwara Eliya – Ella",
+          "activities": [
+            {
+              "type": "Doświadczenie herbaciane",
+              "title": {
+                "title": "Fabryka herbaty Blue Field",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Dowiedz się, jak powstaje słynna na całym świecie herbata cejlońska.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Natura",
+              "title": {
+                "title": "Wodospad Rambody",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Odwiedź jeden z najwyższych wodospadów na Sri Lance.",
+              "image": "assets/img/5daysTours/13.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Mały Szczyt Adama",
+                "icon": "fa-mountain",
+                "color": "#8e44ad"
+              },
+              "description": "Ma wysokość 1141 m, a przejście od wejścia zajmuje od 30 do 45 minut. Widoki ze szczytu są niesamowite. Panoramiczne widoki 360 stopni z napływającymi chmurami to przyjemność oglądać.",
+              "image": "assets/img/7dayschange/e7sgetzhdjoahy2h9wgh.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Oak Ray Ella Gap",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Elli.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Ella – Hikkaduwa",
+          "activities": [
+            {
+              "type": "Punkt orientacyjny",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Odwiedź słynny most kolejowy z epoki kolonialnej.",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Wodospad Rawany",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Wodospad Ravana jest zakorzeniony w mitach i folklorze. Uważa się, że demoniczny król Rawana z eposu Ramajan ukrył Sitę w jaskini za wodospadem po tym, jak ją porwał i sprowadził z powrotem",
+              "image": "assets/img/7dayschange/zauxzn86ulp9ddnrzlvw.jpg"
+            },
+            {
+              "type": "Dzika przyroda",
+              "title": {
+                "title": "Dom tranzytowy dla słoni",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "Obserwuj uratowane słoniątka.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Somerset Mirisa",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zakwaterowanie w hotelu Somerset Mirissa lub podobnym hotelu – HB Basis",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Śniadanie",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Zajęcia wodne i wyjazd",
+          "activities": [
+            {
+              "type": "Ochrona dzikiej przyrody",
+              "title": {
+                "title": "Wizyta w wylęgarni żółwi Koggala",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "Odwiedź Centrum Wylęgarni i Ochrony Żółwi Koggala, gdzie zagrożone żółwie morskie są chronione i rehabilitowane. Dowiedz się o działaniach Sri Lanki na rzecz ochrony środowiska morskiego, obserwuj młode żółwie w basenach wylęgowych i dowiedz się, w jaki sposób uratowane żółwie są wypuszczane z powrotem do Oceanu Indyjskiego.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Safari łodzią",
+              "title": {
+                "title": "Safari łodzią po rzece Madu",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "Weź udział w malowniczym safari łodzią po lasach namorzynowych i małych wyspach na rzece Madu. Odwiedź tradycyjne plantacje cynamonu i odkryj jeden z najpiękniejszych ekosystemów podmokłych Sri Lanki.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie i wyżywienie kierowcy",
+        "Odbiór i dowóz",
+        "Opłaty za paliwo i parking",
+        "Serwis 24-godzinny",
+        "Nielimitowany przebieg na całą wycieczkę",
+        "Twoje zakwaterowanie"
+      ],
+      "excludes": [
+        "Jedzenie i napoje",
+        "Opłaty za wstęp i zajęcia"
+      ]
+    },
+    "8-day-sri-lanka-private-tour": {
+      "id": "8-day-sri-lanka-private-tour",
+      "slug": "8-dni-prywatny-sri-lanka",
+      "title": "8-dniowa prywatna wycieczka",
+      "description": "Wilpattu, Sigirija, Kandy, Ella i plaża.",
+      "duration": "8 dni",
+      "persons": "1-20 Persons",
+      "filecode": "8-day-sri-lanka-private-tour",
+      "overview": "Wilpattu, Sigirija, Kandy, Ella i plaża.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Parku Narodowym Wilpattu",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Odkryj największy park narodowy Sri Lanki podczas 5-godzinnego safari jeepem 4x4. Zobacz lamparty, leniwce, słonie, jelenie, krokodyle i różnorodne ptactwo.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Ośrodek Thimbiri Wewa – Wilpattu",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Thimbiri Wewa Resort Wilpattu (lub podobnym). Opcja niepełnego wyżywienia.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Kolacja wliczona w cenę",
+                "Hotel klasy gwiazdowej"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "activities": [
+            {
+              "type": "Wizyta religijna",
+              "title": {
+                "title": "Świątynia Sri Maha Bodhi",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Odwiedź święte drzewo Sri Maha Bodhi w Anuradhapurze.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Wizyta historyczna",
+              "title": {
+                "title": "Ruwanweli Maha Seya",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Poznaj jeden z najświętszych zabytków buddyjskich na Sri Lance.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Malownicza wędrówka",
+              "title": {
+                "title": "Zachód słońca na skale Pidurangala",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Wspinaj się na skałę Pidurangala, aby podziwiać zapierające dech w piersiach widoki na zachód słońca.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 3,5-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Trójkąt Kulturowy Sigiriya",
+          "activities": [
+            {
+              "type": "Miejsce UNESCO",
+              "title": {
+                "title": "Twierdza Sigiriya Lwia Skała",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Wejdź na wpisaną na listę UNESCO twierdzę skalną Sigiriya.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Doświadczenie wsi",
+              "title": {
+                "title": "Wycieczka do wioski Hiriwadunna",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Przeżyj autentyczne wiejskie życie na Sri Lance.",
+              "image": "assets/img/5daysTours/34.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Minnerii",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Weź udział w safari jeepem 4x4, słynącym ze spotkań słoni.",
+              "image": "assets/img/5daysTours/24.jpg"
+            },
+            {
+              "type": "Dobra kondycja",
+              "title": {
+                "title": "Masaż Ajurwedy",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Zrelaksuj się podczas tradycyjnego masażu olejkami ziołowymi.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 3,5-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Sigiriya – Kandy",
+          "activities": [
+            {
+              "type": "Wizyta Kulturalna",
+              "title": {
+                "title": "Ogród Przypraw Matale",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Odkryj słynne przyprawy i zioła Sri Lanki.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "Miejsce UNESCO",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź najświętszą świątynię buddyjską na Sri Lance w Kandy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Pokaz kulturalny",
+              "title": {
+                "title": "Pokaz tańca kulturalnego w Kandy",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Ciesz się tradycyjnymi występami tańca Kandyan.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Topaz – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w hotelu Topaz (lub podobnym).",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kandy – Nuwara Eliya – Ella",
+          "activities": [
+            {
+              "type": "Doświadczenie herbaciane",
+              "title": {
+                "title": "Fabryka herbaty Blue Field",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Dowiedz się, jak powstaje słynna na całym świecie herbata cejlońska.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Natura",
+              "title": {
+                "title": "Wodospad Rambody",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Odwiedź jeden z najwyższych wodospadów na Sri Lance.",
+              "image": "assets/img/5daysTours/13.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Oak Ray Ella Gap",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Elli.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Ella – Hikkaduwa",
+          "activities": [
+            {
+              "type": "Punkt orientacyjny",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Odwiedź słynny most kolejowy z epoki kolonialnej.",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Dzika przyroda",
+              "title": {
+                "title": "Dom tranzytowy dla słoni",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "Obserwuj uratowane słoniątka.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Somerset Mirisa",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zakwaterowanie w hotelu Somerset Mirissa lub podobnym hotelu – HB Basis",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Śniadanie",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Plaża Hikkaduwa",
+          "activities": [
+            {
+              "type": "Relaks na plaży",
+              "title": {
+                "title": "Plaża Hikkaduwa",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "Zrelaksuj się na złotych plażach i popływaj w Oceanie Indyjskim.",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Somerset Mirisa",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zakwaterowanie w hotelu Somerset Mirissa lub podobnym hotelu – HB Basis",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Śniadanie",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Zajęcia wodne i wyjazd",
+          "activities": [
+            {
+              "type": "Ochrona dzikiej przyrody",
+              "title": {
+                "title": "Wizyta w wylęgarni żółwi Koggala",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "Odwiedź Centrum Wylęgarni i Ochrony Żółwi Koggala, gdzie zagrożone żółwie morskie są chronione i rehabilitowane. Dowiedz się o działaniach Sri Lanki na rzecz ochrony środowiska morskiego, obserwuj młode żółwie w basenach wylęgowych i dowiedz się, w jaki sposób uratowane żółwie są wypuszczane z powrotem do Oceanu Indyjskiego.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Safari łodzią",
+              "title": {
+                "title": "Safari łodzią po rzece Madu",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "Weź udział w malowniczym safari łodzią po lasach namorzynowych i małych wyspach na rzece Madu. Odwiedź tradycyjne plantacje cynamonu i odkryj jeden z najpiękniejszych ekosystemów podmokłych Sri Lanki.",
+              "image": "assets/img/5daysTours/32.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie z niepełnym wyżywieniem (7 nocy)",
+        "Opłaty za paliwo i parking",
+        "Odbiór i dowóz z lotniska"
+      ],
+      "excludes": [
+        "Opłaty za wstęp i aktywność",
+        "Lunch i napoje",
+        "Wydatki osobiste"
+      ]
+    },
+    "10-day-sri-lanka-tour": {
+      "id": "10-day-sri-lanka-tour",
+      "slug": "10-dni-sri-lanka",
+      "title": "10-dniowa wycieczka po Sri Lance",
+      "description": "Plaże, safari, góry i kultura w 10 dni.",
+      "duration": "10 dni",
+      "persons": "1-20 Persons",
+      "filecode": "10-day-sri-lanka-tour",
+      "overview": "Plaże, safari, góry i kultura w 10 dni.",
+      "tourType": "Okrągła wycieczka",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Airport / Hotel – Wilpattu",
+          "activities": [
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Parku Narodowym Wilpattu",
+                "icon": "fa-paw",
+                "color": "#27ae60"
+              },
+              "description": "Odkryj największy park narodowy Sri Lanki podczas 5-godzinnego safari jeepem 4x4. Zobacz lamparty, leniwce, słonie, jelenie, krokodyle i różnorodne ptactwo.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Ośrodek Thimbiri Wewa – Wilpattu",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Thimbiri Wewa Resort Wilpattu (lub podobnym). Opcja niepełnego wyżywienia.",
+              "image": "assets/img/5daysTours/38.jpg",
+              "extra": [
+                "Kolacja wliczona w cenę",
+                "Hotel klasy gwiazdowej"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "activities": [
+            {
+              "type": "Wizyta religijna",
+              "title": {
+                "title": "Świątynia Sri Maha Bodhi",
+                "icon": "fa-place-of-worship",
+                "color": "#8e44ad"
+              },
+              "description": "Odwiedź święte drzewo Sri Maha Bodhi w Anuradhapurze.",
+              "image": "assets/img/5daysTours/39.jpg"
+            },
+            {
+              "type": "Wizyta historyczna",
+              "title": {
+                "title": "Ruwanweli Maha Seya",
+                "icon": "fa-landmark",
+                "color": "#e67e22"
+              },
+              "description": "Poznaj jeden z najświętszych zabytków buddyjskich na Sri Lance.",
+              "image": "assets/img/5daysTours/40.jpg"
+            },
+            {
+              "type": "Malownicza wędrówka",
+              "title": {
+                "title": "Zachód słońca na skale Pidurangala",
+                "icon": "fa-mountain",
+                "color": "#e74c3c"
+              },
+              "description": "Wspinaj się na skałę Pidurangala, aby podziwiać zapierające dech w piersiach widoki na zachód słońca.",
+              "image": "assets/img/5daysTours/41.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Trójkąt Kulturowy Sigiriya",
+          "activities": [
+            {
+              "type": "Miejsce UNESCO",
+              "title": {
+                "title": "Twierdza Sigiriya Lwia Skała",
+                "icon": "fa-mountain",
+                "color": "#c0392b"
+              },
+              "description": "Wejdź na wpisaną na listę UNESCO twierdzę skalną Sigiriya.",
+              "image": "assets/img/5daysTours/42.jpg"
+            },
+            {
+              "type": "Doświadczenie wsi",
+              "title": {
+                "title": "Wycieczka do wioski Hiriwadunna",
+                "icon": "fa-leaf",
+                "color": "#27ae60"
+              },
+              "description": "Przeżyj autentyczne wiejskie życie na Sri Lance.",
+              "image": "assets/img/5daysTours/36.jpg"
+            },
+            {
+              "type": "Safari",
+              "title": {
+                "title": "Safari w Minnerii",
+                "icon": "fa-paw",
+                "color": "#2ecc71"
+              },
+              "description": "Weź udział w safari jeepem 4x4, słynącym ze spotkań słoni.",
+              "image": "assets/img/5daysTours/37.jpg"
+            },
+            {
+              "type": "Dobra kondycja",
+              "title": {
+                "title": "Masaż Ajurwedy",
+                "icon": "fa-spa",
+                "color": "#9b59b6"
+              },
+              "description": "Zrelaksuj się podczas tradycyjnego masażu olejkami ziołowymi.",
+              "image": "assets/img/5daysTours/43.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Willa na wodzie Fresco – Sigiriya",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w willi Fresco Water (lub podobnej).",
+              "image": "assets/img/5daysTours/c.jpg",
+              "extra": [
+                "Śniadanie i kolacja w cenie",
+                "Hotel 4-gwiazdkowy"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Sigiriya – Kandy",
+          "activities": [
+            {
+              "type": "Wizyta Kulturalna",
+              "title": {
+                "title": "Ogród Przypraw Matale",
+                "icon": "fa-seedling",
+                "color": "#32CD32"
+              },
+              "description": "Odkryj słynne przyprawy i zioła Sri Lanki.",
+              "image": "assets/img/5daysTours/44.jpg"
+            },
+            {
+              "type": "Miejsce UNESCO",
+              "title": {
+                "title": "Świątynia Relikwii Świętego Zęba",
+                "icon": "fa-place-of-worship",
+                "color": "#2980b9"
+              },
+              "description": "Odwiedź najświętszą świątynię buddyjską na Sri Lance w Kandy.",
+              "image": "assets/img/5daysTours/14.jpg"
+            },
+            {
+              "type": "Pokaz kulturalny",
+              "title": {
+                "title": "Pokaz tańca kulturalnego w Kandy",
+                "icon": "fa-theater-masks",
+                "color": "#e74c3c"
+              },
+              "description": "Ciesz się tradycyjnymi występami tańca Kandyan.",
+              "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Topaz – Kandy",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w hotelu Topaz (lub podobnym) w Kandy. Opcja niepełnego wyżywienia.",
+              "image": "assets/img/5daysTours/25.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka",
+                "Śniadanie",
+                "Kolacja wliczona w cenę"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kandy – Nuwara Eliya – Ella",
+          "activities": [
+            {
+              "type": "Doświadczenie herbaciane",
+              "title": {
+                "title": "Fabryka herbaty Blue Field",
+                "icon": "fa-mug-hot",
+                "color": "#8B4513"
+              },
+              "description": "Dowiedz się, jak powstaje słynna na całym świecie herbata cejlońska.",
+              "image": "assets/img/5daysTours/28.png"
+            },
+            {
+              "type": "Natura",
+              "title": {
+                "title": "Wodospad Rambody",
+                "icon": "fa-water",
+                "color": "#3498db"
+              },
+              "description": "Odwiedź jeden z najwyższych wodospadów na Sri Lance.",
+              "image": "assets/img/5daysTours/27.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Oak Ray Ella Gap (lub podobny) - podstawa HB",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w hotelu Oak Ray Ella Gap (lub podobnym) – HB Basis.",
+              "image": "assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka",
+                "Śniadanie",
+                "Kolacja wliczona w cenę"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Ella – Hikkaduwa",
+          "activities": [
+            {
+              "type": "Punkt orientacyjny",
+              "title": {
+                "title": "Most Dziewięciu Łuków",
+                "icon": "fa-bridge",
+                "color": "#A9A9A9"
+              },
+              "description": "Odwiedź słynny most kolejowy z epoki kolonialnej.",
+              "image": "assets/img/5daysTours/3.jpeg"
+            },
+            {
+              "type": "Dzika przyroda",
+              "title": {
+                "title": "Dom tranzytowy dla słoni",
+                "icon": "fa-elephant",
+                "color": "#2ecc71"
+              },
+              "description": "Obserwuj uratowane słoniątka.",
+              "image": "assets/img/5daysTours/7.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Somerset Mirisa",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zakwaterowanie w hotelu Somerset Mirissa lub podobnym hotelu – HB Basis",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Śniadanie",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Plaża Hikkaduwa",
+          "activities": [
+            {
+              "type": "Relaks na plaży",
+              "title": {
+                "title": "Plaża Hikkaduwa",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "Zrelaksuj się na złotych plażach i popływaj w Oceanie Indyjskim.",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Somerset Mirisa",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zakwaterowanie w hotelu Somerset Mirissa lub podobnym hotelu – HB Basis",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Śniadanie",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Plaża Hikkaduwa",
+          "activities": [
+            {
+              "type": "Relaks na plaży",
+              "title": {
+                "title": "Plaża Hikkaduwa",
+                "icon": "fa-umbrella-beach",
+                "color": "#f1c40f"
+              },
+              "description": "Zrelaksuj się na złotych plażach i popływaj w Oceanie Indyjskim.",
+              "image": "assets/img/5daysTours/45.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Hotel Somerset Mirisa",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Zakwaterowanie w hotelu Somerset Mirissa lub podobnym hotelu – HB Basis",
+              "image": "assets/img/5daysTours/35.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Śniadanie",
+                "Prywatna łazienka",
+                "Kolacja"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "title": "Zajęcia wodne w Kalutara",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Pomnik tsunami w Peraliya",
+                "icon": "fa-monument",
+                "color": "#FF8C00"
+              },
+              "description": "Pomnik Peraliya Tsunami upamiętnia ofiary tsunami w 2004 roku i przedstawia wysoki posąg Buddy jako symbol pokoju i pamięci w pobliżu miejsca najgorszej katastrofy tsunami na Sri Lance.",
+              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
+            },
+            {
+              "type": "Ochrona dzikiej przyrody",
+              "title": {
+                "title": "Wizyta w wylęgarni żółwi Koggala",
+                "icon": "fa-water",
+                "color": "#27ae60"
+              },
+              "description": "Odwiedź Centrum Wylęgarni i Ochrony Żółwi Koggala, gdzie zagrożone żółwie morskie są chronione i rehabilitowane. Dowiedz się o działaniach Sri Lanki na rzecz ochrony środowiska morskiego, obserwuj młode żółwie w basenach wylęgowych i dowiedz się, w jaki sposób uratowane żółwie są wypuszczane z powrotem do Oceanu Indyjskiego.",
+              "image": "assets/img/5daysTours/31.jpg"
+            },
+            {
+              "type": "Safari łodzią",
+              "title": {
+                "title": "Safari łodzią po rzece Madu",
+                "icon": "fa-ship",
+                "color": "#16a085"
+              },
+              "description": "Weź udział w malowniczym safari łodzią po lasach namorzynowych i małych wyspach na rzece Madu. Odwiedź tradycyjne plantacje cynamonu i odkryj jeden z najpiękniejszych ekosystemów podmokłych Sri Lanki.",
+              "image": "assets/img/5daysTours/32.jpg"
+            },
+            {
+              "type": "Zakwaterowanie",
+              "title": {
+                "title": "Kamili Beach Resort (lub podobny) - podstawa HB",
+                "icon": "fa-hotel",
+                "color": "#16a085"
+              },
+              "description": "Nocleg w Kamili Beach Resort (lub podobnym) - HB Basis.",
+              "image": "assets/img/5daysTours/46.jpg",
+              "extra": [
+                "Hotel 4 gwiazdki (Premium)",
+                "Prywatna łazienka",
+                "Śniadanie",
+                "Kolacja wliczona w cenę"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "title": "Wyjazd z Kolombo",
+          "activities": [
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Pomnik tsunami w Peraliya",
+                "icon": "fa-monument",
+                "color": "#FF8C00"
+              },
+              "description": "Pomnik Peraliya Tsunami upamiętnia ofiary tsunami w 2004 roku i przedstawia wysoki posąg Buddy jako symbol pokoju i pamięci w pobliżu miejsca najgorszej katastrofy tsunami na Sri Lance.",
+              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Izba Pamięci Niepodległości",
+                "icon": "fa-landmark",
+                "color": "#A9A9A9"
+              },
+              "description": "Plac Niepodległości w Kolombo to obiekt historyczny zbudowany dla upamiętnienia niepodległości Sri Lanki, charakteryzujący się wspaniałą architekturą kolonialną, bujnymi ogrodami i spokojną atmosferą dla odwiedzających.",
+              "image": "assets/img/7daystour/fsrleaf7977wcxityzu8.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Świątynia Gangaramaja",
+                "icon": "fa-landmark",
+                "color": "#FFD700"
+              },
+              "description": "Świątynia Gangaramaya w Kolombo to piękna świątynia buddyjska łącząca architekturę lankijską, tajską i chińską, z posągami, relikwiami i spokojną okolicą nad jeziorem.",
+              "image": "assets/img/7daystour/fn10nlk7fc0dzyawswa5.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Galle Face Green",
+                "icon": "fa-park",
+                "color": "#32CD32"
+              },
+              "description": "Galle Face Green w Kolombo to malownicza promenada nad oceanem, idealna na relaksujące spacery, wspaniałe zachody słońca i delektowanie się ulicznym jedzeniem, oferująca żywą atmosferę nad Oceanem Indyjskim.",
+              "image": "assets/img/7daystour/qu0e7cjpkcfhfds1zeem.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Targ Pettah",
+                "icon": "fa-store",
+                "color": "#FF4500"
+              },
+              "description": "Colombo Fort Market to tętniące życiem centrum oferujące mieszankę lokalnych towarów, odzieży, przypraw i ulicznego jedzenia, zapewniające tętniące życiem zakupy w samym sercu miasta.",
+              "image": "assets/img/7daystour/vlk48jx8ywhuzyqlvqg8.jpg"
+            },
+            {
+              "type": "Wycieczka z przewodnikiem",
+              "title": {
+                "title": "Czerwony Meczet (Meczet Jami Ul-Alfar)",
+                "icon": "fa-mosque",
+                "color": "#FF0000"
+              },
+              "description": "Meczet Jami Ul-Alfar, czyli Czerwony Meczet w Kolombo, to charakterystyczny punkt orientacyjny z uderzającą czerwono-białą architekturą, oferujący wgląd w bogate islamskie dziedzictwo Sri Lanki.",
+              "image": "assets/img/7daystour/owzua0jhk0zazg9d8hcn.jpg"
+            }
+          ]
+        }
+      ],
+      "includes": [
+        "Klimatyzowany pojazd prywatny",
+        "Profesjonalny kierowca mówiący po angielsku",
+        "Zakwaterowanie z niepełnym wyżywieniem (7 nocy)",
+        "Opłaty za paliwo i parking",
+        "Odbiór i dowóz z lotniska"
+      ],
+      "excludes": [
+        "Opłaty za wstęp i aktywność",
+        "Lunch i napoje",
+        "Wydatki osobiste"
+      ]
+    }
+  }
+}
