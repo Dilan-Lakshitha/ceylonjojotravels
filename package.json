@@ -2,7 +2,7 @@
   "name": "travelwebsite",
   "version": "0.0.0",
   "scripts": {
-    "build": "ng build --configuration production",
+    "build": "ng build --configuration production && node scripts/vercel-spa-index.js",
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
