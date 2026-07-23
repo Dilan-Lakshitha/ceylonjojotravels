@@ -15,6 +15,8 @@ export const langGuard: CanActivateFn = (route) => {
   }
 
   transloco.setActiveLang(lang);
+  // Preload shell translations so layout/nav render immediately
+  transloco.load(`common/${lang}`).subscribe();
 
   if (isPlatformBrowser(platformId)) {
     localStorage.setItem('preferred_lang', lang);

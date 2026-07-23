@@ -1,4 +1,4 @@
-<!-- Carousel Start -->
+﻿<!-- Carousel Start -->
 <div class="container-fluid p-0" *transloco="let t; scope: 'home'; prefix: 'home'">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -80,188 +80,175 @@
     </div>
 </div>
 <!-- Carousel End -->
-<section class="container text-center">
-    <h2>Sri Lanka Tours with Local Experts</h2>
-
-    <p>
-        CEYLON JOJO TRAVElS offers private tours, chauffeur driver services and tailor-made holiday packages across
-        Sri Lanka. Explore Sigiriya, Kandy, Ella, Yala safari and stunning beaches with experienced local guides.
-    </p>
+<section class="container text-center" *transloco="let t; scope: 'home'; prefix: 'home'">
+    <h2>{{ t('seoIntroTitle') }}</h2>
+    <p>{{ t('seoIntro') }}</p>
 </section>
 <!-- Destination Start -->
-<div class="container-fluid py-5">
+<div class="container-fluid py-5" *transloco="let t; scope: 'destinations'; prefix: 'destinations'">
     <div class="container">
 
         <div class="text-center mb-5">
-            <h1>Top Sri Lanka Destinations for Your Tour</h1>
+            <h1>{{ t('title') }}</h1>
             <p class="text-center mb-4">
-                Explore the most popular destinations included in our Sri Lanka tour packages including Sigiriya, Ella,
-                Yala Safari, Kandy and Galle.
+                {{ t('intro') }}
             </p>
         </div>
 
-        <div class="row g-4">
-            <!-- Sigiriya -->
-            <div class="col-lg-4 col-md-6  mb-2">
-                <div class="destination-card" (click)="scrollToSection('packages')">
-                    <div class="card-image">
-                        <img src="assets/img/destination-1.jpg" alt="Sigiriya Lion Rock Sri Lanka Tour">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Sigiriya</h3>
-                        <p class="card-description">Explore the famous Sigiriya Lion Rock and ancient royal gardens.</p>
-                        <p class="card-packages">
-                            <strong>Included in:</strong> Sigiriya Day Tour, 5 Day Tour, 6 Day Tour, 7 Day Tour, 8 Day
-                            Tour & 10 Day Tour
-                        </p>
-                        <a href="#packages" class="card-link">
-                            View Tours <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ella -->
-            <div class="col-lg-4 col-md-6  mb-2">
-                <div class="destination-card" (click)="scrollToSection('packages')">
-                    <div class="card-image">
-                        <img src="assets/img/destination-2.jpg" alt="Ella Sri Lanka Nine Arches Bridge Tour">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Ella</h3>
-                        <p class="card-description">Visit Nine Arches Bridge, Little Adam's Peak and Ravana Falls.</p>
-                        <p class="card-packages">
-                            <strong>Included in:</strong> Ella Day Tour, 2 Day Tour, 4 Day Tour, 5 Day Tour, 7 Day Tour,
-                            8 Day Tour & 10 Day Tour
-                        </p>
-                        <a href="#packages" class="card-link">
-                            View Tours <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Yala Safari -->
-            <div class="col-lg-4 col-md-6 mb-2">
-                <div class="destination-card" (click)="scrollToSection('packages')">
-                    <div class="card-image">
-                        <img src="assets/img/destination-3.jpg" alt="Yala National Park Safari Sri Lanka">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Yala Safari</h3>
-                        <p class="card-description">Experience wildlife safari and see leopards and elephants.</p>
-                        <p class="card-packages">
-                            <strong>Included in:</strong> Yala Safari 2 Day Tour, 4 Day Tour, 6 Day Tour & 7 Day Tour
-                        </p>
-                        <a href="#packages" class="card-link">
-                            View Tours <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kandy -->
-            <div class="col-lg-4 col-md-6">
-                <div class="destination-card" (click)="scrollToSection('packages')">
-                    <div class="card-image">
-                        <img src="assets/img/destination-4.jpg" alt="Kandy Temple of the Tooth Sri Lanka Tour">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Kandy</h3>
-                        <p class="card-description">Discover the Temple of the Tooth and scenic Kandy city.</p>
-                        <p class="card-packages">
-                            <strong>Included in:</strong> Kandy Day Tour, 2 Day Tour, 4 Day Tour, 5 Day Tour, 6 Day
-                            Tour, 7 Day Tour, 8 Day Tour & 10 Day Tour
-                        </p>
-                        <a href="#packages" class="card-link">
-                            View Tours <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dambulla -->
-            <div class="col-lg-4 col-md-6">
-                <div class="destination-card" (click)="scrollToSection('packages')">
-                    <div class="card-image">
-                        <img src="assets/img/destination-5.jpg" alt="Dambulla Cave Temple Sri Lanka">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Dambulla</h3>
-                        <p class="card-description">Visit the famous Golden Cave Temple and cultural heritage sites.</p>
-                        <p class="card-packages">
-                            <strong>Included in:</strong> Sigiriya & Dambulla Day Tour, 5 Day Tour, 6 Day Tour, 7 Day
-                            Tour, 8 Day Tour & 10 Day Tour
-                        </p>
-                        <a href="#packages" class="card-link">
-                            View Tours <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Galle -->
-            <div class="col-lg-4 col-md-6">
-                <div class="destination-card" (click)="scrollToSection('packages')">
-                    <div class="card-image">
-                        <img src="assets/img/destination-6.jpg" alt="Galle Fort Sri Lanka Beach Tour">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Galle</h3>
-                        <p class="card-description">Explore the historic Galle Fort and beautiful southern beaches.</p>
-                        <p class="card-packages">
-                            <strong>Included in:</strong> Galle Day Tour, 4 Day Tour, 5 Day Tour, 6 Day Tour, 7 Day
-                            Tour, 8 Day Tour & 10 Day Tour
-                        </p>
-                        <a href="#packages" class="card-link">
-                            View Tours <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="dest-card-grid">
+            <app-destination-card
+                image="assets/img/destination-1.jpg"
+                [title]="t('sigiriya.title')"
+                [subtitle]="t('sigiriya.subtitle')"
+                [badge]="t('sigiriya.badge')"
+                [alt]="t('sigiriya.alt')"
+                [ctaLabel]="t('viewTours')"
+                [featured]="true"
+                [featuredLabel]="t('featured')"
+                [wishlistLabel]="t('wishlist')"
+                [routerLink]="toursLink"
+                [highlights]="[
+                  { icon: 'fa-mountain', label: t('sigiriya.h1') },
+                  { icon: 'fa-tree', label: t('sigiriya.h2') },
+                  { icon: 'fa-sun', label: t('sigiriya.h3') }
+                ]"
+                (activate)="scrollToSection('packages')">
+            </app-destination-card>
+            <app-destination-card
+                image="assets/img/destination-2.jpg"
+                [title]="t('ella.title')"
+                [subtitle]="t('ella.subtitle')"
+                [badge]="t('ella.badge')"
+                [alt]="t('ella.alt')"
+                [ctaLabel]="t('viewTours')"
+                [featuredLabel]="t('featured')"
+                [wishlistLabel]="t('wishlist')"
+                [routerLink]="toursLink"
+                [highlights]="[
+                  { icon: 'fa-archway', label: t('ella.h1') },
+                  { icon: 'fa-train', label: t('ella.h2') },
+                  { icon: 'fa-hiking', label: t('ella.h3') }
+                ]"
+                (activate)="scrollToSection('packages')">
+            </app-destination-card>
+            <app-destination-card
+                image="assets/img/destination-3.jpg"
+                [title]="t('yala.title')"
+                [subtitle]="t('yala.subtitle')"
+                [badge]="t('yala.badge')"
+                [alt]="t('yala.alt')"
+                [ctaLabel]="t('viewTours')"
+                [featured]="true"
+                [featuredLabel]="t('featured')"
+                [wishlistLabel]="t('wishlist')"
+                [routerLink]="toursLink"
+                [highlights]="[
+                  { icon: 'fa-paw', label: t('yala.h1') },
+                  { icon: 'fa-binoculars', label: t('yala.h2') },
+                  { icon: 'fa-sun', label: t('yala.h3') }
+                ]"
+                (activate)="scrollToSection('packages')">
+            </app-destination-card>
+            <app-destination-card
+                image="assets/img/destination-4.jpg"
+                [title]="t('kandy.title')"
+                [subtitle]="t('kandy.subtitle')"
+                [badge]="t('kandy.badge')"
+                [alt]="t('kandy.alt')"
+                [ctaLabel]="t('viewTours')"
+                [featuredLabel]="t('featured')"
+                [wishlistLabel]="t('wishlist')"
+                [routerLink]="toursLink"
+                [highlights]="[
+                  { icon: 'fa-landmark', label: t('kandy.h1') },
+                  { icon: 'fa-water', label: t('kandy.h2') },
+                  { icon: 'fa-leaf', label: t('kandy.h3') }
+                ]"
+                (activate)="scrollToSection('packages')">
+            </app-destination-card>
+            <app-destination-card
+                image="assets/img/destination-5.jpg"
+                [title]="t('dambulla.title')"
+                [subtitle]="t('dambulla.subtitle')"
+                [badge]="t('dambulla.badge')"
+                [alt]="t('dambulla.alt')"
+                [ctaLabel]="t('viewTours')"
+                [featuredLabel]="t('featured')"
+                [wishlistLabel]="t('wishlist')"
+                [routerLink]="toursLink"
+                [highlights]="[
+                  { icon: 'fa-monument', label: t('dambulla.h1') },
+                  { icon: 'fa-place-of-worship', label: t('dambulla.h2') },
+                  { icon: 'fa-mountain', label: t('dambulla.h3') }
+                ]"
+                (activate)="scrollToSection('packages')">
+            </app-destination-card>
+            <app-destination-card
+                image="assets/img/destination-6.jpg"
+                [title]="t('galle.title')"
+                [subtitle]="t('galle.subtitle')"
+                [badge]="t('galle.badge')"
+                [alt]="t('galle.alt')"
+                [ctaLabel]="t('viewTours')"
+                [featuredLabel]="t('featured')"
+                [wishlistLabel]="t('wishlist')"
+                [routerLink]="toursLink"
+                [highlights]="[
+                  { icon: 'fa-university', label: t('galle.h1') },
+                  { icon: 'fa-walking', label: t('galle.h2') },
+                  { icon: 'fa-sun', label: t('galle.h3') }
+                ]"
+                (activate)="scrollToSection('packages')">
+            </app-destination-card>
         </div>
 
     </div>
 </div>
-<!-- Destination Start -->
+<!-- Destination End -->
 
 <!-- Packages Start -->
-<div id="packages" class="container-fluid bg-light">
+<div id="packages" class="container-fluid bg-light" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container pt-5 ">
         <div class="text-center">
-            <h6 class="text-primary text-uppercase tracking-widest">Packages</h6>
-            <h1 class="font-bold text-4xl">Explore Our Best Tours</h1>
+            <h6 class="text-primary i18n-section-eyebrow">{{ t('packages.header') }}</h6>
+            <h1 class="i18n-section-title">{{ t('packages.homeTitle') }}</h1>
             <p class="text-center mb-3">
-                Choose from our best-selling Sri Lanka tour packages or customize your own private tour with a driver
-                guide.
+                {{ t('packages.homeSubtitle') }}
             </p>
         </div>
         <section class="container text-center py-2">
-            <h3>Trusted by Travelers Worldwide ⭐⭐⭐⭐⭐</h3>
-            <p>5.0 rating on TripAdvisor • 1000+ happy customers</p>
+            <h3>{{ t('packages.trusted') }} <span class="trusted-stars" aria-hidden="true">★★★★★</span></h3>
+            <p>{{ t('packages.trustedSub') }}</p>
         </section>
 
-        <div class="flex text-center mb-4">
-            <button class="tab-btn-outline" [class.active]="activeTab==='multi'" (click)="setTab('multi')">
-                Multi-Day Tours
+        <div class="i18n-tab-row text-center mb-4">
+            <button class="tab-btn-outline i18n-btn-fluid" [class.active]="activeTab==='multi'" (click)="setTab('multi')">
+                {{ t('packages.multiDay') }}
             </button>
-            <button class="tab-btn-outline" [class.active]="activeTab==='day'" (click)="setTab('day')">
-                Day Tours
+            <button class="tab-btn-outline i18n-btn-fluid" [class.active]="activeTab==='day'" (click)="setTab('day')">
+                {{ t('packages.dayTours') }}
             </button>
-
         </div>
 
-
-        <!-- Tab Content -->
-        <div class="row">
-            <div *ngFor="let tour of activeTab==='day' ? dayTours : multiDayTours; let i = index"
-                class="col-lg-4 col-md-6 mb-4 package-card-wrapper" [style.--i]="i">
-                <app-package-item-component [image]="tour.image" [days]="tour.days" [persons]="tour.persons"
-                    [rating]="tour.rating" [price]="tour.price" [title]="tour.title" [routerLink]="tour.link"                     [isBestseller]="!!tour.isBestseller"
-                    [isLimited]="!!tour.isLimited"
-                    class="package-card">
-                </app-package-item-component>
-            </div>
+        <div class="tour-card-grid">
+            <app-tour-card
+                *ngFor="let tour of activeTab==='day' ? dayTours : multiDayTours"
+                [image]="tour.image"
+                [days]="tour.days"
+                [persons]="tour.persons"
+                [rating]="tour.rating"
+                [price]="tour.price"
+                [title]="tour.title"
+                [tourId]="tour.id || tour.filecode"
+                [filecode]="tour.filecode"
+                [tourType]="tour.tourType || ''"
+                [tourTypeKey]="tour.tourTypeKey || ''"
+                [hotelRating]="tour.hotelRating"
+                [transportIncluded]="!!tour.transportIncluded"
+                [routerLink]="tour.link"
+                [isBestseller]="!!tour.isBestseller"
+                [isLimited]="!!tour.isLimited">
+            </app-tour-card>
         </div>
 
     </div>
@@ -271,53 +258,42 @@
 <!-- Packages End -->
 
 <!-- About Start -->
-<div class="container-fluid py-5">
+<div class="container-fluid py-5" *transloco="let t; scope: 'about'; prefix: 'about'">
     <div class="container pt-5">
         <div class="row">
             <!-- Image Section -->
             <div class="col-lg-5" style="min-height: 400px;">
                 <div class="position-relative h-100">
                     <img class="position-absolute w-100 h-80" src="assets/img/5daysTours/6.jpeg"
-                        style="object-fit: cover;" alt="Ceylon JOJO Travels">
+                        style="object-fit: cover;" [attr.alt]="t('img.mainAlt')">
                 </div>
             </div>
 
             <!-- Text Section -->
             <div class="col-lg-6 pb-lg-5">
                 <div class="about-text bg-white  p-lg-5 my-lg-5">
-                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
-                    <h1 class="mb-3">Trusted Sri Lanka Tour Company</h1>
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('eyebrow') }}</h6>
+                    <h1 class="mb-3">{{ t('heading') }}</h1>
 
-                    <p>
-                        <strong>Ceylon JOJO Travels Sri Lanka</strong> is a trusted local tour company offering
-                        private Sri Lanka tours, tailor-made holiday packages, and chauffeur driven round tours
-                        across the island.
-                    </p>
+                    <p>{{ t('intro.p1') }}</p>
 
-                    <p>
-                        Explore the best of Sri Lanka including Sigiriya, Kandy, Ella, Nuwara Eliya, Galle,
-                        and Yala National Park. We provide comfortable vehicles, friendly chauffeur guides,
-                        and personalized travel experiences for families, couples, and honeymoon travelers.
-                    </p>
+                    <p>{{ t('intro.p2') }}</p>
 
                     <div class="row mb-4">
                         <div class="col-6">
                             <img class="img-fluid rounded" src="assets/img/about-1.jpg"
-                                alt="Private Sri Lanka Tour with Ceylon JOJO Travels">
+                                [attr.alt]="t('img.alt1')">
                         </div>
                         <div class="col-6">
                             <img class="img-fluid rounded" src="assets/img/about-2.jpg"
-                                alt="Sri Lanka Tour Packages with Chauffeur Guide">
+                                [attr.alt]="t('img.alt2')">
                         </div>
                     </div>
 
-                    <p>
-                        Plan your perfect Sri Lanka holiday with a reliable local tour operator
-                        and enjoy safe, comfortable, and unforgettable travel experiences.
-                    </p>
+                    <p>{{ t('intro.p3') }}</p>
 
                     <a [routerLink]="contactLink" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                        Plan Your Sri Lanka Tour
+                        {{ t('cta') }}
                     </a>
                 </div>
             </div>
@@ -329,7 +305,8 @@
 
 
 <!-- Feature Start -->
-<div class="container-fluid pb-5" itemscope itemtype="https://schema.org/TravelAgency">
+<div class="container-fluid pb-5" itemscope itemtype="https://schema.org/TravelAgency"
+    *transloco="let t; scope: 'home'; prefix: 'home'">
     <div class="container pb-5">
         <div class="row">
 
@@ -341,11 +318,9 @@
                         <i class="fa fa-2x fa-money-check-alt text-white"></i>
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="h5" itemprop="name">Affordable Sri Lanka Tour Packages</h3>
+                        <h3 class="h5" itemprop="name">{{ t('features.pricing.title') }}</h3>
                         <p class="m-0" itemprop="description">
-                            We provide affordable private Sri Lanka tours, tailor-made holiday packages, and
-                            chauffeur-driven tours designed to fit every budget without compromising comfort,
-                            safety, and quality travel experiences.
+                            {{ t('features.pricing.desc') }}
                         </p>
                     </div>
                 </div>
@@ -359,11 +334,9 @@
                         <i class="fa fa-2x fa-award text-white"></i>
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="h5">Professional Chauffeur Guides & Personalized Service</h3>
+                        <h3 class="h5">{{ t('features.service.title') }}</h3>
                         <p class="m-0">
-                            Our experienced chauffeur guides and travel experts ensure a safe, comfortable,
-                            and personalized Sri Lanka travel experience, covering top destinations like
-                            Sigiriya, Kandy, Ella, Yala, and Galle.
+                            {{ t('features.service.desc') }}
                         </p>
                     </div>
                 </div>
@@ -377,11 +350,9 @@
                         <i class="fa fa-2x fa-globe text-white"></i>
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="h5">Trusted Sri Lanka Travel Experts</h3>
+                        <h3 class="h5">{{ t('features.experts.title') }}</h3>
                         <p class="m-0">
-                            As a trusted local Sri Lanka tour operator, we welcome travelers worldwide
-                            and offer unforgettable experiences including cultural tours, wildlife safaris,
-                            beach holidays, and luxury private round tours across Sri Lanka.
+                            {{ t('features.experts.desc') }}
                         </p>
                     </div>
                 </div>
@@ -394,19 +365,18 @@
 
 
 <!-- Service Start -->
-<div class="container-fluid" itemscope itemtype="https://schema.org/TravelAgency">
+<div class="container-fluid" itemscope itemtype="https://schema.org/TravelAgency"
+    *transloco="let t; scope: 'home'; prefix: 'home'">
     <div class="container">
 
         <!-- SEO Optimized Heading -->
         <div class="text-center mb-4 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sri Lanka Travel Services</h6>
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('homeServices.eyebrow') }}</h6>
             <h2 class="mb-3" itemprop="name">
-                Premium Sri Lanka Tours, Travel & Chauffeur Services
+                {{ t('homeServices.heading') }}
             </h2>
             <p class="text-muted mx-auto" style="max-width: 700px;" itemprop="description">
-                We offer complete Sri Lanka travel solutions including private tours, chauffeur driven round tours,
-                hotel reservations, train tickets, and customized holiday packages across the island’s top destinations
-                like Sigiriya, Kandy, Ella, Yala, Galle, and Colombo.
+                {{ t('homeServices.intro') }}
             </p>
         </div>
 
@@ -416,12 +386,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center mb-2 py-5 px-4 h-100">
                     <i class="fa fa-2x fa-route mx-auto mb-4 text-primary"></i>
-                    <h3 class="h5 mb-2">Multilingual Private Chauffeur Guides in Sri Lanka</h3>
+                    <h3 class="h5 mb-2">{{ t('homeServices.guide.title') }}</h3>
                     <p class="m-0">
-                        Travel across Sri Lanka with professional multilingual chauffeur guides who speak English,
-                        German, Russian, Polish, and French. Our expert local drivers provide safe, comfortable,
-                        and personalized private tours covering top destinations like Sigiriya, Kandy, Ella, Yala,
-                        and Galle.
+                        {{ t('homeServices.guide.desc') }}
                     </p>
                 </div>
             </div>
@@ -430,12 +397,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center mb-2 py-5 px-4 h-100">
                     <i class="fa fa-2x fa-ticket-alt mx-auto mb-4 text-primary"></i>
-                    <h3 class="h5 mb-2">Train Tickets & Attraction Entrance Booking</h3>
+                    <h3 class="h5 mb-2">{{ t('homeServices.tickets.title') }}</h3>
                     <p class="m-0">
-                        We arrange Ella train tickets, safari bookings, and entrance tickets to top Sri Lanka
-                        attractions
-                        including Sigiriya Rock Fortress, Yala National Park, Temple of the Tooth, and more for a
-                        hassle-free travel experience.
+                        {{ t('homeServices.tickets.desc') }}
                     </p>
                 </div>
             </div>
@@ -444,11 +408,9 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-item bg-white text-center mb-2 py-5 px-4 h-100">
                     <i class="fa fa-2x fa-hotel mx-auto mb-4 text-primary"></i>
-                    <h3 class="h5 mb-2">Hotel Booking & Tailor-Made Accommodation</h3>
+                    <h3 class="h5 mb-2">{{ t('homeServices.hotels.title') }}</h3>
                     <p class="m-0">
-                        We provide handpicked hotel bookings in Sri Lanka ranging from luxury resorts and boutique
-                        hotels to budget guesthouses, ensuring comfort, great locations, and the best value for your
-                        Sri Lanka holiday package.
+                        {{ t('homeServices.hotels.desc') }}
                     </p>
                 </div>
             </div>
@@ -470,11 +432,11 @@
 
 
 <!-- Team Start -->
-<div class="container-fluid">
+<div class="container-fluid" *transloco="let t; scope: 'home'; prefix: 'home'">
     <div class="container pb-3">
         <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Team</h6>
-            <h1>Our Global Associates</h1>
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('team.eyebrow') }}</h6>
+            <h1>{{ t('team.heading') }}</h1>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
@@ -482,15 +444,11 @@
                     <div class="team-img position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="assets/img/Team/1.jpg" alt="">
                         <div class="team-social">
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                     <div class="text-center py-4">
                         <h5 class="text-truncate">Danula Nimneth</h5>
-                        <p class="m-0">Co-Owner</p>
+                        <p class="m-0">{{ t('team.role.owner') }}</p>
                         <p class="m-0">United Kingdom</p>
                         <p class="m-0">
                             <a href="https://wa.me/+447375612946" target="_blank"
@@ -506,15 +464,11 @@
                     <div class="team-img position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="assets/img/Team/2.png" alt="">
                         <div class="team-social">
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                     <div class="text-center py-4">
                         <h5 class="text-truncate">Dilan Lakshitha</h5>
-                        <p class="m-0">Co-Owner</p>
+                        <p class="m-0">{{ t('team.role.owner') }}</p>
                         <p class="m-0">Sri Lanka</p>
                         <p class="m-0">
                             <a href="https://wa.me/94714293585" target="_blank"
@@ -530,15 +484,11 @@
                     <div class="team-img position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="assets/img/Team/3.jpg" alt="">
                         <div class="team-social">
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                     <div class="text-center py-4">
                         <h5 class="text-truncate">Samith Suranga</h5>
-                        <p class="m-0">Senior Consultant</p>
+                        <p class="m-0">{{ t('team.role.consultant') }}</p>
                         <p class="m-0">Italy</p>
                         <p class="m-0">
                             <a href="https://wa.me/393802621167" target="_blank"
@@ -554,15 +504,11 @@
                     <div class="team-img position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="assets/img/Team/4.jpg" alt="">
                         <div class="team-social">
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                     <div class="text-center py-4">
                         <h5 class="text-truncate">Yohan Malshika</h5>
-                        <p class="m-0">Senior Consultant</p>
+                        <p class="m-0">{{ t('team.role.consultant') }}</p>
                         <p class="m-0">Malaysia</p>
                         <p class="m-0">
                             <a href="https://wa.me/60175047956" target="_blank"
@@ -581,47 +527,46 @@
 
 <div class="elfsight-app-0b6d4072-a733-446b-8aaa-c737f5a83c4a" data-elfsight-app-lazy></div>
 
-<section class="container py-5 text-center">
-    <h2 class="mb-4">Popular Sri Lanka Tours</h2>
+<section class="container py-5 text-center" *transloco="let t; scope: 'home'; prefix: 'home'">
+    <h2 class="mb-4">{{ t('popular.title') }}</h2>
 
     <div class="row justify-content-center">
         <div class="col-md-3 mb-3">
             <a [routerLink]="tour7Link" class="btn btn-outline-primary w-100">
-                7 Day Sri Lanka Tour
+                {{ t('popular.tour7') }}
             </a>
         </div>
 
         <div class="col-md-3 mb-3">
             <a [routerLink]="tour8Link" class="btn btn-outline-primary w-100">
-                8 Day Private Tour
+                {{ t('popular.tour8') }}
             </a>
         </div>
 
         <div class="col-md-3 mb-3">
             <a [routerLink]="ellaLink" class="btn btn-outline-primary w-100">
-                Ella Day Tour
+                {{ t('popular.ella') }}
             </a>
         </div>
 
         <div class="col-md-3 mb-3">
             <a [routerLink]="sigiriyaLink" class="btn btn-outline-primary w-100">
-                Sigiriya Day Tour
+                {{ t('popular.sigiriya') }}
             </a>
         </div>
     </div>
 </section>
-<section class="seo-section py-5">
+<section class="seo-section py-5" *transloco="let t; scope: 'home'; prefix: 'home'">
 
   <div class="container">
 
     <!-- TITLE -->
     <div class="text-center mb-5">
       <h2 class="seo-title">
-        Sri Lanka Tours with Private Driver & Tailor-Made Holidays
+        {{ t('seo.title') }}
       </h2>
       <p class="seo-subtitle">
-        Discover the best of Sri Lanka with customized private tours, experienced chauffeur guides,
-        and unforgettable travel experiences across the island.
+        {{ t('seo.subtitle') }}
       </p>
     </div>
 
@@ -632,11 +577,9 @@
       <div class="col-md-6 mb-3">
         <div class="seo-card">
           <i class="fa fa-globe seo-icon"></i>
-          <h3>Why Visit Sri Lanka?</h3>
+          <h3>{{ t('seo.why.title') }}</h3>
           <p>
-            Sri Lanka is known as the Pearl of the Indian Ocean, offering a mix of culture,
-            wildlife, beaches and mountains. From ancient temples to tropical coastlines,
-            it is one of the most diverse travel destinations in Asia.
+            {{ t('seo.why.desc') }}
           </p>
         </div>
       </div>
@@ -645,13 +588,13 @@
       <div class="col-md-6 mb-3">
         <div class="seo-card">
           <i class="fa fa-map-marker-alt seo-icon"></i>
-          <h3>Best Places to Visit</h3>
+          <h3>{{ t('seo.places.title') }}</h3>
           <ul>
-            <li>Sigiriya Rock Fortress</li>
-            <li>Ella Hill Country</li>
-            <li>Kandy Temple of the Tooth</li>
-            <li>Yala National Park Safari</li>
-            <li>Galle Fort & Beaches</li>
+            <li>{{ t('seo.places.1') }}</li>
+            <li>{{ t('seo.places.2') }}</li>
+            <li>{{ t('seo.places.3') }}</li>
+            <li>{{ t('seo.places.4') }}</li>
+            <li>{{ t('seo.places.5') }}</li>
           </ul>
         </div>
       </div>
@@ -660,10 +603,9 @@
       <div class="col-md-6">
         <div class="seo-card">
           <i class="fa fa-suitcase seo-icon"></i>
-          <h3>Sri Lanka Tour Packages</h3>
+          <h3>{{ t('seo.packages.title') }}</h3>
           <p>
-            Choose from 4-day, 5-day, 7-day and 10-day private tours or customize your own itinerary.
-            Our tours include transport, driver guide and flexible travel plans.
+            {{ t('seo.packages.desc') }}
           </p>
         </div>
       </div>
@@ -672,12 +614,12 @@
       <div class="col-md-6">
         <div class="seo-card">
           <i class="fa fa-lightbulb seo-icon"></i>
-          <h3>Travel Tips</h3>
+          <h3>{{ t('seo.tips.title') }}</h3>
           <ul>
-            <li>Travel with a private driver</li>
-            <li>Wear light clothes</li>
-            <li>Respect temples & culture</li>
-            <li>Try Sri Lankan food</li>
+            <li>{{ t('seo.tips.1') }}</li>
+            <li>{{ t('seo.tips.2') }}</li>
+            <li>{{ t('seo.tips.3') }}</li>
+            <li>{{ t('seo.tips.4') }}</li>
           </ul>
         </div>
       </div>
@@ -695,7 +637,7 @@
       <h3 class="mt-4">Frequently Asked Questions</h3>
 
       <p><strong>Is Sri Lanka safe?</strong> Yes, it is safe and tourist-friendly.</p>
-      <p><strong>How many days?</strong> 7–10 days is ideal.</p>
+      <p><strong>How many days?</strong> 7â€“10 days is ideal.</p>
       <p><strong>Visa?</strong> Easy online ETA visa.</p>
     </div> -->
 

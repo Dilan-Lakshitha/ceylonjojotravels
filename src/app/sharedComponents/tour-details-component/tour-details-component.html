@@ -1,37 +1,14 @@
 <div class="container-fluid booking mt-1" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="container">
-    <h2 class="text-center text-primary text-uppercase mb-3" style="letter-spacing: 3px;">
+    <h2 class="text-center text-primary mb-3 i18n-section-title">
       {{ tour.title }}
     </h2>
-    <div class="bg-light shadow rounded-3 p-2">
-      <div class="row text-center gy-4">
-
-        <div class="col-6 col-md-3">
-          <i class="fas fa-clock fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">{{ t('label.duration') }}</h6>
-          <p class="fw-bold mb-0">{{ tour.duration }}</p>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <i class="fas fa-users fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">{{ t('label.maxPeople') }}</h6>
-          <p class="fw-bold mb-0">{{ tour.persons }}</p>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <i class="fas fa-dollar-sign fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">{{ t('label.price') }}</h6>
-          <p class="fw-bold mb-0">$ {{ tour.price }} ({{ t('label.priceBasedOn2') }})</p>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <i class="fas fa-map-marked-alt fa-2x uniform-icon mb-2"></i>
-          <h6 class="mb-1">{{ t('label.tourType') }}</h6>
-          <p class="fw-bold mb-0">{{ tour.tourType }}</p>
-        </div>
-
-      </div>
-    </div>
+    <app-tour-stats [items]="[
+      { icon: 'fa-clock', label: t('label.duration'), value: tour.duration },
+      { icon: 'fa-users', label: t('label.maxPeople'), value: tour.persons },
+      { icon: 'fa-dollar-sign', label: t('label.price'), value: '$ ' + tour.price + ' (' + t('label.priceBasedOn2') + ')' },
+      { icon: 'fa-map-marked-alt', label: t('label.tourType'), value: tour.tourType || '' }
+    ]"></app-tour-stats>
   </div>
 </div>
 
@@ -41,7 +18,7 @@
       <div class="col-lg-12 ">
         <div class="d-flex flex-column">
           <div class="bg-white p-4 p-lg-5 my-lg-3">
-            <h2 class="text-primary text-uppercase justify-content-start" style="letter-spacing: 5px;">{{ t('label.overview') }}</h2>
+            <h2 class="text-primary i18n-section-eyebrow justify-content-start">{{ t('label.overview') }}</h2>
             <p>{{tour.overview}}</p>
           </div>
         </div>
@@ -57,34 +34,28 @@
         <div class="bg-white p-2 p-lg-5 shadow-sm">
           <div *ngIf="tour.itinerary">
             <h3 class="mb-3">{{ t('label.itinerary') }}</h3>
-            <div *ngFor="let day of tour.itinerary" class=" border-bottom">
-              <h5 (click)="toggleDay(day.day)" class="itinerary-header">
-                <i class="fas fa-map-marker-alt location-icon me-2"></i>
-                <span class="mx-2">{{ t('label.day') }} {{ day.day }}: {{ day.title }}</span>
-                <span [class.expanded]="expandedDays[day.day]" style="float: right;">
-                  ▲
-                </span>
-              </h5>
+            <app-accordion-panel
+              *ngFor="let day of tour.itinerary"
+              [title]="t('label.day') + ' ' + day.day + ': ' + day.title"
+              [open]="!!expandedDays[day.day]"
+              (toggled)="toggleDay(day.day)">
+              <div *ngFor="let activity of day.activities" class="mb-3">
+                <h5 class="text">
+                  <i class="fas {{ activity.title.icon || 'fa-circle' }} mr-2"
+                    [style.color]="activity.title.color"></i>
+                  {{ activity.title.title }}
+                </h5>
+                <div *ngIf="activity.description">{{ activity.description }}</div>
 
-              <div [class.open]="expandedDays[day.day]" class="itinerary-content ps-3 scrollable-activities">
-                <div *ngFor="let activity of day.activities" class="mb-3">
-                  <h5 class="text">
-                    <i class="fas {{ activity.title.icon || 'fa-circle' }} mr-2"
-                      [style.color]="activity.title.color"></i>
-                    {{ activity.title.title }}
-                  </h5>
-                  <div *ngIf="activity.description">{{ activity.description }}</div>
+                <ul *ngIf="activity.extra?.length" class="small text-muted ms-4">
+                  <li *ngFor="let item of activity.extra">{{ item }}</li>
+                </ul>
 
-                  <ul *ngIf="activity.extra?.length" class="small text-muted ms-4">
-                    <li *ngFor="let item of activity.extra">{{ item }}</li>
-                  </ul>
-
-                  <img *ngIf="activity.image" [src]="activity.image" class="rounded my-2"
-                    style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;"
-                    (click)="openImage(activity.image)" />
-                </div>
+                <img *ngIf="activity.image" [src]="activity.image" class="rounded my-2"
+                  style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;"
+                  (click)="openImage(activity.image)" />
               </div>
-            </div>
+            </app-accordion-panel>
           </div>
         </div>
       </div>
@@ -103,11 +74,11 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mb-0">
-              <li *ngFor="let item of tour.includes" class="mb-2 d-flex align-items-center">
-                <span class="icon-circle bg-success text-white mr-2">
+              <li *ngFor="let item of tour.includes" class="include-row">
+                <span class="icon-circle bg-success text-white">
                   <i class="fas fa-check"></i>
                 </span>
-                {{ item }}
+                <span class="include-item-text">{{ item }}</span>
               </li>
             </ul>
           </div>
@@ -121,11 +92,11 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mb-0">
-              <li *ngFor="let item of tour.excludes" class="mb-2 d-flex align-items-center">
-                <span class="icon-circle mr-2" style="background-color: #ada878; color: #fff;">
+              <li *ngFor="let item of tour.excludes" class="exclude-row">
+                <span class="icon-circle" style="background-color: #ada878; color: #fff;">
                   <i class="fas fa-times" style="font-size: 0.8rem;"></i>
                 </span>
-                {{ item }}
+                <span class="exclude-item-text">{{ item }}</span>
               </li>
             </ul>
           </div>

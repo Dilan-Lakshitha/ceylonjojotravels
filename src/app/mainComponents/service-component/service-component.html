@@ -1,16 +1,8 @@
 <ng-container *transloco="let t; scope: 'services'; prefix: 'services'">
-    <div class="container-fluid page-header">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">{{ t('header.title') }}</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" [routerLink]="homeLink"><ng-container *transloco="let c; scope: 'common'; prefix: 'common'">{{ c('nav.home') }}</ng-container></a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">{{ t('header.title') }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-page-header
+        [title]="t('header.title')"
+        [crumbs]="[{ label: homeLabel, link: homeLink }, { label: t('header.title') }]">
+    </app-page-header>
 
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">

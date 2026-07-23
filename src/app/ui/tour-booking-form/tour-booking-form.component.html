@@ -1,0 +1,171 @@
+<form
+  class="tbf"
+  *transloco="let t; scope: 'booking'; prefix: 'booking'"
+  #bookingForm="ngForm"
+  (ngSubmit)="completeBooking()"
+>
+  <div class="tbf__header">
+    <h2 class="tbf__title">{{ t('form.reserveTitle') }}</h2>
+  </div>
+
+  <div class="tbf__price" *ngIf="total > 0">
+    <span class="tbf__from">{{ t('labels.fromPerPerson') }}</span>
+    <div class="tbf__price-main">
+      <span class="tbf__amount">${{ pricePerPerson | number: '1.0-0' }}</span>
+      <span class="tbf__unit">{{ t('labels.perPersonSlash') }}</span>
+    </div>
+    <p class="tbf__based">{{ t('labels.basedOnPeople', { count: 2 }) }}</p>
+    <p class="tbf__total-line">
+      {{ t('labels.totalFor', { count: travelers }) }}:
+      <strong>${{ total | number: '1.0-0' }}</strong>
+    </p>
+  </div>
+
+  <div *ngIf="groupNotice" class="tbf__notice" role="status">{{ groupNotice }}</div>
+
+  <div class="tbf__grid">
+    <div class="tbf__field">
+      <label for="tbf-first">{{ t('form.firstName') }}</label>
+      <input
+        id="tbf-first"
+        type="text"
+        class="form-control"
+        [placeholder]="t('form.firstNamePlaceholder')"
+        [(ngModel)]="firstName"
+        name="firstName"
+        required
+        autocomplete="given-name"
+        #firstCtrl="ngModel"
+      />
+      <small class="tbf__err" *ngIf="firstCtrl.invalid && firstCtrl.touched">{{ t('form.firstNameRequired') }}</small>
+    </div>
+    <div class="tbf__field">
+      <label for="tbf-last">{{ t('form.lastName') }}</label>
+      <input
+        id="tbf-last"
+        type="text"
+        class="form-control"
+        [placeholder]="t('form.lastNamePlaceholder')"
+        [(ngModel)]="lastName"
+        name="lastName"
+        required
+        autocomplete="family-name"
+        #lastCtrl="ngModel"
+      />
+      <small class="tbf__err" *ngIf="lastCtrl.invalid && lastCtrl.touched">{{ t('form.lastNameRequired') }}</small>
+    </div>
+  </div>
+
+  <div class="tbf__field">
+    <label for="tbf-email">{{ t('form.email') }}</label>
+    <input
+      id="tbf-email"
+      type="email"
+      class="form-control"
+      [placeholder]="t('form.emailPlaceholder')"
+      [(ngModel)]="email"
+      name="email"
+      required
+      autocomplete="email"
+      #emailCtrl="ngModel"
+    />
+    <small class="tbf__err" *ngIf="emailCtrl.invalid && emailCtrl.touched">{{ t('form.emailInvalid') }}</small>
+  </div>
+
+  <div class="tbf__field">
+    <label for="tbf-phone">{{ t('form.phone') }}</label>
+    <div class="tbf__phone">
+      <select class="form-select" [(ngModel)]="selectedCountry" name="countryCode" required aria-label="Country dial code">
+        <option *ngFor="let c of countriesList; trackBy: trackCountryCode" [ngValue]="c">{{ c.dial_code }}</option>
+      </select>
+      <input
+        id="tbf-phone"
+        type="tel"
+        class="form-control"
+        [placeholder]="t('form.phonePlaceholder')"
+        [(ngModel)]="phoneNumber"
+        name="phoneNumber"
+        required
+        pattern="^\d{7,15}$"
+        autocomplete="tel-national"
+        #phoneCtrl="ngModel"
+      />
+    </div>
+    <small class="tbf__err" *ngIf="phoneCtrl.invalid && phoneCtrl.touched">{{ t('form.phoneInvalid') }}</small>
+  </div>
+
+  <div class="tbf__field">
+    <label for="tbf-wa">{{ t('form.whatsapp') }}</label>
+    <input
+      id="tbf-wa"
+      type="tel"
+      class="form-control"
+      [placeholder]="t('form.whatsappPlaceholder')"
+      [(ngModel)]="whatsapp"
+      name="whatsapp"
+      autocomplete="tel"
+    />
+  </div>
+
+  <div class="tbf__field">
+    <label for="tbf-country">{{ t('form.countryLabel') }}</label>
+    <select
+      id="tbf-country"
+      class="form-select"
+      [(ngModel)]="country"
+      name="country"
+      required
+      autocomplete="country-name"
+      #countryCtrl="ngModel"
+    >
+      <option value="" disabled>{{ t('form.countryPlaceholder') }}</option>
+      <option *ngFor="let c of countries; trackBy: trackCountry" [value]="c">{{ c }}</option>
+    </select>
+    <small class="tbf__err" *ngIf="countryCtrl.invalid && countryCtrl.touched">{{ t('form.countryRequired') }}</small>
+  </div>
+
+  <div class="tbf__grid">
+    <div class="tbf__field">
+      <label for="tbf-date">{{ t('form.travelDate') }}</label>
+      <input
+        id="tbf-date"
+        type="date"
+        class="form-control"
+        [ngModel]="travelDate | date: 'yyyy-MM-dd'"
+        (ngModelChange)="onTravelDateChange($event)"
+        name="travelDate"
+        required
+        #dateCtrl="ngModel"
+      />
+      <small class="tbf__err" *ngIf="dateCtrl.invalid && dateCtrl.touched">{{ t('form.travelDateRequired') }}</small>
+    </div>
+    <div class="tbf__field">
+      <label for="tbf-travelers">{{ t('form.travelers') }}</label>
+      <input
+        id="tbf-travelers"
+        type="number"
+        class="form-control"
+        [(ngModel)]="travelers"
+        name="travelers"
+        min="1"
+        max="20"
+        (ngModelChange)="onTravelersModelChange($event)"
+        required
+        #travelersCtrl="ngModel"
+      />
+      <small class="tbf__hint">{{ t('form.infantsFree') }}</small>
+      <small class="tbf__err" *ngIf="travelersCtrl.invalid && travelersCtrl.touched">{{ t('form.travelersInvalid') }}</small>
+    </div>
+  </div>
+
+  <p class="tbf__pay-note">{{ t('form.paymentMethod') }}</p>
+
+  <button
+    type="submit"
+    class="tbf__submit"
+    [disabled]="bookingForm.invalid || !!groupNotice || submitting"
+  >
+    {{ t('form.submit') }}
+    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+  </button>
+</form>

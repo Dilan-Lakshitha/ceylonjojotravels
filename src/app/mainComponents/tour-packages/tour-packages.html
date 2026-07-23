@@ -1,47 +1,53 @@
-<div class="container-fluid page-header" *transloco="let t; scope: 'common'; prefix: 'common'">
-    <div class="container">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-4 text-white text-uppercase">{{ t('packages.header') }}</h3>
-            <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" [routerLink]="homeLink">{{ t('nav.home') }}</a></p>
-                <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">{{ t('packages.header') }}</p>
-            </div>
-        </div>
-    </div>
+<div *transloco="let t; scope: 'common'; prefix: 'common'">
+  <app-page-header
+    [title]="t('packages.header')"
+    [crumbs]="[{ label: t('nav.home'), link: homeLink }, { label: t('packages.header') }]">
+  </app-page-header>
 </div>
 
 <div class="container-fluid bg-light" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container pt-5 pb-3">
         <div class="text-center">
-            <h6 class="text-primary text-uppercase tracking-widest">{{ t('packages.header') }}</h6>
-            <h1 class="font-bold text-4xl">{{ t('packages.title') }}</h1>
+            <h6 class="text-primary i18n-section-eyebrow">{{ t('packages.header') }}</h6>
+            <h1 class="i18n-section-title">{{ t('packages.title') }}</h1>
         </div>
 
-        <div class="flex text-center mb-4 relative">
-            <button class="tab-btn-outline" [class.active]="activeTab==='multi'" (click)="setTab('multi')">
+        <div class="i18n-tab-row text-center mb-4">
+            <button class="tab-btn-outline i18n-btn-fluid" [class.active]="activeTab==='multi'" (click)="setTab('multi')">
                 {{ t('packages.multiDay') }}
             </button>
-            <button class="tab-btn-outline" [class.active]="activeTab==='day'" (click)="setTab('day')">
+            <button class="tab-btn-outline i18n-btn-fluid" [class.active]="activeTab==='day'" (click)="setTab('day')">
                 {{ t('packages.dayTours') }}
             </button>
         </div>
 
-        <div class="row">
-            <div *ngFor="let tour of activeTab==='day' ? dayTours : multiDayTours; let i = index"
-                class="col-lg-4 col-md-6 mb-4 package-card-wrapper" [style.--i]="i">
-                <app-package-item-component
+        <div class="tour-card-grid">
+            <div *ngIf="loading" class="tour-card-grid__status">
+                <p>{{ t('packages.loading') }}</p>
+            </div>
+            <ng-container *ngIf="!loading">
+                <app-tour-card
+                    *ngFor="let tour of activeTab==='day' ? dayTours : multiDayTours"
                     [image]="tour.image"
                     [days]="tour.days"
                     [persons]="tour.persons"
                     [rating]="tour.rating"
                     [price]="tour.price"
                     [title]="tour.title"
+                    [tourId]="tour.id || tour.filecode"
+                    [filecode]="tour.filecode"
+                    [tourType]="tour.tourType || ''"
+                    [tourTypeKey]="tour.tourTypeKey || ''"
+                    [hotelRating]="tour.hotelRating"
+                    [transportIncluded]="!!tour.transportIncluded"
                     [routerLink]="tour.link"
                     [isBestseller]="!!tour.isBestseller"
-                    [isLimited]="!!tour.isLimited"
-                    class="package-card">
-                </app-package-item-component>
+                    [isLimited]="!!tour.isLimited">
+                </app-tour-card>
+            </ng-container>
+            <div *ngIf="!loading && (activeTab==='day' ? dayTours : multiDayTours).length === 0"
+                class="tour-card-grid__status">
+                <p>{{ t('packages.empty') }}</p>
             </div>
         </div>
     </div>

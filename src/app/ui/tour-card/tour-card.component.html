@@ -1,0 +1,54 @@
+<a
+  class="tc"
+  *transloco="let t; scope: 'common'; prefix: 'common'"
+  [routerLink]="routerLink"
+  [attr.aria-label]="title"
+>
+  <div class="tc__media">
+    <img
+      [src]="image"
+      [alt]="title"
+      loading="lazy"
+      decoding="async"
+      width="400"
+      height="200"
+    />
+    <div class="tc__shade" aria-hidden="true"></div>
+    <div class="tc__chrome">
+      <div class="tc__flags">
+        <span *ngIf="isBestseller" class="tc__flag tc__flag--hot">{{ t('badge.bestseller') }}</span>
+        <span *ngIf="isLimited" class="tc__flag tc__flag--limited">{{ t('badge.limited') }}</span>
+      </div>
+      <div class="tc__actions" aria-hidden="true">
+        <i class="fa fa-heart"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="tc__title-slot">
+    <h3 class="tc__title">{{ title }}</h3>
+  </div>
+
+  <p class="tc__subtitle">{{ displaySubtitle(t) }}</p>
+
+  <div class="tc__trust">
+    <span class="tc__chip"><i class="fa fa-check-circle" aria-hidden="true"></i> {{ t('card.freeCancel') }}</span>
+    <span class="tc__chip"><i class="fa fa-bolt" aria-hidden="true"></i> {{ t('card.instantConfirm') }}</span>
+    <span class="tc__chip"><i class="fa fa-credit-card" aria-hidden="true"></i> {{ t('card.payLater') }}</span>
+  </div>
+
+  <div class="flex-grow" aria-hidden="true"></div>
+
+  <div class="tc__footer">
+    <div class="tc__price" aria-label="Price">
+      <span class="tc__from">{{ t('card.from') }}</span>
+      <span class="tc__amount">${{ displayPrice | number: '1.0-0' }}</span>
+      <span class="tc__unit">{{ t('card.perPerson') }}</span>
+    </div>
+
+    <span class="tc__cta">
+      <span>{{ t('card.viewTour') }}</span>
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </span>
+  </div>
+</a>

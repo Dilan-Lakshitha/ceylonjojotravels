@@ -149,7 +149,7 @@
       {
         "id": "8-day-sri-lanka-private-tour",
         "title": "8 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach",
-        "days": "8 Days",
+        "days": "8 days",
         "persons": "1-20 Persons",
         "rating": 5,
         "filecode": "8-day-sri-lanka-private-tour",
@@ -166,8 +166,8 @@
       "slug": "ella-day-tour",
       "title": "Sri Lanka Ella One Day Tour",
       "description": "Experience the beauty of Ella with one day full of adventure, culture, and relaxation.",
-      "duration": "one Day",
-      "persons": "20 Persons",
+      "duration": "1 day",
+      "persons": "1-20 Persons",
       "filecode": "ella-day-tour",
       "overview": "Discover the beauty of Sri Lanka with our unforgettable tour, featuring the iconic Ella Nine Arches Bridge, where you can marvel at the scenic train crossing. Visit the Udawalawe Elephant Orphanage to observe rescued elephants up close. Experience the natural splendor of Ravana Falls, one of the island’s most impressive waterfalls. Hike up Little Adam’s Peak for stunning panoramic views, capturing the essence of Sri Lanka’s highlands. Complete your adventure with a mini train ride through Ella’s picturesque landscapes, creating lasting memories of this enchanting journey.",
       "tourType": "Day Tour",
@@ -242,6 +242,31 @@
       "excludes": [
         "Food & Drinks",
         "Entrance & Activities Fees"
+      ],
+      "highlights": [
+        "Nine Arches Bridge",
+        "Ella Train Trips",
+        "Little Adams Peak",
+        "Ravana waterfall",
+        "elephant orphanage udawalawa"
+      ],
+      "faq": [
+        {
+          "question": "What is included in Sri Lanka Ella One Day Tour?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 1 day itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "galle-day-tour": {
@@ -249,8 +274,8 @@
       "slug": "galle-day-tour",
       "title": "Sri Lanka Galle One Day Tour",
       "description": "Enjoy a full-day guided tour to Galle with scenic coastal attractions, cultural landmarks, and memorable experiences.",
-      "duration": "one Day",
-      "persons": "20 Persons",
+      "duration": "1 day",
+      "persons": "1-20 Persons",
       "filecode": "galle-day-tour",
       "overview": "This full-day guided tour to Galle offers a perfect mix of nature, history, and culture.\nYou will visit the famous Sea Turtle Hatchery, explore the historic Galle Dutch Fort,\nenjoy a relaxing Bentota River boat ride, and learn about Sri Lanka’s history at the\nTsunami Memorial and Moonstone Mine Centre.\nIdeal for couples, families, and small groups looking for a comfortable and enriching day tour.",
       "tourType": "Day Tour",
@@ -321,6 +346,31 @@
       "excludes": [
         "Food & Drinks",
         "Entrance & Activities Fees"
+      ],
+      "highlights": [
+        "Galle Day Tour Itinerary",
+        "Galle Dutch Fort",
+        "Bentota River Boat Ride",
+        "Tsunami Memorial",
+        "Moonstone Mine Centre"
+      ],
+      "faq": [
+        {
+          "question": "What is included in Sri Lanka Galle One Day Tour?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 1 day itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "kandy-day-tour": {
@@ -328,8 +378,8 @@
       "slug": "kandy-day-tour",
       "title": "Sri Lanka Kandy One Day Tour",
       "description": "Experience the cultural heart of Sri Lanka with a full-day guided tour to Kandy, including elephants, temples, tea, and scenic views.",
-      "duration": "One Day",
-      "persons": "20 Persons",
+      "duration": "1 day",
+      "persons": "1-20 Persons",
       "filecode": "kandy-day-tour",
       "overview": "\n            This one-day trip to Kandy takes you through Sri Lanka’s cultural capital.\n            Visit the Millennium Elephant Foundation or Pinnawala Elephant Orphanage,\n            explore the sacred Temple of the Tooth Relic, enjoy a tea factory and plantation visit,\n            relax by Kandy Lake and View Point, and optionally stop at a herbal and spice garden.\n            Perfect for travelers seeking culture, nature, and tradition in a single day.\n              ",
       "tourType": "Day Tour",
@@ -410,6 +460,32 @@
       "excludes": [
         "Food & Drinks",
         "Entrance & Activities Fees"
+      ],
+      "highlights": [
+        "Kandy Day Tour Itinerary",
+        "Millennium Elephant Foundation / Pinnawala Elephant Orphanage",
+        "Temple of the Sacred Tooth Relic",
+        "Tea Factory & Tea Plantation",
+        "Kandy Lake & View Point",
+        "Herbal & Spice Garden"
+      ],
+      "faq": [
+        {
+          "question": "What is included in Sri Lanka Kandy One Day Tour?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 1 day itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "sigiriya-day-tour": {
@@ -417,8 +493,8 @@
       "slug": "sigiriya-day-tour",
       "title": "Sri Lanka Sigiriya One Day Tour",
       "description": "Discover Sri Lanka’s cultural and natural heritage on a full-day tour to Sigiriya, including temples, rock climbing, and wildlife.",
-      "duration": "One Day",
-      "persons": "20 Persons",
+      "duration": "1 day",
+      "persons": "1-20 Persons",
       "filecode": "sigiriya-day-tour",
       "overview": "\n    This one-day tour to Sigiriya offers a perfect blend of culture, adventure, and wildlife.\n    Begin with a visit to the Golden Cave Temple in Dambulla, followed by climbing either\n    Sigiriya Rock Fortress or Pidurangala Rock for breathtaking views.\n    End the day with an exciting wild elephant safari, making this tour ideal for nature\n    and history lovers.\n      ",
       "tourType": "Day Tour",
@@ -490,6 +566,31 @@
       "excludes": [
         "Safari entrance tickets and jeep",
         "Personal expenses"
+      ],
+      "highlights": [
+        "Sigiriya Day Tour Itinerary",
+        "Golden Cave Temple – Dambulla",
+        "Temple of the Sacred Tooth Relic",
+        "Sigiriya or Pidurangala Rock Climbing",
+        "Wild Elephant Safari"
+      ],
+      "faq": [
+        {
+          "question": "What is included in Sri Lanka Sigiriya One Day Tour?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 1 day itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "2-day-ella-kandy-private-tour-sri-lanka": {
@@ -497,8 +598,8 @@
       "slug": "2-day-ella-kandy-private-tour",
       "title": "2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa Safari | Airport Drop",
       "description": "Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2-day private tour ending at the airport or your hotel.",
-      "duration": "2 Days",
-      "persons": "Private Tour (1-20 Persons)",
+      "duration": "2 days",
+      "persons": "1-20 Persons",
       "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
       "overview": "Experience an unforgettable 2-day journey through Sri Lanka’s wildlife, hill country and cultural capital.\n  On day one, visit the Udawalawa Elephant Transit Home before heading to Ella to explore Nine Arch Bridge, Little Adam’s Peak, Flying Ravana and Ravana Falls.\n  On day two, travel through the scenic hills to Ramboda Falls and Ambuluwawa Tower before discovering the sacred Temple of the Tooth in Kandy and Pinnawala Elephant Orphanage.\n  This private tour ends conveniently at the airport or your hotel.",
       "tourType": "Round Tour",
@@ -619,17 +720,43 @@
         "Entrance & Activity Fees",
         "Food & Drinks",
         "Accommodation (Can be arranged upon request)"
+      ],
+      "highlights": [
+        "Udawalawa Elephant Transit Home",
+        "Nine Arch Bridge",
+        "Little Adam’s Peak",
+        "Flying Ravana Zip Line",
+        "Ravana Falls",
+        "Ramboda Falls"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa Safari | Airport Drop?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 2 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "2-day-ella-yala-private-tour-sri-lanka": {
       "id": "2-day-ella-yala-private-tour-sri-lanka",
       "slug": "2-day-ella-yala-safari",
-      "title": "2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa Safari | Airport Drop",
-      "description": "Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2-day private tour ending at the airport or your hotel.",
-      "duration": "2 Days",
-      "persons": "Private Tour (1-20 Persons)",
-      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "overview": "Experience an unforgettable 2-day journey through Sri Lanka’s wildlife, hill country and cultural capital.\n  On day one, visit the Udawalawa Elephant Transit Home before heading to Ella to explore Nine Arch Bridge, Little Adam’s Peak, Flying Ravana and Ravana Falls.\n  On day two, travel through the scenic hills to Ramboda Falls and Ambuluwawa Tower before discovering the sacred Temple of the Tooth in Kandy and Pinnawala Elephant Orphanage.\n  This private tour ends conveniently at the airport or your hotel.",
+      "title": "2 Day Sri Lanka Private Tour – Ella & Yala Safari | Airport Drop",
+      "description": "Discover Sri Lanka’s hill country and wildlife on this 2-day private tour featuring Ella’s scenic highlights and a thrilling Yala National Park safari, ending at the airport or your hotel.",
+      "duration": "2 days",
+      "persons": "1-20 Persons",
+      "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+      "overview": "Experience an unforgettable 2-day private journey through Sri Lanka’s scenic hill country and legendary wildlife parks.\n  On day one, explore Ella’s iconic Nine Arch Bridge, hike Little Adam’s Peak, enjoy Flying Ravana adventure and visit Ravana Falls amid lush highland scenery.\n  On day two, set out on an exciting jeep safari in Yala National Park in search of leopards, elephants, deer and rich birdlife before continuing to your hotel or airport drop-off.\n  This private tour combines nature, adventure and comfort with dedicated transportation throughout.",
       "tourType": "Round Tour",
       "itinerary": [
         {
@@ -732,6 +859,31 @@
         "Entrance & Activity Fees",
         "Food & Drinks",
         "Accommodation (Can be arranged upon request)"
+      ],
+      "highlights": [
+        "Nine Arch Bridge",
+        "Little Adam’s Peak",
+        "Flying Ravana Zip Line",
+        "Ravana Falls",
+        "Yala National Park"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 2 Day Sri Lanka Private Tour – Ella & Yala Safari | Airport Drop?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 2 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "4-day-sri-lanka-tour": {
@@ -739,7 +891,7 @@
       "slug": "4-day-sri-lanka-tour",
       "title": "4 Day Sri Lanka Private Tour | Kandy, Ella, Yala & South Coast",
       "description": "Explore Sri Lanka in 4 unforgettable days including Kandy cultural heritage, Ella hill country, Yala safari adventure and the stunning southern coastline.",
-      "duration": "4 Days",
+      "duration": "4 days",
       "persons": "1-20 Persons",
       "filecode": "4-day-sri-lanka-tour",
       "overview": "Discover Sri Lanka’s perfect combination of culture, scenic beauty, wildlife and coastal charm in this 4-day private tour. Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop.",
@@ -959,6 +1111,32 @@
         "Entrance Fees",
         "Lunch & Drinks",
         "Personal Expenses"
+      ],
+      "highlights": [
+        "Pinnawala Elephant Orphanage",
+        "Temple of the Sacred Tooth Relic",
+        "Kandy Cultural Dance Show",
+        "Kandy View Point",
+        "Royal Botanic Gardens Peradeniya",
+        "Glenloch Tea Factory Visit"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 4 Day Sri Lanka Private Tour | Kandy, Ella, Yala & South Coast?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 4 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "5-day-sri-lanka-tour": {
@@ -966,7 +1144,7 @@
       "slug": "5-day-sri-lanka-tour",
       "title": "5 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari",
       "description": "Explore Sri Lanka in 5 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences.",
-      "duration": "5 Days",
+      "duration": "5 days",
       "persons": "1-20 Persons",
       "filecode": "5-day-sri-lanka-tour",
       "overview": "Discover the highlights of Sri Lanka in this perfectly balanced 5-day private round tour. \n  Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast. \n  With private transportation, experienced English-speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation — perfect for couples, families and small groups.",
@@ -1199,6 +1377,32 @@
         "Entrance & Activity Fees",
         "Food & Drinks",
         "Accommodation (Can be arranged upon request)"
+      ],
+      "highlights": [
+        "Airport Pickup",
+        "Pinnawala Elephant Orphanage",
+        "Minneriya National Park Safari",
+        "Sigiriya Rock Fortress",
+        "Temple of the Sacred Tooth Relic",
+        "Kandy Cultural Dance Show"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 5 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 5 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "6-day-sri-lanka-private-tour": {
@@ -1206,8 +1410,8 @@
       "slug": "6-day-sri-lanka-private-tour",
       "title": "6 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari",
       "description": "Explore Sri Lanka in 6 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences.",
-      "duration": "6 Days",
-      "persons": "2-20 Persons",
+      "duration": "6 days",
+      "persons": "1-20 Persons",
       "filecode": "6-day-sri-lanka-private-tour",
       "overview": "We are here for you to organize the perfect holiday you always dreamed of in 'Paradise Island', Sri Lanka.\n    Our 6days(5 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to CEYLON JOJO TRAVElS while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.\n    Yala Safari, Sigiriya, Ella Nine Arches Bridge, Ella train journey, Kandy Sacred Tooth Relic Temple, Ramboda watefall, Little Adam's Peak hike, Nuwara Eliya, Galle Fort, Bentota River tour are just to name a few main attractions that you'll cover during the journey.\n    Altogether you'll be visiting 28 attractions in total covering 10 districts of Sri Lanka while enjoing private trasportation.",
       "tourType": "Round Tour",
@@ -1537,6 +1741,32 @@
         "Entrance & Activity Fees",
         "Food & Drinks",
         "Accommodation (Can be arranged upon request)"
+      ],
+      "highlights": [
+        "Arrival",
+        "Pidurangala Rock",
+        "Sigiriya Lion Rock",
+        "Hiriwadunna Village & Lake Adventure",
+        "Dambulla Cave Temple",
+        "Dambulla Dedicated Economic Center"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 6 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 6 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "7-day-sri-lanka-tour": {
@@ -1544,8 +1774,8 @@
       "slug": "7-day-sri-lanka-tour",
       "title": "Sri Lanka Seven Days Tour",
       "description": "An unforgettable 7 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
-      "duration": "7 Days",
-      "persons": "20 Persons",
+      "duration": "7 days",
+      "persons": "1-20 Persons",
       "filecode": "7-day-sri-lanka-tour",
       "overview": "Discover Sri Lanka’s wildlife, ancient kingdoms, scenic mountains and golden beaches in one perfectly balanced 7 day journey. \n  This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation.",
       "tourType": "Round Tour",
@@ -1882,6 +2112,32 @@
       "excludes": [
         "Food & Drinks",
         "Entrance & Activities Fees"
+      ],
+      "highlights": [
+        "Wilpattu National Park Safari",
+        "Sri Maha Bodhi Temple",
+        "Ruwanweli Maha Seya",
+        "Pidurangala Rock Sunset",
+        "Sigiriya Lion Rock Fortress",
+        "Hiriwadunna Village Tour"
+      ],
+      "faq": [
+        {
+          "question": "What is included in Sri Lanka Seven Days Tour?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 7 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "8-day-sri-lanka-private-tour": {
@@ -1889,7 +2145,7 @@
       "slug": "8-day-sri-lanka-private-tour",
       "title": "8 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach",
       "description": "An unforgettable 8 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
-      "duration": "8 Days",
+      "duration": "8 days",
       "persons": "1-20 Persons",
       "filecode": "8-day-sri-lanka-private-tour",
       "overview": "Discover Sri Lanka’s wildlife, ancient kingdoms, scenic mountains and golden beaches in one perfectly balanced 8 day journey. \n  This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation.",
@@ -2237,6 +2493,32 @@
         "Entrance & Activity Fees",
         "Lunch & Drinks",
         "Personal Expenses"
+      ],
+      "highlights": [
+        "Wilpattu National Park Safari",
+        "Sri Maha Bodhi Temple",
+        "Ruwanweli Maha Seya",
+        "Pidurangala Rock Sunset",
+        "Sigiriya Lion Rock Fortress",
+        "Hiriwadunna Village Tour"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 8 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 8 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     },
     "10-day-sri-lanka-tour": {
@@ -2244,7 +2526,7 @@
       "slug": "10-day-sri-lanka-tour",
       "title": "10 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach",
       "description": "An unforgettable 10 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
-      "duration": "10 Days",
+      "duration": "10 days",
       "persons": "1-20 Persons",
       "filecode": "10-day-sri-lanka-tour",
       "overview": "Discover Sri Lanka’s wildlife, ancient kingdoms, scenic mountains and golden beaches in one perfectly balanced 8 day journey. \n  This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation.",
@@ -2720,6 +3002,32 @@
         "Entrance & Activity Fees",
         "Lunch & Drinks",
         "Personal Expenses"
+      ],
+      "highlights": [
+        "Wilpattu National Park Safari",
+        "Sri Maha Bodhi Temple",
+        "Ruwanweli Maha Seya",
+        "Pidurangala Rock Sunset",
+        "Sigiriya Lion Rock Fortress",
+        "Hiriwadunna Village Tour"
+      ],
+      "faq": [
+        {
+          "question": "What is included in 10 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach?",
+          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 10 days itinerary. See Included for the full list."
+        },
+        {
+          "question": "Is this a private tour?",
+          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+        },
+        {
+          "question": "Can I customize the itinerary?",
+          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+        },
+        {
+          "question": "How do I book and pay?",
+          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+        }
       ]
     }
   }

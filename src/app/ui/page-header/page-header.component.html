@@ -1,0 +1,12 @@
+<div class="container-fluid page-header ph">
+  <div class="container ph__inner">
+    <h1 class="ph__title">{{ title }}</h1>
+    <nav class="ph__crumbs" aria-label="Breadcrumb" *ngIf="crumbs?.length">
+      <ng-container *ngFor="let crumb of crumbs; let last = last">
+        <a *ngIf="crumb.link && !last" [routerLink]="crumb.link">{{ crumb.label }}</a>
+        <span *ngIf="!crumb.link || last">{{ crumb.label }}</span>
+        <i *ngIf="!last" class="fa fa-angle-double-right" aria-hidden="true"></i>
+      </ng-container>
+    </nav>
+  </div>
+</div>

@@ -1,57 +1,373 @@
-<div class="container-fluid" *ngIf="tour">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-7 text-center">
-      <div class="d-flex align-items-start">
-        <div class="main-image-container">
-          <img [src]="currentImage" class="main-img rounded shadow" [alt]="tour.title" />
-          <div class="indicators">
-            <span
-              *ngFor="let img of images; let i = index"
-              (click)="goToImage(i)"
-              [class.active-indicator]="i === currentIndex"
-              class="indicator-dot"
-            ></span>
-          </div>
-        </div>
+<ng-container *transloco="let t; scope: 'common'; prefix: 'common'">
+<article
+  class="td"
+  *ngIf="tour"
+  itemscope
+  itemtype="https://schema.org/TouristTrip"
+  (keydown.escape)="bookingSheetOpen && closeBookingSheet()"
+>
+  <meta itemprop="name" [attr.content]="tour.title" />
 
-        <div class="d-flex flex-column thumbs">
-          <div *ngFor="let img of nextImages" class="thumb-img" (click)="goToImageFromThumb(img.index)">
-            <img [src]="img.src" class="img-thumbnail rounded" alt="Preview" />
-          </div>
-        </div>
+  <!-- Hero gallery -->
+  <header class="td__hero">
+    <div
+      class="td__gallery"
+      (mouseenter)="pauseGallery()"
+      (mouseleave)="resumeGallery()"
+      (keydown)="onGalleryKeydown($event)"
+      tabindex="0"
+      role="region"
+      [attr.aria-label]="t('detail.galleryLabel')"
+    >
+      <div
+        class="td__main-media"
+        (touchstart)="onTouchStart($event)"
+        (touchend)="onTouchEnd($event)"
+      >
+        <img
+          *ngIf="currentImage"
+          [src]="currentImage"
+          class="td__main-img"
+          [class.is-fading]="galleryFading"
+          [alt]="tour.title"
+          width="960"
+          height="540"
+          fetchpriority="high"
+          decoding="async"
+          itemprop="image"
+        />
+
+        <span class="td__counter" *ngIf="imageCount > 0" aria-live="polite">
+          <i class="fas fa-camera" aria-hidden="true"></i>
+          {{ t('detail.photos', { count: imageCount }) }}
+        </span>
+
+        <button
+          type="button"
+          class="td__nav td__nav--prev"
+          *ngIf="imageCount > 1"
+          (click)="prevImage()"
+          [attr.aria-label]="t('detail.prevImage')"
+        >
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button
+          type="button"
+          class="td__nav td__nav--next"
+          *ngIf="imageCount > 1"
+          (click)="nextImage(true)"
+          [attr.aria-label]="t('detail.nextImage')"
+        >
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="td__thumbs" *ngIf="imageCount > 1" role="list" [attr.aria-label]="t('detail.thumbsLabel')">
+        <button
+          type="button"
+          class="td__thumb"
+          *ngFor="let thumb of visibleThumbs; trackBy: trackByThumb"
+          role="listitem"
+          (click)="onThumbClick(thumb)"
+          [class.is-active]="
+            thumb.index === currentIndex ||
+            (thumb.moreCount > 0 && currentIndex >= thumb.index)
+          "
+          [attr.aria-label]="
+            thumb.moreCount
+              ? t('detail.morePhotos', { count: thumb.moreCount })
+              : t('detail.imageOf', { current: thumb.index + 1, total: imageCount })
+          "
+          [attr.aria-current]="thumb.index === currentIndex ? 'true' : null"
+        >
+          <img
+            [src]="thumb.src"
+            [alt]="''"
+            width="96"
+            height="72"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="td__thumb-more" *ngIf="thumb.moreCount">
+            {{ t('detail.morePhotos', { count: thumb.moreCount }) }}
+          </span>
+        </button>
       </div>
     </div>
-  </div>
-</div>
+  </header>
 
-<div class="mt-4" *ngIf="tour">
-  <app-tour-details-component [tour]="tour"></app-tour-details-component>
-</div>
+  <div class="td__layout">
+    <div class="td__intro">
+      <nav class="td__crumbs" aria-label="Breadcrumb">
+        <ol class="td__crumbs-list">
+          <li><a [routerLink]="homeLink">{{ t('nav.home') }}</a></li>
+          <li><a [routerLink]="toursLink">{{ t('nav.tours') }}</a></li>
+          <li aria-current="page">{{ tour.title }}</li>
+        </ol>
+      </nav>
 
-<div class="container-fluid py-5" *transloco="let t; scope: 'common'; prefix: 'common'">
-  <div class="container pt-5 pb-3">
-    <div class="text-center mb-3 pb-3">
-      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('packages.header') }}</h6>
-      <h1>{{ t('packages.title') }}</h1>
+      <h1 class="td__h1" itemprop="name">{{ tour.title }}</h1>
+
+      <!-- Six compact info cards -->
+      <ul class="td__info-cards" [attr.aria-label]="t('detail.quickFacts')">
+        <li class="td__info-card">
+          <i class="fas fa-clock" aria-hidden="true"></i>
+          <div>
+            <span class="td__info-label">{{ t('label.duration') }}</span>
+            <span class="td__info-value">{{ tour.duration }}</span>
+          </div>
+        </li>
+        <li class="td__info-card">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <div>
+            <span class="td__info-label">{{ t('label.maxPeople') }}</span>
+            <span class="td__info-value">{{ tour.persons }}</span>
+          </div>
+        </li>
+        <li class="td__info-card">
+          <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+          <div>
+            <span class="td__info-label">{{ t('label.tourType') }}</span>
+            <span class="td__info-value">{{ tour.tourType }}</span>
+          </div>
+        </li>
+        <li class="td__info-card">
+          <i class="fas fa-car" aria-hidden="true"></i>
+          <div>
+            <span class="td__info-label">{{ t('detail.transport') }}</span>
+            <span class="td__info-value">
+              {{ tour.transportIncluded ? t('detail.privateDriver') : t('detail.transportOnRequest') }}
+            </span>
+          </div>
+        </li>
+        <li class="td__info-card">
+          <i class="fas fa-hotel" aria-hidden="true"></i>
+          <div>
+            <span class="td__info-label">{{ t('card.hotels') }}</span>
+            <span class="td__info-value">
+              {{
+                tour.hotelRating
+                  ? t('detail.hotelsIncluded', { stars: tour.hotelRating })
+                  : t('detail.dayTourStay')
+              }}
+            </span>
+          </div>
+        </li>
+        <li class="td__info-card">
+          <i class="fas fa-undo" aria-hidden="true"></i>
+          <div>
+            <span class="td__info-label">{{ t('card.freeCancel') }}</span>
+            <span class="td__info-value">{{ t('detail.freeCancelBefore') }}</span>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let item of selectedTours">
-        <app-package-item-component
-          [image]="item.image"
-          [days]="item.days"
-          [persons]="item.persons"
-          [rating]="item.rating"
-          [price]="item.price"
-          [title]="item.title"
-          [routerLink]="item.link"
-          [isBestseller]="!!item.isBestseller"
-          [isLimited]="!!item.isLimited"
-        ></app-package-item-component>
+
+    <aside
+      class="td__aside"
+      id="booking"
+      [class.is-sheet-open]="bookingSheetOpen"
+    >
+      <div
+        class="td__book-backdrop"
+        *ngIf="bookingSheetOpen"
+        (click)="closeBookingSheet()"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="td__book-sheet"
+        [attr.role]="bookingSheetOpen ? 'dialog' : null"
+        [attr.aria-modal]="bookingSheetOpen ? 'true' : null"
+        [attr.aria-label]="t('detail.reserveTitle')"
+      >
+        <div class="td__book-sheet-head">
+          <h2 class="td__book-sheet-title">{{ t('detail.reserveTitle') }}</h2>
+          <button
+            type="button"
+            class="td__book-sheet-close"
+            (click)="closeBookingSheet()"
+            [attr.aria-label]="t('detail.close')"
+          >
+            ×
+          </button>
+        </div>
+        <div class="td__book-card">
+          <app-tour-booking-form
+            [tour]="tour"
+            [filecode]="tourId || ''"
+            [image]="images[0] || ''"
+          ></app-tour-booking-form>
+        </div>
       </div>
+    </aside>
+
+    <div class="td__main">
+      <section class="td__section" aria-labelledby="td-overview">
+        <h2 id="td-overview">{{ t('detail.overview') }}</h2>
+        <p class="td__prose" itemprop="description">{{ tour.overview }}</p>
+      </section>
+
+      <section class="td__section" *ngIf="tour.highlights?.length" aria-labelledby="td-highlights">
+        <h2 id="td-highlights">{{ t('detail.highlights') }}</h2>
+        <ul class="td__highlights">
+          <li *ngFor="let item of tour.highlights; trackBy: trackByString">
+            <i class="fas fa-check" aria-hidden="true"></i>
+            <span>{{ item }}</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="td__section" *ngIf="tour.itinerary?.length" aria-labelledby="td-itinerary">
+        <h2 id="td-itinerary">{{ t('label.itinerary') }}</h2>
+        <div class="td__itinerary">
+          <app-accordion-panel
+            *ngFor="let day of tour.itinerary; trackBy: trackByDay"
+            [title]="t('label.day') + ' ' + day.day + ': ' + day.title"
+            [open]="!!expandedDays[day.day]"
+            (toggled)="toggleDay(day.day)"
+          >
+            <div
+              class="td__period"
+              *ngFor="let group of periodsForDay(day.activities); trackBy: trackByPeriod"
+            >
+              <span [class]="periodBadgeClass(group.period)">
+                {{ t(periodLabelKey(group.period)) }}
+              </span>
+              <div
+                class="td__activity"
+                *ngFor="let activity of group.activities; trackBy: trackByActivity"
+              >
+                <button
+                  type="button"
+                  class="td__act-media"
+                  *ngIf="activity.image"
+                  (click)="openImage(activity.image)"
+                  [attr.aria-label]="activity.title.title"
+                >
+                  <img
+                    [src]="activity.image"
+                    [alt]="activity.title.title || ''"
+                    loading="lazy"
+                    decoding="async"
+                    width="140"
+                    height="105"
+                  />
+                </button>
+                <div class="td__act-body">
+                  <h3 class="td__activity-title">
+                    <i
+                      class="fas"
+                      [ngClass]="activity.title.icon || 'fa-map-marker-alt'"
+                      aria-hidden="true"
+                    ></i>
+                    {{ activity.title.title }}
+                  </h3>
+                  <p *ngIf="activity.description" class="td__act-desc">{{ activity.description }}</p>
+                  <ul *ngIf="activity.extra?.length" class="td__extras">
+                    <li *ngFor="let extra of activity.extra; trackBy: trackByString">{{ extra }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </app-accordion-panel>
+        </div>
+      </section>
+
+      <section class="td__section td__split" aria-labelledby="td-includes">
+        <div>
+          <h2 id="td-includes">{{ t('label.includes') }}</h2>
+          <ul class="td__inc">
+            <li *ngFor="let item of tour.includes; trackBy: trackByString">
+              <i class="fas fa-check" aria-hidden="true"></i>
+              <span>{{ item }}</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 id="td-excludes">{{ t('label.excludes') }}</h2>
+          <ul class="td__exc">
+            <li *ngFor="let item of tour.excludes; trackBy: trackByString">
+              <i class="fas fa-times" aria-hidden="true"></i>
+              <span>{{ item }}</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="td__section" *ngIf="tour.faq?.length" aria-labelledby="td-faq">
+        <h2 id="td-faq">{{ t('detail.faq') }}</h2>
+        <div class="td__faq">
+          <div class="td__faq-item" *ngFor="let item of tour.faq; let i = index; trackBy: trackByIndex">
+            <button
+              type="button"
+              class="td__faq-q"
+              (click)="toggleFaq(i)"
+              [attr.aria-expanded]="expandedFaq === i"
+            >
+              <span>{{ item.question }}</span>
+              <i class="fas fa-chevron-down" [class.is-open]="expandedFaq === i" aria-hidden="true"></i>
+            </button>
+            <div class="td__faq-a" [class.is-open]="expandedFaq === i">
+              <div class="td__faq-a-inner">
+                <p>{{ item.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-</div>
 
-<button class="fixed-booking-btn" (click)="bookNow()" *transloco="let t; scope: 'common'; prefix: 'common'">
-  <i class="fa fa-calendar-check mr-2"></i> {{ t('btn.bookNow') }}
-</button>
+  <section class="td__related" aria-labelledby="td-related">
+    <h2 id="td-related">{{ t('packages.relatedTitle') }}</h2>
+    <p class="td__related-sub">{{ t('packages.relatedEyebrow') }}</p>
+    <div class="tour-card-grid">
+      <app-tour-card
+        *ngFor="let item of selectedTours; trackBy: trackByRelated"
+        [image]="item.image"
+        [days]="item.days"
+        [persons]="item.persons"
+        [rating]="item.rating"
+        [price]="item.price"
+        [title]="item.title"
+        [tourId]="item.id || item.filecode"
+        [filecode]="item.filecode"
+        [tourType]="item.tourType || ''"
+        [tourTypeKey]="item.tourTypeKey || ''"
+        [hotelRating]="item.hotelRating"
+        [transportIncluded]="!!item.transportIncluded"
+        [routerLink]="item.link"
+        [isBestseller]="!!item.isBestseller"
+        [isLimited]="!!item.isLimited"
+      ></app-tour-card>
+    </div>
+  </section>
+
+  <!-- Mobile sticky CTA -->
+  <div class="td__mobile-cta" *ngIf="!bookingSheetOpen">
+    <div class="td__mobile-cta-price">
+      <span class="td__mobile-cta-from">{{ t('detail.from') }}</span>
+      <span class="td__mobile-cta-amount">${{ displayPrice | number: '1.0-0' }}</span>
+      <span class="td__mobile-cta-unit">{{ t('detail.pricePerPerson') }}</span>
+    </div>
+    <button type="button" class="td__mobile-cta-btn" (click)="openBookingSheet()">
+      {{ t('detail.checkAvailability') }}
+    </button>
+  </div>
+
+  <div
+    class="td__lightbox"
+    *ngIf="selectedImage"
+    (click)="closeImage()"
+    (keydown.escape)="closeImage()"
+    role="dialog"
+    aria-modal="true"
+    [attr.aria-label]="t('detail.close')"
+  >
+    <img [src]="selectedImage" alt="" (click)="$event.stopPropagation()" decoding="async" />
+    <button type="button" class="td__lightbox-close" (click)="closeImage()" [attr.aria-label]="t('detail.close')">
+      ×
+    </button>
+  </div>
+</article>
+</ng-container>

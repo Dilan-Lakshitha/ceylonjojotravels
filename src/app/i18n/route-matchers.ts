@@ -58,11 +58,27 @@ export function createBookingMatcher(): UrlMatcher {
     if (!isSegmentForRoute('booking', segments[0].path)) {
       return null;
     }
+    // Do not steal booking-success segment (single-segment route)
+    if (isSegmentForRoute('bookingSuccess', segments[0].path)) {
+      return null;
+    }
     return {
       consumed: [segments[0], segments[1]],
       posParams: {
         filecode: segments[1],
       },
     };
+  };
+}
+
+export function createBookingSuccessMatcher(): UrlMatcher {
+  return (segments: UrlSegment[]) => {
+    if (segments.length !== 1) {
+      return null;
+    }
+    if (!isSegmentForRoute('bookingSuccess', segments[0].path)) {
+      return null;
+    }
+    return { consumed: segments };
   };
 }

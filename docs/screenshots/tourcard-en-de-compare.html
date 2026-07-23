@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>EN vs DE TourCard comparison</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+  <style>
+    body { margin: 0; font-family: Poppins, Arial, sans-serif; background: #f3f6f8; padding: 24px; }
+    h1 { text-align: center; color: #022d41; font-size: 1.4rem; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1100px; margin: 0 auto; }
+    .lang { background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 4px 16px rgba(0,0,0,.06); }
+    .lang h2 { margin: 0 0 12px; font-size: 1rem; color: #023a2c; }
+    .tour-card-grid { display: grid; grid-template-columns: 1fr; grid-auto-rows: 1fr; gap: 1rem; min-height: 520px; }
+    /* Paste of critical TourCard flex contract */
+    .tc {
+      --tc-media-h: 200px; --tc-chrome-h: 2.25rem; --tc-meta-h: 1.5rem;
+      --tc-title-lh: 1.35; --tc-title-lines: 3;
+      --tc-title-h: calc(var(--tc-title-lines) * var(--tc-title-lh) * 1em);
+      --tc-rating-h: 1.5rem; --tc-trust-h: 4.5rem; --tc-price-h: 3.25rem;
+      display: flex; flex-direction: column; height: 100%; min-height: 520px;
+      background: #fff; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08); text-decoration: none; color: inherit;
+    }
+    .tc__media { position: relative; flex: 0 0 var(--tc-media-h); height: var(--tc-media-h); overflow: hidden; background: #e8eef2; }
+    .tc__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .tc__shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.45), transparent 55%); }
+    .tc__chrome { position: absolute; top: .75rem; left: .75rem; right: .75rem; height: var(--tc-chrome-h); display: flex; justify-content: space-between; }
+    .tc__flag { display: inline-flex; padding: .3rem .55rem; border-radius: 999px; font-size: .625rem; font-weight: 700; color: #fff; background: #ff6b00; }
+    .tc__body { display: flex; flex-direction: column; flex: 1 1 auto; padding: 1rem; gap: .45rem; min-height: 0; }
+    .tc__meta { display: flex; justify-content: space-between; flex: 0 0 var(--tc-meta-h); height: var(--tc-meta-h); font-size: .75rem; color: #6b7280; }
+    .tc__title { margin: 0; flex: 0 0 var(--tc-title-h); height: var(--tc-title-h); font-size: 1.05rem; font-weight: 700; color: #022d41; line-height: var(--tc-title-lh); overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+    .tc__rating { display: flex; align-items: center; flex: 0 0 var(--tc-rating-h); height: var(--tc-rating-h); color: #f4b400; gap: .35rem; font-weight: 600; }
+    .tc__trust { display: flex; flex-wrap: wrap; gap: .35rem; flex: 0 0 var(--tc-trust-h); height: var(--tc-trust-h); overflow: hidden; }
+    .tc__chip { display: inline-flex; align-items: center; gap: .3rem; padding: .25rem .55rem; border-radius: 999px; background: #f1f5f9; color: #023a2c; font-size: .65rem; font-weight: 600; }
+    .flex-grow { flex: 1 1 auto; min-height: .5rem; width: 100%; background: repeating-linear-gradient(45deg, #f8fafc, #f8fafc 6px, #eef2f6 6px, #eef2f6 12px); border-radius: 4px; opacity: .55; }
+    .tc__price { display: flex; flex-direction: column; justify-content: center; flex: 0 0 var(--tc-price-h); height: var(--tc-price-h); margin-top: auto; border-top: 1px solid #eef2f6; padding-top: .35rem; }
+    .tc__amount { font-size: 1.15rem; font-weight: 800; color: #023a2c; }
+    .tc__unit { font-size: .7rem; font-weight: 600; color: #6b7280; }
+    .note { max-width: 1100px; margin: 16px auto 0; color: #555; font-size: .85rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>TourCard flex-column parity — English vs German</h1>
+  <div class="cols">
+    <section class="lang">
+      <h2>English</h2>
+      <div class="tour-card-grid">
+        <a class="tc" href="#">
+          <div class="tc__media">
+            <img src="http://127.0.0.1:4200/assets/img/package-2.jpg" alt="" />
+            <div class="tc__shade"></div>
+            <div class="tc__chrome"><span class="tc__flag">Bestseller</span></div>
+          </div>
+          <div class="tc__body">
+            <div class="tc__meta"><span>5 days</span><span>1-20 Persons</span></div>
+            <h3 class="tc__title">5 Day Sri Lanka Private Tour with 4 Star Hotels, Safari & Beach Stay</h3>
+            <div class="tc__rating"><i class="fa fa-star"></i><span>5</span></div>
+            <div class="tc__trust">
+              <span class="tc__chip">Free cancellation</span>
+              <span class="tc__chip">Instant confirmation</span>
+              <span class="tc__chip">Reserve now, pay later</span>
+            </div>
+            <div class="flex-grow" title="flexible spacer"></div>
+            <div class="tc__price"><span class="tc__amount">$ 285</span><span class="tc__unit">/ per person</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="lang">
+      <h2>Deutsch</h2>
+      <div class="tour-card-grid">
+        <a class="tc" href="#">
+          <div class="tc__media">
+            <img src="http://127.0.0.1:4200/assets/img/package-2.jpg" alt="" />
+            <div class="tc__shade"></div>
+            <div class="tc__chrome"><span class="tc__flag">Beliebt</span></div>
+          </div>
+          <div class="tc__body">
+            <div class="tc__meta"><span>5 Tage</span><span>1–20 Personen</span></div>
+            <h3 class="tc__title">Sri Lanka 5-Tage-Tour mit 4-Sterne-Hotels, Safari & Strandaufenthalt</h3>
+            <div class="tc__rating"><i class="fa fa-star"></i><span>5</span></div>
+            <div class="tc__trust">
+              <span class="tc__chip">Kostenlose Stornierung</span>
+              <span class="tc__chip">Sofortige Bestätigung</span>
+              <span class="tc__chip">Jetzt reservieren, später zahlen</span>
+            </div>
+            <div class="flex-grow" title="flexible spacer"></div>
+            <div class="tc__price"><span class="tc__amount">$ 285</span><span class="tc__unit">/ pro Person</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+  <p class="note">Hatched band = <code>flex-grow</code> spacer. Price uses <code>margin-top: auto</code> so both cards pin price to the same bottom edge despite different title/chip lengths.</p>
+</body>
+</html>

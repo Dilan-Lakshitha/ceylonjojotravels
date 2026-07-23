@@ -1,21 +1,15 @@
-<div class="container-fluid page-header">
-    <div class="container">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-4 text-white text-uppercase">Booking</h3>
-            <div class="d-inline-flex text-white">
-                <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
-                <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">Booking</p>
-            </div>
-        </div>
-    </div>
+<div *transloco="let t; scope: 'booking'; prefix: 'booking'">
+  <app-page-header
+    [title]="t('pageTitle')"
+    [crumbs]="[{ label: t('navHome'), link: homeLink }, { label: t('pageTitle') }]">
+  </app-page-header>
 </div>
 
-<div class="container my-5">
+<div class="container my-5" *transloco="let t; scope: 'booking'; prefix: 'booking'">
     <div class="container pt-5 pb-3">
         <div class="text-center mb-5">
-            <h6 class="text-primary text-uppercase tracking-widest">BOOK NOW</h6>
-            <h1 class="font-bold text-4xl">Book Tour Packages</h1>
+            <h6 class="text-primary i18n-section-eyebrow">{{ t('eyebrow') }}</h6>
+            <h1 class="i18n-section-title">{{ t('heading') }}</h1>
         </div>
     </div>
     <div class="row g-4 align-items-stretch">
@@ -24,29 +18,36 @@
                 <img [src]="image" class="card-img-top tour-img" alt="{{ tour.title }}">
                 <div class="card-body">
                     <h3 class="card-title">{{ tour.title }}</h3>
-                    <p class="text-muted">{{ tour.tourType }} | Duration: {{ tour.duration }}</p>
+                    <p class="text-muted">{{ tour.tourType }} | {{ t('labels.duration') }} {{ tour.duration }}</p>
                     <div class="d-flex flex-wrap gap-2 my-3">
-                        <span class="badge bg-primary text-white">Price: {{ tour.price }}</span>
-                        <span class="badge ml-2 text-primary" style="background-color: #ada878;">Order : {{ orderNumber
-                            }}</span>
+                        <app-chip [accent]="true">{{ t('labels.price') }} {{ tour.price }}</app-chip>
+                        <app-chip [muted]="true">{{ t('labels.order') }} {{ orderNumber }}</app-chip>
                     </div>
                     <hr>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Subtotal
-                            <span>${{ subtotal.toFixed(2) }}</span>
+                        <li class="list-group-item">
+                            <div class="booking-kv">
+                                <span class="booking-kv__label">{{ t('labels.subtotal') }}</span>
+                                <app-price-box [amount]="'$' + subtotal.toFixed(2)"></app-price-box>
+                            </div>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Total
-                            <span>${{ total.toFixed(2) }}</span>
+                        <li class="list-group-item">
+                            <div class="booking-kv">
+                                <span class="booking-kv__label">{{ t('labels.total') }}</span>
+                                <app-price-box [amount]="'$' + total.toFixed(2)"></app-price-box>
+                            </div>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Amount Paid
-                            <span>${{ amountPaid.toFixed(2) }}</span>
+                        <li class="list-group-item">
+                            <div class="booking-kv">
+                                <span class="booking-kv__label">{{ t('labels.amountPaid') }}</span>
+                                <app-price-box [amount]="'$' + amountPaid.toFixed(2)"></app-price-box>
+                            </div>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Amount Due
-                            <span class="fw-bold text-primary">${{ amountDue.toFixed(2) }}</span>
+                        <li class="list-group-item">
+                            <div class="booking-kv">
+                                <span class="booking-kv__label">{{ t('labels.amountDue') }}</span>
+                                <app-price-box [amount]="'$' + amountDue.toFixed(2)"></app-price-box>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -55,62 +56,62 @@
 
         <div class="col-lg-6" *ngIf="!bookingCompleted">
             <div class="card shadow-lg border-0 rounded-3 p-4 animate__animated animate__slideInLeft overflow-hidden h-100 w-100">
-                <h4 class="mb-3 text-center">Book Your Tour</h4>
+                <h4 class="mb-3 text-center">{{ t('form.title') }}</h4>
                 <div *ngIf="groupNotice" class="alert alert-info mt-2">
-                    {{ groupNotice }}
+                    {{ groupNotice || t('form.groupNotice') }}
                 </div>
                 <form #bookingForm="ngForm" (ngSubmit)="completeBooking()">
                     <div class="row g-3 mb-3">
                         <div class="col-lg-6">
-                            <label class="form-label">Number of Travelers</label>
+                            <label class="form-label">{{ t('form.travelers') }}</label>
                             <input type="number" class="form-control" [(ngModel)]="travelers" name="travelers" min="1"
                                 max="20" (change)="updateTravelers($event)" required #travelersCtrl="ngModel">
                             <small class="text-danger" *ngIf="travelersCtrl.invalid && travelersCtrl.touched">
-                                Please enter travelers (1–20)
+                                {{ t('form.travelersInvalid') }}
                             </small>
                             <small class="text-success">
-                                Infants (0–2 years) travel FREE
+                                {{ t('form.infantsFree') }}
                             </small>
                         </div>
                         <div class="col-lg-6">
-                            <label class="form-label">Select Travel Date</label>
+                            <label class="form-label">{{ t('form.travelDate') }}</label>
                             <input type="date" class="form-control" [ngModel]="travelDate | date:'yyyy-MM-dd'"
                                 (ngModelChange)="onTravelDateChange($event)" name="travelDate" required
                                 #dateCtrl="ngModel">
                             <small class="text-danger" *ngIf="dateCtrl.invalid && dateCtrl.touched">
-                                Travel date is required
+                                {{ t('form.travelDateRequired') }}
                             </small>
                         </div>
                     </div>
 
                     <div class="row g-3 mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control" placeholder="John" [(ngModel)]="firstName"
+                            <label class="form-label">{{ t('form.firstName') }}</label>
+                            <input type="text" class="form-control" [placeholder]="t('form.firstNamePlaceholder')" [(ngModel)]="firstName"
                                 name="firstName" required #firstCtrl="ngModel">
                             <small class="text-danger" *ngIf="firstCtrl.invalid && firstCtrl.touched">
-                                First name is required
+                                {{ t('form.firstNameRequired') }}
                             </small>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-control" placeholder="Doe" [(ngModel)]="lastName"
+                            <label class="form-label">{{ t('form.lastName') }}</label>
+                            <input type="text" class="form-control" [placeholder]="t('form.lastNamePlaceholder')" [(ngModel)]="lastName"
                                 name="lastName" required #lastCtrl="ngModel">
                             <small class="text-danger" *ngIf="lastCtrl.invalid && lastCtrl.touched">
-                                Last name is required
+                                {{ t('form.lastNameRequired') }}
                             </small>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="example@email.com" [(ngModel)]="email"
+                        <label class="form-label">{{ t('form.email') }}</label>
+                        <input type="email" class="form-control" [placeholder]="t('form.emailPlaceholder')" [(ngModel)]="email"
                             name="email" required #emailCtrl="ngModel">
                         <small class="text-danger" *ngIf="emailCtrl.invalid && emailCtrl.touched">
-                            Valid email is required
+                            {{ t('form.emailInvalid') }}
                         </small>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Contact Phone</label>
+                        <label class="form-label">{{ t('form.phone') }}</label>
                         <div class="d-flex">
                             <select class="w-50" [(ngModel)]="selectedCountry" name="countryCode" required>
                                 <option *ngFor="let country of countriesList" [ngValue]="country"> {{country.name}}
@@ -118,47 +119,46 @@
                                 </option>
                             </select>
 
-                            <input type="tel" class="form-control" placeholder="712345678" [(ngModel)]="phoneNumber"
+                            <input type="tel" class="form-control" [placeholder]="t('form.phonePlaceholder')" [(ngModel)]="phoneNumber"
                                 name="phoneNumber" required pattern="^\d{7,15}$" #phoneCtrl="ngModel" />
                         </div>
 
                         <small class="text-danger" *ngIf="phoneCtrl.invalid && phoneCtrl.touched">
-                            Valid phone number is required
+                            {{ t('form.phoneInvalid') }}
                         </small>
                     </div>
                     <div class="row g-3 mb-3">
                         <div class="col-lg-6 mt-2">
-                            <label for="country" class="form-label fw-semibold text-primary">Select Your Country
-                                :</label>
+                            <label for="country" class="form-label fw-semibold text-primary">{{ t('form.countryLabel') }}</label>
                         </div>
                         <div class="col-lg-6">
                             <select id="country" class="form-select border-0 py-2 px-2 rounded-3" [(ngModel)]="country"
                                 name="country" required #countryCtrl="ngModel">
-                                <option value="" disabled selected>Select your country</option>
+                                <option value="" disabled selected>{{ t('form.countryPlaceholder') }}</option>
                                 <option *ngFor="let c of countries" [value]="c">{{ c }}</option>
                             </select>
                             <small class="text-danger d-block mt-1" *ngIf="countryCtrl.invalid && countryCtrl.touched">
-                                Please select your country
+                                {{ t('form.countryRequired') }}
                             </small>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Amount to Pay Now</label>
+                        <label class="form-label">{{ t('form.amountToPay') }}</label>
                         <input type="text" class="form-control fw-bold text-success" [value]="'$' + total" readonly>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Payment Method : Payment Later (Pay at Destination)</label>
+                        <label class="form-label">{{ t('form.paymentMethod') }}</label>
                     </div>
                     <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="terms">
                         <label class="form-check-label" for="terms">
-                            I agree to the <a href="#">terms & conditions</a>
+                            {{ t('form.termsPrefix') }} <a href="#">{{ t('form.termsLink') }}</a>
                         </label>
                     </div>
                     <button type="submit" class="btn btn-primary w-100 rounded fw-bold"
                         [disabled]="bookingForm.invalid || groupNotice">
-                        Complete Booking
+                        {{ t('form.submit') }}
                     </button>
                 </form>
             </div>
@@ -170,67 +170,66 @@
 
                 <div class="d-flex align-items-center mb-3">
                     <i class="bi bi-check-circle-fill text-success me-2" style="font-size: 2rem;"></i>
-                    <h3 class="text-success mb-0">Booking Confirmed!</h3>
+                    <h3 class="text-success mb-0">{{ t('confirmed.title') }}</h3>
                 </div>
 
-                <p class="mb-4 text-muted">Your order has been completed and a confirmation email has been sent. Thank
-                    you for booking with us!</p>
+                <p class="mb-4 text-muted">{{ t('confirmed.message') }}</p>
 
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                    <span class="badge bg-primary text-white p-2">Order #: {{ orderNumber }}</span>
-                    <span class="badge text-dark p-2 ml-2" style="background-color: #ada878;">Date: {{ bookingDate |
+                    <span class="badge bg-primary text-white p-2">{{ t('confirmed.orderLabel') }} {{ orderNumber }}</span>
+                    <span class="badge text-dark p-2 ml-2" style="background-color: #ada878;">{{ t('confirmed.dateLabel') }} {{ bookingDate |
                         date:'medium' }}</span>
-                    <span class="badge bg-success text-white p-2 ml-2">Total: ${{ total.toFixed(2) }}</span>
-                    <span class="badge bg-warning text-dark p-2 ml-2">Payment: Payment Later</span>
+                    <span class="badge bg-success text-white p-2 ml-2">{{ t('confirmed.totalLabel') }} ${{ total.toFixed(2) }}</span>
+                    <span class="badge bg-warning text-dark p-2 ml-2">{{ t('confirmed.paymentLabel') }}</span>
                 </div>
 
                 <div class="card border shadow-sm mb-3">
-                    <div class="card-header bg-light fw-bold text-primary">Order Details</div>
+                    <div class="card-header bg-light fw-bold text-primary">{{ t('confirmed.orderDetails') }}</div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between">
                             <span>{{ tour.title }}</span>
                             <span class="fw-bold">${{ total.toFixed(2) }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Duration</span>
+                            <span>{{ t('confirmed.duration') }}</span>
                             <span>{{ tour.duration }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Tickets ({{ travelers }} person{{ travelers > 1 ? 's' : '' }})</span>
+                            <span>{{ t('confirmed.tickets', { travelers: travelers }) }}</span>
                             <span>${{ total.toFixed(2) }}</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card border shadow-sm">
-                    <div class="card-header bg-light fw-bold text-primary">Payment Summary</div>
+                    <div class="card-header bg-light fw-bold text-primary">{{ t('confirmed.paymentSummary') }}</div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Subtotal</span>
+                            <span>{{ t('labels.subtotal') }}</span>
                             <span>${{ subtotal.toFixed(2) }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Total</span>
+                            <span>{{ t('labels.total') }}</span>
                             <span>${{ total.toFixed(2) }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Amount Paid</span>
+                            <span>{{ t('labels.amountPaid') }}</span>
                             <span class="text-success">${{ amountPaid.toFixed(2) }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Amount Due</span>
+                            <span>{{ t('labels.amountDue') }}</span>
                             <span class="text-danger fw-bold">${{ amountDue.toFixed(2) }}</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="mt-4 text-center">
-                    <p class="fw-bold text-primary fs-5">We appreciate your booking! Enjoy your trip 🌴✈️</p>
+                    <p class="fw-bold text-primary fs-5">{{ t('confirmed.thanks') }} 🌴✈️</p>
                 </div>
             </div>
             <div class="text-center mt-3">
                 <button class="btn btn-outline-primary" (click)="printInvoice()">
-                    <i class="bi bi-printer"></i> Print Invoice
+                    <i class="bi bi-printer"></i> {{ t('confirmed.printInvoice') }}
                 </button>
             </div>
         </div>

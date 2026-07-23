@@ -1,10 +1,19 @@
-import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  Inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+  inject,
+} from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { TranslocoModule } from '@jsverse/transloco';
 import { Subscription } from 'rxjs';
-import { PackageItemComponent } from '../../sharedComponents/package-item-component/package-item-component';
+import { TourCardComponent } from '../../ui/tour-card/tour-card.component';
+import { PageHeaderComponent } from '../../ui/page-header/page-header.component';
 import { CountryService } from '../../Services/country.service';
 import { TourContentService, TourCatalogItem } from '../../i18n/tour-content.service';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
@@ -18,7 +27,7 @@ interface TourCardVm extends TourCatalogItem {
 @Component({
   selector: 'app-tour-packages',
   standalone: true,
-  imports: [CommonModule, RouterModule, PackageItemComponent, TranslocoModule],
+  imports: [CommonModule, RouterModule, TourCardComponent, PageHeaderComponent, TranslocoModule],
   templateUrl: './tour-packages.html',
   styleUrl: './tour-packages.css',
 })
@@ -28,23 +37,40 @@ export class TourPackages implements OnInit, OnDestroy {
   userCountry = 'US';
   homeLink: any[] = ['/', 'en'];
   activeTab: 'multi' | 'day' = 'multi';
+  loading = true;
 
   private readonly http = inject(HttpClient);
   private readonly countryService = inject(CountryService);
   private readonly tourContent = inject(TourContentService);
   private readonly localizedRouter = inject(LocalizedRouterService);
+  private readonly cdr = inject(ChangeDetectorRef);
   private sub?: Subscription;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
     this.homeLink = this.localizedRouter.commandsFor('home');
-    this.sub = this.tourContent.getCatalog().subscribe(async (catalog) => {
-      if (isPlatformBrowser(this.platformId)) {
-        this.userCountry = await this.countryService.detectCountry();
-      }
-      this.dayTours = await this.withPrices(catalog.dayTours);
-      this.multiDayTours = await this.withPrices(catalog.multiDayTours);
+
+    // Don't block catalog on geo lookup
+    if (isPlatformBrowser(this.platformId)) {
+      this.countryService.detectCountry().then((c) => {
+        this.userCountry = c;
+      });
+    }
+
+    this.sub = this.tourContent.getCatalog().subscribe({
+      next: async (catalog) => {
+        const day = catalog?.dayTours ?? [];
+        const multi = catalog?.multiDayTours ?? [];
+        this.dayTours = await this.withPrices(day);
+        this.multiDayTours = await this.withPrices(multi);
+        this.loading = false;
+        this.cdr.markForCheck();
+      },
+      error: () => {
+        this.loading = false;
+        this.cdr.markForCheck();
+      },
     });
   }
 
@@ -66,7 +92,7 @@ export class TourPackages implements OnInit, OnDestroy {
   }
 
   private loadPrice(filecode: string): Promise<number> {
-    if (!isPlatformBrowser(this.platformId)) {
+    if (!isPlatformBrowser(this.platformId) || !filecode) {
       return Promise.resolve(0);
     }
     const countryFile = `assets/data/${this.userCountry}${filecode}.json`;

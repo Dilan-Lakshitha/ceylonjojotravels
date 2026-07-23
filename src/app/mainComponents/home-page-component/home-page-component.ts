@@ -1,10 +1,11 @@
-import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, inject } from '@angular/core';
-import { PackageItemComponent } from '../../sharedComponents/package-item-component/package-item-component';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ChangeDetectorRef, inject } from '@angular/core';
+import { TourCardComponent } from '../../ui/tour-card/tour-card.component';
+import { DestinationCardComponent } from '../../ui/destination-card/destination-card.component';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from '../../sharedComponents/contact-us-component/contact-us-component';
 import { HttpClient } from '@angular/common/http';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { Subscription } from 'rxjs';
 import { CountryService } from '../../Services/country.service';
 import { TourContentService, TourCatalogItem } from '../../i18n/tour-content.service';
@@ -18,7 +19,8 @@ type PricedTour = TourCatalogItem & { price: number; link: any[] };
   standalone: true,
   imports: [
     CommonModule,
-    PackageItemComponent,
+    TourCardComponent,
+    DestinationCardComponent,
     RouterModule,
     ContactUsComponent,
     TranslocoModule,
@@ -83,6 +85,8 @@ export class HomePageComponent implements OnInit, OnDestroy {
   private readonly countryService = inject(CountryService);
   private readonly tourContent = inject(TourContentService);
   private readonly localizedRouter = inject(LocalizedRouterService);
+  private readonly transloco = inject(TranslocoService);
+  private readonly cdr = inject(ChangeDetectorRef);
   private sub?: Subscription;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
@@ -94,14 +98,30 @@ export class HomePageComponent implements OnInit, OnDestroy {
     this.ellaLink = this.localizedRouter.tourLinkCommands('ella-day-tour');
     this.sigiriyaLink = this.localizedRouter.tourLinkCommands('sigiriya-day-tour');
 
-    this.sub = this.tourContent.getCatalog().subscribe(async (catalog) => {
-      if (isPlatformBrowser(this.platformId)) {
-        this.userCountry = await this.countryService.detectCountry();
-        this.autoSlide();
-      }
-      this.dayTours = await this.withPrices(catalog.dayTours);
-      this.multiDayTours = await this.withPrices(catalog.multiDayTours);
+    const lang = this.transloco.getActiveLang() || 'en';
+    this.transloco.load(`common/${lang}`).subscribe();
+    this.transloco.load(`home/${lang}`).subscribe();
+    this.transloco.load(`about/${lang}`).subscribe();
+    this.transloco.load(`destinations/${lang}`).subscribe();
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.countryService.detectCountry().then((c) => {
+        this.userCountry = c;
+      });
+      this.autoSlide();
+    }
+
+    this.sub = this.tourContent.getCatalog().subscribe({
+      next: async (catalog) => {
+        this.dayTours = await this.withPrices(catalog?.dayTours ?? []);
+        this.multiDayTours = await this.withPrices(catalog?.multiDayTours ?? []);
+        this.cdr.markForCheck();
+      },
     });
+  }
+
+  get toursLink(): any[] {
+    return this.localizedRouter.commandsFor('tours');
   }
 
   setTab(tab: 'multi' | 'day') {

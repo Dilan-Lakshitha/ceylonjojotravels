@@ -12,8 +12,11 @@ import { TravelGuides } from './sharedComponents/travel-guides/travel-guides';
 import { ResturantComponent } from './mainComponents/resturant-component/resturant-component';
 import { TourDetailPageComponent } from './mainComponents/tour-detail-page/tour-detail-page.component';
 import { langGuard } from './i18n/lang.guard';
+import { canonicalSegmentGuard } from './i18n/canonical-segment.guard';
+import { BookingSuccessPageComponent } from './mainComponents/booking-success-page/booking-success-page.component';
 import {
   createBookingMatcher,
+  createBookingSuccessMatcher,
   createSegmentMatcher,
   createTourDetailMatcher,
   createTourListMatcher,
@@ -28,11 +31,11 @@ const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path
   pathMatch: 'full' as const,
 }));
 
+const segmentGuards = [canonicalSegmentGuard];
+
 export const routes: Routes = [
-  // Root → English home
   { path: '', pathMatch: 'full', redirectTo: 'en' },
 
-  // Legacy English paths → new localized URLs
   { path: 'about-us', redirectTo: '/en/about-us', pathMatch: 'full' },
   { path: 'our-services', redirectTo: '/en/our-services', pathMatch: 'full' },
   { path: 'tour-packages', redirectTo: '/en/tours', pathMatch: 'full' },
@@ -57,52 +60,68 @@ export const routes: Routes = [
       {
         matcher: createSegmentMatcher('about'),
         component: AboutComponent,
+        canActivate: segmentGuards,
         data: { routeId: 'about' },
       },
       {
         matcher: createSegmentMatcher('services'),
         component: ServiceComponent,
+        canActivate: segmentGuards,
         data: { routeId: 'services' },
       },
       {
         matcher: createTourDetailMatcher(),
         component: TourDetailPageComponent,
+        canActivate: segmentGuards,
         resolve: { tourId: tourIdResolver },
         data: { routeId: 'tours' },
       },
       {
         matcher: createTourListMatcher(),
         component: TourPackages,
+        canActivate: segmentGuards,
         data: { routeId: 'tours' },
       },
       {
         matcher: createSegmentMatcher('destinations'),
         component: DestinationComponent,
+        canActivate: segmentGuards,
         data: { routeId: 'destinations' },
+      },
+      {
+        matcher: createBookingSuccessMatcher(),
+        component: BookingSuccessPageComponent,
+        canActivate: segmentGuards,
+        data: { routeId: 'bookingSuccess' },
       },
       {
         matcher: createBookingMatcher(),
         component: BookingComponent,
+        canActivate: segmentGuards,
         data: { routeId: 'booking' },
       },
       {
         matcher: createSegmentMatcher('contact'),
         component: ContactUsComponent,
+        canActivate: segmentGuards,
         data: { routeId: 'contact' },
       },
       {
         matcher: createSegmentMatcher('testimonials'),
         component: Testimonial,
+        canActivate: segmentGuards,
         data: { routeId: 'testimonials' },
       },
       {
         matcher: createSegmentMatcher('guides'),
         component: TravelGuides,
+        canActivate: segmentGuards,
         data: { routeId: 'guides' },
       },
       {
         matcher: createSegmentMatcher('restaurant'),
         component: ResturantComponent,
+        canActivate: segmentGuards,
         data: { routeId: 'restaurant' },
       },
     ],

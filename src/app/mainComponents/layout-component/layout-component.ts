@@ -16,6 +16,8 @@ import { AVAILABLE_LANGS, AppLang, isAppLang } from '../../i18n/language.constan
 export class LayoutComponent implements OnInit {
   activeLang: AppLang = 'en';
   readonly langs = AVAILABLE_LANGS;
+  navOpen = false;
+  langMenuOpen = false;
 
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly transloco = inject(TranslocoService);
@@ -40,6 +42,26 @@ export class LayoutComponent implements OnInit {
         this.refreshLinks();
       }
     });
+  }
+
+  toggleNav(): void {
+    this.navOpen = !this.navOpen;
+    if (this.navOpen) {
+      this.langMenuOpen = false;
+    }
+  }
+
+  closeNav(): void {
+    this.navOpen = false;
+  }
+
+  toggleLangMenu(): void {
+    this.langMenuOpen = !this.langMenuOpen;
+  }
+
+  selectLang(lang: AppLang): void {
+    this.langMenuOpen = false;
+    this.changeLang(lang);
   }
 
   changeLang(lang: AppLang): void {

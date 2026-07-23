@@ -1,0 +1,41 @@
+<section class="bs" *transloco="let t; scope: 'booking'; prefix: 'booking'">
+  <div class="bs__card" *ngIf="data; else missing">
+    <div class="bs__icon" aria-hidden="true"><i class="fas fa-check-circle"></i></div>
+    <h1 class="bs__title">{{ t('success.heading') }}</h1>
+    <p class="bs__lead">{{ t('success.message') }}</p>
+
+    <dl class="bs__meta">
+      <div>
+        <dt>{{ t('confirmed.orderLabel') }}</dt>
+        <dd>{{ data.orderNumber }}</dd>
+      </div>
+      <div>
+        <dt>{{ t('confirmed.totalLabel') }}</dt>
+        <dd>${{ data.total | number: '1.0-0' }}</dd>
+      </div>
+      <div *ngIf="data.tour?.title">
+        <dt>{{ t('success.tour') }}</dt>
+        <dd>{{ data.tour.title }}</dd>
+      </div>
+      <div *ngIf="data.travelers">
+        <dt>{{ t('form.travelers') }}</dt>
+        <dd>{{ data.travelers }}</dd>
+      </div>
+    </dl>
+
+    <div class="bs__actions">
+      <a class="bs__btn bs__btn--primary" [routerLink]="toursLink">{{ t('success.browseTours') }}</a>
+      <a class="bs__btn bs__btn--ghost" [routerLink]="homeLink">{{ t('navHome') }}</a>
+    </div>
+  </div>
+
+  <ng-template #missing>
+    <div class="bs__card">
+      <h1 class="bs__title">{{ t('success.missingTitle') }}</h1>
+      <p class="bs__lead">{{ t('success.missingMessage') }}</p>
+      <div class="bs__actions">
+        <a class="bs__btn bs__btn--primary" [routerLink]="toursLink">{{ t('success.browseTours') }}</a>
+      </div>
+    </div>
+  </ng-template>
+</section>

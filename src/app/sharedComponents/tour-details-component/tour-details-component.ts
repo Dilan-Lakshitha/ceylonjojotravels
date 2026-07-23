@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Type } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TranslocoModule } from '@jsverse/transloco';
+import { TourStatsComponent } from '../../ui/tour-stats/tour-stats.component';
+import { AccordionPanelComponent } from '../../ui/accordion-panel/accordion-panel.component';
 
 export interface Activity {
   type: string;
@@ -39,7 +41,7 @@ export interface TourDetails {
 @Component({
   selector: 'app-tour-details-component',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoModule, TourStatsComponent, AccordionPanelComponent],
   templateUrl: './tour-details-component.html',
   styleUrl: './tour-details-component.css',
 })
@@ -47,7 +49,6 @@ export class TourDetailsComponent {
   @Input() tour!: TourDetails;
 
   expandedDays: { [key: number]: boolean } = {};
-  static PackageItemComponent: readonly any[] | Type<any>;
   selectedImage: string | null = null;
 
   toggleDay(day: number) {

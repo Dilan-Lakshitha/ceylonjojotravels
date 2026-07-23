@@ -11,9 +11,9 @@ import {
 } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideToastr } from 'ngx-toastr';
-import { provideTransloco, provideTranslocoScope } from '@jsverse/transloco';
+import { provideTransloco } from '@jsverse/transloco';
 import { routes } from './app.routes';
-import { AVAILABLE_LANGS, DEFAULT_LANG, TRANSLOCO_SCOPES } from './i18n/language.constants';
+import { AVAILABLE_LANGS, DEFAULT_LANG } from './i18n/language.constants';
 import { TranslocoHttpLoader } from './i18n/transloco-loader';
 
 export const appConfig: ApplicationConfig = {
@@ -47,6 +47,5 @@ export const appConfig: ApplicationConfig = {
       },
       loader: TranslocoHttpLoader,
     }),
-    provideTranslocoScope(...TRANSLOCO_SCOPES),
   ],
 };

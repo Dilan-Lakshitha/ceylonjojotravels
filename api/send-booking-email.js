@@ -1,9 +1,26 @@
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://ceylonjojotravels.com");
+const ALLOWED_ORIGINS = [
+  "https://ceylonjojotravels.com",
+  "https://www.ceylonjojotravels.com",
+  "http://localhost:4200",
+  "http://127.0.0.1:4200",
+];
+
+function setCors(req, res) {
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  } else {
+    res.setHeader("Access-Control-Allow-Origin", "https://ceylonjojotravels.com");
+  }
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Vary", "Origin");
+}
+
+export default async function handler(req, res) {
+  setCors(req, res);
 
   if (req.method === "OPTIONS") {
     return res.status(200).end();

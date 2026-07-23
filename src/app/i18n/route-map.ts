@@ -8,6 +8,7 @@ export type RouteId =
   | 'destinations'
   | 'contact'
   | 'booking'
+  | 'bookingSuccess'
   | 'testimonials'
   | 'guides'
   | 'restaurant';
@@ -78,6 +79,15 @@ export const ROUTE_MAP: Record<RouteId, LocalizedSegments> = {
     es: 'reserva',
     pl: 'rezerwacja',
     ru: 'bronirovanie',
+  },
+  bookingSuccess: {
+    en: 'booking-success',
+    de: 'buchung-erfolgreich',
+    fr: 'reservation-confirmee',
+    it: 'prenotazione-confermata',
+    es: 'reserva-confirmada',
+    pl: 'rezerwacja-potwierdzona',
+    ru: 'bronirovanie-uspeshno',
   },
   testimonials: {
     en: 'customer-testimonials',

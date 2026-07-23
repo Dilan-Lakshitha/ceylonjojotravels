@@ -1,0 +1,7 @@
+<div class="tour-stats" *ngIf="items?.length">
+  <div class="ts-cell" *ngFor="let item of items">
+    <i class="fas ts-cell__icon" [ngClass]="item.icon" aria-hidden="true"></i>
+    <p class="ts-cell__label">{{ item.label }}</p>
+    <p class="ts-cell__value">{{ item.value }}</p>
+  </div>
+</div>

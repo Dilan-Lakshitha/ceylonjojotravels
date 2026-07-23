@@ -130,31 +130,54 @@ app.post("/send-booking-email", async (req, res) => {
 });
 
 app.post("/send-contact-email", async (req, res) => {
-  console.log('Received contact email request:', req);
+  const { name, email, contactPhone, message } = req.body || {};
 
-  const { name, email, whatsapp, message } = req.body;
+  if (!name || !email || !message) {
+    return res.status(400).json({
+      success: false,
+      message: "Missing required fields: name, email, message",
+    });
+  }
+
+  const emailUser = process.env.EMAIL_USER;
+  const emailPass = process.env.EMAIL_PASS;
+
+  if (!emailUser || !emailPass) {
+    console.error("Contact email misconfigured: EMAIL_USER / EMAIL_PASS missing");
+    return res.status(500).json({
+      success: false,
+      message: "Email service is not configured",
+    });
+  }
 
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
-      secure: true,
+      secure: false,
       auth: {
-        user: "ceylonjojotravels@gmail.com",
-        pass: "xduqnsgdjuxxefhp",
+        user: emailUser,
+        pass: emailPass,
       },
     });
 
+    const adminEmails = [
+      "ceylonjojotravels@gmail.com",
+      "dilanlakshitha194@gmail.com",
+      "danulanimneth@gmail.com",
+    ];
+
     await transporter.sendMail({
-      from: `"Contact Form" <${email}>`,
-      to: "ceylonjojotravels@gmail.com",
-      subject: `📩 New Contact Form Submission from ${name}`,
+      from: `"CEYLON JOJO TRAVElS Contact" <${emailUser}>`,
+      replyTo: email,
+      to: adminEmails,
+      subject: `New Contact Message from ${name}`,
       html: `
         <div style="font-family: Arial;">
           <h2>Contact Form Submission</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>WhatsApp:</strong> ${whatsapp}</p>
+          <p><strong>Phone / WhatsApp:</strong> ${contactPhone || "Not provided"}</p>
           <p><strong>Message:</strong></p>
           <p>${message}</p>
         </div>
@@ -162,15 +185,15 @@ app.post("/send-contact-email", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: '"Ceylon JOJO Travels"',
+      from: `"CEYLON JOJO TRAVElS" <${emailUser}>`,
       to: email,
-      subject: `✅ We received your message, ${name}`,
+      subject: `We received your message, ${name}`,
       html: `
         <div style="font-family: Arial; background: #f9f9f9; padding: 20px;">
           <h2>Thank you for contacting us, ${name}!</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p><strong>Your Message:</strong> ${message}</p>
-          <p>Best regards,<br/>Ceylon JOJO Travels Team</p>
+          <p>Best regards,<br/>CEYLON JOJO TRAVElS Team</p>
         </div>
       `,
     });

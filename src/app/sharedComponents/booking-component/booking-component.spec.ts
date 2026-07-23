@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ActivatedRoute, convertToParamMap, provideRouter } from '@angular/router';
+import { of } from 'rxjs';
 import { BookingComponent } from './booking-component';
 
 describe('BookingComponent', () => {
@@ -8,9 +9,18 @@ describe('BookingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BookingComponent]
-    })
-    .compileComponents();
+      imports: [BookingComponent],
+      providers: [
+        provideRouter([]),
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: { paramMap: convertToParamMap({ filecode: 'ella-day-tour' }) },
+            paramMap: of(convertToParamMap({ filecode: 'ella-day-tour' })),
+          },
+        },
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(BookingComponent);
     component = fixture.componentInstance;

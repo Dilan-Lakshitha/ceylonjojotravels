@@ -1,0 +1,73 @@
+<article
+  class="pdc"
+  itemscope
+  itemtype="https://schema.org/TouristDestination"
+  [attr.aria-label]="title"
+  tabindex="0"
+  role="link"
+  (click)="onCardActivate($event)"
+  (keydown)="onKeydown($event)"
+>
+  <div class="pdc__media">
+    <img
+      class="pdc__img"
+      itemprop="image"
+      [src]="image"
+      [attr.srcset]="srcset || null"
+      [attr.sizes]="srcset ? sizes : null"
+      [alt]="alt || title"
+      loading="lazy"
+      decoding="async"
+      width="640"
+      height="200"
+    />
+    <div class="pdc__shade" aria-hidden="true"></div>
+
+    <div class="pdc__chrome">
+      <div class="pdc__badges">
+        <span class="pdc__badge" *ngIf="badge">{{ badge }}</span>
+        <span class="pdc__featured" *ngIf="featured">{{ featuredLabel }}</span>
+      </div>
+      <button
+        type="button"
+        class="pdc__wish"
+        [class.is-active]="wishlisted"
+        [attr.aria-label]="wishlistLabel"
+        [attr.aria-pressed]="wishlisted"
+        (click)="onWishlist($event)"
+      >
+        <i class="fa fa-heart" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="pdc__body">
+    <h3 class="pdc__title" itemprop="name">{{ title }}</h3>
+    <p class="pdc__subtitle" itemprop="description">{{ subtitle }}</p>
+
+    <ul class="pdc__highlights" aria-label="Highlights">
+      <li *ngFor="let item of highlights.slice(0, 3)">
+        <i class="fas" [ngClass]="item.icon" aria-hidden="true"></i>
+        <span>{{ item.label }}</span>
+      </li>
+    </ul>
+
+    <div class="pdc__spacer" aria-hidden="true"></div>
+
+    <a
+      *ngIf="routerLink; else buttonCta"
+      class="pdc__cta"
+      [routerLink]="routerLink"
+      (click)="$event.stopPropagation()"
+    >
+      <span>{{ ctaLabel }}</span>
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+    <ng-template #buttonCta>
+      <button type="button" class="pdc__cta" (click)="onCardActivate($event)">
+        <span>{{ ctaLabel }}</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </button>
+    </ng-template>
+  </div>
+</article>

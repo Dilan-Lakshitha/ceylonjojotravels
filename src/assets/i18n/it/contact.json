@@ -29,5 +29,6 @@
   "messages.success": "Il tuo messaggio è stato inviato con successo!",
   "messages.error": "Errore durante l’invio. Riprova più tardi.",
   "toast.success": "Messaggio inviato!",
-  "toast.error": "Invio del messaggio non riuscito"
+  "toast.error": "Invio del messaggio non riuscito",
+  "form.sending": "Invio in corso..."
 }

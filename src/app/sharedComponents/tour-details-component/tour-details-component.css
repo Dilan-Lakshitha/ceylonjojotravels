@@ -1,20 +1,5 @@
-  .uniform-icon {
-    color: #023a2c; /* Bootstrap primary blue */
-  }
-
-  h5 {
-  transition: background 0.3s;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-h5:hover {
-  background-color: #f0f0f0;
-}
-
-ul {
-  margin-left: 20px;
-  transition: max-height 0.3s ease-in-out;
+.uniform-icon {
+  color: #023a2c;
 }
 
 .icon-circle {
@@ -25,83 +10,107 @@ ul {
   height: 28px;
   border-radius: 50%;
   font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
 .itinerary-header {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .itinerary-header:hover {
   background-color: #023a2c;
   color: #fff;
-  transform: translateX(5px);
 }
 
-.itinerary-header:hover span {
+.itinerary-header .i18n-itinerary-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+}
+
+.itinerary-header .i18n-itinerary-chevron {
+  flex: 0 0 auto;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.itinerary-header .i18n-itinerary-chevron.expanded {
   transform: rotate(180deg);
 }
 
 .itinerary-content {
   max-height: 0;
   overflow: hidden;
+  padding-left: 1.5rem;
   transition: max-height 0.5s ease-out;
 }
 
 .itinerary-content.open {
-  max-height: 1000px;
+  max-height: 2000px;
   transition: max-height 0.9s ease-in;
+}
+
+.itinerary-content ul {
+  padding-left: 1.25rem;
 }
 
 .location-icon {
   color: #ada878;
-  font-size: 1rem; 
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
 }
 
-.toggle-icon {
-  transition: transform 0.3s ease;
+.include-row,
+.exclude-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
 }
 
-.toggle-icon.expanded {
-  transform: rotate(180deg);
-}
-
-.itinerary-content {
-  padding-left: 40px; /* shift content slightly to the right */
-}
-.itinerary-content ul {
-  padding-left: 20px; /* extra indent for lists */
+.include-item-text,
+.exclude-item-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
 }
 
 .image-modal {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
+  background: rgba(2, 58, 44, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1050;
+  padding: 1rem;
 }
 
-/* Square modal image */
 .image-modal .modal-content {
-  width: 1000px;       /* fixed square width */
-  height: 800px;      /* fixed square height */
-  object-fit: cover;  /* maintain aspect ratio, cover the square */
+  width: min(1000px, 92vw);
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
   border-radius: 10px;
 }
 
-/* Close button */
 .close-btn {
   position: absolute;
   top: 20px;
   right: 30px;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
+  background: rgba(2, 58, 44, 0.9);
   border: none;
   color: white;
   font-size: 2rem;
@@ -116,139 +125,16 @@ ul {
 }
 
 .close-btn:hover {
-  background: rgba(192, 83, 5, 0.9); /* Updated to use #023a2c with 90% opacity */
+  background: #023a2c;
 }
 
-  .uniform-icon {
-    color: #023a2c; /* Bootstrap primary blue */
-  }
-
-  h5 {
-  transition: background 0.3s;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-h5:hover {
-  background-color: #f0f0f0;
-}
-
-ul {
-  margin-left: 20px;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.icon-circle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  font-size: 0.8rem;
-}
-
-.itinerary-header {
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.itinerary-header:hover {
-  background-color: #023a2c;
-  color: #fff;
-  transform: translateX(5px);
-}
-
-.itinerary-header:hover span {
-  transform: rotate(180deg);
-}
-
-.itinerary-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-
-.itinerary-content.open {
-  max-height: 400px;
-  transition: max-height 0.9s ease-in;
-}
-
-.location-icon {
-  color: #ada878;
-  font-size: 1rem; 
-}
-
-.toggle-icon {
-  transition: transform 0.3s ease;
-}
-
-.toggle-icon.expanded {
-  transform: rotate(180deg);
-}
-
-.itinerary-content {
-  padding-left: 40px; /* shift content slightly to the right */
-}
-.itinerary-content ul {
-  padding-left: 20px; /* extra indent for lists */
-}
-
-.image-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1050;
-}
-
-/* Square modal image */
-.image-modal .modal-content {
-  width: 1000px;       /* fixed square width */
-  height: 800px;      /* fixed square height */
-  object-fit: cover;  /* maintain aspect ratio, cover the square */
-  border-radius: 10px;
-}
-
-/* Close button */
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  background: rgba(192, 83, 5, 0.85); /* Updated to use #023a2c with 85% opacity */
-  border: none;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  z-index: 1100;
-}
-
-.close-btn:hover {
-  background: rgba(192, 83, 5, 0.9); /* Updated to use #023a2c with 90% opacity */
-}
-
-/* Scrollable area inside itinerary when too tall */
 .scrollable-activities {
   overflow-y: auto;
-  padding-right: 8px; /* avoid text hiding under scrollbar */
-  scrollbar-width: thin; /* Firefox */
+  padding-right: 8px;
+  scrollbar-width: thin;
   scrollbar-color: #ccc transparent;
 }
 
-/* Optional scrollbar style for Chrome, Edge, Safari */
 .scrollable-activities::-webkit-scrollbar {
   width: 6px;
 }
@@ -258,6 +144,7 @@ ul {
   border-radius: 3px;
 }
 
-.scrollable-activities::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
+.tour-meta-value {
+  overflow-wrap: anywhere;
+  line-height: 1.35;
 }

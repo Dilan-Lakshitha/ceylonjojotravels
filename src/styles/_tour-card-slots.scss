@@ -1,0 +1,269 @@
+/* Language-independent layout slots.
+   Tour card (.tc) visual styles live in tour-card.component.css */
+
+.tour-card-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .tour-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 400px));
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tour-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 400px));
+    gap: 32px;
+  }
+}
+
+.tour-card-grid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  min-width: 0;
+  max-width: 400px;
+  width: 100%;
+  align-self: stretch;
+  margin-inline: auto;
+}
+
+.tour-card-grid__status {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: none;
+}
+
+:host-context(app-tour-card),
+app-tour-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Destination card grid + premium .pdc styles live in
+   destination-card.component.css (ViewEncapsulation.None). */
+
+/* Page header / breadcrumb slots */
+.ph {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.ph__inner {
+  max-width: 42rem;
+  padding: 2rem 1rem;
+}
+
+.ph__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
+  line-height: 1.25;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.ph__crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  text-transform: none;
+}
+
+.ph__crumbs a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Tour stats — fixed equal cells */
+.tour-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 767.98px) {
+  .tour-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.ts-cell {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  text-align: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.ts-cell__icon {
+  color: #023a2c;
+  font-size: 1.5rem;
+}
+
+.ts-cell__label {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2;
+}
+
+.ts-cell__value {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #022d41;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Price box */
+.price-box {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.price-box__amount {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #023a2c;
+  line-height: 1.2;
+}
+
+.price-box__note {
+  font-size: 0.8rem;
+  color: #6b7280;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+/* Accordion panel — height animates with grid rows (no magic max-height) */
+.acc-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.acc-item:last-child {
+  border-bottom: 0;
+}
+
+.acc-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem;
+  align-items: start;
+  width: 100%;
+  padding: 0.9rem 0.55rem;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.acc-head:hover {
+  background: #f8faf9;
+}
+
+.acc-head__label {
+  min-width: 0;
+  overflow-wrap: break-word;
+  line-height: 1.35;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.acc-head__chevron {
+  display: inline-flex;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.acc-head__chevron.is-open {
+  transform: rotate(180deg);
+  color: #023a2c;
+}
+
+.acc-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.acc-body.is-open {
+  grid-template-rows: 1fr;
+}
+
+.acc-body__inner {
+  overflow: hidden;
+  padding: 0 0.5rem 0 1.75rem;
+  opacity: 0;
+  transition: opacity 0.25s ease, padding 0.35s ease;
+}
+
+.acc-body.is-open .acc-body__inner {
+  opacity: 1;
+  padding: 0 0.5rem 1.1rem 1.75rem;
+}
+
+/* Hero caption slots */
+.hero-slot__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 1.2;
+  max-height: 2.4em;
+  overflow-wrap: break-word;
+}
+
+.hero-slot__sub {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 1.45;
+  max-height: 4.35em;
+  overflow-wrap: break-word;
+}
+
+.hero-slot__cta {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

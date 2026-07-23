@@ -3,7 +3,7 @@
   <!-- IMAGE -->
   <div class="tour-image">
 
-    <img [src]="image" alt="" />
+    <img [src]="image" alt="" loading="lazy" width="800" height="480" />
 
     <!-- Overlay -->
     <div class="overlay"></div>
@@ -30,7 +30,7 @@
     <!-- Price -->
     <div class="price-badge">
       $ {{ (price/2) | number:'1.0-0' }}
-      <span>{{ t('card.perPerson') }}</span>
+      <span>/ {{ t('card.perPerson') }}</span>
     </div>
 
   </div>

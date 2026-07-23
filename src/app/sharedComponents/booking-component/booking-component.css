@@ -26,6 +26,17 @@
   border-radius: 0.25rem 0.25rem 0 0; 
 }
 
+.booking-kv {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.booking-kv__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+}
+
 .custom-toast {
   position: relative;
   margin: 10px 0;

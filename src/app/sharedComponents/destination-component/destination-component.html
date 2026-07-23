@@ -1,69 +1,116 @@
-<ng-container *transloco="let t; scope: 'destinations'; prefix: 'destinations'">
-
-    <!-- Destination Start -->
+﻿<ng-container *transloco="let t; scope: 'destinations'; prefix: 'destinations'">
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('title') }}</h6>
-                <h1>{{ t('intro') }}</h1>
+                <h6 class="text-primary i18n-section-eyebrow">{{ t('title') }}</h6>
+                <h1 class="i18n-section-title">{{ t('intro') }}</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="assets/img/destination-1.jpg" [attr.alt]="t('sigiriya.title')">
-                        <a class="destination-overlay text-white text-decoration-none" [routerLink]="toursLink">
-                            <h5 class="text-white">{{ t('sigiriya.title') }}</h5>
-                            <span>{{ t('sigiriya.desc') }}</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="assets/img/destination-2.jpg" [attr.alt]="t('ella.title')">
-                        <a class="destination-overlay text-white text-decoration-none" [routerLink]="toursLink">
-                            <h5 class="text-white">{{ t('ella.title') }}</h5>
-                            <span>{{ t('ella.desc') }}</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="assets/img/destination-3.jpg" [attr.alt]="t('yala.title')">
-                        <a class="destination-overlay text-white text-decoration-none" [routerLink]="toursLink">
-                            <h5 class="text-white">{{ t('yala.title') }}</h5>
-                            <span>{{ t('yala.desc') }}</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="assets/img/destination-4.jpg" [attr.alt]="t('kandy.title')">
-                        <a class="destination-overlay text-white text-decoration-none" [routerLink]="toursLink">
-                            <h5 class="text-white">{{ t('kandy.title') }}</h5>
-                            <span>{{ t('kandy.desc') }}</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="assets/img/destination-5.jpg" [attr.alt]="t('dambulla.title')">
-                        <a class="destination-overlay text-white text-decoration-none" [routerLink]="toursLink">
-                            <h5 class="text-white">{{ t('dambulla.title') }}</h5>
-                            <span>{{ t('dambulla.desc') }}</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="assets/img/destination-6.jpg" [attr.alt]="t('galle.title')">
-                        <a class="destination-overlay text-white text-decoration-none" [routerLink]="toursLink">
-                            <h5 class="text-white">{{ t('galle.title') }}</h5>
-                            <span>{{ t('galle.desc') }}</span>
-                        </a>
-                    </div>
-                </div>
+            <div class="dest-card-grid">
+                <app-destination-card
+                    image="assets/img/destination-1.jpg"
+                    [title]="t('sigiriya.title')"
+                    [subtitle]="t('sigiriya.subtitle')"
+                    [badge]="t('sigiriya.badge')"
+                    [alt]="t('sigiriya.alt')"
+                    [ctaLabel]="t('viewTours')"
+                    [featured]="true"
+                    [featuredLabel]="t('featured')"
+                    [wishlistLabel]="t('wishlist')"
+                    [routerLink]="toursLink"
+                    [highlights]="[
+                      { icon: 'fa-mountain', label: t('sigiriya.h1') },
+                      { icon: 'fa-tree', label: t('sigiriya.h2') },
+                      { icon: 'fa-sun', label: t('sigiriya.h3') }
+                    ]"
+                    (activate)="goTours()">
+                </app-destination-card>
+                <app-destination-card
+                    image="assets/img/destination-2.jpg"
+                    [title]="t('ella.title')"
+                    [subtitle]="t('ella.subtitle')"
+                    [badge]="t('ella.badge')"
+                    [alt]="t('ella.alt')"
+                    [ctaLabel]="t('viewTours')"
+                    [featuredLabel]="t('featured')"
+                    [wishlistLabel]="t('wishlist')"
+                    [routerLink]="toursLink"
+                    [highlights]="[
+                      { icon: 'fa-archway', label: t('ella.h1') },
+                      { icon: 'fa-train', label: t('ella.h2') },
+                      { icon: 'fa-hiking', label: t('ella.h3') }
+                    ]"
+                    (activate)="goTours()">
+                </app-destination-card>
+                <app-destination-card
+                    image="assets/img/destination-3.jpg"
+                    [title]="t('yala.title')"
+                    [subtitle]="t('yala.subtitle')"
+                    [badge]="t('yala.badge')"
+                    [alt]="t('yala.alt')"
+                    [ctaLabel]="t('viewTours')"
+                    [featured]="true"
+                    [featuredLabel]="t('featured')"
+                    [wishlistLabel]="t('wishlist')"
+                    [routerLink]="toursLink"
+                    [highlights]="[
+                      { icon: 'fa-paw', label: t('yala.h1') },
+                      { icon: 'fa-binoculars', label: t('yala.h2') },
+                      { icon: 'fa-sun', label: t('yala.h3') }
+                    ]"
+                    (activate)="goTours()">
+                </app-destination-card>
+                <app-destination-card
+                    image="assets/img/destination-4.jpg"
+                    [title]="t('kandy.title')"
+                    [subtitle]="t('kandy.subtitle')"
+                    [badge]="t('kandy.badge')"
+                    [alt]="t('kandy.alt')"
+                    [ctaLabel]="t('viewTours')"
+                    [featuredLabel]="t('featured')"
+                    [wishlistLabel]="t('wishlist')"
+                    [routerLink]="toursLink"
+                    [highlights]="[
+                      { icon: 'fa-landmark', label: t('kandy.h1') },
+                      { icon: 'fa-water', label: t('kandy.h2') },
+                      { icon: 'fa-leaf', label: t('kandy.h3') }
+                    ]"
+                    (activate)="goTours()">
+                </app-destination-card>
+                <app-destination-card
+                    image="assets/img/destination-5.jpg"
+                    [title]="t('dambulla.title')"
+                    [subtitle]="t('dambulla.subtitle')"
+                    [badge]="t('dambulla.badge')"
+                    [alt]="t('dambulla.alt')"
+                    [ctaLabel]="t('viewTours')"
+                    [featuredLabel]="t('featured')"
+                    [wishlistLabel]="t('wishlist')"
+                    [routerLink]="toursLink"
+                    [highlights]="[
+                      { icon: 'fa-monument', label: t('dambulla.h1') },
+                      { icon: 'fa-place-of-worship', label: t('dambulla.h2') },
+                      { icon: 'fa-mountain', label: t('dambulla.h3') }
+                    ]"
+                    (activate)="goTours()">
+                </app-destination-card>
+                <app-destination-card
+                    image="assets/img/destination-6.jpg"
+                    [title]="t('galle.title')"
+                    [subtitle]="t('galle.subtitle')"
+                    [badge]="t('galle.badge')"
+                    [alt]="t('galle.alt')"
+                    [ctaLabel]="t('viewTours')"
+                    [featuredLabel]="t('featured')"
+                    [wishlistLabel]="t('wishlist')"
+                    [routerLink]="toursLink"
+                    [highlights]="[
+                      { icon: 'fa-university', label: t('galle.h1') },
+                      { icon: 'fa-walking', label: t('galle.h2') },
+                      { icon: 'fa-sun', label: t('galle.h3') }
+                    ]"
+                    (activate)="goTours()">
+                </app-destination-card>
             </div>
         </div>
     </div>
-    <!-- Destination Start -->
 </ng-container>

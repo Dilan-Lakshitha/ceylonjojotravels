@@ -1,156 +1,218 @@
-<div class="navbar-color py-1 px-3" *transloco="let t; scope: 'common'; prefix: 'common'">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6 d-none d-lg-flex align-items-center">
-                <p class="mb-0 nav-link">
-                    <a href="mailto:ceylonjojotravels@gmail.com" class="text-decoration-none nav-link">
-                        <i class="fa fa-envelope mr-2"></i>
-                        ceylonjojotravels@gmail.com
-                    </a>
-                </p>
-                <p class="text-body px-3 mb-0">|</p>
-                <p class="mb-0 nav-link">
-                    <a href="tel:+447375612946" class="text-decoration-none nav-link">
-                        <i class="fa fa-phone-alt mr-2"></i>
-                        +44 7375 612946
-                    </a>
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-6 d-flex justify-content-between justify-content-lg-end align-items-center">
-                <div class="lang-pill d-flex flex-wrap">
-                    <button
-                        *ngFor="let lang of langs"
-                        type="button"
-                        class="lang-flag"
-                        [class.active]="activeLang === lang"
-                        (click)="changeLang(lang)"
-                        [title]="langTitle(lang)"
-                    >
-                        <img [src]="'https://flagcdn.com/w20/' + flagCode(lang) + '.png'" [alt]="lang">
-                    </button>
-                </div>
-                <div class="d-flex ml-2">
-                    <a class="btn btn-sm btn-square text-white mr-2" href="https://www.facebook.com/ceylonjojotravels/">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="btn btn-sm btn-square text-white mr-2"
-                        href="https://www.instagram.com/ceylon_jojo_travels">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="btn btn-sm btn-square text-white"
-                        href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
-                        target="_blank" rel="noopener">
-                        <i class="fab fa-tripadvisor"></i>
-                    </a>
-                </div>
-            </div>
+<div class="site-header" *transloco="let t; scope: 'common'; prefix: 'common'">
+  <!-- Desktop utility strip -->
+  <div class="site-topbar d-none d-lg-block">
+    <div class="container-fluid site-topbar__inner">
+      <div class="site-topbar__contact">
+        <a href="mailto:ceylonjojotravels@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          ceylonjojotravels@gmail.com
+        </a>
+        <span class="site-topbar__sep" aria-hidden="true">|</span>
+        <a href="tel:+447375612946">
+          <i class="fa fa-phone-alt" aria-hidden="true"></i>
+          +44 7375 612946
+        </a>
+      </div>
+      <div class="site-topbar__right">
+        <div class="lang-pill" role="listbox" [attr.aria-label]="t('nav.home')">
+          <button
+            *ngFor="let lang of langs"
+            type="button"
+            class="lang-flag"
+            [class.active]="activeLang === lang"
+            (click)="changeLang(lang)"
+            [title]="langTitle(lang)"
+            [attr.aria-label]="langTitle(lang)"
+            [attr.aria-pressed]="activeLang === lang"
+          >
+            <img [src]="'https://flagcdn.com/w20/' + flagCode(lang) + '.png'" [alt]="langTitle(lang)" width="20" height="14" />
+          </button>
         </div>
+        <div class="site-social">
+          <a href="https://www.facebook.com/ceylonjojotravels/" [attr.aria-label]="'Facebook'" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/ceylon_jojo_travels" [attr.aria-label]="'Instagram'" target="_blank" rel="noopener">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
+            [attr.aria-label]="'TripAdvisor'"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Main nav -->
+  <nav class="site-nav navbar navbar-expand-lg">
+    <a [routerLink]="homeLink" class="site-brand">
+      <img src="assets/img/logos/2.png" alt="Ceylon JOJO Travels" width="48" height="48" />
+      <span class="site-brand__text">
+        <span class="site-brand__name">CEYLON JOJO</span>
+        <span class="site-brand__sub">TRAVElS</span>
+      </span>
+    </a>
+
+    <div class="site-nav__actions">
+      <!-- Compact language control (mobile) -->
+      <div class="lang-compact d-lg-none" [class.is-open]="langMenuOpen">
+        <button
+          type="button"
+          class="lang-compact__btn"
+          (click)="toggleLangMenu()"
+          [attr.aria-expanded]="langMenuOpen"
+          [attr.aria-label]="langTitle(activeLang)"
+        >
+          <img
+            [src]="'https://flagcdn.com/w20/' + flagCode(activeLang) + '.png'"
+            [alt]="langTitle(activeLang)"
+            width="22"
+            height="16"
+          />
+          <span>{{ activeLang | uppercase }}</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="lang-compact__menu" *ngIf="langMenuOpen" role="listbox">
+          <button
+            *ngFor="let lang of langs"
+            type="button"
+            class="lang-compact__item"
+            [class.active]="activeLang === lang"
+            (click)="selectLang(lang)"
+          >
+            <img [src]="'https://flagcdn.com/w20/' + flagCode(lang) + '.png'" [alt]="" width="20" height="14" />
+            <span>{{ langTitle(lang) }}</span>
+          </button>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="site-toggler navbar-toggler"
+        (click)="toggleNav()"
+        [attr.aria-expanded]="navOpen"
+        [attr.aria-controls]="'navbarCollapse'"
+        [attr.aria-label]="t('nav.home')"
+      >
+        <span class="site-toggler__icon" [class.is-open]="navOpen" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse site-nav__collapse" [class.show]="navOpen" id="navbarCollapse">
+      <div class="navbar-nav site-nav__links ml-auto">
+        <a [routerLink]="homeLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link" (click)="closeNav()">{{ t('nav.home') }}</a>
+        <a [routerLink]="toursLink" routerLinkActive="active" class="nav-item nav-link" (click)="closeNav()">{{ t('nav.tours') }}</a>
+        <a [routerLink]="servicesLink" routerLinkActive="active" class="nav-item nav-link" (click)="closeNav()">{{ t('nav.services') }}</a>
+        <a [routerLink]="aboutLink" routerLinkActive="active" class="nav-item nav-link" (click)="closeNav()">{{ t('nav.about') }}</a>
+        <a [routerLink]="contactLink" routerLinkActive="active" class="nav-item nav-link" (click)="closeNav()">{{ t('nav.contact') }}</a>
+      </div>
+
+      <div class="site-nav__mobile-meta d-lg-none">
+        <a href="tel:+447375612946" class="site-nav__phone">
+          <i class="fa fa-phone-alt" aria-hidden="true"></i>
+          +44 7375 612946
+        </a>
+        <div class="site-social site-social--menu">
+          <a href="https://www.facebook.com/ceylonjojotravels/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ceylon_jojo_travels" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/447375612946" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </div>
 
 <app-scroll-to-to-component></app-scroll-to-to-component>
-<a href="https://wa.me/447375612946" target="_blank" rel="noopener" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
+<a
+  href="https://wa.me/447375612946"
+  target="_blank"
+  rel="noopener"
+  class="whatsapp-float"
+  *transloco="let t; scope: 'common'; prefix: 'common'"
+  [attr.aria-label]="t('btn.whatsapp')"
+>
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
-
-<div class="position-relative nav-bar p-0" *transloco="let t; scope: 'common'; prefix: 'common'">
-    <div class="position-relative p-0 px-lg-3" style="z-index: 100;">
-        <nav class="navbar navbar-expand-lg navbar-color navbar-light shadow-lg  py-lg-0 ">
-            <a [routerLink]="homeLink" class="navbar-brand">
-                <h1 class="m-0 nav-link"><span class="text-white">
-                        <img src="assets/img/logos/2.png" alt="Logo" style="width: 70px; height: 70px;">
-                        CEYLON JOJO TRAVE</span>lS</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                <div class="navbar-nav ml-auto py-0">
-                    <a [routerLink]="homeLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">{{ t('nav.home') }}</a>
-                    <a [routerLink]="toursLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.tours') }}</a>
-                    <a [routerLink]="servicesLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.services') }}</a>
-                    <a [routerLink]="aboutLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.about') }}</a>
-                    <a [routerLink]="contactLink" routerLinkActive="active" class="nav-item nav-link">{{ t('nav.contact') }}</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-</div>
 
 <router-outlet></router-outlet>
 
 <div class="container-fluid bg-primary text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" *transloco="let t; scope: 'common'; prefix: 'common'">
-    <div class="row pt-5">
-        <div class="col-lg-3 col-md-6">
-            <a class="navbar-brand" [routerLink]="homeLink">
-                <h5 class=""><span class="text-white">CEYLON JOJO TRAVElS</span></h5>
-            </a>
-            <p>{{ t('footer.tagline') }}</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">{{ t('footer.follow') }}</h6>
-            <div class="d-flex justify-content-start">
-                <a class="btn nav-link btn-square mr-2" href="https://www.facebook.com/ceylonjojotravels/"
-                    target="_blank" rel="noopener">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="btn nav-link btn-square nav-link px-3" href="https://www.instagram.com/ceylon_jojo_travels"><i
-                        class="fab fa-instagram"></i></a>
-                <a class="btn nav-link btn-square mr-2"
-                    href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
-                    target="_blank" rel="noopener">
-                    <i class="fab fa-tripadvisor"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{ t('footer.services') }}</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" [routerLink]="aboutLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.about') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="destinationsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.destination') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{ t('footer.menu') }}</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
-                <a class="text-white-50 mb-2" [routerLink]="testimonialsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.testimonials') }}</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">{{ t('footer.contact') }}</h5>
-            <p><i class="fa fa-map-marker-alt mr-2"></i> No 111/3 , Dediyawala Rd, Maha Waskaduwa ,Waskaduwa, Kalutara
-                North, Sri Lanka</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+44 73 75 612 946</p>
-            <p><i class="fa fa-envelope mr-2"></i>ceylonjojotravels@gmail.com</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">{{ t('footer.newsletter') }}</h6>
-            <div class="w-100">
-                <div class="input-group">
-                    <input type="text" class="form-control border-light" style="padding: 25px;"
-                        [placeholder]="t('footer.emailPlaceholder')">
-                    <div class="input-group-append">
-                        <button [routerLink]="contactLink" class="btn btn-primary px-3">{{ t('footer.signup') }}</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="row pt-5">
+    <div class="col-lg-3 col-md-6">
+      <a class="navbar-brand" [routerLink]="homeLink">
+        <h5><span class="text-white">CEYLON JOJO TRAVElS</span></h5>
+      </a>
+      <p>{{ t('footer.tagline') }}</p>
+      <h6 class="text-white i18n-section-eyebrow mt-4 mb-3">{{ t('footer.follow') }}</h6>
+      <div class="d-flex justify-content-start">
+        <a class="btn nav-link btn-square mr-2" href="https://www.facebook.com/ceylonjojotravels/" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn nav-link btn-square nav-link px-3" href="https://www.instagram.com/ceylon_jojo_travels"><i class="fab fa-instagram"></i></a>
+        <a
+          class="btn nav-link btn-square mr-2"
+          href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-tripadvisor"></i>
+        </a>
+      </div>
     </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h5 class="text-white i18n-section-eyebrow mb-4">{{ t('footer.services') }}</h5>
+      <div class="d-flex flex-column justify-content-start">
+        <a class="text-white-50 mb-2" [routerLink]="aboutLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.about') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="destinationsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.destination') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h5 class="text-white i18n-section-eyebrow mb-4">{{ t('footer.menu') }}</h5>
+      <div class="d-flex flex-column justify-content-start">
+        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
+        <a class="text-white-50 mb-2" [routerLink]="testimonialsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.testimonials') }}</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h5 class="text-white i18n-section-eyebrow mb-4">{{ t('footer.contact') }}</h5>
+      <p><i class="fa fa-map-marker-alt mr-2"></i> No 111/3 , Dediyawala Rd, Maha Waskaduwa ,Waskaduwa, Kalutara North, Sri Lanka</p>
+      <p><i class="fa fa-phone-alt mr-2"></i>+44 73 75 612 946</p>
+      <p><i class="fa fa-envelope mr-2"></i>ceylonjojotravels@gmail.com</p>
+      <h6 class="text-white i18n-section-eyebrow mt-4 mb-3">{{ t('footer.newsletter') }}</h6>
+      <div class="w-100">
+        <div class="input-group">
+          <input type="text" class="form-control border-light" style="padding: 25px;" [placeholder]="t('footer.emailPlaceholder')" />
+          <div class="input-group-append">
+            <button [routerLink]="contactLink" class="btn btn-primary px-3">{{ t('footer.signup') }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-    style="border-color: rgba(256, 256, 256, .1) !important;" *transloco="let t; scope: 'common'; prefix: 'common'">
-    <div class="row">
-        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white-50">{{ t('footer.copyright') }}</p>
-        </div>
-        <div class="col-lg-6 text-center text-md-right">
-            <p class="m-0 text-white-50">{{ t('footer.designed') }}</p>
-        </div>
+<div
+  class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+  style="border-color: rgba(256, 256, 256, .1) !important;"
+  *transloco="let t; scope: 'common'; prefix: 'common'"
+>
+  <div class="row">
+    <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+      <p class="m-0 text-white-50">{{ t('footer.copyright') }}</p>
     </div>
+    <div class="col-lg-6 text-center text-md-right">
+      <p class="m-0 text-white-50">{{ t('footer.designed') }}</p>
+    </div>
+  </div>
 </div>

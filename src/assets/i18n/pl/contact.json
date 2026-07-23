@@ -29,5 +29,6 @@
   "messages.success": "Twoja wiadomość została wysłana!",
   "messages.error": "Błąd wysyłania. Spróbuj później.",
   "toast.success": "Wiadomość wysłana!",
-  "toast.error": "Nie udało się wysłać wiadomości"
+  "toast.error": "Nie udało się wysłać wiadomości",
+  "form.sending": "Wysyłanie..."
 }

@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ceylonjojotravels.com/sitemap.xml
+# Booking funnels — all localized segments
+Disallow: /en/booking/
+Disallow: /de/buchung/
+Disallow: /fr/reservation/
+Disallow: /it/prenotazione/
+Disallow: /es/reserva/
+Disallow: /pl/rezerwacja/
+Disallow: /ru/bronirovanie/
+Disallow: /booking/
+
+Sitemap: https://ceylonjojotravels.com/sitemap-index.xml

@@ -1,27 +1,30 @@
 import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, inject } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Meta, Title } from '@angular/platform-browser';
 import { register } from 'swiper/element/bundle';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { SeoService } from '../../i18n/seo.service';
+import { LocalizedRouterService } from '../../i18n/localized-router.service';
+import { AppLang, isAppLang } from '../../i18n/language.constants';
 register();
 
 @Component({
   selector: 'app-resturant-component',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, TranslocoModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './resturant-component.html',
   styleUrl: './resturant-component.css',
 })
-export class ResturantComponent {
+export class ResturantComponent implements OnInit {
   packages: any[] = [];
+  private readonly seo = inject(SeoService);
+  private readonly transloco = inject(TranslocoService);
+  private readonly localizedRouter = inject(LocalizedRouterService);
 
   constructor(
-    private title: Title,
-    private meta: Meta,
     private http: HttpClient,
     @Inject(PLATFORM_ID) private platformId: Object,
   ) {}
@@ -30,17 +33,12 @@ export class ResturantComponent {
     if (isPlatformBrowser(this.platformId)) {
       register();
     }
-    this.title.setTitle(
-      'Ceylon JOJO Beach Restaurant | Seafood & Sri Lankan Food in Waskaduwa',
-    );
-
-    this.meta.updateTag({
-      name: 'description',
-      content:
-        'Enjoy authentic Sri Lankan cuisine, fresh seafood, and private dining experiences at our luxury restaurant in Sri Lanka.',
-    });
+    const lang = this.localizedRouter.currentLang();
+    const safeLang: AppLang = isAppLang(lang) ? lang : 'en';
+    this.transloco.load(`common/${lang}`).subscribe();
+    this.transloco.load(`seo/${lang}`).subscribe();
+    void this.seo.applyPageSeo({ routeId: 'restaurant', lang: safeLang });
     this.loadPackages();
-    this.addStructuredData();
   }
 
   loadPackages() {
@@ -49,24 +47,6 @@ export class ResturantComponent {
       .subscribe((data) => {
         this.packages = data;
       });
-  }
-
-  addStructuredData() {
-    if (isPlatformBrowser(this.platformId)) {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Event',
-        name: 'Private Event Packages - CEYLON JOJO TRAVElS',
-        location: {
-          '@type': 'Place',
-          name: 'Sri Lanka',
-        },
-      });
-
-      document.head.appendChild(script);
-    }
   }
 
   selectedCategory = 'seafood';
