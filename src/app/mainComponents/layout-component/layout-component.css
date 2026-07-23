@@ -157,7 +157,10 @@ body {
 
 .lang-compact__btn img {
   display: block;
+  width: 20px;
+  height: 15px;
   border-radius: 2px;
+  object-fit: cover;
 }
 
 .lang-compact__btn i {
@@ -196,6 +199,13 @@ body {
   font-weight: 600;
   text-align: left;
   cursor: pointer;
+}
+
+.lang-compact__item img {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .lang-compact__item:hover,
@@ -372,8 +382,9 @@ body {
 
 .lang-flag img {
   width: 20px;
-  height: 14px;
+  height: 15px;
   display: block;
+  object-fit: cover;
 }
 
 .lang-flag:hover {

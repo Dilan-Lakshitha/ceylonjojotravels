@@ -25,7 +25,13 @@
             [attr.aria-label]="langTitle(lang)"
             [attr.aria-pressed]="activeLang === lang"
           >
-            <img [src]="'https://flagcdn.com/w20/' + flagCode(lang) + '.png'" [alt]="langTitle(lang)" width="20" height="14" />
+            <img
+              [src]="'https://flagcdn.com/40x30/' + flagCode(lang) + '.png'"
+              [attr.srcset]="'https://flagcdn.com/40x30/' + flagCode(lang) + '.png 1x, https://flagcdn.com/80x60/' + flagCode(lang) + '.png 2x'"
+              [alt]="langTitle(lang)"
+              width="20"
+              height="15"
+            />
           </button>
         </div>
         <div class="site-social">
@@ -69,10 +75,11 @@
           [attr.aria-label]="langTitle(activeLang)"
         >
           <img
-            [src]="'https://flagcdn.com/w20/' + flagCode(activeLang) + '.png'"
+            [src]="'https://flagcdn.com/40x30/' + flagCode(activeLang) + '.png'"
+            [attr.srcset]="'https://flagcdn.com/40x30/' + flagCode(activeLang) + '.png 1x, https://flagcdn.com/80x60/' + flagCode(activeLang) + '.png 2x'"
             [alt]="langTitle(activeLang)"
-            width="22"
-            height="16"
+            width="20"
+            height="15"
           />
           <span>{{ activeLang | uppercase }}</span>
           <i class="fas fa-chevron-down" aria-hidden="true"></i>
@@ -85,7 +92,13 @@
             [class.active]="activeLang === lang"
             (click)="selectLang(lang)"
           >
-            <img [src]="'https://flagcdn.com/w20/' + flagCode(lang) + '.png'" [alt]="" width="20" height="14" />
+            <img
+              [src]="'https://flagcdn.com/40x30/' + flagCode(lang) + '.png'"
+              [attr.srcset]="'https://flagcdn.com/40x30/' + flagCode(lang) + '.png 1x, https://flagcdn.com/80x60/' + flagCode(lang) + '.png 2x'"
+              alt=""
+              width="20"
+              height="15"
+            />
             <span>{{ langTitle(lang) }}</span>
           </button>
         </div>
