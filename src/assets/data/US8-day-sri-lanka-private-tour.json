@@ -5,11 +5,12 @@
     "tourType": "Round Tour",
     "overview": "Experience the best of Sri Lanka in 8 days with our private tour package, including cultural sites, wildlife safaris, and beach relaxation.",
     "images": [
-        "assets/img/package-6.jpeg",
-        "assets/img/package-6-1.jpeg",
-        "assets/img/package-6-2.jpeg",
-        "assets/img/package-6-3.jpeg",
-        "assets/img/package-6-4.jpeg"
+        "assets/img/eightdaysTours/1.jpeg",
+        "assets/img/eightdaysTours/2.jpeg",
+        "assets/img/eightdaysTours/3.jpeg",
+        "assets/img/eightdaysTours/4.jpeg",
+        "assets/img/eightdaysTours/5.jpeg",
+        "assets/img/eightdaysTours/6.jpeg"
     ],
     "price": {
         "1": 1490.00,

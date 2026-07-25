@@ -1,19 +1,7 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './mainComponents/layout-component/layout-component';
-import { HomePageComponent } from './mainComponents/home-page-component/home-page-component';
-import { AboutComponent } from './mainComponents/about-component/about-component';
-import { ServiceComponent } from './mainComponents/service-component/service-component';
-import { TourPackages } from './mainComponents/tour-packages/tour-packages';
-import { BookingComponent } from './sharedComponents/booking-component/booking-component';
-import { ContactUsComponent } from './sharedComponents/contact-us-component/contact-us-component';
-import { DestinationComponent } from './sharedComponents/destination-component/destination-component';
-import { Testimonial } from './sharedComponents/testimonial/testimonial';
-import { TravelGuides } from './sharedComponents/travel-guides/travel-guides';
-import { ResturantComponent } from './mainComponents/resturant-component/resturant-component';
-import { TourDetailPageComponent } from './mainComponents/tour-detail-page/tour-detail-page.component';
 import { langGuard } from './i18n/lang.guard';
 import { canonicalSegmentGuard } from './i18n/canonical-segment.guard';
-import { BookingSuccessPageComponent } from './mainComponents/booking-success-page/booking-success-page.component';
 import {
   createBookingMatcher,
   createBookingSuccessMatcher,
@@ -54,73 +42,101 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: HomePageComponent,
+        loadComponent: () =>
+          import('./mainComponents/home-page-component/home-page-component').then(
+            (m) => m.HomePageComponent,
+          ),
         data: { routeId: 'home' },
       },
       {
         matcher: createSegmentMatcher('about'),
-        component: AboutComponent,
+        loadComponent: () =>
+          import('./mainComponents/about-component/about-component').then((m) => m.AboutComponent),
         canActivate: segmentGuards,
         data: { routeId: 'about' },
       },
       {
         matcher: createSegmentMatcher('services'),
-        component: ServiceComponent,
+        loadComponent: () =>
+          import('./mainComponents/service-component/service-component').then(
+            (m) => m.ServiceComponent,
+          ),
         canActivate: segmentGuards,
         data: { routeId: 'services' },
       },
       {
         matcher: createTourDetailMatcher(),
-        component: TourDetailPageComponent,
+        loadComponent: () =>
+          import('./mainComponents/tour-detail-page/tour-detail-page.component').then(
+            (m) => m.TourDetailPageComponent,
+          ),
         canActivate: segmentGuards,
         resolve: { tourId: tourIdResolver },
         data: { routeId: 'tours' },
       },
       {
         matcher: createTourListMatcher(),
-        component: TourPackages,
+        loadComponent: () =>
+          import('./mainComponents/tour-packages/tour-packages').then((m) => m.TourPackages),
         canActivate: segmentGuards,
         data: { routeId: 'tours' },
       },
       {
         matcher: createSegmentMatcher('destinations'),
-        component: DestinationComponent,
+        loadComponent: () =>
+          import('./sharedComponents/destination-component/destination-component').then(
+            (m) => m.DestinationComponent,
+          ),
         canActivate: segmentGuards,
         data: { routeId: 'destinations' },
       },
       {
         matcher: createBookingSuccessMatcher(),
-        component: BookingSuccessPageComponent,
+        loadComponent: () =>
+          import('./mainComponents/booking-success-page/booking-success-page.component').then(
+            (m) => m.BookingSuccessPageComponent,
+          ),
         canActivate: segmentGuards,
         data: { routeId: 'bookingSuccess' },
       },
       {
         matcher: createBookingMatcher(),
-        component: BookingComponent,
+        loadComponent: () =>
+          import('./sharedComponents/booking-component/booking-component').then(
+            (m) => m.BookingComponent,
+          ),
         canActivate: segmentGuards,
         data: { routeId: 'booking' },
       },
       {
         matcher: createSegmentMatcher('contact'),
-        component: ContactUsComponent,
+        loadComponent: () =>
+          import('./sharedComponents/contact-us-component/contact-us-component').then(
+            (m) => m.ContactUsComponent,
+          ),
         canActivate: segmentGuards,
         data: { routeId: 'contact' },
       },
       {
         matcher: createSegmentMatcher('testimonials'),
-        component: Testimonial,
+        loadComponent: () =>
+          import('./sharedComponents/testimonial/testimonial').then((m) => m.Testimonial),
         canActivate: segmentGuards,
         data: { routeId: 'testimonials' },
       },
       {
         matcher: createSegmentMatcher('guides'),
-        component: TravelGuides,
+        loadComponent: () =>
+          import('./sharedComponents/travel-guides/travel-guides').then((m) => m.TravelGuides),
         canActivate: segmentGuards,
         data: { routeId: 'guides' },
       },
       {
         matcher: createSegmentMatcher('restaurant'),
-        component: ResturantComponent,
+        loadComponent: () =>
+          import('./mainComponents/resturant-component/resturant-component').then(
+            (m) => m.ResturantComponent,
+          ),
         canActivate: segmentGuards,
         data: { routeId: 'restaurant' },
       },

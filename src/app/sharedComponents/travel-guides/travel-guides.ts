@@ -19,7 +19,7 @@ export class TravelGuides implements OnInit {
 
   guides = [
     { name: 'Danula Nimneth', country: 'United Kingdom', image: 'assets/img/Team/1.jpg' },
-    { name: 'Dilan Lakshitha', country: 'Sri Lanka', image: 'assets/img/Team/2.png' },
+    { name: 'Dilan Lakshitha', country: 'Sri Lanka', image: 'assets/img/Team/2.jpg' },
     { name: 'Samith Suranga', country: 'Italy', image: 'assets/img/Team/3.jpg' },
     { name: 'Yohan Malshika', country: 'Malaysia', image: 'assets/img/Team/4.jpg' },
   ];

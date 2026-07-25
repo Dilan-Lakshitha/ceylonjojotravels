@@ -1,22 +1,22 @@
-{
-    "name": "4-day-sri-lanka-tour",
-    "title": "Sri Lanka Four Days Tour",
-    "duration": "Four Days",
-    "tourType": "Round Tour",
-    "overview": "Experience the best of Sri Lanka in 4 days covering Sigiriya, Kandy, Ella and Yala with premium 4-star accommodation and private transport.",
-    "images": [
-        "assets/img/5daysTours/dp8fjrahvepdlhdudxj0.jpg",
-        "assets/img/5daysTours/m5mz7zqwjql44ydc4wyl.jpg",
-        "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
-        "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg",
-        "assets/img/5daysTours/slqwoimy5yhfgcicn8ob.jpg"
-    ],
-    "price": {
-        "1": 790.00,
-        "2": 1300.00,
-        "3": 1790.00,
-        "4": 1980.00,
-        "5": 2230.00,
-        "6": 2530.00
-    }
+﻿{
+    "name":  "4-day-sri-lanka-tour",
+    "title":  "Sri Lanka Four Days Tour",
+    "duration":  "Four Days",
+    "tourType":  "Round Tour",
+    "overview":  "Experience the best of Sri Lanka in 4 days covering Sigiriya, Kandy, Ella and Yala with premium 4-star accommodation and private transport.",
+    "images":  [
+                   "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
+                   "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg",
+                   "assets/img/5daysTours/xj7qybc2bk5bwnxdkubp.jpg",
+                   "assets/img/5daysTours/9.jpg",
+                   "assets/img/5daysTours/14.jpg"
+               ],
+    "price":  {
+                  "1":  790.00,
+                  "2":  1300.00,
+                  "3":  1790.00,
+                  "4":  1980.00,
+                  "5":  2230.00,
+                  "6":  2530.00
+              }
 }

@@ -58,7 +58,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "2-day-ella-yala-private-tour-sri-lanka",
-      "image": "assets/img/5daysTours/24.jpg",
+      "image": "assets/img/2daysTours/1.jpeg",
       "routerLink": "/2-day-ella-yala-private-tour-sri-lanka",
       "isBestseller": true,
       "isLimited": true
@@ -70,7 +70,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "image": "assets/img/package-3.jpg",
+      "image": "assets/img/2daysTours/7.jpg",
       "routerLink": "/2-day-ella-kandy-private-tour-sri-lanka",
       "isBestseller": false,
       "isLimited": false
@@ -82,7 +82,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "4-day-sri-lanka-tour",
-      "image": "assets/img/package-8.jpeg",
+      "image": "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
       "routerLink": "/4-day-sri-lanka-tour",
       "isBestseller": false,
       "isLimited": false
@@ -94,7 +94,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "5-day-sri-lanka-tour",
-      "image": "assets/img/package-4.jpeg",
+      "image": "assets/img/5daysTours/beqnuxidbmckapjcag2m.jpg",
       "routerLink": "/5-day-sri-lanka-tour",
       "isBestseller": false,
       "isLimited": true
@@ -106,7 +106,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "6-day-sri-lanka-private-tour",
-      "image": "assets/img/package-7.jpeg",
+      "image": "assets/img/SixdaysTous/1.jpg",
       "routerLink": "/6-day-sri-lanka-private-tour",
       "isBestseller": true,
       "isLimited": true
@@ -118,7 +118,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "7-day-sri-lanka-tour",
-      "image": "assets/img/package-1.jpeg",
+      "image": "assets/img/7daystour/2024-07-27.jpg",
       "routerLink": "/7-day-sri-lanka-tour",
       "isBestseller": true,
       "isLimited": true
@@ -130,7 +130,7 @@
       "persons": "1-20 Persons",
       "rating": 5,
       "filecode": "10-day-sri-lanka-tour",
-      "image": "assets/img/package-2.jpg",
+      "image": "assets/img/7daystour/lzurk0uk82qqjh6soonh.jpg",
       "routerLink": "/10-day-sri-lanka-tour",
       "isBestseller": false,
       "isLimited": true
