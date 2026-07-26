@@ -113,21 +113,21 @@
                     </div>
                 </div>
             </div>
-            <!-- 5. Panorama -->
+            <!-- 5. Culture / highlands / coast collage -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 4">
                 <picture>
                     <source
                       type="image/webp"
-                      srcset="assets/img/carousel/hero-3-panorama-640.webp 640w, assets/img/carousel/hero-3-panorama-800.webp 800w"
+                      srcset="assets/img/carousel/hero-3-panorama-640.webp 640w, assets/img/carousel/hero-3-panorama-960.webp 960w, assets/img/carousel/hero-3-panorama-1280.webp 1280w, assets/img/carousel/hero-3-panorama-1600.webp 1600w, assets/img/carousel/hero-3-panorama-1920.webp 1920w"
                       sizes="100vw">
                     <img
-                      class="w-100"
-                      src="assets/img/carousel/hero-3-panorama-800.jpg"
-                      srcset="assets/img/carousel/hero-3-panorama-640.jpg 640w, assets/img/carousel/hero-3-panorama-800.jpg 800w"
+                      class="w-100 hero-collage"
+                      src="assets/img/carousel/hero-3-panorama-1280.jpg"
+                      srcset="assets/img/carousel/hero-3-panorama-640.jpg 640w, assets/img/carousel/hero-3-panorama-960.jpg 960w, assets/img/carousel/hero-3-panorama-1280.jpg 1280w, assets/img/carousel/hero-3-panorama-1600.jpg 1600w, assets/img/carousel/hero-3-panorama-1920.jpg 1920w"
                       sizes="100vw"
-                      alt="Sri Lanka private tour panoramic landscape"
-                      width="800"
-                      height="298"
+                      alt="Sri Lanka highlights: Sigiriya, tea country, Kandy temple elephants and Galle lighthouse"
+                      width="1920"
+                      height="720"
                       loading="lazy"
                       decoding="async">
                 </picture>
@@ -139,21 +139,21 @@
                     </div>
                 </div>
             </div>
-            <!-- 6. Culture / temple -->
+            <!-- 6. Sigiriya collage -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 5">
                 <picture>
                     <source
                       type="image/webp"
-                      srcset="assets/img/carousel/hero-6-temple-640.webp 640w, assets/img/carousel/hero-6-temple-800.webp 800w"
+                      srcset="assets/img/carousel/hero-6-temple-640.webp 640w, assets/img/carousel/hero-6-temple-960.webp 960w, assets/img/carousel/hero-6-temple-1280.webp 1280w, assets/img/carousel/hero-6-temple-1600.webp 1600w, assets/img/carousel/hero-6-temple-1920.webp 1920w"
                       sizes="100vw">
                     <img
-                      class="w-100"
-                      src="assets/img/carousel/hero-6-temple-800.jpg"
-                      srcset="assets/img/carousel/hero-6-temple-640.jpg 640w, assets/img/carousel/hero-6-temple-800.jpg 800w"
+                      class="w-100 hero-collage"
+                      src="assets/img/carousel/hero-6-temple-1280.jpg"
+                      srcset="assets/img/carousel/hero-6-temple-640.jpg 640w, assets/img/carousel/hero-6-temple-960.jpg 960w, assets/img/carousel/hero-6-temple-1280.jpg 1280w, assets/img/carousel/hero-6-temple-1600.jpg 1600w, assets/img/carousel/hero-6-temple-1920.jpg 1920w"
                       sizes="100vw"
-                      alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS"
-                      width="800"
-                      height="603"
+                      alt="Sigiriya Lion Rock fortress: panoramic views, water gardens, lion paws and summit climb"
+                      width="1920"
+                      height="720"
                       loading="lazy"
                       decoding="async">
                 </picture>
@@ -309,7 +309,7 @@
 <div id="packages" class="container-fluid bg-light" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container pt-5 ">
         <div class="text-center">
-            <h6 class="text-primary i18n-section-eyebrow">{{ t('packages.header') }}</h6>
+            <p class="text-primary i18n-section-eyebrow mb-2">{{ t('packages.header') }}</p>
             <h2 class="i18n-section-title">{{ t('packages.homeTitle') }}</h2>
             <p class="text-center mb-3">
                 {{ t('packages.homeSubtitle') }}
@@ -373,7 +373,7 @@
             <!-- Text Section -->
             <div class="col-lg-6 pb-lg-5">
                 <div class="about-text bg-white  p-lg-5 my-lg-5">
-                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('eyebrow') }}</h6>
+                    <p class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">{{ t('eyebrow') }}</p>
                     <h2 class="mb-3">{{ t('heading') }}</h2>
 
                     <p>{{ t('intro.p1') }}</p>
@@ -474,11 +474,11 @@
 
         <!-- SEO Optimized Heading -->
         <div class="text-center mb-4 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('homeServices.eyebrow') }}</h6>
+            <p class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">{{ t('homeServices.eyebrow') }}</p>
             <h2 class="mb-3" itemprop="name">
                 {{ t('homeServices.heading') }}
             </h2>
-            <p class="text-muted mx-auto" style="max-width: 700px;" itemprop="description">
+            <p class="home-muted mx-auto" style="max-width: 700px;" itemprop="description">
                 {{ t('homeServices.intro') }}
             </p>
         </div>
@@ -542,7 +542,7 @@
 <div class="container-fluid" *transloco="let t; scope: 'home'; prefix: 'home'">
     <div class="container pb-3">
         <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('team.eyebrow') }}</h6>
+            <p class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">{{ t('team.eyebrow') }}</p>
             <h2>{{ t('team.heading') }}</h2>
         </div>
         <div class="row">
@@ -554,13 +554,12 @@
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <h5 class="text-truncate">Danula Nimneth</h5>
+                        <h3 class="h5 text-truncate mb-1">Danula Nimneth</h3>
                         <p class="m-0">{{ t('team.role.owner') }}</p>
                         <p class="m-0">United Kingdom</p>
                         <p class="m-0">
-                            <a href="https://wa.me/+447375612946" target="_blank"
-                                style="color: #25D366; text-decoration: none;">
-                                <i class="fab fa-whatsapp"></i> +44 7375 612946
+                            <a class="team-whatsapp" href="https://wa.me/+447375612946" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> +44 7375 612946
                             </a>
                         </p>
                     </div>
@@ -574,13 +573,12 @@
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <h5 class="text-truncate">Dilan Lakshitha</h5>
+                        <h3 class="h5 text-truncate mb-1">Dilan Lakshitha</h3>
                         <p class="m-0">{{ t('team.role.owner') }}</p>
                         <p class="m-0">Sri Lanka</p>
                         <p class="m-0">
-                            <a href="https://wa.me/94714293585" target="_blank"
-                                style="color: #25D366; text-decoration: none;">
-                                <i class="fab fa-whatsapp"></i> +94 71 429 3585
+                            <a class="team-whatsapp" href="https://wa.me/94714293585" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> +94 71 429 3585
                             </a>
                         </p>
                     </div>
@@ -594,13 +592,12 @@
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <h5 class="text-truncate">Samith Suranga</h5>
+                        <h3 class="h5 text-truncate mb-1">Samith Suranga</h3>
                         <p class="m-0">{{ t('team.role.consultant') }}</p>
                         <p class="m-0">Italy</p>
                         <p class="m-0">
-                            <a href="https://wa.me/393802621167" target="_blank"
-                                style="color: #25D366; text-decoration: none;">
-                                <i class="fab fa-whatsapp"></i> +39 380 262 1167
+                            <a class="team-whatsapp" href="https://wa.me/393802621167" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> +39 380 262 1167
                             </a>
                         </p>
                     </div>
@@ -614,13 +611,12 @@
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <h5 class="text-truncate">Yohan Malshika</h5>
+                        <h3 class="h5 text-truncate mb-1">Yohan Malshika</h3>
                         <p class="m-0">{{ t('team.role.consultant') }}</p>
                         <p class="m-0">Malaysia</p>
                         <p class="m-0">
-                            <a href="https://wa.me/60175047956" target="_blank"
-                                style="color: #25D366; text-decoration: none;">
-                                <i class="fab fa-whatsapp"></i> +60 17-504 7956
+                            <a class="team-whatsapp" href="https://wa.me/60175047956" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> +60 17-504 7956
                             </a>
                         </p>
                     </div>
