@@ -5,55 +5,64 @@
     [crumbs]="[{ label: homeLabel, link: homeLink }, { label: t('header.title') }]">
 </app-page-header>
 
-<!-- About Start -->
-<div class="container-fluid py-5">
-    <div class="container pt-5">
-        <div class="row">
-            <!-- Image Section -->
-            <div class="col-lg-5" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-80" src="assets/img/5daysTours/6.jpeg"
-                        style="object-fit: cover;" [attr.alt]="t('img.mainAlt')">
-                </div>
-            </div>
-
-            <!-- Text Section -->
-            <div class="col-lg-6 pb-lg-5">
-                <div class="about-text bg-white  p-lg-5 my-lg-5">
-                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('eyebrow') }}</h6>
-                    <h1 class="mb-3">{{ t('heading') }}</h1>
-
-                    <p>
-                        {{ t('intro.p1') }}
-                    </p>
-
-                    <p>
-                        {{ t('intro.p2') }}
-                    </p>
-
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="assets/img/about-1.jpg"
-                                [attr.alt]="t('img.alt1')">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="assets/img/about-2.jpg"
-                                [attr.alt]="t('img.alt2')">
-                        </div>
-                    </div>
-
-                    <p>
-                        {{ t('intro.p3') }}
-                    </p>
-
-                    <a [routerLink]="contactLink" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                        {{ t('cta') }}
-                    </a>
-                </div>
-            </div>
-        </div>
+<!-- About Start — same editorial mosaic as homepage -->
+<section class="home-about" aria-labelledby="about-page-heading">
+  <div class="home-about__inner">
+    <div class="home-about__mosaic">
+      <figure class="home-about__shot home-about__shot--hero">
+        <picture>
+          <source type="image/webp" srcset="assets/img/about-main.webp" />
+          <img
+            src="assets/img/about-main.jpg"
+            width="800"
+            height="1000"
+            loading="eager"
+            decoding="async"
+            [attr.alt]="t('img.mainAlt')"
+          />
+        </picture>
+      </figure>
+      <figure class="home-about__shot home-about__shot--a">
+        <picture>
+          <source type="image/webp" srcset="assets/img/about-1.webp" />
+          <img
+            src="assets/img/about-1.jpg"
+            width="640"
+            height="427"
+            loading="lazy"
+            decoding="async"
+            [attr.alt]="t('img.alt1')"
+          />
+        </picture>
+      </figure>
+      <figure class="home-about__shot home-about__shot--b">
+        <picture>
+          <source type="image/webp" srcset="assets/img/about-2.webp" />
+          <img
+            src="assets/img/about-2.jpg"
+            width="640"
+            height="427"
+            loading="lazy"
+            decoding="async"
+            [attr.alt]="t('img.alt2')"
+          />
+        </picture>
+      </figure>
     </div>
-</div>
+
+    <div class="home-about__copy">
+      <p class="home-about__eyebrow">{{ t('eyebrow') }}</p>
+      <h2 id="about-page-heading" class="home-about__title">{{ t('heading') }}</h2>
+      <p class="home-about__lede">{{ t('intro.p1') }}</p>
+      <p class="home-about__body">{{ t('intro.p2') }}</p>
+      <p class="home-about__body">{{ t('intro.p3') }}</p>
+      <a [routerLink]="contactLink" class="home-about__cta">
+        <span>{{ t('cta') }}</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
 <!-- About End -->
 
 <!-- Feature End -->
@@ -69,7 +78,7 @@
                         <i class="fa fa-2x fa-money-check-alt text-white"></i>
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="h5" itemprop="name">{{ t('features.pricing.title') }}</h3>
+                        <h2 class="h5" itemprop="name">{{ t('features.pricing.title') }}</h2>
                         <p class="m-0" itemprop="description">
                             {{ t('features.pricing.desc') }}
                         </p>
@@ -85,7 +94,7 @@
                         <i class="fa fa-2x fa-award text-white"></i>
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="h5">{{ t('features.service.title') }}</h3>
+                        <h2 class="h5">{{ t('features.service.title') }}</h2>
                         <p class="m-0">
                             {{ t('features.service.desc') }}
                         </p>
@@ -101,7 +110,7 @@
                         <i class="fa fa-2x fa-globe text-white"></i>
                     </div>
                     <div class="d-flex flex-column">
-                        <h3 class="h5">{{ t('features.experts.title') }}</h3>
+                        <h2 class="h5">{{ t('features.experts.title') }}</h2>
                         <p class="m-0">
                             {{ t('features.experts.desc') }}
                         </p>
@@ -120,86 +129,4 @@
     </div>
 </div>
 <!-- Registration End -->
-
-
-<!-- Team Start -->
-<!-- <div class="container-fluid py-5">
-    <div class="container pt-5 pb-3">
-        <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Guides</h6>
-            <h1>Our Travel Guides</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="team-item bg-white mb-4">
-                    <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="assets/img/team-1.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <h5 class="text-truncate">Guide Name</h5>
-                        <p class="m-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="team-item bg-white mb-4">
-                    <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="assets/img/team-2.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <h5 class="text-truncate">Guide Name</h5>
-                        <p class="m-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="team-item bg-white mb-4">
-                    <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="assets/img/team-3.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <h5 class="text-truncate">Guide Name</h5>
-                        <p class="m-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <div class="team-item bg-white mb-4">
-                    <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="assets/img/team-4.jpg" alt="">
-                        <div class="team-social">
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <h5 class="text-truncate">Guide Name</h5>
-                        <p class="m-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- Team End -->
 </ng-container>

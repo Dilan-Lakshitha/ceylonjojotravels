@@ -1,0 +1,4 @@
+/* About page uses shared .home-about styles from styles/_home-about.scss */
+:host {
+  display: block;
+}

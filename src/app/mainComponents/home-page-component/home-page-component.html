@@ -357,53 +357,64 @@
 
 <!-- Packages End -->
 
-<!-- About Start -->
-<div class="container-fluid py-5" *transloco="let t; scope: 'about'; prefix: 'about'">
-    <div class="container pt-5">
-        <div class="row">
-            <!-- Image Section -->
-            <div class="col-lg-5" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-80" src="assets/img/5daysTours/6.jpeg"
-                        width="800" height="989" loading="lazy" decoding="async"
-                        style="object-fit: cover;" [attr.alt]="t('img.mainAlt')">
-                </div>
-            </div>
-
-            <!-- Text Section -->
-            <div class="col-lg-6 pb-lg-5">
-                <div class="about-text bg-white  p-lg-5 my-lg-5">
-                    <p class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">{{ t('eyebrow') }}</p>
-                    <h2 class="mb-3">{{ t('heading') }}</h2>
-
-                    <p>{{ t('intro.p1') }}</p>
-
-                    <p>{{ t('intro.p2') }}</p>
-
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="assets/img/about-1.jpg"
-                                width="480" height="360" loading="lazy" decoding="async"
-                                [attr.alt]="t('img.alt1')">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="assets/img/about-2.jpg"
-                                width="480" height="320" loading="lazy" decoding="async"
-                                [attr.alt]="t('img.alt2')">
-                        </div>
-                    </div>
-
-                    <p>{{ t('intro.p3') }}</p>
-
-                    <a [routerLink]="contactLink" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                        {{ t('cta') }}
-                    </a>
-                </div>
-            </div>
-        </div>
+<!-- About Start — editorial mosaic + clean copy (no floating card) -->
+<section class="home-about" *transloco="let t; scope: 'about'; prefix: 'about'" aria-labelledby="home-about-heading">
+  <div class="home-about__inner">
+    <div class="home-about__mosaic">
+      <figure class="home-about__shot home-about__shot--hero">
+        <picture>
+          <source type="image/webp" srcset="assets/img/about-main.webp" />
+          <img
+            src="assets/img/about-main.jpg"
+            width="800"
+            height="1000"
+            loading="lazy"
+            decoding="async"
+            [attr.alt]="t('img.mainAlt')"
+          />
+        </picture>
+      </figure>
+      <figure class="home-about__shot home-about__shot--a">
+        <picture>
+          <source type="image/webp" srcset="assets/img/about-1.webp" />
+          <img
+            src="assets/img/about-1.jpg"
+            width="640"
+            height="427"
+            loading="lazy"
+            decoding="async"
+            [attr.alt]="t('img.alt1')"
+          />
+        </picture>
+      </figure>
+      <figure class="home-about__shot home-about__shot--b">
+        <picture>
+          <source type="image/webp" srcset="assets/img/about-2.webp" />
+          <img
+            src="assets/img/about-2.jpg"
+            width="640"
+            height="427"
+            loading="lazy"
+            decoding="async"
+            [attr.alt]="t('img.alt2')"
+          />
+        </picture>
+      </figure>
     </div>
-</div>
 
+    <div class="home-about__copy">
+      <p class="home-about__eyebrow">{{ t('eyebrow') }}</p>
+      <h2 id="home-about-heading" class="home-about__title">{{ t('heading') }}</h2>
+      <p class="home-about__lede">{{ t('intro.p1') }}</p>
+      <p class="home-about__body">{{ t('intro.p2') }}</p>
+      <p class="home-about__body">{{ t('intro.p3') }}</p>
+      <a [routerLink]="contactLink" class="home-about__cta">
+        <span>{{ t('cta') }}</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
 <!-- About End -->
 
 
