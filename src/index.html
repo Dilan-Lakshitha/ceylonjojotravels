@@ -92,6 +92,20 @@
 
   <script>
     (function () {
+      // Keep FA webfonts + gtag off the LCP critical path (hero image bandwidth).
+      function loadStylesheet(href) {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = href;
+        document.head.appendChild(l);
+      }
+
+      function bootFontAwesome() {
+        if (window.faCssLoaded) return;
+        window.faCssLoaded = true;
+        loadStylesheet('/css/all.min.css');
+      }
+
       function bootAnalytics() {
         if (window.gtagLoaded) return;
         window.gtagLoaded = true;
@@ -107,17 +121,44 @@
         };
         document.head.appendChild(s);
       }
-      function schedule() {
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(bootAnalytics, { timeout: 4500 });
-        } else {
-          setTimeout(bootAnalytics, 2500);
-        }
+
+      function afterLoad(fn, delayMs) {
+        var run = function () { setTimeout(fn, delayMs); };
+        if (document.readyState === 'complete') run();
+        else window.addEventListener('load', run);
       }
-      if (document.readyState === 'complete') schedule();
-      else window.addEventListener('load', schedule);
+
+      // Icons: idle after load (icons are non-LCP).
+      afterLoad(function () {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(bootFontAwesome, { timeout: 2500 });
+        } else {
+          bootFontAwesome();
+        }
+      }, 500);
+
+      // Analytics: interaction or long idle — past typical lab LCP window.
+      afterLoad(function () {
+        var done = false;
+        var kick = function () {
+          if (done) return;
+          done = true;
+          bootAnalytics();
+        };
+        ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (type) {
+          window.addEventListener(type, kick, { once: true, passive: true });
+        });
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(kick, { timeout: 10000 });
+        } else {
+          setTimeout(kick, 6000);
+        }
+      }, 3000);
     })();
   </script>
+  <noscript>
+    <link rel="stylesheet" href="/css/all.min.css">
+  </noscript>
 </body>
 
 </html>

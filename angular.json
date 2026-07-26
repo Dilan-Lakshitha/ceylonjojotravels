@@ -29,17 +29,17 @@
                 "glob": "**/*",
                 "input": "node_modules/@fortawesome/fontawesome-free/webfonts",
                 "output": "/webfonts"
+              },
+              {
+                "glob": "all.min.css",
+                "input": "node_modules/@fortawesome/fontawesome-free/css",
+                "output": "/css"
               }
             ],
             "styles": [
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/js/main.js"
-            ],
+            "scripts": [],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
