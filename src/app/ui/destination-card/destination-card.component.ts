@@ -19,7 +19,8 @@ export class DestinationCardComponent {
   @Input() image = '';
   /** Optional responsive srcset, e.g. "img-480.jpg 480w, img-960.jpg 960w" */
   @Input() srcset = '';
-  @Input() sizes = '(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 360px';
+  /** Card images render ~350px wide — keep sizes honest so 360w is selected. */
+  @Input() sizes = '350px';
   @Input() title = '';
   @Input() subtitle = '';
   @Input() badge = '';
@@ -47,6 +48,31 @@ export class DestinationCardComponent {
   @Output() wishlist = new EventEmitter<MouseEvent>();
 
   wishlisted = false;
+
+  /** Base path without extension when image is a destination-*.jpg asset. */
+  private get imageBase(): string | null {
+    const match = this.image.match(/^(assets\/img\/destination-\d+)\.(jpe?g|png|webp)$/i);
+    return match ? match[1] : null;
+  }
+
+  get resolvedJpgSrc(): string {
+    const base = this.imageBase;
+    return base ? `${base}-360.jpg` : this.image;
+  }
+
+  get resolvedJpgSrcset(): string | null {
+    if (this.srcset) {
+      return this.srcset;
+    }
+    const base = this.imageBase;
+    // Match ~350 CSS px card width — avoid shipping 540w that Lighthouse flags as oversized.
+    return base ? `${base}-360.jpg 360w` : null;
+  }
+
+  get resolvedWebpSrcset(): string | null {
+    const base = this.imageBase;
+    return base ? `${base}-360.webp 360w` : null;
+  }
 
   onCardActivate(event?: Event): void {
     if (event) {

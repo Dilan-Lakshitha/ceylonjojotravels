@@ -18,6 +18,8 @@ export class TourCardComponent {
   @Input() persons = '';
   @Input() rating = 5;
   @Input() price = 0;
+  /** When false, price UI shows a placeholder instead of $0 */
+  @Input() priceReady = true;
   @Input() title = '';
   /** Optional full override — when set, tour facts are ignored */
   @Input() subtitle = '';

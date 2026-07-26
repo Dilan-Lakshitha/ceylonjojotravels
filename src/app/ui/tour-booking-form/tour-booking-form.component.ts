@@ -13,7 +13,6 @@ import {
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { catchError } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { environment } from '../../../../environment';
@@ -21,6 +20,7 @@ import countriesData from '../../../assets/data/countries.json';
 import countryCode from '../../../assets/data/countryCode.json';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { CountryService } from '../../Services/country.service';
+import { TourPriceService } from '../../Services/tour-price.service';
 
 @Component({
   selector: 'app-tour-booking-form',
@@ -61,6 +61,7 @@ export class TourBookingFormComponent implements OnInit, OnChanges {
   private readonly transloco = inject(TranslocoService);
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly countryService = inject(CountryService);
+  private readonly tourPrice = inject(TourPriceService);
   private readonly http = inject(HttpClient);
   private readonly toastr = inject(ToastrService);
   private readonly cdr = inject(ChangeDetectorRef);
@@ -128,32 +129,11 @@ export class TourBookingFormComponent implements OnInit, OnChanges {
   }
 
   loadTourPrices(fileName: string): void {
-    const countryFile = `/assets/data/${this.userCountry}${fileName}.json`;
-    const defaultFile = `/assets/data/US${fileName}.json`;
-    this.http
-      .get(countryFile)
-      .pipe(
-        catchError(() => {
-          return this.http.get(defaultFile);
-        }),
-      )
-      .subscribe((data: any) => {
-        this.prices = data.price || {};
-        if (!this.tour) {
-          this.tour = {};
-        }
-        if (!this.tour.title && data.title) {
-          this.tour.title = data.title;
-        }
-        if (!this.tour.duration && data.duration) {
-          this.tour.duration = data.duration;
-        }
-        if (!this.tour.tourType && data.tourType) {
-          this.tour.tourType = data.tourType;
-        }
-        this.updateAmounts();
-        this.cdr.markForCheck();
-      });
+    this.tourPrice.getPrices(fileName, this.userCountry).subscribe((prices) => {
+      this.prices = prices || {};
+      this.updateAmounts();
+      this.cdr.markForCheck();
+    });
   }
 
   generateOrderNumber(): void {

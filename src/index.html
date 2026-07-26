@@ -24,16 +24,51 @@
   <link rel="shortcut icon" href="assets/img/favicon.png">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Avoid stark white flash before Angular/CSS arrive (CSR fallback routes). */
+    html, body { margin: 0; background: #023a2c; }
+    .boot-shell {
+      min-height: 100vh;
+      background: linear-gradient(90deg, #155a65, #023a2c);
+      color: #f5f7f6;
+      font-family: Poppins, system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    .boot-shell__bar {
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #fab92e;
+    }
+    .boot-shell__hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .boot-shell__hero h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.5rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: #fff;
+    }
+    .boot-shell__hero p {
+      margin: 0;
+      max-width: 36rem;
+      opacity: 0.9;
+      line-height: 1.5;
+    }
+  </style>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://elfsightcdn.com">
-  <link rel="preload" as="image" href="assets/img/carousel/hero-1-sigiriya.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/carousel/hero-1-experiences-800.webp" type="image/webp" imagesrcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-800.webp 800w" imagesizes="100vw" fetchpriority="high">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   </noscript>
-  <script src="https://elfsightcdn.com/platform.js" async defer></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLPJM9Z3P4"></script>
   <!-- Organization JSON-LD is injected at runtime by SeoService (single source). -->
 </head>
 
@@ -43,19 +78,44 @@
     <p>Explore Sri Lanka with tailor made tours, chauffeur services, and holiday packages including Sigiriya, Ella, Yala
       Safari and beaches.</p>
   </noscript>
-  <app-root></app-root>
+  <app-root>
+    <div class="boot-shell" aria-busy="true" aria-label="Loading Ceylon JOJO Travels">
+      <div class="boot-shell__bar">CEYLON JOJO TRAVElS</div>
+      <div class="boot-shell__hero">
+        <div>
+          <h1>Sri Lanka Tours &amp; Private Driver Services</h1>
+          <p>Discover tailor-made Sri Lanka tours, private drivers, safari experiences and beach holidays with trusted local experts.</p>
+        </div>
+      </div>
+    </div>
+  </app-root>
 
   <script>
     (function () {
-      window.addEventListener('load', function () {
+      function bootAnalytics() {
         if (window.gtagLoaded) return;
         window.gtagLoaded = true;
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', 'G-ZLPJM9Z3P4');
-      });
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZLPJM9Z3P4';
+        s.async = true;
+        s.onload = function () {
+          gtag('js', new Date());
+          gtag('config', 'G-ZLPJM9Z3P4');
+        };
+        document.head.appendChild(s);
+      }
+      function schedule() {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(bootAnalytics, { timeout: 4500 });
+        } else {
+          setTimeout(bootAnalytics, 2500);
+        }
+      }
+      if (document.readyState === 'complete') schedule();
+      else window.addEventListener('load', schedule);
     })();
   </script>
 </body>

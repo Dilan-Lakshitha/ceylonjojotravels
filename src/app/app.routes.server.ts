@@ -1,8 +1,5 @@
-import { RenderMode, ServerRoute } from '@angular/ssr';
-
-export const serverRoutes: ServerRoute[] = [
-  {
-    path: '**',
-    renderMode: RenderMode.Server,
-  },
-];
+/**
+ * Angular discovers this file for SSR route config.
+ * Canonical definition lives in server.routes.ts.
+ */
+export { serverRoutes } from './server.routes';

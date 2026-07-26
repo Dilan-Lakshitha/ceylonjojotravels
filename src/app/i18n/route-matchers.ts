@@ -1,6 +1,5 @@
 import { UrlMatcher, UrlSegment } from '@angular/router';
 import { isSegmentForRoute, RouteId } from './route-map';
-import { resolveTourIdFromSlug } from './tour-slug-map';
 
 export function createSegmentMatcher(routeId: RouteId): UrlMatcher {
   return (segments: UrlSegment[]) => {
@@ -29,16 +28,13 @@ export function createTourListMatcher(): UrlMatcher {
   };
 }
 
-/** Matches /:toursSegment/:tourSlug */
+/** Matches /:toursSegment/:tourSlug (unknown slugs still match so we can redirect). */
 export function createTourDetailMatcher(): UrlMatcher {
   return (segments: UrlSegment[]) => {
     if (segments.length < 2) {
       return null;
     }
     if (!isSegmentForRoute('tours', segments[0].path)) {
-      return null;
-    }
-    if (!resolveTourIdFromSlug(segments[1].path)) {
       return null;
     }
     return {

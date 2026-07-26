@@ -9,12 +9,12 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { TranslocoModule } from '@jsverse/transloco';
 import { Subscription } from 'rxjs';
 import { TourCardComponent } from '../../ui/tour-card/tour-card.component';
 import { PageHeaderComponent } from '../../ui/page-header/page-header.component';
 import { CountryService } from '../../Services/country.service';
+import { TourPriceService } from '../../Services/tour-price.service';
 import { TourContentService, TourCatalogItem } from '../../i18n/tour-content.service';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { TourId } from '../../i18n/tour-slug-map';
@@ -39,8 +39,8 @@ export class TourPackages implements OnInit, OnDestroy {
   activeTab: 'multi' | 'day' = 'multi';
   loading = true;
 
-  private readonly http = inject(HttpClient);
   private readonly countryService = inject(CountryService);
+  private readonly tourPrice = inject(TourPriceService);
   private readonly tourContent = inject(TourContentService);
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly cdr = inject(ChangeDetectorRef);
@@ -81,7 +81,7 @@ export class TourPackages implements OnInit, OnDestroy {
   private async withPrices(tours: TourCatalogItem[]): Promise<TourCardVm[]> {
     return Promise.all(
       tours.map(async (tour) => {
-        const price = await this.loadPrice(tour.filecode);
+        const price = await this.tourPrice.getPersonPrice(tour.filecode, this.userCountry);
         return {
           ...tour,
           price,
@@ -89,25 +89,6 @@ export class TourPackages implements OnInit, OnDestroy {
         };
       }),
     );
-  }
-
-  private loadPrice(filecode: string): Promise<number> {
-    if (!isPlatformBrowser(this.platformId) || !filecode) {
-      return Promise.resolve(0);
-    }
-    const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
-    const defaultFile = `assets/data/US${filecode}.json`;
-    return new Promise((resolve) => {
-      this.http.get(countryFile).subscribe({
-        next: (data: any) => resolve(data?.price?.['2'] ?? 0),
-        error: () => {
-          this.http.get(defaultFile).subscribe({
-            next: (data: any) => resolve(data?.price?.['2'] ?? 0),
-            error: () => resolve(0),
-          });
-        },
-      });
-    });
   }
 
   ngOnDestroy(): void {

@@ -1,0 +1,30 @@
+# Ceylon JOJO Travels
+
+> Private Sri Lanka tours with local chauffeur drivers, custom itineraries, and holiday packages.
+
+Ceylon JOJO Travels is a Sri Lanka tour operator offering private day tours and multi-day round tours with hotel stays and private transportation.
+
+## Main pages
+
+- [Home](https://ceylonjojotravels.com/en): Private Sri Lanka tours overview
+- [Tour packages](https://ceylonjojotravels.com/en/tours): Day tours and multi-day itineraries
+- [About us](https://ceylonjojotravels.com/en/about-us): Company story and team
+- [Services](https://ceylonjojotravels.com/en/our-services): Chauffeur, guides, and travel services
+- [Destinations](https://ceylonjojotravels.com/en/destinations): Sigiriya, Ella, Kandy, Galle, Yala and more
+- [Contact](https://ceylonjojotravels.com/en/contact): Book or enquire via WhatsApp, phone, or email
+- [Testimonials](https://ceylonjojotravels.com/en/customer-testimonials): Guest reviews
+- [Travel guides](https://ceylonjojotravels.com/en/travel-guides): Sri Lanka travel tips
+
+## Popular tours
+
+- [Ella day tour](https://ceylonjojotravels.com/en/tours/ella-day-tour)
+- [Sigiriya day tour](https://ceylonjojotravels.com/en/tours/sigiriya-day-tour)
+- [7-day Sri Lanka tour](https://ceylonjojotravels.com/en/tours/7-day-sri-lanka-tour)
+- [8-day private tour](https://ceylonjojotravels.com/en/tours/8-day-sri-lanka-private-tour)
+- [2-day Ella & Yala safari](https://ceylonjojotravels.com/en/tours/2-day-ella-yala-safari)
+
+## Contact
+
+- Email: ceylonjojotravels@gmail.com
+- Phone / WhatsApp: +44 7375 612946
+- Website: https://ceylonjojotravels.com

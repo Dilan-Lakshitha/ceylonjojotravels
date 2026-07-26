@@ -57,7 +57,14 @@
   <!-- Main nav -->
   <nav class="site-nav navbar navbar-expand-lg">
     <a [routerLink]="homeLink" class="site-brand">
-      <img src="assets/img/logos/2.png" alt="Ceylon JOJO Travels" width="48" height="48" />
+      <img
+        src="assets/img/logos/logo-48.png"
+        srcset="assets/img/logos/logo-48.png 1x, assets/img/logos/logo-64.png 2x"
+        alt="Ceylon JOJO Travels"
+        width="48"
+        height="48"
+        decoding="async"
+      />
       <span class="site-brand__text">
         <span class="site-brand__name">CEYLON JOJO</span>
         <span class="site-brand__sub">TRAVElS</span>
@@ -152,9 +159,11 @@
   <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
 
-<router-outlet></router-outlet>
+<main id="main-content">
+  <router-outlet></router-outlet>
+</main>
 
-<div class="container-fluid bg-primary text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" *transloco="let t; scope: 'common'; prefix: 'common'">
+<div class="container-fluid bg-primary site-footer py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="row pt-5">
     <div class="col-lg-3 col-md-6">
       <a class="navbar-brand" [routerLink]="homeLink">
@@ -163,39 +172,40 @@
       <p>{{ t('footer.tagline') }}</p>
       <h6 class="text-white i18n-section-eyebrow mt-4 mb-3">{{ t('footer.follow') }}</h6>
       <div class="d-flex justify-content-start">
-        <a class="btn nav-link btn-square mr-2" href="https://www.facebook.com/ceylonjojotravels/" target="_blank" rel="noopener">
-          <i class="fab fa-facebook-f"></i>
+        <a class="btn nav-link btn-square mr-2" href="https://www.facebook.com/ceylonjojotravels/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
         </a>
-        <a class="btn nav-link btn-square nav-link px-3" href="https://www.instagram.com/ceylon_jojo_travels"><i class="fab fa-instagram"></i></a>
+        <a class="btn nav-link btn-square nav-link px-3" href="https://www.instagram.com/ceylon_jojo_travels" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         <a
           class="btn nav-link btn-square mr-2"
           href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
           target="_blank"
           rel="noopener"
+          aria-label="TripAdvisor"
         >
-          <i class="fab fa-tripadvisor"></i>
+          <i class="fab fa-tripadvisor" aria-hidden="true"></i>
         </a>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 mb-5">
       <h5 class="text-white i18n-section-eyebrow mb-4">{{ t('footer.services') }}</h5>
       <div class="d-flex flex-column justify-content-start">
-        <a class="text-white-50 mb-2" [routerLink]="aboutLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.about') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="destinationsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.destination') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="aboutLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.about') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="destinationsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.destination') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 mb-5">
       <h5 class="text-white i18n-section-eyebrow mb-4">{{ t('footer.menu') }}</h5>
       <div class="d-flex flex-column justify-content-start">
-        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
-        <a class="text-white-50 mb-2" [routerLink]="testimonialsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.testimonials') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="toursLink" [queryParams]="{ type: 'day' }"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="toursLink" [queryParams]="{ type: 'multi' }"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="testimonialsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.testimonials') }}</a>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 mb-5">
@@ -222,10 +232,10 @@
 >
   <div class="row">
     <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-      <p class="m-0 text-white-50">{{ t('footer.copyright') }}</p>
+      <p class="m-0 site-footer__muted">{{ t('footer.copyright') }}</p>
     </div>
     <div class="col-lg-6 text-center text-md-right">
-      <p class="m-0 text-white-50">{{ t('footer.designed') }}</p>
+      <p class="m-0 site-footer__muted">{{ t('footer.designed') }}</p>
     </div>
   </div>
 </div>

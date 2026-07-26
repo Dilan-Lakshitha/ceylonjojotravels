@@ -2,6 +2,7 @@ import { inject, PLATFORM_ID } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslocoService } from '@jsverse/transloco';
+import { map } from 'rxjs';
 import { DEFAULT_LANG, isAppLang } from './language.constants';
 
 export const langGuard: CanActivateFn = (route) => {
@@ -15,12 +16,11 @@ export const langGuard: CanActivateFn = (route) => {
   }
 
   transloco.setActiveLang(lang);
-  // Preload shell translations so layout/nav render immediately
-  transloco.load(`common/${lang}`).subscribe();
 
   if (isPlatformBrowser(platformId)) {
     localStorage.setItem('preferred_lang', lang);
   }
 
-  return true;
+  // Wait for shell translations so prerendered HTML is not empty keys.
+  return transloco.load(`common/${lang}`).pipe(map(() => true));
 };

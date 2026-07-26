@@ -1,10 +1,30 @@
 ﻿<!-- Carousel Start -->
 <div class="container-fluid p-0" *transloco="let t; scope: 'home'; prefix: 'home'">
-    <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div
+      id="header-carousel"
+      class="carousel slide"
+      (mouseenter)="pauseHeroCarousel()"
+      (mouseleave)="resumeHeroCarousel()"
+    >
         <div class="carousel-inner">
-            <!-- 1. Sigiriya -->
-            <div class="carousel-item active">
-                <img class="w-100" src="assets/img/carousel/hero-1-sigiriya.jpg" alt="Sigiriya Rock Fortress Sri Lanka private tours" width="1000" height="750" fetchpriority="high" decoding="async">
+            <!-- 1. Village cart + elephant safari experiences -->
+            <div class="carousel-item" [class.active]="heroSlideIndex === 0">
+                <picture>
+                    <source
+                      type="image/webp"
+                      srcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-800.webp 800w"
+                      sizes="100vw">
+                    <img
+                      class="w-100"
+                      src="assets/img/carousel/hero-1-experiences-800.jpg"
+                      srcset="assets/img/carousel/hero-1-experiences-640.jpg 640w, assets/img/carousel/hero-1-experiences-800.jpg 800w"
+                      sizes="100vw"
+                      alt="Bullock cart ride and elephant safari Sri Lanka private tours"
+                      width="800"
+                      height="350"
+                      fetchpriority="high"
+                      decoding="async">
+                </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h1 class="display-3 text-white mb-md-4">{{ t('hero1') }}</h1>
@@ -16,68 +36,83 @@
                 </div>
             </div>
             <!-- 2. Wildlife safari -->
-            <div class="carousel-item">
-                <img class="w-100" src="assets/img/carousel/hero-5-safari.jpg" alt="Sri Lanka wildlife safari and adventure tours" width="1280" height="720" loading="lazy" decoding="async">
+            <div class="carousel-item" [class.active]="heroSlideIndex === 1">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/carousel/hero-5-safari.webp">
+                    <img class="w-100" src="assets/img/carousel/hero-5-safari.jpg" alt="Sri Lanka wildlife safari and adventure tours" width="1280" height="720" loading="lazy" decoding="async">
+                </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-3 text-white mb-md-4">{{ t('hero5') }}</h1>
+                        <h2 class="display-3 text-white mb-md-4">{{ t('hero5') }}</h2>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
                             (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
             <!-- 3. Beach -->
-            <div class="carousel-item">
-                <img class="w-100" src="assets/img/carousel/hero-4-beach.jpg" alt="Sri Lanka beach holiday tour" width="1400" height="934" loading="lazy" decoding="async">
+            <div class="carousel-item" [class.active]="heroSlideIndex === 2">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/carousel/hero-4-beach.webp">
+                    <img class="w-100" src="assets/img/carousel/hero-4-beach.jpg" alt="Sri Lanka beach holiday tour" width="1400" height="934" loading="lazy" decoding="async">
+                </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-3 text-white mb-md-4">{{ t('hero4') }}</h1>
+                        <h2 class="display-3 text-white mb-md-4">{{ t('hero4') }}</h2>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
                             (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
             <!-- 4. Ella highlands -->
-            <div class="carousel-item">
-                <img class="w-100" src="assets/img/carousel/hero-2-ella.jpg" alt="Ella highlands scenic Sri Lanka tour" width="1400" height="1050" loading="lazy" decoding="async">
+            <div class="carousel-item" [class.active]="heroSlideIndex === 3">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/carousel/hero-2-ella.webp">
+                    <img class="w-100" src="assets/img/carousel/hero-2-ella.jpg" alt="Ella highlands scenic Sri Lanka tour" width="1400" height="1050" loading="lazy" decoding="async">
+                </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-3 text-white mb-md-4">{{ t('hero2') }}</h1>
+                        <h2 class="display-3 text-white mb-md-4">{{ t('hero2') }}</h2>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
                             (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
             <!-- 5. Panorama -->
-            <div class="carousel-item">
-                <img class="w-100" src="assets/img/carousel/hero-3-panorama.jpg" alt="Sri Lanka private tour panoramic landscape" width="1400" height="521" loading="lazy" decoding="async">
+            <div class="carousel-item" [class.active]="heroSlideIndex === 4">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/carousel/hero-3-panorama.webp">
+                    <img class="w-100" src="assets/img/carousel/hero-3-panorama.jpg" alt="Sri Lanka private tour panoramic landscape" width="1400" height="521" loading="lazy" decoding="async">
+                </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-3 text-white mb-md-4">{{ t('hero3') }}</h1>
+                        <h2 class="display-3 text-white mb-md-4">{{ t('hero3') }}</h2>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
                             (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
             <!-- 6. Culture / temple -->
-            <div class="carousel-item">
-                <img class="w-100" src="assets/img/carousel/hero-6-temple.jpg" alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS" width="1400" height="1054" loading="lazy" decoding="async">
+            <div class="carousel-item" [class.active]="heroSlideIndex === 5">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/carousel/hero-6-temple.webp">
+                    <img class="w-100" src="assets/img/carousel/hero-6-temple.jpg" alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS" width="1400" height="1054" loading="lazy" decoding="async">
+                </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-3 text-white mb-md-4">{{ t('hero6') }}</h1>
+                        <h2 class="display-3 text-white mb-md-4">{{ t('hero6') }}</h2>
                         <button class="btn btn-primary py-md-3 px-md-5 mt-2"
                             (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+        <a class="carousel-control-prev" href="#header-carousel" aria-label="Previous slide" (click)="prevHeroSlide($event)">
+            <div class="btn btn-dark" style="width: 45px; height: 45px;" aria-hidden="true">
                 <span class="carousel-control-prev-icon mb-n2"></span>
             </div>
         </a>
-        <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-            <div class="btn btn-dark" style="width: 45px; height: 45px;">
+        <a class="carousel-control-next" href="#header-carousel" aria-label="Next slide" (click)="nextHeroSlide($event)">
+            <div class="btn btn-dark" style="width: 45px; height: 45px;" aria-hidden="true">
                 <span class="carousel-control-next-icon mb-n2"></span>
             </div>
         </a>
@@ -93,7 +128,7 @@
     <div class="container">
 
         <div class="text-center mb-5">
-            <h1>{{ t('title') }}</h1>
+            <h2>{{ t('title') }}</h2>
             <p class="text-center mb-4">
                 {{ t('intro') }}
             </p>
@@ -215,7 +250,7 @@
     <div class="container pt-5 ">
         <div class="text-center">
             <h6 class="text-primary i18n-section-eyebrow">{{ t('packages.header') }}</h6>
-            <h1 class="i18n-section-title">{{ t('packages.homeTitle') }}</h1>
+            <h2 class="i18n-section-title">{{ t('packages.homeTitle') }}</h2>
             <p class="text-center mb-3">
                 {{ t('packages.homeSubtitle') }}
             </p>
@@ -242,6 +277,7 @@
                 [persons]="tour.persons"
                 [rating]="tour.rating"
                 [price]="tour.price"
+                [priceReady]="pricesReady"
                 [title]="tour.title"
                 [tourId]="tour.id || tour.filecode"
                 [filecode]="tour.filecode"
@@ -278,7 +314,7 @@
             <div class="col-lg-6 pb-lg-5">
                 <div class="about-text bg-white  p-lg-5 my-lg-5">
                     <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('eyebrow') }}</h6>
-                    <h1 class="mb-3">{{ t('heading') }}</h1>
+                    <h2 class="mb-3">{{ t('heading') }}</h2>
 
                     <p>{{ t('intro.p1') }}</p>
 
@@ -443,7 +479,7 @@
     <div class="container pb-3">
         <div class="text-center mb-3 pb-3">
             <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">{{ t('team.eyebrow') }}</h6>
-            <h1>{{ t('team.heading') }}</h1>
+            <h2>{{ t('team.heading') }}</h2>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
@@ -531,8 +567,7 @@
 </div>
 <!-- Team End -->
 
-
-<div class="elfsight-app-0b6d4072-a733-446b-8aaa-c737f5a83c4a" data-elfsight-app-lazy></div>
+<app-elfsight-reviews [flush]="true" />
 
 <section class="container py-5 text-center" *transloco="let t; scope: 'home'; prefix: 'home'">
     <h2 class="mb-4">{{ t('popular.title') }}</h2>

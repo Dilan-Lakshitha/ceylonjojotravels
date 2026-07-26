@@ -4,23 +4,30 @@
   itemtype="https://schema.org/TouristDestination"
   [attr.aria-label]="title"
   tabindex="0"
-  role="link"
   (click)="onCardActivate($event)"
   (keydown)="onKeydown($event)"
 >
   <div class="pdc__media">
-    <img
-      class="pdc__img"
-      itemprop="image"
-      [src]="image"
-      [attr.srcset]="srcset || null"
-      [attr.sizes]="srcset ? sizes : null"
-      [alt]="alt || title"
-      loading="lazy"
-      decoding="async"
-      width="640"
-      height="200"
-    />
+    <picture>
+      <source
+        *ngIf="resolvedWebpSrcset"
+        type="image/webp"
+        [attr.srcset]="resolvedWebpSrcset"
+        [attr.sizes]="sizes"
+      />
+      <img
+        class="pdc__img"
+        itemprop="image"
+        [src]="resolvedJpgSrc"
+        [attr.srcset]="resolvedJpgSrcset"
+        [attr.sizes]="resolvedJpgSrcset ? sizes : null"
+        [alt]="alt || title"
+        loading="lazy"
+        decoding="async"
+        width="360"
+        height="225"
+      />
+    </picture>
     <div class="pdc__shade" aria-hidden="true"></div>
 
     <div class="pdc__chrome">

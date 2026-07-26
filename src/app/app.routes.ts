@@ -12,6 +12,7 @@ import {
 import { tourIdResolver } from './i18n/tour-id.resolver';
 import { LEGACY_TOUR_PATHS } from './i18n/tour-slug-map';
 import { slugForTour } from './i18n/tour-slug-map';
+import { homeI18nResolver } from './i18n/page-i18n.resolver';
 
 const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path, tourId]) => ({
   path,
@@ -46,6 +47,7 @@ export const routes: Routes = [
           import('./mainComponents/home-page-component/home-page-component').then(
             (m) => m.HomePageComponent,
           ),
+        resolve: { i18n: homeI18nResolver },
         data: { routeId: 'home' },
       },
       {

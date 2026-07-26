@@ -1,14 +1,15 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { SeoService } from '../../i18n/seo.service';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { AppLang, isAppLang } from '../../i18n/language.constants';
+import { ElfsightReviewsComponent } from '../../ui/elfsight-reviews/elfsight-reviews.component';
 
 @Component({
   selector: 'app-testimonial',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoModule, ElfsightReviewsComponent],
   templateUrl: './testimonial.html',
   styleUrl: './testimonial.css',
 })

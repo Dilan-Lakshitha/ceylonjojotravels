@@ -437,3 +437,24 @@ body {
     font-size: 24px;
   }
 }
+
+/* Footer contrast (AA) — avoid Bootstrap text-white-50 on green/dark */
+.site-footer {
+  color: #f4f8ef;
+}
+
+.site-footer__link {
+  color: #f4f8ef;
+  text-decoration: none;
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer__muted {
+  color: #e8e8e8;
+}
+

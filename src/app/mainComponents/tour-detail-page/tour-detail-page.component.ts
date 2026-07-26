@@ -3,6 +3,7 @@ import {
   ChangeDetectorRef,
   Component,
   Inject,
+  NgZone,
   OnDestroy,
   OnInit,
   PLATFORM_ID,
@@ -11,9 +12,8 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
-import { Subscription, combineLatest, from, of, switchMap } from 'rxjs';
+import { Subscription, catchError, combineLatest, from, of, switchMap } from 'rxjs';
 import {
   Activity,
   TourDetails,
@@ -21,7 +21,9 @@ import {
 import { TourCardComponent } from '../../ui/tour-card/tour-card.component';
 import { TourBookingFormComponent } from '../../ui/tour-booking-form/tour-booking-form.component';
 import { AccordionPanelComponent } from '../../ui/accordion-panel/accordion-panel.component';
+import { ElfsightReviewsComponent } from '../../ui/elfsight-reviews/elfsight-reviews.component';
 import { CountryService } from '../../Services/country.service';
+import { TourPriceService } from '../../Services/tour-price.service';
 import { TourContentService, TourCatalogItem, TourDetailContent } from '../../i18n/tour-content.service';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { galleryForTour } from '../../i18n/tour-gallery-map';
@@ -55,10 +57,6 @@ const GALLERY_AUTOPLAY_MS = 6000;
 const GALLERY_FADE_MS = 200;
 const SWIPE_THRESHOLD_PX = 48;
 
-/** Aggregate rating shown under title (SEO + conversion). No fake review cards. */
-const AGGREGATE_RATING = 5;
-const AGGREGATE_REVIEW_COUNT = 128;
-
 @Component({
   selector: 'app-tour-detail-page',
   standalone: true,
@@ -69,6 +67,7 @@ const AGGREGATE_REVIEW_COUNT = 128;
     TourCardComponent,
     TourBookingFormComponent,
     AccordionPanelComponent,
+    ElfsightReviewsComponent,
   ],
   templateUrl: './tour-detail-page.component.html',
   styleUrls: ['./tour-detail-page.component.css'],
@@ -76,13 +75,14 @@ const AGGREGATE_REVIEW_COUNT = 128;
 })
 export class TourDetailPageComponent implements OnInit, OnDestroy {
   private readonly route = inject(ActivatedRoute);
-  private readonly http = inject(HttpClient);
   private readonly countryService = inject(CountryService);
+  private readonly tourPrice = inject(TourPriceService);
   private readonly tourContent = inject(TourContentService);
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly transloco = inject(TranslocoService);
   private readonly seo = inject(SeoService);
   private readonly cdr = inject(ChangeDetectorRef);
+  private readonly ngZone = inject(NgZone);
 
   /** Dynamically sourced from tour gallery map — never hardcode length. */
   images: string[] = [];
@@ -107,8 +107,6 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
   private sub?: Subscription;
 
   readonly galleryThumbLimit = GALLERY_VISIBLE_THUMB_LIMIT;
-  readonly aggregateRating = AGGREGATE_RATING;
-  readonly reviewCount = AGGREGATE_REVIEW_COUNT;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     afterNextRender(() => {
@@ -209,15 +207,22 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
               if (!detail || !this.tourId) {
                 return of(null);
               }
-              return from(this.hydrateTour(detail, lang, this.tourId));
+              return from(this.hydrateTour(detail, lang, this.tourId)).pipe(
+                catchError(() => of(null)),
+              );
             }),
+            catchError(() => of(null)),
           );
         }),
       )
       .subscribe(() => this.cdr.markForCheck());
 
     if (isPlatformBrowser(this.platformId)) {
-      this.intervalId = setInterval(() => this.nextImage(false), GALLERY_AUTOPLAY_MS);
+      this.ngZone.runOutsideAngular(() => {
+        this.intervalId = setInterval(() => {
+          this.ngZone.run(() => this.nextImage(false));
+        }, GALLERY_AUTOPLAY_MS);
+      });
     }
   }
 
@@ -226,11 +231,6 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
     lang: AppLang,
     tourId: TourId,
   ): Promise<void> {
-    if (isPlatformBrowser(this.platformId)) {
-      this.userCountry = await this.countryService.detectCountry();
-      this.price = await this.loadPrice(detail.filecode || tourId);
-    }
-
     const meta = resolveTourCardMeta(tourId);
     const highlights =
       detail.highlights?.length ? detail.highlights : deriveHighlights(detail.itinerary);
@@ -244,6 +244,7 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
             price: this.price,
           });
 
+    // Paint tour content immediately — never block first render on geo/price APIs.
     this.tour = {
       title: detail.title,
       description: detail.description,
@@ -260,9 +261,24 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
       hotelRating: meta?.hotelRating ?? null,
       transportIncluded: meta?.transportIncluded ?? true,
     };
-
-    // All itinerary days collapsed by default — user expands manually.
     this.expandedDays = {};
+    this.cdr.markForCheck();
+
+    if (isPlatformBrowser(this.platformId)) {
+      try {
+        this.userCountry = await this.countryService.detectCountry();
+        this.price = await this.tourPrice.getPersonPrice(
+          detail.filecode || tourId,
+          this.userCountry,
+        );
+        if (this.tour) {
+          this.tour = { ...this.tour, price: this.price };
+        }
+        this.cdr.markForCheck();
+      } catch {
+        /* keep defaults */
+      }
+    }
 
     const seoTitle = `${detail.title} | Ceylon JOJO Travels`;
     const seoDescription = (detail.description || detail.overview || '')
@@ -270,27 +286,32 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
       .trim()
       .slice(0, 160);
 
-    await this.seo.applyPageSeo({
-      routeId: 'tours',
-      lang,
-      tourTitle: seoTitle,
-      tourDescription: seoDescription,
-      tourId,
-      tourJsonLd: {
-        title: detail.title,
-        description: detail.description,
-        overview: detail.overview,
-        price: this.price,
-        duration: detail.duration,
-        image: this.images[0],
-        faq,
-        aggregateRating: {
-          ratingValue: AGGREGATE_RATING,
-          reviewCount: AGGREGATE_REVIEW_COUNT,
+    try {
+      await this.seo.applyPageSeo({
+        routeId: 'tours',
+        lang,
+        tourTitle: seoTitle,
+        tourDescription: seoDescription,
+        tourId,
+        tourJsonLd: {
+          title: detail.title,
+          description: detail.description,
+          overview: detail.overview,
+          price: this.price,
+          duration: detail.duration,
+          image: this.images[0],
+          faq,
         },
-      },
-    });
-    await this.loadRelated(tourId);
+      });
+    } catch {
+      /* SEO must not block the page */
+    }
+
+    try {
+      await this.loadRelated(tourId);
+    } catch {
+      /* related tours optional */
+    }
     this.cdr.markForCheck();
   }
 
@@ -379,7 +400,7 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
     });
     this.selectedTours = await Promise.all(
       related.map(async (t) => {
-        const price = await this.loadPrice(t.filecode);
+        const price = await this.tourPrice.getPersonPrice(t.filecode, this.userCountry);
         const id = (t.filecode || t.id) as TourId;
         return {
           ...t,
@@ -388,25 +409,6 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
         };
       }),
     );
-  }
-
-  loadPrice(filecode: string): Promise<number> {
-    if (!isPlatformBrowser(this.platformId)) {
-      return Promise.resolve(0);
-    }
-    const countryFile = `assets/data/${this.userCountry}${filecode}.json`;
-    const defaultFile = `assets/data/US${filecode}.json`;
-    return new Promise((resolve) => {
-      this.http.get(countryFile).subscribe({
-        next: (data: any) => resolve(data?.price?.['2'] ?? 0),
-        error: () => {
-          this.http.get(defaultFile).subscribe({
-            next: (data: any) => resolve(data?.price?.['2'] ?? 0),
-            error: () => resolve(0),
-          });
-        },
-      });
-    });
   }
 
   nextImage(fromUser = false): void {

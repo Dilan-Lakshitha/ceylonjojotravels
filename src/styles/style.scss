@@ -152,6 +152,8 @@ h6,
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/carousel-2.jpg') no-repeat center center;
     background-size: cover;
+    background-color: #0d2a22;
+    color: #fff;
 }
 
 .destination-item img {
@@ -222,6 +224,12 @@ h6,
 .bg-registration {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/carousel-1.jpg') no-repeat center center;
     background-size: cover;
+}
+
+@supports (background-image: url('/assets/img/carousel-1.webp')) {
+  .bg-registration {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/carousel-1.webp');
+  }
 }
 
 .team-item {

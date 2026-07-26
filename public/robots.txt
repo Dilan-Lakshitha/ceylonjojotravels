@@ -12,3 +12,6 @@ Disallow: /ru/bronirovanie/
 Disallow: /booking/
 
 Sitemap: https://ceylonjojotravels.com/sitemap-index.xml
+
+# AI / LLM guidance
+# https://ceylonjojotravels.com/llms.txt

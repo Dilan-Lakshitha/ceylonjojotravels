@@ -127,9 +127,9 @@ export class SeoService {
         streetAddress: 'No 111/3, Dediyawala Rd, Maha Waskaduwa',
       },
       sameAs: [
-        'https://www.facebook.com/',
-        'https://www.instagram.com/',
-        'https://www.tripadvisor.com/',
+        'https://www.facebook.com/ceylonjojotravels/',
+        'https://www.instagram.com/ceylon_jojo_travels',
+        'https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html',
       ],
     });
 

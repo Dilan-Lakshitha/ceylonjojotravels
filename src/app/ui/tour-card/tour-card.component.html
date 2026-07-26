@@ -42,7 +42,8 @@
   <div class="tc__footer">
     <div class="tc__price" aria-label="Price">
       <span class="tc__from">{{ t('card.from') }}</span>
-      <span class="tc__amount">${{ displayPrice | number: '1.0-0' }}</span>
+      <span class="tc__amount" *ngIf="priceReady; else pricePending">${{ displayPrice | number: '1.0-0' }}</span>
+      <ng-template #pricePending><span class="tc__amount tc__amount--pending">—</span></ng-template>
       <span class="tc__unit">{{ t('card.perPerson') }}</span>
     </div>
 
