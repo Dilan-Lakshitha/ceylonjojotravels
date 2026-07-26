@@ -4,6 +4,11 @@
   font-weight: 700;
 }
 
+/* Reserve space while @defer contact form is off-screen */
+.home-contact-placeholder {
+  min-height: 28rem;
+}
+
 .tab-btn-outline {
   padding: 10px 28px;
   font-weight: 600;

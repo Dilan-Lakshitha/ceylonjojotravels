@@ -35,11 +35,11 @@
                     </div>
                 </div>
             </div>
-            <!-- 2. Wildlife safari -->
+            <!-- 2. Wildlife safari — no lazy: carousel slides become LCP when they activate -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 1">
                 <picture>
                     <source type="image/webp" srcset="assets/img/carousel/hero-5-safari.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-5-safari.jpg" alt="Sri Lanka wildlife safari and adventure tours" width="1280" height="720" loading="lazy" decoding="async">
+                    <img class="w-100" src="assets/img/carousel/hero-5-safari.jpg" alt="Sri Lanka wildlife safari and adventure tours" width="1280" height="720" decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -53,7 +53,7 @@
             <div class="carousel-item" [class.active]="heroSlideIndex === 2">
                 <picture>
                     <source type="image/webp" srcset="assets/img/carousel/hero-4-beach.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-4-beach.jpg" alt="Sri Lanka beach holiday tour" width="1400" height="934" loading="lazy" decoding="async">
+                    <img class="w-100" src="assets/img/carousel/hero-4-beach.jpg" alt="Sri Lanka beach holiday tour" width="1400" height="934" decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -67,7 +67,7 @@
             <div class="carousel-item" [class.active]="heroSlideIndex === 3">
                 <picture>
                     <source type="image/webp" srcset="assets/img/carousel/hero-2-ella.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-2-ella.jpg" alt="Ella highlands scenic Sri Lanka tour" width="1400" height="1050" loading="lazy" decoding="async">
+                    <img class="w-100" src="assets/img/carousel/hero-2-ella.jpg" alt="Ella highlands scenic Sri Lanka tour" width="1400" height="1050" decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -81,7 +81,7 @@
             <div class="carousel-item" [class.active]="heroSlideIndex === 4">
                 <picture>
                     <source type="image/webp" srcset="assets/img/carousel/hero-3-panorama.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-3-panorama.jpg" alt="Sri Lanka private tour panoramic landscape" width="1400" height="521" loading="lazy" decoding="async">
+                    <img class="w-100" src="assets/img/carousel/hero-3-panorama.jpg" alt="Sri Lanka private tour panoramic landscape" width="1400" height="521" decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -95,7 +95,7 @@
             <div class="carousel-item" [class.active]="heroSlideIndex === 5">
                 <picture>
                     <source type="image/webp" srcset="assets/img/carousel/hero-6-temple.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-6-temple.jpg" alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS" width="1400" height="1054" loading="lazy" decoding="async">
+                    <img class="w-100" src="assets/img/carousel/hero-6-temple.jpg" alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS" width="1400" height="1054" decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -465,10 +465,14 @@
 <!-- Service End -->
 
 
-<!-- Registration Start -->
+<!-- Registration Start — defer until near viewport to keep initial DOM lean (country dial <select>) -->
 <div class="container-fluid bg-registration" style="margin: 90px 0;">
     <div class="container py-2">
-        <app-contact-us-component [homecontact]="homecontact"></app-contact-us-component>
+        @defer (on viewport; prefetch on idle) {
+            <app-contact-us-component [homecontact]="homecontact"></app-contact-us-component>
+        } @placeholder {
+            <div class="home-contact-placeholder" aria-hidden="true"></div>
+        }
     </div>
 </div>
 <!-- Registration End -->

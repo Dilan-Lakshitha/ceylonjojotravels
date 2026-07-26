@@ -51,8 +51,11 @@ export class HomePageComponent implements OnInit, OnDestroy {
   /** Homepage hero carousel slide (0–5). */
   heroSlideIndex = 0;
   private readonly heroSlideCount = 6;
-  private heroTimer: ReturnType<typeof setInterval> | null = null;
+  private heroTimer: ReturnType<typeof setTimeout> | null = null;
   private heroPaused = false;
+  /** Keep slide 0 (preloaded LCP image) stable through first paint / lab LCP windows. */
+  private readonly heroFirstRotateMs = 10000;
+  private readonly heroRotateMs = 5000;
   contactLink: any[] = ['/', 'en', 'contact'];
   tour7Link: any[] = ['/', 'en', 'tours', '7-day-sri-lanka-tour'];
   tour8Link: any[] = ['/', 'en', 'tours', '8-day-sri-lanka-private-tour'];
@@ -192,17 +195,22 @@ export class HomePageComponent implements OnInit, OnDestroy {
       return;
     }
     this.clearHeroTimer();
-    // Outside Angular zone so setInterval does not block hydration (NG0506).
+    // Outside Angular zone so timers do not block hydration (NG0506).
+    // First rotate is delayed so LCP stays on the preloaded slide-0 hero.
     this.ngZone.runOutsideAngular(() => {
-      this.heroTimer = setInterval(() => {
-        this.ngZone.run(() => this.nextHeroSlide());
-      }, 5000);
+      const schedule = (delayMs: number) => {
+        this.heroTimer = setTimeout(() => {
+          this.ngZone.run(() => this.nextHeroSlide());
+          schedule(this.heroRotateMs);
+        }, delayMs);
+      };
+      schedule(this.heroFirstRotateMs);
     });
   }
 
   private clearHeroTimer(): void {
     if (this.heroTimer) {
-      clearInterval(this.heroTimer);
+      clearTimeout(this.heroTimer);
       this.heroTimer = null;
     }
   }
