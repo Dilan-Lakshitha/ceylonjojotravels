@@ -9,7 +9,8 @@
     "test": "ng test",
     "serve:ssr:Travelwebsite": "node dist/Travelwebsite/server/server.mjs",
     "seo:generate": "node scripts/generate-i18n-seo.js",
-    "optimize:heroes": "node scripts/optimize-hero-webp.mjs"
+    "optimize:heroes": "node scripts/optimize-hero-webp.mjs",
+    "optimize:destinations": "node scripts/optimize-destination-webp.mjs"
   },
   "prettier": {
     "overrides": [
