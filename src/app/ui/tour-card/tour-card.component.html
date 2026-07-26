@@ -5,14 +5,25 @@
   [attr.aria-label]="title"
 >
   <div class="tc__media">
-    <img
-      [src]="image"
-      [alt]="title"
-      loading="lazy"
-      decoding="async"
-      width="400"
-      height="200"
-    />
+    <picture>
+      <source
+        *ngIf="cardWebpSrc"
+        type="image/webp"
+        [attr.srcset]="cardWebpSrcset"
+        [attr.sizes]="sizes"
+      />
+      <img
+        class="tc__img"
+        [src]="cardJpgSrc"
+        [attr.srcset]="cardJpgSrcset"
+        [attr.sizes]="cardJpgSrcset ? sizes : null"
+        [alt]="title"
+        loading="lazy"
+        decoding="async"
+        width="400"
+        height="200"
+      />
+    </picture>
     <div class="tc__shade" aria-hidden="true"></div>
     <div class="tc__chrome">
       <div class="tc__flags">

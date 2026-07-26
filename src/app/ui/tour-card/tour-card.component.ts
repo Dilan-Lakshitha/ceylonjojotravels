@@ -14,6 +14,8 @@ import { resolveTourCardMeta, TourTypeKey } from '../../i18n/tour-card-meta';
 })
 export class TourCardComponent {
   @Input() image = '';
+  /** Card media is ~347–400 CSS px — keep sizes honest so 400w is selected. */
+  @Input() sizes = '(max-width: 767px) 92vw, 400px';
   @Input() days = '';
   @Input() persons = '';
   @Input() rating = 5;
@@ -38,6 +40,32 @@ export class TourCardComponent {
 
   get displayPrice(): number {
     return Math.round((this.price || 0) / 2);
+  }
+
+  /** Path without extension when a raster card image is provided. */
+  private get imageBase(): string | null {
+    const match = this.image.match(/^(.*)\.(jpe?g|png|webp)$/i);
+    return match ? match[1] : null;
+  }
+
+  /** Prefer generated 400w card thumbs from optimize-tour-card-images.mjs */
+  get cardWebpSrc(): string | null {
+    const base = this.imageBase;
+    return base ? `${base}-400.webp` : null;
+  }
+
+  get cardWebpSrcset(): string | null {
+    return this.cardWebpSrc ? `${this.cardWebpSrc} 400w` : null;
+  }
+
+  get cardJpgSrc(): string {
+    const base = this.imageBase;
+    return base ? `${base}-400.jpg` : this.image;
+  }
+
+  get cardJpgSrcset(): string | null {
+    const base = this.imageBase;
+    return base ? `${base}-400.jpg 400w` : null;
   }
 
   /**
