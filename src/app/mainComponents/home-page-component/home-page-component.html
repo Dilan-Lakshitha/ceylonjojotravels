@@ -12,16 +12,16 @@
                 <picture>
                     <source
                       type="image/webp"
-                      srcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-800.webp 800w"
+                      srcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-960.webp 960w, assets/img/carousel/hero-1-experiences-1280.webp 1280w, assets/img/carousel/hero-1-experiences-1600.webp 1600w, assets/img/carousel/hero-1-experiences-1920.webp 1920w"
                       sizes="100vw">
                     <img
-                      class="w-100"
-                      src="assets/img/carousel/hero-1-experiences-800.jpg"
-                      srcset="assets/img/carousel/hero-1-experiences-640.jpg 640w, assets/img/carousel/hero-1-experiences-800.jpg 800w"
+                      class="w-100 hero-collage"
+                      src="assets/img/carousel/hero-1-experiences-1280.jpg"
+                      srcset="assets/img/carousel/hero-1-experiences-640.jpg 640w, assets/img/carousel/hero-1-experiences-960.jpg 960w, assets/img/carousel/hero-1-experiences-1280.jpg 1280w, assets/img/carousel/hero-1-experiences-1600.jpg 1600w, assets/img/carousel/hero-1-experiences-1920.jpg 1920w"
                       sizes="100vw"
-                      alt="Bullock cart ride and elephant safari Sri Lanka private tours"
-                      width="800"
-                      height="350"
+                      alt="Sri Lanka tours collage: village bullock cart, leopard safari, elephants, snorkeling, Sigiriya and hill country"
+                      width="1920"
+                      height="720"
                       fetchpriority="high"
                       decoding="async">
                 </picture>
@@ -35,11 +35,23 @@
                     </div>
                 </div>
             </div>
-            <!-- 2. Wildlife safari — no lazy: carousel slides become LCP when they activate -->
+            <!-- 2. Wildlife safari collage -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 1">
                 <picture>
-                    <source type="image/webp" srcset="assets/img/carousel/hero-5-safari.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-5-safari.jpg" alt="Sri Lanka wildlife safari and adventure tours" width="1280" height="720" decoding="async">
+                    <source
+                      type="image/webp"
+                      srcset="assets/img/carousel/hero-5-safari-640.webp 640w, assets/img/carousel/hero-5-safari-960.webp 960w, assets/img/carousel/hero-5-safari-1280.webp 1280w, assets/img/carousel/hero-5-safari-1600.webp 1600w, assets/img/carousel/hero-5-safari-1920.webp 1920w"
+                      sizes="100vw">
+                    <img
+                      class="w-100 hero-collage"
+                      src="assets/img/carousel/hero-5-safari-1280.jpg"
+                      srcset="assets/img/carousel/hero-5-safari-640.jpg 640w, assets/img/carousel/hero-5-safari-960.jpg 960w, assets/img/carousel/hero-5-safari-1280.jpg 1280w, assets/img/carousel/hero-5-safari-1600.jpg 1600w, assets/img/carousel/hero-5-safari-1920.jpg 1920w"
+                      sizes="100vw"
+                      alt="Sri Lanka wildlife safari: leopard sightings, elephants and jeep tours"
+                      width="1920"
+                      height="720"
+                      loading="lazy"
+                      decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -49,11 +61,23 @@
                     </div>
                 </div>
             </div>
-            <!-- 3. Beach -->
+            <!-- 3. Beach / ocean collage -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 2">
                 <picture>
-                    <source type="image/webp" srcset="assets/img/carousel/hero-4-beach.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-4-beach.jpg" alt="Sri Lanka beach holiday tour" width="1400" height="934" decoding="async">
+                    <source
+                      type="image/webp"
+                      srcset="assets/img/carousel/hero-4-beach-640.webp 640w, assets/img/carousel/hero-4-beach-960.webp 960w, assets/img/carousel/hero-4-beach-1280.webp 1280w, assets/img/carousel/hero-4-beach-1600.webp 1600w, assets/img/carousel/hero-4-beach-1920.webp 1920w"
+                      sizes="100vw">
+                    <img
+                      class="w-100 hero-collage"
+                      src="assets/img/carousel/hero-4-beach-1280.jpg"
+                      srcset="assets/img/carousel/hero-4-beach-640.jpg 640w, assets/img/carousel/hero-4-beach-960.jpg 960w, assets/img/carousel/hero-4-beach-1280.jpg 1280w, assets/img/carousel/hero-4-beach-1600.jpg 1600w, assets/img/carousel/hero-4-beach-1920.jpg 1920w"
+                      sizes="100vw"
+                      alt="Sri Lanka beach holidays: stilt fishing, sea turtles and snorkeling"
+                      width="1920"
+                      height="720"
+                      loading="lazy"
+                      decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -66,8 +90,20 @@
             <!-- 4. Ella highlands -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 3">
                 <picture>
-                    <source type="image/webp" srcset="assets/img/carousel/hero-2-ella.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-2-ella.jpg" alt="Ella highlands scenic Sri Lanka tour" width="1400" height="1050" decoding="async">
+                    <source
+                      type="image/webp"
+                      srcset="assets/img/carousel/hero-2-ella-640.webp 640w, assets/img/carousel/hero-2-ella-800.webp 800w"
+                      sizes="100vw">
+                    <img
+                      class="w-100"
+                      src="assets/img/carousel/hero-2-ella-800.jpg"
+                      srcset="assets/img/carousel/hero-2-ella-640.jpg 640w, assets/img/carousel/hero-2-ella-800.jpg 800w"
+                      sizes="100vw"
+                      alt="Ella highlands scenic Sri Lanka tour"
+                      width="800"
+                      height="600"
+                      loading="lazy"
+                      decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -80,8 +116,20 @@
             <!-- 5. Panorama -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 4">
                 <picture>
-                    <source type="image/webp" srcset="assets/img/carousel/hero-3-panorama.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-3-panorama.jpg" alt="Sri Lanka private tour panoramic landscape" width="1400" height="521" decoding="async">
+                    <source
+                      type="image/webp"
+                      srcset="assets/img/carousel/hero-3-panorama-640.webp 640w, assets/img/carousel/hero-3-panorama-800.webp 800w"
+                      sizes="100vw">
+                    <img
+                      class="w-100"
+                      src="assets/img/carousel/hero-3-panorama-800.jpg"
+                      srcset="assets/img/carousel/hero-3-panorama-640.jpg 640w, assets/img/carousel/hero-3-panorama-800.jpg 800w"
+                      sizes="100vw"
+                      alt="Sri Lanka private tour panoramic landscape"
+                      width="800"
+                      height="298"
+                      loading="lazy"
+                      decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
@@ -94,8 +142,20 @@
             <!-- 6. Culture / temple -->
             <div class="carousel-item" [class.active]="heroSlideIndex === 5">
                 <picture>
-                    <source type="image/webp" srcset="assets/img/carousel/hero-6-temple.webp">
-                    <img class="w-100" src="assets/img/carousel/hero-6-temple.jpg" alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS" width="1400" height="1054" decoding="async">
+                    <source
+                      type="image/webp"
+                      srcset="assets/img/carousel/hero-6-temple-640.webp 640w, assets/img/carousel/hero-6-temple-800.webp 800w"
+                      sizes="100vw">
+                    <img
+                      class="w-100"
+                      src="assets/img/carousel/hero-6-temple-800.jpg"
+                      srcset="assets/img/carousel/hero-6-temple-640.jpg 640w, assets/img/carousel/hero-6-temple-800.jpg 800w"
+                      sizes="100vw"
+                      alt="Plan your dream Sri Lanka holiday with CEYLON JOJO TRAVELS"
+                      width="800"
+                      height="603"
+                      loading="lazy"
+                      decoding="async">
                 </picture>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">

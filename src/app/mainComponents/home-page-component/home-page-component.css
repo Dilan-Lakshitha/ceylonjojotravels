@@ -250,12 +250,15 @@
     object-fit: cover;
 }
 
-#header-carousel, 
-#header-carousel .carousel-inner, 
+#header-carousel,
+#header-carousel .carousel-inner,
 #header-carousel .carousel-item {
     width: 100%;
     height: clamp(360px, 55vh, 600px);
     overflow: hidden;
+}
+#header-carousel .carousel-item {
+    background: #023a2c;
 }
 #header-carousel .carousel-item::before {
     content: none;
@@ -269,7 +272,13 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    background: #1a3a2a;
+    background: #023a2c;
+}
+
+/* Full-bleed collage — no side letterbox bars */
+#header-carousel .carousel-item img.hero-collage {
+    object-fit: cover;
+    object-position: center center;
 }
 
 html, body {

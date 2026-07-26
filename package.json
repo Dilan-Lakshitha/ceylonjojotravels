@@ -10,6 +10,10 @@
     "serve:ssr:Travelwebsite": "node dist/Travelwebsite/server/server.mjs",
     "seo:generate": "node scripts/generate-i18n-seo.js",
     "optimize:heroes": "node scripts/optimize-hero-webp.mjs",
+    "optimize:heroes:responsive": "node scripts/optimize-hero-responsive.mjs",
+    "optimize:hero1:collage": "node scripts/build-hero1-collage.mjs",
+    "optimize:hero2:collage": "node scripts/build-hero2-safari-collage.mjs",
+    "optimize:hero3:collage": "node scripts/build-hero3-beach-collage.mjs",
     "optimize:destinations": "node scripts/optimize-destination-webp.mjs",
     "optimize:tour-cards": "node scripts/optimize-tour-card-images.mjs"
   },
