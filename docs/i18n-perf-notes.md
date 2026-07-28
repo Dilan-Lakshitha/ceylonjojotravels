@@ -17,6 +17,8 @@
 - SeoService: booking `noindex,nofollow`; always sets OG/Twitter image; runtime JSON-LD only (static dual graph removed from `index.html`)
 - `canonicalSegmentGuard` redirects wrong-lang path segments/slugs to the lang-correct URL
 - Guides pages (`/en/travel-guides`, localized siblings) are prerendered with enriched copy (team bios + travel tips) to address GSC “Crawled – currently not indexed”
+- Tour detail pages (all langs × all tour slugs) are prerendered with self-canonical + localized title/description to address GSC “Duplicate without user-selected canonical”
+- Primary host is **apex** `https://ceylonjojotravels.com` (sitemaps + canonicals). `www` must 308 → apex (never the reverse). `vercel.json` enforces www→apex and legacy path redirects (`/index.html`, `/twodaystours`, …)
 
 ## SSR deploy note
 Vercel SPA rewrite (`/(.*) → /index.html`) serves the English shell to many crawlers. Prefer Angular SSR/prerender for localized HTML. Client guards + SeoService still correct canonicals after hydration.

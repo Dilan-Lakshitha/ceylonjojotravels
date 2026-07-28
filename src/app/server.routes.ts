@@ -1,15 +1,14 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 import { AVAILABLE_LANGS } from './i18n/language.constants';
 import { ROUTE_MAP } from './i18n/route-map';
+import { TOUR_IDS, slugForTour } from './i18n/tour-slug-map';
 
 /**
- * Prerender each language homepage (`/en`, `/de`, …) so Vercel serves real HTML
- * on first request instead of the blank CSR shell.
+ * Prerender language homes, guides, and every localized tour detail URL so
+ * crawlers receive real title/description/canonical HTML (not the CSR shell).
  *
- * Guides use `:lang/<localized-segment>` (not a catch-all `:segment`) so sibling
- * matcher routes under `:lang` stay out of prerender mode.
- *
- * Other nested marketing URLs stay client-rendered for now.
+ * Paths stay explicit (`:lang/<segment>/…`) so matcher siblings are not pulled
+ * into prerender mode.
  */
 export const serverRoutes: ServerRoute[] = [
   {
@@ -24,10 +23,20 @@ export const serverRoutes: ServerRoute[] = [
       path: `:lang/${ROUTE_MAP.guides[lang]}`,
       renderMode: RenderMode.Prerender,
       async getPrerenderParams() {
-        // Only the matching language for this localized segment.
         return [{ lang }];
       },
     }),
+  ),
+  ...AVAILABLE_LANGS.flatMap((lang) =>
+    TOUR_IDS.map(
+      (tourId): ServerRoute => ({
+        path: `:lang/${ROUTE_MAP.tours[lang]}/${slugForTour(tourId, lang)}`,
+        renderMode: RenderMode.Prerender,
+        async getPrerenderParams() {
+          return [{ lang }];
+        },
+      }),
+    ),
   ),
   {
     path: '**',

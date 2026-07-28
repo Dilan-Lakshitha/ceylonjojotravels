@@ -54,3 +54,23 @@ if (fs.existsSync(guidesIndex)) {
 } else {
   console.warn('[vercel-spa-index] WARN: missing prerendered /en/travel-guides/index.html');
 }
+
+const kandyRu = path.join(
+  browserDir,
+  'ru',
+  'tury',
+  'odnodnevnyy-tur-kandy',
+  'index.html',
+);
+if (fs.existsSync(kandyRu)) {
+  const html = fs.readFileSync(kandyRu, 'utf8');
+  const canonicalOk = html.includes('rel="canonical"') && html.includes('odnodnevnyy-tur-kandy');
+  const titleOk = !html.includes('Sri Lanka Tours 2026 | Private Driver');
+  console.log(
+    canonicalOk && titleOk
+      ? '[vercel-spa-index] OK: prerendered RU Kandy tour has self-canonical + tour title'
+      : '[vercel-spa-index] WARN: RU Kandy tour HTML missing canonical/tour title',
+  );
+} else {
+  console.warn('[vercel-spa-index] WARN: missing prerendered /ru/tury/odnodnevnyy-tur-kandy/index.html');
+}

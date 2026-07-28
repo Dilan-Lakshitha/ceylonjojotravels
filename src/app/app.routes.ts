@@ -10,8 +10,7 @@ import {
   createTourListMatcher,
 } from './i18n/route-matchers';
 import { tourIdResolver } from './i18n/tour-id.resolver';
-import { LEGACY_TOUR_PATHS } from './i18n/tour-slug-map';
-import { slugForTour } from './i18n/tour-slug-map';
+import { LEGACY_TOUR_PATHS, TOUR_IDS, slugForTour } from './i18n/tour-slug-map';
 import { homeI18nResolver, pageI18nResolver } from './i18n/page-i18n.resolver';
 import { AVAILABLE_LANGS } from './i18n/language.constants';
 import { ROUTE_MAP } from './i18n/route-map';
@@ -33,6 +32,23 @@ const guidesRoutes: Routes = AVAILABLE_LANGS.map((lang) => ({
   resolve: { i18n: pageI18nResolver(['common', 'seo', 'guides']) },
   data: { routeId: 'guides' as const },
 }));
+
+/**
+ * Explicit lang-correct tour detail paths for prerender.
+ * Matcher below still catches wrong-lang slug combos for canonical redirects.
+ */
+const tourDetailRoutes: Routes = AVAILABLE_LANGS.flatMap((lang) =>
+  TOUR_IDS.map((tourId) => ({
+    path: `${ROUTE_MAP.tours[lang]}/${slugForTour(tourId, lang)}`,
+    loadComponent: () =>
+      import('./mainComponents/tour-detail-page/tour-detail-page.component').then(
+        (m) => m.TourDetailPageComponent,
+      ),
+    canActivate: segmentGuards,
+    resolve: { i18n: pageI18nResolver(['common', 'seo', 'tours']) },
+    data: { routeId: 'tours' as const, tourId },
+  })),
+);
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'en' },
@@ -78,6 +94,7 @@ export const routes: Routes = [
         canActivate: segmentGuards,
         data: { routeId: 'services' },
       },
+      ...tourDetailRoutes,
       {
         matcher: createTourDetailMatcher(),
         loadComponent: () =>

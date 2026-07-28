@@ -3,7 +3,44 @@
   "redirects": [
     {
       "source": "/",
+      "has": [{ "type": "host", "value": "www.ceylonjojotravels.com" }],
+      "destination": "https://ceylonjojotravels.com/en",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ceylonjojotravels.com" }],
+      "destination": "https://ceylonjojotravels.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
       "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/twodaystours",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/two-days-tours",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/galle day tour",
+      "destination": "/en/tours/galle-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/galle%20day%20tour",
+      "destination": "/en/tours/galle-day-tour",
       "permanent": true
     },
     {
