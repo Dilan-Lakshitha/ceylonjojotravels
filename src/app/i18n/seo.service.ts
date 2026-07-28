@@ -155,6 +155,22 @@ export class SeoService {
       })),
     });
 
+    if (opts.routeId === 'guides') {
+      this.upsertJsonLd('guides', {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: opts.pageTitle,
+        description: opts.pageDescription,
+        url: opts.canonical,
+        isPartOf: { '@id': websiteId },
+        about: {
+          '@type': 'TouristTrip',
+          name: 'Private Sri Lanka tours with chauffeur guides',
+          touristType: 'Leisure travelers',
+        },
+      });
+    }
+
     if (opts.tourId && opts.tourJsonLd) {
       const tour = opts.tourJsonLd;
       const product: Record<string, unknown> = {

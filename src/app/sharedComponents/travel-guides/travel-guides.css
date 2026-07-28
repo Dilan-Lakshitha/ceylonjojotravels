@@ -1,0 +1,65 @@
+.guides-page__intro {
+  max-width: 46rem;
+}
+
+.guides-page__lede {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.guides-page__body,
+.guides-card__bio,
+.guides-why p,
+.guides-tip p,
+.guides-cta__body {
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.guides-card__bio {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.guides-why {
+  height: 100%;
+  padding: 1.25rem 1rem;
+  border-top: 3px solid #7ab730;
+  background: linear-gradient(180deg, #f8faf6 0%, #fff 55%);
+}
+
+.guides-why__num {
+  display: inline-block;
+  font-weight: 700;
+  color: #7ab730;
+  margin-bottom: 0.5rem;
+}
+
+.guides-tip {
+  height: 100%;
+  padding: 1.5rem 1.25rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.guides-cta {
+  padding: 2.5rem 1.5rem;
+  background:
+    linear-gradient(135deg, rgba(122, 183, 48, 0.08), rgba(255, 255, 255, 0.9)),
+    #f7f9f4;
+}
+
+.guides-cta__body {
+  max-width: 36rem;
+}
+
+.guides-cta__actions {
+  gap: 0.75rem;
+}
+
+@media (max-width: 575.98px) {
+  .guides-page__lede {
+    font-size: 1.05rem;
+  }
+}

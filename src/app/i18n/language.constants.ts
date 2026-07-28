@@ -17,6 +17,7 @@ export const TRANSLOCO_SCOPES = [
   'booking',
   'seo',
   'routes',
+  'guides',
 ] as const;
 
 export type TranslocoScope = (typeof TRANSLOCO_SCOPES)[number];

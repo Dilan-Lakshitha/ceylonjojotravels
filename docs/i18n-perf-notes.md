@@ -16,6 +16,7 @@
 - robots.txt disallows every localized booking segment
 - SeoService: booking `noindex,nofollow`; always sets OG/Twitter image; runtime JSON-LD only (static dual graph removed from `index.html`)
 - `canonicalSegmentGuard` redirects wrong-lang path segments/slugs to the lang-correct URL
+- Guides pages (`/en/travel-guides`, localized siblings) are prerendered with enriched copy (team bios + travel tips) to address GSC “Crawled – currently not indexed”
 
 ## SSR deploy note
 Vercel SPA rewrite (`/(.*) → /index.html`) serves the English shell to many crawlers. Prefer Angular SSR/prerender for localized HTML. Client guards + SeoService still correct canonicals after hydration.

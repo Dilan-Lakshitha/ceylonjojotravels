@@ -13,7 +13,7 @@ Ceylon JOJO Travels is a Sri Lanka tour operator offering private day tours and 
 - [Destinations](https://ceylonjojotravels.com/en/destinations): Sigiriya, Ella, Kandy, Galle, Yala and more
 - [Contact](https://ceylonjojotravels.com/en/contact): Book or enquire via WhatsApp, phone, or email
 - [Testimonials](https://ceylonjojotravels.com/en/customer-testimonials): Guest reviews
-- [Travel guides](https://ceylonjojotravels.com/en/travel-guides): Sri Lanka travel tips
+- [Travel guides](https://ceylonjojotravels.com/en/travel-guides): Meet our chauffeur guides and practical Sri Lanka travel tips
 
 ## Popular tours
 

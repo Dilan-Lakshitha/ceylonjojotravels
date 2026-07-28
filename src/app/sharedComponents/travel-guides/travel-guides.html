@@ -1,24 +1,82 @@
-<!-- Guides Start -->
-<div class="container-fluid py-5" *transloco="let t; scope: 'common'; prefix: 'common'">
-  <div class="container pt-5 pb-3">
-    <div class="text-center mb-3 pb-3">
-      <h6 class="text-primary i18n-section-eyebrow">{{ t('pages.guides.eyebrow') }}</h6>
-      <h1 class="i18n-section-title">{{ t('pages.guides.heading') }}</h1>
-    </div>
-    <div class="row i18n-card-grid">
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-2" *ngFor="let member of guides">
-        <div class="team-item bg-white mb-4 i18n-equal-card">
-          <div class="team-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" [src]="member.image" [alt]="member.name" loading="lazy" width="400" height="500" />
-          </div>
-          <div class="text-center py-4">
-            <h5 class="text-truncate">{{ member.name }}</h5>
-            <p class="m-0">{{ t('pages.guides.role') }}</p>
-            <p class="m-0">{{ member.country }}</p>
+<ng-container *transloco="let t; scope: 'guides'; prefix: 'guides'">
+  <app-page-header
+    [title]="t('header.title')"
+    [crumbs]="[{ label: homeLabel, link: homeLink }, { label: t('header.title') }]">
+  </app-page-header>
+
+  <section class="guides-page" aria-labelledby="guides-heading">
+    <div class="container py-5">
+      <div class="guides-page__intro text-center mx-auto mb-5">
+        <p class="text-primary i18n-section-eyebrow mb-2">{{ t('eyebrow') }}</p>
+        <h2 id="guides-heading" class="i18n-section-title mb-3">{{ t('heading') }}</h2>
+        <p class="guides-page__lede">{{ t('intro') }}</p>
+        <p class="guides-page__body mb-0">{{ t('introBody') }}</p>
+      </div>
+
+      <div class="text-center mb-4">
+        <p class="text-primary i18n-section-eyebrow mb-2">{{ t('team.eyebrow') }}</p>
+        <h3 class="h2 i18n-section-title">{{ t('team.heading') }}</h3>
+      </div>
+
+      <div class="row i18n-card-grid mb-5">
+        <div class="col-lg-3 col-md-6 pb-3" *ngFor="let id of guideIds">
+          <article class="team-item bg-white mb-0 i18n-equal-card guides-card">
+            <div class="team-img position-relative overflow-hidden">
+              <img
+                class="img-fluid w-100"
+                [src]="guideImages[id]"
+                [alt]="t(id + '.name')"
+                loading="lazy"
+                width="400"
+                height="500"
+              />
+            </div>
+            <div class="text-center py-4 px-3">
+              <h4 class="h5 mb-1">{{ t(id + '.name') }}</h4>
+              <p class="text-primary mb-2">{{ t('role') }}</p>
+              <p class="small text-muted mb-2">{{ t(id + '.market') }}</p>
+              <p class="small mb-2"><strong>{{ t(id + '.langs') }}</strong> · {{ t(id + '.focus') }}</p>
+              <p class="guides-card__bio mb-0">{{ t(id + '.bio') }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <p class="text-primary i18n-section-eyebrow mb-2">{{ t('why.eyebrow') }}</p>
+        <h3 class="h2 i18n-section-title">{{ t('why.heading') }}</h3>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-3 mb-4" *ngFor="let n of whyIds">
+          <div class="guides-why">
+            <span class="guides-why__num" aria-hidden="true">{{ n }}</span>
+            <h4 class="h5">{{ t('why.' + n + '.title') }}</h4>
+            <p class="mb-0">{{ t('why.' + n + '.desc') }}</p>
           </div>
         </div>
       </div>
+
+      <div class="text-center mb-4">
+        <p class="text-primary i18n-section-eyebrow mb-2">{{ t('tips.eyebrow') }}</p>
+        <h3 class="h2 i18n-section-title">{{ t('tips.heading') }}</h3>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6 mb-4" *ngFor="let n of tipIds">
+          <article class="guides-tip">
+            <h4 class="h5">{{ t('tips.' + n + '.title') }}</h4>
+            <p class="mb-0">{{ t('tips.' + n + '.desc') }}</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="guides-cta text-center">
+        <h3 class="h2 mb-3">{{ t('cta.heading') }}</h3>
+        <p class="mb-4 mx-auto guides-cta__body">{{ t('cta.body') }}</p>
+        <div class="d-flex flex-wrap justify-content-center guides-cta__actions">
+          <a [routerLink]="toursLink" class="btn btn-primary px-4 py-2">{{ t('cta.tours') }}</a>
+          <a [routerLink]="contactLink" class="btn btn-outline-primary px-4 py-2">{{ t('cta.contact') }}</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<!-- Guides End -->
+  </section>
+</ng-container>

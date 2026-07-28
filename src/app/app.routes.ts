@@ -12,7 +12,9 @@ import {
 import { tourIdResolver } from './i18n/tour-id.resolver';
 import { LEGACY_TOUR_PATHS } from './i18n/tour-slug-map';
 import { slugForTour } from './i18n/tour-slug-map';
-import { homeI18nResolver } from './i18n/page-i18n.resolver';
+import { homeI18nResolver, pageI18nResolver } from './i18n/page-i18n.resolver';
+import { AVAILABLE_LANGS } from './i18n/language.constants';
+import { ROUTE_MAP } from './i18n/route-map';
 
 const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path, tourId]) => ({
   path,
@@ -21,6 +23,16 @@ const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path
 }));
 
 const segmentGuards = [canonicalSegmentGuard];
+
+/** Explicit paths so Angular SSR can prerender each localized guides URL. */
+const guidesRoutes: Routes = AVAILABLE_LANGS.map((lang) => ({
+  path: ROUTE_MAP.guides[lang],
+  loadComponent: () =>
+    import('./sharedComponents/travel-guides/travel-guides').then((m) => m.TravelGuides),
+  canActivate: segmentGuards,
+  resolve: { i18n: pageI18nResolver(['common', 'seo', 'guides']) },
+  data: { routeId: 'guides' as const },
+}));
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'en' },
@@ -126,13 +138,7 @@ export const routes: Routes = [
         canActivate: segmentGuards,
         data: { routeId: 'testimonials' },
       },
-      {
-        matcher: createSegmentMatcher('guides'),
-        loadComponent: () =>
-          import('./sharedComponents/travel-guides/travel-guides').then((m) => m.TravelGuides),
-        canActivate: segmentGuards,
-        data: { routeId: 'guides' },
-      },
+      ...guidesRoutes,
       {
         matcher: createSegmentMatcher('restaurant'),
         loadComponent: () =>

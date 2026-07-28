@@ -37,3 +37,20 @@ if (fs.existsSync(enIndex)) {
 } else {
   console.warn('[vercel-spa-index] WARN: missing prerendered dist/.../browser/en/index.html');
 }
+
+const guidesIndex = path.join(browserDir, 'en', 'travel-guides', 'index.html');
+if (fs.existsSync(guidesIndex)) {
+  const html = fs.readFileSync(guidesIndex, 'utf8');
+  const hasGuides =
+    html.includes('Travel Guides') ||
+    html.includes('chauffeur') ||
+    html.includes('Danula') ||
+    html.includes('guides-page');
+  console.log(
+    hasGuides
+      ? '[vercel-spa-index] OK: prerendered /en/travel-guides/index.html contains page content'
+      : '[vercel-spa-index] WARN: /en/travel-guides/index.html exists but looks thin',
+  );
+} else {
+  console.warn('[vercel-spa-index] WARN: missing prerendered /en/travel-guides/index.html');
+}
