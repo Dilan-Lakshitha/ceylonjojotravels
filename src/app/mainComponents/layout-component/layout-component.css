@@ -198,6 +198,7 @@ body {
   font-size: 0.8125rem;
   font-weight: 600;
   text-align: left;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -212,6 +213,7 @@ body {
 .lang-compact__item.active {
   background: #f3f6f4;
   color: #023a2c;
+  text-decoration: none;
 }
 
 .site-toggler {
@@ -371,12 +373,15 @@ body {
 }
 
 .lang-flag {
+  display: inline-flex;
   background: transparent;
   border: none;
   padding: 4px;
   cursor: pointer;
   border-radius: 6px;
   opacity: 0.65;
+  line-height: 0;
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 

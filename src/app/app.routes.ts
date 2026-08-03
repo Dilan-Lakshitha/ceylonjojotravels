@@ -13,7 +13,7 @@ import { tourIdResolver } from './i18n/tour-id.resolver';
 import { LEGACY_TOUR_PATHS, TOUR_IDS, slugForTour } from './i18n/tour-slug-map';
 import { homeI18nResolver, pageI18nResolver } from './i18n/page-i18n.resolver';
 import { AVAILABLE_LANGS } from './i18n/language.constants';
-import { ROUTE_MAP } from './i18n/route-map';
+import { ROUTE_MAP, RouteId } from './i18n/route-map';
 
 const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path, tourId]) => ({
   path,
@@ -23,15 +23,61 @@ const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path
 
 const segmentGuards = [canonicalSegmentGuard];
 
-/** Explicit paths so Angular SSR can prerender each localized guides URL. */
-const guidesRoutes: Routes = AVAILABLE_LANGS.map((lang) => ({
-  path: ROUTE_MAP.guides[lang],
-  loadComponent: () =>
-    import('./sharedComponents/travel-guides/travel-guides').then((m) => m.TravelGuides),
-  canActivate: segmentGuards,
-  resolve: { i18n: pageI18nResolver(['common', 'seo', 'guides']) },
-  data: { routeId: 'guides' as const },
-}));
+/** Explicit lang-correct paths so Angular SSR can prerender sitemap URLs. */
+function explicitSegmentRoutes(
+  routeId: RouteId,
+  scopes: string[],
+  loadComponent: NonNullable<Routes[number]['loadComponent']>,
+): Routes {
+  return AVAILABLE_LANGS.map((lang) => ({
+    path: ROUTE_MAP[routeId][lang],
+    loadComponent,
+    canActivate: segmentGuards,
+    resolve: { i18n: pageI18nResolver(scopes) },
+    data: { routeId },
+  }));
+}
+
+const guidesRoutes = explicitSegmentRoutes('guides', ['common', 'seo', 'guides'], () =>
+  import('./sharedComponents/travel-guides/travel-guides').then((m) => m.TravelGuides),
+);
+
+const aboutRoutes = explicitSegmentRoutes('about', ['common', 'seo', 'about'], () =>
+  import('./mainComponents/about-component/about-component').then((m) => m.AboutComponent),
+);
+
+const servicesRoutes = explicitSegmentRoutes('services', ['common', 'seo', 'services'], () =>
+  import('./mainComponents/service-component/service-component').then((m) => m.ServiceComponent),
+);
+
+const destinationsRoutes = explicitSegmentRoutes(
+  'destinations',
+  ['common', 'seo', 'destinations'],
+  () =>
+    import('./sharedComponents/destination-component/destination-component').then(
+      (m) => m.DestinationComponent,
+    ),
+);
+
+const contactRoutes = explicitSegmentRoutes('contact', ['common', 'seo', 'contact'], () =>
+  import('./sharedComponents/contact-us-component/contact-us-component').then(
+    (m) => m.ContactUsComponent,
+  ),
+);
+
+const testimonialsRoutes = explicitSegmentRoutes('testimonials', ['common', 'seo'], () =>
+  import('./sharedComponents/testimonial/testimonial').then((m) => m.Testimonial),
+);
+
+const restaurantRoutes = explicitSegmentRoutes('restaurant', ['common', 'seo'], () =>
+  import('./mainComponents/resturant-component/resturant-component').then(
+    (m) => m.ResturantComponent,
+  ),
+);
+
+const toursListRoutes = explicitSegmentRoutes('tours', ['common', 'seo', 'tours'], () =>
+  import('./mainComponents/tour-packages/tour-packages').then((m) => m.TourPackages),
+);
 
 /**
  * Explicit lang-correct tour detail paths for prerender.
@@ -78,13 +124,16 @@ export const routes: Routes = [
         resolve: { i18n: homeI18nResolver },
         data: { routeId: 'home' },
       },
+      ...aboutRoutes,
       {
         matcher: createSegmentMatcher('about'),
         loadComponent: () =>
           import('./mainComponents/about-component/about-component').then((m) => m.AboutComponent),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'about']) },
         data: { routeId: 'about' },
       },
+      ...servicesRoutes,
       {
         matcher: createSegmentMatcher('services'),
         loadComponent: () =>
@@ -92,6 +141,7 @@ export const routes: Routes = [
             (m) => m.ServiceComponent,
           ),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'services']) },
         data: { routeId: 'services' },
       },
       ...tourDetailRoutes,
@@ -102,16 +152,19 @@ export const routes: Routes = [
             (m) => m.TourDetailPageComponent,
           ),
         canActivate: segmentGuards,
-        resolve: { tourId: tourIdResolver },
+        resolve: { tourId: tourIdResolver, i18n: pageI18nResolver(['common', 'seo', 'tours']) },
         data: { routeId: 'tours' },
       },
+      ...toursListRoutes,
       {
         matcher: createTourListMatcher(),
         loadComponent: () =>
           import('./mainComponents/tour-packages/tour-packages').then((m) => m.TourPackages),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'tours']) },
         data: { routeId: 'tours' },
       },
+      ...destinationsRoutes,
       {
         matcher: createSegmentMatcher('destinations'),
         loadComponent: () =>
@@ -119,6 +172,7 @@ export const routes: Routes = [
             (m) => m.DestinationComponent,
           ),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'destinations']) },
         data: { routeId: 'destinations' },
       },
       {
@@ -139,6 +193,7 @@ export const routes: Routes = [
         canActivate: segmentGuards,
         data: { routeId: 'booking' },
       },
+      ...contactRoutes,
       {
         matcher: createSegmentMatcher('contact'),
         loadComponent: () =>
@@ -146,16 +201,20 @@ export const routes: Routes = [
             (m) => m.ContactUsComponent,
           ),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'contact']) },
         data: { routeId: 'contact' },
       },
+      ...testimonialsRoutes,
       {
         matcher: createSegmentMatcher('testimonials'),
         loadComponent: () =>
           import('./sharedComponents/testimonial/testimonial').then((m) => m.Testimonial),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo']) },
         data: { routeId: 'testimonials' },
       },
       ...guidesRoutes,
+      ...restaurantRoutes,
       {
         matcher: createSegmentMatcher('restaurant'),
         loadComponent: () =>
@@ -163,10 +222,24 @@ export const routes: Routes = [
             (m) => m.ResturantComponent,
           ),
         canActivate: segmentGuards,
+        resolve: { i18n: pageI18nResolver(['common', 'seo']) },
         data: { routeId: 'restaurant' },
+      },
+      {
+        path: '**',
+        loadComponent: () =>
+          import('./sharedComponents/not-found/not-found.component').then(
+            (m) => m.NotFoundComponent,
+          ),
+        data: { notFound: true },
       },
     ],
   },
 
-  { path: '**', redirectTo: 'en' },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./sharedComponents/not-found/not-found.component').then((m) => m.NotFoundComponent),
+    data: { notFound: true },
+  },
 ];

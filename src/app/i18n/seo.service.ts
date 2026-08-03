@@ -97,6 +97,19 @@ export class SeoService {
     });
   }
 
+  /** Soft-404 / unknown paths: keep out of the index. */
+  applyNotFoundSeo(): void {
+    this.title.setTitle('Page not found | CEYLON JOJO TRAVElS');
+    this.meta.updateTag({
+      name: 'description',
+      content: 'This page does not exist on Ceylon JOJO Travels.',
+    });
+    this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
+    this.clearJsonLd();
+    this.document.querySelectorAll('link[rel="canonical"]').forEach((el) => el.remove());
+    this.document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+  }
+
   private applyJsonLd(opts: {
     routeId: RouteId;
     lang: AppLang;

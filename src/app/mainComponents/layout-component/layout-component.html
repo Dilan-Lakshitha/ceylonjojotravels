@@ -14,16 +14,17 @@
         </a>
       </div>
       <div class="site-topbar__right">
-        <div class="lang-pill" role="listbox" [attr.aria-label]="t('nav.home')">
-          <button
+        <div class="lang-pill" role="navigation" [attr.aria-label]="'Languages'">
+          <a
             *ngFor="let lang of langs"
-            type="button"
             class="lang-flag"
             [class.active]="activeLang === lang"
-            (click)="changeLang(lang)"
+            [routerLink]="langLinks[lang]"
+            (click)="onLangNavigate(lang)"
             [title]="langTitle(lang)"
             [attr.aria-label]="langTitle(lang)"
-            [attr.aria-pressed]="activeLang === lang"
+            [attr.aria-current]="activeLang === lang ? 'true' : null"
+            [attr.hreflang]="lang"
           >
             <img
               [src]="'https://flagcdn.com/40x30/' + flagCode(lang) + '.png'"
@@ -32,7 +33,7 @@
               width="20"
               height="15"
             />
-          </button>
+          </a>
         </div>
         <div class="site-social">
           <a href="https://www.facebook.com/ceylonjojotravels/" [attr.aria-label]="'Facebook'" target="_blank" rel="noopener">
@@ -91,13 +92,14 @@
           <span>{{ activeLang | uppercase }}</span>
           <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </button>
-        <div class="lang-compact__menu" *ngIf="langMenuOpen" role="listbox">
-          <button
+        <div class="lang-compact__menu" *ngIf="langMenuOpen" role="navigation" [attr.aria-label]="'Languages'">
+          <a
             *ngFor="let lang of langs"
-            type="button"
             class="lang-compact__item"
             [class.active]="activeLang === lang"
-            (click)="selectLang(lang)"
+            [routerLink]="langLinks[lang]"
+            (click)="onLangNavigate(lang)"
+            [attr.hreflang]="lang"
           >
             <img
               [src]="'https://flagcdn.com/40x30/' + flagCode(lang) + '.png'"
@@ -107,7 +109,7 @@
               height="15"
             />
             <span>{{ langTitle(lang) }}</span>
-          </button>
+          </a>
         </div>
       </div>
 

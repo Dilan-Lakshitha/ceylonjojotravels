@@ -1,0 +1,8 @@
+<section class="not-found" *transloco="let t; scope: 'common'; prefix: 'common'">
+  <p class="not-found__code" aria-hidden="true">404</p>
+  <h1 class="not-found__title">Page not found</h1>
+  <p class="not-found__copy">
+    This page does not exist or has moved. Use the menu or return home to continue browsing Sri Lanka tours.
+  </p>
+  <a class="not-found__cta" [routerLink]="homeLink">{{ t('nav.home') }}</a>
+</section>

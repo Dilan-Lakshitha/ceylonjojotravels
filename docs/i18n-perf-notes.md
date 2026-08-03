@@ -16,12 +16,14 @@
 - robots.txt disallows every localized booking segment
 - SeoService: booking `noindex,nofollow`; always sets OG/Twitter image; runtime JSON-LD only (static dual graph removed from `index.html`)
 - `canonicalSegmentGuard` redirects wrong-lang path segments/slugs to the lang-correct URL
-- Guides pages (`/en/travel-guides`, localized siblings) are prerendered with enriched copy (team bios + travel tips) to address GSC “Crawled – currently not indexed”
-- Tour detail pages (all langs × all tour slugs) are prerendered with self-canonical + localized title/description to address GSC “Duplicate without user-selected canonical”
+- **All sitemap marketing URLs are prerendered** (home, about, services, tours list, destinations, contact, testimonials, guides, restaurant, and every tour detail × lang) so Google gets real HTML — not the CSR English shell
+- Language switcher uses crawlable `<a routerLink>` alternates (not JS-only buttons)
+- Unknown paths render a `noindex` 404 page instead of soft-redirecting to `/en`
+- Guides pages enriched with team bios + travel tips (selection/quality for “Crawled – currently not indexed”)
 - Primary host is **apex** `https://ceylonjojotravels.com` (sitemaps + canonicals). `www` must 308 → apex (never the reverse). `vercel.json` enforces www→apex and legacy path redirects (`/index.html`, `/twodaystours`, …)
 
 ## SSR deploy note
-Vercel SPA rewrite (`/(.*) → /index.html`) serves the English shell to many crawlers. Prefer Angular SSR/prerender for localized HTML. Client guards + SeoService still correct canonicals after hydration.
+Vercel SPA rewrite still falls back to `index.html` for non-prerendered paths (e.g. booking). After prerendering the full sitemap surface, crawlers should hit static HTML for marketing URLs. Client guards + SeoService still correct canonicals after hydration.
 
 ## CLS / LCP checklist
 - TourCard image `aspect-ratio: 5/3`; destination media fixed 180px

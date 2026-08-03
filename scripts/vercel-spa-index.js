@@ -55,6 +55,54 @@ if (fs.existsSync(guidesIndex)) {
   console.warn('[vercel-spa-index] WARN: missing prerendered /en/travel-guides/index.html');
 }
 
+const aboutIndex = path.join(browserDir, 'en', 'about-us', 'index.html');
+if (fs.existsSync(aboutIndex)) {
+  const html = fs.readFileSync(aboutIndex, 'utf8');
+  const hasAbout =
+    html.includes('rel="canonical"') &&
+    html.includes('/en/about-us') &&
+    !html.includes('Sri Lanka Tours 2026 | Private Driver');
+  console.log(
+    hasAbout
+      ? '[vercel-spa-index] OK: prerendered /en/about-us has self-canonical + page title'
+      : '[vercel-spa-index] WARN: /en/about-us HTML missing canonical/page title',
+  );
+} else {
+  console.warn('[vercel-spa-index] WARN: missing prerendered /en/about-us/index.html');
+}
+
+const toursEn = path.join(browserDir, 'en', 'tours', 'index.html');
+if (fs.existsSync(toursEn)) {
+  const html = fs.readFileSync(toursEn, 'utf8');
+  const ok =
+    html.includes('rel="canonical"') &&
+    html.includes('/en/tours') &&
+    !html.includes('Sri Lanka Tours 2026 | Private Driver');
+  console.log(
+    ok
+      ? '[vercel-spa-index] OK: prerendered /en/tours has self-canonical + page title'
+      : '[vercel-spa-index] WARN: /en/tours HTML missing canonical/page title',
+  );
+} else {
+  console.warn('[vercel-spa-index] WARN: missing prerendered /en/tours/index.html');
+}
+
+const toursDe = path.join(browserDir, 'de', 'touren', 'index.html');
+if (fs.existsSync(toursDe)) {
+  const html = fs.readFileSync(toursDe, 'utf8');
+  const ok =
+    html.includes('rel="canonical"') &&
+    html.includes('/de/touren') &&
+    !html.includes('Sri Lanka Tours 2026 | Private Driver');
+  console.log(
+    ok
+      ? '[vercel-spa-index] OK: prerendered /de/touren has self-canonical + localized title'
+      : '[vercel-spa-index] WARN: /de/touren HTML missing canonical/localized title',
+  );
+} else {
+  console.warn('[vercel-spa-index] WARN: missing prerendered /de/touren/index.html');
+}
+
 const kandyRu = path.join(
   browserDir,
   'ru',

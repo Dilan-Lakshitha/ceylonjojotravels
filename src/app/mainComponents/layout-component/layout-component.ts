@@ -1,7 +1,8 @@
-import { Component, Inject, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { filter, Subscription } from 'rxjs';
 import { ScrollToToComponent } from '../../sharedComponents/scroll-to-to-component/scroll-to-to-component';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { AVAILABLE_LANGS, AppLang, isAppLang } from '../../i18n/language.constants';
@@ -13,7 +14,7 @@ import { AVAILABLE_LANGS, AppLang, isAppLang } from '../../i18n/language.constan
   templateUrl: './layout-component.html',
   styleUrl: './layout-component.css',
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent implements OnInit, OnDestroy {
   activeLang: AppLang = 'en';
   readonly langs = AVAILABLE_LANGS;
   navOpen = false;
@@ -21,6 +22,8 @@ export class LayoutComponent implements OnInit {
 
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly transloco = inject(TranslocoService);
+  private readonly router = inject(Router);
+  private readonly subs = new Subscription();
 
   homeLink: any[] = ['/', 'en'];
   toursLink: any[] = ['/', 'en', 'tours'];
@@ -30,18 +33,39 @@ export class LayoutComponent implements OnInit {
   destinationsLink: any[] = ['/', 'en', 'destinations'];
   guidesLink: any[] = ['/', 'en', 'travel-guides'];
   testimonialsLink: any[] = ['/', 'en', 'customer-testimonials'];
+  /** Crawlable alternate URLs for the current page (one per language). */
+  langLinks: Record<AppLang, any[]> = {
+    en: ['/', 'en'],
+    de: ['/', 'de'],
+    fr: ['/', 'fr'],
+    it: ['/', 'it'],
+    es: ['/', 'es'],
+    pl: ['/', 'pl'],
+    ru: ['/', 'ru'],
+  };
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
     this.activeLang = this.localizedRouter.currentLang();
     this.refreshLinks();
-    this.transloco.langChanges$.subscribe((lang) => {
-      if (isAppLang(lang)) {
-        this.activeLang = lang;
-        this.refreshLinks();
-      }
-    });
+    this.subs.add(
+      this.transloco.langChanges$.subscribe((lang) => {
+        if (isAppLang(lang)) {
+          this.activeLang = lang;
+          this.refreshLinks();
+        }
+      }),
+    );
+    this.subs.add(
+      this.router.events.pipe(filter((e) => e instanceof NavigationEnd)).subscribe(() => {
+        this.refreshLangLinks();
+      }),
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subs.unsubscribe();
   }
 
   toggleNav(): void {
@@ -59,17 +83,13 @@ export class LayoutComponent implements OnInit {
     this.langMenuOpen = !this.langMenuOpen;
   }
 
-  selectLang(lang: AppLang): void {
+  /** Persist preference when following a crawlable lang <a href>. */
+  onLangNavigate(lang: AppLang): void {
     this.langMenuOpen = false;
-    this.changeLang(lang);
-  }
-
-  changeLang(lang: AppLang): void {
-    if (lang === this.activeLang) {
-      return;
+    this.closeNav();
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('preferred_lang', lang);
     }
-    this.activeLang = lang;
-    this.localizedRouter.switchLanguage(lang);
   }
 
   private refreshLinks(): void {
@@ -82,6 +102,20 @@ export class LayoutComponent implements OnInit {
     this.destinationsLink = this.localizedRouter.commandsFor('destinations', { lang });
     this.guidesLink = this.localizedRouter.commandsFor('guides', { lang });
     this.testimonialsLink = this.localizedRouter.commandsFor('testimonials', { lang });
+    this.refreshLangLinks();
+  }
+
+  private refreshLangLinks(): void {
+    const resolved = this.localizedRouter.resolveFromUrl(this.router.url);
+    for (const lang of AVAILABLE_LANGS) {
+      this.langLinks[lang] = resolved
+        ? this.localizedRouter.commandsFor(resolved.routeId, {
+            lang,
+            tourId: resolved.tourId,
+            filecode: resolved.filecode,
+          })
+        : ['/', lang];
+    }
   }
 
   flagCode(lang: AppLang): string {

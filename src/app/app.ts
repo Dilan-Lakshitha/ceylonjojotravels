@@ -39,6 +39,11 @@ export class AppComponent implements OnInit, OnDestroy {
       )
       .subscribe(async (route) => {
         const data = route.snapshot.data;
+        if (data['notFound']) {
+          this.seo.applyNotFoundSeo();
+          return;
+        }
+
         const langParam =
           route.parent?.snapshot.paramMap.get('lang') ||
           this.router.url.split('/').filter(Boolean)[0] ||
