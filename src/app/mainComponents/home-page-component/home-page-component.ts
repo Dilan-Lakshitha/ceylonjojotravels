@@ -21,6 +21,7 @@ import { TourPriceService } from '../../Services/tour-price.service';
 import { TourContentService, TourCatalogItem } from '../../i18n/tour-content.service';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { TourId } from '../../i18n/tour-slug-map';
+import { environment } from '../../../../environment';
 
 type PricedTour = TourCatalogItem & { price: number; link: any[] };
 
@@ -114,7 +115,9 @@ export class HomePageComponent implements OnInit, OnDestroy {
   private pendingCatalog: { dayTours: TourCatalogItem[]; multiDayTours: TourCatalogItem[] } | null =
     null;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  customItineraryLink = `${environment.travellaAppUrl}/company/travella/login`;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
     this.contactLink = this.localizedRouter.commandsFor('contact');
@@ -157,6 +160,12 @@ export class HomePageComponent implements OnInit, OnDestroy {
         }
       },
     });
+  }
+
+  openItineraryBuilder(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      window.open(this.customItineraryLink, '_blank', 'noopener');
+    }
   }
 
   get toursLink(): any[] {

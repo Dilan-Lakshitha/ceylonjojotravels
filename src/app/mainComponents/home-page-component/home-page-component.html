@@ -357,6 +357,26 @@
 
 <!-- Packages End -->
 
+<!-- Custom Itinerary CTA Start -->
+<section class="custom-itinerary" *transloco="let t; scope: 'home'; prefix: 'home'">
+  <div class="container">
+    <div class="custom-itinerary__inner">
+      <div class="custom-itinerary__icon" aria-hidden="true">
+        <i class="fa fa-route"></i>
+      </div>
+      <p class="custom-itinerary__eyebrow">{{ t('customItinerary.eyebrow') }}</p>
+      <h2 class="custom-itinerary__title">{{ t('customItinerary.title') }}</h2>
+      <p class="custom-itinerary__subtitle">{{ t('customItinerary.subtitle') }}</p>
+      <button type="button" class="custom-itinerary__cta" (click)="openItineraryBuilder()">
+        <span>{{ t('customItinerary.cta') }}</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </button>
+      <p class="custom-itinerary__note">{{ t('customItinerary.note') }}</p>
+    </div>
+  </div>
+</section>
+<!-- Custom Itinerary CTA End -->
+
 <!-- About Start — editorial mosaic + clean copy (no floating card) -->
 <section class="home-about" *transloco="let t; scope: 'about'; prefix: 'about'" aria-labelledby="home-about-heading">
   <div class="home-about__inner">

@@ -13,6 +13,17 @@
       "permanent": true
     },
     {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ceylonjojotravels.com"
+        }
+      ],
+      "destination": "https://ceylonjojotravels.com/en",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -25,12 +36,12 @@
     },
     {
       "source": "/",
-      "destination": "/en",
+      "destination": "https://ceylonjojotravels.com/en",
       "permanent": true
     },
     {
       "source": "/index.html",
-      "destination": "/en",
+      "destination": "https://ceylonjojotravels.com/en",
       "permanent": true
     },
     {
