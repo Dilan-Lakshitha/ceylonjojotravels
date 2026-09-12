@@ -45,8 +45,23 @@
       "permanent": true
     },
     {
+      "source": "/index.htm",
+      "destination": "https://ceylonjojotravels.com/en",
+      "permanent": true
+    },
+    {
       "source": "/sitemap_index.xml",
       "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/twodaytours",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/twodaytour",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
       "permanent": true
     },
     {
@@ -55,7 +70,17 @@
       "permanent": true
     },
     {
+      "source": "/two-day-tours",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
       "source": "/two-days-tours",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/two-days-tour",
       "destination": "/en/tours/2-day-ella-kandy-private-tour",
       "permanent": true
     },

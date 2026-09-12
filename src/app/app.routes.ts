@@ -99,6 +99,12 @@ const tourDetailRoutes: Routes = AVAILABLE_LANGS.flatMap((lang) =>
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'en' },
 
+  { path: 'twodaytours', redirectTo: '/en/tours/2-day-ella-kandy-private-tour', pathMatch: 'full' },
+  { path: 'twodaytour', redirectTo: '/en/tours/2-day-ella-kandy-private-tour', pathMatch: 'full' },
+  { path: 'twodaystours', redirectTo: '/en/tours/2-day-ella-kandy-private-tour', pathMatch: 'full' },
+  { path: 'two-day-tours', redirectTo: '/en/tours/2-day-ella-kandy-private-tour', pathMatch: 'full' },
+  { path: 'two-days-tours', redirectTo: '/en/tours/2-day-ella-kandy-private-tour', pathMatch: 'full' },
+  { path: 'two-days-tour', redirectTo: '/en/tours/2-day-ella-kandy-private-tour', pathMatch: 'full' },
   { path: 'about-us', redirectTo: '/en/about-us', pathMatch: 'full' },
   { path: 'our-services', redirectTo: '/en/our-services', pathMatch: 'full' },
   { path: 'tour-packages', redirectTo: '/en/tours', pathMatch: 'full' },

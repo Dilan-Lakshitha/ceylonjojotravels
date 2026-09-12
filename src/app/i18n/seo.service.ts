@@ -47,10 +47,12 @@ export class SeoService {
       /* ignore missing packs */
     }
 
+    const mappedTourTitle = tourId ? this.readSeoKey(`tour.${tourId}`, 'title', lang) : '';
+    const mappedTourDescription = tourId ? this.readSeoKey(`tour.${tourId}`, 'description', lang) : '';
     const pageTitle =
-      tourTitle || this.readSeoKey(routeId, 'title') || 'CEYLON JOJO TRAVElS';
+      mappedTourTitle || tourTitle || this.readSeoKey(routeId, 'title', lang) || 'CEYLON JOJO TRAVElS';
     const pageDescription =
-      tourDescription || this.readSeoKey(routeId, 'description') || '';
+      mappedTourDescription || tourDescription || this.readSeoKey(routeId, 'description', lang) || '';
 
     this.title.setTitle(pageTitle);
     this.meta.updateTag({ name: 'description', content: pageDescription });
@@ -133,6 +135,12 @@ export class SeoService {
       logo: 'https://ceylonjojotravels.com/assets/img/logo.png',
       email: 'ceylonjojotravels@gmail.com',
       telephone: '+447375612946',
+      knowsLanguage: AVAILABLE_LANGS,
+      areaServed: { '@type': 'Country', name: 'Sri Lanka' },
+      makesOffer: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Private chauffeur guide Sri Lanka' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'TouristTrip', name: 'Sri Lanka private tour packages' } },
+      ],
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'LK',
@@ -316,14 +324,18 @@ export class SeoService {
     this.document.head.appendChild(script);
   }
 
-  private readSeoKey(routeId: string, field: 'title' | 'description'): string {
+  private readSeoKey(routeId: string, field: 'title' | 'description', lang?: AppLang): string {
     const key = `${routeId}.${field}`;
+    const packLang = lang || this.transloco.getActiveLang();
+    const translation = this.transloco.getTranslation(`seo/${packLang}`);
+    if (translation?.[key]) {
+      return String(translation[key]);
+    }
     const scoped = this.transloco.translate(key, {}, 'seo');
     if (scoped && scoped !== key) {
       return scoped;
     }
-    const translation = this.transloco.getTranslation(`seo/${this.transloco.getActiveLang()}`);
-    return translation?.[key] ? String(translation[key]) : '';
+    return '';
   }
 
   private setHtmlLang(lang: AppLang): void {
