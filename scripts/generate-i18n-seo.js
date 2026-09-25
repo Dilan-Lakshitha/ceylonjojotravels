@@ -150,7 +150,7 @@ const vercelPath = path.join(root, 'vercel.json');
 
 const DEFAULT_REWRITES = [
   {
-    source: '/((?!assets/|webfonts/).*)',
+    source: '/((?!assets/|webfonts/|css/|.*\\.(xml|txt|json|ico|png|jpg|jpeg|webp|svg|woff2|woff|js|css)$).*)',
     destination: '/index.html',
   },
 ];
@@ -192,6 +192,15 @@ const STATIC_REDIRECTS = [
   { source: '/', destination: `${origin}/en`, permanent: true },
   { source: '/index.html', destination: `${origin}/en`, permanent: true },
   { source: '/index.htm', destination: `${origin}/en`, permanent: true },
+  { source: '/nl', destination: '/en', permanent: true },
+  { source: '/nl/:path*', destination: '/en/:path*', permanent: true },
+  { source: '/pt', destination: '/en', permanent: true },
+  { source: '/pt/:path*', destination: '/en/:path*', permanent: true },
+  {
+    source: '/de/touren/7-tage-sri-lanka-8-reise',
+    destination: '/de/touren/7-tage-sri-lanka-rundreise',
+    permanent: true,
+  },
   { source: '/sitemap_index.xml', destination: '/sitemap-index.xml', permanent: true },
   { source: '/twodaytours', destination: '/en/tours/2-day-ella-kandy-private-tour', permanent: true },
   { source: '/twodaytour', destination: '/en/tours/2-day-ella-kandy-private-tour', permanent: true },
@@ -331,9 +340,7 @@ fs.writeFileSync(
     {
       version: 2,
       redirects,
-      rewrites: Array.isArray(existingVercel.rewrites) && existingVercel.rewrites.length
-        ? existingVercel.rewrites
-        : DEFAULT_REWRITES,
+      rewrites: DEFAULT_REWRITES,
       headers: Array.isArray(existingVercel.headers) && existingVercel.headers.length
         ? existingVercel.headers
         : DEFAULT_HEADERS,
@@ -364,7 +371,8 @@ function buildUrlEntry(loc, pathByLang, priority, changefreq = 'weekly') {
 `;
   }
   const xSuffix = pathByLang.en ? `/${pathByLang.en}` : '';
-  entry += `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(`${origin}/en${xSuffix}`)}" />
+  entry += `    <xhtml:link rel="alternate" hreflang="en-GB" href="${escapeXml(`${origin}/en${xSuffix}`)}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(`${origin}/en${xSuffix}`)}" />
   </url>
 `;
   return entry;
@@ -396,7 +404,12 @@ function collectPathsForLang() {
       pathByLang[l] = `${ROUTE_MAP.tours[l]}/${slug}`;
     }
     if (Object.keys(pathByLang).length === langs.length) {
-      items.push({ pathByLang, priority: '0.9', changefreq: 'weekly' });
+      const isTourPage = Object.keys(pathByLang).some((l) => pathByLang[l].includes('/'));
+      items.push({
+        pathByLang,
+        priority: isTourPage ? '0.95' : '0.9',
+        changefreq: 'weekly',
+      });
     }
   }
 

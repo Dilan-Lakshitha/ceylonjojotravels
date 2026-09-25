@@ -96,42 +96,43 @@ export function deriveAccommodationSummary(
   return stays;
 }
 
-export function defaultTourFaqs(tour: {
-  title?: string;
-  duration?: string;
-  tourType?: string;
-  price?: number;
-}): Array<{ question: string; answer: string }> {
-  const name = tour.title || 'this Sri Lanka tour';
-  const duration = tour.duration || 'your selected dates';
-  const type = tour.tourType || 'private tour';
+export function defaultTourFaqs(
+  tour: {
+    title?: string;
+    duration?: string;
+    tourType?: string;
+    price?: number;
+  },
+  translate: (key: string, params?: Record<string, string>) => string,
+): Array<{ question: string; answer: string }> {
+  const name = tour.title || 'Sri Lanka';
+  const duration = tour.duration || '';
+  const type = tour.tourType || '';
   const price =
     typeof tour.price === 'number' && tour.price > 0
-      ? `From $${Math.round(tour.price / 2)} per person (based on 2 travelers)`
-      : 'Pricing depends on group size';
+      ? translate('faq.price.from', { amount: String(Math.round(tour.price / 2)) })
+      : translate('faq.price.fallback');
 
   return [
     {
-      question: `What is included in ${name}?`,
-      answer: `This ${type} typically includes private air-conditioned transport, an experienced chauffeur guide, and the sightseeing outlined in the itinerary for ${duration}. Hotel category and meal plan (when applicable) are listed under Accommodation and Included.`,
+      question: translate('faq.included.q', { name }),
+      answer: translate('faq.included.a', { type, duration, name }),
     },
     {
-      question: 'Is this a private tour?',
-      answer: `Yes. Ceylon JOJO Travels operates private Sri Lanka tours for couples, families and small groups — you travel in your own vehicle on your schedule.`,
+      question: translate('faq.private.q'),
+      answer: translate('faq.private.a'),
     },
     {
-      question: 'How much does this tour cost?',
-      answer: `${price}. Final price updates automatically when you select the number of travelers in the booking form.`,
+      question: translate('faq.price.q'),
+      answer: translate('faq.price.a', { price }),
     },
     {
-      question: 'Can I customize the itinerary?',
-      answer:
-        'Yes. Tell us your hotel pick-up point, preferred pace, or must-see stops in Special Requests and we will tailor the plan before you travel.',
+      question: translate('faq.custom.q'),
+      answer: translate('faq.custom.a'),
     },
     {
-      question: 'How do I book and pay?',
-      answer:
-        'Complete the booking form on this page. Payment later (pay at destination) is available. You will receive a confirmation after submitting.',
+      question: translate('faq.book.q'),
+      answer: translate('faq.book.a'),
     },
   ];
 }

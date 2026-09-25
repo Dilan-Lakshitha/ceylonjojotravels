@@ -237,12 +237,15 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
     const faq =
       detail.faq?.length
         ? detail.faq
-        : defaultTourFaqs({
-            title: detail.title,
-            duration: detail.duration,
-            tourType: detail.tourType,
-            price: this.price,
-          });
+        : defaultTourFaqs(
+            {
+              title: detail.title,
+              duration: detail.duration,
+              tourType: detail.tourType,
+              price: this.price,
+            },
+            (key, params) => this.transloco.translate(key, params ?? {}, 'common'),
+          );
 
     // Paint tour content immediately — never block first render on geo/price APIs.
     this.tour = {

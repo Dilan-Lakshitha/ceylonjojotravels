@@ -45,7 +45,7 @@ export class TwoDayTourComponent implements OnInit, OnDestroy {
     duration: '2 Days',
     persons: '20 Persons',
     filecode: 'twodaystours',
-    overview: `Experience the best of Sigiriya and Kandy on this 2-day private tour with deluxe accommodation(Half Borad) and a dedicated tour guide. 
+    overview: `Experience the best of Sigiriya and Kandy on this 2 day private tour with deluxe accommodation(Half Borad) and a dedicated tour guide. 
     Explore Sigiriya's iconic Lion Rock, the enchanting Dambulla Golden Temple, the charming Hiriwadunna village, and an exhilarating wild elephant safari.
     In Kandy, visit the sacred Tooth Relic Temple, stroll along the scenic Kandy Lake, immerse yourself in the beauty of the Peradeniya Botanical Garden, and admire the historic Mathale Hindu Temple. 
     This unforgettable journey combines cultural, spiritual, and natural wonders, promising a perfect blend of adventure and relaxation.`,
@@ -170,7 +170,7 @@ export class TwoDayTourComponent implements OnInit, OnDestroy {
     ],
 
     includes: [
-      'Air-Conditioned Private Vehicle',
+      'Air Conditioned Private Vehicle',
       'English Speaking Professional Driver',
       "Driver's Accommodation & Meals",
       'Pickup & Drop Off',

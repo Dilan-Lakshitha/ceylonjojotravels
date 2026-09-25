@@ -88,7 +88,7 @@ export default async function handler(req, res) {
         <div style="max-width: 640px; margin: auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
           <div style="background-color: #023a2c; padding: 20px; text-align: center;">
             <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Contact Message</h1>
-            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">CEYLON JOJO TRAVElS — Website Contact Form</p>
+            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">CEYLON JOJO TRAVElS Website Contact Form</p>
           </div>
           <div style="padding: 28px;">
             <p style="font-size: 15px; margin-bottom: 20px;">A visitor submitted the contact form. Details below:</p>
@@ -127,7 +127,7 @@ export default async function handler(req, res) {
         <div style="max-width: 640px; margin: auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
           <div style="background-color: #023a2c; padding: 22px; text-align: center;">
             <h1 style="color: #ffffff; margin: 0; font-size: 22px;">Message Received</h1>
-            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">CEYLON JOJO TRAVElS — Sri Lanka</p>
+            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">CEYLON JOJO TRAVElS Sri Lanka</p>
           </div>
           <div style="padding: 28px; color: #333;">
             <p style="font-size: 16px;">Dear ${safeName},</p>

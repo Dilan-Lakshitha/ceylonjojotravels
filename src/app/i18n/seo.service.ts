@@ -197,7 +197,7 @@ export class SeoService {
       const product: Record<string, unknown> = {
         '@context': 'https://schema.org',
         '@type': ['Product', 'TouristTrip'],
-        name: tour.title,
+        name: opts.pageTitle,
         description: tour.description || tour.overview || opts.pageDescription,
         brand: { '@id': orgId },
         url: opts.canonical,
@@ -365,6 +365,15 @@ export class SeoService {
       this.document.head.appendChild(link);
     }
 
+    const enGb = this.document.createElement('link');
+    enGb.setAttribute('rel', 'alternate');
+    enGb.setAttribute('hreflang', 'en-GB');
+    enGb.setAttribute(
+      'href',
+      this.localizedRouter.absoluteUrlFor(routeId, { lang: 'en', tourId, filecode }),
+    );
+    this.document.head.appendChild(enGb);
+
     const xDefault = this.document.createElement('link');
     xDefault.setAttribute('rel', 'alternate');
     xDefault.setAttribute('hreflang', 'x-default');
@@ -377,7 +386,7 @@ export class SeoService {
 
   private ogLocale(lang: AppLang): string {
     const map: Record<AppLang, string> = {
-      en: 'en_US',
+      en: 'en_GB',
       de: 'de_DE',
       fr: 'fr_FR',
       it: 'it_IT',

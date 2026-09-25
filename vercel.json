@@ -50,6 +50,31 @@
       "permanent": true
     },
     {
+      "source": "/nl",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/nl/:path*",
+      "destination": "/en/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pt",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/pt/:path*",
+      "destination": "/en/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/touren/7-tage-sri-lanka-8-reise",
+      "destination": "/de/touren/7-tage-sri-lanka-rundreise",
+      "permanent": true
+    },
+    {
       "source": "/sitemap_index.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
@@ -3142,7 +3167,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|webfonts/).*)",
+      "source": "/((?!assets/|webfonts/|css/|.*\\.(xml|txt|json|ico|png|jpg|jpeg|webp|svg|woff2|woff|js|css)$).*)",
       "destination": "/index.html"
     }
   ],

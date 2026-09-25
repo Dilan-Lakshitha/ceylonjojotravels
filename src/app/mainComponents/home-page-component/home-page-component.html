@@ -664,27 +664,9 @@
     <h2 class="mb-4">{{ t('popular.title') }}</h2>
 
     <div class="row justify-content-center">
-        <div class="col-md-3 mb-3">
-            <a [routerLink]="tour7Link" class="btn btn-outline-primary w-100">
-                {{ t('popular.tour7') }}
-            </a>
-        </div>
-
-        <div class="col-md-3 mb-3">
-            <a [routerLink]="tour8Link" class="btn btn-outline-primary w-100">
-                {{ t('popular.tour8') }}
-            </a>
-        </div>
-
-        <div class="col-md-3 mb-3">
-            <a [routerLink]="ellaLink" class="btn btn-outline-primary w-100">
-                {{ t('popular.ella') }}
-            </a>
-        </div>
-
-        <div class="col-md-3 mb-3">
-            <a [routerLink]="sigiriyaLink" class="btn btn-outline-primary w-100">
-                {{ t('popular.sigiriya') }}
+        <div class="col-md-3 mb-3" *ngFor="let tour of popularTours">
+            <a [routerLink]="tour.link" class="btn btn-outline-primary w-100">
+                {{ tour.title }}
             </a>
         </div>
     </div>

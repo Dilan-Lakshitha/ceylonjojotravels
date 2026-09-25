@@ -40,12 +40,12 @@ export class KandyDayTourComponent implements OnInit, OnDestroy {
   tour = {
     title: 'Sri Lanka Kandy One Day Tour',
     description:
-      'Experience the cultural heart of Sri Lanka with a full-day guided tour to Kandy, including elephants, temples, tea, and scenic views.',
+      'Experience the cultural heart of Sri Lanka with a full day guided tour to Kandy, including elephants, temples, tea, and scenic views.',
     duration: 'One Day',
     persons: '20 Persons',
     filecode: 'kandy-day-tour',
     overview: `
-            This one-day trip to Kandy takes you through Sri Lanka’s cultural capital.
+            This one day trip to Kandy takes you through Sri Lanka’s cultural capital.
             Visit the Millennium Elephant Foundation or Pinnawala Elephant Orphanage,
             explore the sacred Temple of the Tooth Relic, enjoy a tea factory and plantation visit,
             relax by Kandy Lake and View Point, and optionally stop at a herbal and spice garden.
@@ -100,7 +100,7 @@ export class KandyDayTourComponent implements OnInit, OnDestroy {
               color: '#27ae60',
             },
             description:
-              'Explore a tea factory and plantation and learn how world-famous Ceylon tea is produced.',
+              'Explore a tea factory and plantation and learn how world famous Ceylon tea is produced.',
             image: 'assets/img/onedayTour/kandy/5.jpg',
           },
           {
@@ -133,7 +133,7 @@ export class KandyDayTourComponent implements OnInit, OnDestroy {
     'All attraction entrance fees',
     'Highway tickets and parking fees',
     'English speaking professional driver',
-    'Private air-conditioned vehicle',
+    'Private air conditioned vehicle',
     ],
     excludes: ['Food & Drinks', 'Entrance & Activities Fees'],
   };

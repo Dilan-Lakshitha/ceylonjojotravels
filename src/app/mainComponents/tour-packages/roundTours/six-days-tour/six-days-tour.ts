@@ -107,7 +107,7 @@ images: string[] = [
               color: '#8e44ad',
             },
             description:
-              "Let's get some traditional Sri Lankan village experience!!! A visit to the hamlet of Hiriwadunna in Sri Lanka showcases the laid-back rhythms of small village life.",
+              "Let's get some traditional Sri Lankan village experience!!! A visit to the hamlet of Hiriwadunna in Sri Lanka showcases the laid back rhythms of small village life.",
             image: 'assets/img/5daysTours/36.jpg',
           },
           {
@@ -366,7 +366,7 @@ images: string[] = [
 
 
     includes: [
-      'Air-Conditioned Private Vehicle',
+      'Air Conditioned Private Vehicle',
       'English Speaking Professional Driver',
       'Pickup & Airport Drop Off',
       'Fuel & Parking Fees',

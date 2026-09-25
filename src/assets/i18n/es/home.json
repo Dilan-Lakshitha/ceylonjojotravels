@@ -1,6 +1,6 @@
 {
-  "hero1": "Chófer guía en español y tours privados en Sri Lanka",
-  "hero1sub": "Agencia local: conductor privado, excursiones a Galle, Kandy, Ella y Sigiriya, safaris y paquetes de 7 a 10 días.",
+  "hero1": "Contrata un chófer privado en Sri Lanka",
+  "hero1sub": "Tours a Galle, Kandy, Ella y Sigiriya, safari Yala o circuito de 7 a 10 días con hoteles. Chófer guía en español. Reserva por WhatsApp.",
   "hero2": "Paquetes de tour inolvidables por Sri Lanka",
   "hero3": "Tours privados por el hermoso Sri Lanka",
   "hero4": "Descubre Sigiriya, Ella y lo más destacado",
@@ -50,5 +50,12 @@
   "seo.tips.1": "Viajar con conductor privado",
   "seo.tips.2": "Llevar ropa ligera",
   "seo.tips.3": "Respetar templos y cultura",
-  "seo.tips.4": "Probar la comida sri lankesa"
+  "seo.tips.4": "Probar la comida sri lankesa",
+  "customItinerary": {
+    "eyebrow": "Planifique a su manera",
+    "title": "Cree gratis su itinerario a medida por Sri Lanka",
+    "subtitle": "Díganos adónde quiere ir y cuántos días tiene. Preparamos un tour privado personalizado, sin coste ni compromiso.",
+    "cta": "Empezar gratis",
+    "note": "Tarda 2 minutos. Un experto de Sri Lanka revisa cada solicitud."
+  }
 }

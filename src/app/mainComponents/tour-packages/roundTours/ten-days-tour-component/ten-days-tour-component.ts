@@ -54,7 +54,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
 
       {
         day: 1,
-        title: 'Airport / Hotel – Wilpattu',
+        title: 'Airport / Hotel, Wilpattu',
         activities: [
           {
             type: 'Safari',
@@ -65,7 +65,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Thimbiri Wewa Resort – Wilpattu', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Thimbiri Wewa Resort, Wilpattu', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Thimbiri Wewa Resort Wilpattu (or similar). Half Board basis.',
             image: 'assets/img/5daysTours/38.jpg',
@@ -76,7 +76,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
 
       {
         day: 2,
-        title: 'Wilpattu – Anuradhapura – Sigiriya',
+        title: 'Wilpattu, Anuradhapura, Sigiriya',
         activities: [
           {
             type: 'Religious Visit',
@@ -101,7 +101,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
             image: 'assets/img/5daysTours/c.jpg',
@@ -118,7 +118,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
             type: 'UNESCO Site',
             title: { title: 'Sigiriya Lion Rock Fortress', icon: 'fa-mountain', color: '#c0392b' },
             description:
-              'Climb the UNESCO-listed Sigiriya Rock Fortress.',
+              'Climb the UNESCO listed Sigiriya Rock Fortress.',
             image: 'assets/img/5daysTours/42.jpg',
           },
           {
@@ -144,7 +144,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
             image: 'assets/img/5daysTours/c.jpg',
@@ -154,7 +154,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
       },
       {
         day: 4,
-        title: 'Sigiriya – Kandy',
+        title: 'Sigiriya, Kandy',
         activities: [
           {
             type: 'Cultural Visit',
@@ -179,7 +179,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Hotel Topaz – Kandy', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Hotel Topaz, Kandy', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Hotel Topaz (or similar) in Kandy. Half Board basis.',
             image: 'assets/img/5daysTours/25.jpg',
@@ -190,13 +190,13 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
 
       {
         day: 5,
-        title: 'Kandy – Nuwara Eliya – Ella',
+        title: 'Kandy, Nuwara Eliya, Ella',
         activities: [
           {
             type: 'Tea Experience',
             title: { title: 'Blue Field Tea Factory', icon: 'fa-mug-hot', color: '#8B4513' },
             description:
-              'Learn how world-famous Ceylon tea is produced.',
+              'Learn how world famous Ceylon tea is produced.',
             image: 'assets/img/5daysTours/28.png',
           },
           {
@@ -219,13 +219,13 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
 
       {
         day: 6,
-        title: 'Ella – Hikkaduwa',
+        title: 'Ella, Hikkaduwa',
         activities: [
           {
             type: 'Landmark',
             title: { title: 'Nine Arch Bridge', icon: 'fa-bridge', color: '#A9A9A9' },
             description:
-              'Visit the famous colonial-era railway bridge.',
+              'Visit the famous colonial era railway bridge.',
             image: 'assets/img/5daysTours/3.jpeg',
           },
           {
@@ -417,7 +417,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
               color: '#FF0000',
             },
             description:
-              'Jami Ul-Alfar Mosque, or the Red Mosque in Colombo, is an iconic landmark with striking red-and-white architecture, offering a glimpse into Sri Lanka’s rich Islamic heritage.',
+              'Jami Ul-Alfar Mosque, or the Red Mosque in Colombo, is an iconic landmark with striking red and white architecture, offering a glimpse into Sri Lanka’s rich Islamic heritage.',
             image: 'assets/img/7daystour/owzua0jhk0zazg9d8hcn.jpg',
           }
         ],
@@ -425,7 +425,7 @@ export class TenDaysTourComponent implements OnInit , OnDestroy {
     ],
 
     includes: [
-      'Air-Conditioned Private Vehicle',
+      'Air Conditioned Private Vehicle',
       'English Speaking Professional Driver',
       'Half Board Accommodation (7 Nights)',
       'Fuel & Parking Fees',

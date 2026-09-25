@@ -3,7 +3,7 @@
     "dayTours": [
       {
         "id": "ella-day-tour",
-        "title": "Excursion d'une journée à Ella - Départ depuis n'importe quel endroit au Sri Lanka",
+        "title": "Excursion Ella 1 jour | Chauffeur privé Sri Lanka",
         "days": "1 jour",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -16,7 +16,7 @@
       },
       {
         "id": "galle-day-tour",
-        "title": "Excursion d'une journée à Galle - Départ depuis n'importe quel endroit au Sri Lanka",
+        "title": "Excursion Galle 1 jour | Chauffeur privé Sri Lanka",
         "days": "1 jour",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -29,7 +29,7 @@
       },
       {
         "id": "kandy-day-tour",
-        "title": "Excursion d'une journée à Kandy - Départ depuis n'importe quel endroit au Sri Lanka",
+        "title": "Excursion Kandy 1 jour | Temple de la Dent",
         "days": "1 jour",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -42,7 +42,7 @@
       },
       {
         "id": "sigiriya-day-tour",
-        "title": "Excursion d'une journée à Sigiriya - Départ depuis n'importe quel endroit au Sri Lanka",
+        "title": "Excursion Sigiriya | Rocher du Lion chauffeur privé",
         "days": "1 jour",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -57,7 +57,7 @@
     "multiDayTours": [
       {
         "id": "2-day-ella-yala-private-tour-sri-lanka",
-        "title": "Circuit de 2 jours Ella & safari de Yala avec hôtels 4 étoiles et transport privé",
+        "title": "Circuit 2 jours Ella & safari Yala | Chauffeur privé",
         "days": "2 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -70,7 +70,7 @@
       },
       {
         "id": "2-day-ella-kandy-private-tour-sri-lanka",
-        "title": "Circuit privé de 2 jours Ella & Kandy avec hôtels 4 étoiles et transport privé",
+        "title": "Circuit 2 jours Ella & Kandy | Chauffeur privé",
         "days": "2 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -83,7 +83,7 @@
       },
       {
         "id": "4-day-sri-lanka-tour",
-        "title": "Circuit privé de 4 jours au Sri Lanka avec hôtels 4 étoiles à Kandy, Ella & safari de Yala",
+        "title": "Circuit Sri Lanka 4 jours | Chauffeur privé",
         "days": "4 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -96,7 +96,7 @@
       },
       {
         "id": "5-day-sri-lanka-tour",
-        "title": "Circuit de 5 jours au Sri Lanka avec hôtels 4 étoiles, safari & séjour balnéaire",
+        "title": "Circuit Sri Lanka 5 jours | Chauffeur privé",
         "days": "5 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -109,7 +109,7 @@
       },
       {
         "id": "6-day-sri-lanka-private-tour",
-        "title": "Circuit privé de 6 jours au Sri Lanka avec hôtels 4 étoiles, safari & séjour balnéaire",
+        "title": "Circuit Sri Lanka 6 jours | Chauffeur privé",
         "days": "6 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -122,7 +122,7 @@
       },
       {
         "id": "7-day-sri-lanka-tour",
-        "title": "Circuit de 7 jours au Sri Lanka avec hôtels 4 étoiles, safari & séjour balnéaire",
+        "title": "Circuit Sri Lanka 7 jours | Chauffeur privé, safari et plage",
         "days": "7 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -135,7 +135,7 @@
       },
       {
         "id": "10-day-sri-lanka-tour",
-        "title": "Circuit de 10 jours au Sri Lanka avec hôtels 4 étoiles et transport privé",
+        "title": "Circuit Sri Lanka 10 jours | Chauffeur privé",
         "days": "10 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -148,7 +148,7 @@
       },
       {
         "id": "8-day-sri-lanka-private-tour",
-        "title": "Circuit privé de 8 jours au Sri Lanka | Safari, culture, montagnes & plage",
+        "title": "Circuit Sri Lanka 8 jours | Chauffeur privé",
         "days": "8 jours",
         "persons": "1-20 personnes",
         "rating": 5,
@@ -164,7 +164,7 @@
     "ella-day-tour": {
       "id": "ella-day-tour",
       "slug": "excursion-ella",
-      "title": "Excursion d'une journée à Ella au Sri Lanka",
+      "title": "Excursion Ella 1 jour | Chauffeur privé Sri Lanka",
       "description": "Découvrez la beauté d'Ella lors d'une journée pleine d'aventure, de culture et de détente.",
       "duration": "un jour",
       "persons": "1-20 personnes",
@@ -247,7 +247,7 @@
     "galle-day-tour": {
       "id": "galle-day-tour",
       "slug": "excursion-galle",
-      "title": "Excursion d'une journée à Galle au Sri Lanka",
+      "title": "Excursion Galle 1 jour | Chauffeur privé Sri Lanka",
       "description": "Profitez d'une excursion guidée d'une journée à Galle avec des attractions côtières pittoresques, des sites culturels et des expériences mémorables.",
       "duration": "un jour",
       "persons": "1-20 personnes",
@@ -326,7 +326,7 @@
     "kandy-day-tour": {
       "id": "kandy-day-tour",
       "slug": "excursion-kandy",
-      "title": "Excursion d'une journée à Kandy au Sri Lanka",
+      "title": "Excursion Kandy 1 jour | Temple de la Dent",
       "description": "Découvrez le cœur culturel du Sri Lanka avec une excursion guidée d'une journée à Kandy, comprenant éléphants, temples, thé et paysages pittoresques.",
       "duration": "Un jour",
       "persons": "1-20 personnes",
@@ -415,12 +415,12 @@
     "sigiriya-day-tour": {
       "id": "sigiriya-day-tour",
       "slug": "excursion-sigiriya",
-      "title": "Excursion d'une journée à Sigiriya au Sri Lanka",
+      "title": "Excursion Sigiriya | Rocher du Lion chauffeur privé",
       "description": "Découvrez le patrimoine culturel et naturel du Sri Lanka lors d'une excursion d'une journée à Sigiriya, comprenant temples, escalade de rocher et faune sauvage.",
       "duration": "Un jour",
       "persons": "1-20 personnes",
       "filecode": "sigiriya-day-tour",
-      "overview": "Cette excursion d'une journée à Sigiriya offre un mélange parfait de culture, d'aventure et de faune sauvage. Commencez par le Temple d'Or de la grotte de Dambulla, suivi de l'ascension du rocher-forteresse de Sigiriya ou du rocher de Pidurangala pour des vues à couper le souffle. Terminez la journée par un passionnant safari d'éléphants sauvages, idéal pour les amoureux de la nature et de l'histoire.",
+      "overview": "Cette excursion d'une journée à Sigiriya offre un mélange parfait de culture, d'aventure et de faune sauvage. Commencez par le Temple d'Or de la grotte de Dambulla, suivi de l'ascension du rocher forteresse de Sigiriya ou du rocher de Pidurangala pour des vues à couper le souffle. Terminez la journée par un passionnant safari d'éléphants sauvages, idéal pour les amoureux de la nature et de l'histoire.",
       "tourType": "Excursion d'une journée",
       "itinerary": [
         {
@@ -440,7 +440,7 @@
             {
               "type": "Visite guidée",
               "title": {
-                "title": "Temple de la Grotte d'Or – Dambulla",
+                "title": "Temple de la Grotte d'Or, Dambulla",
                 "icon": "fa-gopuram",
                 "color": "#c0392b"
               },
@@ -495,7 +495,7 @@
     "2-day-ella-kandy-private-tour-sri-lanka": {
       "id": "2-day-ella-kandy-private-tour-sri-lanka",
       "slug": "circuit-2-jours-ella-kandy",
-      "title": "Circuit privé de 2 jours au Sri Lanka – Ella, Kandy & safari d'Udawalawe | Transfert aéroport",
+      "title": "Circuit 2 jours Ella & Kandy | Chauffeur privé",
       "description": "Découvrez la faune, les paysages montagneux et le patrimoine culturel du Sri Lanka lors de ce circuit privé de 2 jours se terminant à l'aéroport ou à votre hôtel.",
       "duration": "2 jours",
       "persons": "1-20 personnes",
@@ -624,7 +624,7 @@
     "2-day-ella-yala-private-tour-sri-lanka": {
       "id": "2-day-ella-yala-private-tour-sri-lanka",
       "slug": "circuit-2-jours-ella-yala",
-      "title": "Circuit privé de 2 jours au Sri Lanka – Ella & safari de Yala | Transfert aéroport",
+      "title": "Circuit 2 jours Ella & safari Yala | Chauffeur privé",
       "description": "Découvrez les montagnes pittoresques d'Ella et un safari passionnant dans le parc national de Yala lors de ce circuit privé de 2 jours se terminant à l'aéroport ou à votre hôtel.",
       "duration": "2 jours",
       "persons": "1-20 personnes",
@@ -737,7 +737,7 @@
     "4-day-sri-lanka-tour": {
       "id": "4-day-sri-lanka-tour",
       "slug": "circuit-sri-lanka-4-jours",
-      "title": "Circuit privé de 4 jours au Sri Lanka | Kandy, Ella, Yala & côte sud",
+      "title": "Circuit Sri Lanka 4 jours | Chauffeur privé",
       "description": "Explorez le Sri Lanka en 4 jours inoubliables, incluant le patrimoine culturel de Kandy, les montagnes d'Ella, l'aventure du safari de Yala et le magnifique littoral sud.",
       "duration": "4 jours",
       "persons": "1-20 personnes",
@@ -747,7 +747,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Kandy Cultural Experience",
+          "title": "Airport / Hotel, Kandy Cultural Experience",
           "activities": [
             {
               "type": "Expérience de la faune",
@@ -865,7 +865,7 @@
         },
         {
           "day": 3,
-          "title": "Ella – Safari animalier à Yala",
+          "title": "Ella, Safari animalier à Yala",
           "activities": [
             {
               "type": "Cascade",
@@ -874,7 +874,7 @@
                 "icon": "fa-water",
                 "color": "#3498db"
               },
-              "description": "Arrêtez-vous aux chutes Ravana, l'une des cascades les plus pittoresques du Sri Lanka, située le long de la route Ella-Wellawaya.",
+              "description": "Arrêtez-vous aux chutes Ravana, l'une des cascades les plus pittoresques du Sri Lanka, située le long de la route Ella Wellawaya.",
               "image": "assets/img/5daysTours/n0oxsxmicxgleixkq2rx.jpg"
             },
             {
@@ -913,7 +913,7 @@
         },
         {
           "day": 4,
-          "title": "Yala – Galle – Bentota – Aéroport",
+          "title": "Yala, Galle, Bentota, Aéroport",
           "activities": [
             {
               "type": "Visite de la plage",
@@ -964,17 +964,17 @@
     "5-day-sri-lanka-tour": {
       "id": "5-day-sri-lanka-tour",
       "slug": "circuit-sri-lanka-5-jours",
-      "title": "Circuit privé de 5 jours au Sri Lanka | Patrimoine culturel, montagnes & safari animalier",
+      "title": "Circuit Sri Lanka 5 jours | Chauffeur privé",
       "description": "Explorez le Sri Lanka en 5 jours inoubliables avec des cités anciennes, des sites du patrimoine de l'UNESCO, des plantations de thé pittoresques, des safaris palpitants et des expériences côtières relaxantes.",
       "duration": "5 jours",
       "persons": "1-20 personnes",
       "filecode": "5-day-sri-lanka-tour",
-      "overview": "Découvrez les points forts du Sri Lanka lors de ce circuit privé de 5 jours parfaitement équilibré. Traversez le Triangle culturel, explorez le rocher-forteresse de Sigiriya, découvrez le sacré Temple de la Dent à Kandy, parcourez les plantations de thé brumeuses de Nuwara Eliya, profitez d'un passionnant safari dans le parc national d'Udawalawe et détendez-vous le long de la magnifique côte sud-ouest. Avec un transport privé, un chauffeur-guide anglophone expérimenté et des options d'hébergement confortables, ce circuit offre la combinaison idéale de culture, de nature, de faune et de détente — parfait pour les couples, les familles et les petits groupes.",
+      "overview": "Découvrez les points forts du Sri Lanka lors de ce circuit privé de 5 jours parfaitement équilibré. Traversez le Triangle culturel, explorez le rocher forteresse de Sigiriya, découvrez le sacré Temple de la Dent à Kandy, parcourez les plantations de thé brumeuses de Nuwara Eliya, profitez d'un passionnant safari dans le parc national d'Udawalawe et détendez-vous le long de la magnifique côte sud-ouest. Avec un transport privé, un chauffeur guide anglophone expérimenté et des options d'hébergement confortables, ce circuit offre la combinaison idéale de culture, de nature, de faune et de détente, parfait pour les couples, les familles et les petits groupes.",
       "tourType": "Circuit privé",
       "itinerary": [
         {
           "day": 1,
-          "title": "Aéroport à Sigiriya – Éléphants et safari aventure",
+          "title": "Aéroport à Sigiriya, Éléphants et safari aventure",
           "activities": [
             {
               "type": "Arrivée",
@@ -983,7 +983,7 @@
                 "icon": "fa-plane",
                 "color": "#2c3e50"
               },
-              "description": "Rencontrez votre chauffeur-guide professionnel à l'aéroport international de Bandaranaike et commencez votre voyage privé au Sri Lanka en direction du Triangle culturel."
+              "description": "Rencontrez votre chauffeur guide professionnel à l'aéroport international de Bandaranaike et commencez votre voyage privé au Sri Lanka en direction du Triangle culturel."
             },
             {
               "type": "Expérience de la faune",
@@ -1002,13 +1002,13 @@
                 "icon": "fa-leaf",
                 "color": "#8e44ad"
               },
-              "description": "Profitez d'un passionnant safari en jeep 4x4 dans le parc national de Minneriya, célèbre pour « The Gathering » – l'une des plus grandes congrégations d'éléphants sauvages d'Asie. Repérez des éléphants, des cerfs, des buffles et diverses espèces d'oiseaux.",
+              "description": "Profitez d'un passionnant safari en jeep 4x4 dans le parc national de Minneriya, célèbre pour « The Gathering », l'une des plus grandes congrégations d'éléphants sauvages d'Asie. Repérez des éléphants, des cerfs, des buffles et diverses espèces d'oiseaux.",
               "image": "assets/img/5daysTours/24.jpg"
             },
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1023,7 +1023,7 @@
         },
         {
           "day": 2,
-          "title": "Sigiriya à Kandy – Patrimoine culturel",
+          "title": "Sigiriya à Kandy, Patrimoine culturel",
           "activities": [
             {
               "type": "Visite guidée",
@@ -1058,7 +1058,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Hôtel Topaz – Kandy",
+                "title": "Hôtel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1073,7 +1073,7 @@
         },
         {
           "day": 3,
-          "title": "Kandy à Nuwara Eliya – Pays pittoresque du thé",
+          "title": "Kandy à Nuwara Eliya, Pays pittoresque du thé",
           "activities": [
             {
               "type": "Nature",
@@ -1123,7 +1123,7 @@
         },
         {
           "day": 4,
-          "title": "Nuwara Eliya à Ella – Paysages de montagne",
+          "title": "Nuwara Eliya à Ella, Paysages de montagne",
           "activities": [
             {
               "type": "Visite guidée",
@@ -1163,7 +1163,7 @@
         },
         {
           "day": 5,
-          "title": "Udawalawa à la côte sud-ouest – Rivière et conservation",
+          "title": "Udawalawa à la côte sud-ouest, Rivière et conservation",
           "activities": [
             {
               "type": "Conservation",
@@ -1204,7 +1204,7 @@
     "6-day-sri-lanka-private-tour": {
       "id": "6-day-sri-lanka-private-tour",
       "slug": "circuit-prive-sri-lanka-6-jours",
-      "title": "Circuit privé de 6 jours au Sri Lanka | Patrimoine culturel, montagnes & safari animalier",
+      "title": "Circuit Sri Lanka 6 jours | Chauffeur privé",
       "description": "Explorez le Sri Lanka en 6 jours inoubliables avec des cités anciennes, des sites du patrimoine de l'UNESCO, des plantations de thé pittoresques, des safaris palpitants et des expériences côtières relaxantes.",
       "duration": "6 jours",
       "persons": "1-20 personnes",
@@ -1542,7 +1542,7 @@
     "7-day-sri-lanka-tour": {
       "id": "7-day-sri-lanka-tour",
       "slug": "circuit-sri-lanka-7-jours",
-      "title": "Circuit de sept jours au Sri Lanka",
+      "title": "Circuit Sri Lanka 7 jours | Chauffeur privé, safari et plage",
       "description": "Un circuit privé inoubliable de 7 jours au Sri Lanka couvrant le safari de Wilpattu, Anuradhapura, Sigiriya, Kandy, les aventures d'Ella et un séjour balnéaire relaxant dans le sud.",
       "duration": "7 jours",
       "persons": "1-20 personnes",
@@ -1552,7 +1552,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Wilpattu",
+          "title": "Airport / Hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -1567,7 +1567,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "title": "Thimbiri Wewa Resort, Wilpattu",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1582,7 +1582,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "title": "Wilpattu, Anuradhapura, Sigiriya",
           "activities": [
             {
               "type": "Visite religieuse",
@@ -1617,7 +1617,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1677,7 +1677,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1692,7 +1692,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya – Kandy",
+          "title": "Sigiriya, Kandy",
           "activities": [
             {
               "type": "Visite culturelle",
@@ -1727,7 +1727,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Hôtel Topaz – Kandy",
+                "title": "Hôtel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1742,7 +1742,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy – Nuwara Eliya – Ella",
+          "title": "Kandy, Nuwara Eliya, Ella",
           "activities": [
             {
               "type": "Expérience du thé",
@@ -1792,7 +1792,7 @@
         },
         {
           "day": 6,
-          "title": "Ella – Hikkaduwa",
+          "title": "Ella, Hikkaduwa",
           "activities": [
             {
               "type": "Point de repère",
@@ -1887,7 +1887,7 @@
     "8-day-sri-lanka-private-tour": {
       "id": "8-day-sri-lanka-private-tour",
       "slug": "circuit-prive-sri-lanka-8-jours",
-      "title": "Circuit privé de 8 jours au Sri Lanka | Safari, culture, montagnes & plage",
+      "title": "Circuit Sri Lanka 8 jours | Chauffeur privé",
       "description": "Un circuit privé inoubliable de 8 jours au Sri Lanka couvrant le safari de Wilpattu, Anuradhapura, Sigiriya, Kandy, les aventures d'Ella et un séjour balnéaire relaxant dans le sud.",
       "duration": "8 jours",
       "persons": "1-20 personnes",
@@ -1897,7 +1897,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Wilpattu",
+          "title": "Airport / Hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -1912,7 +1912,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "title": "Thimbiri Wewa Resort, Wilpattu",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1927,7 +1927,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "title": "Wilpattu, Anuradhapura, Sigiriya",
           "activities": [
             {
               "type": "Visite religieuse",
@@ -1962,7 +1962,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2022,7 +2022,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2037,7 +2037,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya – Kandy",
+          "title": "Sigiriya, Kandy",
           "activities": [
             {
               "type": "Visite culturelle",
@@ -2072,7 +2072,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Hôtel Topaz – Kandy",
+                "title": "Hôtel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2087,7 +2087,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy – Nuwara Eliya – Ella",
+          "title": "Kandy, Nuwara Eliya, Ella",
           "activities": [
             {
               "type": "Expérience du thé",
@@ -2127,7 +2127,7 @@
         },
         {
           "day": 6,
-          "title": "Ella – Hikkaduwa",
+          "title": "Ella, Hikkaduwa",
           "activities": [
             {
               "type": "Point de repère",
@@ -2242,7 +2242,7 @@
     "10-day-sri-lanka-tour": {
       "id": "10-day-sri-lanka-tour",
       "slug": "circuit-sri-lanka-10-jours",
-      "title": "Circuit privé de 10 jours au Sri Lanka | Safari, culture, montagnes & plage",
+      "title": "Circuit Sri Lanka 10 jours | Chauffeur privé",
       "description": "Un circuit privé inoubliable de 10 jours au Sri Lanka couvrant le safari de Wilpattu, Anuradhapura, Sigiriya, Kandy, les aventures d'Ella et un séjour balnéaire relaxant dans le sud.",
       "duration": "10 jours",
       "persons": "1-20 personnes",
@@ -2252,7 +2252,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Wilpattu",
+          "title": "Airport / Hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -2267,7 +2267,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "title": "Thimbiri Wewa Resort, Wilpattu",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2282,7 +2282,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "title": "Wilpattu, Anuradhapura, Sigiriya",
           "activities": [
             {
               "type": "Visite religieuse",
@@ -2317,7 +2317,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2377,7 +2377,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Villa sur l'eau fresque – Sigiriya",
+                "title": "Villa sur l'eau fresque, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2392,7 +2392,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya – Kandy",
+          "title": "Sigiriya, Kandy",
           "activities": [
             {
               "type": "Visite culturelle",
@@ -2427,7 +2427,7 @@
             {
               "type": "Hébergement",
               "title": {
-                "title": "Hôtel Topaz – Kandy",
+                "title": "Hôtel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2444,7 +2444,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy – Nuwara Eliya – Ella",
+          "title": "Kandy, Nuwara Eliya, Ella",
           "activities": [
             {
               "type": "Expérience du thé",
@@ -2486,7 +2486,7 @@
         },
         {
           "day": 6,
-          "title": "Ella – Hikkaduwa",
+          "title": "Ella, Hikkaduwa",
           "activities": [
             {
               "type": "Point de repère",

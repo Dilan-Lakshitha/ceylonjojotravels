@@ -33,11 +33,11 @@ images: string[] = [
   tour = {
     title: 'Sri Lanka Galle One Day Tour',
     description:
-      'Enjoy a full-day guided tour to Galle with scenic coastal attractions, cultural landmarks, and memorable experiences.',
+      'Enjoy a full day guided tour to Galle with scenic coastal attractions, cultural landmarks, and memorable experiences.',
     duration: 'one Day',
     persons: '20 Persons',
     filecode: "galle-day-tour",
-    overview: `This full-day guided tour to Galle offers a perfect mix of nature, history, and culture.
+    overview: `This full day guided tour to Galle offers a perfect mix of nature, history, and culture.
 You will visit the famous Sea Turtle Hatchery, explore the historic Galle Dutch Fort,
 enjoy a relaxing Bentota River boat ride, and learn about Sri Lanka’s history at the
 Tsunami Memorial and Moonstone Mine Centre.
@@ -112,7 +112,7 @@ Ideal for couples, families, and small groups looking for a comfortable and enri
     'All attraction entrance fees',
     'Highway tickets and parking fees',
     'English speaking professional driver',
-    'Private air-conditioned vehicle',
+    'Private air conditioned vehicle',
     ],
     excludes: ['Food & Drinks', 'Entrance & Activities Fees'],
   };

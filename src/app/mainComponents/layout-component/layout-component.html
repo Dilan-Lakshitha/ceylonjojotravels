@@ -196,6 +196,7 @@
         <a class="site-footer__link mb-2" [routerLink]="destinationsLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.destination') }}</a>
         <a class="site-footer__link mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
         <a class="site-footer__link mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
+        <a class="site-footer__link mb-2" *ngFor="let tour of footerTours" [routerLink]="tour.link"><i class="fa fa-angle-right mr-2"></i>{{ tour.title }}</a>
         <a class="site-footer__link mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>
       </div>
     </div>

@@ -3,7 +3,7 @@
     "dayTours": [
       {
         "id": "ella-day-tour",
-        "title": "Ella Day Tour - Departing from Any Location in Sri Lanka",
+        "title": "Ella Day Tour | Private Driver Sri Lanka",
         "days": "1 day",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -16,7 +16,7 @@
       },
       {
         "id": "galle-day-tour",
-        "title": "Galle Day Tour - Departing from Any Location in Sri Lanka",
+        "title": "Galle Day Tour | Private Driver Sri Lanka",
         "days": "1 day",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -29,7 +29,7 @@
       },
       {
         "id": "kandy-day-tour",
-        "title": "Kandy Day Tour - Departing from Any Location in Sri Lanka",
+        "title": "Kandy Day Tour | Temple of the Tooth",
         "days": "1 day",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -42,7 +42,7 @@
       },
       {
         "id": "sigiriya-day-tour",
-        "title": "Sigiriya Day Tour - Departing from Any Location in Sri Lanka",
+        "title": "Sigiriya Day Tour | Lion Rock Private Driver",
         "days": "1 day",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -57,7 +57,7 @@
     "multiDayTours": [
       {
         "id": "2-day-ella-yala-private-tour-sri-lanka",
-        "title": "2 Day Ella & Yala Safari Tour with 4 Star Hotels and Private Transportation",
+        "title": "2 Day Ella & Yala Safari | Private Driver",
         "days": "2 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -70,7 +70,7 @@
       },
       {
         "id": "2-day-ella-kandy-private-tour-sri-lanka",
-        "title": "2 Day Ella & Kandy Private Tour with 4 Star Hotels and Private Transportation",
+        "title": "2 Day Ella & Kandy Tour | Private Driver",
         "days": "2 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -83,7 +83,7 @@
       },
       {
         "id": "4-day-sri-lanka-tour",
-        "title": "4 Day Sri Lanka Private Tour with  4 Star Hotels in Kandy, Ella & Yala Safari",
+        "title": "4 Day Sri Lanka Tour | Private Driver & Hotels",
         "days": "4 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -96,7 +96,7 @@
       },
       {
         "id": "5-day-sri-lanka-tour",
-        "title": "Sri Lanka 5 Days Tour with 4 Star Hotels, Safari & Beach Stay",
+        "title": "5 Day Sri Lanka Tour | Private Driver & Hotels",
         "days": "5 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -109,7 +109,7 @@
       },
       {
         "id": "6-day-sri-lanka-private-tour",
-        "title": "6 Day Sri Lanka Private Tour with 4 Star Hotels, Safari & Beach Stay",
+        "title": "6 Day Sri Lanka Tour | Private Driver & Hotels",
         "days": "6 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -122,7 +122,7 @@
       },
       {
         "id": "7-day-sri-lanka-tour",
-        "title": "7 Day Sri Lanka Tour with 4 Star Hotels, Safari & Beach Stay",
+        "title": "7 Day Sri Lanka Tour | Private Driver, Safari & Beach",
         "days": "7 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -135,7 +135,7 @@
       },
       {
         "id": "10-day-sri-lanka-tour",
-        "title": "10 Day Sri Lanka Tour with 4 Star Hotels and Private Transportation",
+        "title": "10 Day Sri Lanka Tour | Private Driver Island Circuit",
         "days": "10 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -148,7 +148,7 @@
       },
       {
         "id": "8-day-sri-lanka-private-tour",
-        "title": "8 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach",
+        "title": "8 Day Sri Lanka Tour | Private Driver, Safari & Beach",
         "days": "8 days",
         "persons": "1-20 Persons",
         "rating": 5,
@@ -164,7 +164,7 @@
     "ella-day-tour": {
       "id": "ella-day-tour",
       "slug": "ella-day-tour",
-      "title": "Sri Lanka Ella One Day Tour",
+      "title": "Ella Day Tour | Private Driver Sri Lanka",
       "description": "Experience the beauty of Ella with one day full of adventure, culture, and relaxation.",
       "duration": "1 day",
       "persons": "1-20 Persons",
@@ -230,7 +230,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Driver's Accommodation & Meals",
         "Pickup & Drop Off",
@@ -261,7 +261,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -272,12 +272,12 @@
     "galle-day-tour": {
       "id": "galle-day-tour",
       "slug": "galle-day-tour",
-      "title": "Sri Lanka Galle One Day Tour",
-      "description": "Enjoy a full-day guided tour to Galle with scenic coastal attractions, cultural landmarks, and memorable experiences.",
+      "title": "Galle Day Tour | Private Driver Sri Lanka",
+      "description": "Enjoy a full day guided tour to Galle with scenic coastal attractions, cultural landmarks, and memorable experiences.",
       "duration": "1 day",
       "persons": "1-20 Persons",
       "filecode": "galle-day-tour",
-      "overview": "This full-day guided tour to Galle offers a perfect mix of nature, history, and culture.\nYou will visit the famous Sea Turtle Hatchery, explore the historic Galle Dutch Fort,\nenjoy a relaxing Bentota River boat ride, and learn about Sri Lanka’s history at the\nTsunami Memorial and Moonstone Mine Centre.\nIdeal for couples, families, and small groups looking for a comfortable and enriching day tour.",
+      "overview": "This full day guided tour to Galle offers a perfect mix of nature, history, and culture.\nYou will visit the famous Sea Turtle Hatchery, explore the historic Galle Dutch Fort,\nenjoy a relaxing Bentota River boat ride, and learn about Sri Lanka’s history at the\nTsunami Memorial and Moonstone Mine Centre.\nIdeal for couples, families, and small groups looking for a comfortable and enriching day tour.",
       "tourType": "Day Tour",
       "itinerary": [
         {
@@ -341,7 +341,7 @@
         "All attraction entrance fees",
         "Highway tickets and parking fees",
         "English speaking professional driver",
-        "Private air-conditioned vehicle"
+        "Private air conditioned vehicle"
       ],
       "excludes": [
         "Food & Drinks",
@@ -365,7 +365,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -376,12 +376,12 @@
     "kandy-day-tour": {
       "id": "kandy-day-tour",
       "slug": "kandy-day-tour",
-      "title": "Sri Lanka Kandy One Day Tour",
-      "description": "Experience the cultural heart of Sri Lanka with a full-day guided tour to Kandy, including elephants, temples, tea, and scenic views.",
+      "title": "Kandy Day Tour | Temple of the Tooth",
+      "description": "Experience the cultural heart of Sri Lanka with a full day guided tour to Kandy, including elephants, temples, tea, and scenic views.",
       "duration": "1 day",
       "persons": "1-20 Persons",
       "filecode": "kandy-day-tour",
-      "overview": "\n            This one-day trip to Kandy takes you through Sri Lanka’s cultural capital.\n            Visit the Millennium Elephant Foundation or Pinnawala Elephant Orphanage,\n            explore the sacred Temple of the Tooth Relic, enjoy a tea factory and plantation visit,\n            relax by Kandy Lake and View Point, and optionally stop at a herbal and spice garden.\n            Perfect for travelers seeking culture, nature, and tradition in a single day.\n              ",
+      "overview": "\n            This one day trip to Kandy takes you through Sri Lanka’s cultural capital.\n            Visit the Millennium Elephant Foundation or Pinnawala Elephant Orphanage,\n            explore the sacred Temple of the Tooth Relic, enjoy a tea factory and plantation visit,\n            relax by Kandy Lake and View Point, and optionally stop at a herbal and spice garden.\n            Perfect for travelers seeking culture, nature, and tradition in a single day.\n              ",
       "tourType": "Day Tour",
       "itinerary": [
         {
@@ -425,7 +425,7 @@
                 "icon": "fa-leaf",
                 "color": "#27ae60"
               },
-              "description": "Explore a tea factory and plantation and learn how world-famous Ceylon tea is produced.",
+              "description": "Explore a tea factory and plantation and learn how world famous Ceylon tea is produced.",
               "image": "assets/img/onedayTour/kandy/5.jpg"
             },
             {
@@ -455,7 +455,7 @@
         "All attraction entrance fees",
         "Highway tickets and parking fees",
         "English speaking professional driver",
-        "Private air-conditioned vehicle"
+        "Private air conditioned vehicle"
       ],
       "excludes": [
         "Food & Drinks",
@@ -480,7 +480,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -491,12 +491,12 @@
     "sigiriya-day-tour": {
       "id": "sigiriya-day-tour",
       "slug": "sigiriya-day-tour",
-      "title": "Sri Lanka Sigiriya One Day Tour",
-      "description": "Discover Sri Lanka’s cultural and natural heritage on a full-day tour to Sigiriya, including temples, rock climbing, and wildlife.",
+      "title": "Sigiriya Day Tour | Lion Rock Private Driver",
+      "description": "Discover Sri Lanka’s cultural and natural heritage on a full day tour to Sigiriya, including temples, rock climbing, and wildlife.",
       "duration": "1 day",
       "persons": "1-20 Persons",
       "filecode": "sigiriya-day-tour",
-      "overview": "\n    This one-day tour to Sigiriya offers a perfect blend of culture, adventure, and wildlife.\n    Begin with a visit to the Golden Cave Temple in Dambulla, followed by climbing either\n    Sigiriya Rock Fortress or Pidurangala Rock for breathtaking views.\n    End the day with an exciting wild elephant safari, making this tour ideal for nature\n    and history lovers.\n      ",
+      "overview": "\n    This one day tour to Sigiriya offers a perfect blend of culture, adventure, and wildlife.\n    Begin with a visit to the Golden Cave Temple in Dambulla, followed by climbing either\n    Sigiriya Rock Fortress or Pidurangala Rock for breathtaking views.\n    End the day with an exciting wild elephant safari, making this tour ideal for nature\n    and history lovers.\n      ",
       "tourType": "Day Tour",
       "itinerary": [
         {
@@ -510,13 +510,13 @@
                 "icon": "fa-car",
                 "color": "#f39c12"
               },
-              "description": "Pickup from your hotel in a comfortable private air-conditioned vehicle.",
+              "description": "Pickup from your hotel in a comfortable private air conditioned vehicle.",
               "image": "assets/img/onedayTour/Sigiriya/1.jpg"
             },
             {
               "type": "Guided tour",
               "title": {
-                "title": "Golden Cave Temple – Dambulla",
+                "title": "Golden Cave Temple, Dambulla",
                 "icon": "fa-gopuram",
                 "color": "#c0392b"
               },
@@ -560,7 +560,7 @@
         "All attraction entrance fees (excluding safari entrance & jeep)",
         "Highway tickets and parking fees",
         "English speaking professional driver",
-        "Private air-conditioned vehicle",
+        "Private air conditioned vehicle",
         "Lunch"
       ],
       "excludes": [
@@ -569,7 +569,7 @@
       ],
       "highlights": [
         "Sigiriya Day Tour Itinerary",
-        "Golden Cave Temple – Dambulla",
+        "Golden Cave Temple, Dambulla",
         "Temple of the Sacred Tooth Relic",
         "Sigiriya or Pidurangala Rock Climbing",
         "Wild Elephant Safari"
@@ -585,7 +585,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -596,12 +596,12 @@
     "2-day-ella-kandy-private-tour-sri-lanka": {
       "id": "2-day-ella-kandy-private-tour-sri-lanka",
       "slug": "2-day-ella-kandy-private-tour",
-      "title": "2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa Safari | Airport Drop",
-      "description": "Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2-day private tour ending at the airport or your hotel.",
+      "title": "2 Day Ella & Kandy Tour | Private Driver",
+      "description": "Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2 day private tour ending at the airport or your hotel.",
       "duration": "2 days",
       "persons": "1-20 Persons",
       "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "overview": "Experience an unforgettable 2-day journey through Sri Lanka’s wildlife, hill country and cultural capital.\n  On day one, visit the Udawalawa Elephant Transit Home before heading to Ella to explore Nine Arch Bridge, Little Adam’s Peak, Flying Ravana and Ravana Falls.\n  On day two, travel through the scenic hills to Ramboda Falls and Ambuluwawa Tower before discovering the sacred Temple of the Tooth in Kandy and Pinnawala Elephant Orphanage.\n  This private tour ends conveniently at the airport or your hotel.",
+      "overview": "Experience an unforgettable 2 day journey through Sri Lanka’s wildlife, hill country and cultural capital.\n  On day one, visit the Udawalawa Elephant Transit Home before heading to Ella to explore Nine Arch Bridge, Little Adam’s Peak, Flying Ravana and Ravana Falls.\n  On day two, travel through the scenic hills to Ramboda Falls and Ambuluwawa Tower before discovering the sacred Temple of the Tooth in Kandy and Pinnawala Elephant Orphanage.\n  This private tour ends conveniently at the airport or your hotel.",
       "tourType": "Round Tour",
       "itinerary": [
         {
@@ -645,7 +645,7 @@
                 "icon": "fa-bolt",
                 "color": "#e74c3c"
               },
-              "description": "Experience thrilling zip-lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.",
+              "description": "Experience thrilling zip lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.",
               "image": "assets/img/2daysTours/10.jpg"
             },
             {
@@ -708,7 +708,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Driver's Accommodation & Meals",
         "Pickup & Airport/Hotel Drop Off",
@@ -731,7 +731,7 @@
       ],
       "faq": [
         {
-          "question": "What is included in 2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa Safari | Airport Drop?",
+          "question": "What is included in 2 Day Sri Lanka Private Tour, Ella, Kandy & Udawalawa Safari | Airport Drop?",
           "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 2 days itinerary. See Included for the full list."
         },
         {
@@ -740,7 +740,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -751,12 +751,12 @@
     "2-day-ella-yala-private-tour-sri-lanka": {
       "id": "2-day-ella-yala-private-tour-sri-lanka",
       "slug": "2-day-ella-yala-safari",
-      "title": "2 Day Sri Lanka Private Tour – Ella & Yala Safari | Airport Drop",
-      "description": "Discover Sri Lanka’s hill country and wildlife on this 2-day private tour featuring Ella’s scenic highlights and a thrilling Yala National Park safari, ending at the airport or your hotel.",
+      "title": "2 Day Ella & Yala Safari | Private Driver",
+      "description": "Discover Sri Lanka’s hill country and wildlife on this 2 day private tour featuring Ella’s scenic highlights and a thrilling Yala National Park safari, ending at the airport or your hotel.",
       "duration": "2 days",
       "persons": "1-20 Persons",
       "filecode": "2-day-ella-yala-private-tour-sri-lanka",
-      "overview": "Experience an unforgettable 2-day private journey through Sri Lanka’s scenic hill country and legendary wildlife parks.\n  On day one, explore Ella’s iconic Nine Arch Bridge, hike Little Adam’s Peak, enjoy Flying Ravana adventure and visit Ravana Falls amid lush highland scenery.\n  On day two, set out on an exciting jeep safari in Yala National Park in search of leopards, elephants, deer and rich birdlife before continuing to your hotel or airport drop-off.\n  This private tour combines nature, adventure and comfort with dedicated transportation throughout.",
+      "overview": "Experience an unforgettable 2 day private journey through Sri Lanka’s scenic hill country and legendary wildlife parks.\n  On day one, explore Ella’s iconic Nine Arch Bridge, hike Little Adam’s Peak, enjoy Flying Ravana adventure and visit Ravana Falls amid lush highland scenery.\n  On day two, set out on an exciting jeep safari in Yala National Park in search of leopards, elephants, deer and rich birdlife before continuing to your hotel or airport drop off.\n  This private tour combines nature, adventure and comfort with dedicated transportation throughout.",
       "tourType": "Round Tour",
       "itinerary": [
         {
@@ -790,7 +790,7 @@
                 "icon": "fa-bolt",
                 "color": "#e74c3c"
               },
-              "description": "Experience thrilling zip-lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.",
+              "description": "Experience thrilling zip lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.",
               "image": "assets/img/2daysTours/10.jpg"
             },
             {
@@ -847,7 +847,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Driver's Accommodation & Meals",
         "Pickup & Airport/Hotel Drop Off",
@@ -869,7 +869,7 @@
       ],
       "faq": [
         {
-          "question": "What is included in 2 Day Sri Lanka Private Tour – Ella & Yala Safari | Airport Drop?",
+          "question": "What is included in 2 Day Sri Lanka Private Tour, Ella & Yala Safari | Airport Drop?",
           "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 2 days itinerary. See Included for the full list."
         },
         {
@@ -878,7 +878,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -889,17 +889,17 @@
     "4-day-sri-lanka-tour": {
       "id": "4-day-sri-lanka-tour",
       "slug": "4-day-sri-lanka-tour",
-      "title": "4 Day Sri Lanka Private Tour | Kandy, Ella, Yala & South Coast",
+      "title": "4 Day Sri Lanka Tour | Private Driver & Hotels",
       "description": "Explore Sri Lanka in 4 unforgettable days including Kandy cultural heritage, Ella hill country, Yala safari adventure and the stunning southern coastline.",
       "duration": "4 days",
       "persons": "1-20 Persons",
       "filecode": "4-day-sri-lanka-tour",
-      "overview": "Discover Sri Lanka’s perfect combination of culture, scenic beauty, wildlife and coastal charm in this 4-day private tour. Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop.",
+      "overview": "Discover Sri Lanka’s perfect combination of culture, scenic beauty, wildlife and coastal charm in this 4 day private tour. Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop.",
       "tourType": "Round Tour",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Kandy Cultural Experience",
+          "title": "Airport / Hotel, Kandy Cultural Experience",
           "activities": [
             {
               "type": "Wildlife Experience",
@@ -948,7 +948,7 @@
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
-              "description": "Stay overnight in a comfortable star-class hotel in Kandy on a Half Board basis.",
+              "description": "Stay overnight in a comfortable star class hotel in Kandy on a Half Board basis.",
               "extra": [
                 "Dinner Included",
                 "Private Room"
@@ -958,7 +958,7 @@
         },
         {
           "day": 2,
-          "title": "Kandy – Ella Hill Country Journey",
+          "title": "Kandy, Ella Hill Country Journey",
           "activities": [
             {
               "type": "Nature",
@@ -977,7 +977,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Discover how world-famous Ceylon tea is produced and enjoy a fresh cup while overlooking scenic tea plantations.",
+              "description": "Discover how world famous Ceylon tea is produced and enjoy a fresh cup while overlooking scenic tea plantations.",
               "image": "assets/img/5daysTours/17.jpg"
             },
             {
@@ -987,7 +987,7 @@
                 "icon": "fa-bridge",
                 "color": "#A9A9A9"
               },
-              "description": "Visit the iconic colonial-era Nine Arch Bridge surrounded by lush greenery and rolling hills.",
+              "description": "Visit the iconic colonial era Nine Arch Bridge surrounded by lush greenery and rolling hills.",
               "image": "assets/img/5daysTours/5.jpg"
             },
             {
@@ -1017,7 +1017,7 @@
         },
         {
           "day": 3,
-          "title": "Ella – Yala Wildlife Safari",
+          "title": "Ella, Yala Wildlife Safari",
           "activities": [
             {
               "type": "Waterfall",
@@ -1056,7 +1056,7 @@
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
-              "description": "Overnight stay in a comfortable safari-area hotel with Half Board.",
+              "description": "Overnight stay in a comfortable safari area hotel with Half Board.",
               "extra": [
                 "Breakfast & Dinner Included"
               ]
@@ -1065,7 +1065,7 @@
         },
         {
           "day": 4,
-          "title": "Yala – Galle – Bentota – Airport",
+          "title": "Yala, Galle, Bentota, Airport",
           "activities": [
             {
               "type": "Beach Visit",
@@ -1084,7 +1084,7 @@
                 "icon": "fa-landmark",
                 "color": "#8e44ad"
               },
-              "description": "Explore the UNESCO-listed Galle Fort with colonial architecture, ramparts and ocean views.",
+              "description": "Explore the UNESCO listed Galle Fort with colonial architecture, ramparts and ocean views.",
               "image": "assets/img/5daysTours/22.jpg"
             },
             {
@@ -1101,7 +1101,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Half Board Accommodation",
         "Airport Pickup & Drop Off",
@@ -1131,7 +1131,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -1142,17 +1142,17 @@
     "5-day-sri-lanka-tour": {
       "id": "5-day-sri-lanka-tour",
       "slug": "5-day-sri-lanka-tour",
-      "title": "5 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari",
+      "title": "5 Day Sri Lanka Tour | Private Driver & Hotels",
       "description": "Explore Sri Lanka in 5 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences.",
       "duration": "5 days",
       "persons": "1-20 Persons",
       "filecode": "5-day-sri-lanka-tour",
-      "overview": "Discover the highlights of Sri Lanka in this perfectly balanced 5-day private round tour. \n  Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast. \n  With private transportation, experienced English-speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation — perfect for couples, families and small groups.",
+      "overview": "Discover the highlights of Sri Lanka in this perfectly balanced 5 day private round tour. \n  Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast. \n  With private transportation, experienced English speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation, perfect for couples, families and small groups.",
       "tourType": "Round Tour",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport to Sigiriya – Elephants & Safari Adventure",
+          "title": "Airport to Sigiriya, Elephants & Safari Adventure",
           "activities": [
             {
               "type": "Arrival",
@@ -1180,13 +1180,13 @@
                 "icon": "fa-leaf",
                 "color": "#8e44ad"
               },
-              "description": "Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering” — one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.",
+              "description": "Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering”, one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.",
               "image": "assets/img/5daysTours/24.jpg"
             },
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1201,7 +1201,7 @@
         },
         {
           "day": 2,
-          "title": "Sigiriya to Kandy – Cultural Heritage",
+          "title": "Sigiriya to Kandy, Cultural Heritage",
           "activities": [
             {
               "type": "Guided tour",
@@ -1210,7 +1210,7 @@
                 "icon": "fa-mountain",
                 "color": "#e74c3c"
               },
-              "description": "Climb the UNESCO-listed Sigiriya Lion Rock Fortress, a 5th-century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.",
+              "description": "Climb the UNESCO listed Sigiriya Lion Rock Fortress, a 5th century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.",
               "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
             },
             {
@@ -1236,7 +1236,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Hotel Topaz – Kandy",
+                "title": "Hotel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1251,7 +1251,7 @@
         },
         {
           "day": 3,
-          "title": "Kandy to Nuwara Eliya – Scenic Tea Country",
+          "title": "Kandy to Nuwara Eliya, Scenic Tea Country",
           "activities": [
             {
               "type": "Nature",
@@ -1280,7 +1280,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Discover how world-famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.",
+              "description": "Discover how world famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.",
               "image": "assets/img/5daysTours/28.png"
             },
             {
@@ -1301,7 +1301,7 @@
         },
         {
           "day": 4,
-          "title": "Nuwara Eliya to Ella – Mountain Scenery ",
+          "title": "Nuwara Eliya to Ella, Mountain Scenery ",
           "activities": [
             {
               "type": "Guided tour",
@@ -1341,7 +1341,7 @@
         },
         {
           "day": 5,
-          "title": "Udawalawa to South West Coast – River & Conservation",
+          "title": "Udawalawa to South West Coast, River & Conservation",
           "activities": [
             {
               "type": "Conservation",
@@ -1367,7 +1367,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Pickup & Airport Drop Off",
         "Fuel & Parking Fees",
@@ -1397,7 +1397,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -1408,7 +1408,7 @@
     "6-day-sri-lanka-private-tour": {
       "id": "6-day-sri-lanka-private-tour",
       "slug": "6-day-sri-lanka-private-tour",
-      "title": "6 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari",
+      "title": "6 Day Sri Lanka Tour | Private Driver & Hotels",
       "description": "Explore Sri Lanka in 6 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences.",
       "duration": "6 days",
       "persons": "1-20 Persons",
@@ -1476,7 +1476,7 @@
                 "icon": "fa-leaf",
                 "color": "#8e44ad"
               },
-              "description": "Let's get some traditional Sri Lankan village experience!!! A visit to the hamlet of Hiriwadunna in Sri Lanka showcases the laid-back rhythms of small village life.",
+              "description": "Let's get some traditional Sri Lankan village experience!!! A visit to the hamlet of Hiriwadunna in Sri Lanka showcases the laid back rhythms of small village life.",
               "image": "assets/img/5daysTours/36.jpg"
             },
             {
@@ -1731,7 +1731,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Pickup & Airport Drop Off",
         "Fuel & Parking Fees",
@@ -1761,7 +1761,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -1772,8 +1772,8 @@
     "7-day-sri-lanka-tour": {
       "id": "7-day-sri-lanka-tour",
       "slug": "7-day-sri-lanka-tour",
-      "title": "Sri Lanka Seven Days Tour",
-      "description": "An unforgettable 7 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
+      "title": "7 Day Sri Lanka Tour | Private Driver, Safari & Beach",
+      "description": "Book this 7 day Sri Lanka tour with a private driver: Wilpattu safari, Anuradhapura, Sigiriya, Kandy, Ella, Galle and a southern beach stay. 4 star hotels included.",
       "duration": "7 days",
       "persons": "1-20 Persons",
       "filecode": "7-day-sri-lanka-tour",
@@ -1782,7 +1782,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Wilpattu",
+          "title": "Airport / Hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -1797,7 +1797,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "title": "Thimbiri Wewa Resort, Wilpattu",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1812,7 +1812,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "title": "Wilpattu, Anuradhapura, Sigiriya",
           "activities": [
             {
               "type": "Religious Visit",
@@ -1847,7 +1847,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1871,7 +1871,7 @@
                 "icon": "fa-mountain",
                 "color": "#c0392b"
               },
-              "description": "Climb the UNESCO-listed Sigiriya Rock Fortress.",
+              "description": "Climb the UNESCO listed Sigiriya Rock Fortress.",
               "image": "assets/img/5daysTours/42.jpg"
             },
             {
@@ -1907,7 +1907,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1922,7 +1922,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya – Kandy",
+          "title": "Sigiriya, Kandy",
           "activities": [
             {
               "type": "Cultural Visit",
@@ -1957,7 +1957,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Hotel Topaz – Kandy",
+                "title": "Hotel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -1972,7 +1972,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy – Nuwara Eliya – Ella",
+          "title": "Kandy, Nuwara Eliya, Ella",
           "activities": [
             {
               "type": "Tea Experience",
@@ -1981,7 +1981,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Learn how world-famous Ceylon tea is produced.",
+              "description": "Learn how world famous Ceylon tea is produced.",
               "image": "assets/img/5daysTours/28.png"
             },
             {
@@ -2022,7 +2022,7 @@
         },
         {
           "day": 6,
-          "title": "Ella – Hikkaduwa",
+          "title": "Ella, Hikkaduwa",
           "activities": [
             {
               "type": "Landmark",
@@ -2031,7 +2031,7 @@
                 "icon": "fa-bridge",
                 "color": "#A9A9A9"
               },
-              "description": "Visit the famous colonial-era railway bridge.",
+              "description": "Visit the famous colonial era railway bridge.",
               "image": "assets/img/5daysTours/3.jpeg"
             },
             {
@@ -2100,7 +2100,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Driver's Accommodation & Meals",
         "Pickup & Drop Off",
@@ -2123,8 +2123,8 @@
       ],
       "faq": [
         {
-          "question": "What is included in Sri Lanka Seven Days Tour?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 7 days itinerary. See Included for the full list."
+          "question": "What is included in this 7 day Sri Lanka tour?",
+          "answer": "Private air conditioned transport, a chauffeur guide, 4 star hotels and the sightseeing listed in the 7 day itinerary. See Included for the full list."
         },
         {
           "question": "Is this a private tour?",
@@ -2132,7 +2132,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -2143,7 +2143,7 @@
     "8-day-sri-lanka-private-tour": {
       "id": "8-day-sri-lanka-private-tour",
       "slug": "8-day-sri-lanka-private-tour",
-      "title": "8 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach",
+      "title": "8 Day Sri Lanka Tour | Private Driver, Safari & Beach",
       "description": "An unforgettable 8 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
       "duration": "8 days",
       "persons": "1-20 Persons",
@@ -2153,7 +2153,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Wilpattu",
+          "title": "Airport / Hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -2168,7 +2168,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "title": "Thimbiri Wewa Resort, Wilpattu",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2183,7 +2183,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "title": "Wilpattu, Anuradhapura, Sigiriya",
           "activities": [
             {
               "type": "Religious Visit",
@@ -2218,7 +2218,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2242,7 +2242,7 @@
                 "icon": "fa-mountain",
                 "color": "#c0392b"
               },
-              "description": "Climb the UNESCO-listed Sigiriya Rock Fortress.",
+              "description": "Climb the UNESCO listed Sigiriya Rock Fortress.",
               "image": "assets/img/5daysTours/42.jpg"
             },
             {
@@ -2278,7 +2278,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2293,7 +2293,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya – Kandy",
+          "title": "Sigiriya, Kandy",
           "activities": [
             {
               "type": "Cultural Visit",
@@ -2328,7 +2328,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Hotel Topaz – Kandy",
+                "title": "Hotel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2343,7 +2343,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy – Nuwara Eliya – Ella",
+          "title": "Kandy, Nuwara Eliya, Ella",
           "activities": [
             {
               "type": "Tea Experience",
@@ -2352,7 +2352,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Learn how world-famous Ceylon tea is produced.",
+              "description": "Learn how world famous Ceylon tea is produced.",
               "image": "assets/img/5daysTours/28.png"
             },
             {
@@ -2383,7 +2383,7 @@
         },
         {
           "day": 6,
-          "title": "Ella – Hikkaduwa",
+          "title": "Ella, Hikkaduwa",
           "activities": [
             {
               "type": "Landmark",
@@ -2392,7 +2392,7 @@
                 "icon": "fa-bridge",
                 "color": "#A9A9A9"
               },
-              "description": "Visit the famous colonial-era railway bridge.",
+              "description": "Visit the famous colonial era railway bridge.",
               "image": "assets/img/5daysTours/3.jpeg"
             },
             {
@@ -2483,7 +2483,7 @@
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Half Board Accommodation (7 Nights)",
         "Fuel & Parking Fees",
@@ -2513,7 +2513,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",
@@ -2524,7 +2524,7 @@
     "10-day-sri-lanka-tour": {
       "id": "10-day-sri-lanka-tour",
       "slug": "10-day-sri-lanka-tour",
-      "title": "10 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach",
+      "title": "10 Day Sri Lanka Tour | Private Driver Island Circuit",
       "description": "An unforgettable 10 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
       "duration": "10 days",
       "persons": "1-20 Persons",
@@ -2534,7 +2534,7 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel – Wilpattu",
+          "title": "Airport / Hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -2549,7 +2549,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Thimbiri Wewa Resort – Wilpattu",
+                "title": "Thimbiri Wewa Resort, Wilpattu",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2564,7 +2564,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu – Anuradhapura – Sigiriya",
+          "title": "Wilpattu, Anuradhapura, Sigiriya",
           "activities": [
             {
               "type": "Religious Visit",
@@ -2599,7 +2599,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2623,7 +2623,7 @@
                 "icon": "fa-mountain",
                 "color": "#c0392b"
               },
-              "description": "Climb the UNESCO-listed Sigiriya Rock Fortress.",
+              "description": "Climb the UNESCO listed Sigiriya Rock Fortress.",
               "image": "assets/img/5daysTours/42.jpg"
             },
             {
@@ -2659,7 +2659,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Fresco Water Villa – Sigiriya",
+                "title": "Fresco Water Villa, Sigiriya",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2674,7 +2674,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya – Kandy",
+          "title": "Sigiriya, Kandy",
           "activities": [
             {
               "type": "Cultural Visit",
@@ -2709,7 +2709,7 @@
             {
               "type": "Accommodation",
               "title": {
-                "title": "Hotel Topaz – Kandy",
+                "title": "Hotel Topaz, Kandy",
                 "icon": "fa-hotel",
                 "color": "#16a085"
               },
@@ -2726,7 +2726,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy – Nuwara Eliya – Ella",
+          "title": "Kandy, Nuwara Eliya, Ella",
           "activities": [
             {
               "type": "Tea Experience",
@@ -2735,7 +2735,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Learn how world-famous Ceylon tea is produced.",
+              "description": "Learn how world famous Ceylon tea is produced.",
               "image": "assets/img/5daysTours/28.png"
             },
             {
@@ -2768,7 +2768,7 @@
         },
         {
           "day": 6,
-          "title": "Ella – Hikkaduwa",
+          "title": "Ella, Hikkaduwa",
           "activities": [
             {
               "type": "Landmark",
@@ -2777,7 +2777,7 @@
                 "icon": "fa-bridge",
                 "color": "#A9A9A9"
               },
-              "description": "Visit the famous colonial-era railway bridge.",
+              "description": "Visit the famous colonial era railway bridge.",
               "image": "assets/img/5daysTours/3.jpeg"
             },
             {
@@ -2985,14 +2985,14 @@
                 "icon": "fa-mosque",
                 "color": "#FF0000"
               },
-              "description": "Jami Ul-Alfar Mosque, or the Red Mosque in Colombo, is an iconic landmark with striking red-and-white architecture, offering a glimpse into Sri Lanka’s rich Islamic heritage.",
+              "description": "Jami Ul-Alfar Mosque, or the Red Mosque in Colombo, is an iconic landmark with striking red and white architecture, offering a glimpse into Sri Lanka’s rich Islamic heritage.",
               "image": "assets/img/7daystour/owzua0jhk0zazg9d8hcn.jpg"
             }
           ]
         }
       ],
       "includes": [
-        "Air-Conditioned Private Vehicle",
+        "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
         "Half Board Accommodation (7 Nights)",
         "Fuel & Parking Fees",
@@ -3022,7 +3022,7 @@
         },
         {
           "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking — hotel pick-up, pace, and must-see stops can be tailored."
+          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
         },
         {
           "question": "How do I book and pay?",

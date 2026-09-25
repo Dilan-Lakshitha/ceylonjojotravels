@@ -6,6 +6,8 @@ import { filter, Subscription } from 'rxjs';
 import { ScrollToToComponent } from '../../sharedComponents/scroll-to-to-component/scroll-to-to-component';
 import { LocalizedRouterService } from '../../i18n/localized-router.service';
 import { AVAILABLE_LANGS, AppLang, isAppLang } from '../../i18n/language.constants';
+import { TourContentService } from '../../i18n/tour-content.service';
+import { TourId } from '../../i18n/tour-slug-map';
 
 @Component({
   selector: 'app-layout-component',
@@ -23,6 +25,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly transloco = inject(TranslocoService);
   private readonly router = inject(Router);
+  private readonly tourContent = inject(TourContentService);
   private readonly subs = new Subscription();
 
   homeLink: any[] = ['/', 'en'];
@@ -33,6 +36,9 @@ export class LayoutComponent implements OnInit, OnDestroy {
   destinationsLink: any[] = ['/', 'en', 'destinations'];
   guidesLink: any[] = ['/', 'en', 'travel-guides'];
   testimonialsLink: any[] = ['/', 'en', 'customer-testimonials'];
+  tour7Link: any[] = ['/', 'en', 'tours', '7-day-sri-lanka-tour'];
+  footerTours: Array<{ title: string; link: any[] }> = [];
+  private catalogTours: Array<{ title: string; id: string }> = [];
   /** Crawlable alternate URLs for the current page (one per language). */
   langLinks: Record<AppLang, any[]> = {
     en: ['/', 'en'],
@@ -49,6 +55,17 @@ export class LayoutComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.activeLang = this.localizedRouter.currentLang();
     this.refreshLinks();
+    this.subs.add(
+      this.tourContent.getCatalog().subscribe((catalog) => {
+        this.catalogTours = [...(catalog.dayTours || []), ...(catalog.multiDayTours || [])].map(
+          (tour) => ({
+            title: tour.title,
+            id: tour.filecode || tour.id,
+          }),
+        );
+        this.rebuildFooterTours();
+      }),
+    );
     this.subs.add(
       this.transloco.langChanges$.subscribe((lang) => {
         if (isAppLang(lang)) {
@@ -102,7 +119,16 @@ export class LayoutComponent implements OnInit, OnDestroy {
     this.destinationsLink = this.localizedRouter.commandsFor('destinations', { lang });
     this.guidesLink = this.localizedRouter.commandsFor('guides', { lang });
     this.testimonialsLink = this.localizedRouter.commandsFor('testimonials', { lang });
+    this.tour7Link = this.localizedRouter.tourLinkCommands('7-day-sri-lanka-tour', lang);
+    this.rebuildFooterTours();
     this.refreshLangLinks();
+  }
+
+  private rebuildFooterTours(): void {
+    this.footerTours = this.catalogTours.map((tour) => ({
+      title: tour.title,
+      link: this.localizedRouter.tourLinkCommands(tour.id as TourId, this.activeLang),
+    }));
   }
 
   private refreshLangLinks(): void {

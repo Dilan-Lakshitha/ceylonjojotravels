@@ -51,9 +51,9 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
     duration: '5 Days',
     persons: '1-20 Persons',
     filecode: "5-day-sri-lanka-tour",
-    overview: `Discover the highlights of Sri Lanka in this perfectly balanced 5-day private round tour. 
+    overview: `Discover the highlights of Sri Lanka in this perfectly balanced 5 day private round tour. 
   Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast. 
-  With private transportation, experienced English-speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation — perfect for couples, families and small groups.`,
+  With private transportation, experienced English speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation perfect for couples, families and small groups.`,
 
     tourType: 'Round Tour',
 
@@ -61,7 +61,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
 
       {
         day: 1,
-        title: 'Airport to Sigiriya – Elephants & Safari Adventure',
+        title: 'Airport to Sigiriya, Elephants & Safari Adventure',
         activities: [
           {
             type: 'Arrival',
@@ -88,12 +88,12 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
               color: '#8e44ad',
             },
             description:
-              'Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering” — one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.',
+              'Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering” one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.',
             image: 'assets/img/5daysTours/24.jpg',
           },
           {
             type: 'Accommodation',
-            title: { title: 'Fresco Water Villa – Sigiriya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
             image: 'assets/img/5daysTours/c.jpg',
@@ -104,7 +104,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
 
       {
         day: 2,
-        title: 'Sigiriya to Kandy – Cultural Heritage',
+        title: 'Sigiriya to Kandy, Cultural Heritage',
         activities: [
           {
             type: 'Guided tour',
@@ -114,7 +114,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
               color: '#e74c3c',
             },
             description:
-              'Climb the UNESCO-listed Sigiriya Lion Rock Fortress, a 5th-century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.',
+              'Climb the UNESCO listed Sigiriya Lion Rock Fortress, a 5th century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.',
             image: 'assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg',
           },
           {
@@ -141,7 +141,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Hotel Topaz – Kandy', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Hotel Topaz, Kandy', icon: 'fa-hotel', color: '#16a085' },
             description:
               'Overnight stay at Hotel Topaz (or similar).',
             image: 'assets/img/5daysTours/25.jpg',
@@ -152,7 +152,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
 
       {
         day: 3,
-        title: 'Kandy to Nuwara Eliya – Scenic Tea Country',
+        title: 'Kandy to Nuwara Eliya, Scenic Tea Country',
         activities: [
           {
             type: 'Nature',
@@ -184,7 +184,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
               color: '#8B4513',
             },
             description:
-              'Discover how world-famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.',
+              'Discover how world famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.',
             image: 'assets/img/5daysTours/28.png',
           },
           {
@@ -200,7 +200,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
 
       {
         day: 4,
-        title: 'Nuwara Eliya to Ella – Mountain Scenery ',
+        title: 'Nuwara Eliya to Ella, Mountain Scenery ',
         activities: [
           {
             type: 'Guided tour',
@@ -240,7 +240,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
       },
       {
         day: 5,
-        title: 'Udawalawa to South West Coast – River & Conservation',
+        title: 'Udawalawa to South West Coast, River & Conservation',
         activities: [
           {
             type: 'Conservation',
@@ -269,7 +269,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
     ],
 
     includes: [
-      'Air-Conditioned Private Vehicle',
+      'Air Conditioned Private Vehicle',
       'English Speaking Professional Driver',
       'Pickup & Airport Drop Off',
       'Fuel & Parking Fees',

@@ -75,7 +75,7 @@ export default async function handler(req, res) {
               New Booking Notification
             </h1>
             <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">
-              CEYLON JOJO TRAVElS - Booking System
+              CEYLON JOJO TRAVElS Booking System
             </p>
           </div>
 

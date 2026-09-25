@@ -2,7 +2,7 @@
 
 ## Slot architecture (current)
 - Design system under `src/app/ui/`: TourCard, DestinationCard, PageHeader, TourStats, PriceBox, Chip, AccordionPanel, HeroBanner
-- Slot contracts in `src/styles/_tour-card-slots.scss` — fixed CSS Grid tracks (not English-length min-heights)
+- Slot contracts in `src/styles/_tour-card-slots.scss` fixed CSS Grid tracks (not English-length min-heights)
 - Listings use `.tour-card-grid` / `.dest-card-grid` with `grid-auto-rows: 1fr`
 
 ## Before / after focus URLs
@@ -18,7 +18,7 @@
 - `canonicalSegmentGuard` redirects wrong-lang path segments/slugs to the lang-correct URL (client-only; Googlebot still needs edge 301s)
 - `vercel.json` 301s wrong-lang segments (`/ru/tours/...` → `/ru/tury/...`), wrong-lang slugs, spaced/legacy tour URLs, and `sitemap_index.xml` → `sitemap-index.xml`
 - Sitemaps use `TOUR_SLUG_MAP` (not `tours.json` slugs) so DE/FR/… loc + hreflang match prerender + canonical tags
-- **All sitemap marketing URLs are prerendered** (home, about, services, tours list, destinations, contact, testimonials, guides, restaurant, and every tour detail × lang) so Google gets real HTML — not the CSR English shell
+- **All sitemap marketing URLs are prerendered** (home, about, services, tours list, destinations, contact, testimonials, guides, restaurant, and every tour detail × lang) so Google gets real HTML not the CSR English shell
 - Language switcher uses crawlable `<a routerLink>` alternates (not JS-only buttons)
 - Unknown paths render a `noindex` 404 page instead of soft-redirecting to `/en`
 - Guides pages enriched with team bios + travel tips (selection/quality for “Crawled – currently not indexed”)

@@ -43,7 +43,7 @@ tour = {
   duration: '4 Days',
   persons: '1-20 Persons',
   filecode: '4-day-sri-lanka-tour',
-  overview: `Discover Sri Lanka’s perfect combination of culture, scenic beauty, wildlife and coastal charm in this 4-day private tour. Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop.`,
+  overview: `Discover Sri Lanka’s perfect combination of culture, scenic beauty, wildlife and coastal charm in this 4 day private tour. Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop.`,
 
   tourType: 'Round Tour',
 
@@ -52,7 +52,7 @@ tour = {
     // DAY 1
     {
       day: 1,
-      title: 'Airport / Hotel – Kandy Cultural Experience',
+      title: 'Airport / Hotel, Kandy Cultural Experience',
       activities: [
         {
           type: 'Wildlife Experience',
@@ -85,7 +85,7 @@ tour = {
         {
           type: 'Accommodation',
           title: { title: 'Overnight Stay Topez Hotel in Kandy', icon: 'fa-hotel', color: '#16a085' },
-          description: 'Stay overnight in a comfortable star-class hotel in Kandy on a Half Board basis.',
+          description: 'Stay overnight in a comfortable star class hotel in Kandy on a Half Board basis.',
           extra: ['Dinner Included', 'Private Room'],
         },
       ],
@@ -94,7 +94,7 @@ tour = {
     // DAY 2
     {
       day: 2,
-      title: 'Kandy – Ella Hill Country Journey',
+      title: 'Kandy, Ella Hill Country Journey',
       activities: [
         {
           type: 'Nature',
@@ -107,14 +107,14 @@ tour = {
           type: 'Tea Experience',
           title: { title: 'Glenloch Tea Factory Visit', icon: 'fa-mug-hot', color: '#8B4513' },
           description:
-            'Discover how world-famous Ceylon tea is produced and enjoy a fresh cup while overlooking scenic tea plantations.',
+            'Discover how world famous Ceylon tea is produced and enjoy a fresh cup while overlooking scenic tea plantations.',
           image: 'assets/img/5daysTours/17.jpg',
         },
         {
           type: 'Scenic Visit',
           title: { title: 'Nine Arch Bridge', icon: 'fa-bridge', color: '#A9A9A9' },
           description:
-            'Visit the iconic colonial-era Nine Arch Bridge surrounded by lush greenery and rolling hills.',
+            'Visit the iconic colonial era Nine Arch Bridge surrounded by lush greenery and rolling hills.',
           image: 'assets/img/5daysTours/5.jpg',
         },
         {
@@ -136,7 +136,7 @@ tour = {
     // DAY 3
     {
       day: 3,
-      title: 'Ella – Yala Wildlife Safari',
+      title: 'Ella, Yala Wildlife Safari',
       activities: [
         {
           type: 'Waterfall',
@@ -162,7 +162,7 @@ tour = {
         {
           type: 'Accommodation',
           title: { title: 'Overnight Stay in Yala', icon: 'fa-hotel', color: '#16a085' },
-          description: 'Overnight stay in a comfortable safari-area hotel with Half Board.',
+          description: 'Overnight stay in a comfortable safari area hotel with Half Board.',
           extra: ['Breakfast & Dinner Included'],
         },
       ],
@@ -171,7 +171,7 @@ tour = {
     // DAY 4
     {
       day: 4,
-      title: 'Yala – Galle – Bentota – Airport',
+      title: 'Yala, Galle, Bentota, Airport',
       activities: [
         {
           type: 'Beach Visit',
@@ -184,7 +184,7 @@ tour = {
           type: 'Heritage',
           title: { title: 'Galle Dutch Fort', icon: 'fa-landmark', color: '#8e44ad' },
           description:
-            'Explore the UNESCO-listed Galle Fort with colonial architecture, ramparts and ocean views.',
+            'Explore the UNESCO listed Galle Fort with colonial architecture, ramparts and ocean views.',
           image: 'assets/img/5daysTours/22.jpg',
         },
         {
@@ -199,7 +199,7 @@ tour = {
   ],
 
   includes: [
-    'Air-Conditioned Private Vehicle',
+    'Air Conditioned Private Vehicle',
     'English Speaking Professional Driver',
     'Half Board Accommodation',
     'Airport Pickup & Drop Off',

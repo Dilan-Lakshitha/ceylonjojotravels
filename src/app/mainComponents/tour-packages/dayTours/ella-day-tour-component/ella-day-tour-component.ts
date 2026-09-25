@@ -105,7 +105,7 @@ export class EllaDayTourComponent implements OnInit, OnDestroy {
     ],
 
     includes: [
-      'Air-Conditioned Private Vehicle',
+      'Air Conditioned Private Vehicle',
       'English Speaking Professional Driver',
       "Driver's Accommodation & Meals",
       'Pickup & Drop Off',

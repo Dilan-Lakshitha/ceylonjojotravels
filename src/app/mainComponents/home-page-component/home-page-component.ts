@@ -168,6 +168,10 @@ export class HomePageComponent implements OnInit, OnDestroy {
     }
   }
 
+  get popularTours(): PricedTour[] {
+    return [...this.dayTours, ...this.multiDayTours];
+  }
+
   get toursLink(): any[] {
     return this.localizedRouter.commandsFor('tours');
   }

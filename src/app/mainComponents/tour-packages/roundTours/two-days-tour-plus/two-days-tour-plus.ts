@@ -38,13 +38,13 @@ export class TwoDaysTourPlus  implements OnInit, OnDestroy{
   price = 0;
 
 tour = {
-  title: '2 Day Sri Lanka Private Tour – Ella, Kandy & Udawalawa Safari | Airport Drop',
+  title: '2 Day Sri Lanka Private Tour, Ella, Kandy & Udawalawa Safari | Airport Drop',
   description:
-    'Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2-day private tour ending at the airport or your hotel.',
+    'Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2 day private tour ending at the airport or your hotel.',
   duration: '2 Days',
   persons: 'Private Tour (1-20 Persons)',
   filecode: '2-day-ella-kandy-private-tour-sri-lanka',
-  overview: `Experience an unforgettable 2-day journey through Sri Lanka’s wildlife, hill country and cultural capital.
+  overview: `Experience an unforgettable 2 day journey through Sri Lanka’s wildlife, hill country and cultural capital.
   On day one, visit the Udawalawa Elephant Transit Home before heading to Ella to explore Nine Arch Bridge, Little Adam’s Peak, Flying Ravana and Ravana Falls.
   On day two, travel through the scenic hills to Ramboda Falls and Ambuluwawa Tower before discovering the sacred Temple of the Tooth in Kandy and Pinnawala Elephant Orphanage.
   This private tour ends conveniently at the airport or your hotel.`,
@@ -97,7 +97,7 @@ tour = {
             color: '#e74c3c',
           },
           description:
-            'Experience thrilling zip-lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.',
+            'Experience thrilling zip lining at Flying Ravana Adventure Park overlooking the stunning Ella landscape.',
           image: 'assets/img/2daysTours/10.jpg',
         },
         {
@@ -166,7 +166,7 @@ tour = {
   ],
 
   includes: [
-    'Air-Conditioned Private Vehicle',
+    'Air Conditioned Private Vehicle',
     'English Speaking Professional Driver',
     "Driver's Accommodation & Meals",
     'Pickup & Airport/Hotel Drop Off',

@@ -33,12 +33,12 @@ export class SigiriyaDayTourComponent implements OnInit, OnDestroy {
   tour = {
     title: 'Sri Lanka Sigiriya One Day Tour',
     description:
-    'Discover Sri Lanka’s cultural and natural heritage on a full-day tour to Sigiriya, including temples, rock climbing, and wildlife.',
+    'Discover Sri Lanka’s cultural and natural heritage on a full day tour to Sigiriya, including temples, rock climbing, and wildlife.',
     duration: 'One Day',
     persons: '20 Persons',
     filecode: 'sigiriya-day-tour',
     overview: `
-    This one-day tour to Sigiriya offers a perfect blend of culture, adventure, and wildlife.
+    This one day tour to Sigiriya offers a perfect blend of culture, adventure, and wildlife.
     Begin with a visit to the Golden Cave Temple in Dambulla, followed by climbing either
     Sigiriya Rock Fortress or Pidurangala Rock for breathtaking views.
     End the day with an exciting wild elephant safari, making this tour ideal for nature
@@ -59,13 +59,13 @@ export class SigiriyaDayTourComponent implements OnInit, OnDestroy {
               color: '#f39c12',
             },
             description:
-              'Pickup from your hotel in a comfortable private air-conditioned vehicle.',
+              'Pickup from your hotel in a comfortable private air conditioned vehicle.',
             image: 'assets/img/onedayTour/Sigiriya/1.jpg',
           },
           {
             type: 'Guided tour',
           title: {
-            title: 'Golden Cave Temple – Dambulla',
+            title: 'Golden Cave Temple, Dambulla',
             icon: 'fa-gopuram',
             color: '#c0392b',
           },
@@ -114,7 +114,7 @@ export class SigiriyaDayTourComponent implements OnInit, OnDestroy {
     'All attraction entrance fees (excluding safari entrance & jeep)',
     'Highway tickets and parking fees',
     'English speaking professional driver',
-    'Private air-conditioned vehicle',
+    'Private air conditioned vehicle',
     'Lunch',
     ],
     excludes: ['Safari entrance tickets and jeep',

@@ -18,6 +18,7 @@
   "footer.dayTours": "Excursiones de un día",
   "footer.multiDay": "Tours de varios días",
   "footer.packages": "Paquetes",
+  "footer.tour7": "Tour Sri Lanka 7 días",
   "footer.about": "Sobre nosotros",
   "footer.destination": "Destinos",
   "footer.copyright": "Todos los derechos reservados.",
@@ -109,5 +110,17 @@
   "detail.basedOnPeople": "basado en {{count}} personas",
   "detail.reserveTitle": "Reserva tu plaza",
   "detail.transportIncludedShort": "Incluido",
-  "detail.checkAvailability": "Comprobar disponibilidad"
+  "detail.checkAvailability": "Comprobar disponibilidad",
+  "faq.included.q": "¿Qué incluye {{name}}?",
+  "faq.included.a": "Este {{type}} suele incluir transporte privado con aire acondicionado, chófer guía experimentado y las visitas del itinerario durante {{duration}}. Categoría de hotel y comidas aparecen en Alojamiento e Incluye.",
+  "faq.private.q": "¿Es un tour privado?",
+  "faq.private.a": "Sí. Ceylon JOJO Travels opera tours privados en Sri Lanka para parejas, familias y grupos pequeños. Viajáis en vuestro propio vehículo y horario.",
+  "faq.price.q": "¿Cuánto cuesta este tour?",
+  "faq.price.a": "{{price}} El precio final se actualiza al elegir el número de viajeros en el formulario.",
+  "faq.price.fallback": "El precio depende del tamaño del grupo.",
+  "faq.price.from": "Desde ${{amount}} por persona (para 2 viajeros).",
+  "faq.custom.q": "¿Puedo personalizar el itinerario?",
+  "faq.custom.a": "Sí. Indica hotel de recogida, ritmo o paradas imprescindibles en Peticiones especiales y adaptamos el plan antes del viaje.",
+  "faq.book.q": "¿Cómo reservo y pago?",
+  "faq.book.a": "Completa el formulario de esta página o escríbenos por WhatsApp. Pago posterior (en Sri Lanka) disponible. Recibirás confirmación al enviar."
 }
