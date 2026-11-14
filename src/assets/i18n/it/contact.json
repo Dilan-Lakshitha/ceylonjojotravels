@@ -30,5 +30,12 @@
   "messages.error": "Errore durante l’invio. Riprova più tardi.",
   "toast.success": "Messaggio inviato!",
   "toast.error": "Invio del messaggio non riuscito",
-  "form.sending": "Invio in corso..."
+  "form.sending": "Invio in corso...",
+  "body.intro": "Prenotate un autista guida privato in Sri Lanka, chiedete un’escursione di un giorno o un itinerario su misura con hotel. Rispondiamo su WhatsApp, telefono ed e mail in italiano e inglese.",
+  "body.helpTitle": "Come possiamo aiutarvi",
+  "body.help1": "Tour giornalieri privati a Galle, Kandy, Ella e Sigiriya",
+  "body.help2": "Pacchetti di più giorni con hotel 4 stelle e transfer aeroporto",
+  "body.help3": "Itinerari personalizzati per coppie, famiglie e piccoli gruppi",
+  "body.help4": "Pagamento in Sri Lanka dopo conferma scritta",
+  "body.response": "Risposta tipica entro poche ore durante il giorno. Per ritiri lo stesso giorno scrivete su WhatsApp con hotel e orario preferito."
 }

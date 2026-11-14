@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:Travelwebsite": "node dist/Travelwebsite/server/server.mjs",
-    "seo:generate": "node scripts/generate-i18n-seo.js",
+    "seo:generate": "node scripts/generate-i18n-seo.js && node scripts/sync-tour-catalog-links.js",
     "optimize:heroes": "node scripts/optimize-hero-webp.mjs",
     "optimize:heroes:responsive": "node scripts/optimize-hero-responsive.mjs",
     "optimize:hero1:collage": "node scripts/build-hero1-collage.mjs",

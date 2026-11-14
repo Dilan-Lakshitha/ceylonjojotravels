@@ -1,11 +1,48 @@
-<!-- Testimonial Start -->
-<div class="container-fluid py-5" *transloco="let t; scope: 'common'; prefix: 'common'">
-  <div class="container py-5">
-    <div class="text-center mb-3 pb-3">
-      <h6 class="text-primary i18n-section-eyebrow">{{ t('pages.testimonials.eyebrow') }}</h6>
-      <h1 class="i18n-section-title">{{ t('pages.testimonials.heading') }}</h1>
+<div class="tm" *transloco="let t; scope: 'testimonials'; prefix: 'testimonials'">
+  <div class="tm__inner">
+    <header class="tm__header">
+      <p class="tm__eyebrow">{{ t('eyebrow') }}</p>
+      <h1 class="tm__title">{{ t('heading') }}</h1>
+      <p class="tm__intro">{{ t('intro') }}</p>
+      <p class="tm__rating">{{ t('ratingNote') }}</p>
+    </header>
+
+    <div class="tm__grid">
+      <article class="tm__card" itemscope itemtype="https://schema.org/Review">
+        <p class="tm__quote" itemprop="reviewBody">“{{ t('r1.quote') }}”</p>
+        <p class="tm__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ t('r1.author') }}</span>
+        </p>
+        <p class="tm__meta">{{ t('r1.meta') }}</p>
+      </article>
+
+      <article class="tm__card" itemscope itemtype="https://schema.org/Review">
+        <p class="tm__quote" itemprop="reviewBody">“{{ t('r2.quote') }}”</p>
+        <p class="tm__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ t('r2.author') }}</span>
+        </p>
+        <p class="tm__meta">{{ t('r2.meta') }}</p>
+      </article>
+
+      <article class="tm__card" itemscope itemtype="https://schema.org/Review">
+        <p class="tm__quote" itemprop="reviewBody">“{{ t('r3.quote') }}”</p>
+        <p class="tm__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ t('r3.author') }}</span>
+        </p>
+        <p class="tm__meta">{{ t('r3.meta') }}</p>
+      </article>
+
+      <article class="tm__card" itemscope itemtype="https://schema.org/Review">
+        <p class="tm__quote" itemprop="reviewBody">“{{ t('r4.quote') }}”</p>
+        <p class="tm__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ t('r4.author') }}</span>
+        </p>
+        <p class="tm__meta">{{ t('r4.meta') }}</p>
+      </article>
     </div>
+
+    <p class="tm__cta">{{ t('cta') }}</p>
+
     <app-elfsight-reviews [flush]="true" />
   </div>
 </div>
-<!-- Testimonial End -->

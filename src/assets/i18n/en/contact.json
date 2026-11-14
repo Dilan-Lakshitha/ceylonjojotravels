@@ -30,5 +30,12 @@
   "messages.success": "Your message has been sent successfully!",
   "messages.error": "There was an error sending your message. Please try again later.",
   "toast.success": "Message sent successfully!",
-  "toast.error": "Failed to send message"
+  "toast.error": "Failed to send message",
+  "body.intro": "Book a private chauffeur guide in Sri Lanka, ask about day tours, or request a custom multi day itinerary with hotels. We reply on WhatsApp, phone, and email in English and several European languages.",
+  "body.helpTitle": "How we can help",
+  "body.help1": "Private day tours to Galle, Kandy, Ella, and Sigiriya",
+  "body.help2": "Multi day packages with 4 star hotels and airport transfers",
+  "body.help3": "Custom routes for couples, families, and small groups",
+  "body.help4": "Pay later in Sri Lanka after written confirmation",
+  "body.response": "Typical reply time is under a few hours during the day. For same day pick ups, message WhatsApp with your hotel name and preferred start time."
 }

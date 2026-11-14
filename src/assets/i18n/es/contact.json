@@ -30,5 +30,12 @@
   "messages.error": "Error al enviar. Inténtalo más tarde.",
   "toast.success": "¡Mensaje enviado!",
   "toast.error": "No se pudo enviar el mensaje",
-  "form.sending": "Enviando..."
+  "form.sending": "Enviando...",
+  "body.intro": "Reserve un chófer guía privado en Sri Lanka, pregunte por tours de un día o un itinerario a medida con hoteles. Respondemos por WhatsApp, teléfono y correo en español e inglés.",
+  "body.helpTitle": "Cómo podemos ayudar",
+  "body.help1": "Tours privados de un día a Galle, Kandy, Ella y Sigiriya",
+  "body.help2": "Paquetes de varios días con hoteles 4 estrellas y traslados al aeropuerto",
+  "body.help3": "Rutas a medida para parejas, familias y grupos pequeños",
+  "body.help4": "Pago en Sri Lanka tras confirmación por escrito",
+  "body.response": "Respuesta habitual en pocas horas durante el día. Para recogidas el mismo día, escriba por WhatsApp con el hotel y la hora deseada."
 }

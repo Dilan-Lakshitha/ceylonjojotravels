@@ -9,10 +9,10 @@
         "rating": 5,
         "filecode": "ella-day-tour",
         "image": "assets/img/onedayTour/ella/7.jpeg",
-        "routerLink": "/ella-day-tour",
+        "routerLink": "/de/touren/ella-tagesausflug",
         "isBestseller": true,
         "isLimited": true,
-        "slug": "ella-day-tour"
+        "slug": "ella-tagesausflug"
       },
       {
         "id": "galle-day-tour",
@@ -22,10 +22,10 @@
         "rating": 5,
         "filecode": "galle-day-tour",
         "image": "assets/img/onedayTour/Galle/7.jpg",
-        "routerLink": "/galle-day-tour",
+        "routerLink": "/de/touren/galle-tagesausflug",
         "isBestseller": true,
         "isLimited": false,
-        "slug": "galle-day-tour"
+        "slug": "galle-tagesausflug"
       },
       {
         "id": "kandy-day-tour",
@@ -35,10 +35,10 @@
         "rating": 5,
         "filecode": "kandy-day-tour",
         "image": "assets/img/onedayTour/kandy/3.jpg",
-        "routerLink": "/kandy-day-tour",
+        "routerLink": "/de/touren/kandy-tagesausflug",
         "isBestseller": false,
         "isLimited": false,
-        "slug": "kandy-day-tour"
+        "slug": "kandy-tagesausflug"
       },
       {
         "id": "sigiriya-day-tour",
@@ -48,10 +48,10 @@
         "rating": 5,
         "filecode": "sigiriya-day-tour",
         "image": "assets/img/onedayTour/Sigiriya/3.jpg",
-        "routerLink": "/sigiriya-day-tour",
+        "routerLink": "/de/touren/sigiriya-tagesausflug",
         "isBestseller": true,
         "isLimited": false,
-        "slug": "sigiriya-day-tour"
+        "slug": "sigiriya-tagesausflug"
       }
     ],
     "multiDayTours": [
@@ -63,10 +63,10 @@
         "rating": 5,
         "filecode": "2-day-ella-yala-private-tour-sri-lanka",
         "image": "assets/img/2daysTours/1.jpeg",
-        "routerLink": "/2-day-ella-yala-private-tour-sri-lanka",
+        "routerLink": "/de/touren/2-tage-ella-yala-safari",
         "isBestseller": true,
         "isLimited": true,
-        "slug": "2-day-ella-yala-safari"
+        "slug": "2-tage-ella-yala-safari"
       },
       {
         "id": "2-day-ella-kandy-private-tour-sri-lanka",
@@ -76,10 +76,10 @@
         "rating": 5,
         "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
         "image": "assets/img/2daysTours/7.jpg",
-        "routerLink": "/2-day-ella-kandy-private-tour-sri-lanka",
+        "routerLink": "/de/touren/2-tage-ella-kandy-privattour",
         "isBestseller": false,
         "isLimited": false,
-        "slug": "2-day-ella-kandy-private-tour"
+        "slug": "2-tage-ella-kandy-privattour"
       },
       {
         "id": "4-day-sri-lanka-tour",
@@ -89,10 +89,10 @@
         "rating": 5,
         "filecode": "4-day-sri-lanka-tour",
         "image": "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
-        "routerLink": "/4-day-sri-lanka-tour",
+        "routerLink": "/de/touren/4-tage-sri-lanka-rundreise",
         "isBestseller": false,
         "isLimited": false,
-        "slug": "4-day-sri-lanka-tour"
+        "slug": "4-tage-sri-lanka-rundreise"
       },
       {
         "id": "5-day-sri-lanka-tour",
@@ -102,10 +102,10 @@
         "rating": 5,
         "filecode": "5-day-sri-lanka-tour",
         "image": "assets/img/5daysTours/beqnuxidbmckapjcag2m.jpg",
-        "routerLink": "/5-day-sri-lanka-tour",
+        "routerLink": "/de/touren/5-tage-sri-lanka-rundreise",
         "isBestseller": false,
         "isLimited": true,
-        "slug": "5-day-sri-lanka-tour"
+        "slug": "5-tage-sri-lanka-rundreise"
       },
       {
         "id": "6-day-sri-lanka-private-tour",
@@ -115,10 +115,10 @@
         "rating": 5,
         "filecode": "6-day-sri-lanka-private-tour",
         "image": "assets/img/SixdaysTous/1.jpg",
-        "routerLink": "/6-day-sri-lanka-private-tour",
+        "routerLink": "/de/touren/6-tage-sri-lanka-privattour",
         "isBestseller": true,
         "isLimited": true,
-        "slug": "6-day-sri-lanka-private-tour"
+        "slug": "6-tage-sri-lanka-privattour"
       },
       {
         "id": "7-day-sri-lanka-tour",
@@ -141,10 +141,10 @@
         "rating": 5,
         "filecode": "10-day-sri-lanka-tour",
         "image": "assets/img/7daystour/lzurk0uk82qqjh6soonh.jpg",
-        "routerLink": "/10-day-sri-lanka-tour",
+        "routerLink": "/de/touren/10-tage-sri-lanka-rundreise",
         "isBestseller": false,
         "isLimited": true,
-        "slug": "10-day-sri-lanka-tour"
+        "slug": "10-tage-sri-lanka-rundreise"
       },
       {
         "id": "8-day-sri-lanka-private-tour",
@@ -156,20 +156,21 @@
         "image": "assets/img/eightdaysTours/1.jpeg",
         "isBestseller": false,
         "isLimited": false,
-        "slug": "8-day-sri-lanka-private-tour"
+        "slug": "8-tage-sri-lanka-privattour",
+        "routerLink": "/de/touren/8-tage-sri-lanka-privattour"
       }
     ]
   },
   "details": {
     "ella-day-tour": {
       "id": "ella-day-tour",
-      "slug": "ella-day-tour",
+      "slug": "ella-tagesausflug",
       "title": "Ella Tagesausflug | Privater Fahrer Sri Lanka",
       "description": "Erleben Sie die Schönheit von Ella an einem Tag voller Abenteuer, Kultur und Entspannung.",
       "duration": "1 Tag",
       "persons": "1–20 Personen",
       "filecode": "ella-day-tour",
-      "overview": "Entdecken Sie die Schönheit Sri Lankas auf unserer unvergesslichen Tour, die Sie zur ikonischen Nine Arches Bridge in Ella führt, wo Sie die malerische Zugüberquerung bestaunen können. Besuchen Sie das Elefantenwaisenhaus Udawalawe, um gerettete Elefanten aus nächster Nähe zu beobachten. Erleben Sie die natürliche Pracht der Ravana Wasserfälle, einer der beeindruckendsten Wasserfälle der Insel. Wandern Sie auf den Little Adam’s Peak und genießen Sie atemberaubende Panoramablicke, die das Wesen des sri-lankischen Hochlands einfangen. Runden Sie Ihr Abenteuer mit einer kleinen Zugfahrt durch die malerischen Landschaften von Ella ab und schaffen Sie bleibende Erinnerungen an diese bezaubernde Reise.",
+      "overview": "Entdecken Sie die Schönheit Sri Lankas auf unserer unvergesslichen Tour, die Sie zur ikonischen Nine Arches Bridge in Ella führt, wo Sie die malerische Zugüberquerung bestaunen können. Besuchen Sie das Elefantenwaisenhaus Udawalawe, um gerettete Elefanten aus nächster Nähe zu beobachten. Erleben Sie die natürliche Pracht der Ravana Wasserfälle, einer der beeindruckendsten Wasserfälle der Insel. Wandern Sie auf den Little Adam’s Peak und genießen Sie atemberaubende Panoramablicke, die das Wesen des sri-lankischen Hochlands einfangen. Runden Sie Ihr Abenteuer mit einer kleinen Zugfahrt durch die malerischen Landschaften von Ella ab und schaffen Sie bleibende Erinnerungen an diese bezaubernde Reise. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Tagestour",
       "itinerary": [
         {
@@ -242,17 +243,46 @@
       "excludes": [
         "Speisen & Getränke",
         "Eintritts- & Aktivitätsgebühren"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei Ella Tagesausflug | Privater Fahrer Sri Lanka enthalten?",
+          "answer": "Diese Tagestour umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 1 Tag. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Nine Arches Bridge",
+        "Ella Zugfahrten",
+        "Little Adam’s Peak",
+        "Ravana Wasserfall",
+        "Elefantenwaisenhaus Udawalawe"
       ]
     },
     "galle-day-tour": {
       "id": "galle-day-tour",
-      "slug": "galle-day-tour",
+      "slug": "galle-tagesausflug",
       "title": "Galle Tagesausflug | Privater Fahrer Sri Lanka",
       "description": "Genießen Sie eine ganztägige geführte Tour nach Galle mit malerischen Küstenattraktionen, kulturellen Sehenswürdigkeiten und unvergesslichen Erlebnissen.",
       "duration": "1 Tag",
       "persons": "1–20 Personen",
       "filecode": "galle-day-tour",
-      "overview": "Diese ganztägige geführte Tour nach Galle bietet eine perfekte Mischung aus Natur, Geschichte und Kultur.\nSie besuchen die berühmte Meeresschildkröten Aufzuchtstation, erkunden das historische holländische Fort von Galle,\ngenießen eine entspannende Bootsfahrt auf dem Bentota Fluss und erfahren mehr über die Geschichte Sri Lankas am\nTsunami Denkmal und im Mondstein Minen Zentrum.\nIdeal für Paare, Familien und kleine Gruppen, die eine komfortable und bereichernde Tagestour suchen.",
+      "overview": "Diese ganztägige geführte Tour nach Galle bietet eine perfekte Mischung aus Natur, Geschichte und Kultur.\nSie besuchen die berühmte Meeresschildkröten Aufzuchtstation, erkunden das historische holländische Fort von Galle,\ngenießen eine entspannende Bootsfahrt auf dem Bentota Fluss und erfahren mehr über die Geschichte Sri Lankas am\nTsunami Denkmal und im Mondstein Minen Zentrum.\nIdeal für Paare, Familien und kleine Gruppen, die eine komfortable und bereichernde Tagestour suchen. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Tagestour",
       "itinerary": [
         {
@@ -321,17 +351,46 @@
       "excludes": [
         "Speisen & Getränke",
         "Eintritts- & Aktivitätsgebühren"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei Galle Tagesausflug | Privater Fahrer Sri Lanka enthalten?",
+          "answer": "Diese Tagestour umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 1 Tag. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Galle Tagestour Reiseverlauf",
+        "Holländisches Fort von Galle",
+        "Bootsfahrt auf dem Bentota Fluss",
+        "Tsunami Denkmal",
+        "Mondstein Minen Zentrum"
       ]
     },
     "kandy-day-tour": {
       "id": "kandy-day-tour",
-      "slug": "kandy-day-tour",
+      "slug": "kandy-tagesausflug",
       "title": "Kandy Tagesausflug | Zahntempel",
       "description": "Erleben Sie das kulturelle Herz Sri Lankas auf einer ganztägigen geführten Tour nach Kandy, mit Elefanten, Tempeln, Tee und malerischen Ausblicken.",
       "duration": "1 Tag",
       "persons": "1–20 Personen",
       "filecode": "kandy-day-tour",
-      "overview": "\n            Dieser eintägige Ausflug nach Kandy führt Sie durch die kulturelle Hauptstadt Sri Lankas.\n            Besuchen Sie die Millennium Elephant Foundation oder das Elefantenwaisenhaus Pinnawala,\n            erkunden Sie den heiligen Zahntempel, genießen Sie den Besuch einer Teefabrik und Teeplantage,\n            entspannen Sie am Kandy See und am Aussichtspunkt und legen Sie optional einen Stopp in einem Kräuter- und Gewürzgarten ein.\n            Perfekt für Reisende, die Kultur, Natur und Tradition an einem einzigen Tag suchen.\n              ",
+      "overview": "Dieser eintägige Ausflug nach Kandy führt Sie durch die kulturelle Hauptstadt Sri Lankas.\n            Besuchen Sie die Millennium Elephant Foundation oder das Elefantenwaisenhaus Pinnawala,\n            erkunden Sie den heiligen Zahntempel, genießen Sie den Besuch einer Teefabrik und Teeplantage,\n            entspannen Sie am Kandy See und am Aussichtspunkt und legen Sie optional einen Stopp in einem Kräuter- und Gewürzgarten ein.\n            Perfekt für Reisende, die Kultur, Natur und Tradition an einem einzigen Tag suchen. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Tagestour",
       "itinerary": [
         {
@@ -410,17 +469,47 @@
       "excludes": [
         "Speisen & Getränke",
         "Eintritts- & Aktivitätsgebühren"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei Kandy Tagesausflug | Zahntempel enthalten?",
+          "answer": "Diese Tagestour umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 1 Tag. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Kandy Tagestour Reiseverlauf",
+        "Millennium Elephant Foundation / Elefantenwaisenhaus Pinnawala",
+        "Tempel des Heiligen Zahns",
+        "Teefabrik & Teeplantage",
+        "Kandy See & Aussichtspunkt",
+        "Kräuter- & Gewürzgarten"
       ]
     },
     "sigiriya-day-tour": {
       "id": "sigiriya-day-tour",
-      "slug": "sigiriya-day-tour",
+      "slug": "sigiriya-tagesausflug",
       "title": "Sigiriya Tagesausflug | Löwenfelsen privater Fahrer",
       "description": "Entdecken Sie das kulturelle und natürliche Erbe Sri Lankas auf einer ganztägigen Tour nach Sigiriya, mit Tempeln, Felsbesteigung und Wildtieren.",
       "duration": "1 Tag",
       "persons": "1–20 Personen",
       "filecode": "sigiriya-day-tour",
-      "overview": "\n    Diese eintägige Tour nach Sigiriya bietet eine perfekte Mischung aus Kultur, Abenteuer und Wildtieren.\n    Beginnen Sie mit einem Besuch des Goldenen Höhlentempels in Dambulla, gefolgt von der Besteigung\n    der Felsenfestung Sigiriya oder des Pidurangala Felsens für atemberaubende Ausblicke.\n    Lassen Sie den Tag mit einer aufregenden Safari zu wilden Elefanten ausklingen, was diese Tour ideal für Natur-\n    und Geschichtsliebhaber macht.\n      ",
+      "overview": "Diese eintägige Tour nach Sigiriya bietet eine perfekte Mischung aus Kultur, Abenteuer und Wildtieren.\n    Beginnen Sie mit einem Besuch des Goldenen Höhlentempels in Dambulla, gefolgt von der Besteigung\n    der Felsenfestung Sigiriya oder des Pidurangala Felsens für atemberaubende Ausblicke.\n    Lassen Sie den Tag mit einer aufregenden Safari zu wilden Elefanten ausklingen, was diese Tour ideal für Natur-\n    und Geschichtsliebhaber macht. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Tagestour",
       "itinerary": [
         {
@@ -490,17 +579,46 @@
       "excludes": [
         "Safari Eintrittskarten und Jeep",
         "Persönliche Ausgaben"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei Sigiriya Tagesausflug | Löwenfelsen privater Fahrer enthalten?",
+          "answer": "Diese Tagestour umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 1 Tag. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Sigiriya Tagestour Reiseverlauf",
+        "Goldener Höhlentempel, Dambulla",
+        "Tempel des Heiligen Zahns",
+        "Besteigung des Sigiriya- oder Pidurangala Felsens",
+        "Safari zu wilden Elefanten"
       ]
     },
     "2-day-ella-kandy-private-tour-sri-lanka": {
       "id": "2-day-ella-kandy-private-tour-sri-lanka",
-      "slug": "2-day-ella-kandy-private-tour",
+      "slug": "2-tage-ella-kandy-privattour",
       "title": "2 Tage Ella & Kandy | Privater Fahrer",
       "description": "Entdecken Sie Sri Lankas Tierwelt, das malerische Hochland und das kulturelle Erbe auf dieser 2 tägigen Privattour, die am Flughafen oder Ihrem Hotel endet.",
       "duration": "2 Tage",
       "persons": "1–20 Personen",
       "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "overview": "Erleben Sie eine unvergessliche 2 tägige Reise durch Sri Lankas Tierwelt, das Hochland und die kulturelle Hauptstadt.\n  Am ersten Tag besuchen Sie das Udawalawa Elephant Transit Home, bevor Sie nach Ella fahren, um die Nine Arch Bridge, den Little Adam’s Peak, Flying Ravana und die Ravana Wasserfälle zu erkunden.\n  Am zweiten Tag reisen Sie durch die malerischen Hügel zu den Ramboda Wasserfällen und dem Ambuluwawa Turm, bevor Sie den heiligen Zahntempel in Kandy und das Elefantenwaisenhaus Pinnawala entdecken.\n  Diese Privattour endet bequem am Flughafen oder an Ihrem Hotel.",
+      "overview": "Erleben Sie eine unvergessliche 2 tägige Reise durch Sri Lankas Tierwelt, das Hochland und die kulturelle Hauptstadt.\n  Am ersten Tag besuchen Sie das Udawalawa Elephant Transit Home, bevor Sie nach Ella fahren, um die Nine Arch Bridge, den Little Adam’s Peak, Flying Ravana und die Ravana Wasserfälle zu erkunden.\n  Am zweiten Tag reisen Sie durch die malerischen Hügel zu den Ramboda Wasserfällen und dem Ambuluwawa Turm, bevor Sie den heiligen Zahntempel in Kandy und das Elefantenwaisenhaus Pinnawala entdecken.\n  Diese Privattour endet bequem am Flughafen oder an Ihrem Hotel. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -619,17 +737,47 @@
         "Eintritts- & Aktivitätsgebühren",
         "Speisen & Getränke",
         "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 2 Tage Ella & Kandy | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 2 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Udawalawa Elephant Transit Home",
+        "Nine Arch Bridge",
+        "Little Adam’s Peak",
+        "Flying Ravana Zipline",
+        "Ravana Wasserfälle",
+        "Ramboda Wasserfälle"
       ]
     },
     "2-day-ella-yala-private-tour-sri-lanka": {
       "id": "2-day-ella-yala-private-tour-sri-lanka",
-      "slug": "2-day-ella-yala-safari",
+      "slug": "2-tage-ella-yala-safari",
       "title": "2 Tage Ella & Yala Safari | Privater Fahrer",
       "description": "Entdecken Sie Sri Lankas malerisches Hochland rund um Ella und die faszinierende Tierwelt des Yala Nationalparks auf dieser 2 tägigen Privattour, die am Flughafen oder Ihrem Hotel endet.",
       "duration": "2 Tage",
       "persons": "1–20 Personen",
-      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "overview": "Erleben Sie eine unvergessliche 2 tägige Reise durch das malerische Hochland von Ella und die faszinierende Tierwelt des Yala Nationalparks.\n  Am ersten Tag erkunden Sie die ikonische Nine Arch Bridge, wandern zum Little Adam’s Peak, erleben den Nervenkitzel der Flying Ravana Zipline und besuchen die wunderschönen Ravana Wasserfälle, bevor Sie in einem komfortablen 4 Sterne Hotel in Ella übernachten.\n  Am zweiten Tag begeben Sie sich auf eine aufregende Jeep Safari im Yala Nationalpark, der Heimat der weltweit größten Leopardendichte, und halten unterwegs erneut an den sagenumwobenen Ravana Wasserfällen.\n  Diese Privattour endet bequem am Flughafen oder an Ihrem Hotel.",
+      "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+      "overview": "Erleben Sie eine unvergessliche 2 tägige Reise durch das malerische Hochland von Ella und die faszinierende Tierwelt des Yala Nationalparks.\n  Am ersten Tag erkunden Sie die ikonische Nine Arch Bridge, wandern zum Little Adam’s Peak, erleben den Nervenkitzel der Flying Ravana Zipline und besuchen die wunderschönen Ravana Wasserfälle, bevor Sie in einem komfortablen 4 Sterne Hotel in Ella übernachten.\n  Am zweiten Tag begeben Sie sich auf eine aufregende Jeep Safari im Yala Nationalpark, der Heimat der weltweit größten Leopardendichte, und halten unterwegs erneut an den sagenumwobenen Ravana Wasserfällen.\n  Diese Privattour endet bequem am Flughafen oder an Ihrem Hotel. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -732,17 +880,47 @@
         "Eintritts- & Aktivitätsgebühren",
         "Speisen & Getränke",
         "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 2 Tage Ella & Yala Safari | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 2 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Nine Arch Bridge",
+        "Little Adam’s Peak",
+        "Flying Ravana Zipline",
+        "Ravana Wasserfälle",
+        "Oak Ray Ella Gap Hotel",
+        "Yala Nationalpark"
       ]
     },
     "4-day-sri-lanka-tour": {
       "id": "4-day-sri-lanka-tour",
-      "slug": "4-day-sri-lanka-tour",
+      "slug": "4-tage-sri-lanka-rundreise",
       "title": "4 Tage Sri Lanka Rundreise | Privater Fahrer",
       "description": "Erkunden Sie Sri Lanka in 4 unvergesslichen Tagen mit dem kulturellen Erbe von Kandy, dem Hochland von Ella, dem Safari Abenteuer in Yala und der atemberaubenden Südküste.",
       "duration": "4 Tage",
       "persons": "1–20 Personen",
       "filecode": "4-day-sri-lanka-tour",
-      "overview": "Entdecken Sie Sri Lankas perfekte Kombination aus Kultur, landschaftlicher Schönheit, Tierwelt und Küstencharme auf dieser 4 tägigen Privattour. Besuchen Sie die heilige Stadt Kandy, erleben Sie das atemberaubende Hochland von Ella, genießen Sie eine aufregende Safari im Yala Nationalpark und erkunden Sie das historische Fort von Galle vor Ihrem Flughafentransfer.",
+      "overview": "Entdecken Sie Sri Lankas perfekte Kombination aus Kultur, landschaftlicher Schönheit, Tierwelt und Küstencharme auf dieser 4 tägigen Privattour. Besuchen Sie die heilige Stadt Kandy, erleben Sie das atemberaubende Hochland von Ella, genießen Sie eine aufregende Safari im Yala Nationalpark und erkunden Sie das historische Fort von Galle vor Ihrem Flughafentransfer. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -959,17 +1137,47 @@
         "Eintrittsgebühren",
         "Mittagessen & Getränke",
         "Persönliche Ausgaben"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 4 Tage Sri Lanka Rundreise | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 4 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Elefantenwaisenhaus Pinnawala",
+        "Tempel des Heiligen Zahns",
+        "Kandy Kulturelle Tanzshow",
+        "Kandy Aussichtspunkt",
+        "Königlicher Botanischer Garten Peradeniya",
+        "Besuch der Glenloch Teefabrik"
       ]
     },
     "5-day-sri-lanka-tour": {
       "id": "5-day-sri-lanka-tour",
-      "slug": "5-day-sri-lanka-tour",
+      "slug": "5-tage-sri-lanka-rundreise",
       "title": "5 Tage Sri Lanka Rundreise | Privater Fahrer",
       "description": "Erkunden Sie Sri Lanka in 5 unvergesslichen Tagen mit antiken Städten, UNESCO Welterbestätten, malerischen Teeplantagen, aufregenden Wildtier Safaris und entspannenden Küstenerlebnissen.",
       "duration": "5 Tage",
       "persons": "1–20 Personen",
       "filecode": "5-day-sri-lanka-tour",
-      "overview": "Entdecken Sie die Highlights Sri Lankas auf dieser perfekt ausgewogenen 5 tägigen privaten Rundreise. \n  Reisen Sie durch das Kulturdreieck, erkunden Sie die Felsenfestung Sigiriya, erleben Sie Kandys heiligen Tempel des Zahns, ziehen Sie durch die nebligen Teeplantagen von Nuwara Eliya, genießen Sie eine aufregende Safari im Udawalawa Nationalpark und entspannen Sie an der wunderschönen Südwestküste. \n  Mit privatem Transport, einem erfahrenen englischsprachigen Fahrerführer und komfortablen Unterkunftsmöglichkeiten bietet diese Tour die ideale Kombination aus Kultur, Natur, Tierwelt und Entspannung, perfekt für Paare, Familien und kleine Gruppen.",
+      "overview": "Entdecken Sie die Highlights Sri Lankas auf dieser perfekt ausgewogenen 5 tägigen privaten Rundreise. \n  Reisen Sie durch das Kulturdreieck, erkunden Sie die Felsenfestung Sigiriya, erleben Sie Kandys heiligen Tempel des Zahns, ziehen Sie durch die nebligen Teeplantagen von Nuwara Eliya, genießen Sie eine aufregende Safari im Udawalawa Nationalpark und entspannen Sie an der wunderschönen Südwestküste. \n  Mit privatem Transport, einem erfahrenen englischsprachigen Fahrerführer und komfortablen Unterkunftsmöglichkeiten bietet diese Tour die ideale Kombination aus Kultur, Natur, Tierwelt und Entspannung, perfekt für Paare, Familien und kleine Gruppen. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -1199,17 +1407,47 @@
         "Eintritts- & Aktivitätsgebühren",
         "Speisen & Getränke",
         "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 5 Tage Sri Lanka Rundreise | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 5 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Flughafenabholung",
+        "Elefantenwaisenhaus Pinnawala",
+        "Minneriya Nationalpark Safari",
+        "Fresco Water Villa, Sigiriya",
+        "Felsenfestung Sigiriya",
+        "Tempel des Heiligen Zahns"
       ]
     },
     "6-day-sri-lanka-private-tour": {
       "id": "6-day-sri-lanka-private-tour",
-      "slug": "6-day-sri-lanka-private-tour",
+      "slug": "6-tage-sri-lanka-privattour",
       "title": "6 Tage Sri Lanka Rundreise | Privater Fahrer",
       "description": "Erkunden Sie Sri Lanka in 6 unvergesslichen Tagen mit antiken Städten, UNESCO Welterbestätten, malerischen Teeplantagen, aufregenden Wildtier Safaris und entspannenden Küstenerlebnissen.",
       "duration": "6 Tage",
       "persons": "1–20 Personen",
       "filecode": "6-day-sri-lanka-private-tour",
-      "overview": "Wir sind für Sie da, um den perfekten Urlaub zu organisieren, von dem Sie schon immer geträumt haben, auf der „Paradiesinsel“ Sri Lanka.\n    Unser 6 tägiges Reisepaket (5 Nächte) ist so geplant, dass Sie nicht nur alle berühmten Sehenswürdigkeiten erleben, sondern auch einige der seltenen Erlebnisse, die ganz einzigartig für CEYLON JOJO TRAVELS sind, während wir unsere Gäste in Sri Lankas besten 4 Sterne Hotels auf Halbpensionsbasis unterbringen.\n    Yala Safari, Sigiriya, die Ella Nine Arches Bridge, die Ella Zugfahrt, der Zahntempel in Kandy, der Ramboda Wasserfall, die Wanderung zum Little Adam’s Peak, Nuwara Eliya, das Fort von Galle und die Bentota Flusstour sind nur einige der wichtigsten Attraktionen, die Sie auf dieser Reise erleben.\n    Insgesamt besuchen Sie 28 Attraktionen in 10 Distrikten Sri Lankas und genießen dabei privaten Transport.",
+      "overview": "Wir sind für Sie da, um den perfekten Urlaub zu organisieren, von dem Sie schon immer geträumt haben, auf der „Paradiesinsel“ Sri Lanka.\n    Unser 6 tägiges Reisepaket (5 Nächte) ist so geplant, dass Sie nicht nur alle berühmten Sehenswürdigkeiten erleben, sondern auch einige der seltenen Erlebnisse, die ganz einzigartig für CEYLON JOJO TRAVELS sind, während wir unsere Gäste in Sri Lankas besten 4 Sterne Hotels auf Halbpensionsbasis unterbringen.\n    Yala Safari, Sigiriya, die Ella Nine Arches Bridge, die Ella Zugfahrt, der Zahntempel in Kandy, der Ramboda Wasserfall, die Wanderung zum Little Adam’s Peak, Nuwara Eliya, das Fort von Galle und die Bentota Flusstour sind nur einige der wichtigsten Attraktionen, die Sie auf dieser Reise erleben.\n    Insgesamt besuchen Sie 28 Attraktionen in 10 Distrikten Sri Lankas und genießen dabei privaten Transport. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -1537,6 +1775,36 @@
         "Eintritts- & Aktivitätsgebühren",
         "Speisen & Getränke",
         "Unterkunft (kann auf Anfrage arrangiert werden)"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 6 Tage Sri Lanka Rundreise | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 6 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Ankunft",
+        "Pidurangala Felsen",
+        "Fresco Water Villa",
+        "Sigiriya Löwenfelsen",
+        "Hiriwadunna Dorf & See Abenteuer",
+        "Höhlentempel von Dambulla"
       ]
     },
     "7-day-sri-lanka-tour": {
@@ -1547,7 +1815,7 @@
       "duration": "7 Tage",
       "persons": "1–20 Personen",
       "filecode": "7-day-sri-lanka-tour",
-      "overview": "Entdecken Sie die vielfältige Tierwelt Sri Lankas, seine antiken Königreiche, malerischen Berglandschaften und goldenen Strände auf dieser perfekt ausgewogenen 7 tägigen Reise. \n  Diese Tour vereint aufregende Safari Abenteuer, UNESCO Welterbestätten, atemberaubende Hochlandlandschaften, duftende Teeplantagen, imposante Wasserfälle und entspannende Erlebnisse an der Küste, inklusive Unterkunft mit Halbpension und komfortablem privatem Transport.",
+      "overview": "Entdecken Sie die vielfältige Tierwelt Sri Lankas, seine antiken Königreiche, malerischen Berglandschaften und goldenen Strände auf dieser perfekt ausgewogenen 7 tägigen Reise. \n  Diese Tour vereint aufregende Safari Abenteuer, UNESCO Welterbestätten, atemberaubende Hochlandlandschaften, duftende Teeplantagen, imposante Wasserfälle und entspannende Erlebnisse an der Küste, inklusive Unterkunft mit Halbpension und komfortablem privatem Transport. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung. Sieben Tage mit Kultur, Safari und Küste im privaten Fahrzeug: Wilpattu oder vergleichbare Wildlife Stops, Sigiriya, Kandy, Ella und Südwestküste nach Bestätigung Ihres Startpunkts.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -1882,17 +2150,47 @@
       "excludes": [
         "Speisen & Getränke",
         "Eintritts- & Aktivitätsgebühren"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 7 Tage Sri Lanka Rundreise | Privater Fahrer, Safari & Strand enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 7 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Wilpattu Nationalpark Safari",
+        "Thimbiri Wewa Resort, Wilpattu",
+        "Sri Maha Bodhi Tempel",
+        "Ruwanweli Maha Seya",
+        "Sonnenuntergang am Pidurangala Felsen",
+        "Fresco Water Villa, Sigiriya"
       ]
     },
     "8-day-sri-lanka-private-tour": {
       "id": "8-day-sri-lanka-private-tour",
-      "slug": "8-day-sri-lanka-private-tour",
+      "slug": "8-tage-sri-lanka-privattour",
       "title": "8 Tage Sri Lanka Rundreise | Privater Fahrer",
       "description": "Eine unvergessliche 8 tägige private Sri Lanka Tour mit Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella Abenteuern und einem entspannenden Strandaufenthalt im Süden.",
       "duration": "8 Tage",
       "persons": "1–20 Personen",
       "filecode": "8-day-sri-lanka-private-tour",
-      "overview": "Entdecken Sie die vielfältige Tierwelt Sri Lankas, seine antiken Königreiche, malerischen Berglandschaften und goldenen Strände auf dieser perfekt ausgewogenen 8 tägigen Reise. \n  Diese Tour vereint aufregende Safari Abenteuer, UNESCO Welterbestätten, atemberaubende Hochlandlandschaften, duftende Teeplantagen, imposante Wasserfälle und entspannende Erlebnisse an der Küste, inklusive Unterkunft mit Halbpension und komfortablem privatem Transport.",
+      "overview": "Entdecken Sie die vielfältige Tierwelt Sri Lankas, seine antiken Königreiche, malerischen Berglandschaften und goldenen Strände auf dieser perfekt ausgewogenen 8 tägigen Reise. \n  Diese Tour vereint aufregende Safari Abenteuer, UNESCO Welterbestätten, atemberaubende Hochlandlandschaften, duftende Teeplantagen, imposante Wasserfälle und entspannende Erlebnisse an der Küste, inklusive Unterkunft mit Halbpension und komfortablem privatem Transport. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -2237,17 +2535,47 @@
         "Eintritts- & Aktivitätsgebühren",
         "Mittagessen & Getränke",
         "Persönliche Ausgaben"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 8 Tage Sri Lanka Rundreise | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 8 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Wilpattu Nationalpark Safari",
+        "Thimbiri Wewa Resort, Wilpattu",
+        "Sri Maha Bodhi Tempel",
+        "Ruwanweli Maha Seya",
+        "Sonnenuntergang am Pidurangala Felsen",
+        "Fresco Water Villa, Sigiriya"
       ]
     },
     "10-day-sri-lanka-tour": {
       "id": "10-day-sri-lanka-tour",
-      "slug": "10-day-sri-lanka-tour",
+      "slug": "10-tage-sri-lanka-rundreise",
       "title": "10 Tage Sri Lanka Rundreise | Privater Fahrer",
       "description": "Eine unvergessliche 10 tägige private Sri Lanka Tour mit Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella Abenteuern und einem entspannenden Strandaufenthalt im Süden.",
       "duration": "10 Tage",
       "persons": "1–20 Personen",
       "filecode": "10-day-sri-lanka-tour",
-      "overview": "Entdecken Sie die vielfältige Tierwelt Sri Lankas, seine antiken Königreiche, malerischen Berglandschaften und goldenen Strände auf dieser perfekt ausgewogenen 8 tägigen Reise. \n  Diese Tour vereint aufregende Safari Abenteuer, UNESCO Welterbestätten, atemberaubende Hochlandlandschaften, duftende Teeplantagen, imposante Wasserfälle und entspannende Erlebnisse an der Küste, inklusive Unterkunft mit Halbpension und komfortablem privatem Transport.",
+      "overview": "Entdecken Sie die vielfältige Tierwelt Sri Lankas, seine antiken Königreiche, malerischen Berglandschaften und goldenen Strände auf dieser perfekt ausgewogenen 8 tägigen Reise. \n  Diese Tour vereint aufregende Safari Abenteuer, UNESCO Welterbestätten, atemberaubende Hochlandlandschaften, duftende Teeplantagen, imposante Wasserfälle und entspannende Erlebnisse an der Küste, inklusive Unterkunft mit Halbpension und komfortablem privatem Transport. Privates Fahrzeug ab Hotel oder Flughafen, deutsch oder englisch sprechender Chauffeur Guide und Zahlung vor Ort in Sri Lanka nach Bestätigung.",
       "tourType": "Rundreise",
       "itinerary": [
         {
@@ -2720,6 +3048,36 @@
         "Eintritts- & Aktivitätsgebühren",
         "Mittagessen & Getränke",
         "Persönliche Ausgaben"
+      ],
+      "faq": [
+        {
+          "question": "Was ist bei 10 Tage Sri Lanka Rundreise | Privater Fahrer enthalten?",
+          "answer": "Diese Rundreise umfasst in der Regel privaten klimatisierten Transport, einen erfahrenen Chauffeur Guide und die Besichtigungen laut Programm für 10 Tage. Hotelkategorie und Mahlzeiten stehen unter Unterkunft und Inklusivleistungen."
+        },
+        {
+          "question": "Ist das eine Privattour?",
+          "answer": "Ja. Ceylon JOJO Travels führt private Sri Lanka Touren für Paare, Familien und kleine Gruppen. Sie reisen im eigenen Fahrzeug nach Ihrem Zeitplan."
+        },
+        {
+          "question": "Für wen ist diese Tour geeignet?",
+          "answer": "Für Paare, Familien und kleine Gruppen, die einen privaten Chauffeur Guide, flexible Zeiten und einen klaren Tagesplan ohne große Reisegruppe wünschen."
+        },
+        {
+          "question": "Kann ich die Route anpassen?",
+          "answer": "Ja. Nennen Sie Abholhotel, Tempo oder Wunschstops unter Sonderwünsche, wir passen den Plan vor der Reise an."
+        },
+        {
+          "question": "Wie buche und zahle ich?",
+          "answer": "Füllen Sie das Formular auf dieser Seite aus oder schreiben Sie uns auf WhatsApp. Zahlung vor Ort in Sri Lanka ist möglich. Sie erhalten eine Bestätigung nach dem Absenden."
+        }
+      ],
+      "highlights": [
+        "Wilpattu Nationalpark Safari",
+        "Thimbiri Wewa Resort, Wilpattu",
+        "Sri Maha Bodhi Tempel",
+        "Ruwanweli Maha Seya",
+        "Sonnenuntergang am Pidurangala Felsen",
+        "Fresco Water Villa, Sigiriya"
       ]
     }
   }

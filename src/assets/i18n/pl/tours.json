@@ -9,7 +9,7 @@
         "rating": 5,
         "filecode": "ella-day-tour",
         "image": "assets/img/onedayTour/ella/7.jpeg",
-        "routerLink": "/wycieczka-ella",
+        "routerLink": "/pl/wycieczki/wycieczka-ella",
         "isBestseller": true,
         "isLimited": true,
         "slug": "wycieczka-ella"
@@ -22,7 +22,7 @@
         "rating": 5,
         "filecode": "galle-day-tour",
         "image": "assets/img/onedayTour/Galle/7.jpg",
-        "routerLink": "/wycieczka-galle",
+        "routerLink": "/pl/wycieczki/wycieczka-galle",
         "isBestseller": true,
         "isLimited": false,
         "slug": "wycieczka-galle"
@@ -35,7 +35,7 @@
         "rating": 5,
         "filecode": "kandy-day-tour",
         "image": "assets/img/onedayTour/kandy/3.jpg",
-        "routerLink": "/wycieczka-kandy",
+        "routerLink": "/pl/wycieczki/wycieczka-kandy",
         "isBestseller": false,
         "isLimited": false,
         "slug": "wycieczka-kandy"
@@ -48,7 +48,7 @@
         "rating": 5,
         "filecode": "sigiriya-day-tour",
         "image": "assets/img/onedayTour/Sigiriya/3.jpg",
-        "routerLink": "/wycieczka-sigiriya",
+        "routerLink": "/pl/wycieczki/wycieczka-sigiriya",
         "isBestseller": true,
         "isLimited": false,
         "slug": "wycieczka-sigiriya"
@@ -63,7 +63,7 @@
         "rating": 5,
         "filecode": "2-day-ella-yala-private-tour-sri-lanka",
         "image": "assets/img/2daysTours/1.jpeg",
-        "routerLink": "/2-dni-ella-yala",
+        "routerLink": "/pl/wycieczki/2-dni-ella-yala",
         "isBestseller": true,
         "isLimited": true,
         "slug": "2-dni-ella-yala"
@@ -76,7 +76,7 @@
         "rating": 5,
         "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
         "image": "assets/img/2daysTours/7.jpg",
-        "routerLink": "/2-dni-ella-kandy",
+        "routerLink": "/pl/wycieczki/2-dni-ella-kandy",
         "isBestseller": false,
         "isLimited": false,
         "slug": "2-dni-ella-kandy"
@@ -89,7 +89,7 @@
         "rating": 5,
         "filecode": "4-day-sri-lanka-tour",
         "image": "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
-        "routerLink": "/4-dni-sri-lanka",
+        "routerLink": "/pl/wycieczki/4-dni-sri-lanka",
         "isBestseller": false,
         "isLimited": false,
         "slug": "4-dni-sri-lanka"
@@ -102,7 +102,7 @@
         "rating": 5,
         "filecode": "5-day-sri-lanka-tour",
         "image": "assets/img/5daysTours/beqnuxidbmckapjcag2m.jpg",
-        "routerLink": "/5-dni-sri-lanka",
+        "routerLink": "/pl/wycieczki/5-dni-sri-lanka",
         "isBestseller": false,
         "isLimited": true,
         "slug": "5-dni-sri-lanka"
@@ -115,7 +115,7 @@
         "rating": 5,
         "filecode": "6-day-sri-lanka-private-tour",
         "image": "assets/img/SixdaysTous/1.jpg",
-        "routerLink": "/6-dni-prywatny-sri-lanka",
+        "routerLink": "/pl/wycieczki/6-dni-prywatny-sri-lanka",
         "isBestseller": true,
         "isLimited": true,
         "slug": "6-dni-prywatny-sri-lanka"
@@ -128,7 +128,7 @@
         "rating": 5,
         "filecode": "7-day-sri-lanka-tour",
         "image": "assets/img/7daystour/2024-07-27.jpg",
-        "routerLink": "/7-dni-sri-lanka",
+        "routerLink": "/pl/wycieczki/7-dni-sri-lanka",
         "isBestseller": true,
         "isLimited": true,
         "slug": "7-dni-sri-lanka"
@@ -141,7 +141,7 @@
         "rating": 5,
         "filecode": "10-day-sri-lanka-tour",
         "image": "assets/img/7daystour/lzurk0uk82qqjh6soonh.jpg",
-        "routerLink": "/10-dni-sri-lanka",
+        "routerLink": "/pl/wycieczki/10-dni-sri-lanka",
         "isBestseller": false,
         "isLimited": true,
         "slug": "10-dni-sri-lanka"
@@ -156,7 +156,8 @@
         "image": "assets/img/eightdaysTours/1.jpeg",
         "isBestseller": false,
         "isLimited": false,
-        "slug": "8-dni-prywatny-sri-lanka"
+        "slug": "8-dni-prywatny-sri-lanka",
+        "routerLink": "/pl/wycieczki/8-dni-prywatny-sri-lanka"
       }
     ]
   },
@@ -169,7 +170,7 @@
       "duration": "1 dzień",
       "persons": "1-20 osób",
       "filecode": "ella-day-tour",
-      "overview": "Odkryj piękno Sri Lanki podczas naszej niezapomnianej wycieczki, obejmującej kultowy Most Dziewięciu Łuków w Elli, gdzie możesz podziwiać malowniczy przejazd pociągu. Odwiedź Sierociniec Słoni w Udawalawe, aby z bliska obserwować uratowane słonie. Doświadcz naturalnego piękna wodospadów Ravana, jednego z najbardziej imponujących wodospadów na wyspie. Wejdź na Mały Szczyt Adama, aby zobaczyć zapierające dech w piersiach panoramiczne widoki, oddające istotę górskich terenów Sri Lanki. Zakończ swoją przygodę krótkim przejazdem pociągiem przez malownicze krajobrazy Elli, tworząc trwałe wspomnienia z tej urzekającej podróży.",
+      "overview": "Odkryj piękno Sri Lanki podczas naszej niezapomnianej wycieczki, obejmującej kultowy Most Dziewięciu Łuków w Elli, gdzie możesz podziwiać malowniczy przejazd pociągu. Odwiedź Sierociniec Słoni w Udawalawe, aby z bliska obserwować uratowane słonie. Doświadcz naturalnego piękna wodospadów Ravana, jednego z najbardziej imponujących wodospadów na wyspie. Wejdź na Mały Szczyt Adama, aby zobaczyć zapierające dech w piersiach panoramiczne widoki, oddające istotę górskich terenów Sri Lanki. Zakończ swoją przygodę krótkim przejazdem pociągiem przez malownicze krajobrazy Elli, tworząc trwałe wspomnienia z tej urzekającej podróży. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka jednodniowa",
       "itinerary": [
         {
@@ -242,6 +243,35 @@
       "excludes": [
         "Jedzenie i napoje",
         "Opłaty za wstęp i zajęcia"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 1 dzień Ella | Prywatny kierowca Sri Lanka?",
+          "answer": "Ta Wycieczka jednodniowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 1 dzień. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Most Dziewięciu Łuków",
+        "Wycieczki pociągiem Elli",
+        "Mały Szczyt Adamsa",
+        "Wodospad Rawany",
+        "sierociniec dla słoni udawalawa"
       ]
     },
     "galle-day-tour": {
@@ -252,7 +282,7 @@
       "duration": "1 dzień",
       "persons": "1-20 osób",
       "filecode": "galle-day-tour",
-      "overview": "Ta całodniowa wycieczka z przewodnikiem do Galle oferuje idealne połączenie natury, historii i kultury. Odwiedzisz słynną wylęgarnię żółwi morskich, zwiedzisz historyczny Holenderski Fort Galle, odbędziesz relaksujący rejs łodzią po rzece Bentota i poznasz historię Sri Lanki w Pomniku Tsunami oraz Centrum Kopalni Kamienia Księżycowego. Idealna dla par, rodzin i małych grup poszukujących komfortowej i wzbogacającej wycieczki jednodniowej.",
+      "overview": "Ta całodniowa wycieczka z przewodnikiem do Galle oferuje idealne połączenie natury, historii i kultury. Odwiedzisz słynną wylęgarnię żółwi morskich, zwiedzisz historyczny Holenderski Fort Galle, odbędziesz relaksujący rejs łodzią po rzece Bentota i poznasz historię Sri Lanki w Pomniku Tsunami oraz Centrum Kopalni Kamienia Księżycowego. Idealna dla par, rodzin i małych grup poszukujących komfortowej i wzbogacającej wycieczki jednodniowej. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka jednodniowa",
       "itinerary": [
         {
@@ -321,6 +351,35 @@
       "excludes": [
         "Jedzenie i napoje",
         "Opłaty za wstęp i zajęcia"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 1 dzień Galle | Prywatny kierowca Sri Lanka?",
+          "answer": "Ta Wycieczka jednodniowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 1 dzień. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Plan wycieczki do Galle",
+        "Holenderski Fort Galle",
+        "Rejs łodzią po rzece Bentota",
+        "Pomnik Tsunami",
+        "Centrum Kopalni Kamienia Księżycowego"
       ]
     },
     "kandy-day-tour": {
@@ -331,7 +390,7 @@
       "duration": "Jeden dzień",
       "persons": "1-20 osób",
       "filecode": "kandy-day-tour",
-      "overview": "Ta jednodniowa wycieczka do Kandy prowadzi przez kulturalną stolicę Sri Lanki. Odwiedź Fundację Millennium Elephant lub Sierociniec Słoni w Pinnawali, zwiedź świętą Świątynię Zęba Buddy, skorzystaj z wizyty w fabryce i na plantacji herbaty, odpocznij nad jeziorem Kandy i przy punkcie widokowym oraz opcjonalnie zatrzymaj się w ogrodzie ziół i przypraw. Idealna dla podróżnych poszukujących kultury, natury i tradycji w ciągu jednego dnia.",
+      "overview": "Ta jednodniowa wycieczka do Kandy prowadzi przez kulturalną stolicę Sri Lanki. Odwiedź Fundację Millennium Elephant lub Sierociniec Słoni w Pinnawali, zwiedź świętą Świątynię Zęba Buddy, skorzystaj z wizyty w fabryce i na plantacji herbaty, odpocznij nad jeziorem Kandy i przy punkcie widokowym oraz opcjonalnie zatrzymaj się w ogrodzie ziół i przypraw. Idealna dla podróżnych poszukujących kultury, natury i tradycji w ciągu jednego dnia. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka jednodniowa",
       "itinerary": [
         {
@@ -410,6 +469,36 @@
       "excludes": [
         "Jedzenie i napoje",
         "Opłaty za wstęp i zajęcia"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 1 dzień Kandy | Świątynia Zęba?",
+          "answer": "Ta Wycieczka jednodniowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na Jeden dzień. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Plan wycieczki po Kandy",
+        "Millennium Elephant Foundation / Pinnawala Elephant Orphanage",
+        "Świątynia Relikwii Świętego Zęba",
+        "Fabryka herbaty i plantacja herbaty",
+        "Jezioro Kandy i punkt widokowy",
+        "Ogród ziołowy i przyprawowy"
       ]
     },
     "sigiriya-day-tour": {
@@ -420,7 +509,7 @@
       "duration": "Jeden dzień",
       "persons": "1-20 osób",
       "filecode": "sigiriya-day-tour",
-      "overview": "Ta jednodniowa wycieczka do Sigirii oferuje idealne połączenie kultury, przygody i dzikiej przyrody. Rozpocznij od wizyty w Złotej Świątyni Jaskiniowej w Dambulli, a następnie wejdź na Twierdzę Skalną Sigiriya lub Skałę Pidurangala, aby podziwiać zapierające dech w piersiach widoki. Zakończ dzień ekscytującym safari wśród dzikich słoni, dzięki czemu ta wycieczka jest idealna dla miłośników przyrody i historii.",
+      "overview": "Ta jednodniowa wycieczka do Sigirii oferuje idealne połączenie kultury, przygody i dzikiej przyrody. Rozpocznij od wizyty w Złotej Świątyni Jaskiniowej w Dambulli, a następnie wejdź na Twierdzę Skalną Sigiriya lub Skałę Pidurangala, aby podziwiać zapierające dech w piersiach widoki. Zakończ dzień ekscytującym safari wśród dzikich słoni, dzięki czemu ta wycieczka jest idealna dla miłośników przyrody i historii. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka jednodniowa",
       "itinerary": [
         {
@@ -490,6 +579,35 @@
       "excludes": [
         "Bilety wstępu na safari i jeep",
         "Wydatki osobiste"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka Sigiriya | Lwia Skała prywatny kierowca?",
+          "answer": "Ta Wycieczka jednodniowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na Jeden dzień. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Plan wycieczki do Sigiriya",
+        "Świątynia Złotej Jaskini, Dambulla",
+        "Świątynia Relikwii Świętego Zęba",
+        "Wspinaczka skałkowa Sigiriya lub Pidurangala",
+        "Safari na dzikich słoniach"
       ]
     },
     "2-day-ella-kandy-private-tour-sri-lanka": {
@@ -500,7 +618,7 @@
       "duration": "2 dni",
       "persons": "1-20 osób",
       "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "overview": "Przeżyj niezapomnianą 2 dniową podróż przez dziką przyrodę, górskie tereny i kulturalną stolicę Sri Lanki. Pierwszego dnia odwiedź Dom Tranzytowy Słoni w Udawalawe, zanim udasz się do Elli, aby zwiedzić Most Dziewięciu Łuków, Mały Szczyt Adama, Flying Ravana i wodospady Ravana. Drugiego dnia przejedź przez malownicze góry do wodospadów Ramboda i Wieży Ambuluwawa, a następnie odkryj świętą Świątynię Zęba w Kandy oraz Sierociniec Słoni w Pinnawali. Ta prywatna wycieczka kończy się dogodnie na lotnisku lub w Twoim hotelu.",
+      "overview": "Przeżyj niezapomnianą 2 dniową podróż przez dziką przyrodę, górskie tereny i kulturalną stolicę Sri Lanki. Pierwszego dnia odwiedź Dom Tranzytowy Słoni w Udawalawe, zanim udasz się do Elli, aby zwiedzić Most Dziewięciu Łuków, Mały Szczyt Adama, Flying Ravana i wodospady Ravana. Drugiego dnia przejedź przez malownicze góry do wodospadów Ramboda i Wieży Ambuluwawa, a następnie odkryj świętą Świątynię Zęba w Kandy oraz Sierociniec Słoni w Pinnawali. Ta prywatna wycieczka kończy się dogodnie na lotnisku lub w Twoim hotelu. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
@@ -619,6 +737,36 @@
         "Opłaty za wstęp i aktywność",
         "Jedzenie i napoje",
         "Zakwaterowanie (można zorganizować na życzenie)"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w 2 dni Ella i Kandy | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 2 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Dom tranzytowy dla słoni Udawalawa",
+        "Most Dziewięciu Łuków",
+        "Mały Szczyt Adama",
+        "Latająca linia Zip Ravana",
+        "Wodospad Rawany",
+        "Wodospad Rambody"
       ]
     },
     "2-day-ella-yala-private-tour-sri-lanka": {
@@ -628,8 +776,8 @@
       "description": "Odkryj dziką przyrodę, malownicze góry i ekscytujące safari w Yala podczas tej 2 dniowej prywatnej wycieczki kończącej się na lotnisku lub w Twoim hotelu.",
       "duration": "2 dni",
       "persons": "1-20 osób",
-      "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
-      "overview": "Przeżyj niezapomnianą 2 dniową prywatną podróż przez malownicze górskie tereny i dzikie południe Sri Lanki. Pierwszego dnia zwiedź największe atrakcje Elli, w tym kultowy Most Dziewięciu Łuków, wejdź na Mały Szczyt Adama, skorzystaj z ekscytującej tyrolki Flying Ravana i odwiedź piękne wodospady Ravana przed noclegiem w 4 gwiazdkowym hotelu w Elli. Drugiego dnia wyrusz na ekscytujące safari w Parku Narodowym Yala, gdzie żyje największe na świecie zagęszczenie lampartów, a także słonie, krokodyle i bogate ptactwo. Ta prywatna wycieczka kończy się dogodnie na lotnisku lub w Twoim hotelu.",
+      "filecode": "2-day-ella-yala-private-tour-sri-lanka",
+      "overview": "Przeżyj niezapomnianą 2 dniową prywatną podróż przez malownicze górskie tereny i dzikie południe Sri Lanki. Pierwszego dnia zwiedź największe atrakcje Elli, w tym kultowy Most Dziewięciu Łuków, wejdź na Mały Szczyt Adama, skorzystaj z ekscytującej tyrolki Flying Ravana i odwiedź piękne wodospady Ravana przed noclegiem w 4 gwiazdkowym hotelu w Elli. Drugiego dnia wyrusz na ekscytujące safari w Parku Narodowym Yala, gdzie żyje największe na świecie zagęszczenie lampartów, a także słonie, krokodyle i bogate ptactwo. Ta prywatna wycieczka kończy się dogodnie na lotnisku lub w Twoim hotelu. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
@@ -732,6 +880,36 @@
         "Opłaty za wstęp i aktywność",
         "Jedzenie i napoje",
         "Zakwaterowanie (można zorganizować na życzenie)"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w 2 dni Ella i safari Yala | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 2 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Most Dziewięciu Łuków",
+        "Mały Szczyt Adama",
+        "Latająca linia Zip Ravana",
+        "Wodospad Rawany",
+        "Hotel Oak Ray Ella Gap",
+        "Park Narodowy Yala"
       ]
     },
     "4-day-sri-lanka-tour": {
@@ -742,12 +920,12 @@
       "duration": "4 dni",
       "persons": "1-20 osób",
       "filecode": "4-day-sri-lanka-tour",
-      "overview": "Odkryj idealne połączenie kultury, malowniczego piękna, dzikiej przyrody i uroku wybrzeża Sri Lanki podczas tej 4 dniowej prywatnej wycieczki. Odwiedź święte miasto Kandy, przeżyj zapierające dech w piersiach górskie tereny Elli, skorzystaj z ekscytującego safari w Parku Narodowym Yala i zwiedź historyczny Fort Galle przed dowozem na lotnisko.",
+      "overview": "Odkryj idealne połączenie kultury, malowniczego piękna, dzikiej przyrody i uroku wybrzeża Sri Lanki podczas tej 4 dniowej prywatnej wycieczki. Odwiedź święte miasto Kandy, przeżyj zapierające dech w piersiach górskie tereny Elli, skorzystaj z ekscytującego safari w Parku Narodowym Yala i zwiedź historyczny Fort Galle przed dowozem na lotnisko. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel, Kandy Cultural Experience",
+          "title": "Lotnisko / hotel, kultura w Kandy",
           "activities": [
             {
               "type": "Doświadczenie dzikiej przyrody",
@@ -959,6 +1137,36 @@
         "Opłaty za wstęp",
         "Lunch i napoje",
         "Wydatki osobiste"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 4 dni Sri Lanka | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 4 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Sierociniec dla słoni w Pinnawala",
+        "Świątynia Relikwii Świętego Zęba",
+        "Pokaz tańca kulturalnego w Kandy",
+        "Punkt widokowy w Kandy",
+        "Królewskie Ogrody Botaniczne Peradeniya",
+        "Wizyta w fabryce herbaty Glenloch"
       ]
     },
     "5-day-sri-lanka-tour": {
@@ -969,7 +1177,7 @@
       "duration": "5 dni",
       "persons": "1-20 osób",
       "filecode": "5-day-sri-lanka-tour",
-      "overview": "Odkryj najważniejsze atrakcje Sri Lanki podczas tej idealnie zrównoważonej 5 dniowej prywatnej wycieczki objazdowej. Przejedź przez Trójkąt Kulturowy, zwiedź Twierdzę Skalną Sigiriya, przeżyj świętą Świątynię Zęba Buddy w Kandy, przejedź przez zamglone plantacje herbaty w Nuwara Eliya, skorzystaj z ekscytującego safari w Parku Narodowym Udawalawe i odpocznij wzdłuż pięknego południowo-zachodniego wybrzeża. Dzięki prywatnemu transportowi, doświadczonemu anglojęzycznemu kierowcy przewodnikowi i komfortowym opcjom zakwaterowania, ta wycieczka oferuje idealne połączenie kultury, natury, dzikiej przyrody i relaksu, idealne dla par, rodzin i małych grup.",
+      "overview": "Odkryj najważniejsze atrakcje Sri Lanki podczas tej idealnie zrównoważonej 5 dniowej prywatnej wycieczki objazdowej. Przejedź przez Trójkąt Kulturowy, zwiedź Twierdzę Skalną Sigiriya, przeżyj świętą Świątynię Zęba Buddy w Kandy, przejedź przez zamglone plantacje herbaty w Nuwara Eliya, skorzystaj z ekscytującego safari w Parku Narodowym Udawalawe i odpocznij wzdłuż pięknego południowo-zachodniego wybrzeża. Dzięki prywatnemu transportowi, doświadczonemu anglojęzycznemu kierowcy przewodnikowi i komfortowym opcjom zakwaterowania, ta wycieczka oferuje idealne połączenie kultury, natury, dzikiej przyrody i relaksu, idealne dla par, rodzin i małych grup. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
@@ -1199,6 +1407,36 @@
         "Opłaty za wstęp i aktywność",
         "Jedzenie i napoje",
         "Zakwaterowanie (można zorganizować na życzenie)"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 5 dni Sri Lanka | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 5 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Odbiór z lotniska",
+        "Sierociniec dla słoni w Pinnawala",
+        "Safari w Parku Narodowym Minneriya",
+        "Willa na wodzie Fresco, Sigiriya",
+        "Twierdza skalna Sigiriya",
+        "Świątynia Relikwii Świętego Zęba"
       ]
     },
     "6-day-sri-lanka-private-tour": {
@@ -1209,7 +1447,7 @@
       "duration": "6 dni",
       "persons": "1-20 osób",
       "filecode": "6-day-sri-lanka-private-tour",
-      "overview": "Jesteśmy tu, aby zorganizować idealne wakacje, o których zawsze marzyłeś na 'Rajskiej Wyspie', Sri Lance. Nasz pakiet podróżny na 6 dni (5 nocy) jest zaplanowany w taki sposób, że obejmiesz nie tylko wszystkie słynne atrakcje, ale także niektóre rzadkie doświadczenia, które są wyjątkowe dla CEYLON JOJO TRAVELS, przy zakwaterowaniu naszych gości w najlepszych hotelach kategorii 4 gwiazdkowej na Sri Lance w opcji ze śniadaniem i obiadokolacją. Safari w Yala, Sigiriya, Most Dziewięciu Łuków w Elli, przejazd pociągiem przez Ellę, Świątynia Zęba Buddy w Kandy, wodospad Ramboda, wejście na Mały Szczyt Adama, Nuwara Eliya, Fort Galle i rejs po rzece Bentota to tylko niektóre z głównych atrakcji, które obejmiesz podczas podróży. Łącznie odwiedzisz 28 atrakcji obejmujących 10 dystryktów Sri Lanki, korzystając z prywatnego transportu.",
+      "overview": "Jesteśmy tu, aby zorganizować idealne wakacje, o których zawsze marzyłeś na 'Rajskiej Wyspie', Sri Lance. Nasz pakiet podróżny na 6 dni (5 nocy) jest zaplanowany w taki sposób, że obejmiesz nie tylko wszystkie słynne atrakcje, ale także niektóre rzadkie doświadczenia, które są wyjątkowe dla CEYLON JOJO TRAVELS, przy zakwaterowaniu naszych gości w najlepszych hotelach kategorii 4 gwiazdkowej na Sri Lance w opcji ze śniadaniem i obiadokolacją. Safari w Yala, Sigiriya, Most Dziewięciu Łuków w Elli, przejazd pociągiem przez Ellę, Świątynia Zęba Buddy w Kandy, wodospad Ramboda, wejście na Mały Szczyt Adama, Nuwara Eliya, Fort Galle i rejs po rzece Bentota to tylko niektóre z głównych atrakcji, które obejmiesz podczas podróży. Łącznie odwiedzisz 28 atrakcji obejmujących 10 dystryktów Sri Lanki, korzystając z prywatnego transportu. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
@@ -1537,6 +1775,36 @@
         "Opłaty za wstęp i aktywność",
         "Jedzenie i napoje",
         "Zakwaterowanie (można zorganizować na życzenie)"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 6 dni Sri Lanka | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 6 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Przyjazd",
+        "Skała Pidurangala",
+        "Willa na wodzie Fresco",
+        "Lwia Skała Sigiriya",
+        "Wioska Hiriwadunna i przygoda nad jeziorem",
+        "Świątynia w jaskini Dambulla"
       ]
     },
     "7-day-sri-lanka-tour": {
@@ -1547,12 +1815,12 @@
       "duration": "7 dni",
       "persons": "1-20 osób",
       "filecode": "7-day-sri-lanka-tour",
-      "overview": "Odkryj dziką przyrodę, starożytne królestwa, malownicze góry i złote plaże Sri Lanki podczas jednej idealnie zrównoważonej 7 dniowej podróży. Ta wycieczka łączy przygodę na safari, obiekty dziedzictwa UNESCO, górskie krajobrazy, plantacje herbaty, wodospady i relaksujące wrażenia na wybrzeżu, z zakwaterowaniem w opcji ze śniadaniem i obiadokolacją oraz prywatnym transportem.",
+      "overview": "Odkryj dziką przyrodę, starożytne królestwa, malownicze góry i złote plaże Sri Lanki podczas jednej idealnie zrównoważonej 7 dniowej podróży. Ta wycieczka łączy przygodę na safari, obiekty dziedzictwa UNESCO, górskie krajobrazy, plantacje herbaty, wodospady i relaksujące wrażenia na wybrzeżu, z zakwaterowaniem w opcji ze śniadaniem i obiadokolacją oraz prywatnym transportem. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel, Wilpattu",
+          "title": "Lotnisko / hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -1882,6 +2150,36 @@
       "excludes": [
         "Jedzenie i napoje",
         "Opłaty za wstęp i zajęcia"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 7 dni Sri Lanka | Prywatny kierowca, safari i plaża?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 7 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Safari w Parku Narodowym Wilpattu",
+        "Ośrodek Thimbiri Wewa, Wilpattu",
+        "Świątynia Sri Maha Bodhi",
+        "Ruwanweli Maha Seya",
+        "Zachód słońca na skale Pidurangala",
+        "Willa na wodzie Fresco, Sigiriya"
       ]
     },
     "8-day-sri-lanka-private-tour": {
@@ -1892,12 +2190,12 @@
       "duration": "8 dni",
       "persons": "1-20 osób",
       "filecode": "8-day-sri-lanka-private-tour",
-      "overview": "Odkryj dziką przyrodę, starożytne królestwa, malownicze góry i złote plaże Sri Lanki podczas jednej idealnie zrównoważonej 8 dniowej podróży. Ta wycieczka łączy przygodę na safari, obiekty dziedzictwa UNESCO, górskie krajobrazy, plantacje herbaty, wodospady i relaksujące wrażenia na wybrzeżu, z zakwaterowaniem w opcji ze śniadaniem i obiadokolacją oraz prywatnym transportem.",
+      "overview": "Odkryj dziką przyrodę, starożytne królestwa, malownicze góry i złote plaże Sri Lanki podczas jednej idealnie zrównoważonej 8 dniowej podróży. Ta wycieczka łączy przygodę na safari, obiekty dziedzictwa UNESCO, górskie krajobrazy, plantacje herbaty, wodospady i relaksujące wrażenia na wybrzeżu, z zakwaterowaniem w opcji ze śniadaniem i obiadokolacją oraz prywatnym transportem. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel, Wilpattu",
+          "title": "Lotnisko / hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -2237,6 +2535,36 @@
         "Opłaty za wstęp i aktywność",
         "Lunch i napoje",
         "Wydatki osobiste"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 8 dni Sri Lanka | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 8 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Safari w Parku Narodowym Wilpattu",
+        "Ośrodek Thimbiri Wewa, Wilpattu",
+        "Świątynia Sri Maha Bodhi",
+        "Ruwanweli Maha Seya",
+        "Zachód słońca na skale Pidurangala",
+        "Willa na wodzie Fresco, Sigiriya"
       ]
     },
     "10-day-sri-lanka-tour": {
@@ -2247,12 +2575,12 @@
       "duration": "10 dni",
       "persons": "1-20 osób",
       "filecode": "10-day-sri-lanka-tour",
-      "overview": "Odkryj dziką przyrodę, starożytne królestwa, malownicze góry i złote plaże Sri Lanki podczas jednej idealnie zrównoważonej 10 dniowej podróży. Ta wycieczka łączy przygodę na safari, obiekty dziedzictwa UNESCO, górskie krajobrazy, plantacje herbaty, wodospady i relaksujące wrażenia na wybrzeżu, z zakwaterowaniem w opcji ze śniadaniem i obiadokolacją oraz prywatnym transportem.",
+      "overview": "Odkryj dziką przyrodę, starożytne królestwa, malownicze góry i złote plaże Sri Lanki podczas jednej idealnie zrównoważonej 10 dniowej podróży. Ta wycieczka łączy przygodę na safari, obiekty dziedzictwa UNESCO, górskie krajobrazy, plantacje herbaty, wodospady i relaksujące wrażenia na wybrzeżu, z zakwaterowaniem w opcji ze śniadaniem i obiadokolacją oraz prywatnym transportem. Prywatny samochód z hotelu lub lotniska, przewodnik kierowca po polsku lub angielsku oraz płatność na Sri Lance po potwierdzeniu.",
       "tourType": "Wycieczka objazdowa",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel, Wilpattu",
+          "title": "Lotnisko / hotel, Wilpattu",
           "activities": [
             {
               "type": "Safari",
@@ -2720,6 +3048,36 @@
         "Opłaty za wstęp i aktywność",
         "Lunch i napoje",
         "Wydatki osobiste"
+      ],
+      "faq": [
+        {
+          "question": "Co jest wliczone w Wycieczka 10 dni Sri Lanka | Prywatny kierowca?",
+          "answer": "Ta Wycieczka objazdowa zwykle obejmuje prywatny klimatyzowany transport, doświadczonego przewodnika kierowcę i zwiedzanie z programu na 10 dni. Kategoria hotelu i posiłki są w sekcji Noclegi i W cenie."
+        },
+        {
+          "question": "Czy to prywatna wycieczka?",
+          "answer": "Tak. Ceylon JOJO Travels organizuje prywatne wycieczki po Sri Lance dla par, rodzin i małych grup. Jedziecie własnym samochodem, we własnym tempie."
+        },
+        {
+          "question": "Dla kogo jest ta wycieczka?",
+          "answer": "Dla par, rodzin i małych grup, które chcą prywatnego przewodnika kierowcę, elastyczne godziny i jasny plan dnia bez dużego autokaru."
+        },
+        {
+          "question": "Czy mogę dostosować program?",
+          "answer": "Tak. Podaj hotel odbioru, tempo lub must see w Uwagach specjalnych, dopasujemy plan przed wyjazdem."
+        },
+        {
+          "question": "Jak zarezerwować i zapłacić?",
+          "answer": "Wypełnij formularz na tej stronie lub napisz na WhatsApp. Płatność później (na Sri Lance) jest możliwa. Po wysłaniu otrzymasz potwierdzenie."
+        }
+      ],
+      "highlights": [
+        "Safari w Parku Narodowym Wilpattu",
+        "Ośrodek Thimbiri Wewa, Wilpattu",
+        "Świątynia Sri Maha Bodhi",
+        "Ruwanweli Maha Seya",
+        "Zachód słońca na skale Pidurangala",
+        "Willa na wodzie Fresco, Sigiriya"
       ]
     }
   }

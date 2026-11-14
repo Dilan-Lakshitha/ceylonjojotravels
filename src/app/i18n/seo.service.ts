@@ -71,6 +71,8 @@ export class SeoService {
 
     this.meta.updateTag({ property: 'og:url', content: canonical });
     this.meta.updateTag({ property: 'og:locale', content: this.ogLocale(lang) });
+    this.meta.updateTag({ property: 'og:site_name', content: 'CEYLON JOJO TRAVElS' });
+    this.setOgLocaleAlternates(lang);
     const DEFAULT_OG = 'https://ceylonjojotravels.com/assets/img/package-2.jpg';
     const imageSrc = tourJsonLd?.image
       ? tourJsonLd.image.startsWith('http')
@@ -79,6 +81,7 @@ export class SeoService {
       : DEFAULT_OG;
     this.meta.updateTag({ property: 'og:image', content: imageSrc });
     this.meta.updateTag({ name: 'twitter:image', content: imageSrc });
+    this.meta.updateTag({ name: 'twitter:site', content: '@ceylon_jojo_travels' });
 
     this.setCanonical(canonical);
     this.setHtmlLang(lang);
@@ -162,6 +165,11 @@ export class SeoService {
       name: 'CEYLON JOJO TRAVElS',
       publisher: { '@id': orgId },
       inLanguage: AVAILABLE_LANGS,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://ceylonjojotravels.com/en/tours?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
     });
 
     const crumbs = this.buildBreadcrumbs(opts.routeId, opts.lang, opts.tourId, opts.pageTitle);
@@ -188,6 +196,25 @@ export class SeoService {
           '@type': 'TouristTrip',
           name: 'Private Sri Lanka tours with chauffeur guides',
           touristType: 'Leisure travelers',
+        },
+      });
+    }
+
+    if (opts.routeId === 'testimonials') {
+      this.upsertJsonLd('testimonials', {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: opts.pageTitle,
+        description: opts.pageDescription,
+        url: opts.canonical,
+        isPartOf: { '@id': websiteId },
+        about: { '@id': orgId },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: 5,
+          reviewCount: 50,
+          bestRating: 5,
+          worstRating: 1,
         },
       });
     }
@@ -395,5 +422,19 @@ export class SeoService {
       ru: 'ru_RU',
     };
     return map[lang];
+  }
+
+  private setOgLocaleAlternates(current: AppLang): void {
+    this.document
+      .querySelectorAll('meta[property="og:locale:alternate"]')
+      .forEach((el) => el.parentNode?.removeChild(el));
+
+    for (const lang of AVAILABLE_LANGS) {
+      if (lang === current) continue;
+      const meta = this.document.createElement('meta');
+      meta.setAttribute('property', 'og:locale:alternate');
+      meta.setAttribute('content', this.ogLocale(lang));
+      this.document.head.appendChild(meta);
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, inject } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { register } from 'swiper/element/bundle';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
@@ -13,13 +14,14 @@ register();
 @Component({
   selector: 'app-resturant-component',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, TranslocoModule],
+  imports: [CommonModule, HttpClientModule, TranslocoModule, RouterModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './resturant-component.html',
   styleUrl: './resturant-component.css',
 })
 export class ResturantComponent implements OnInit {
   packages: any[] = [];
+  contactLink: any[] = ['/', 'en', 'contact'];
   private readonly seo = inject(SeoService);
   private readonly transloco = inject(TranslocoService);
   private readonly localizedRouter = inject(LocalizedRouterService);
@@ -35,10 +37,18 @@ export class ResturantComponent implements OnInit {
     }
     const lang = this.localizedRouter.currentLang();
     const safeLang: AppLang = isAppLang(lang) ? lang : 'en';
-    this.transloco.load(`common/${lang}`).subscribe();
-    this.transloco.load(`seo/${lang}`).subscribe();
+    this.contactLink = this.localizedRouter.commandsFor('contact', { lang: safeLang });
+    this.transloco.load(`common/${safeLang}`).subscribe();
+    this.transloco.load(`seo/${safeLang}`).subscribe();
+    this.transloco.load(`restaurant/${safeLang}`).subscribe();
     void this.seo.applyPageSeo({ routeId: 'restaurant', lang: safeLang });
     this.loadPackages();
+  }
+
+  categoryLabel(category: string): string {
+    const key = `cat.${category}`;
+    const value = this.transloco.translate(key, {}, 'restaurant');
+    return value && value !== key ? value : category;
   }
 
   loadPackages() {
@@ -573,24 +583,21 @@ export class ResturantComponent implements OnInit {
   chefs = [
     {
       name: 'Walter Perera',
-      role: 'Master Chef',
+      roleKey: 'chefs.walter.role',
+      bioKey: 'chefs.walter.bio',
       image: 'assets/chefs/chef1.jpg',
-      description:
-        'Specialist in authentic Sri Lankan cuisine with over 15 years of experience in luxury hospitality and international dining.',
     },
     {
       name: 'Sarah Fernando',
-      role: 'Pastry Chef',
+      roleKey: 'chefs.sarah.role',
+      bioKey: 'chefs.sarah.bio',
       image: 'assets/chefs/chef2.jpg',
-      description:
-        'Expert in handcrafted desserts and European-style pastries, blending traditional flavors with modern creativity.',
     },
     {
       name: 'William Silva',
-      role: 'Executive Chef',
+      roleKey: 'chefs.william.role',
+      bioKey: 'chefs.william.bio',
       image: 'assets/chefs/chef3.jpg',
-      description:
-        'Passionate about seafood specialties and premium culinary experiences tailored for international guests.',
     },
   ];
 }

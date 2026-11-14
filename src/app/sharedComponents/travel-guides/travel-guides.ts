@@ -25,6 +25,7 @@ export class TravelGuides implements OnInit {
   toursLink: any[] = ['/', 'en', 'tours'];
   contactLink: any[] = ['/', 'en', 'contact'];
   homeLabel = 'Home';
+  showSpanishExtra = false;
 
   readonly guideIds: GuideId[] = ['danula', 'dilan', 'samith', 'yohan'];
   readonly whyIds = [1, 2, 3, 4] as const;
@@ -40,6 +41,7 @@ export class TravelGuides implements OnInit {
   ngOnInit(): void {
     const lang = this.localizedRouter.currentLang();
     const safeLang: AppLang = isAppLang(lang) ? lang : 'en';
+    this.showSpanishExtra = safeLang === 'es';
 
     this.homeLink = this.localizedRouter.commandsFor('home');
     this.toursLink = this.localizedRouter.commandsFor('tours');

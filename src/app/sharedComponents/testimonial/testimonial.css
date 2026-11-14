@@ -1,0 +1,96 @@
+.tm {
+  --tm-brand: #023a2c;
+  --tm-ink: #0f172a;
+  --tm-muted: #64748b;
+  --tm-line: #e6ece9;
+  --tm-surface: #f7f9f8;
+  padding: 2.5rem 1.15rem 3.25rem;
+}
+
+.tm__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tm__header {
+  text-align: center;
+  max-width: 46rem;
+  margin: 0 auto 2rem;
+}
+
+.tm__eyebrow {
+  margin: 0 0 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tm-brand);
+}
+
+.tm__title {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.55rem, 1.2rem + 1.2vw, 2.15rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--tm-ink);
+}
+
+.tm__intro,
+.tm__rating,
+.tm__cta {
+  margin: 0 auto;
+  color: var(--tm-muted);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.tm__rating {
+  margin-top: 0.75rem;
+  color: var(--tm-ink);
+  font-weight: 600;
+}
+
+.tm__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .tm__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tm__card {
+  background: var(--tm-surface);
+  border: 1px solid var(--tm-line);
+  border-radius: 14px;
+  padding: 1.15rem 1.2rem;
+}
+
+.tm__quote {
+  margin: 0 0 0.85rem;
+  color: var(--tm-ink);
+  line-height: 1.55;
+  font-size: 0.98rem;
+}
+
+.tm__author {
+  margin: 0;
+  font-weight: 700;
+  color: var(--tm-brand);
+}
+
+.tm__meta {
+  margin: 0.25rem 0 0;
+  color: var(--tm-muted);
+  font-size: 0.88rem;
+}
+
+.tm__cta {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}

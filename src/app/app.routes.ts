@@ -15,11 +15,29 @@ import { homeI18nResolver, pageI18nResolver } from './i18n/page-i18n.resolver';
 import { AVAILABLE_LANGS } from './i18n/language.constants';
 import { ROUTE_MAP, RouteId } from './i18n/route-map';
 
-const legacyTourRedirects: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path, tourId]) => ({
-  path,
-  redirectTo: `/en/tours/${slugForTour(tourId, 'en')}`,
-  pathMatch: 'full' as const,
-}));
+/** Flat / legacy tour paths → lang-correct canonicals (SPA backup for edge 301s). */
+const legacyTourRedirects: Routes = (() => {
+  const rules: Routes = Object.entries(LEGACY_TOUR_PATHS).map(([path, tourId]) => ({
+    path,
+    redirectTo: `/en/tours/${slugForTour(tourId, 'en')}`,
+    pathMatch: 'full' as const,
+  }));
+
+  const seen = new Set(Object.keys(LEGACY_TOUR_PATHS));
+  for (const tourId of TOUR_IDS) {
+    for (const lang of AVAILABLE_LANGS) {
+      const slug = slugForTour(tourId, lang);
+      if (!slug || seen.has(slug)) continue;
+      seen.add(slug);
+      rules.push({
+        path: slug,
+        redirectTo: `/${lang}/${ROUTE_MAP.tours[lang]}/${slug}`,
+        pathMatch: 'full' as const,
+      });
+    }
+  }
+  return rules;
+})();
 
 const segmentGuards = [canonicalSegmentGuard];
 
@@ -65,11 +83,11 @@ const contactRoutes = explicitSegmentRoutes('contact', ['common', 'seo', 'contac
   ),
 );
 
-const testimonialsRoutes = explicitSegmentRoutes('testimonials', ['common', 'seo'], () =>
+const testimonialsRoutes = explicitSegmentRoutes('testimonials', ['common', 'seo', 'testimonials'], () =>
   import('./sharedComponents/testimonial/testimonial').then((m) => m.Testimonial),
 );
 
-const restaurantRoutes = explicitSegmentRoutes('restaurant', ['common', 'seo'], () =>
+const restaurantRoutes = explicitSegmentRoutes('restaurant', ['common', 'seo', 'restaurant'], () =>
   import('./mainComponents/resturant-component/resturant-component').then(
     (m) => m.ResturantComponent,
   ),
@@ -216,7 +234,7 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./sharedComponents/testimonial/testimonial').then((m) => m.Testimonial),
         canActivate: segmentGuards,
-        resolve: { i18n: pageI18nResolver(['common', 'seo']) },
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'testimonials']) },
         data: { routeId: 'testimonials' },
       },
       ...guidesRoutes,
@@ -228,7 +246,7 @@ export const routes: Routes = [
             (m) => m.ResturantComponent,
           ),
         canActivate: segmentGuards,
-        resolve: { i18n: pageI18nResolver(['common', 'seo']) },
+        resolve: { i18n: pageI18nResolver(['common', 'seo', 'restaurant']) },
         data: { routeId: 'restaurant' },
       },
       {

@@ -55,7 +55,61 @@
   font-size: 0.975rem;
 }
 
+.cf__lede--body {
+  margin-top: 0.85rem;
+  max-width: 42rem;
+}
+
 .cf--home .cf__lede {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.cf__help {
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: 14px;
+  background: var(--cf-surface);
+  border: 1px solid var(--cf-line);
+  text-align: left;
+}
+
+.cf__help-title {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cf-ink);
+}
+
+.cf__help-list {
+  margin: 0 0 0.75rem;
+  padding-left: 1.15rem;
+  color: var(--cf-muted);
+  line-height: 1.55;
+}
+
+.cf__help-list li + li {
+  margin-top: 0.35rem;
+}
+
+.cf__help-note {
+  margin: 0;
+  color: var(--cf-ink);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.cf--home .cf__help {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.cf--home .cf__help-title,
+.cf--home .cf__help-note {
+  color: #fff;
+}
+
+.cf--home .cf__help-list {
   color: rgba(255, 255, 255, 0.82);
 }
 

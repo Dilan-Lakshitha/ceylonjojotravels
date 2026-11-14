@@ -203,8 +203,8 @@
     <div class="col-lg-3 col-md-6 mb-5">
       <p class="h5 text-white i18n-section-eyebrow mb-4">{{ t('footer.menu') }}</p>
       <div class="d-flex flex-column justify-content-start">
-        <a class="site-footer__link mb-2" [routerLink]="toursLink" [queryParams]="{ type: 'day' }"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
-        <a class="site-footer__link mb-2" [routerLink]="toursLink" [queryParams]="{ type: 'multi' }"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="toursLink" fragment="day"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.dayTours') }}</a>
+        <a class="site-footer__link mb-2" [routerLink]="toursLink" fragment="multi"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.multiDay') }}</a>
         <a class="site-footer__link mb-2" [routerLink]="servicesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.services') }}</a>
         <a class="site-footer__link mb-2" [routerLink]="toursLink"><i class="fa fa-angle-right mr-2"></i>{{ t('footer.packages') }}</a>
         <a class="site-footer__link mb-2" [routerLink]="guidesLink"><i class="fa fa-angle-right mr-2"></i>{{ t('nav.guides') }}</a>

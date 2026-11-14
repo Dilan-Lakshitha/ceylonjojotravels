@@ -14,14 +14,22 @@
 ## SEO / GSC hardening
 - Sitemap includes all public ROUTE_MAP routes (testimonials, guides, restaurant)
 - robots.txt disallows every localized booking segment
-- SeoService: booking `noindex,nofollow`; always sets OG/Twitter image; runtime JSON-LD only (static dual graph removed from `index.html`)
+- SeoService: booking `noindex,nofollow`; always sets OG/Twitter image + `og:locale:alternate`; runtime JSON-LD only (static dual graph removed from `index.html`)
 - `canonicalSegmentGuard` redirects wrong-lang path segments/slugs to the lang-correct URL (client-only; Googlebot still needs edge 301s)
-- `vercel.json` 301s wrong-lang segments (`/ru/tours/...` → `/ru/tury/...`), wrong-lang slugs, spaced/legacy tour URLs, and `sitemap_index.xml` → `sitemap-index.xml`
+- `vercel.json` 301s wrong-lang segments (`/ru/tours/...` → `/ru/tury/...`), wrong-lang slugs, **root localized slugs** (`/circuit-2-jours-ella-kandy` → FR canonical), spaced RU URLs (`/ru/tury/odnodnevnyy tur kandy`), tours `?type=day|multi` → clean tours URL, and `sitemap_index.xml` → `sitemap-index.xml`
+- Footer day/multi links use `#day` / `#multi` (not `?type=`) so Google does not invent alternate tours URLs
 - Sitemaps use `TOUR_SLUG_MAP` (not `tours.json` slugs) so DE/FR/… loc + hreflang match prerender + canonical tags
+- Catalog `routerLink`/`slug` synced via `scripts/sync-tour-catalog-links.js` so listings never emit bare root slugs
 - **All sitemap marketing URLs are prerendered** (home, about, services, tours list, destinations, contact, testimonials, guides, restaurant, and every tour detail × lang) so Google gets real HTML not the CSR English shell
 - Language switcher uses crawlable `<a routerLink>` alternates (not JS-only buttons)
 - Unknown paths render a `noindex` 404 page instead of soft-redirecting to `/en`
 - Guides pages enriched with team bios + travel tips (selection/quality for “Crawled – currently not indexed”)
+- Tour details embed localized FAQ + highlights + locale closing lines (`scripts/enrich-indexability.js`) so prerendered HTML is not EN FAQ shell
+- Contact pages include help body copy (not form only) for thin `/kontakt` style URLs
+- Testimonials pages include crawlable static reviews (not Elfsight-only) + CollectionPage JSON-LD (`scripts/enrich-gsc-not-indexed.js`)
+- About pages include story + audience copy; tours list pages include `packages.intro`
+- Restaurant page chrome is translated (EN/DE/FR/IT/ES/PL/RU); dish names stay international
+- `public/llms.txt` lists multilingual hubs for AEO/GEO crawlers
 - Primary host is **apex** `https://ceylonjojotravels.com` (sitemaps + canonicals). `www` must 308 → apex (never the reverse). `vercel.json` enforces www→apex and legacy path redirects (`/index.html`, `/twodaystours`, …)
 
 ## SSR deploy note

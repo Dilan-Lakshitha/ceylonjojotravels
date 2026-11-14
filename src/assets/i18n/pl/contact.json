@@ -30,5 +30,12 @@
   "messages.error": "Błąd wysyłania. Spróbuj później.",
   "toast.success": "Wiadomość wysłana!",
   "toast.error": "Nie udało się wysłać wiadomości",
-  "form.sending": "Wysyłanie..."
+  "form.sending": "Wysyłanie...",
+  "body.intro": "Zarezerwuj prywatnego przewodnika kierowcę na Sri Lance, zapytaj o wycieczkę jednodniową lub indywidualny program wielodniowy z hotelami. Odpowiadamy na WhatsApp, telefon i e mail po polsku i angielsku.",
+  "body.helpTitle": "W czym możemy pomóc",
+  "body.help1": "Prywatne wycieczki jednodniowe do Galle, Kandy, Elli i Sigirii",
+  "body.help2": "Pakiety wielodniowe z hotelami 4 gwiazdkowymi i transferem z lotniska",
+  "body.help3": "Trasy na zamówienie dla par, rodzin i małych grup",
+  "body.help4": "Płatność na Sri Lance po pisemnym potwierdzeniu",
+  "body.response": "Zwykle odpowiadamy w ciągu kilku godzin w ciągu dnia. Przy odbiorze tego samego dnia napisz na WhatsApp z nazwą hotelu i preferowaną godziną startu."
 }

@@ -185,8 +185,241 @@
       "permanent": true
     },
     {
+      "source": "/ru/tury/odnodnevnyy tur kandy",
+      "destination": "/ru/tury/odnodnevnyy-tur-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy%20tur%20kandy",
+      "destination": "/ru/tury/odnodnevnyy-tur-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy tur ella",
+      "destination": "/ru/tury/odnodnevnyy-tur-ella",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy%20tur%20ella",
+      "destination": "/ru/tury/odnodnevnyy-tur-ella",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy tur galle",
+      "destination": "/ru/tury/odnodnevnyy-tur-galle",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy%20tur%20galle",
+      "destination": "/ru/tury/odnodnevnyy-tur-galle",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy tur sigiriya",
+      "destination": "/ru/tury/odnodnevnyy-tur-sigiriya",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury/odnodnevnyy%20tur%20sigiriya",
+      "destination": "/ru/tury/odnodnevnyy-tur-sigiriya",
+      "permanent": true
+    },
+    {
+      "source": "/en/tours",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/en/tours",
+      "permanent": true
+    },
+    {
+      "source": "/en/tours",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/en/tours",
+      "permanent": true
+    },
+    {
+      "source": "/de/touren",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/de/touren",
+      "permanent": true
+    },
+    {
+      "source": "/de/touren",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/de/touren",
+      "permanent": true
+    },
+    {
+      "source": "/fr/circuits",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/fr/circuits",
+      "permanent": true
+    },
+    {
+      "source": "/fr/circuits",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/fr/circuits",
+      "permanent": true
+    },
+    {
+      "source": "/it/tour",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/it/tour",
+      "permanent": true
+    },
+    {
+      "source": "/it/tour",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/it/tour",
+      "permanent": true
+    },
+    {
+      "source": "/es/tours",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/es/tours",
+      "permanent": true
+    },
+    {
+      "source": "/es/tours",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/es/tours",
+      "permanent": true
+    },
+    {
+      "source": "/pl/wycieczki",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/pl/wycieczki",
+      "permanent": true
+    },
+    {
+      "source": "/pl/wycieczki",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/pl/wycieczki",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "day"
+        }
+      ],
+      "destination": "/ru/tury",
+      "permanent": true
+    },
+    {
+      "source": "/ru/tury",
+      "has": [
+        {
+          "type": "query",
+          "key": "type",
+          "value": "multi"
+        }
+      ],
+      "destination": "/ru/tury",
+      "permanent": true
+    },
+    {
       "source": "/ella-day-tour",
       "destination": "/en/tours/ella-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/ella-tagesausflug",
+      "destination": "/de/touren/ella-tagesausflug",
+      "permanent": true
+    },
+    {
+      "source": "/excursion-ella",
+      "destination": "/fr/circuits/excursion-ella",
+      "permanent": true
+    },
+    {
+      "source": "/escursione-ella",
+      "destination": "/it/tour/escursione-ella",
+      "permanent": true
+    },
+    {
+      "source": "/wycieczka-ella",
+      "destination": "/pl/wycieczki/wycieczka-ella",
+      "permanent": true
+    },
+    {
+      "source": "/odnodnevnyy-tur-ella",
+      "destination": "/ru/tury/odnodnevnyy-tur-ella",
       "permanent": true
     },
     {
@@ -195,13 +428,368 @@
       "permanent": true
     },
     {
+      "source": "/galle-tagesausflug",
+      "destination": "/de/touren/galle-tagesausflug",
+      "permanent": true
+    },
+    {
+      "source": "/excursion-galle",
+      "destination": "/fr/circuits/excursion-galle",
+      "permanent": true
+    },
+    {
+      "source": "/escursione-galle",
+      "destination": "/it/tour/escursione-galle",
+      "permanent": true
+    },
+    {
+      "source": "/wycieczka-galle",
+      "destination": "/pl/wycieczki/wycieczka-galle",
+      "permanent": true
+    },
+    {
+      "source": "/odnodnevnyy-tur-galle",
+      "destination": "/ru/tury/odnodnevnyy-tur-galle",
+      "permanent": true
+    },
+    {
       "source": "/kandy-day-tour",
       "destination": "/en/tours/kandy-day-tour",
       "permanent": true
     },
     {
+      "source": "/kandy-tagesausflug",
+      "destination": "/de/touren/kandy-tagesausflug",
+      "permanent": true
+    },
+    {
+      "source": "/excursion-kandy",
+      "destination": "/fr/circuits/excursion-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/escursione-kandy",
+      "destination": "/it/tour/escursione-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/wycieczka-kandy",
+      "destination": "/pl/wycieczki/wycieczka-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/odnodnevnyy-tur-kandy",
+      "destination": "/ru/tury/odnodnevnyy-tur-kandy",
+      "permanent": true
+    },
+    {
       "source": "/sigiriya-day-tour",
       "destination": "/en/tours/sigiriya-day-tour",
+      "permanent": true
+    },
+    {
+      "source": "/sigiriya-tagesausflug",
+      "destination": "/de/touren/sigiriya-tagesausflug",
+      "permanent": true
+    },
+    {
+      "source": "/excursion-sigiriya",
+      "destination": "/fr/circuits/excursion-sigiriya",
+      "permanent": true
+    },
+    {
+      "source": "/escursione-sigiriya",
+      "destination": "/it/tour/escursione-sigiriya",
+      "permanent": true
+    },
+    {
+      "source": "/wycieczka-sigiriya",
+      "destination": "/pl/wycieczki/wycieczka-sigiriya",
+      "permanent": true
+    },
+    {
+      "source": "/odnodnevnyy-tur-sigiriya",
+      "destination": "/ru/tury/odnodnevnyy-tur-sigiriya",
+      "permanent": true
+    },
+    {
+      "source": "/2-day-ella-kandy-private-tour",
+      "destination": "/en/tours/2-day-ella-kandy-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/2-tage-ella-kandy-privattour",
+      "destination": "/de/touren/2-tage-ella-kandy-privattour",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-2-jours-ella-kandy",
+      "destination": "/fr/circuits/circuit-2-jours-ella-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/tour-2-giorni-ella-kandy",
+      "destination": "/it/tour/tour-2-giorni-ella-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/tour-2-dias-ella-kandy",
+      "destination": "/es/tours/tour-2-dias-ella-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/2-dni-ella-kandy",
+      "destination": "/pl/wycieczki/2-dni-ella-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/2-dnya-ella-kandy",
+      "destination": "/ru/tury/2-dnya-ella-kandy",
+      "permanent": true
+    },
+    {
+      "source": "/2-day-ella-yala-safari",
+      "destination": "/en/tours/2-day-ella-yala-safari",
+      "permanent": true
+    },
+    {
+      "source": "/2-tage-ella-yala-safari",
+      "destination": "/de/touren/2-tage-ella-yala-safari",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-2-jours-ella-yala",
+      "destination": "/fr/circuits/circuit-2-jours-ella-yala",
+      "permanent": true
+    },
+    {
+      "source": "/tour-2-giorni-ella-yala",
+      "destination": "/it/tour/tour-2-giorni-ella-yala",
+      "permanent": true
+    },
+    {
+      "source": "/tour-2-dias-ella-yala",
+      "destination": "/es/tours/tour-2-dias-ella-yala",
+      "permanent": true
+    },
+    {
+      "source": "/2-dni-ella-yala",
+      "destination": "/pl/wycieczki/2-dni-ella-yala",
+      "permanent": true
+    },
+    {
+      "source": "/2-dnya-ella-yala",
+      "destination": "/ru/tury/2-dnya-ella-yala",
+      "permanent": true
+    },
+    {
+      "source": "/4-day-sri-lanka-tour",
+      "destination": "/en/tours/4-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/4-tage-sri-lanka-rundreise",
+      "destination": "/de/touren/4-tage-sri-lanka-rundreise",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-sri-lanka-4-jours",
+      "destination": "/fr/circuits/circuit-sri-lanka-4-jours",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-4-giorni",
+      "destination": "/it/tour/tour-sri-lanka-4-giorni",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-4-dias",
+      "destination": "/es/tours/tour-sri-lanka-4-dias",
+      "permanent": true
+    },
+    {
+      "source": "/4-dni-sri-lanka",
+      "destination": "/pl/wycieczki/4-dni-sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/4-dnya-shri-lanka",
+      "destination": "/ru/tury/4-dnya-shri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/5-day-sri-lanka-tour",
+      "destination": "/en/tours/5-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/5-tage-sri-lanka-rundreise",
+      "destination": "/de/touren/5-tage-sri-lanka-rundreise",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-sri-lanka-5-jours",
+      "destination": "/fr/circuits/circuit-sri-lanka-5-jours",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-5-giorni",
+      "destination": "/it/tour/tour-sri-lanka-5-giorni",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-5-dias",
+      "destination": "/es/tours/tour-sri-lanka-5-dias",
+      "permanent": true
+    },
+    {
+      "source": "/5-dni-sri-lanka",
+      "destination": "/pl/wycieczki/5-dni-sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/5-dney-shri-lanka",
+      "destination": "/ru/tury/5-dney-shri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/6-day-sri-lanka-private-tour",
+      "destination": "/en/tours/6-day-sri-lanka-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/6-tage-sri-lanka-privattour",
+      "destination": "/de/touren/6-tage-sri-lanka-privattour",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-prive-sri-lanka-6-jours",
+      "destination": "/fr/circuits/circuit-prive-sri-lanka-6-jours",
+      "permanent": true
+    },
+    {
+      "source": "/tour-privato-sri-lanka-6-giorni",
+      "destination": "/it/tour/tour-privato-sri-lanka-6-giorni",
+      "permanent": true
+    },
+    {
+      "source": "/tour-privado-sri-lanka-6-dias",
+      "destination": "/es/tours/tour-privado-sri-lanka-6-dias",
+      "permanent": true
+    },
+    {
+      "source": "/6-dni-prywatny-sri-lanka",
+      "destination": "/pl/wycieczki/6-dni-prywatny-sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/6-dney-shri-lanka",
+      "destination": "/ru/tury/6-dney-shri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/7-day-sri-lanka-tour",
+      "destination": "/en/tours/7-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/7-tage-sri-lanka-rundreise",
+      "destination": "/de/touren/7-tage-sri-lanka-rundreise",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-sri-lanka-7-jours",
+      "destination": "/fr/circuits/circuit-sri-lanka-7-jours",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-7-giorni",
+      "destination": "/it/tour/tour-sri-lanka-7-giorni",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-7-dias",
+      "destination": "/es/tours/tour-sri-lanka-7-dias",
+      "permanent": true
+    },
+    {
+      "source": "/7-dni-sri-lanka",
+      "destination": "/pl/wycieczki/7-dni-sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/7-dney-shri-lanka",
+      "destination": "/ru/tury/7-dney-shri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/8-day-sri-lanka-private-tour",
+      "destination": "/en/tours/8-day-sri-lanka-private-tour",
+      "permanent": true
+    },
+    {
+      "source": "/8-tage-sri-lanka-privattour",
+      "destination": "/de/touren/8-tage-sri-lanka-privattour",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-prive-sri-lanka-8-jours",
+      "destination": "/fr/circuits/circuit-prive-sri-lanka-8-jours",
+      "permanent": true
+    },
+    {
+      "source": "/tour-privato-sri-lanka-8-giorni",
+      "destination": "/it/tour/tour-privato-sri-lanka-8-giorni",
+      "permanent": true
+    },
+    {
+      "source": "/tour-privado-sri-lanka-8-dias",
+      "destination": "/es/tours/tour-privado-sri-lanka-8-dias",
+      "permanent": true
+    },
+    {
+      "source": "/8-dni-prywatny-sri-lanka",
+      "destination": "/pl/wycieczki/8-dni-prywatny-sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/8-dney-shri-lanka",
+      "destination": "/ru/tury/8-dney-shri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/10-day-sri-lanka-tour",
+      "destination": "/en/tours/10-day-sri-lanka-tour",
+      "permanent": true
+    },
+    {
+      "source": "/10-tage-sri-lanka-rundreise",
+      "destination": "/de/touren/10-tage-sri-lanka-rundreise",
+      "permanent": true
+    },
+    {
+      "source": "/circuit-sri-lanka-10-jours",
+      "destination": "/fr/circuits/circuit-sri-lanka-10-jours",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-10-giorni",
+      "destination": "/it/tour/tour-sri-lanka-10-giorni",
+      "permanent": true
+    },
+    {
+      "source": "/tour-sri-lanka-10-dias",
+      "destination": "/es/tours/tour-sri-lanka-10-dias",
+      "permanent": true
+    },
+    {
+      "source": "/10-dni-sri-lanka",
+      "destination": "/pl/wycieczki/10-dni-sri-lanka",
+      "permanent": true
+    },
+    {
+      "source": "/10-dney-shri-lanka",
+      "destination": "/ru/tury/10-dney-shri-lanka",
       "permanent": true
     },
     {
@@ -212,36 +800,6 @@
     {
       "source": "/2-day-ella-yala-private-tour-sri-lanka",
       "destination": "/en/tours/2-day-ella-yala-safari",
-      "permanent": true
-    },
-    {
-      "source": "/4-day-sri-lanka-tour",
-      "destination": "/en/tours/4-day-sri-lanka-tour",
-      "permanent": true
-    },
-    {
-      "source": "/5-day-sri-lanka-tour",
-      "destination": "/en/tours/5-day-sri-lanka-tour",
-      "permanent": true
-    },
-    {
-      "source": "/6-day-sri-lanka-private-tour",
-      "destination": "/en/tours/6-day-sri-lanka-private-tour",
-      "permanent": true
-    },
-    {
-      "source": "/7-day-sri-lanka-tour",
-      "destination": "/en/tours/7-day-sri-lanka-tour",
-      "permanent": true
-    },
-    {
-      "source": "/8-day-sri-lanka-private-tour",
-      "destination": "/en/tours/8-day-sri-lanka-private-tour",
-      "permanent": true
-    },
-    {
-      "source": "/10-day-sri-lanka-tour",
-      "destination": "/en/tours/10-day-sri-lanka-tour",
       "permanent": true
     },
     {

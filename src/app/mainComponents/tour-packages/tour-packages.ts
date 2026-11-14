@@ -7,7 +7,7 @@ import {
   PLATFORM_ID,
   inject,
 } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslocoModule } from '@jsverse/transloco';
 import { Subscription } from 'rxjs';
@@ -43,6 +43,8 @@ export class TourPackages implements OnInit, OnDestroy {
   private readonly tourPrice = inject(TourPriceService);
   private readonly tourContent = inject(TourContentService);
   private readonly localizedRouter = inject(LocalizedRouterService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
   private readonly cdr = inject(ChangeDetectorRef);
   private sub?: Subscription;
 
@@ -50,6 +52,7 @@ export class TourPackages implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.homeLink = this.localizedRouter.commandsFor('home');
+    this.syncTabFromUrl();
 
     // Don't block catalog on geo lookup
     if (isPlatformBrowser(this.platformId)) {
@@ -76,6 +79,39 @@ export class TourPackages implements OnInit, OnDestroy {
 
   setTab(tab: 'multi' | 'day'): void {
     this.activeTab = tab;
+    if (!isPlatformBrowser(this.platformId)) return;
+    // Keep UI state in the hash only — never create ?type= URLs for Google to crawl.
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      fragment: tab,
+      queryParams: {},
+      replaceUrl: true,
+    });
+  }
+
+  /** Prefer #day/#multi; migrate legacy ?type= to clean canonical path. */
+  private syncTabFromUrl(): void {
+    const type = this.route.snapshot.queryParamMap.get('type');
+    const fragment = this.route.snapshot.fragment;
+    const tab =
+      type === 'day' || fragment === 'day'
+        ? 'day'
+        : type === 'multi' || fragment === 'multi'
+          ? 'multi'
+          : null;
+    if (tab) {
+      this.activeTab = tab;
+    }
+
+    if (!isPlatformBrowser(this.platformId)) return;
+    if (type === 'day' || type === 'multi') {
+      void this.router.navigate([], {
+        relativeTo: this.route,
+        queryParams: {},
+        fragment: tab || this.activeTab,
+        replaceUrl: true,
+      });
+    }
   }
 
   private async withPrices(tours: TourCatalogItem[]): Promise<TourCardVm[]> {

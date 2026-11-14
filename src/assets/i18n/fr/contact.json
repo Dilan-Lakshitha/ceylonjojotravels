@@ -30,5 +30,12 @@
   "messages.error": "Erreur lors de l'envoi. Veuillez réessayer plus tard.",
   "toast.success": "Message envoyé !",
   "toast.error": "Échec de l'envoi du message",
-  "form.sending": "Envoi..."
+  "form.sending": "Envoi...",
+  "body.intro": "Réservez un chauffeur guide privé au Sri Lanka, demandez une excursion d’une journée ou un circuit sur mesure avec hôtels. Nous répondons sur WhatsApp, téléphone et e mail en français et en anglais.",
+  "body.helpTitle": "Comment nous pouvons vous aider",
+  "body.help1": "Excursions privées à Galle, Kandy, Ella et Sigiriya",
+  "body.help2": "Circuits de plusieurs jours avec hôtels 4 étoiles et transferts aéroport",
+  "body.help3": "Itinéraires sur mesure pour couples, familles et petits groupes",
+  "body.help4": "Paiement sur place au Sri Lanka après confirmation écrite",
+  "body.response": "Réponse en général en quelques heures dans la journée. Pour une prise en charge le jour même, écrivez sur WhatsApp avec l’hôtel et l’heure souhaitée."
 }

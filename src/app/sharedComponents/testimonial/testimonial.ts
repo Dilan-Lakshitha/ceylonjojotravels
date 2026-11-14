@@ -20,8 +20,10 @@ export class Testimonial implements OnInit {
 
   ngOnInit(): void {
     const lang = this.localizedRouter.currentLang();
-    this.transloco.load(`common/${lang}`).subscribe();
     const safeLang: AppLang = isAppLang(lang) ? lang : 'en';
+    this.transloco.load(`common/${safeLang}`).subscribe();
+    this.transloco.load(`seo/${safeLang}`).subscribe();
+    this.transloco.load(`testimonials/${safeLang}`).subscribe();
     void this.seo.applyPageSeo({ routeId: 'testimonials', lang: safeLang });
   }
 }

@@ -116,6 +116,7 @@ export class HomePageComponent implements OnInit, OnDestroy {
     null;
 
   customItineraryLink = `${environment.travellaAppUrl}/company/travella/login`;
+  showPolishHomeBlock = false;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
@@ -127,6 +128,7 @@ export class HomePageComponent implements OnInit, OnDestroy {
     this.sigiriyaLink = this.localizedRouter.tourLinkCommands('sigiriya-day-tour');
 
     const lang = this.transloco.getActiveLang() || 'en';
+    this.showPolishHomeBlock = lang === 'pl';
     this.transloco.load(`common/${lang}`).subscribe();
     this.transloco.load(`home/${lang}`).subscribe();
     this.transloco.load(`about/${lang}`).subscribe();

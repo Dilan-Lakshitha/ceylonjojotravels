@@ -221,6 +221,26 @@ const STATIC_REDIRECTS = [
   { source: '/booking/:filecode', destination: '/en/booking/:filecode', permanent: true },
 ];
 
+/**
+ * GSC “Alternative page with proper canonical tag” for tours ?type=day|multi.
+ * Strip filter query params at the edge so Google only keeps clean tours URLs.
+ */
+function buildTourTypeQueryRedirects() {
+  const redirects = [];
+  for (const lang of langs) {
+    const seg = ROUTE_MAP.tours[lang];
+    for (const type of ['day', 'multi']) {
+      redirects.push({
+        source: `/${lang}/${seg}`,
+        has: [{ type: 'query', key: 'type', value: type }],
+        destination: `/${lang}/${seg}`,
+        permanent: true,
+      });
+    }
+  }
+  return redirects;
+}
+
 /** GSC “Duplicate without user-selected canonical” examples + legacy ids used as slugs. */
 const MALFORMED_TOUR_REDIRECTS = [
   {
@@ -243,7 +263,75 @@ const MALFORMED_TOUR_REDIRECTS = [
     destination: '/en/tours/2-day-ella-yala-safari',
     permanent: true,
   },
+  // GSC: Duplicate without user-selected canonical (spaced RU slug)
+  {
+    source: '/ru/tury/odnodnevnyy tur kandy',
+    destination: '/ru/tury/odnodnevnyy-tur-kandy',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy%20tur%20kandy',
+    destination: '/ru/tury/odnodnevnyy-tur-kandy',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy tur ella',
+    destination: '/ru/tury/odnodnevnyy-tur-ella',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy%20tur%20ella',
+    destination: '/ru/tury/odnodnevnyy-tur-ella',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy tur galle',
+    destination: '/ru/tury/odnodnevnyy-tur-galle',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy%20tur%20galle',
+    destination: '/ru/tury/odnodnevnyy-tur-galle',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy tur sigiriya',
+    destination: '/ru/tury/odnodnevnyy-tur-sigiriya',
+    permanent: true,
+  },
+  {
+    source: '/ru/tury/odnodnevnyy%20tur%20sigiriya',
+    destination: '/ru/tury/odnodnevnyy-tur-sigiriya',
+    permanent: true,
+  },
 ];
+
+/**
+ * Flat localized slugs without /{lang}/{segment}/ used to soft-serve the EN shell
+ * (GSC duplicate: /circuit-2-jours-ella-kandy). Redirect every localized slug
+ * at the site root to its correct language path.
+ */
+function buildRootLocalizedSlugRedirects() {
+  const redirects = [];
+  const seen = new Set();
+
+  for (const slugs of Object.values(TOUR_SLUG_MAP)) {
+    for (const lang of langs) {
+      const slug = slugs[lang];
+      if (!slug || seen.has(slug)) continue;
+      seen.add(slug);
+      // EN tour ids are already covered by buildCanonicalRedirects (`/${id}`).
+      // Also cover EN human slugs that differ from tour ids.
+      redirects.push({
+        source: `/${slug}`,
+        destination: `/${lang}/${ROUTE_MAP.tours[lang]}/${slug}`,
+        permanent: true,
+      });
+    }
+  }
+
+  return redirects;
+}
 
 function uniqueSegments(routeId) {
   return [...new Set(Object.values(ROUTE_MAP[routeId]))];
@@ -319,11 +407,31 @@ function buildCanonicalRedirects() {
   return redirects;
 }
 
-const redirects = [
+const redirectsRaw = [
   ...STATIC_REDIRECTS,
   ...MALFORMED_TOUR_REDIRECTS,
+  ...buildTourTypeQueryRedirects(),
+  ...buildRootLocalizedSlugRedirects(),
   ...buildCanonicalRedirects(),
 ];
+
+/** Keep first rule per source (+ optional host has) so root slug and tour-id rules do not clash. */
+function dedupeRedirects(list) {
+  const seen = new Set();
+  const out = [];
+  for (const rule of list) {
+    const host = Array.isArray(rule.has)
+      ? rule.has.map((h) => `${h.type}:${h.value}`).join('|')
+      : '';
+    const key = `${rule.source}::${host}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(rule);
+  }
+  return out;
+}
+
+const redirects = dedupeRedirects(redirectsRaw);
 
 let existingVercel = {};
 if (fs.existsSync(vercelPath)) {

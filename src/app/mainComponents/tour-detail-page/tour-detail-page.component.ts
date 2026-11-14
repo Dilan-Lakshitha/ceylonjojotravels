@@ -13,7 +13,7 @@ import {
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
-import { Subscription, catchError, combineLatest, from, of, switchMap } from 'rxjs';
+import { Subscription, catchError, combineLatest, firstValueFrom, from, of, switchMap } from 'rxjs';
 import {
   Activity,
   TourDetails,
@@ -231,6 +231,14 @@ export class TourDetailPageComponent implements OnInit, OnDestroy {
     lang: AppLang,
     tourId: TourId,
   ): Promise<void> {
+    // Ensure FAQ copy is in the page language (AEO), not the EN fallback shell.
+    try {
+      this.transloco.setActiveLang(lang);
+      await firstValueFrom(this.transloco.load(`common/${lang}`));
+    } catch {
+      /* keep going with whatever is already loaded */
+    }
+
     const meta = resolveTourCardMeta(tourId);
     const highlights =
       detail.highlights?.length ? detail.highlights : deriveHighlights(detail.itinerary);

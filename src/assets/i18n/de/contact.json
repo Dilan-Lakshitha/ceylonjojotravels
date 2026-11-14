@@ -30,5 +30,12 @@
   "messages.error": "Fehler beim Senden. Bitte später erneut versuchen.",
   "toast.success": "Nachricht gesendet!",
   "toast.error": "Nachricht konnte nicht gesendet werden",
-  "form.sending": "Wird gesendet..."
+  "form.sending": "Wird gesendet...",
+  "body.intro": "Buchen Sie einen privaten Chauffeur Guide in Sri Lanka, fragen Sie nach Tagesausflügen oder einem individuellen Mehrtagesprogramm mit Hotels. Wir antworten per WhatsApp, Telefon und E Mail auf Deutsch und Englisch.",
+  "body.helpTitle": "So können wir helfen",
+  "body.help1": "Private Tagesausflüge nach Galle, Kandy, Ella und Sigiriya",
+  "body.help2": "Mehrtagespakete mit 4 Sterne Hotels und Flughafentransfer",
+  "body.help3": "Individuelle Routen für Paare, Familien und kleine Gruppen",
+  "body.help4": "Zahlung vor Ort in Sri Lanka nach schriftlicher Bestätigung",
+  "body.response": "Antwort meist innerhalb weniger Stunden am Tag. Für Abholungen am selben Tag schreiben Sie auf WhatsApp mit Hotelname und Wunschstartzeit."
 }
