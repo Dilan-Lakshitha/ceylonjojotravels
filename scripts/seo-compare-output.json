@@ -1,0 +1,477 @@
+{
+  "cjCatalog": [
+    {
+      "id": "ella-day-tour",
+      "slug": "ella-day-tour",
+      "title": "Ella Day Tour | Private Driver Sri Lanka",
+      "metaDescription": "Private Ella day tour with hotel pickup: Nine Arch Bridge, Little Adam’s Peak, Ravana Falls and optional Udawalawe safari. Book by WhatsApp.",
+      "intro200": "Experience the beauty of Ella with one day full of adventure, culture, and relaxation."
+    },
+    {
+      "id": "galle-day-tour",
+      "slug": "galle-day-tour",
+      "title": "Galle Day Tour | Private Driver Sri Lanka",
+      "metaDescription": "Private Galle day tour from Colombo or your hotel: Dutch Fort, Bentota boat ride, tsunami memorial and moonstone mine.",
+      "intro200": "Enjoy a full day guided tour to Galle with scenic coastal attractions, cultural landmarks, and memorable experiences."
+    },
+    {
+      "id": "kandy-day-tour",
+      "slug": "kandy-day-tour",
+      "title": "Kandy Day Tour | Temple of the Tooth",
+      "metaDescription": "Private Kandy day tour: Temple of the Tooth, Peradeniya Botanical Garden and city highlights with a chauffeur guide.",
+      "intro200": "Experience the cultural heart of Sri Lanka with a full day guided tour to Kandy, including elephants, temples, tea, and scenic views."
+    },
+    {
+      "id": "sigiriya-day-tour",
+      "slug": "sigiriya-day-tour",
+      "title": "Sigiriya Day Tour | Lion Rock Private Driver",
+      "metaDescription": "Private Sigiriya day tour: climb Lion Rock or Pidurangala, Dambulla Cave Temple and optional Minneriya elephant safari.",
+      "intro200": "Discover Sri Lanka’s cultural and natural heritage on a full day tour to Sigiriya, including temples, rock climbing, and wildlife."
+    },
+    {
+      "id": "2-day-ella-yala-private-tour-sri-lanka",
+      "slug": "2-day-ella-yala-safari",
+      "title": "2 Day Ella & Yala Safari | Private Driver",
+      "metaDescription": "Ella highlights plus a Yala jeep safari on a 2 day private tour with 4 star hotels and a chauffeur guide.",
+      "intro200": "Discover Sri Lanka’s hill country and wildlife on this 2 day private tour featuring Ella’s scenic highlights and a thrilling Yala National Park safari, ending at the airport or your hotel."
+    },
+    {
+      "id": "2-day-ella-kandy-private-tour-sri-lanka",
+      "slug": "2-day-ella-kandy-private-tour",
+      "title": "2 Day Ella & Kandy Tour | Private Driver",
+      "metaDescription": "Two day private tour of Kandy and Ella with hotels, chauffeur guide and optional scenic hill country train.",
+      "intro200": "Discover Sri Lanka’s wildlife, scenic hill country and cultural heritage in this 2 day private tour ending at the airport or your hotel."
+    },
+    {
+      "id": "4-day-sri-lanka-tour",
+      "slug": "4-day-sri-lanka-tour",
+      "title": "4 Day Sri Lanka Tour | Private Driver & Hotels",
+      "metaDescription": "4 day private Sri Lanka itinerary with driver guide, cultural sites, Ella and a wildlife safari option. Hotels included.",
+      "intro200": "Explore Sri Lanka in 4 unforgettable days including Kandy cultural heritage, Ella hill country, Yala safari adventure and the stunning southern coastline."
+    },
+    {
+      "id": "5-day-sri-lanka-tour",
+      "slug": "5-day-sri-lanka-tour",
+      "title": "5 Day Sri Lanka Tour | Private Driver & Hotels",
+      "metaDescription": "5 day private tour: Sigiriya, Kandy, Ella, safari and beach time with hotels and a local chauffeur guide.",
+      "intro200": "Explore Sri Lanka in 5 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences."
+    },
+    {
+      "id": "6-day-sri-lanka-private-tour",
+      "slug": "6-day-sri-lanka-private-tour",
+      "title": "6 Day Sri Lanka Tour | Private Driver & Hotels",
+      "metaDescription": "Six day private Sri Lanka round tour with chauffeur guide, 4 star hotels, Yala safari and flexible beach time.",
+      "intro200": "Explore Sri Lanka in 6 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences."
+    },
+    {
+      "id": "7-day-sri-lanka-tour",
+      "slug": "7-day-sri-lanka-tour",
+      "title": "7 Day Sri Lanka Tour | Private Driver, Safari & Beach",
+      "metaDescription": "Book a 7 day Sri Lanka tour with private driver: Wilpattu safari, Sigiriya, Kandy, Ella, Galle and beach. 4 star hotels included. WhatsApp to reserve.",
+      "intro200": "Book this 7 day Sri Lanka tour with a private driver: Wilpattu safari, Anuradhapura, Sigiriya, Kandy, Ella, Galle and a southern beach stay. 4 star hotels included."
+    },
+    {
+      "id": "10-day-sri-lanka-tour",
+      "slug": "10-day-sri-lanka-tour",
+      "title": "10 Day Sri Lanka Tour | Private Driver Island Circuit",
+      "metaDescription": "10 day private Sri Lanka tour: cultural triangle, Kandy, Ella, safari and beaches with a driver guide and hotels.",
+      "intro200": "An unforgettable 10 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay."
+    },
+    {
+      "id": "8-day-sri-lanka-private-tour",
+      "slug": "8-day-sri-lanka-private-tour",
+      "title": "8 Day Sri Lanka Tour | Private Driver, Safari & Beach",
+      "metaDescription": "Eight day private round tour of Sri Lanka with a chauffeur guide, wildlife safari, Ella and the south coast beaches.",
+      "intro200": "An unforgettable 8 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay."
+    }
+  ],
+  "comparisons": [
+    {
+      "pageType": "tour detail",
+      "slug": "ella-day-tour",
+      "sdUrl": "https://www.sundowntours.com/ella-day-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "Ella Day Tour | Private Driver Sri Lanka",
+      "sdTitle": "Ella Day Tour with Private Driver | Nine Arch",
+      "cjMeta": "Private Ella day tour with hotel pickup: Nine Arch Bridge, Little Adam’s Peak, Ravana Falls and optional Udawalawe safari. Book by WhatsApp.",
+      "sdMeta": "Private Ella day tour: Nine Arch Bridge, Little Adams Peak and Ravana Falls with chauffeur. From $175 per person. Free quote. Payment later available.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 17.8,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 12.2,
+      "approxSimilarityFaqPct": 0.2,
+      "identicalSentences": [
+        {
+          "cj": "Visit the Udawalawe Elephant Orphanage to observe rescued elephants up close.",
+          "sd": "Visit the Udawalawe Elephant Orphanage to observe rescued elephants up close."
+        },
+        {
+          "cj": "Experience the natural splendor of Ravana Falls, one of the island’s most impressive waterfalls.",
+          "sd": "Experience the natural splendor of Ravana Falls, one of the island’s most impressive waterfalls."
+        },
+        {
+          "cj": "Hike up Little Adam’s Peak for stunning panoramic views, capturing the essence of Sri Lanka’s highlands.",
+          "sd": "Hike up Little Adam’s Peak for stunning panoramic views, capturing the essence of Sri Lanka’s highlands."
+        },
+        {
+          "cj": "Complete your adventure with a mini train ride through Ella’s picturesque landscapes, creating lasting memories of this enchanting journey.",
+          "sd": "Complete your adventure with a mini train ride through Ella’s picturesque landscapes, creating lasting memories of this enchanting journey."
+        },
+        {
+          "cj": "Board the train and experience breathtaking views of lush green tea plantations, mountains, viaducts, valleys etc.",
+          "sd": "Board the train and experience breathtaking views of lush green tea plantations, mountains, viaducts, valleys etc."
+        }
+      ],
+      "sdIntro200": "Ella Day Tour with Private Driver | Nine Arch Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages Destinatio"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "galle-day-tour",
+      "sdUrl": "https://www.sundowntours.com/galle-day-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "Galle Day Tour | Private Driver Sri Lanka",
+      "sdTitle": "Galle Day Tour with Private Driver | Dutch Fort",
+      "cjMeta": "Private Galle day tour from Colombo or your hotel: Dutch Fort, Bentota boat ride, tsunami memorial and moonstone mine.",
+      "sdMeta": "Private Galle day tour: Dutch Fort walls, lighthouse and south-coast stops with chauffeur. From $95 per person. Get a free quote. Payment later.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 11.5,
+      "approxSimilarityIntroPct": 0.4,
+      "approxSimilarityItineraryPct": 6.4,
+      "approxSimilarityFaqPct": 0.3,
+      "identicalSentences": [
+        {
+          "cj": "You will visit the famous Sea Turtle Hatchery, explore the historic Galle Dutch Fort,\nenjoy a relaxing Bentota River boat ride, and learn about Sri Lanka’s history at the\nTsunami Memorial and Moonstone Mine Centre.",
+          "sd": "You will visit the famous Sea Turtle Hatchery, explore the historic Galle Dutch Fort, enjoy a relaxing Bentota River boat ride, and learn about Sri Lanka’s history at the Tsunami Memorial and Moonstone Mine Centre."
+        },
+        {
+          "cj": "Ideal for couples, families, and small groups looking for a comfortable and enriching day tour.",
+          "sd": "Ideal for couples, families, and small groups looking for a comfortable and enriching day tour."
+        }
+      ],
+      "sdIntro200": "Galle Day Tour with Private Driver | Dutch Fort Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages Destinat"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "kandy-day-tour",
+      "sdUrl": "https://www.sundowntours.com/kandy-day-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "Kandy Day Tour | Temple of the Tooth",
+      "sdTitle": "Kandy Day Tour with Private Driver | Tooth Temple",
+      "cjMeta": "Private Kandy day tour: Temple of the Tooth, Peradeniya Botanical Garden and city highlights with a chauffeur guide.",
+      "sdMeta": "Private Kandy day tour: Temple of the Tooth, viewpoint and city highlights with chauffeur. From $125 per person. Get a free quote. Plan with confidence.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 11.1,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 6.5,
+      "approxSimilarityFaqPct": 0.2,
+      "identicalSentences": [
+        {
+          "cj": "Visit the Millennium Elephant Foundation or Pinnawala Elephant Orphanage,\n            explore the sacred Temple of the Tooth Relic, enjoy a tea factory and plantation visit,\n            relax by Kandy Lake and View Point, and optionally stop at a herbal and spice garden.",
+          "sd": "Visit the Millennium Elephant Foundation or Pinnawala Elephant Orphanage, explore the sacred Temple of the Tooth Relic, enjoy a tea factory and plantation visit, relax by Kandy Lake and View Point, and optionally stop at a herbal and spice garden."
+        },
+        {
+          "cj": "Perfect for travelers seeking culture, nature, and tradition in a single day.",
+          "sd": "Perfect for travelers seeking culture, nature, and tradition in a single day."
+        }
+      ],
+      "sdIntro200": "Kandy Day Tour with Private Driver | Tooth Temple Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages Destin"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "sigiriya-day-tour",
+      "sdUrl": "https://www.sundowntours.com/sigiriya-day-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "Sigiriya Day Tour | Lion Rock Private Driver",
+      "sdTitle": "Sigiriya Day Tour with Private Driver | Lion Rock",
+      "cjMeta": "Private Sigiriya day tour: climb Lion Rock or Pidurangala, Dambulla Cave Temple and optional Minneriya elephant safari.",
+      "sdMeta": "Private Sigiriya day: Lion Rock or Pidurangala, Dambulla caves and village life with chauffeur. From $133 per person. Get a free quote. Since 1992.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 10.8,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 6.5,
+      "approxSimilarityFaqPct": 0.2,
+      "identicalSentences": [
+        {
+          "cj": "Begin with a visit to the Golden Cave Temple in Dambulla, followed by climbing either\n    Sigiriya Rock Fortress or Pidurangala Rock for breathtaking views.",
+          "sd": "Begin with a visit to the Golden Cave Temple in Dambulla, followed by climbing either Sigiriya Rock Fortress or Pidurangala Rock for breathtaking views."
+        },
+        {
+          "cj": "End the day with an exciting wild elephant safari, making this tour ideal for nature\n    and history lovers.",
+          "sd": "End the day with an exciting wild elephant safari, making this tour ideal for nature and history lovers."
+        }
+      ],
+      "sdIntro200": "Sigiriya Day Tour with Private Driver | Lion Rock Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages Destin"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "2-day-ella-yala-safari",
+      "sdUrl": "https://www.sundowntours.com/2-day-ella-yala-safari",
+      "httpStatus": 500,
+      "sharedSlug": true,
+      "cjTitle": "2 Day Ella & Yala Safari | Private Driver",
+      "sdTitle": "500: INTERNAL_SERVER_ERROR",
+      "cjMeta": "Ella highlights plus a Yala jeep safari on a 2 day private tour with 4 star hotels and a chauffeur guide.",
+      "sdMeta": "",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 0,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 0,
+      "approxSimilarityFaqPct": 0,
+      "identicalSentences": [],
+      "sdIntro200": "500: INTERNAL_SERVER_ERROR This page is unavailable A function needed by this page temporarily failed. Reload page 500 FUNCTION_INVOCATION_FAILED sin1::p4d2m-1794650433487-eaf97bc8950c View Documentat"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "2-day-ella-kandy-private-tour",
+      "sdUrl": "https://www.sundowntours.com/2-day-ella-kandy-private-tour",
+      "httpStatus": 500,
+      "sharedSlug": true,
+      "cjTitle": "2 Day Ella & Kandy Tour | Private Driver",
+      "sdTitle": "500: INTERNAL_SERVER_ERROR",
+      "cjMeta": "Two day private tour of Kandy and Ella with hotels, chauffeur guide and optional scenic hill country train.",
+      "sdMeta": "",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 0,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 0,
+      "approxSimilarityFaqPct": 0,
+      "identicalSentences": [],
+      "sdIntro200": "500: INTERNAL_SERVER_ERROR This page is unavailable A function needed by this page temporarily failed. Reload page 500 FUNCTION_INVOCATION_FAILED sin1::gxrnw-1794650435184-8a17436805e9 View Documentat"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "4-day-sri-lanka-tour",
+      "sdUrl": "https://www.sundowntours.com/4-day-sri-lanka-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "4 Day Sri Lanka Tour | Private Driver & Hotels",
+      "sdTitle": "4-Day Private Sri Lanka Tour | Kandy, Ella &amp; Yala",
+      "cjMeta": "4 day private Sri Lanka itinerary with driver guide, cultural sites, Ella and a wildlife safari option. Hotels included.",
+      "sdMeta": "Kandy culture, Ella hills and Yala safari, then Galle or Bentota south coast. From $650 per person. Free cancel up to 14 days. Get a free quote.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 18.1,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 17.1,
+      "approxSimilarityFaqPct": 0.3,
+      "identicalSentences": [
+        {
+          "cj": "Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop.",
+          "sd": "Visit the sacred city of Kandy, experience the breathtaking hill country of Ella, enjoy a thrilling safari in Yala National Park and explore the historic Galle Fort before your airport drop."
+        },
+        {
+          "cj": "Observe elephants bathing in the river and learn about conservation efforts.",
+          "sd": "Observe elephants bathing in the river and learn about conservation efforts."
+        }
+      ],
+      "sdIntro200": "4-Day Private Sri Lanka Tour | Kandy, Ella &amp; Yala Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages De"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "5-day-sri-lanka-tour",
+      "sdUrl": "https://www.sundowntours.com/5-day-sri-lanka-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "5 Day Sri Lanka Tour | Private Driver & Hotels",
+      "sdTitle": "5-Day Private Sri Lanka Tour | Tea Country &amp; Coast",
+      "cjMeta": "5 day private tour: Sigiriya, Kandy, Ella, safari and beach time with hotels and a local chauffeur guide.",
+      "sdMeta": "Sigiriya, Kandy, Nuwara Eliya tea country, Ella and a south-coast finish with Madu River. 4-star hotels. From $700 per person. Get a free quote.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 24.5,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 22.2,
+      "approxSimilarityFaqPct": 0.5,
+      "identicalSentences": [
+        {
+          "cj": "Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast.",
+          "sd": "Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast."
+        },
+        {
+          "cj": "With private transportation, experienced English speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation, perfect for couples, families and small groups.",
+          "sd": "With private transportation, experienced English speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation perfect for couples, families and small groups."
+        },
+        {
+          "cj": "Observe elephants up close and, depending on timing, witness their memorable river bathing session.",
+          "sd": "Observe elephants up close and, depending on timing, witness their memorable river bathing session."
+        },
+        {
+          "cj": "Spot elephants, deer, buffalo and diverse bird species.",
+          "sd": "Spot elephants, deer, buffalo and diverse bird species."
+        },
+        {
+          "cj": "Explore ancient frescoes, the Mirror Wall and panoramic summit views.",
+          "sd": "Explore ancient frescoes, the Mirror Wall and panoramic summit views."
+        },
+        {
+          "cj": "Witness traditional rituals and admire the temple’s beautiful Kandyan architecture.",
+          "sd": "Witness traditional rituals and admire the temple’s beautiful Kandyan architecture."
+        },
+        {
+          "cj": "Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.",
+          "sd": "Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country."
+        },
+        {
+          "cj": "The glorious Nine Arch Bridge between Ella and Demodara station is one of the engineering marvels in the early 20th century.",
+          "sd": "The glorious Nine Arch Bridge between Ella and Demodara station is one of the engineering marvels in the early 20th century."
+        }
+      ],
+      "sdIntro200": "5-Day Private Sri Lanka Tour | Tea Country &amp; Coast Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages D"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "6-day-sri-lanka-private-tour",
+      "sdUrl": "https://www.sundowntours.com/6-day-sri-lanka-private-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "6 Day Sri Lanka Tour | Private Driver & Hotels",
+      "sdTitle": "6-Day Private Sri Lanka Tour | Yala Safari &amp; Beach",
+      "cjMeta": "Six day private Sri Lanka round tour with chauffeur guide, 4 star hotels, Yala safari and flexible beach time.",
+      "sdMeta": "Sigiriya, Kandy, tea hills, Yala safari and south-west beach time with 4-star hotels. From $750 per person. Free cancel up to 14 days. Get a free quote.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 2.1,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 2.1,
+      "approxSimilarityFaqPct": 0.5,
+      "identicalSentences": [
+        {
+          "cj": "Discover local cinnamon cultivation and diverse wetland wildlife.",
+          "sd": "Discover local cinnamon cultivation and diverse wetland wildlife."
+        }
+      ],
+      "sdIntro200": "6-Day Private Sri Lanka Tour | Yala Safari &amp; Beach Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages D"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "7-day-sri-lanka-tour",
+      "sdUrl": "https://www.sundowntours.com/7-day-sri-lanka-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "7 Day Sri Lanka Tour | Private Driver, Safari & Beach",
+      "sdTitle": "7-Day Private Sri Lanka Tour | Wilpattu &amp; Mirissa",
+      "cjMeta": "Book a 7 day Sri Lanka tour with private driver: Wilpattu safari, Sigiriya, Kandy, Ella, Galle and beach. 4 star hotels included. WhatsApp to reserve.",
+      "sdMeta": "Wilpattu safari, Sigiriya, Kandy, Ella and Mirissa beach with optional whale watching. 4-star hotels. From $788 per person. Get a free quote.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 2.8,
+      "approxSimilarityIntroPct": 0,
+      "approxSimilarityItineraryPct": 2.9,
+      "approxSimilarityFaqPct": 0,
+      "identicalSentences": [
+        {
+          "cj": "Spot leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife.",
+          "sd": "Spot leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife."
+        },
+        {
+          "cj": "Learn about Sri Lanka’s marine conservation efforts, observe baby turtles in hatchery pools and understand how rescued turtles are released back into the Indian Ocean.",
+          "sd": "Learn about Sri Lanka’s marine conservation efforts, observe baby turtles in hatchery pools and understand how rescued turtles are released back into the Indian Ocean."
+        },
+        {
+          "cj": "Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems.",
+          "sd": "Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems."
+        }
+      ],
+      "sdIntro200": "7-Day Private Sri Lanka Tour | Wilpattu &amp; Mirissa Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages De"
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "8-day-sri-lanka-private-tour",
+      "sdUrl": "https://www.sundowntours.com/8-day-sri-lanka-private-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "8 Day Sri Lanka Tour | Private Driver, Safari & Beach",
+      "sdTitle": "8-Day Private Sri Lanka Tour | Yala &amp; Mirissa Beach",
+      "cjMeta": "Eight day private round tour of Sri Lanka with a chauffeur guide, wildlife safari, Ella and the south coast beaches.",
+      "sdMeta": "Pidurangala, Sigiriya, Kandy, tea country, Ella, Yala safari and Mirissa beach nights. From $995 per person. Free cancel up to 14 days. Get a free quote.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 1.8,
+      "approxSimilarityIntroPct": 0.4,
+      "approxSimilarityItineraryPct": 0.6,
+      "approxSimilarityFaqPct": 0.2,
+      "identicalSentences": [
+        {
+          "cj": "This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation.",
+          "sd": "This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation."
+        }
+      ],
+      "sdIntro200": "8-Day Private Sri Lanka Tour | Yala &amp; Mirissa Beach Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages "
+    },
+    {
+      "pageType": "tour detail",
+      "slug": "10-day-sri-lanka-tour",
+      "sdUrl": "https://www.sundowntours.com/10-day-sri-lanka-tour",
+      "httpStatus": 200,
+      "sharedSlug": true,
+      "cjTitle": "10 Day Sri Lanka Tour | Private Driver Island Circuit",
+      "sdTitle": "10-Day Private Sri Lanka Tour | Full Island Circuit",
+      "cjMeta": "10 day private Sri Lanka tour: cultural triangle, Kandy, Ella, safari and beaches with a driver guide and hotels.",
+      "sdMeta": "Full-island highlights: Wilpattu, Anuradhapura, Sigiriya, Kandy, Ella and Hikkaduwa beach days. From $1100 per person. Get a free quote today.",
+      "titleExactOrNear": false,
+      "metaExact": false,
+      "approxSimilarityFullPct": 20.8,
+      "approxSimilarityIntroPct": 0.4,
+      "approxSimilarityItineraryPct": 20.4,
+      "approxSimilarityFaqPct": 0.3,
+      "identicalSentences": [
+        {
+          "cj": "This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation.",
+          "sd": "This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation."
+        },
+        {
+          "cj": "Spot leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife.",
+          "sd": "Spot leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife."
+        },
+        {
+          "cj": "Learn about Sri Lanka’s marine conservation efforts, observe baby turtles in hatchery pools and understand how rescued turtles are released back into the Indian Ocean.",
+          "sd": "Learn about Sri Lanka’s marine conservation efforts, observe baby turtles in hatchery pools and understand how rescued turtles are released back into the Indian Ocean."
+        },
+        {
+          "cj": "Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems.",
+          "sd": "Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems."
+        }
+      ],
+      "sdIntro200": "10-Day Private Sri Lanka Tour | Full Island Circuit Sundown Tours Sri Lanka sundowntoursrilanka@gmail.com | +94 70 629 3585 English Skip to main content Sundown Tours Sri Lanka Home Tour Packages Dest"
+    }
+  ],
+  "extra": [
+    {
+      "pageType": "homepage",
+      "sdUrl": "https://www.sundowntours.com/",
+      "httpStatus": 200,
+      "cjTitle": "Private Driver Sri Lanka | Day Tours & Tour Packages",
+      "sdTitle": "Private Sri Lanka Tours with Driver | 5-10 Day Itineraries",
+      "cjMeta": "Hire a private chauffeur guide in Sri Lanka. Choose a day tour or a multi day private itinerary with hotels. WhatsApp to book.",
+      "sdMeta": "Private chauffeur Sri Lanka tours for European travellers. Choose 5-10 day itineraries with a local driver. Licensed since 1992. Get a free quote.",
+      "sharedSlug": "n/a",
+      "approxSimilarityPct": 0,
+      "titleMatch": false,
+      "metaMatch": false
+    },
+    {
+      "pageType": "tours list",
+      "sdUrl": "https://www.sundowntours.com/sri-lanka-private-tour",
+      "httpStatus": 200,
+      "cjTitle": "Sri Lanka Private Tours | Day Trips & 4–10 Day Packages",
+      "sdTitle": "Sri Lanka Private Tour Packages | 4-10 Days with Driver",
+      "cjMeta": "Book private Sri Lanka tours: Galle, Kandy, Ella, Sigiriya day trips, Yala safari and 4 to 10 day packages with hotels and a driver guide. Pay later option.",
+      "sdMeta": "Compare private Sri Lanka tour packages from 4 to 10 days with chauffeur guide, safari and beach time. Tailor-made, not group coaches. Get a free quote.",
+      "sharedSlug": "partial (SD: sri-lanka-private-tour)",
+      "approxSimilarityPct": 0.8,
+      "titleMatch": false,
+      "metaMatch": false
+    }
+  ],
+  "errors": []
+}

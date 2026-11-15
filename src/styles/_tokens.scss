@@ -1,0 +1,152 @@
+// Brand design tokens — Sunset and Golden Coast (single source).
+// Prefer var(--token) in component CSS; SCSS vars are for Bootstrap mapping only.
+
+$color-midnight: #0b2438;
+$color-navy: #14395a;
+$color-amber: #d4894f;
+$color-amber-hover: #bf7439;
+$color-amber-deep: #b8692f;
+$color-gold: #e8b878;
+$color-cream: #f3e9da;
+$color-band: #f8f1e6;
+$color-bg: #ffffff;
+$color-surface: #ffffff;
+$color-text: #0f2236;
+$color-text-muted: #5b6b78;
+$color-border: #e8ddcb;
+$color-success: #2f7d5b;
+$color-whatsapp: #25d366;
+$color-cta: #d4894f;
+$color-cta-hover: #bf7439;
+$color-cta-text: #0f2236;
+$color-topbar-solid: #0b2438;
+$color-nav-pill: rgba(11, 36, 56, 0.72);
+$color-cta-border: rgba(15, 34, 54, 0.15);
+
+/* Legacy aliases → sunset coast (no teal / purple / red values) */
+$color-primary-dark: $color-midnight;
+$color-primary: $color-navy;
+$color-primary-mid: $color-navy;
+$color-accent: $color-cta;
+$color-accent-hover: $color-cta-hover;
+$color-copper: $color-amber-deep;
+$color-highlight: $color-amber;
+$color-primary-bright: $color-gold;
+$color-section-aqua: $color-band;
+$color-sky: $color-navy;
+$color-teal: $color-navy;
+$color-teal-mid: $color-navy;
+$color-aqua: $color-gold;
+$color-grey: $color-border;
+$color-purple: $color-navy;
+$color-mauve: $color-navy;
+$color-rose: $color-cream;
+$color-peach: $color-gold;
+$color-burgundy: $color-amber-deep;
+$color-crimson: $color-amber;
+
+$radius-card: 12px;
+$radius-pill: 999px;
+
+$shadow-soft: 0 8px 24px rgba(11, 36, 56, 0.08);
+$shadow-header: 0 4px 18px rgba(11, 36, 56, 0.22);
+
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 3rem;
+$space-8: 4rem;
+
+$font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+$font-body: 'Poppins', system-ui, sans-serif;
+
+:root {
+  --color-midnight: #{$color-midnight};
+  --color-navy: #{$color-navy};
+  --color-amber: #{$color-amber};
+  --color-amber-hover: #{$color-amber-hover};
+  --color-amber-deep: #{$color-amber-deep};
+  --color-gold: #{$color-gold};
+  --color-cream: #{$color-cream};
+  --color-band: #{$color-band};
+  --color-bg: #{$color-bg};
+  --color-surface: #{$color-surface};
+  --color-text: #{$color-text};
+  --color-text-muted: #{$color-text-muted};
+  --color-border: #{$color-border};
+  --color-success: #{$color-success};
+  --color-whatsapp: #{$color-whatsapp};
+  --color-cta: #{$color-cta};
+  --color-cta-hover: #{$color-cta-hover};
+  --color-cta-text: #{$color-cta-text};
+  --color-cta-border: #{$color-cta-border};
+  --color-topbar-solid: #{$color-topbar-solid};
+  --color-nav-pill: #{$color-nav-pill};
+
+  /* Legacy aliases used by components */
+  --color-teal: #{$color-navy};
+  --color-teal-mid: #{$color-navy};
+  --color-aqua: #{$color-gold};
+  --color-grey: #{$color-border};
+  --color-purple: #{$color-navy};
+  --color-mauve: #{$color-navy};
+  --color-rose: #{$color-cream};
+  --color-peach: #{$color-gold};
+  --color-burgundy: #{$color-amber-deep};
+  --color-crimson: #{$color-amber};
+  --color-primary: #{$color-navy};
+  --color-primary-dark: #{$color-midnight};
+  --color-primary-mid: #{$color-navy};
+  --color-accent: #{$color-cta};
+  --color-accent-hover: #{$color-cta-hover};
+  --color-accent-on-dark: #ffffff;
+  --color-copper: #{$color-amber-deep};
+  --color-highlight: #{$color-amber};
+  --color-primary-bright: #{$color-gold};
+  --color-sky: #{$color-navy};
+  --color-section-aqua: #{$color-band};
+
+  --gradient-topbar: linear-gradient(90deg, #{$color-midnight} 0%, #{$color-navy} 100%);
+  --gradient-header: linear-gradient(90deg, #{$color-navy} 0%, #{$color-amber-deep} 100%);
+  --gradient-nav: linear-gradient(
+    100deg,
+    #{$color-midnight} 0%,
+    #{$color-navy} 45%,
+    #{$color-amber-deep} 72%,
+    #{$color-gold} 100%
+  );
+  --gradient-hero-overlay: linear-gradient(
+    to top,
+    rgba(11, 36, 56, 0.78) 0%,
+    rgba(11, 36, 56, 0.42) 38%,
+    rgba(11, 36, 56, 0.16) 68%,
+    rgba(11, 36, 56, 0.06) 100%
+  );
+  --gradient-hero-copy-shade: radial-gradient(
+    ellipse 72% 68% at 50% 62%,
+    rgba(11, 36, 56, 0.78) 0%,
+    rgba(11, 36, 56, 0.42) 42%,
+    rgba(11, 36, 56, 0) 74%
+  );
+
+  --radius-card: #{$radius-card};
+  --radius-pill: #{$radius-pill};
+
+  --shadow-soft: #{$shadow-soft};
+  --shadow-header: #{$shadow-header};
+
+  --space-1: #{$space-1};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+  --space-5: #{$space-5};
+  --space-6: #{$space-6};
+  --space-7: #{$space-7};
+  --space-8: #{$space-8};
+
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+}

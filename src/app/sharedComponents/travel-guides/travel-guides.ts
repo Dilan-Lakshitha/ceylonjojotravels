@@ -24,8 +24,10 @@ export class TravelGuides implements OnInit {
   homeLink: any[] = ['/', 'en'];
   toursLink: any[] = ['/', 'en', 'tours'];
   contactLink: any[] = ['/', 'en', 'contact'];
+  bestTimeLink: any[] = ['/', 'en', 'travel-guides', 'best-time-to-visit-sri-lanka'];
   homeLabel = 'Home';
   showSpanishExtra = false;
+  showBestTimeLink = false;
 
   readonly guideIds: GuideId[] = ['danula', 'dilan', 'samith', 'yohan'];
   readonly whyIds = [1, 2, 3, 4] as const;
@@ -46,6 +48,11 @@ export class TravelGuides implements OnInit {
     this.homeLink = this.localizedRouter.commandsFor('home');
     this.toursLink = this.localizedRouter.commandsFor('tours');
     this.contactLink = this.localizedRouter.commandsFor('contact');
+    this.bestTimeLink = this.localizedRouter.commandsFor('guides', {
+      guideId: 'best-time-to-visit-sri-lanka',
+    });
+    // Hidden until GUIDE_APPROVED flips true (and then EN first until translated).
+    this.showBestTimeLink = false;
 
     this.transloco.load(`common/${safeLang}`).subscribe(() => {
       this.homeLabel = this.transloco.translate('nav.home', {}, 'common') || 'Home';

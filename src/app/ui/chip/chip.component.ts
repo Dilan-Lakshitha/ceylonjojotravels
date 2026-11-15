@@ -21,7 +21,7 @@ import { Component, Input } from '@angular/core';
         padding: 0.3rem 0.65rem;
         border-radius: 999px;
         background: #f1f5f9;
-        color: #023a2c;
+        color: var(--color-primary);
         font-size: 0.75rem;
         font-weight: 600;
         line-height: 1.2;
@@ -30,7 +30,7 @@ import { Component, Input } from '@angular/core';
         text-overflow: ellipsis;
       }
       .ui-chip--accent {
-        background: #023a2c;
+        background: var(--color-primary);
         color: #fff;
       }
       .ui-chip--muted {

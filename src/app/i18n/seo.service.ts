@@ -6,6 +6,7 @@ import { AVAILABLE_LANGS, AppLang } from './language.constants';
 import { LocalizedRouterService } from './localized-router.service';
 import { RouteId } from './route-map';
 import { TourId } from './tour-slug-map';
+import { GuideId, isGuideReady } from './guide-slug-map';
 
 const JSON_LD_ATTR = 'data-cj-jsonld';
 
@@ -29,6 +30,118 @@ export class SeoService {
   private readonly localizedRouter = inject(LocalizedRouterService);
   private readonly document = inject(DOCUMENT);
 
+  async applyGuideArticleSeo(options: {
+    lang: AppLang;
+    guideId: GuideId;
+    title: string;
+    description: string;
+    faq?: Array<{ question: string; answer: string }>;
+    lastUpdated?: string;
+  }): Promise<void> {
+    const { lang, guideId, title, description, faq, lastUpdated } = options;
+
+    try {
+      await firstValueFrom(this.transloco.load(`seo/${lang}`));
+      await firstValueFrom(this.transloco.load(`common/${lang}`));
+    } catch {
+      /* ignore */
+    }
+
+    this.title.setTitle(title);
+    this.meta.updateTag({ name: 'description', content: description });
+    this.meta.updateTag({ property: 'og:title', content: title });
+    this.meta.updateTag({ property: 'og:description', content: description });
+    this.meta.updateTag({ property: 'og:type', content: 'article' });
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.meta.updateTag({ name: 'twitter:title', content: title });
+    this.meta.updateTag({ name: 'twitter:description', content: description });
+
+    const canonical = this.localizedRouter.absoluteUrlFor('guides', { lang, guideId });
+    this.meta.updateTag({ property: 'og:url', content: canonical });
+    this.meta.updateTag({ property: 'og:locale', content: this.ogLocale(lang) });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Ceylon Jojo Travels' });
+    this.setOgLocaleAlternates(lang);
+    const DEFAULT_OG = 'https://ceylonjojotravels.com/assets/images/brand/og-default.png';
+    this.meta.updateTag({ property: 'og:image', content: DEFAULT_OG });
+    this.meta.updateTag({ name: 'twitter:image', content: DEFAULT_OG });
+    this.meta.updateTag({ name: 'twitter:site', content: '@ceylon_jojo_travels' });
+    this.setCanonical(canonical);
+    this.setHtmlLang(lang);
+    this.setGuideHreflang(guideId);
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+
+    this.clearJsonLd();
+    const orgId = 'https://ceylonjojotravels.com/#organization';
+    const websiteId = 'https://ceylonjojotravels.com/#website';
+    this.upsertJsonLd('organization', {
+      '@context': 'https://schema.org',
+      '@type': 'TravelAgency',
+      '@id': orgId,
+      name: 'Ceylon Jojo Travels',
+      url: 'https://ceylonjojotravels.com',
+    });
+    this.upsertJsonLd('website', {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': websiteId,
+      url: 'https://ceylonjojotravels.com',
+      name: 'Ceylon Jojo Travels',
+      publisher: { '@id': orgId },
+    });
+
+    const guidesName =
+      this.transloco.translate('nav.guides', {}, 'common') || 'Travel guides';
+    const homeName = this.transloco.translate('nav.home', {}, 'common') || 'Home';
+    this.upsertJsonLd('breadcrumb', {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: homeName,
+          item: this.localizedRouter.absoluteUrlFor('home', { lang }),
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: guidesName,
+          item: this.localizedRouter.absoluteUrlFor('guides', { lang }),
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+          item: canonical,
+        },
+      ],
+    });
+
+    this.upsertJsonLd('article', {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      dateModified: lastUpdated || undefined,
+      mainEntityOfPage: canonical,
+      author: { '@id': orgId },
+      publisher: { '@id': orgId },
+      inLanguage: lang,
+    });
+
+    if (faq?.length) {
+      this.upsertJsonLd('faq', {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faq.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      });
+    }
+  }
+
   async applyPageSeo(options: {
     routeId: RouteId;
     lang: AppLang;
@@ -50,7 +163,7 @@ export class SeoService {
     const mappedTourTitle = tourId ? this.readSeoKey(`tour.${tourId}`, 'title', lang) : '';
     const mappedTourDescription = tourId ? this.readSeoKey(`tour.${tourId}`, 'description', lang) : '';
     const pageTitle =
-      mappedTourTitle || tourTitle || this.readSeoKey(routeId, 'title', lang) || 'CEYLON JOJO TRAVElS';
+      mappedTourTitle || tourTitle || this.readSeoKey(routeId, 'title', lang) || 'Ceylon Jojo Travels';
     const pageDescription =
       mappedTourDescription || tourDescription || this.readSeoKey(routeId, 'description', lang) || '';
 
@@ -71,9 +184,9 @@ export class SeoService {
 
     this.meta.updateTag({ property: 'og:url', content: canonical });
     this.meta.updateTag({ property: 'og:locale', content: this.ogLocale(lang) });
-    this.meta.updateTag({ property: 'og:site_name', content: 'CEYLON JOJO TRAVElS' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Ceylon Jojo Travels' });
     this.setOgLocaleAlternates(lang);
-    const DEFAULT_OG = 'https://ceylonjojotravels.com/assets/img/package-2.jpg';
+    const DEFAULT_OG = 'https://ceylonjojotravels.com/assets/images/brand/og-default.png';
     const imageSrc = tourJsonLd?.image
       ? tourJsonLd.image.startsWith('http')
         ? tourJsonLd.image
@@ -104,7 +217,7 @@ export class SeoService {
 
   /** Soft-404 / unknown paths: keep out of the index. */
   applyNotFoundSeo(): void {
-    this.title.setTitle('Page not found | CEYLON JOJO TRAVElS');
+    this.title.setTitle('Page not found | Ceylon Jojo Travels');
     this.meta.updateTag({
       name: 'description',
       content: 'This page does not exist on Ceylon JOJO Travels.',
@@ -133,9 +246,9 @@ export class SeoService {
       '@context': 'https://schema.org',
       '@type': 'TravelAgency',
       '@id': orgId,
-      name: 'CEYLON JOJO TRAVElS',
+      name: 'Ceylon Jojo Travels',
       url: 'https://ceylonjojotravels.com',
-      logo: 'https://ceylonjojotravels.com/assets/img/logo.png',
+      logo: 'https://ceylonjojotravels.com/assets/images/brand/logo-112.png',
       email: 'ceylonjojotravels@gmail.com',
       telephone: '+447375612946',
       knowsLanguage: AVAILABLE_LANGS,
@@ -162,14 +275,10 @@ export class SeoService {
       '@type': 'WebSite',
       '@id': websiteId,
       url: 'https://ceylonjojotravels.com',
-      name: 'CEYLON JOJO TRAVElS',
+      name: 'Ceylon Jojo Travels',
       publisher: { '@id': orgId },
       inLanguage: AVAILABLE_LANGS,
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: 'https://ceylonjojotravels.com/en/tours?q={search_term_string}',
-        'query-input': 'required name=search_term_string',
-      },
+      // No SearchAction with ?q= — that invents filter URLs Google discovers.
     });
 
     const crumbs = this.buildBreadcrumbs(opts.routeId, opts.lang, opts.tourId, opts.pageTitle);
@@ -201,6 +310,8 @@ export class SeoService {
     }
 
     if (opts.routeId === 'testimonials') {
+      // Do not emit AggregateRating here — review counts must match visible,
+      // verified data (TripAdvisor). Fabricated reviewCount triggers rich-result issues.
       this.upsertJsonLd('testimonials', {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
@@ -209,13 +320,6 @@ export class SeoService {
         url: opts.canonical,
         isPartOf: { '@id': websiteId },
         about: { '@id': orgId },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: 5,
-          reviewCount: 50,
-          bestRating: 5,
-          worstRating: 1,
-        },
       });
     }
 
@@ -408,6 +512,37 @@ export class SeoService {
       'href',
       this.localizedRouter.absoluteUrlFor(routeId, { lang: 'en', tourId, filecode }),
     );
+    this.document.head.appendChild(xDefault);
+  }
+
+  /** Only emit hreflang for locales that have a ready guide translation. */
+  private setGuideHreflang(guideId: GuideId): void {
+    this.document.querySelectorAll("link[rel='alternate'][hreflang]").forEach((el) => el.remove());
+
+    for (const lang of AVAILABLE_LANGS) {
+      if (!isGuideReady(guideId, lang)) continue;
+      const href = this.localizedRouter.absoluteUrlFor('guides', { lang, guideId });
+      const link = this.document.createElement('link');
+      link.setAttribute('rel', 'alternate');
+      link.setAttribute('hreflang', lang);
+      link.setAttribute('href', href);
+      this.document.head.appendChild(link);
+    }
+
+    const enHref = this.localizedRouter.absoluteUrlFor('guides', {
+      lang: 'en',
+      guideId,
+    });
+    const enGb = this.document.createElement('link');
+    enGb.setAttribute('rel', 'alternate');
+    enGb.setAttribute('hreflang', 'en-GB');
+    enGb.setAttribute('href', enHref);
+    this.document.head.appendChild(enGb);
+
+    const xDefault = this.document.createElement('link');
+    xDefault.setAttribute('rel', 'alternate');
+    xDefault.setAttribute('hreflang', 'x-default');
+    xDefault.setAttribute('href', enHref);
     this.document.head.appendChild(xDefault);
   }
 

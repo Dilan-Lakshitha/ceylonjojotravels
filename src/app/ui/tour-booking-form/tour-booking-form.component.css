@@ -12,7 +12,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--color-text);
   letter-spacing: -0.015em;
 }
 
@@ -22,8 +22,8 @@
   gap: 0.15rem;
   padding: 0.65rem 0.75rem;
   border-radius: 10px;
-  background: #f3f6f4;
-  border: 1px solid #e6ebe8;
+  background: var(--color-band);
+  border: 1px solid var(--color-border);
   margin-bottom: 0.15rem;
 }
 
@@ -32,7 +32,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #94a3b8;
+  color: var(--color-text-muted);
 }
 
 .tbf__price-main {
@@ -45,7 +45,7 @@
 .tbf__amount {
   font-size: 1.65rem;
   font-weight: 800;
-  color: #023a2c;
+  color: var(--color-primary);
   line-height: 1;
   letter-spacing: -0.02em;
 }
@@ -53,34 +53,34 @@
 .tbf__unit {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #64748b;
+  color: var(--color-text-muted);
 }
 
 .tbf__based {
   margin: 0;
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--color-text-muted);
 }
 
 .tbf__total-line {
   margin: 0.25rem 0 0;
   padding-top: 0.35rem;
-  border-top: 1px solid #e6ebe8;
+  border-top: 1px solid var(--color-border);
   font-size: 0.8125rem;
-  color: #334155;
+  color: var(--color-text);
   line-height: 1.35;
 }
 
 .tbf__total-line strong {
-  color: #0f172a;
+  color: var(--color-text);
   font-weight: 800;
 }
 
 .tbf__notice {
   padding: 0.45rem 0.6rem;
   border-radius: 8px;
-  background: #eff6ff;
-  color: #1e3a8a;
+  background: var(--color-band);
+  color: var(--color-primary-dark);
   font-size: 0.75rem;
   line-height: 1.35;
 }
@@ -106,7 +106,7 @@
 .tbf__field label {
   font-size: 0.65rem;
   font-weight: 600;
-  color: #475569;
+  color: var(--color-text-muted);
   margin: 0;
 }
 
@@ -121,8 +121,8 @@
 
 .tbf__field .form-control:focus,
 .tbf__field .form-select:focus {
-  border-color: #023a2c;
-  box-shadow: 0 0 0 2px rgba(2, 58, 44, 0.18);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(11, 36, 56, 0.18);
   outline: none;
 }
 
@@ -139,14 +139,14 @@
 }
 
 .tbf__hint {
-  color: #059669;
+  color: var(--color-success);
   font-size: 0.65rem;
 }
 
 .tbf__pay-note {
   margin: 0.05rem 0 0;
   font-size: 0.7rem;
-  color: #64748b;
+  color: var(--color-text-muted);
   line-height: 1.3;
 }
 
@@ -158,10 +158,10 @@
   width: 100%;
   height: 42px;
   margin-top: 0.15rem;
-  border: 0;
+  border: 1px solid rgba(11, 36, 56, 0.12);
   border-radius: 10px;
-  background: #023a2c;
-  color: #fff;
+  background: var(--color-cta);
+  color: var(--color-cta-text);
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
@@ -169,7 +169,7 @@
 }
 
 .tbf__submit:focus-visible {
-  outline: 2px solid #023a2c;
+  outline: 2px solid var(--color-navy);
   outline-offset: 2px;
 }
 
@@ -179,7 +179,8 @@
 }
 
 .tbf__submit:hover:not(:disabled) {
-  background: #03503d;
+  background: var(--color-cta-hover);
+  color: var(--color-cta-text);
   transform: translateY(-1px);
 }
 

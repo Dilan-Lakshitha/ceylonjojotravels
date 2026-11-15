@@ -168,7 +168,7 @@ app.post("/send-contact-email", async (req, res) => {
     ];
 
     await transporter.sendMail({
-      from: `"CEYLON JOJO TRAVElS Contact" <${emailUser}>`,
+      from: `"Ceylon Jojo Travels Contact" <${emailUser}>`,
       replyTo: email,
       to: adminEmails,
       subject: `New Contact Message from ${name}`,
@@ -185,7 +185,7 @@ app.post("/send-contact-email", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: `"CEYLON JOJO TRAVElS" <${emailUser}>`,
+      from: `"Ceylon Jojo Travels" <${emailUser}>`,
       to: email,
       subject: `We received your message, ${name}`,
       html: `
@@ -193,7 +193,7 @@ app.post("/send-contact-email", async (req, res) => {
           <h2>Thank you for contacting us, ${name}!</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p><strong>Your Message:</strong> ${message}</p>
-          <p>Best regards,<br/>CEYLON JOJO TRAVElS Team</p>
+          <p>Best regards,<br/>Ceylon Jojo Travels Team</p>
         </div>
       `,
     });

@@ -5,11 +5,19 @@ import { TranslocoService } from '@jsverse/transloco';
 import { AppLang, DEFAULT_LANG, isAppLang } from './language.constants';
 import { RouteId, ROUTE_MAP, resolveRouteIdFromSegment, segmentFor } from './route-map';
 import { resolveTourIdFromSlug, slugForTour, TourId, TOUR_SLUG_MAP } from './tour-slug-map';
+import {
+  enGuidePath,
+  GuideId,
+  isGuideReady,
+  resolveGuideIdFromSlug,
+  slugForGuide,
+} from './guide-slug-map';
 
 export interface ResolvedLocation {
   lang: AppLang;
   routeId: RouteId;
   tourId?: TourId;
+  guideId?: GuideId;
   filecode?: string;
 }
 
@@ -27,7 +35,7 @@ export class LocalizedRouterService {
   /** Build router commands for a stable route (optionally with tour / booking params). */
   commandsFor(
     routeId: RouteId,
-    options?: { lang?: AppLang; tourId?: TourId; filecode?: string },
+    options?: { lang?: AppLang; tourId?: TourId; guideId?: GuideId; filecode?: string },
   ): any[] {
     const lang = options?.lang ?? this.currentLang();
     const segment = segmentFor(routeId, lang);
@@ -40,6 +48,14 @@ export class LocalizedRouterService {
       return ['/', lang, segment, slugForTour(options.tourId, lang)];
     }
 
+    if (routeId === 'guides' && options?.guideId) {
+      if (!isGuideReady(options.guideId, lang)) {
+        // Incomplete locale → English article URL (edge 301 also covers this).
+        return ['/', 'en', segmentFor('guides', 'en'), slugForGuide(options.guideId, 'en')];
+      }
+      return ['/', lang, segment, slugForGuide(options.guideId, lang)];
+    }
+
     if (routeId === 'booking' && options?.filecode) {
       return ['/', lang, segment, options.filecode];
     }
@@ -49,7 +65,7 @@ export class LocalizedRouterService {
 
   urlFor(
     routeId: RouteId,
-    options?: { lang?: AppLang; tourId?: TourId; filecode?: string },
+    options?: { lang?: AppLang; tourId?: TourId; guideId?: GuideId; filecode?: string },
   ): string {
     const commands = this.commandsFor(routeId, options);
     return commands.join('/').replace(/\/+/g, '/').replace(':/', '://') || '/';
@@ -57,7 +73,7 @@ export class LocalizedRouterService {
 
   absoluteUrlFor(
     routeId: RouteId,
-    options?: { lang?: AppLang; tourId?: TourId; filecode?: string },
+    options?: { lang?: AppLang; tourId?: TourId; guideId?: GuideId; filecode?: string },
   ): string {
     const path = this.router.serializeUrl(this.router.createUrlTree(this.commandsFor(routeId, options)));
     return `https://ceylonjojotravels.com${path}`;
@@ -65,7 +81,13 @@ export class LocalizedRouterService {
 
   navigateTo(
     routeId: RouteId,
-    options?: { lang?: AppLang; tourId?: TourId; filecode?: string; state?: unknown },
+    options?: {
+      lang?: AppLang;
+      tourId?: TourId;
+      guideId?: GuideId;
+      filecode?: string;
+      state?: unknown;
+    },
   ): Promise<boolean> {
     return this.router.navigate(this.commandsFor(routeId, options), {
       state: options?.state as any,
@@ -84,9 +106,14 @@ export class LocalizedRouterService {
       return this.router.navigate(['/', targetLang]);
     }
 
+    if (resolved.guideId && !isGuideReady(resolved.guideId, targetLang)) {
+      return this.router.navigateByUrl(enGuidePath(resolved.guideId));
+    }
+
     return this.navigateTo(resolved.routeId, {
       lang: targetLang,
       tourId: resolved.tourId,
+      guideId: resolved.guideId,
       filecode: resolved.filecode,
     });
   }
@@ -123,6 +150,11 @@ export class LocalizedRouterService {
       return { lang: langSeg, routeId, tourId: tourId ?? undefined };
     }
 
+    if (routeId === 'guides' && segments[2]) {
+      const guideId = resolveGuideIdFromSlug(segments[2]);
+      return { lang: langSeg, routeId, guideId: guideId ?? undefined };
+    }
+
     if (routeId === 'booking' && segments[2]) {
       return { lang: langSeg, routeId, filecode: segments[2] };
     }
@@ -138,6 +170,15 @@ export class LocalizedRouterService {
         lang,
         url: this.absoluteUrlFor('home', { lang }),
       }));
+    }
+
+    if (resolved.guideId) {
+      return (Object.keys(ROUTE_MAP.home) as AppLang[])
+        .filter((lang) => isGuideReady(resolved.guideId!, lang))
+        .map((lang) => ({
+          lang,
+          url: this.absoluteUrlFor('guides', { lang, guideId: resolved.guideId }),
+        }));
     }
 
     return (Object.keys(ROUTE_MAP.home) as AppLang[]).map((lang) => ({
@@ -161,7 +202,7 @@ export class LocalizedRouterService {
 
   createUrlTreeFor(
     routeId: RouteId,
-    options?: { lang?: AppLang; tourId?: TourId; filecode?: string },
+    options?: { lang?: AppLang; tourId?: TourId; guideId?: GuideId; filecode?: string },
   ): UrlTree {
     return this.router.createUrlTree(this.commandsFor(routeId, options));
   }

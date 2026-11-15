@@ -1,0 +1,21 @@
+{
+  "name": "Ceylon Jojo Travels",
+  "short_name": "JOJO Travels",
+  "description": "Private driver tours and chauffeur guides in Sri Lanka",
+  "start_url": "/en",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#14395A",
+  "icons": [
+    {
+      "src": "assets/images/brand/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/brand/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

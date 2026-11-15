@@ -1,7 +1,7 @@
 .tm {
-  --tm-brand: #023a2c;
-  --tm-ink: #0f172a;
-  --tm-muted: #64748b;
+  --tm-brand: var(--color-primary);
+  --tm-ink: var(--color-text);
+  --tm-muted: var(--color-text-muted);
   --tm-line: #e6ece9;
   --tm-surface: #f7f9f8;
   padding: 2.5rem 1.15rem 3.25rem;

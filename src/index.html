@@ -6,32 +6,35 @@
   <title>Private Driver Sri Lanka | Day Tours & Tour Packages</title>
   <meta name="description"
     content="Hire a private chauffeur guide in Sri Lanka. Book Galle, Kandy, Ella and Sigiriya day tours, Yala safari, or a 7–10 day private tour with hotels.">
-  <meta name="author" content="CEYLON JOJO TRAVElS">
+  <meta name="author" content="Ceylon Jojo Travels">
   <meta name="robots" content="noindex, follow">
   <meta http-equiv="content-language" content="en">
   <meta property="og:title" content="Private Driver Sri Lanka | Day Tours & Tour Packages">
-  <meta property="og:image" content="https://ceylonjojotravels.com/assets/img/package-2.jpg">
+  <meta property="og:image" content="https://ceylonjojotravels.com/assets/images/brand/og-default.png">
   <meta property="og:description"
     content="Hire a private chauffeur guide in Sri Lanka. Book Galle, Kandy, Ella and Sigiriya day tours, Yala safari, or a 7–10 day private tour with hotels.">
   <meta property="og:url" content="https://ceylonjojotravels.com/en">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CEYLON JOJO TRAVElS">
+  <meta property="og:site_name" content="Ceylon Jojo Travels">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ceylonjojotravels.com/assets/images/brand/og-default.png">
   <link rel="alternate" hreflang="en" href="https://ceylonjojotravels.com/en" />
   <link rel="alternate" hreflang="en-GB" href="https://ceylonjojotravels.com/en" />
   <link rel="alternate" hreflang="x-default" href="https://ceylonjojotravels.com/en" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
-  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <link rel="icon" href="assets/images/brand/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/brand/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/brand/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#14395A">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* Avoid stark white flash before Angular/CSS arrive (CSR fallback routes). */
-    html, body { margin: 0; background: #023a2c; }
+    html, body { margin: 0; background: #ffffff; }
     .boot-shell {
       min-height: 100vh;
-      background: linear-gradient(90deg, #155a65, #023a2c);
-      color: #f5f7f6;
+      background: #0B2438;
+      color: #F3E9DA;
       font-family: Poppins, system-ui, sans-serif;
       display: flex;
       flex-direction: column;
@@ -39,8 +42,7 @@
     .boot-shell__bar {
       padding: 1rem 1.25rem;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      color: #fab92e;
+      color: #D4894F;
     }
     .boot-shell__hero {
       flex: 1;
@@ -50,7 +52,7 @@
       text-align: center;
       padding: 2rem 1rem;
     }
-    .boot-shell__hero h1 {
+    .boot-shell__hero-title {
       margin: 0 0 0.75rem;
       font-size: clamp(1.5rem, 4vw, 2.75rem);
       font-weight: 700;
@@ -64,7 +66,8 @@
     }
   </style>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/img/carousel/hero-1-experiences-1280.webp" type="image/webp" imagesrcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-960.webp 960w, assets/img/carousel/hero-1-experiences-1280.webp 1280w, assets/img/carousel/hero-1-experiences-1600.webp 1600w, assets/img/carousel/hero-1-experiences-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/playfair/playfair-display-latin-700-normal.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/carousel/hero-2-ella-1280.webp" type="image/webp" imagesrcset="assets/img/carousel/hero-2-ella-640.webp 640w, assets/img/carousel/hero-2-ella-800.webp 800w, assets/img/carousel/hero-2-ella-960.webp 960w, assets/img/carousel/hero-2-ella-1280.webp 1280w, assets/img/carousel/hero-2-ella-1600.webp 1600w, assets/img/carousel/hero-2-ella-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript>
@@ -74,18 +77,17 @@
 </head>
 
 <body>
+  <!-- No marketing H1 in noscript/boot shell: it leaked into every prerendered locale as a second English H1. -->
   <noscript>
-    <h1>Sri Lanka Tours with Private Driver & Custom Travel Packages</h1>
-    <p>Explore Sri Lanka with tailor made tours, chauffeur services, and holiday packages including Sigiriya, Ella, Yala
-      Safari and beaches.</p>
+    <p>Ceylon Jojo Travels — enable JavaScript to view this page, or open a language home such as /en.</p>
   </noscript>
   <app-root>
-    <div class="boot-shell" aria-busy="true" aria-label="Loading Ceylon JOJO Travels">
-      <div class="boot-shell__bar">CEYLON JOJO TRAVElS</div>
+    <div class="boot-shell" aria-busy="true" aria-label="Loading Ceylon Jojo Travels">
+      <div class="boot-shell__bar">Ceylon Jojo Travels</div>
       <div class="boot-shell__hero">
         <div>
-          <h1>Hire a Private Driver in Sri Lanka</h1>
-          <p>Book Galle, Kandy, Ella and Sigiriya day tours, Yala safari, or a 7–10 day private tour with hotels.</p>
+          <p class="boot-shell__hero-title">Ceylon Jojo Travels</p>
+          <p>Loading…</p>
         </div>
       </div>
     </div>

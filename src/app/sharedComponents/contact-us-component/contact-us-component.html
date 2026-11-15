@@ -42,14 +42,22 @@
               <span class="cf__info-icon" aria-hidden="true"><i class="fas fa-phone-alt"></i></span>
               <div>
                 <span class="cf__info-label">{{ t('info.phoneLabel') }}</span>
-                <a class="cf__info-value" href="tel:+447375612946">{{ t('info.phoneValue') }}</a>
+                <a
+                  class="cf__info-value"
+                  href="tel:+447375612946"
+                  [attr.aria-label]="'Call ' + t('info.phoneValue')"
+                >{{ t('info.phoneValue') }}</a>
               </div>
             </li>
             <li>
               <span class="cf__info-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
               <div>
                 <span class="cf__info-label">{{ t('info.emailLabel') }}</span>
-                <a class="cf__info-value" href="mailto:ceylonjojotravels@gmail.com">{{ t('info.emailValue') }}</a>
+                <a
+                  class="cf__info-value"
+                  href="mailto:ceylonjojotravels@gmail.com"
+                  [attr.aria-label]="'Email ' + t('info.emailValue')"
+                >{{ t('info.emailValue') }}</a>
               </div>
             </li>
             <li>
@@ -66,6 +74,7 @@
             href="https://wa.me/447375612946"
             target="_blank"
             rel="noopener"
+            aria-label="WhatsApp"
           >
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
             WhatsApp
@@ -76,32 +85,36 @@
           <h3 class="cf__form-title">{{ t('form.title') }}</h3>
 
           <form class="cf__form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
-            <div class="cf__field">
-              <label for="cf-name">{{ t('form.nameLabel') }}</label>
-              <input
-                id="cf-name"
-                type="text"
-                formControlName="name"
-                autocomplete="name"
-                [attr.aria-invalid]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
-              />
-              <small class="cf__err" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
-                {{ t('form.nameRequired') }}
-              </small>
-            </div>
+            <div class="cf__row">
+              <div class="cf__field">
+                <label for="cf-name">{{ t('form.nameLabel') }}</label>
+                <input
+                  id="cf-name"
+                  type="text"
+                  formControlName="name"
+                  autocomplete="name"
+                  [placeholder]="t('form.nameLabel')"
+                  [attr.aria-invalid]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
+                />
+                <small class="cf__err" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+                  {{ t('form.nameRequired') }}
+                </small>
+              </div>
 
-            <div class="cf__field">
-              <label for="cf-email">{{ t('form.emailLabel') }}</label>
-              <input
-                id="cf-email"
-                type="email"
-                formControlName="email"
-                autocomplete="email"
-                [attr.aria-invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
-              />
-              <small class="cf__err" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
-                {{ t('form.emailInvalid') }}
-              </small>
+              <div class="cf__field">
+                <label for="cf-email">{{ t('form.emailLabel') }}</label>
+                <input
+                  id="cf-email"
+                  type="email"
+                  formControlName="email"
+                  autocomplete="email"
+                  [placeholder]="t('form.emailLabel')"
+                  [attr.aria-invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
+                />
+                <small class="cf__err" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                  {{ t('form.emailInvalid') }}
+                </small>
+              </div>
             </div>
 
             <div class="cf__field">
@@ -112,6 +125,7 @@
                   name="countryCode"
                   [ngModelOptions]="{ standalone: true }"
                   aria-label="Country dial code"
+                  autocomplete="tel-country-code"
                 >
                   <option *ngFor="let country of countriesList; trackBy: trackCountry" [value]="country.code">
                     {{ country.dial_code }} {{ country.code }}
@@ -137,6 +151,7 @@
                 id="cf-message"
                 rows="5"
                 formControlName="message"
+                [placeholder]="t('form.messageLabel')"
                 [attr.aria-invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
               ></textarea>
               <small class="cf__err" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">

@@ -159,7 +159,7 @@ export class TwoDayTourComponent implements OnInit, OnDestroy {
             title: {
               title: 'Peradeniya Royal Botanical Garden',
               icon: 'fa-shopping-basket',
-              color: '#16a085',
+              color: '#4A86C8',
             },
             description:
               'Peradeniya Botanical Garden, near Kandy, is Sri Lanka s largest botanical garden. Renowned for diverse flora, it features a stunning orchid house, giant Javan fig tree, and picturesque landscapes',

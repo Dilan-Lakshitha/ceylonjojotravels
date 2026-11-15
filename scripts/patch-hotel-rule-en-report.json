@@ -1,0 +1,154 @@
+{
+  "report": [
+    {
+      "id": "4-day-sri-lanka-tour",
+      "includesRemoved": [
+        "Half Board Accommodation"
+      ],
+      "includesAdded": [
+        "Half board accommodation at the hotels listed in the itinerary"
+      ],
+      "excludesRemoved": []
+    },
+    {
+      "id": "5-day-sri-lanka-tour",
+      "includesRemoved": [],
+      "includesAdded": [
+        "Half board accommodation at the hotels listed in the itinerary"
+      ],
+      "excludesRemoved": [
+        "Accommodation (Can be arranged upon request)"
+      ]
+    },
+    {
+      "id": "6-day-sri-lanka-private-tour",
+      "includesRemoved": [],
+      "includesAdded": [
+        "Half board accommodation at the hotels listed in the itinerary"
+      ],
+      "excludesRemoved": [
+        "Accommodation (Can be arranged upon request)"
+      ]
+    },
+    {
+      "id": "7-day-sri-lanka-tour",
+      "includesRemoved": [
+        "Your Accommodation"
+      ],
+      "includesAdded": [
+        "Half board accommodation at the hotels listed in the itinerary"
+      ],
+      "excludesRemoved": []
+    },
+    {
+      "id": "8-day-sri-lanka-private-tour",
+      "includesRemoved": [
+        "Half Board Accommodation (7 Nights)"
+      ],
+      "includesAdded": [
+        "Half board accommodation at the hotels listed in the itinerary"
+      ],
+      "excludesRemoved": []
+    },
+    {
+      "id": "10-day-sri-lanka-tour",
+      "includesRemoved": [
+        "Half Board Accommodation (7 Nights)"
+      ],
+      "includesAdded": [
+        "Half board accommodation at the hotels listed in the itinerary"
+      ],
+      "excludesRemoved": []
+    },
+    {
+      "id": "5-day-faq-hotels",
+      "before": "Sample overnight hotels appear in the day-by-day plan (often shown with breakfast and dinner). See Included and Excluded on this page—accommodation can be arranged on request, and entrance fees, food and drinks are listed under Excludes.",
+      "after": "Yes. Half board accommodation is included at the hotels listed in the itinerary (or similar). Entrance fees, lunch and drinks are listed under Excludes."
+    },
+    {
+      "id": "4-day-faq0",
+      "before": "Private transport, chauffeur guide, and the sightseeing listed in the 4 days itinerary. See Included for the full list.",
+      "after": "Private transport, chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 4 day itinerary. See Included for the full list."
+    },
+    {
+      "id": "6-day-faq0",
+      "before": "Private transport, chauffeur guide, and the sightseeing listed in the 6 days itinerary. See Included for the full list.",
+      "after": "Private transport, chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 6 day itinerary. See Included for the full list."
+    },
+    {
+      "id": "7-day-faq0",
+      "before": "Private air conditioned transport, a chauffeur guide, 4 star hotels and the sightseeing listed in the 7 day itinerary. See Included for the full list.",
+      "after": "Private air conditioned transport, a chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 7 day itinerary. See Included for the full list."
+    },
+    {
+      "id": "8-day-faq0",
+      "before": "Private transport, chauffeur guide, and the sightseeing listed in the 8 days itinerary. See Included for the full list.",
+      "after": "Private transport, chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 8 day itinerary. See Included for the full list."
+    },
+    {
+      "id": "10-day-faq-included",
+      "before": "Included: air-conditioned private vehicle, English-speaking professional driver, half-board accommodation (7 nights), fuel, parking and airport pickup/drop-off. Entrance and activity fees, lunch, drinks and personal expenses are excluded.",
+      "after": "Included: air conditioned private vehicle, English speaking professional driver, half board accommodation at the hotels listed in the itinerary, fuel, parking and airport pickup and drop off. Entrance and activity fees, lunch, drinks and personal expenses are excluded."
+    },
+    {
+      "id": "10-day-faq-beach",
+      "before": "Days seven and eight are Hikkaduwa beach days. South-coast overnight stays are listed at Somerset Mirissa Hotel (or similar) on half board, with a later night at Kamili Beach Resort (or similar).",
+      "after": "Days seven and eight are listed as Hikkaduwa beach days in the activities. South coast overnight stays use Somerset Mirissa Hotel (or similar) on half board, with a later night at Kamili Beach Resort (or similar)."
+    },
+    {
+      "id": "10-day-d6-title",
+      "before": "Ella bridge, Elephant Transit Home, south coast",
+      "after": "Travel from Ella to the south coast, overnight Mirissa"
+    },
+    {
+      "id": "10-day-d10-peraliya",
+      "before": [
+        "Peraliya Tsunami Memorial",
+        "Independence Memorial Hall",
+        "Gangaramaya Temple",
+        "Galle Face Green",
+        "Pettah Market",
+        "Red Mosque (Jami Ul-Alfar Mosque)"
+      ],
+      "after": [
+        "Independence Memorial Hall",
+        "Gangaramaya Temple",
+        "Galle Face Green",
+        "Pettah Market",
+        "Red Mosque (Jami Ul-Alfar Mosque)"
+      ]
+    }
+  ],
+  "seoEdits": [
+    {
+      "key": "tour.4-day-sri-lanka-tour.description",
+      "before": "4-day private Sri Lanka itinerary with chauffeur guide: Kandy, Ella, wildlife safari option and southern coast. Hotels included. Airport or hotel pickup.",
+      "after": "4 day private Sri Lanka itinerary with chauffeur guide: Kandy, Ella, Yala safari and southern coast. Half board hotels included. Airport or hotel pickup."
+    },
+    {
+      "key": "tour.5-day-sri-lanka-tour.description",
+      "before": "5-day private tour: Sigiriya, Kandy, Ella, safari and beach time with hotels and a local chauffeur guide. Flexible pacing for couples and families.",
+      "after": "5 day private tour: Sigiriya, Kandy, Ella, safari and coast with half board hotels and a local chauffeur guide. Flexible pacing for couples and families."
+    },
+    {
+      "key": "tour.6-day-sri-lanka-private-tour.description",
+      "before": "Six-day private Sri Lanka round tour with chauffeur guide, 4-star hotels, Yala safari and flexible beach time. Cultural sites plus hill country. WhatsApp.",
+      "after": "Six day private Sri Lanka round tour with chauffeur guide, half board hotels, Yala safari and flexible beach time. Cultural sites plus hill country. WhatsApp."
+    },
+    {
+      "key": "tour.7-day-sri-lanka-tour.description",
+      "before": "7-day Sri Lanka tour with private driver: Wilpattu safari, Sigiriya, Kandy, Ella, Galle and beach. Hotels included. WhatsApp to reserve your dates.",
+      "after": "7 day Sri Lanka tour with private driver: Wilpattu safari, Sigiriya, Kandy, Ella, Galle and beach. Half board hotels included. WhatsApp to reserve your dates."
+    },
+    {
+      "key": "tour.8-day-sri-lanka-private-tour.description",
+      "before": "Eight-day private round tour with a chauffeur guide: wildlife safari, Ella hill country and south-coast beaches. Hotels included. Flexible beach nights.",
+      "after": "Eight day private round tour with a chauffeur guide: wildlife safari, Ella hill country and south coast beaches. Half board hotels included. Flexible beach nights."
+    },
+    {
+      "key": "tour.10-day-sri-lanka-tour.description",
+      "before": "10-day private Sri Lanka circuit: cultural triangle, Kandy, Ella, safari and beaches with driver guide and hotels. Message us on WhatsApp to plan.",
+      "after": "10 day private Sri Lanka circuit: cultural triangle, Kandy, Ella, safari and beaches with driver guide and half board hotels. Message us on WhatsApp to plan."
+    }
+  ]
+}

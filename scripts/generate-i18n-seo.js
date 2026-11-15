@@ -27,6 +27,24 @@ const ROUTE_MAP = {
   booking: { en: 'booking', de: 'buchung', fr: 'reservation', it: 'prenotazione', es: 'reserva', pl: 'rezerwacja', ru: 'bronirovanie' },
 };
 
+/** Must match src/app/i18n/guide-slug-map.ts (empty slug = incomplete locale). */
+const GUIDE_SLUG_MAP = {
+  'best-time-to-visit-sri-lanka': {
+    en: 'best-time-to-visit-sri-lanka',
+    de: '',
+    fr: '',
+    it: '',
+    es: '',
+    pl: '',
+    ru: '',
+  },
+};
+
+/** Must match GUIDE_APPROVED in guide-slug-map.ts */
+const GUIDE_APPROVED = {
+  'best-time-to-visit-sri-lanka': false,
+};
+
 /** Must match src/app/i18n/tour-slug-map.ts */
 const TOUR_SLUG_MAP = {
   'ella-day-tour': {
@@ -170,25 +188,10 @@ const DEFAULT_HEADERS = [
   },
 ];
 
-const STATIC_REDIRECTS = [
-  {
-    source: '/',
-    has: [{ type: 'host', value: 'www.ceylonjojotravels.com' }],
-    destination: `${origin}/en`,
-    permanent: true,
-  },
-  {
-    source: '/index.html',
-    has: [{ type: 'host', value: 'www.ceylonjojotravels.com' }],
-    destination: `${origin}/en`,
-    permanent: true,
-  },
-  {
-    source: '/:path*',
-    has: [{ type: 'host', value: 'www.ceylonjojotravels.com' }],
-    destination: `${origin}/:path*`,
-    permanent: true,
-  },
+const WWW_HOST = 'www.ceylonjojotravels.com';
+
+/** Apex legacy / static redirects (relative destinations). */
+const APEX_STATIC_REDIRECTS = [
   { source: '/', destination: `${origin}/en`, permanent: true },
   { source: '/index.html', destination: `${origin}/en`, permanent: true },
   { source: '/index.htm', destination: `${origin}/en`, permanent: true },
@@ -220,6 +223,36 @@ const STATIC_REDIRECTS = [
   { source: '/restaurants-in-sri-lanka', destination: '/en/restaurants', permanent: true },
   { source: '/booking/:filecode', destination: '/en/booking/:filecode', permanent: true },
 ];
+
+/**
+ * www → final destination in ONE hop (avoid www→apex→canonical chains).
+ * Skips rules that already use :path* wildcards needing the generic catch-all.
+ */
+function wwwOneHopRedirects(rules) {
+  const out = [];
+  for (const rule of rules) {
+    if (rule.has?.some((h) => h.type === 'host')) continue;
+    if (String(rule.source).includes(':path*') || String(rule.destination).includes(':path*')) {
+      continue;
+    }
+    if (String(rule.source).includes(':slug') || String(rule.destination).includes(':slug')) {
+      continue;
+    }
+    if (String(rule.source).includes(':filecode') || String(rule.destination).includes(':filecode')) {
+      continue;
+    }
+    const dest = String(rule.destination).startsWith('http')
+      ? rule.destination
+      : `${origin}${rule.destination}`;
+    out.push({
+      source: rule.source,
+      has: [{ type: 'host', value: WWW_HOST }],
+      destination: dest,
+      permanent: true,
+    });
+  }
+  return out;
+}
 
 /**
  * GSC “Alternative page with proper canonical tag” for tours ?type=day|multi.
@@ -404,15 +437,79 @@ function buildCanonicalRedirects() {
     }
   }
 
+  // Incomplete guide locales → English article (only when the EN guide is approved).
+  for (const [guideId, slugs] of Object.entries(GUIDE_SLUG_MAP)) {
+    if (!GUIDE_APPROVED[guideId]) continue;
+    const enSlug = slugs.en;
+    if (!enSlug) continue;
+    const enDest = `/en/${ROUTE_MAP.guides.en}/${enSlug}`;
+    for (const lang of langs) {
+      if (lang === 'en') continue;
+      const localSlug = slugs[lang];
+      const guidesSeg = ROUTE_MAP.guides[lang];
+      if (!localSlug) {
+        redirects.push({
+          source: `/${lang}/${guidesSeg}/${enSlug}`,
+          destination: enDest,
+          permanent: true,
+        });
+      }
+    }
+  }
+
   return redirects;
 }
 
-const redirectsRaw = [
-  ...STATIC_REDIRECTS,
+const rootSlugRedirects = buildRootLocalizedSlugRedirects();
+const canonicalRedirects = buildCanonicalRedirects();
+const apexBodyRedirects = [
+  ...APEX_STATIC_REDIRECTS,
   ...MALFORMED_TOUR_REDIRECTS,
   ...buildTourTypeQueryRedirects(),
-  ...buildRootLocalizedSlugRedirects(),
-  ...buildCanonicalRedirects(),
+  ...rootSlugRedirects,
+  ...canonicalRedirects,
+];
+
+/**
+ * www one-hop only for high-traffic GSC paths (legacy + root localized slugs +
+ * flat tour ids). Do NOT duplicate the full wrong-lang matrix — that blows
+ * Vercel's 1024 redirect limit.
+ */
+const wwwOneHopSources = [
+  ...APEX_STATIC_REDIRECTS,
+  ...MALFORMED_TOUR_REDIRECTS,
+  ...rootSlugRedirects,
+  ...canonicalRedirects.filter((r) => /^\/[^/]+$/.test(r.source)),
+];
+
+/**
+ * Order matters for Vercel:
+ * 1) www home + index → /en
+ * 2) www one-hop for GSC-critical paths (final URL)
+ * 3) www catch-all → apex (unknown paths only)
+ * 4) apex redirects
+ */
+const redirectsRaw = [
+  {
+    source: '/',
+    has: [{ type: 'host', value: WWW_HOST }],
+    destination: `${origin}/en`,
+    permanent: true,
+  },
+  {
+    source: '/index.html',
+    has: [{ type: 'host', value: WWW_HOST }],
+    destination: `${origin}/en`,
+    permanent: true,
+  },
+  ...wwwOneHopRedirects(wwwOneHopSources),
+  {
+    source: '/:path*',
+    has: [{ type: 'host', value: WWW_HOST }],
+    destination: `${origin}/:path*`,
+    permanent: true,
+  },
+  ...apexBodyRedirects,
 ];
 
 /** Keep first rule per source (+ optional host has) so root slug and tour-id rules do not clash. */
@@ -467,13 +564,14 @@ function escapeXml(s) {
 }
 
 function buildUrlEntry(loc, pathByLang, priority, changefreq = 'weekly') {
+  const availableLangs = langs.filter((l) => Object.prototype.hasOwnProperty.call(pathByLang, l));
   let entry = `  <url>
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
 `;
-  for (const alt of langs) {
+  for (const alt of availableLangs) {
     const altSuffix = pathByLang[alt] ? `/${pathByLang[alt]}` : '';
     entry += `    <xhtml:link rel="alternate" hreflang="${alt}" href="${escapeXml(`${origin}/${alt}${altSuffix}`)}" />
 `;
@@ -521,6 +619,23 @@ function collectPathsForLang() {
     }
   }
 
+  for (const id of Object.keys(GUIDE_SLUG_MAP)) {
+    if (!GUIDE_APPROVED[id]) continue;
+    const pathByLang = {};
+    for (const l of langs) {
+      const slug = GUIDE_SLUG_MAP[id]?.[l];
+      if (!slug) continue;
+      pathByLang[l] = `${ROUTE_MAP.guides[l]}/${slug}`;
+    }
+    if (Object.keys(pathByLang).length > 0) {
+      items.push({
+        pathByLang,
+        priority: '0.85',
+        changefreq: 'weekly',
+      });
+    }
+  }
+
   return items;
 }
 
@@ -535,6 +650,7 @@ for (const lang of langs) {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 `;
   for (const item of allItems) {
+    if (!Object.prototype.hasOwnProperty.call(item.pathByLang, lang)) continue;
     const suffix = item.pathByLang[lang] ? `/${item.pathByLang[lang]}` : '';
     const loc = `${origin}/${lang}${suffix}`;
     xml += buildUrlEntry(loc, item.pathByLang, item.priority, item.changefreq);

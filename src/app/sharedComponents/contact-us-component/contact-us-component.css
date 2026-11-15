@@ -1,10 +1,12 @@
 .cf {
-  --cf-brand: #023a2c;
-  --cf-brand-2: #155a65;
-  --cf-ink: #0f172a;
-  --cf-muted: #64748b;
-  --cf-line: #e6ece9;
-  --cf-surface: #f7f9f8;
+  --cf-brand: var(--color-navy);
+  --cf-ink: var(--color-text);
+  --cf-muted: var(--color-text-muted);
+  --cf-line: var(--color-border);
+  --cf-surface: var(--color-band);
+  --cf-radius: 16px;
+  --cf-pad: 1.85rem;
+  --cf-shadow: var(--shadow-soft);
   padding: 2.5rem 1.15rem 3.5rem;
 }
 
@@ -32,7 +34,7 @@
 }
 
 .cf--home .cf__eyebrow {
-  color: #fab92e;
+  color: var(--color-gold);
 }
 
 .cf__heading {
@@ -61,7 +63,7 @@
 }
 
 .cf--home .cf__lede {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .cf__help {
@@ -100,7 +102,7 @@
 }
 
 .cf--home .cf__help {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(11, 36, 56, 0.55);
   border-color: rgba(255, 255, 255, 0.18);
 }
 
@@ -110,41 +112,44 @@
 }
 
 .cf--home .cf__help-list {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .cf__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.35rem;
-  align-items: start;
+  gap: 1.5rem;
+  align-items: stretch;
 }
 
 @media (min-width: 900px) {
   .cf__grid {
-    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.2fr);
+    grid-template-columns: 1fr 1fr;
     gap: 1.75rem;
   }
 }
 
 .cf__info {
-  padding: 1.35rem 1.25rem;
-  border-radius: 16px;
-  background: linear-gradient(160deg, #023a2c 0%, #155a65 100%);
+  display: flex;
+  flex-direction: column;
+  padding: var(--cf-pad);
+  border-radius: var(--cf-radius);
+  background: var(--color-midnight);
   color: #fff;
-  box-shadow: 0 14px 36px rgba(2, 58, 44, 0.22);
+  box-shadow: var(--cf-shadow);
 }
 
 .cf--home .cf__info {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: none;
+  background: var(--color-midnight);
+  border: 0;
+  box-shadow: var(--shadow-header);
 }
 
 .cf__info-title {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.25rem;
   font-size: 1.15rem;
   font-weight: 800;
+  color: #fff !important;
 }
 
 .cf__info-list {
@@ -152,132 +157,165 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
+  flex: 1 1 auto;
 }
 
 .cf__info-list li {
-  display: flex;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 0.85rem;
   align-items: flex-start;
 }
 
 .cf__info-icon {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.1);
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  color: #fab92e;
+  color: var(--color-gold);
 }
 
 .cf__info-label {
   display: block;
   font-size: 0.6875rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.75;
-  margin-bottom: 0.15rem;
+  color: var(--color-gold);
+  margin-bottom: 0.2rem;
 }
 
 .cf__info-value {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.45;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
-a.cf__info-value:hover {
-  color: #fab92e;
+a.cf__info-value:hover,
+a.cf__info-value:focus-visible {
+  color: var(--color-gold) !important;
   text-decoration: underline;
+  outline: none;
 }
 
 .cf__whatsapp {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.45rem;
-  margin-top: 1.25rem;
-  padding: 0.65rem 1rem;
-  border-radius: 10px;
-  background: #25d366;
-  color: #fff;
+  margin-top: auto;
+  align-self: stretch;
+  padding: 0.75rem 1rem;
+  min-height: 48px;
+  border-radius: 12px;
+  /* Darken WhatsApp green so white label meets WCAG AA (≥4.5:1) */
+  background: color-mix(in srgb, var(--color-whatsapp) 55%, var(--color-midnight)) !important;
+  color: #fff !important;
   font-weight: 700;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
-.cf__whatsapp:hover {
-  color: #fff;
+.cf__whatsapp:hover,
+.cf__whatsapp:focus-visible {
+  color: #fff !important;
   text-decoration: none;
-  filter: brightness(1.05);
+  filter: brightness(1.06);
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .cf__form-card {
-  padding: 1.35rem 1.2rem 1.5rem;
-  border-radius: 16px;
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: var(--cf-pad);
+  border-radius: var(--cf-radius);
+  background: var(--color-bg);
   border: 1px solid var(--cf-line);
-  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.07);
+  box-shadow: var(--cf-shadow);
 }
 
 .cf--home .cf__form-card {
-  background: rgba(255, 255, 255, 0.96);
+  background: var(--color-bg);
   color: var(--cf-ink);
 }
 
 .cf__form-title {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.15rem;
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--cf-ink);
+  color: var(--cf-ink) !important;
 }
 
 .cf__form {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.95rem;
+  flex: 1 1 auto;
+}
+
+.cf__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.95rem;
+}
+
+@media (min-width: 900px) {
+  .cf__row {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .cf__field {
   display: grid;
-  gap: 0.3rem;
+  gap: 0.35rem;
 }
 
 .cf__field label {
   margin: 0;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #334155;
+  color: var(--color-text);
 }
 
 .cf__field input,
 .cf__field textarea,
 .cf__phone select {
   width: 100%;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  min-height: 44px;
-  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  min-height: 48px;
+  padding: 0.65rem 0.85rem;
   font-size: 0.9375rem;
   color: var(--cf-ink);
-  background: #fff;
+  background: var(--color-bg);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.cf__field input::placeholder,
+.cf__field textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 1;
+}
+
 .cf__field textarea {
-  min-height: 120px;
+  min-height: 132px;
   resize: vertical;
 }
 
 .cf__field input:focus,
 .cf__field textarea:focus,
 .cf__phone select:focus {
-  outline: none;
-  border-color: var(--cf-brand);
-  box-shadow: 0 0 0 3px rgba(2, 58, 44, 0.14);
+  outline: 2px solid var(--color-navy);
+  outline-offset: 2px;
+  border-color: var(--color-navy);
+  box-shadow: none;
 }
 
 .cf__phone {
@@ -293,7 +331,7 @@ a.cf__info-value:hover {
 }
 
 .cf__err {
-  color: #dc2626;
+  color: var(--color-amber-deep);
   font-size: 0.75rem;
 }
 
@@ -304,20 +342,19 @@ a.cf__info-value:hover {
   gap: 0.5rem;
   width: 100%;
   min-height: 48px;
-  margin-top: 0.25rem;
-  border: 0;
+  margin-top: 0.15rem;
+  border: 1px solid var(--color-cta-border);
   border-radius: 12px;
-  background: var(--cf-brand);
-  color: #fff;
+  background: var(--color-cta);
+  color: var(--color-cta-text);
   font-size: 0.975rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .cf__submit:hover:not(:disabled) {
-  background: #03503d;
-  transform: translateY(-1px);
+  background: var(--color-cta-hover);
 }
 
 .cf__submit:disabled {
@@ -326,7 +363,7 @@ a.cf__info-value:hover {
 }
 
 .cf__submit:focus-visible {
-  outline: 2px solid var(--cf-brand);
+  outline: 2px solid var(--color-navy);
   outline-offset: 2px;
 }
 
@@ -339,11 +376,11 @@ a.cf__info-value:hover {
 }
 
 .cf__status--ok {
-  background: #ecfdf5;
-  color: #065f46;
+  background: var(--color-band);
+  color: var(--color-success);
 }
 
 .cf__status--err {
-  background: #fef2f2;
-  color: #991b1b;
+  background: var(--color-cream);
+  color: var(--color-amber-deep);
 }

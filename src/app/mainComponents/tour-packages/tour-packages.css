@@ -1,7 +1,7 @@
 .packages-intro {
   max-width: 46rem;
   margin: 0.85rem auto 0;
-  color: #64748b;
+  color: var(--color-text-muted);
   line-height: 1.6;
   font-size: 0.98rem;
 }
@@ -11,9 +11,9 @@
   font-weight: 600;
   font-size: 1.1rem;
   background: transparent;
-  border: 2px solid #023a2c;
+  border: 2px solid var(--color-primary);
   border-radius: 50px;
-  color: #023a2c;
+  color: var(--color-primary);
   cursor: pointer;
   margin: 10px;
   transition: all 0.4s ease;
@@ -21,12 +21,12 @@
 }
 
 .tab-btn-outline:hover {
-  background-color: #023a2c;
+  background-color: var(--color-primary);
   color: white;
 }
 
 .tab-btn-outline.active {
-  background-color: #023a2c;
+  background-color: var(--color-primary);
   color: white;
-  box-shadow: 0 8px 20px rgba(2, 58, 44, 0.25);
+  box-shadow: 0 8px 20px rgba(11, 36, 56, 0.25);
 }

@@ -155,7 +155,7 @@ tour = {
           title: {
             title: 'Pinnawala Elephant Orphanage',
             icon: 'fa-paw',
-            color: '#16a085',
+            color: '#4A86C8',
           },
           description:
             'Observe elephants bathing and feeding at the famous Pinnawala Elephant Orphanage.',

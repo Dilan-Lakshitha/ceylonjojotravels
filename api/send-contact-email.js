@@ -79,7 +79,7 @@ export default async function handler(req, res) {
     ];
 
     await transporter.sendMail({
-      from: `"CEYLON JOJO TRAVElS Contact" <${process.env.EMAIL_USER}>`,
+      from: `"Ceylon Jojo Travels Contact" <${process.env.EMAIL_USER}>`,
       replyTo: email,
       to: adminEmails,
       subject: `New Contact Message from ${name}`,
@@ -88,7 +88,7 @@ export default async function handler(req, res) {
         <div style="max-width: 640px; margin: auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
           <div style="background-color: #023a2c; padding: 20px; text-align: center;">
             <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Contact Message</h1>
-            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">CEYLON JOJO TRAVElS Website Contact Form</p>
+            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">Ceylon Jojo Travels Website Contact Form</p>
           </div>
           <div style="padding: 28px;">
             <p style="font-size: 15px; margin-bottom: 20px;">A visitor submitted the contact form. Details below:</p>
@@ -111,7 +111,7 @@ export default async function handler(req, res) {
             <p style="font-size: 15px; line-height: 1.6; color: #334155;">${safeMessage}</p>
           </div>
           <div style="background-color: #f1f5f9; padding: 14px; text-align: center; font-size: 12px; color: #6b7280;">
-            © ${new Date().getFullYear()} CEYLON JOJO TRAVElS. All rights reserved.
+            © ${new Date().getFullYear()} Ceylon Jojo Travels. All rights reserved.
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: `"CEYLON JOJO TRAVElS" <${process.env.EMAIL_USER}>`,
+      from: `"Ceylon Jojo Travels" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: `We received your message, ${name}`,
       html: `
@@ -127,19 +127,19 @@ export default async function handler(req, res) {
         <div style="max-width: 640px; margin: auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
           <div style="background-color: #023a2c; padding: 22px; text-align: center;">
             <h1 style="color: #ffffff; margin: 0; font-size: 22px;">Message Received</h1>
-            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">CEYLON JOJO TRAVElS Sri Lanka</p>
+            <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">Ceylon Jojo Travels Sri Lanka</p>
           </div>
           <div style="padding: 28px; color: #333;">
             <p style="font-size: 16px;">Dear ${safeName},</p>
             <p style="font-size: 15px; line-height: 1.6;">
-              Thank you for contacting <strong>CEYLON JOJO TRAVElS</strong>.
+              Thank you for contacting <strong>Ceylon Jojo Travels</strong>.
               We have received your message and our team will get back to you shortly.
             </p>
             <h2 style="font-size: 16px; color: #023a2c; margin-top: 24px;">Your message</h2>
             <p style="font-size: 15px; line-height: 1.6; background: #f8fafc; padding: 14px; border-radius: 8px;">${safeMessage}</p>
             <p style="margin-top: 24px; font-size: 15px; line-height: 1.6;">
               Kind regards,<br/>
-              <strong>CEYLON JOJO TRAVElS Team</strong><br/>
+              <strong>Ceylon Jojo Travels Team</strong><br/>
               No 111/3, Dediyawala Rd, Maha Waskaduwa,<br/>
               Waskaduwa, Kalutara North, Sri Lanka
             </p>
@@ -151,7 +151,7 @@ export default async function handler(req, res) {
             </p>
           </div>
           <div style="background:#f1f5f9;padding:14px;text-align:center;font-size:12px;color:#6b7280;">
-            © ${new Date().getFullYear()} CEYLON JOJO TRAVElS. All rights reserved.
+            © ${new Date().getFullYear()} Ceylon Jojo Travels. All rights reserved.
           </div>
         </div>
       </div>

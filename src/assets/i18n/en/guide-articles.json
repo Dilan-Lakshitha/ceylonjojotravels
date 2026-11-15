@@ -1,0 +1,108 @@
+{
+  "best-time-to-visit-sri-lanka": {
+    "seoTitle": "Best Time to Visit Sri Lanka by Month",
+    "seoDescription": "West and south coasts generally suit December to March; the east coast tends to suit May to September. Month by month tips for a private Sri Lanka tour.",
+    "h1": "Best Time to Visit Sri Lanka by Month",
+    "lastUpdated": "2026-11-14",
+    "directAnswer": "The west and south coasts are generally best from December to March. The east coast tends to be best from May to September. December to March is generally the safest all round choice for first timers who want culture, hills and a west or south beach. Conditions change by year, so ask us for current advice for your dates.",
+    "sections": [
+      {
+        "id": "when-best",
+        "heading": "When is the best time to visit Sri Lanka?",
+        "answer": "December to March is generally the safest all round choice for first timers, combining good weather on the west and south coast with culture and hill country routes. The east coast tends to suit May to September. Conditions change by year, so ask us for current advice before you lock your dates."
+      },
+      {
+        "id": "month-by-month",
+        "heading": "How does weather change month by month?",
+        "answer": "Use the table below as a general guide by coast. April is a hot, humid transition with a chance of afternoon thunderstorms. October and November are usually the rainiest months in many regions, with heavy afternoon storms. Patterns shift year to year, so confirm with us closer to travel."
+      },
+      {
+        "id": "west-south",
+        "heading": "When is the west and south coast best?",
+        "answer": "The west and south coasts are generally best from December to March. That window usually suits private tours that finish culture and hills with Galle, Bentota, Mirissa or nearby south coast beach time. The south coast also tends to start improving again toward December after the late year rains."
+      },
+      {
+        "id": "east",
+        "heading": "When is the east coast best?",
+        "answer": "The east coast tends to be best from May to September. A private driver can mix coasts when your dates sit between seasons, instead of following a fixed group coach schedule. Ask us which side of the island usually works better for the month you have."
+      },
+      {
+        "id": "safari",
+        "heading": "When is best for Yala or Wilpattu?",
+        "answer": "Yala and Wilpattu are generally better in the drier months. Wetter months can mean fewer sightings at Yala, and heavy rain can affect Wilpattu tracks. Both parks have seasonal maintenance closures, so check current park opening dates. We do not publish fixed closure dates here."
+      },
+      {
+        "id": "hills",
+        "heading": "When is best for hill country and Ella?",
+        "answer": "January to March is generally the driest period for Ella and tea country. Hill weather can still change quickly, so plan an early start and pack a light rain layer. Cooler Nuwara Eliya evenings are common, so a light jacket still helps on multi day private tours."
+      },
+      {
+        "id": "year-round",
+        "heading": "Can you visit year round with a private driver?",
+        "answer": "Yes. A private vehicle lets you lean toward the better coast and safari area for your month instead of locking into one fixed group schedule. We do not refuse months as a rule. Soft cautions for heat, storms and park access still apply, and we will say honestly what usually works."
+      },
+      {
+        "id": "avoid",
+        "heading": "Which months should first timers avoid, if any?",
+        "answer": "There are no months we refuse to book as a blanket rule. Soft cautions apply for April heat and New Year crowding, for heavy storms in October and November, and for safari parks that may close for maintenance. Ask us for current advice for your exact dates."
+      },
+      {
+        "id": "april",
+        "heading": "What is Sri Lanka like in April?",
+        "answer": "April is generally a transition month between monsoons. It tends to be hot and humid, with a chance of afternoon thunderstorms, and it is often still good for culture and hills. The Sinhala and Tamil New Year in mid April is a busy travel period, and some places close for a day or two."
+      },
+      {
+        "id": "oct-nov",
+        "heading": "What about October and November?",
+        "answer": "October and November are the second inter monsoon and are usually the rainiest period in many regions, with heavy afternoon storms. The south coast generally starts improving toward December. Conditions change by year, so ask Ceylon JOJO Travels before you finalise a late year route."
+      }
+    ],
+    "monthTable": {
+      "caption": "General coast guide by month for private tour planning",
+      "headers": ["Month", "General guide"],
+      "rows": [
+        ["January", "West and south generally favoured"],
+        ["February", "West and south generally favoured"],
+        ["March", "West and south generally favoured"],
+        ["April", "Transition. Hot and humid. Culture and hills often still good. Mid April New Year is busy"],
+        ["May", "East coast generally favoured"],
+        ["June", "East coast generally favoured"],
+        ["July", "East coast generally favoured"],
+        ["August", "East coast generally favoured"],
+        ["September", "East coast generally favoured"],
+        ["October", "Second inter monsoon. Often rainiest. Heavy afternoon storms common"],
+        ["November", "Second inter monsoon. South coast tends to improve toward December"],
+        ["December", "West and south generally favoured"]
+      ]
+    },
+    "faq": [
+      {
+        "question": "When is the best time to visit Sri Lanka?",
+        "answer": "December to March is generally the safest all round choice for first timers on the west and south coast with culture and hills. The east coast tends to suit May to September. Ask us for current advice, because conditions change by year."
+      },
+      {
+        "question": "When is best for Yala or Wilpattu?",
+        "answer": "Both parks are generally better in the drier months. Wetter weather can mean fewer Yala sightings and tougher Wilpattu tracks. Check current park opening dates. We do not state fixed closure dates here."
+      },
+      {
+        "question": "Can you visit Sri Lanka year round with a private driver?",
+        "answer": "Yes. A private driver can route you toward the better coast and safari area for your dates. We do not ban months, but we will flag soft cautions for heat, storms and park maintenance."
+      },
+      {
+        "question": "Is December to March still best for the west and south?",
+        "answer": "Yes. The west and south coasts are generally best from December to March, and the east coast tends to be best from May to September. Confirm closer to travel, because seasons can shift by year."
+      }
+    ],
+    "relatedTours": [
+      "7-day-sri-lanka-tour",
+      "10-day-sri-lanka-tour",
+      "2-day-ella-yala-private-tour-sri-lanka"
+    ],
+    "relatedGuidesNote": "More Wave 1 guides will link here after English approval.",
+    "ctaHeading": "Plan your dates with Ceylon JOJO Travels",
+    "ctaBody": "Share your month and must see stops. We will match a private driver route to the coast and safari option that usually works for your dates.",
+    "ctaWhatsapp": "WhatsApp to plan dates",
+    "ctaTours": "View tour packages",
+    "ctaContact": "Contact us"
+  }
+}

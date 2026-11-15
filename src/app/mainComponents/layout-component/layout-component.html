@@ -44,11 +44,13 @@
           </a>
           <a
             href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
-            [attr.aria-label]="'TripAdvisor'"
+            aria-label="Ceylon Jojo Travels on TripAdvisor"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
-            <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+            <svg class="site-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l.345.69c.575 1.15 1.247 2.243 2.007 3.262l4.535 5.481a6.693 6.693 0 0 0 5.119 2.434c1.986 0 3.84-.876 5.119-2.434l4.535-5.48a19.75 19.75 0 0 0 2.007-3.263L24 6.648h-4.361a13.588 13.588 0 0 0-7.633-2.353zM8.023 7.73a1.994 1.994 0 1 1 0 3.988 1.994 1.994 0 0 1 0-3.988zm7.954 0a1.994 1.994 0 1 1 0 3.988 1.994 1.994 0 0 1 0-3.988zM12 11.715l-1.879 4.198h3.758L12 11.715z"/>
+            </svg>
           </a>
         </div>
       </div>
@@ -59,16 +61,15 @@
   <nav class="site-nav navbar navbar-expand-lg">
     <a [routerLink]="homeLink" class="site-brand">
       <img
-        src="assets/img/logos/logo-48.png"
-        srcset="assets/img/logos/logo-48.png 1x, assets/img/logos/logo-64.png 2x"
-        alt="Ceylon JOJO Travels"
+        src="assets/images/brand/logo-48.png"
+        srcset="assets/images/brand/logo-48.png 1x, assets/images/brand/logo-64.png 2x"
+        [attr.alt]="t('brand.logoAlt')"
         width="48"
         height="48"
         decoding="async"
       />
       <span class="site-brand__text">
-        <span class="site-brand__name">CEYLON JOJO</span>
-        <span class="site-brand__sub">TRAVElS</span>
+        <span class="site-brand__name">{{ t('brand.name') }}</span>
       </span>
     </a>
 
@@ -165,11 +166,19 @@
   <router-outlet></router-outlet>
 </main>
 
-<div class="container-fluid bg-primary site-footer py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" *transloco="let t; scope: 'common'; prefix: 'common'">
+<div class="container-fluid site-footer py-5 px-sm-3 px-lg-5" *transloco="let t; scope: 'common'; prefix: 'common'">
   <div class="row pt-5">
     <div class="col-lg-3 col-md-6">
-      <a class="navbar-brand" [routerLink]="homeLink">
-        <p class="h5 mb-0"><span class="text-white">CEYLON JOJO TRAVElS</span></p>
+      <a class="site-footer__brand" [routerLink]="homeLink">
+        <img
+          src="assets/images/brand/logo-64.png"
+          [attr.alt]="t('brand.logoAlt')"
+          width="48"
+          height="48"
+          loading="lazy"
+          decoding="async"
+        />
+        <span>{{ t('brand.name') }}</span>
       </a>
       <p>{{ t('footer.tagline') }}</p>
       <p class="text-white i18n-section-eyebrow mt-4 mb-3">{{ t('footer.follow') }}</p>
@@ -182,10 +191,12 @@
           class="btn nav-link btn-square mr-2"
           href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
           target="_blank"
-          rel="noopener"
-          aria-label="TripAdvisor"
+          rel="noopener noreferrer"
+          aria-label="Ceylon Jojo Travels on TripAdvisor"
         >
-          <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+          <svg class="site-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l.345.69c.575 1.15 1.247 2.243 2.007 3.262l4.535 5.481a6.693 6.693 0 0 0 5.119 2.434c1.986 0 3.84-.876 5.119-2.434l4.535-5.48a19.75 19.75 0 0 0 2.007-3.263L24 6.648h-4.361a13.588 13.588 0 0 0-7.633-2.353zM8.023 7.73a1.994 1.994 0 1 1 0 3.988 1.994 1.994 0 0 1 0-3.988zm7.954 0a1.994 1.994 0 1 1 0 3.988 1.994 1.994 0 0 1 0-3.988zM12 11.715l-1.879 4.198h3.758L12 11.715z"/>
+          </svg>
         </a>
       </div>
     </div>
@@ -221,7 +232,7 @@
         <div class="input-group">
           <input type="text" class="form-control border-light" style="padding: 25px;" [placeholder]="t('footer.emailPlaceholder')" />
           <div class="input-group-append">
-            <button [routerLink]="contactLink" class="btn btn-primary px-3">{{ t('footer.signup') }}</button>
+            <a [routerLink]="contactLink" class="btn btn-primary px-3">{{ t('footer.signup') }}</a>
           </div>
         </div>
       </div>

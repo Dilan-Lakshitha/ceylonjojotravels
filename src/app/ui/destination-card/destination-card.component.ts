@@ -33,8 +33,13 @@ export class DestinationCardComponent {
   @Input() rating = '';
   /** @deprecated unused — stats row removed */
   @Input() tourCount = '';
-  /** @deprecated unused — stats row removed */
+  /** Localized duration label from destinations i18n */
   @Input() duration = '';
+  /** Raw party-of-2 total from TourPriceService (same as tour cards) */
+  @Input() price = 0;
+  @Input() priceReady = false;
+  @Input() fromLabel = 'From';
+  @Input() perPersonLabel = 'per person';
   @Input() highlights: DestinationHighlight[] = [];
   @Input() routerLink: any;
   /** @deprecated kept for backward compatibility — unused in premium card */
@@ -48,6 +53,11 @@ export class DestinationCardComponent {
   @Output() wishlist = new EventEmitter<MouseEvent>();
 
   wishlisted = false;
+
+  /** Per person display — matches tour-card (party-of-2 total / 2). */
+  get displayPrice(): number {
+    return Math.round((this.price || 0) / 2);
+  }
 
   /** Base path without extension when image is a destination-*.jpg asset. */
   private get imageBase(): string | null {

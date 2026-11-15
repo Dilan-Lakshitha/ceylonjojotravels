@@ -166,16 +166,16 @@
       "id": "ella-day-tour",
       "slug": "ella-day-tour",
       "title": "Ella Day Tour | Private Driver Sri Lanka",
-      "description": "Experience the beauty of Ella with one day full of adventure, culture, and relaxation.",
+      "description": "A private Ella day from your hotel: Nine Arch Bridge, scenic train sector, Little Adam’s Peak, Ravana Falls and the Udawalawe elephant orphanage.",
       "duration": "1 day",
       "persons": "1-20 Persons",
       "filecode": "ella-day-tour",
-      "overview": "Discover the beauty of Sri Lanka with our unforgettable tour, featuring the iconic Ella Nine Arches Bridge, where you can marvel at the scenic train crossing. Visit the Udawalawe Elephant Orphanage to observe rescued elephants up close. Experience the natural splendor of Ravana Falls, one of the island’s most impressive waterfalls. Hike up Little Adam’s Peak for stunning panoramic views, capturing the essence of Sri Lanka’s highlands. Complete your adventure with a mini train ride through Ella’s picturesque landscapes, creating lasting memories of this enchanting journey. Private vehicle from your hotel or airport, English speaking chauffeur guide, and pay later in Sri Lanka after confirmation.",
+      "overview": "Ella sits in Sri Lanka’s southern hill country. This private day covers the Nine Arch Bridge between Ella and Demodara, a scenic train sector through tea country (when seats allow), the hike to Little Adam’s Peak, Ravana Falls, and the Udawalawe elephant orphanage where rescued young elephants are fed.\n\nPickup is from your hotel or the airport in an air-conditioned private vehicle with an English-speaking chauffeur guide. At the bridge you can watch for trains on the early-20th-century viaduct. The train sector, when available, looks out over tea estates and valleys. Little Adam’s Peak is about 1,141 m; from the trailhead the walk usually takes 30–45 minutes with 360° views. Ravana Falls is one of the wider falls in the country, with rocky viewpoints beside the road. At Udawalawe you may see roughly 20–30 juvenile and teenage elephants during a feeding session.\n\nWho this tour suits: travellers on the south coast or in the hills who want Ella’s classics in one day. It fits couples and small groups comfortable with a moderate walk and flexible timing around trains.\n\nPractical tips: wear shoes with grip; bring a light layer for cooler hill air; entrance and activity fees are excluded (see Excludes). Food and drinks are your own. Payment later (pay at destination) is available after confirmation.",
       "tourType": "Day Tour",
       "itinerary": [
         {
           "day": 1,
-          "title": "Nine Arches Bridge",
+          "title": "Ella highlights: bridge, train, peak, falls and elephants",
           "activities": [
             {
               "type": "Guided tour",
@@ -184,7 +184,7 @@
                 "icon": "fa-hiking",
                 "color": "#f39c12"
               },
-              "description": "The majestic Nine Arch Bridge is one of the many reasons for that. The glorious Nine Arch Bridge between Ella and Demodara station is one of the engineering marvels in the early 20th century",
+              "description": "Walk to viewpoints of the Nine Arch Bridge between Ella and Demodara, an early-20th-century railway viaduct. Watch for trains crossing when schedules allow.",
               "image": "assets/img/onedayTour/ella/1.jpg"
             },
             {
@@ -194,7 +194,7 @@
                 "icon": "fa-train",
                 "color": "#063764ff"
               },
-              "description": "Ella train ride is the most beautiful train ride in Sri Lanka, if not in the world! Board the train and experience breathtaking views of lush green tea plantations, mountains, viaducts, valleys etc.",
+              "description": "Ride a scenic Ella train sector through tea plantations, hills and valleys when seats are available. The stretch is short but packed with highland views.",
               "image": "assets/img/onedayTour/ella/3.jpg"
             },
             {
@@ -204,7 +204,7 @@
                 "icon": "fa-leaf",
                 "color": "#0f6935ff"
               },
-              "description": "It is 1141 m in height and from the entrance it takes up to 30-45 min for the hike. Views from the summit are incredible. 360 degrees panoramic views.",
+              "description": "Hike Little Adam’s Peak (about 1,141 m). From the entrance the climb typically takes 30–45 minutes, ending in panoramic 360° views over the Ella Gap.",
               "image": "assets/img/onedayTour/ella/6.jpg"
             },
             {
@@ -214,7 +214,7 @@
                 "icon": "fa-water",
                 "color": "#8e44ad"
               },
-              "description": "Ravana Falls, one of the widest falls in the country.The falls are quite impressive, and you can climb over some of the rocks to get a closer look.",
+              "description": "Stop at Ravana Falls, one of the wider waterfalls in Sri Lanka. Clamber carefully over nearby rocks if you want a closer look at the cascade.",
               "image": "assets/img/onedayTour/ella/2.jpg"
             },
             {
@@ -224,7 +224,7 @@
                 "icon": "fa-elephant",
                 "color": "#8e44ad"
               },
-              "description": "4th Stop: You are able to observe an animated group of around 20 or 30 juvenile and teenage pachyderms, who are fed four times a day.",
+              "description": "Visit the Udawalawe elephant orphanage to observe a group of about 20–30 juvenile and teenage elephants. Feeding sessions run several times a day.",
               "image": "assets/img/onedayTour/ella/7.jpg"
             }
           ]
@@ -236,33 +236,35 @@
         "Driver's Accommodation & Meals",
         "Pickup & Drop Off",
         "Fuel & Parking Fees",
-        "24 Hours Service",
-        "Unlimited Mileage/Kilometer for entire round tour",
-        "Your Accommodation"
+        "24 Hours Service"
       ],
       "excludes": [
         "Food & Drinks",
         "Entrance & Activities Fees"
       ],
       "highlights": [
-        "Nine Arches Bridge",
-        "Ella Train Trips",
-        "Little Adams Peak",
-        "Ravana waterfall",
-        "elephant orphanage udawalawa"
+        "Nine Arch Bridge viewpoints",
+        "Scenic Ella train sector",
+        "Little Adam’s Peak hike (30–45 min)",
+        "Ravana Falls stop",
+        "Udawalawe elephant orphanage feeding"
       ],
       "faq": [
         {
-          "question": "What is included in Sri Lanka Ella One Day Tour?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 1 day itinerary. See Included for the full list."
+          "question": "What stops are on this Ella day tour?",
+          "answer": "The plan covers Nine Arch Bridge, a scenic Ella train sector when seats allow, Little Adam’s Peak, Ravana Falls and the Udawalawe elephant orphanage. Exact order can shift with train timing and road conditions."
         },
         {
-          "question": "Is this a private tour?",
-          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+          "question": "How hard is the Little Adam’s Peak walk?",
+          "answer": "From the trailhead it usually takes 30–45 minutes to the top at about 1,141 m. Expect a moderate hill walk with panoramic views; wear shoes with grip."
         },
         {
-          "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
+          "question": "Are entrance fees and the train ticket included?",
+          "answer": "No. Entrance and activity fees are excluded. Private air-conditioned vehicle, English-speaking driver, fuel, parking and pickup/drop-off are included—see the Included list on this page."
+        },
+        {
+          "question": "Where do you pick us up?",
+          "answer": "Pickup and drop-off are from your hotel or the airport, as listed under Included. Add your hotel name and preferred start time in Special Requests when you book."
         },
         {
           "question": "How do I book and pay?",
@@ -831,7 +833,7 @@
                 "icon": "fa-paw",
                 "color": "#2ecc71"
               },
-              "description": "Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous residents are the world’s biggest concentration of leopards",
+              "description": "Yala is home to 44 varieties of mammal and 215 bird species. It is known for one of the highest leopard densities in the world",
               "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
             },
             {
@@ -1104,7 +1106,7 @@
       "includes": [
         "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
-        "Half Board Accommodation",
+        "Half board accommodation at the hotels listed in the itinerary",
         "Airport Pickup & Drop Off",
         "Fuel & Parking Fees"
       ],
@@ -1124,7 +1126,7 @@
       "faq": [
         {
           "question": "What is included in 4 Day Sri Lanka Private Tour | Kandy, Ella, Yala & South Coast?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 4 days itinerary. See Included for the full list."
+          "answer": "Private transport, chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 4 day itinerary. See Included for the full list."
         },
         {
           "question": "Is this a private tour?",
@@ -1136,7 +1138,7 @@
         },
         {
           "question": "How do I book and pay?",
-          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+          "answer": "Use the booking form on this page. Pay later after confirmation. Pay at destination."
         }
       ]
     },
@@ -1144,16 +1146,16 @@
       "id": "5-day-sri-lanka-tour",
       "slug": "5-day-sri-lanka-tour",
       "title": "5 Day Sri Lanka Tour | Private Driver & Hotels",
-      "description": "Explore Sri Lanka in 5 unforgettable days with ancient cities, UNESCO heritage sites, scenic tea plantations, thrilling wildlife safaris and relaxing coastal experiences.",
+      "description": "Five private days from airport pickup through Pinnawala, Minneriya, Sigiriya, Kandy, Nuwara Eliya, Ella and a south-west coast finish with Madu River and a turtle centre.",
       "duration": "5 days",
       "persons": "1-20 Persons",
       "filecode": "5-day-sri-lanka-tour",
-      "overview": "Discover the highlights of Sri Lanka in this perfectly balanced 5 day private round tour. \n  Travel through the Cultural Triangle, explore Sigiriya Rock Fortress, experience Kandy’s sacred Temple of the Tooth Relic, journey through the misty tea plantations of Nuwara Eliya, enjoy an exciting Udawalawa National Park safari, and unwind along the beautiful South West Coast. \n  With private transportation, experienced English speaking driver guide, and comfortable accommodation options, this tour offers the ideal combination of culture, nature, wildlife and relaxation, perfect for couples, families and small groups. Private vehicle from your hotel or airport, English speaking chauffeur guide, and pay later in Sri Lanka after confirmation.",
+      "overview": "This five-day private route is for travellers who want culture, hills and a coastal finish without a long island circuit. Day one runs from Bandaranaike International Airport toward the Cultural Triangle with Pinnawala Elephant Orphanage and a 4x4 jeep safari in Minneriya National Park—known for large wild elephant gatherings—before an overnight near Sigiriya.\n\nDay two is heritage-focused: climb UNESCO-listed Sigiriya Rock Fortress (5th-century frescoes, Mirror Wall and summit views), then continue to Kandy for the Temple of the Sacred Tooth Relic and an evening Kandyan cultural dance show. Day three heads into tea country via the Royal Botanical Gardens at Peradeniya, Ramboda Falls and a tea factory visit with tasting, overnighting in Nuwara Eliya.\n\nDay four reaches Ella for the Nine Arch Bridge and the Little Adam’s Peak hike (about 1,141 m; typically 30–45 minutes from the entrance). Day five turns toward the south-west coast for a sea turtle conservation centre and a Madu River boat safari through mangroves and small islands, including local cinnamon-growing areas.\n\nWho this tour suits: first-time visitors with about a week who want Sigiriya and Kandy plus hill country and a soft coastal ending. The Sigiriya climb and Little Adam’s Peak walk need basic fitness; safari and boat legs are vehicle-based.\n\nPractical notes from our data: sample overnight hotels on the itinerary include Fresco Water Villa (or similar) near Sigiriya, Hotel Topaz (or similar) in Kandy, Yara Nuwara Eliya (or similar) and Oak Ray Ella Gap (or similar), often shown with breakfast and dinner. Check Included and Excluded on this page—entrance and activity fees, food and drinks, and accommodation arrangements are listed separately. Private air-conditioned transport, English-speaking driver, airport pickup/drop-off, fuel and parking are in Included. Payment later (pay at destination) is available after confirmation.",
       "tourType": "Round Tour",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport to Sigiriya, Elephants & Safari Adventure",
+          "title": "Airport to Sigiriya via Pinnawala and Minneriya safari",
           "activities": [
             {
               "type": "Arrival",
@@ -1162,7 +1164,7 @@
                 "icon": "fa-plane",
                 "color": "#2c3e50"
               },
-              "description": "Meet your professional driver guide at Bandaranaike International Airport and begin your private Sri Lanka journey heading towards the Cultural Triangle."
+              "description": "Meet your driver guide at Bandaranaike International Airport and travel toward the Cultural Triangle in a private vehicle."
             },
             {
               "type": "Wildlife Experience",
@@ -1171,7 +1173,7 @@
                 "icon": "fa-paw",
                 "color": "#27ae60"
               },
-              "description": "Visit Pinnawala Elephant Orphanage, a renowned sanctuary caring for rescued and orphaned elephants. Observe elephants up close and, depending on timing, witness their memorable river bathing session.",
+              "description": "Visit Pinnawala Elephant Orphanage, a sanctuary for rescued and orphaned elephants. Depending on timing, you may see elephants bathing in the river.",
               "image": "assets/img/5daysTours/7.jpg"
             },
             {
@@ -1181,7 +1183,7 @@
                 "icon": "fa-leaf",
                 "color": "#8e44ad"
               },
-              "description": "Enjoy a thrilling 4x4 jeep safari in Minneriya National Park, famous for “The Gathering”, one of Asia’s largest wild elephant congregations. Spot elephants, deer, buffalo and diverse bird species.",
+              "description": "Take a 4x4 jeep safari in Minneriya National Park, known for “The Gathering” of wild elephants. Look for elephants, deer, buffalo and birdlife.",
               "image": "assets/img/5daysTours/24.jpg"
             },
             {
@@ -1202,7 +1204,7 @@
         },
         {
           "day": 2,
-          "title": "Sigiriya to Kandy, Cultural Heritage",
+          "title": "Sigiriya Rock Fortress to Kandy culture",
           "activities": [
             {
               "type": "Guided tour",
@@ -1211,7 +1213,7 @@
                 "icon": "fa-mountain",
                 "color": "#e74c3c"
               },
-              "description": "Climb the UNESCO listed Sigiriya Lion Rock Fortress, a 5th century royal palace rising dramatically above the jungle plains. Explore ancient frescoes, the Mirror Wall and panoramic summit views.",
+              "description": "Climb UNESCO-listed Sigiriya Lion Rock, a 5th-century palace site above the plains. See frescoes, the Mirror Wall and summit panoramas.",
               "image": "assets/img/5daysTours/c8dyxgodivrwf4hxzziq.jpg"
             },
             {
@@ -1221,7 +1223,7 @@
                 "icon": "fa-place-of-worship",
                 "color": "#2980b9"
               },
-              "description": "Visit Sri Dalada Maligawa in Kandy, one of the most sacred Buddhist temples in the world. Witness traditional rituals and admire the temple’s beautiful Kandyan architecture.",
+              "description": "Visit Sri Dalada Maligawa in Kandy. Observe temple rituals and Kandyan architecture at one of Sri Lanka’s most sacred Buddhist sites.",
               "image": "assets/img/5daysTours/4.jpg"
             },
             {
@@ -1231,7 +1233,7 @@
                 "icon": "fa-theater-masks",
                 "color": "#e74c3c"
               },
-              "description": "Enjoy an evening cultural dance performance featuring traditional Kandyan drumming, fire walking and vibrant costumes that showcase Sri Lanka’s rich artistic heritage.",
+              "description": "Watch an evening cultural dance show with Kandyan drumming, fire walking and traditional costumes.",
               "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
             },
             {
@@ -1252,7 +1254,7 @@
         },
         {
           "day": 3,
-          "title": "Kandy to Nuwara Eliya, Scenic Tea Country",
+          "title": "Kandy to Nuwara Eliya through tea country",
           "activities": [
             {
               "type": "Nature",
@@ -1261,7 +1263,7 @@
                 "icon": "fa-tree",
                 "color": "#16a085"
               },
-              "description": "Explore one of Asia’s finest botanical gardens featuring exotic orchids, towering palm avenues, medicinal plants and beautifully landscaped grounds along the Mahaweli River.",
+              "description": "Walk the Royal Botanical Gardens at Peradeniya: orchids, palm avenues, medicinal plants and lawns along the Mahaweli River.",
               "image": "assets/img/5daysTours/26.jpg"
             },
             {
@@ -1271,7 +1273,7 @@
                 "icon": "fa-water",
                 "color": "#3498db"
               },
-              "description": "Stop at Ramboda Falls, one of Sri Lanka’s tallest waterfalls, surrounded by scenic tea estates and cool mountain air.",
+              "description": "Pause at Ramboda Falls, one of Sri Lanka’s tallest waterfalls, framed by tea estates and cooler mountain air.",
               "image": "assets/img/5daysTours/27.jpg"
             },
             {
@@ -1281,7 +1283,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Discover how world famous Ceylon tea is produced from leaf to cup. Walk through lush tea plantations and enjoy a fresh tea tasting session in Sri Lanka’s hill country.",
+              "description": "Tour a tea factory and plantation to see Ceylon tea from leaf to cup, then taste a fresh brew in the hills.",
               "image": "assets/img/5daysTours/28.png"
             },
             {
@@ -1302,7 +1304,7 @@
         },
         {
           "day": 4,
-          "title": "Nuwara Eliya to Ella, Mountain Scenery ",
+          "title": "Nuwara Eliya to Ella: bridge and peak",
           "activities": [
             {
               "type": "Guided tour",
@@ -1311,7 +1313,7 @@
                 "icon": "fa-bridge",
                 "color": "#c0392b"
               },
-              "description": "The majestic Nine Arch Bridge is one of the many reasons for that. The glorious Nine Arch Bridge between Ella and Demodara station is one of the engineering marvels in the early 20th century.",
+              "description": "Visit the Nine Arch Bridge between Ella and Demodara, an early-20th-century railway engineering landmark in the hills.",
               "image": "assets/img/5daysTours/5.jpg"
             },
             {
@@ -1321,7 +1323,7 @@
                 "icon": "fa-mountain",
                 "color": "#8e44ad"
               },
-              "description": "It is 1141 m in height and from the entrance it takes up to 30-45 min for the hike. Views from the summit are incredible. 360 degrees panoramic views with clouds rolling in, is a treat to watch.",
+              "description": "Hike Little Adam’s Peak (about 1,141 m). The walk from the entrance is typically 30–45 minutes, with wide views and cloud movement over the gap.",
               "image": "assets/img/5daysTours/9.jpg"
             },
             {
@@ -1342,7 +1344,7 @@
         },
         {
           "day": 5,
-          "title": "Udawalawa to South West Coast, River & Conservation",
+          "title": "South-west coast: turtles and Madu River",
           "activities": [
             {
               "type": "Conservation",
@@ -1351,7 +1353,7 @@
                 "icon": "fa-water",
                 "color": "#2980b9"
               },
-              "description": "Visit a sea turtle conservation center along the south coast and learn about marine wildlife protection, hatchery programs and rehabilitation efforts.",
+              "description": "Visit a sea turtle conservation centre on the south coast to learn about hatchery work and rehabilitation of marine turtles.",
               "image": "assets/img/5daysTours/31.jpg"
             },
             {
@@ -1361,7 +1363,7 @@
                 "icon": "fa-ship",
                 "color": "#3498db"
               },
-              "description": "Enjoy a scenic boat safari through the mangrove forests and small islands of the Madu River. Discover local cinnamon cultivation and diverse wetland wildlife.",
+              "description": "Boat through Madu River mangroves and islets. Look for wetland wildlife and learn about local cinnamon growing along the waterways.",
               "image": "assets/img/5daysTours/32.jpg"
             }
           ]
@@ -1370,39 +1372,43 @@
       "includes": [
         "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
+        "Half board accommodation at the hotels listed in the itinerary",
         "Pickup & Airport Drop Off",
         "Fuel & Parking Fees",
         "Unlimited Mileage for entire tour"
       ],
       "excludes": [
         "Entrance & Activity Fees",
-        "Food & Drinks",
-        "Accommodation (Can be arranged upon request)"
+        "Food & Drinks"
       ],
       "highlights": [
-        "Airport Pickup",
         "Pinnawala Elephant Orphanage",
-        "Minneriya National Park Safari",
-        "Sigiriya Rock Fortress",
-        "Temple of the Sacred Tooth Relic",
-        "Kandy Cultural Dance Show"
+        "Minneriya National Park jeep safari",
+        "Sigiriya Rock Fortress climb",
+        "Temple of the Tooth & Kandy dance show",
+        "Tea country, Ella bridge & Little Adam’s Peak",
+        "Madu River boat safari & turtle centre"
       ],
       "faq": [
         {
-          "question": "What is included in 5 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 5 days itinerary. See Included for the full list."
+          "question": "Which safari is on this 5-day itinerary?",
+          "answer": "Day one includes a 4x4 jeep safari in Minneriya National Park, known for large wild elephant gatherings. Entrance and activity fees are excluded."
         },
         {
-          "question": "Is this a private tour?",
-          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+          "question": "Does the route include Sigiriya and Ella?",
+          "answer": "Yes. Day two covers Sigiriya Rock Fortress and Kandy (Tooth Temple and cultural show). Day four is Ella for Nine Arch Bridge and Little Adam’s Peak."
         },
         {
-          "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
+          "question": "Are hotels and meals included?",
+          "answer": "Yes. Half board accommodation is included at the hotels listed in the itinerary (or similar). Entrance fees, lunch and drinks are listed under Excludes."
+        },
+        {
+          "question": "Who is this 5-day tour for?",
+          "answer": "Travellers with about five days who want Cultural Triangle highlights, Kandy, tea country, Ella and a south-west coast finish. Expect two moderate climbs (Sigiriya and Little Adam’s Peak)."
         },
         {
           "question": "How do I book and pay?",
-          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+          "answer": "Use the booking form on this page. Pay later after confirmation. Pay at destination."
         }
       ]
     },
@@ -1414,7 +1420,7 @@
       "duration": "6 days",
       "persons": "1-20 Persons",
       "filecode": "6-day-sri-lanka-private-tour",
-      "overview": "We are here for you to organize the perfect holiday you always dreamed of in 'Paradise Island', Sri Lanka.\n    Our 6days(5 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to CEYLON JOJO TRAVElS while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.\n    Yala Safari, Sigiriya, Ella Nine Arches Bridge, Ella train journey, Kandy Sacred Tooth Relic Temple, Ramboda watefall, Little Adam's Peak hike, Nuwara Eliya, Galle Fort, Bentota River tour are just to name a few main attractions that you'll cover during the journey.\n    Altogether you'll be visiting 28 attractions in total covering 10 districts of Sri Lanka while enjoing private trasportation. Private vehicle from your hotel or airport, English speaking chauffeur guide, and pay later in Sri Lanka after confirmation.",
+      "overview": "We are here for you to organize the perfect holiday you always dreamed of in 'Paradise Island', Sri Lanka.\n    Our 6days(5 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to Ceylon Jojo Travels while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.\n    Yala Safari, Sigiriya, Ella Nine Arches Bridge, Ella train journey, Kandy Sacred Tooth Relic Temple, Ramboda watefall, Little Adam's Peak hike, Nuwara Eliya, Galle Fort, Bentota River tour are just to name a few main attractions that you'll cover during the journey.\n    Altogether you'll be visiting 28 attractions in total covering 10 districts of Sri Lanka while enjoing private trasportation. Private vehicle from your hotel or airport, English speaking chauffeur guide, and pay later in Sri Lanka after confirmation.",
       "tourType": "Round Tour",
       "itinerary": [
         {
@@ -1677,7 +1683,7 @@
                 "icon": "fa-paw",
                 "color": "#2ecc71"
               },
-              "description": "Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous residents are the world’s biggest concentration of leopards",
+              "description": "Yala is home to 44 varieties of mammal and 215 bird species. It is known for one of the highest leopard densities in the world",
               "image": "assets/img/7dayschange/u1iadnsusjf2h8zdhma5.jpg"
             },
             {
@@ -1734,14 +1740,14 @@
       "includes": [
         "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
+        "Half board accommodation at the hotels listed in the itinerary",
         "Pickup & Airport Drop Off",
         "Fuel & Parking Fees",
         "Unlimited Mileage for entire tour"
       ],
       "excludes": [
         "Entrance & Activity Fees",
-        "Food & Drinks",
-        "Accommodation (Can be arranged upon request)"
+        "Food & Drinks"
       ],
       "highlights": [
         "Arrival",
@@ -1754,7 +1760,7 @@
       "faq": [
         {
           "question": "What is included in 6 Day Sri Lanka Private Tour | Cultural Heritage, Hill Country & Wildlife Safari?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 6 days itinerary. See Included for the full list."
+          "answer": "Private transport, chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 6 day itinerary. See Included for the full list."
         },
         {
           "question": "Is this a private tour?",
@@ -1766,7 +1772,7 @@
         },
         {
           "question": "How do I book and pay?",
-          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+          "answer": "Use the booking form on this page. Pay later after confirmation. Pay at destination."
         }
       ]
     },
@@ -2103,12 +2109,12 @@
       "includes": [
         "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
+        "Half board accommodation at the hotels listed in the itinerary",
         "Driver's Accommodation & Meals",
         "Pickup & Drop Off",
         "Fuel & Parking Fees",
         "24 Hours Service",
-        "Unlimited Mileage/Kilometer for entire round tour",
-        "Your Accommodation"
+        "Unlimited Mileage/Kilometer for entire round tour"
       ],
       "excludes": [
         "Food & Drinks",
@@ -2125,7 +2131,7 @@
       "faq": [
         {
           "question": "What is included in this 7 day Sri Lanka tour?",
-          "answer": "Private air conditioned transport, a chauffeur guide, 4 star hotels and the sightseeing listed in the 7 day itinerary. See Included for the full list."
+          "answer": "Private air conditioned transport, a chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 7 day itinerary. See Included for the full list."
         },
         {
           "question": "Is this a private tour?",
@@ -2137,7 +2143,7 @@
         },
         {
           "question": "How do I book and pay?",
-          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+          "answer": "Use the booking form on this page. Pay later after confirmation. Pay at destination."
         }
       ]
     },
@@ -2486,7 +2492,7 @@
       "includes": [
         "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
-        "Half Board Accommodation (7 Nights)",
+        "Half board accommodation at the hotels listed in the itinerary",
         "Fuel & Parking Fees",
         "Airport Pickup & Drop Off"
       ],
@@ -2506,7 +2512,7 @@
       "faq": [
         {
           "question": "What is included in 8 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 8 days itinerary. See Included for the full list."
+          "answer": "Private transport, chauffeur guide, half board accommodation at the hotels listed in the itinerary, and the sightseeing listed in the 8 day itinerary. See Included for the full list."
         },
         {
           "question": "Is this a private tour?",
@@ -2518,7 +2524,7 @@
         },
         {
           "question": "How do I book and pay?",
-          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+          "answer": "Use the booking form on this page. Pay later after confirmation. Pay at destination."
         }
       ]
     },
@@ -2526,16 +2532,16 @@
       "id": "10-day-sri-lanka-tour",
       "slug": "10-day-sri-lanka-tour",
       "title": "10 Day Sri Lanka Tour | Private Driver Island Circuit",
-      "description": "An unforgettable 10 day private Sri Lanka tour covering Wilpattu Safari, Anuradhapura, Sigiriya, Kandy, Ella adventures and a relaxing southern beach stay.",
+      "description": "A ten-day private Sri Lanka circuit: Wilpattu safari, Anuradhapura, Sigiriya and Pidurangala, Kandy, tea country, Ella, southern beach time, then Colombo before departure.",
       "duration": "10 days",
       "persons": "1-20 Persons",
       "filecode": "10-day-sri-lanka-tour",
-      "overview": "Discover Sri Lanka’s wildlife, ancient kingdoms, scenic mountains and golden beaches in one perfectly balanced 8 day journey. \n  This tour combines safari adventure, UNESCO heritage sites, hill country landscapes, tea plantations, waterfalls and relaxing coastal experiences with half board accommodation and private transportation. Private vehicle from your hotel or airport, English speaking chauffeur guide, and pay later in Sri Lanka after confirmation.",
+      "overview": "Ten days gives room for a northern wildlife start, the Cultural Triangle, hill country and several nights on the south coast before Colombo. Day one focuses on a five-hour 4x4 jeep safari in Wilpattu National Park—Sri Lanka’s largest—where you may see leopards, sloth bears, elephants, deer, crocodiles and birdlife, with overnight near Wilpattu on half board.\n\nDay two links Anuradhapura’s Sri Maha Bodhi and Ruwanweli Maha Seya with a Pidurangala Rock sunset near Sigiriya. Day three stays in the Cultural Triangle: Sigiriya Lion Rock Fortress, a Hiriwadunna village experience, a Minneriya jeep safari and an Ayurveda massage, overnighting again near Sigiriya. Day four moves to Kandy via a Matale spice garden, the Temple of the Sacred Tooth Relic and a Kandyan dance show.\n\nDay five crosses tea country (Blue Field Tea Factory and Ramboda Falls) toward Ella. Day six covers Nine Arch Bridge and the Elephant Transit Home before continuing to the south coast. Days seven and eight are beach days at Hikkaduwa with half-board stays listed at Somerset Mirissa Hotel (or similar). Day nine adds the Peraliya Tsunami Memorial, Koggala turtle hatchery and a Madu River boat safari with cinnamon plantation context, overnighting at Kamili Beach Resort (or similar). Day ten is Colombo sightseeing—Independence Memorial Hall, Gangaramaya Temple, Galle Face Green, Pettah Market and the Red Mosque—before departure.\n\nWho this tour suits: travellers who want safari, ancient cities, hills and a real beach block in one private booking. Wilpattu and Minneriya are jeep-based; Sigiriya and Pidurangala need fitness for climbing.\n\nPractical notes: Included lists air-conditioned private vehicle, English-speaking professional driver, half-board accommodation (7 nights), fuel, parking and airport pickup/drop-off. Excluded are entrance and activity fees, lunch and drinks, and personal expenses. Payment later (pay at destination) is available after confirmation.",
       "tourType": "Round Tour",
       "itinerary": [
         {
           "day": 1,
-          "title": "Airport / Hotel, Wilpattu",
+          "title": "Airport / hotel start and Wilpattu safari",
           "activities": [
             {
               "type": "Safari",
@@ -2544,7 +2550,7 @@
                 "icon": "fa-paw",
                 "color": "#27ae60"
               },
-              "description": "Explore Sri Lanka’s largest national park on a 5-hour 4x4 jeep safari. Spot leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife.",
+              "description": "Explore Sri Lanka’s largest national park on a five-hour 4x4 jeep safari. Look for leopards, sloth bears, elephants, deer, crocodiles and diverse birdlife.",
               "image": "assets/img/5daysTours/37.jpg"
             },
             {
@@ -2565,7 +2571,7 @@
         },
         {
           "day": 2,
-          "title": "Wilpattu, Anuradhapura, Sigiriya",
+          "title": "Anuradhapura sacred sites to Sigiriya via Pidurangala",
           "activities": [
             {
               "type": "Religious Visit",
@@ -2584,7 +2590,7 @@
                 "icon": "fa-landmark",
                 "color": "#e67e22"
               },
-              "description": "Explore one of Sri Lanka’s most sacred Buddhist monuments.",
+              "description": "Explore Ruwanweli Maha Seya, one of Sri Lanka’s most sacred Buddhist monuments.",
               "image": "assets/img/5daysTours/40.jpg"
             },
             {
@@ -2594,7 +2600,7 @@
                 "icon": "fa-mountain",
                 "color": "#e74c3c"
               },
-              "description": "Climb Pidurangala Rock for breathtaking sunset views.",
+              "description": "Climb Pidurangala Rock for sunset views toward Sigiriya.",
               "image": "assets/img/5daysTours/41.jpg"
             },
             {
@@ -2615,7 +2621,7 @@
         },
         {
           "day": 3,
-          "title": "Sigiriya Cultural Triangle",
+          "title": "Sigiriya Rock, village tour, Minneriya and Ayurveda",
           "activities": [
             {
               "type": "UNESCO Site",
@@ -2624,7 +2630,7 @@
                 "icon": "fa-mountain",
                 "color": "#c0392b"
               },
-              "description": "Climb the UNESCO listed Sigiriya Rock Fortress.",
+              "description": "Climb the UNESCO-listed Sigiriya Rock Fortress.",
               "image": "assets/img/5daysTours/42.jpg"
             },
             {
@@ -2634,7 +2640,7 @@
                 "icon": "fa-leaf",
                 "color": "#27ae60"
               },
-              "description": "Experience authentic rural Sri Lankan village life.",
+              "description": "Experience a rural Sri Lankan village visit at Hiriwadunna.",
               "image": "assets/img/5daysTours/36.jpg"
             },
             {
@@ -2644,7 +2650,7 @@
                 "icon": "fa-paw",
                 "color": "#2ecc71"
               },
-              "description": "Enjoy a 4x4 jeep safari famous for elephant gatherings.",
+              "description": "Join a 4x4 jeep safari in Minneriya, known for elephant gatherings.",
               "image": "assets/img/5daysTours/37.jpg"
             },
             {
@@ -2654,7 +2660,7 @@
                 "icon": "fa-spa",
                 "color": "#9b59b6"
               },
-              "description": "Relax with a traditional herbal oil massage.",
+              "description": "Relax with a traditional herbal oil Ayurveda massage.",
               "image": "assets/img/5daysTours/43.jpg"
             },
             {
@@ -2675,7 +2681,7 @@
         },
         {
           "day": 4,
-          "title": "Sigiriya, Kandy",
+          "title": "Spice garden to Kandy: Tooth Temple and dance",
           "activities": [
             {
               "type": "Cultural Visit",
@@ -2684,7 +2690,7 @@
                 "icon": "fa-seedling",
                 "color": "#32CD32"
               },
-              "description": "Discover Sri Lanka’s famous spices and herbs.",
+              "description": "Walk a Matale spice garden to see Sri Lankan spices and herbs.",
               "image": "assets/img/5daysTours/44.jpg"
             },
             {
@@ -2694,7 +2700,7 @@
                 "icon": "fa-place-of-worship",
                 "color": "#2980b9"
               },
-              "description": "Visit Sri Lanka’s most sacred Buddhist temple in Kandy.",
+              "description": "Visit the Temple of the Sacred Tooth Relic in Kandy.",
               "image": "assets/img/5daysTours/14.jpg"
             },
             {
@@ -2704,7 +2710,7 @@
                 "icon": "fa-theater-masks",
                 "color": "#e74c3c"
               },
-              "description": "Enjoy traditional Kandyan dance performances.",
+              "description": "Watch traditional Kandyan dance performances in the evening.",
               "image": "assets/img/5daysTours/fifyrnqt5tvouhpgh6kk.jpg"
             },
             {
@@ -2727,7 +2733,7 @@
         },
         {
           "day": 5,
-          "title": "Kandy, Nuwara Eliya, Ella",
+          "title": "Tea country toward Ella",
           "activities": [
             {
               "type": "Tea Experience",
@@ -2736,7 +2742,7 @@
                 "icon": "fa-mug-hot",
                 "color": "#8B4513"
               },
-              "description": "Learn how world famous Ceylon tea is produced.",
+              "description": "Learn how Ceylon tea is produced at Blue Field Tea Factory.",
               "image": "assets/img/5daysTours/28.png"
             },
             {
@@ -2746,7 +2752,7 @@
                 "icon": "fa-water",
                 "color": "#3498db"
               },
-              "description": "Visit one of Sri Lanka’s tallest waterfalls.",
+              "description": "Stop at Ramboda Falls, one of Sri Lanka’s tallest waterfalls.",
               "image": "assets/img/5daysTours/27.jpg"
             },
             {
@@ -2769,7 +2775,7 @@
         },
         {
           "day": 6,
-          "title": "Ella, Hikkaduwa",
+          "title": "Travel from Ella to the south coast, overnight Mirissa",
           "activities": [
             {
               "type": "Landmark",
@@ -2778,7 +2784,7 @@
                 "icon": "fa-bridge",
                 "color": "#A9A9A9"
               },
-              "description": "Visit the famous colonial era railway bridge.",
+              "description": "Visit the colonial-era Nine Arch railway bridge near Ella.",
               "image": "assets/img/5daysTours/3.jpeg"
             },
             {
@@ -2788,7 +2794,7 @@
                 "icon": "fa-elephant",
                 "color": "#2ecc71"
               },
-              "description": "Observe rescued baby elephants.",
+              "description": "Observe rescued baby elephants at the Elephant Transit Home.",
               "image": "assets/img/5daysTours/7.jpg"
             },
             {
@@ -2811,7 +2817,7 @@
         },
         {
           "day": 7,
-          "title": "Hikkaduwa Beach",
+          "title": "Hikkaduwa beach day",
           "activities": [
             {
               "type": "Beach Relaxation",
@@ -2820,7 +2826,7 @@
                 "icon": "fa-umbrella-beach",
                 "color": "#f1c40f"
               },
-              "description": "Relax on golden beaches and swim in the Indian Ocean.",
+              "description": "Relax on Hikkaduwa’s beaches and swim in the Indian Ocean.",
               "image": "assets/img/5daysTours/45.jpg"
             },
             {
@@ -2843,7 +2849,7 @@
         },
         {
           "day": 8,
-          "title": "Hikkaduwa Beach",
+          "title": "Second Hikkaduwa beach day",
           "activities": [
             {
               "type": "Beach Relaxation",
@@ -2852,7 +2858,7 @@
                 "icon": "fa-umbrella-beach",
                 "color": "#f1c40f"
               },
-              "description": "Relax on golden beaches and swim in the Indian Ocean.",
+              "description": "Another free beach day at Hikkaduwa for swimming and downtime.",
               "image": "assets/img/5daysTours/45.jpg"
             },
             {
@@ -2875,7 +2881,7 @@
         },
         {
           "day": 9,
-          "title": "water Activities to Kalutara",
+          "title": "Tsunami memorial, turtle hatchery and Madu River",
           "activities": [
             {
               "type": "Guided tour",
@@ -2884,7 +2890,7 @@
                 "icon": "fa-monument",
                 "color": "#FF8C00"
               },
-              "description": "Peraliya Tsunami Memorial honors the victims of the 2004 tsunami, featuring a towering Buddha statue as a symbol of peace and remembrance near the site of Sri Lanka’s worst tsunami disaster.",
+              "description": "Visit the Peraliya Tsunami Memorial, with its towering Buddha statue near the site of Sri Lanka’s worst 2004 tsunami disaster.",
               "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
             },
             {
@@ -2894,7 +2900,7 @@
                 "icon": "fa-water",
                 "color": "#27ae60"
               },
-              "description": "Visit the Koggala Turtle Hatchery and Conservation Center where endangered sea turtles are protected and rehabilitated. Learn about Sri Lanka’s marine conservation efforts, observe baby turtles in hatchery pools and understand how rescued turtles are released back into the Indian Ocean.",
+              "description": "Visit the Koggala Turtle Hatchery and Conservation Center. Learn about marine conservation, see hatchery pools and how rescued turtles are released to the Indian Ocean.",
               "image": "assets/img/5daysTours/31.jpg"
             },
             {
@@ -2904,7 +2910,7 @@
                 "icon": "fa-ship",
                 "color": "#16a085"
               },
-              "description": "Experience a scenic boat safari through the mangrove forests and small islands of the Madu River. Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems.",
+              "description": "Boat through Madu River mangroves and islets, with stops linked to traditional cinnamon cultivation and wetland wildlife.",
               "image": "assets/img/5daysTours/32.jpg"
             },
             {
@@ -2927,18 +2933,8 @@
         },
         {
           "day": 10,
-          "title": "Departure from Colombo",
+          "title": "Colombo city highlights and departure",
           "activities": [
-            {
-              "type": "Guided tour",
-              "title": {
-                "title": "Peraliya Tsunami Memorial",
-                "icon": "fa-monument",
-                "color": "#FF8C00"
-              },
-              "description": "Peraliya Tsunami Memorial honors the victims of the 2004 tsunami, featuring a towering Buddha statue as a symbol of peace and remembrance near the site of Sri Lanka’s worst tsunami disaster.",
-              "image": "assets/img/7daystour/lf8xpxoe67nlur3zr3da.jpg"
-            },
             {
               "type": "Guided tour",
               "title": {
@@ -2946,7 +2942,7 @@
                 "icon": "fa-landmark",
                 "color": "#A9A9A9"
               },
-              "description": "Independence Square in Colombo is a historic landmark built to commemorate Sri Lanka’s independence, featuring grand colonial architecture, lush gardens, and a peaceful atmosphere for visitors.",
+              "description": "See Independence Memorial Hall and gardens at Independence Square, built to commemorate Sri Lanka’s independence.",
               "image": "assets/img/7daystour/fsrleaf7977wcxityzu8.jpg"
             },
             {
@@ -2956,7 +2952,7 @@
                 "icon": "fa-landmark",
                 "color": "#FFD700"
               },
-              "description": "Gangaramaya Temple in Colombo is a beautiful Buddhist temple blending Sri Lankan, Thai, and Chinese architecture, featuring statues, relics, and a serene lakeside setting.",
+              "description": "Visit Gangaramaya Temple, blending Sri Lankan, Thai and Chinese architectural influences beside Beira Lake.",
               "image": "assets/img/7daystour/fn10nlk7fc0dzyawswa5.jpg"
             },
             {
@@ -2966,7 +2962,7 @@
                 "icon": "fa-park",
                 "color": "#32CD32"
               },
-              "description": "Galle Face Green in Colombo is a scenic oceanfront promenade, perfect for relaxing walks, stunning sunsets, and enjoying street food, offering a lively atmosphere by the Indian Ocean.",
+              "description": "Walk Galle Face Green, Colombo’s oceanfront promenade for sea views and evening street food.",
               "image": "assets/img/7daystour/qu0e7cjpkcfhfds1zeem.jpg"
             },
             {
@@ -2976,7 +2972,7 @@
                 "icon": "fa-store",
                 "color": "#FF4500"
               },
-              "description": "Colombo Fort Market is a bustling hub offering a mix of local goods, clothing, spices, and street food, providing a vibrant shopping experience in the heart of the city.",
+              "description": "Browse Pettah’s busy markets for spices, clothing and local goods in central Colombo.",
               "image": "assets/img/7daystour/vlk48jx8ywhuzyqlvqg8.jpg"
             },
             {
@@ -2986,7 +2982,7 @@
                 "icon": "fa-mosque",
                 "color": "#FF0000"
               },
-              "description": "Jami Ul-Alfar Mosque, or the Red Mosque in Colombo, is an iconic landmark with striking red and white architecture, offering a glimpse into Sri Lanka’s rich Islamic heritage.",
+              "description": "View Jami Ul-Alfar Mosque (the Red Mosque), known for its red-and-white facade in the Pettah area.",
               "image": "assets/img/7daystour/owzua0jhk0zazg9d8hcn.jpg"
             }
           ]
@@ -2995,7 +2991,7 @@
       "includes": [
         "Air Conditioned Private Vehicle",
         "English Speaking Professional Driver",
-        "Half Board Accommodation (7 Nights)",
+        "Half board accommodation at the hotels listed in the itinerary",
         "Fuel & Parking Fees",
         "Airport Pickup & Drop Off"
       ],
@@ -3005,29 +3001,33 @@
         "Personal Expenses"
       ],
       "highlights": [
-        "Wilpattu National Park Safari",
-        "Sri Maha Bodhi Temple",
-        "Ruwanweli Maha Seya",
-        "Pidurangala Rock Sunset",
-        "Sigiriya Lion Rock Fortress",
-        "Hiriwadunna Village Tour"
+        "5-hour Wilpattu National Park safari",
+        "Anuradhapura: Sri Maha Bodhi & Ruwanweli Maha Seya",
+        "Sigiriya, Pidurangala and Minneriya",
+        "Kandy Tooth Temple & cultural show",
+        "Ella Nine Arch Bridge & tea country",
+        "Hikkaduwa beach days, turtles, Madu River, Colombo"
       ],
       "faq": [
         {
-          "question": "What is included in 10 Day Sri Lanka Private Tour | Safari, Culture, Hill Country & Beach?",
-          "answer": "Private transport, chauffeur guide, and the sightseeing listed in the 10 days itinerary. See Included for the full list."
+          "question": "What is included on this 10-day tour?",
+          "answer": "Included: air conditioned private vehicle, English speaking professional driver, half board accommodation at the hotels listed in the itinerary, fuel, parking and airport pickup and drop off. Entrance and activity fees, lunch, drinks and personal expenses are excluded."
         },
         {
-          "question": "Is this a private tour?",
-          "answer": "Yes. Ceylon JOJO Travels runs private Sri Lanka tours for couples, families and small groups."
+          "question": "How long is the Wilpattu safari?",
+          "answer": "The itinerary lists a five-hour 4x4 jeep safari in Wilpattu National Park on day one. Park entrance and jeep fees fall under Excludes."
         },
         {
-          "question": "Can I customize the itinerary?",
-          "answer": "Yes. Add Special Requests when booking, hotel pick up, pace, and must see stops can be tailored."
+          "question": "Where are the beach days?",
+          "answer": "Days seven and eight are listed as Hikkaduwa beach days in the activities. South coast overnight stays use Somerset Mirissa Hotel (or similar) on half board, with a later night at Kamili Beach Resort (or similar)."
+        },
+        {
+          "question": "Can we adjust the itinerary?",
+          "answer": "Yes. Add Special Requests when booking for hotel pickup points, pace and must-see stops. Climb days (Sigiriya, Pidurangala) need basic fitness."
         },
         {
           "question": "How do I book and pay?",
-          "answer": "Use the booking form on this page. Payment later (pay at destination) is available after confirmation."
+          "answer": "Use the booking form on this page. Pay later after confirmation. Pay at destination."
         }
       ]
     }

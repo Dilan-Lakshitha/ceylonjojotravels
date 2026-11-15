@@ -119,7 +119,7 @@ export class KandyDayTourComponent implements OnInit, OnDestroy {
             title: {
               title: 'Herbal & Spice Garden',
               icon: 'fa-seedling',
-              color: '#16a085',
+              color: '#4A86C8',
             },
             description:
               'Optional visit to a herbal and spice garden to learn about Sri Lankan spices and herbs.',

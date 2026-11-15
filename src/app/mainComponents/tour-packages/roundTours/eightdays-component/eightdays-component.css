@@ -33,7 +33,7 @@
 }
 
 .active-indicator {
-  background-color: #022d41;
+  background-color: var(--color-primary-dark);
 }
 
 /* Thumbnail container */
@@ -67,7 +67,7 @@
 
 .thumb-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 6px #022d41;
+  box-shadow: 0 2px 6px var(--color-primary-dark);
 }
 
 .package-item {
@@ -83,7 +83,7 @@
 
 .package-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 25px #022d41;
+  box-shadow: 0 15px 25px var(--color-primary-dark);
 }
 
 .package-item:hover img {
@@ -95,7 +95,7 @@
 }
 
 .package-item:hover a.h5 {
-  color: #022d41; /* primary color or any highlight color */
+  color: var(--color-primary-dark); /* primary color or any highlight color */
 }
 
 .package-item .border-top {
@@ -103,7 +103,7 @@
 }
 
 .package-item:hover .border-top {
-  border-color: #022d41;
+  border-color: var(--color-primary-dark);
 }
 
 /* === Floating Booking Button === */
@@ -112,8 +112,8 @@
   top: 50%;
   right: 25px;
   transform: translateY(-50%);
-  background-color: #022d41;
-  color: white;
+  background-color: var(--color-accent);
+  color: #fff;
   border: none;
   border-radius: 50px;
   padding: 14px 26px;
@@ -121,7 +121,7 @@
   font-size: 1rem;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 8px 20px #022d41;
+  box-shadow: 0 8px 20px var(--color-primary-dark);
   transition: all 0.3s ease;
   
   /* Floating animation */
@@ -130,15 +130,15 @@
 
 /* Smooth hover */
 .fixed-booking-btn:hover {
-  background-color: #022d41;
-  box-shadow: 0 10px 25px #022d41;
+  background-color: var(--color-accent-hover);
+  box-shadow: 0 10px 25px var(--color-primary-dark);
   transform: translateY(-50%) scale(1.08);
 }
 
 /* Add star glow animation */
 .fixed-booking-btn i {
   margin-right: 8px;
-  color: #ffd700; /* golden star color */
+  color: #fff; /* golden star color */
   animation: glowStar 1.2s ease-in-out infinite alternate;
 }
 
@@ -151,6 +151,6 @@
 
 /* Star glowing effect */
 @keyframes glowStar {
-  from { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffc107; }
+  from { text-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent-hover); }
   to { text-shadow: 0 0 15px #ffea00, 0 0 25px #ffcc00; }
 }

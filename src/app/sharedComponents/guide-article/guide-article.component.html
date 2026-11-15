@@ -1,0 +1,82 @@
+<ng-container *ngIf="article as a">
+  <app-page-header
+    [title]="a.h1"
+    [crumbs]="[
+      { label: homeLabel, link: homeLink },
+      { label: guidesLabel, link: guidesLink },
+      { label: a.h1 }
+    ]">
+  </app-page-header>
+
+  <article class="guide-article" itemscope itemtype="https://schema.org/Article">
+    <div class="container py-5">
+      <header class="guide-article__header mb-4">
+        <h1 class="guide-article__h1" itemprop="headline">{{ a.h1 }}</h1>
+        <p class="guide-article__updated text-muted mb-0">
+          Last updated
+          <time [attr.datetime]="a.lastUpdated" itemprop="dateModified">{{ a.lastUpdated }}</time>
+        </p>
+      </header>
+
+      <p class="guide-article__direct" itemprop="description">{{ a.directAnswer }}</p>
+
+      <section
+        class="guide-article__section"
+        *ngFor="let section of a.sections"
+        [attr.aria-labelledby]="section.id">
+        <h2 [id]="section.id" class="guide-article__h2">{{ section.heading }}</h2>
+        <p class="guide-article__answer">{{ section.answer }}</p>
+
+        <div class="table-responsive" *ngIf="section.id === 'month-by-month' && a.monthTable">
+          <table class="guide-article__table">
+            <caption>{{ a.monthTable.caption }}</caption>
+            <thead>
+              <tr>
+                <th scope="col" *ngFor="let h of a.monthTable.headers">{{ h }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of a.monthTable.rows">
+                <th scope="row">{{ row[0] }}</th>
+                <td>{{ row[1] }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="guide-article__related mb-5" aria-labelledby="related-tours">
+        <h2 id="related-tours" class="guide-article__h2">Related private tours</h2>
+        <ul class="guide-article__links">
+          <li *ngFor="let tourId of a.relatedTours">
+            <a [routerLink]="tourLink(tourId)">{{ tourLabel(tourId) }}</a>
+          </li>
+          <li>
+            <a [routerLink]="toursLink">All Sri Lanka private tours</a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0" *ngIf="a.relatedGuidesNote">{{ a.relatedGuidesNote }}</p>
+      </section>
+
+      <section class="guide-article__faq mb-5" aria-labelledby="guide-faq">
+        <h2 id="guide-faq" class="guide-article__h2">Frequently asked questions</h2>
+        <div class="guide-article__faq-item" *ngFor="let item of a.faq">
+          <h3 class="guide-article__h3">{{ item.question }}</h3>
+          <p class="mb-0">{{ item.answer }}</p>
+        </div>
+      </section>
+
+      <section class="guide-article__cta text-center" aria-labelledby="guide-cta">
+        <h2 id="guide-cta" class="h3 mb-3">{{ a.ctaHeading }}</h2>
+        <p class="mb-4 mx-auto guide-article__cta-body">{{ a.ctaBody }}</p>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <a class="btn btn-primary px-4 py-2" [href]="whatsappHref" target="_blank" rel="noopener">
+            {{ a.ctaWhatsapp }}
+          </a>
+          <a class="btn btn-outline-primary px-4 py-2" [routerLink]="toursLink">{{ a.ctaTours }}</a>
+          <a class="btn btn-outline-primary px-4 py-2" [routerLink]="contactLink">{{ a.ctaContact }}</a>
+        </div>
+      </section>
+    </div>
+  </article>
+</ng-container>

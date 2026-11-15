@@ -75,7 +75,7 @@ export default async function handler(req, res) {
               New Booking Notification
             </h1>
             <p style="color: #cbd5e1; margin: 5px 0 0; font-size: 14px;">
-              CEYLON JOJO TRAVElS Booking System
+              Ceylon Jojo Travels Booking System
             </p>
           </div>
 
@@ -161,7 +161,7 @@ export default async function handler(req, res) {
 
           <!-- Footer -->
           <div style="background-color: #f1f5f9; padding: 15px; text-align: center; font-size: 12px; color: #6b7280;">
-            © ${new Date().getFullYear()} CEYLON JOJO TRAVElS. All rights reserved.
+            © ${new Date().getFullYear()} Ceylon Jojo Travels. All rights reserved.
           </div>
 
         </div>
@@ -172,7 +172,7 @@ export default async function handler(req, res) {
     await transporter.sendMail(mailOptions);
 
     const customerMailOptions = {
-      from: '"CEYLON JOJO TRAVElS"',
+      from: '"Ceylon Jojo Travels"',
       to: email,
       subject: `Thank you for your booking! - ${tour.title}`,
       html: `
@@ -185,7 +185,7 @@ export default async function handler(req, res) {
               Booking Confirmation
             </h1>
             <p style="color:#cbd5e1;margin:5px 0 0;font-size:14px;">
-              CEYLON JOJO TRAVElS – Sri Lanka
+              Ceylon Jojo Travels – Sri Lanka
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export default async function handler(req, res) {
             </p>
 
             <p style="font-size:15px;line-height:1.6;">
-              Thank you for choosing <strong>CEYLON JOJO TRAVElS</strong>. 
+              Thank you for choosing <strong>Ceylon Jojo Travels</strong>. 
               Your booking has been successfully received and confirmed. 
               Below are your booking details for your reference.
             </p>
@@ -245,7 +245,7 @@ export default async function handler(req, res) {
 
             <p style="margin-top:30px;font-size:15px;line-height:1.6;">
               Kind regards,<br/>
-              <strong>CEYLON JOJO TRAVElS Team</strong><br/>
+              <strong>Ceylon Jojo Travels Team</strong><br/>
               No 111/3 , Dediyawala Rd, Mahawaskaduwa,<br/>
               Waskaduwa, Kalutara North,<br/>
               Sri Lanka
@@ -270,7 +270,7 @@ export default async function handler(req, res) {
 
           <!-- Footer -->
           <div style="background:#f1f5f9;padding:15px;text-align:center;font-size:12px;color:#6b7280;">
-            © ${new Date().getFullYear()} CEYLON JOJO TRAVElS. All rights reserved.
+            © ${new Date().getFullYear()} Ceylon Jojo Travels. All rights reserved.
           </div>
 
         </div>

@@ -11,6 +11,7 @@ import {
 } from './i18n/route-matchers';
 import { tourIdResolver } from './i18n/tour-id.resolver';
 import { LEGACY_TOUR_PATHS, TOUR_IDS, slugForTour } from './i18n/tour-slug-map';
+import { GUIDE_IDS, isGuideReady, slugForGuide } from './i18n/guide-slug-map';
 import { homeI18nResolver, pageI18nResolver } from './i18n/page-i18n.resolver';
 import { AVAILABLE_LANGS } from './i18n/language.constants';
 import { ROUTE_MAP, RouteId } from './i18n/route-map';
@@ -55,6 +56,20 @@ function explicitSegmentRoutes(
     data: { routeId },
   }));
 }
+
+/** Guide articles: only locales with a ready slug (EN first; others after translation). */
+const guideArticleRoutes: Routes = AVAILABLE_LANGS.flatMap((lang) =>
+  GUIDE_IDS.filter((guideId) => isGuideReady(guideId, lang)).map((guideId) => ({
+    path: `${ROUTE_MAP.guides[lang]}/${slugForGuide(guideId, lang)}`,
+    loadComponent: () =>
+      import('./sharedComponents/guide-article/guide-article.component').then(
+        (m) => m.GuideArticleComponent,
+      ),
+    canActivate: segmentGuards,
+    resolve: { i18n: pageI18nResolver(['common', 'seo', 'guides']) },
+    data: { routeId: 'guides' as const, guideId },
+  })),
+);
 
 const guidesRoutes = explicitSegmentRoutes('guides', ['common', 'seo', 'guides'], () =>
   import('./sharedComponents/travel-guides/travel-guides').then((m) => m.TravelGuides),
@@ -237,6 +252,7 @@ export const routes: Routes = [
         resolve: { i18n: pageI18nResolver(['common', 'seo', 'testimonials']) },
         data: { routeId: 'testimonials' },
       },
+      ...guideArticleRoutes,
       ...guidesRoutes,
       ...restaurantRoutes,
       {

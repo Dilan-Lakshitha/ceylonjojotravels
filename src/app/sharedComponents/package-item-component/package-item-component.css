@@ -69,7 +69,7 @@
 }
 
 .bestseller {
-  background: #ff6b00;
+  background: var(--color-copper);
 }
 
 .limited {
@@ -94,7 +94,7 @@
 }
 
 .card-actions i:hover {
-  background: #023a2c;
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -109,7 +109,7 @@
   border-radius: 30px;
   font-weight: 700;
   font-size: clamp(0.85rem, 0.8rem + 0.3vw, 1rem);
-  color: #023a2c;
+  color: var(--color-primary);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 2;
   white-space: normal;
@@ -151,7 +151,7 @@
 .tour-title {
   font-size: clamp(1rem, 0.95rem + 0.35vw, 1.15rem);
   font-weight: 700;
-  color: #022d41;
+  color: var(--color-text);
   margin-bottom: 10px;
   line-height: 1.35;
   overflow-wrap: anywhere;
@@ -165,7 +165,7 @@
 }
 
 .stars {
-  color: #f4b400;
+  color: var(--color-accent);
   font-weight: 600;
 }
 
@@ -186,12 +186,12 @@
 .tour-tags span {
   display: inline-flex;
   align-items: center;
-  background: #f1f5f9;
+  background: var(--color-band);
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 11px;
   line-height: 1.25;
-  color: #023a2c;
+  color: var(--color-primary);
   font-weight: 500;
   transition: 0.3s;
   max-width: 100%;
@@ -205,7 +205,7 @@
 }
 
 .tour-tags span:hover {
-  background: #023a2c;
+  background: var(--color-primary);
   color: #fff;
 }
 

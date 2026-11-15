@@ -2,6 +2,10 @@ import { Injectable, Inject, PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, of, shareReplay } from 'rxjs';
+import {
+  getStaticUsParty2Total,
+  getStaticUsPriceMap,
+} from './tour-prices.static';
 
 /**
  * Only US price JSON files ship in assets/data today.
@@ -24,10 +28,31 @@ export class TourPriceService {
     return PRICE_FILE_COUNTRIES.has(code) ? code : 'US';
   }
 
-  /** Per-person display price (key "2" in price JSON). */
+  /**
+   * Sync party-of-2 total from the static US map (SSR-safe).
+   * Same number historically returned by getPersonPrice (JSON price["2"]).
+   */
+  getPartyOfTwoTotalSync(filecode: string): number {
+    if (!filecode) {
+      return 0;
+    }
+    return getStaticUsParty2Total(filecode);
+  }
+
+  /** Per-person display helper: round(party-of-2 total / 2). */
+  getDisplayPerPersonSync(filecode: string): number {
+    const total = this.getPartyOfTwoTotalSync(filecode);
+    return total > 0 ? Math.round(total / 2) : 0;
+  }
+
+  /** Party-of-2 total (key "2" in price JSON). SSR uses static map. */
   getPersonPrice(filecode: string, detectedCountry?: string): Promise<number> {
-    if (!isPlatformBrowser(this.platformId) || !filecode) {
+    if (!filecode) {
       return Promise.resolve(0);
+    }
+    const staticTotal = getStaticUsParty2Total(filecode);
+    if (!isPlatformBrowser(this.platformId)) {
+      return Promise.resolve(staticTotal);
     }
     const country = this.pricingCountry(detectedCountry);
     const key = `${country}:${filecode}`;
@@ -36,8 +61,8 @@ export class TourPriceService {
         key,
         new Promise((resolve) => {
           this.getPrices(filecode, country).subscribe({
-            next: (prices) => resolve(prices['2'] ?? 0),
-            error: () => resolve(0),
+            next: (prices) => resolve(prices['2'] ?? staticTotal ?? 0),
+            error: () => resolve(staticTotal ?? 0),
           });
         }),
       );
@@ -45,10 +70,14 @@ export class TourPriceService {
     return this.personCache.get(key)!;
   }
 
-  /** Full price map for booking form. */
+  /** Full price map for booking form. SSR returns static US map. */
   getPrices(filecode: string, detectedCountry?: string): Observable<Record<string, number>> {
-    if (!isPlatformBrowser(this.platformId) || !filecode) {
+    if (!filecode) {
       return of({});
+    }
+    const staticMap = getStaticUsPriceMap(filecode);
+    if (!isPlatformBrowser(this.platformId)) {
+      return of(staticMap);
     }
     const country = this.pricingCountry(detectedCountry);
     const key = `${country}:${filecode}`;
@@ -57,14 +86,14 @@ export class TourPriceService {
       this.price$Cache.set(
         key,
         this.http.get<{ price?: Record<string, number> }>(url).pipe(
-          map((data) => data?.price ?? {}),
+          map((data) => data?.price ?? staticMap),
           catchError(() => {
             if (country === 'US') {
-              return of({});
+              return of(staticMap);
             }
             return this.http.get<{ price?: Record<string, number> }>(`assets/data/US${filecode}.json`).pipe(
-              map((data) => data?.price ?? {}),
-              catchError(() => of({})),
+              map((data) => data?.price ?? staticMap),
+              catchError(() => of(staticMap)),
             );
           }),
           shareReplay(1),

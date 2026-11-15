@@ -1,5 +1,5 @@
 .uniform-icon {
-  color: #023a2c;
+  color: var(--color-primary);
 }
 
 .icon-circle {
@@ -25,7 +25,7 @@
 }
 
 .itinerary-header:hover {
-  background-color: #023a2c;
+  background-color: var(--color-primary);
   color: #fff;
 }
 
@@ -90,7 +90,7 @@
   inset: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(2, 58, 44, 0.85);
+  background: rgba(11, 36, 56, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@
   position: absolute;
   top: 20px;
   right: 30px;
-  background: rgba(2, 58, 44, 0.9);
+  background: rgba(11, 36, 56, 0.9);
   border: none;
   color: white;
   font-size: 2rem;
@@ -125,7 +125,7 @@
 }
 
 .close-btn:hover {
-  background: #023a2c;
+  background: var(--color-primary);
 }
 
 .scrollable-activities {

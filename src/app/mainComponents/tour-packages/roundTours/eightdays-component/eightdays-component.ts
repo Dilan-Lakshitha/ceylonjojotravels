@@ -62,7 +62,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Thimbiri Wewa Resort, Wilpattu', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Thimbiri Wewa Resort, Wilpattu', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Thimbiri Wewa Resort Wilpattu (or similar). Half Board basis.',
             image: 'assets/img/5daysTours/38.jpg',
@@ -84,7 +84,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Historical Visit',
-            title: { title: 'Ruwanweli Maha Seya', icon: 'fa-landmark', color: '#e67e22' },
+            title: { title: 'Ruwanweli Maha Seya', icon: 'fa-landmark', color: 'var(--color-copper)' },
             description:
               'Explore one of Sri Lanka’s most sacred Buddhist monuments.',
             image: 'assets/img/5daysTours/40.jpg',
@@ -98,7 +98,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
             image: 'assets/img/5daysTours/c.jpg',
@@ -127,7 +127,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Safari',
-            title: { title: 'Minneriya Safari', icon: 'fa-paw', color: '#2ecc71' },
+            title: { title: 'Minneriya Safari', icon: 'fa-paw', color: 'var(--color-success)' },
             description:
               'Enjoy a 4x4 jeep safari famous for elephant gatherings.',
             image: 'assets/img/5daysTours/24.jpg',
@@ -141,7 +141,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
             image: 'assets/img/5daysTours/c.jpg',
@@ -177,7 +177,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Hotel Topaz, Kandy', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Hotel Topaz, Kandy', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Hotel Topaz (or similar).',
             image: 'assets/img/5daysTours/25.jpg',
@@ -206,7 +206,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Oak Ray Ella Gap Hotel', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Oak Ray Ella Gap Hotel', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay in Ella.',
             image: 'assets/img/5daysTours/xowpqo2nib4z21zdldhp.jpg',
@@ -228,14 +228,14 @@ export class EightdaysComponent {
           },
           {
             type: 'Wildlife',
-            title: { title: 'Elephant Transit Home', icon: 'fa-elephant', color: '#2ecc71' },
+            title: { title: 'Elephant Transit Home', icon: 'fa-elephant', color: 'var(--color-success)' },
             description:
               'Observe rescued baby elephants.',
             image: 'assets/img/5daysTours/7.jpg',
           },
           {
             type: 'Accommodation',
-            title: { title: 'Somerset Mirissa Hotel', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Somerset Mirissa Hotel', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Accommodation in Somerset Mirissa Hotel or Similar hotel - HB Basis',
             image: 'assets/img/5daysTours/35.jpg',
@@ -262,7 +262,7 @@ export class EightdaysComponent {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Somerset Mirissa Hotel', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Somerset Mirissa Hotel', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Accommodation in Somerset Mirissa Hotel or Similar hotel - HB Basis',
             image: 'assets/img/5daysTours/35.jpg',
@@ -296,7 +296,7 @@ export class EightdaysComponent {
             title: {
               title: 'Madu River Boat Safari',
               icon: 'fa-ship',
-              color: '#16a085',
+              color: '#4A86C8',
             },
             description:
               'Experience a scenic boat safari through the mangrove forests and small islands of the Madu River. Visit traditional cinnamon plantations and explore one of Sri Lanka’s most beautiful wetland ecosystems.',

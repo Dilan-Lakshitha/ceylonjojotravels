@@ -2,6 +2,7 @@ import { RenderMode, ServerRoute } from '@angular/ssr';
 import { AVAILABLE_LANGS, AppLang } from './i18n/language.constants';
 import { ROUTE_MAP, RouteId } from './i18n/route-map';
 import { TOUR_IDS, slugForTour } from './i18n/tour-slug-map';
+import { GUIDE_IDS, isGuideReady, slugForGuide } from './i18n/guide-slug-map';
 
 /**
  * Prerender every public sitemap URL so crawlers receive real
@@ -70,6 +71,30 @@ function prerenderTourDetailRoutes(): ServerRoute[] {
   );
 }
 
+/** Prerender only guide locales that are ready (EN until Wave translations ship). */
+function prerenderGuideArticleRoutes(): ServerRoute[] {
+  const langsByPath = new Map<string, AppLang[]>();
+  for (const lang of AVAILABLE_LANGS) {
+    for (const guideId of GUIDE_IDS) {
+      if (!isGuideReady(guideId, lang)) continue;
+      const path = `${ROUTE_MAP.guides[lang]}/${slugForGuide(guideId, lang)}`;
+      const langs = langsByPath.get(path) ?? [];
+      langs.push(lang);
+      langsByPath.set(path, langs);
+    }
+  }
+
+  return [...langsByPath.entries()].map(
+    ([path, langs]): ServerRoute => ({
+      path: `:lang/${path}`,
+      renderMode: RenderMode.Prerender,
+      async getPrerenderParams() {
+        return langs.map((lang) => ({ lang }));
+      },
+    }),
+  );
+}
+
 export const serverRoutes: ServerRoute[] = [
   {
     path: ':lang',
@@ -80,6 +105,7 @@ export const serverRoutes: ServerRoute[] = [
   },
   ...PRERENDER_SECTIONS.flatMap(prerenderSectionRoutes),
   ...prerenderTourDetailRoutes(),
+  ...prerenderGuideArticleRoutes(),
   {
     path: '**',
     renderMode: RenderMode.Client,

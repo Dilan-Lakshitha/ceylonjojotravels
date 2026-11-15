@@ -44,7 +44,7 @@ images: string[] = [
     persons: '2-20 Persons',
     filecode: "6-day-sri-lanka-private-tour",
     overview: `We are here for you to organize the perfect holiday you always dreamed of in 'Paradise Island', Sri Lanka.
-    Our 6days(5 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to CEYLON JOJO TRAVElS while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.
+    Our 6days(5 nights) travel package is scheduled in a way that you'll cover not only all the famous attractions but also some of the rare experiences that are very unique to Ceylon Jojo Travels while accomadating our guests in Sri Lanka's finest 4 star category hotels on half board basis.
     Yala Safari, Sigiriya, Ella Nine Arches Bridge, Ella train journey, Kandy Sacred Tooth Relic Temple, Ramboda watefall, Little Adam's Peak hike, Nuwara Eliya, Galle Fort, Bentota River tour are just to name a few main attractions that you'll cover during the journey.
     Altogether you'll be visiting 28 attractions in total covering 10 districts of Sri Lanka while enjoing private trasportation.`,
 
@@ -126,7 +126,7 @@ images: string[] = [
             title: {
               title: 'Dambulla Dedicated Economic Center',
               icon: 'fa-shopping-basket',
-              color: '#16a085',
+              color: '#4A86C8',
             },
             description:
               'Enjoy fresh fruits and vegetables at Dambulla market.',
@@ -187,7 +187,7 @@ images: string[] = [
             title: {
               title: 'Nalanda Gedige',
               icon: 'fa-landmark',
-              color: '#16a085',
+              color: '#4A86C8',
             },
             description:
               'An ancient and mysterious edifice near Matale that has confounded researchers with its strange mix of Hindu and Buddhist architecture. Believed to be at least a thousand years old the structure',
@@ -211,7 +211,7 @@ images: string[] = [
             title: {
               title: 'Royal Botanical Garden',
               icon: 'fa-leaf',
-              color: '#2ecc71',
+              color: 'var(--color-success)',
             },
             description:
               'The gardens display over 4 000 different species of plants, regarded amongst the most superior in Asia.',
@@ -222,7 +222,7 @@ images: string[] = [
             title: {
               title: 'Ambuluwawa Tower',
               icon: 'fa-mountain',
-              color: '#e67e22',
+              color: 'var(--color-copper)',
             },
             description:
               'Next up.. an easy hike to do which gives you 360 degree views of the surrounding mountains, forests, rivers and towns in Kandy!',
@@ -306,7 +306,7 @@ images: string[] = [
             title: {
               title: 'Yala National Park',
               icon: 'fa-paw',
-              color: '#2ecc71',
+              color: 'var(--color-success)',
             },
             description:
               'Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous residents are the world’s biggest concentration of leopards',

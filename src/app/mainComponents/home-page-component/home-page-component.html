@@ -1,206 +1,198 @@
-﻿<!-- Carousel Start -->
+﻿<!-- Hero Start: one full-bleed image at a time -->
 <div class="container-fluid p-0" *transloco="let t; scope: 'home'; prefix: 'home'">
-    <div
-      id="header-carousel"
-      class="carousel slide"
-      (mouseenter)="pauseHeroCarousel()"
-      (mouseleave)="resumeHeroCarousel()"
-    >
-        <div class="carousel-inner">
-            <!-- 1. Village cart + elephant safari experiences -->
-            <div class="carousel-item" [class.active]="heroSlideIndex === 0">
-                <picture>
-                    <source
-                      type="image/webp"
-                      srcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-960.webp 960w, assets/img/carousel/hero-1-experiences-1280.webp 1280w, assets/img/carousel/hero-1-experiences-1600.webp 1600w, assets/img/carousel/hero-1-experiences-1920.webp 1920w"
-                      sizes="100vw">
-                    <img
-                      class="w-100 hero-collage"
-                      src="assets/img/carousel/hero-1-experiences-1280.jpg"
-                      srcset="assets/img/carousel/hero-1-experiences-640.jpg 640w, assets/img/carousel/hero-1-experiences-960.jpg 960w, assets/img/carousel/hero-1-experiences-1280.jpg 1280w, assets/img/carousel/hero-1-experiences-1600.jpg 1600w, assets/img/carousel/hero-1-experiences-1920.jpg 1920w"
-                      sizes="100vw"
-                      alt="Sri Lanka tours collage: village bullock cart, leopard safari, elephants, snorkeling, Sigiriya and hill country"
-                      width="1920"
-                      height="720"
-                      fetchpriority="high"
-                      decoding="sync">
-                </picture>
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-3 text-white mb-md-4">{{ t('hero1') }}</h1>
-                        <p class="text-white mb-3">{{ t('hero1sub') }}</p>
-                        <a href="https://wa.me/447375612946" class="btn btn-primary py-md-3 px-md-5 mt-2">
-                            {{ t('whatsapp') }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- 2. Wildlife safari collage -->
-            <div class="carousel-item" [class.active]="heroSlideIndex === 1">
-                <picture>
-                    <source
-                      type="image/webp"
-                      srcset="assets/img/carousel/hero-5-safari-640.webp 640w, assets/img/carousel/hero-5-safari-960.webp 960w, assets/img/carousel/hero-5-safari-1280.webp 1280w, assets/img/carousel/hero-5-safari-1600.webp 1600w, assets/img/carousel/hero-5-safari-1920.webp 1920w"
-                      sizes="100vw">
-                    <img
-                      class="w-100 hero-collage"
-                      src="assets/img/carousel/hero-5-safari-1280.jpg"
-                      srcset="assets/img/carousel/hero-5-safari-640.jpg 640w, assets/img/carousel/hero-5-safari-960.jpg 960w, assets/img/carousel/hero-5-safari-1280.jpg 1280w, assets/img/carousel/hero-5-safari-1600.jpg 1600w, assets/img/carousel/hero-5-safari-1920.jpg 1920w"
-                      sizes="100vw"
-                      alt="Sri Lanka wildlife safari: leopard sightings, elephants and jeep tours"
-                      width="1920"
-                      height="720"
-                      loading="lazy"
-                      decoding="async">
-                </picture>
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h2 class="display-3 text-white mb-md-4">{{ t('hero5') }}</h2>
-                        <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 3. Beach / ocean collage -->
-            <div class="carousel-item" [class.active]="heroSlideIndex === 2">
-                <picture>
-                    <source
-                      type="image/webp"
-                      srcset="assets/img/carousel/hero-4-beach-640.webp 640w, assets/img/carousel/hero-4-beach-960.webp 960w, assets/img/carousel/hero-4-beach-1280.webp 1280w, assets/img/carousel/hero-4-beach-1600.webp 1600w, assets/img/carousel/hero-4-beach-1920.webp 1920w"
-                      sizes="100vw">
-                    <img
-                      class="w-100 hero-collage"
-                      src="assets/img/carousel/hero-4-beach-1280.jpg"
-                      srcset="assets/img/carousel/hero-4-beach-640.jpg 640w, assets/img/carousel/hero-4-beach-960.jpg 960w, assets/img/carousel/hero-4-beach-1280.jpg 1280w, assets/img/carousel/hero-4-beach-1600.jpg 1600w, assets/img/carousel/hero-4-beach-1920.jpg 1920w"
-                      sizes="100vw"
-                      alt="Sri Lanka beach holidays: stilt fishing, sea turtles and snorkeling"
-                      width="1920"
-                      height="720"
-                      loading="lazy"
-                      decoding="async">
-                </picture>
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h2 class="display-3 text-white mb-md-4">{{ t('hero4') }}</h2>
-                        <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 4. Ella highlands -->
-            <div class="carousel-item" [class.active]="heroSlideIndex === 3">
-                <picture>
-                    <source
-                      type="image/webp"
-                      srcset="assets/img/carousel/hero-2-ella-640.webp 640w, assets/img/carousel/hero-2-ella-800.webp 800w"
-                      sizes="100vw">
-                    <img
-                      class="w-100"
-                      src="assets/img/carousel/hero-2-ella-800.jpg"
-                      srcset="assets/img/carousel/hero-2-ella-640.jpg 640w, assets/img/carousel/hero-2-ella-800.jpg 800w"
-                      sizes="100vw"
-                      alt="Ella highlands scenic Sri Lanka tour"
-                      width="800"
-                      height="600"
-                      loading="lazy"
-                      decoding="async">
-                </picture>
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h2 class="display-3 text-white mb-md-4">{{ t('hero2') }}</h2>
-                        <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 5. Culture / highlands / coast collage -->
-            <div class="carousel-item" [class.active]="heroSlideIndex === 4">
-                <picture>
-                    <source
-                      type="image/webp"
-                      srcset="assets/img/carousel/hero-3-panorama-640.webp 640w, assets/img/carousel/hero-3-panorama-960.webp 960w, assets/img/carousel/hero-3-panorama-1280.webp 1280w, assets/img/carousel/hero-3-panorama-1600.webp 1600w, assets/img/carousel/hero-3-panorama-1920.webp 1920w"
-                      sizes="100vw">
-                    <img
-                      class="w-100 hero-collage"
-                      src="assets/img/carousel/hero-3-panorama-1280.jpg"
-                      srcset="assets/img/carousel/hero-3-panorama-640.jpg 640w, assets/img/carousel/hero-3-panorama-960.jpg 960w, assets/img/carousel/hero-3-panorama-1280.jpg 1280w, assets/img/carousel/hero-3-panorama-1600.jpg 1600w, assets/img/carousel/hero-3-panorama-1920.jpg 1920w"
-                      sizes="100vw"
-                      alt="Sri Lanka highlights: Sigiriya, tea country, Kandy temple elephants and Galle lighthouse"
-                      width="1920"
-                      height="720"
-                      loading="lazy"
-                      decoding="async">
-                </picture>
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h2 class="display-3 text-white mb-md-4">{{ t('hero3') }}</h2>
-                        <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 6. Sigiriya collage -->
-            <div class="carousel-item" [class.active]="heroSlideIndex === 5">
-                <picture>
-                    <source
-                      type="image/webp"
-                      srcset="assets/img/carousel/hero-6-temple-640.webp 640w, assets/img/carousel/hero-6-temple-960.webp 960w, assets/img/carousel/hero-6-temple-1280.webp 1280w, assets/img/carousel/hero-6-temple-1600.webp 1600w, assets/img/carousel/hero-6-temple-1920.webp 1920w"
-                      sizes="100vw">
-                    <img
-                      class="w-100 hero-collage"
-                      src="assets/img/carousel/hero-6-temple-1280.jpg"
-                      srcset="assets/img/carousel/hero-6-temple-640.jpg 640w, assets/img/carousel/hero-6-temple-960.jpg 960w, assets/img/carousel/hero-6-temple-1280.jpg 1280w, assets/img/carousel/hero-6-temple-1600.jpg 1600w, assets/img/carousel/hero-6-temple-1920.jpg 1920w"
-                      sizes="100vw"
-                      alt="Sigiriya Lion Rock fortress: panoramic views, water gardens, lion paws and summit climb"
-                      width="1920"
-                      height="720"
-                      loading="lazy"
-                      decoding="async">
-                </picture>
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h2 class="display-3 text-white mb-md-4">{{ t('hero6') }}</h2>
-                        <button class="btn btn-primary py-md-3 px-md-5 mt-2"
-                            (click)="scrollToSection('packages')">{{ t('exploreTours') }}</button>
-                    </div>
-                </div>
-            </div>
+  <div
+    id="header-carousel"
+    class="home-hero"
+    (mouseenter)="pauseHeroCarousel()"
+    (mouseleave)="resumeHeroCarousel()"
+  >
+    <div class="home-hero__track">
+      <!-- 1. Ella highlands (LCP) -->
+      <div class="home-hero__slide" [class.is-active]="heroSlideIndex === 0">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/img/carousel/hero-2-ella-640.webp 640w, assets/img/carousel/hero-2-ella-800.webp 800w, assets/img/carousel/hero-2-ella-960.webp 960w, assets/img/carousel/hero-2-ella-1280.webp 1280w, assets/img/carousel/hero-2-ella-1600.webp 1600w, assets/img/carousel/hero-2-ella-1920.webp 1920w"
+            sizes="100vw">
+          <img
+            class="home-hero__img"
+            src="assets/img/carousel/hero-2-ella-1280.jpg"
+            srcset="assets/img/carousel/hero-2-ella-640.jpg 640w, assets/img/carousel/hero-2-ella-800.jpg 800w, assets/img/carousel/hero-2-ella-960.jpg 960w, assets/img/carousel/hero-2-ella-1280.jpg 1280w, assets/img/carousel/hero-2-ella-1600.jpg 1600w, assets/img/carousel/hero-2-ella-1920.jpg 1920w"
+            sizes="100vw"
+            alt="Ella highlands scenic Sri Lanka tour"
+            width="1280"
+            height="720"
+            fetchpriority="high"
+            decoding="async">
+        </picture>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__content">
+          <h1 class="home-hero__title">{{ t('hero1') }}</h1>
+          <p class="home-hero__sub">{{ t('hero1sub') }}</p>
+          <div class="home-hero__actions">
+            <a href="https://wa.me/447375612946" class="btn btn-primary home-hero__btn home-hero__btn--primary">
+              {{ t('ctaPlanWhatsApp') }}
+            </a>
+            <a [routerLink]="toursLink" class="btn home-hero__btn home-hero__btn--secondary">
+              {{ t('ctaViewTours') }}
+            </a>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#header-carousel" aria-label="Previous slide" (click)="prevHeroSlide($event)">
-            <div class="btn btn-dark" style="width: 45px; height: 45px;" aria-hidden="true">
-                <span class="carousel-control-prev-icon mb-n2"></span>
-            </div>
-        </a>
-        <a class="carousel-control-next" href="#header-carousel" aria-label="Next slide" (click)="nextHeroSlide($event)">
-            <div class="btn btn-dark" style="width: 45px; height: 45px;" aria-hidden="true">
-                <span class="carousel-control-next-icon mb-n2"></span>
-            </div>
-        </a>
+      </div>
+      <!-- 2. Packages -->
+      <div class="home-hero__slide" [class.is-active]="heroSlideIndex === 1">
+        <picture>
+          <source type="image/webp" srcset="assets/img/carousel/hero-5-safari-640.webp 640w, assets/img/carousel/hero-5-safari-960.webp 960w, assets/img/carousel/hero-5-safari-1280.webp 1280w, assets/img/carousel/hero-5-safari-1600.webp 1600w, assets/img/carousel/hero-5-safari-1920.webp 1920w" sizes="100vw">
+          <img class="home-hero__img" src="assets/img/carousel/hero-5-safari-1280.jpg" srcset="assets/img/carousel/hero-5-safari-640.jpg 640w, assets/img/carousel/hero-5-safari-960.jpg 960w, assets/img/carousel/hero-5-safari-1280.jpg 1280w, assets/img/carousel/hero-5-safari-1600.jpg 1600w, assets/img/carousel/hero-5-safari-1920.jpg 1920w" sizes="100vw" alt="Sri Lanka wildlife safari jeep tour" width="1920" height="720" loading="lazy" decoding="async">
+        </picture>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__content">
+          <h2 class="home-hero__title">{{ t('hero2') }}</h2>
+          <p class="home-hero__sub">{{ t('hero1sub') }}</p>
+          <div class="home-hero__actions">
+            <a href="https://wa.me/447375612946" class="btn btn-primary home-hero__btn home-hero__btn--primary">
+              {{ t('ctaPlanWhatsApp') }}
+            </a>
+            <a [routerLink]="toursLink" class="btn home-hero__btn home-hero__btn--secondary">
+              {{ t('ctaViewTours') }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 3. Private tours -->
+      <div class="home-hero__slide" [class.is-active]="heroSlideIndex === 2">
+        <picture>
+          <source type="image/webp" srcset="assets/img/carousel/hero-4-beach-640.webp 640w, assets/img/carousel/hero-4-beach-960.webp 960w, assets/img/carousel/hero-4-beach-1280.webp 1280w, assets/img/carousel/hero-4-beach-1600.webp 1600w, assets/img/carousel/hero-4-beach-1920.webp 1920w" sizes="100vw">
+          <img class="home-hero__img" src="assets/img/carousel/hero-4-beach-1280.jpg" srcset="assets/img/carousel/hero-4-beach-640.jpg 640w, assets/img/carousel/hero-4-beach-960.jpg 960w, assets/img/carousel/hero-4-beach-1280.jpg 1280w, assets/img/carousel/hero-4-beach-1600.jpg 1600w, assets/img/carousel/hero-4-beach-1920.jpg 1920w" sizes="100vw" alt="Sri Lanka beach holidays and coastal tours" width="1920" height="720" loading="lazy" decoding="async">
+        </picture>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__content">
+          <h2 class="home-hero__title">{{ t('hero3') }}</h2>
+          <p class="home-hero__sub">{{ t('hero1sub') }}</p>
+          <div class="home-hero__actions">
+            <a href="https://wa.me/447375612946" class="btn btn-primary home-hero__btn home-hero__btn--primary">
+              {{ t('ctaPlanWhatsApp') }}
+            </a>
+            <a [routerLink]="toursLink" class="btn home-hero__btn home-hero__btn--secondary">
+              {{ t('ctaViewTours') }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 4. Highlights -->
+      <div class="home-hero__slide" [class.is-active]="heroSlideIndex === 3">
+        <picture>
+          <source type="image/webp" srcset="assets/img/carousel/hero-6-temple-640.webp 640w, assets/img/carousel/hero-6-temple-960.webp 960w, assets/img/carousel/hero-6-temple-1280.webp 1280w, assets/img/carousel/hero-6-temple-1600.webp 1600w, assets/img/carousel/hero-6-temple-1920.webp 1920w" sizes="100vw">
+          <img class="home-hero__img" src="assets/img/carousel/hero-6-temple-1280.jpg" srcset="assets/img/carousel/hero-6-temple-640.jpg 640w, assets/img/carousel/hero-6-temple-960.jpg 960w, assets/img/carousel/hero-6-temple-1280.jpg 1280w, assets/img/carousel/hero-6-temple-1600.jpg 1600w, assets/img/carousel/hero-6-temple-1920.jpg 1920w" sizes="100vw" alt="Sigiriya Lion Rock fortress Sri Lanka" width="1920" height="720" loading="lazy" decoding="async">
+        </picture>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__content">
+          <h2 class="home-hero__title">{{ t('hero4') }}</h2>
+          <p class="home-hero__sub">{{ t('hero1sub') }}</p>
+          <div class="home-hero__actions">
+            <a href="https://wa.me/447375612946" class="btn btn-primary home-hero__btn home-hero__btn--primary">
+              {{ t('ctaPlanWhatsApp') }}
+            </a>
+            <a [routerLink]="toursLink" class="btn home-hero__btn home-hero__btn--secondary">
+              {{ t('ctaViewTours') }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 5. Safari -->
+      <div class="home-hero__slide" [class.is-active]="heroSlideIndex === 4">
+        <picture>
+          <source type="image/webp" srcset="assets/img/carousel/hero-3-panorama-640.webp 640w, assets/img/carousel/hero-3-panorama-960.webp 960w, assets/img/carousel/hero-3-panorama-1280.webp 1280w, assets/img/carousel/hero-3-panorama-1600.webp 1600w, assets/img/carousel/hero-3-panorama-1920.webp 1920w" sizes="100vw">
+          <img class="home-hero__img" src="assets/img/carousel/hero-3-panorama-1280.jpg" srcset="assets/img/carousel/hero-3-panorama-640.jpg 640w, assets/img/carousel/hero-3-panorama-960.jpg 960w, assets/img/carousel/hero-3-panorama-1280.jpg 1280w, assets/img/carousel/hero-3-panorama-1600.jpg 1600w, assets/img/carousel/hero-3-panorama-1920.jpg 1920w" sizes="100vw" alt="Sri Lanka tea country and coastal highlights" width="1920" height="720" loading="lazy" decoding="async">
+        </picture>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__content">
+          <h2 class="home-hero__title">{{ t('hero5') }}</h2>
+          <p class="home-hero__sub">{{ t('hero1sub') }}</p>
+          <div class="home-hero__actions">
+            <a href="https://wa.me/447375612946" class="btn btn-primary home-hero__btn home-hero__btn--primary">
+              {{ t('ctaPlanWhatsApp') }}
+            </a>
+            <a [routerLink]="toursLink" class="btn home-hero__btn home-hero__btn--secondary">
+              {{ t('ctaViewTours') }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 6. Dream holiday -->
+      <div class="home-hero__slide" [class.is-active]="heroSlideIndex === 5">
+        <picture>
+          <source type="image/webp" srcset="assets/img/carousel/hero-1-experiences-640.webp 640w, assets/img/carousel/hero-1-experiences-960.webp 960w, assets/img/carousel/hero-1-experiences-1280.webp 1280w, assets/img/carousel/hero-1-experiences-1600.webp 1600w, assets/img/carousel/hero-1-experiences-1920.webp 1920w" sizes="100vw">
+          <img class="home-hero__img" src="assets/img/carousel/hero-1-experiences-1280.jpg" srcset="assets/img/carousel/hero-1-experiences-640.jpg 640w, assets/img/carousel/hero-1-experiences-960.jpg 960w, assets/img/carousel/hero-1-experiences-1280.jpg 1280w, assets/img/carousel/hero-1-experiences-1600.jpg 1600w, assets/img/carousel/hero-1-experiences-1920.jpg 1920w" sizes="100vw" alt="Sri Lanka private tour experiences" width="1920" height="720" loading="lazy" decoding="async">
+        </picture>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__content">
+          <h2 class="home-hero__title">{{ t('hero6') }}</h2>
+          <p class="home-hero__sub">{{ t('hero1sub') }}</p>
+          <div class="home-hero__actions">
+            <a href="https://wa.me/447375612946" class="btn btn-primary home-hero__btn home-hero__btn--primary">
+              {{ t('ctaPlanWhatsApp') }}
+            </a>
+            <a [routerLink]="toursLink" class="btn home-hero__btn home-hero__btn--secondary">
+              {{ t('ctaViewTours') }}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <button type="button" class="home-hero__nav home-hero__nav--prev" aria-label="Previous slide" (click)="prevHeroSlide($event)">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="home-hero__nav home-hero__nav--next" aria-label="Next slide" (click)="nextHeroSlide($event)">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="home-trust" role="list">
+    <div class="home-trust__item" role="listitem">
+      <i class="fas fa-language" aria-hidden="true"></i>
+      <span>{{ t('trust.languages') }}</span>
+    </div>
+    <div class="home-trust__item" role="listitem">
+      <i class="fas fa-car" aria-hidden="true"></i>
+      <span>{{ t('trust.vehicle') }}</span>
+    </div>
+    <div class="home-trust__item" role="listitem">
+      <i class="fas fa-credit-card" aria-hidden="true"></i>
+      <span>{{ t('trust.payLater') }}</span>
+    </div>
+  </div>
 </div>
-<!-- Carousel End -->
-<section class="container text-center" *transloco="let t; scope: 'home'; prefix: 'home'">
+<!-- Hero End -->
+
+<section class="container text-center home-seo-intro home-section--white" *transloco="let t; scope: 'home'; prefix: 'home'">
     <h2>{{ t('seoIntroTitle') }}</h2>
-    <p>{{ t('seoIntro') }}</p>
+    <p class="home-muted">{{ t('seoIntro') }}</p>
 </section>
+
 <!-- Destination Start -->
-<div class="container-fluid py-5" *transloco="let t; scope: 'destinations'; prefix: 'destinations'">
+<div class="container-fluid home-section home-section--aqua" *transloco="let t; scope: 'destinations'; prefix: 'destinations'">
     <div class="container">
 
-        <div class="text-center mb-5">
+        <div class="text-center home-dest-head">
             <h2>{{ t('title') }}</h2>
-            <p class="text-center mb-4">
+            <p class="text-center">
                 {{ t('intro') }}
             </p>
         </div>
 
-        <div class="dest-card-grid">
+        <div class="dest-card-grid" *transloco="let tc; scope: 'common'; prefix: 'common'">
             <app-destination-card
                 image="assets/img/destination-1.jpg"
                 [title]="t('sigiriya.title')"
                 [subtitle]="t('sigiriya.subtitle')"
                 [badge]="t('sigiriya.badge')"
                 [alt]="t('sigiriya.alt')"
+                [duration]="t('sigiriya.duration')"
+                [price]="destPrice('sigiriya')"
+                [priceReady]="destPricesReady"
+                [fromLabel]="tc('card.from')"
+                [perPersonLabel]="tc('card.perPerson')"
                 [ctaLabel]="t('viewTours')"
                 [featured]="true"
                 [featuredLabel]="t('featured')"
@@ -219,6 +211,11 @@
                 [subtitle]="t('ella.subtitle')"
                 [badge]="t('ella.badge')"
                 [alt]="t('ella.alt')"
+                [duration]="t('ella.duration')"
+                [price]="destPrice('ella')"
+                [priceReady]="destPricesReady"
+                [fromLabel]="tc('card.from')"
+                [perPersonLabel]="tc('card.perPerson')"
                 [ctaLabel]="t('viewTours')"
                 [featuredLabel]="t('featured')"
                 [wishlistLabel]="t('wishlist')"
@@ -236,6 +233,11 @@
                 [subtitle]="t('yala.subtitle')"
                 [badge]="t('yala.badge')"
                 [alt]="t('yala.alt')"
+                [duration]="t('yala.duration')"
+                [price]="destPrice('yala')"
+                [priceReady]="destPricesReady"
+                [fromLabel]="tc('card.from')"
+                [perPersonLabel]="tc('card.perPerson')"
                 [ctaLabel]="t('viewTours')"
                 [featured]="true"
                 [featuredLabel]="t('featured')"
@@ -254,6 +256,11 @@
                 [subtitle]="t('kandy.subtitle')"
                 [badge]="t('kandy.badge')"
                 [alt]="t('kandy.alt')"
+                [duration]="t('kandy.duration')"
+                [price]="destPrice('kandy')"
+                [priceReady]="destPricesReady"
+                [fromLabel]="tc('card.from')"
+                [perPersonLabel]="tc('card.perPerson')"
                 [ctaLabel]="t('viewTours')"
                 [featuredLabel]="t('featured')"
                 [wishlistLabel]="t('wishlist')"
@@ -271,6 +278,11 @@
                 [subtitle]="t('dambulla.subtitle')"
                 [badge]="t('dambulla.badge')"
                 [alt]="t('dambulla.alt')"
+                [duration]="t('dambulla.duration')"
+                [price]="destPrice('dambulla')"
+                [priceReady]="destPricesReady"
+                [fromLabel]="tc('card.from')"
+                [perPersonLabel]="tc('card.perPerson')"
                 [ctaLabel]="t('viewTours')"
                 [featuredLabel]="t('featured')"
                 [wishlistLabel]="t('wishlist')"
@@ -288,6 +300,11 @@
                 [subtitle]="t('galle.subtitle')"
                 [badge]="t('galle.badge')"
                 [alt]="t('galle.alt')"
+                [duration]="t('galle.duration')"
+                [price]="destPrice('galle')"
+                [priceReady]="destPricesReady"
+                [fromLabel]="tc('card.from')"
+                [perPersonLabel]="tc('card.perPerson')"
                 [ctaLabel]="t('viewTours')"
                 [featuredLabel]="t('featured')"
                 [wishlistLabel]="t('wishlist')"
@@ -305,19 +322,52 @@
 </div>
 <!-- Destination End -->
 
+<!-- Moments from tours (former hero collages) -->
+<section class="home-moments home-section home-section--white" *transloco="let t; scope: 'home'; prefix: 'home'" aria-labelledby="home-moments-heading">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 id="home-moments-heading" class="home-moments__title">{{ t('moments.title') }}</h2>
+      <p class="home-muted">{{ t('moments.subtitle') }}</p>
+    </div>
+    <div class="home-moments__grid">
+      <figure class="home-moments__fig" *ngFor="let shot of momentShots">
+        <picture>
+          <source type="image/webp" [attr.srcset]="shot.webpSrcset" sizes="(max-width: 767px) 92vw, 400px">
+          <img
+            [src]="shot.jpg"
+            [attr.srcset]="shot.jpgSrcset"
+            sizes="(max-width: 767px) 92vw, 400px"
+            [alt]="t(shot.altKey)"
+            width="800"
+            height="600"
+            loading="lazy"
+            decoding="async">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- Packages Start -->
-<div id="packages" class="container-fluid bg-light" *transloco="let t; scope: 'common'; prefix: 'common'">
+<div id="packages" class="container-fluid home-section home-section--aqua" *transloco="let t; scope: 'common'; prefix: 'common'">
     <div class="container pt-5 ">
         <div class="text-center">
             <p class="text-primary i18n-section-eyebrow mb-2">{{ t('packages.header') }}</p>
             <h2 class="i18n-section-title">{{ t('packages.homeTitle') }}</h2>
-            <p class="text-center mb-3">
+            <p class="text-center mb-3 home-muted">
                 {{ t('packages.homeSubtitle') }}
             </p>
         </div>
-        <section class="container text-center py-2">
-            <h3>{{ t('packages.trusted') }} <span class="trusted-stars" aria-hidden="true">★★★★★</span></h3>
-            <p>{{ t('packages.trustedSub') }}</p>
+        <section class="container text-center py-2 home-trusted">
+            <h3 class="home-trusted__title">{{ t('packages.trusted') }}</h3>
+            <p class="home-trusted__link-wrap">
+              <a
+                class="home-trusted__link"
+                href="https://www.tripadvisor.com/Attraction_Review-g304136-d34039344-Reviews-Ceylon_JoJo_Travels-Kalutara_Western_Province.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ t('packages.tripadvisorReviews') }}</a>
+            </p>
         </section>
 
         <div class="i18n-tab-row text-center mb-4">
@@ -442,16 +492,15 @@
 <div class="container-fluid pb-5" itemscope itemtype="https://schema.org/TravelAgency"
     *transloco="let t; scope: 'home'; prefix: 'home'">
     <div class="container pb-5">
-        <div class="row">
+        <div class="row home-feature-row">
 
             <!-- Competitive Pricing -->
             <div class="col-md-4">
-                <div class="d-flex mb-4 mb-lg-0">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
-                        style="height: 100px; width: 100px;">
-                        <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                <div class="d-flex mb-4 mb-lg-0 home-feature-item">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3 home-feature-icon">
+                        <i class="fa fa-2x fa-money-check-alt text-white" aria-hidden="true"></i>
                     </div>
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column home-feature-copy">
                         <h3 class="h5" itemprop="name">{{ t('features.pricing.title') }}</h3>
                         <p class="m-0" itemprop="description">
                             {{ t('features.pricing.desc') }}
@@ -462,12 +511,11 @@
 
             <!-- Best Services -->
             <div class="col-md-4">
-                <div class="d-flex mb-4 mb-lg-0">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
-                        style="height: 100px; width: 100px;">
-                        <i class="fa fa-2x fa-award text-white"></i>
+                <div class="d-flex mb-4 mb-lg-0 home-feature-item">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3 home-feature-icon">
+                        <i class="fa fa-2x fa-award text-white" aria-hidden="true"></i>
                     </div>
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column home-feature-copy">
                         <h3 class="h5">{{ t('features.service.title') }}</h3>
                         <p class="m-0">
                             {{ t('features.service.desc') }}
@@ -478,12 +526,11 @@
 
             <!-- Sri Lankan Hospitality -->
             <div class="col-md-4">
-                <div class="d-flex mb-4 mb-lg-0">
-                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
-                        style="height: 100px; width: 100px;">
-                        <i class="fa fa-2x fa-globe text-white"></i>
+                <div class="d-flex mb-4 mb-lg-0 home-feature-item">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3 home-feature-icon">
+                        <i class="fa fa-2x fa-globe text-white" aria-hidden="true"></i>
                     </div>
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column home-feature-copy">
                         <h3 class="h5">{{ t('features.experts.title') }}</h3>
                         <p class="m-0">
                             {{ t('features.experts.desc') }}

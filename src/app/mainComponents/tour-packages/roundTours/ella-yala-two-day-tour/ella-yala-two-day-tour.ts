@@ -126,7 +126,7 @@ export class EllaYalaTwoDayTour {
             title: {
               title: 'Yala National Park',
               icon: 'fa-paw',
-              color: '#2ecc71',
+              color: 'var(--color-success)',
             },
             description:
               'Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous residents are the world’s biggest concentration of leopards',

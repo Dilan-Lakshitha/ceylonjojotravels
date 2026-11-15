@@ -8,14 +8,14 @@
   background: #fff;
   border: 1px solid #e8eef2;
   border-radius: 18px;
-  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12px 36px rgba(11, 36, 56, 0.08);
   padding: 2.5rem 2rem;
   text-align: center;
 }
 
 .bs__icon {
   font-size: 3rem;
-  color: #059669;
+  color: var(--color-success);
   margin-bottom: 0.75rem;
 }
 
@@ -23,13 +23,13 @@
   margin: 0 0 0.75rem;
   font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
   font-weight: 800;
-  color: #0f172a;
+  color: var(--color-text);
 }
 
 .bs__lead {
   margin: 0 auto 1.75rem;
   max-width: 36rem;
-  color: #64748b;
+  color: var(--color-text-muted);
   line-height: 1.55;
 }
 
@@ -51,14 +51,14 @@
 
 .bs__meta dt {
   margin: 0;
-  color: #64748b;
+  color: var(--color-text-muted);
   font-size: 0.875rem;
 }
 
 .bs__meta dd {
   margin: 0;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--color-text);
   text-align: right;
 }
 
@@ -81,19 +81,19 @@
 }
 
 .bs__btn--primary {
-  background: #023a2c;
+  background: var(--color-primary);
   color: #fff;
 }
 
 .bs__btn--primary:hover {
-  background: #03503d;
+  background: var(--color-primary-dark);
   color: #fff;
   text-decoration: none;
 }
 
 .bs__btn--ghost {
   border: 1px solid #e2e8f0;
-  color: #0f172a;
+  color: var(--color-text);
 }
 
 .bs__btn--ghost:hover {

@@ -1,0 +1,82 @@
+.guide-article__header {
+  max-width: 46rem;
+}
+
+.guide-article__h1 {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.guide-article__updated {
+  font-size: 0.9rem;
+}
+
+.guide-article__direct {
+  max-width: 46rem;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.guide-article__section {
+  max-width: 46rem;
+  margin-bottom: 1.75rem;
+}
+
+.guide-article__h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.guide-article__h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.guide-article__answer {
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.guide-article__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.guide-article__table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.guide-article__table th,
+.guide-article__table td {
+  border: 1px solid #d9e2d0;
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.guide-article__table thead th {
+  background: #f4f8ef;
+}
+
+.guide-article__links {
+  padding-left: 1.1rem;
+  line-height: 1.8;
+}
+
+.guide-article__faq-item {
+  max-width: 46rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #e5ecd9;
+}
+
+.guide-article__cta-body {
+  max-width: 36rem;
+  line-height: 1.65;
+}

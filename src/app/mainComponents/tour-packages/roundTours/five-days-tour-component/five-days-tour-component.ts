@@ -93,7 +93,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Fresco Water Villa, Sigiriya', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Fresco Water Villa (or similar).',
             image: 'assets/img/5daysTours/c.jpg',
@@ -141,7 +141,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Hotel Topaz, Kandy', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Hotel Topaz, Kandy', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Hotel Topaz (or similar).',
             image: 'assets/img/5daysTours/25.jpg',
@@ -159,7 +159,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
             title: {
               title: 'Royal Botanical Gardens Peradeniya',
               icon: 'fa-tree',
-              color: '#16a085',
+              color: '#4A86C8',
             },
             description:
               'Explore one of Asia’s finest botanical gardens featuring exotic orchids, towering palm avenues, medicinal plants and beautifully landscaped grounds along the Mahaweli River.',
@@ -189,7 +189,7 @@ export class FiveDaysTourComponent implements OnInit, OnDestroy {
           },
           {
             type: 'Accommodation',
-            title: { title: 'Hotel Yara Nuwara Eliya', icon: 'fa-hotel', color: '#16a085' },
+            title: { title: 'Hotel Yara Nuwara Eliya', icon: 'fa-hotel', color: '#4A86C8' },
             description:
               'Overnight stay at Yara Nuwara Eliya (or similar).',
             image: 'assets/img/5daysTours/29.jpg',

@@ -84,7 +84,7 @@ tour = {
         },
         {
           type: 'Accommodation',
-          title: { title: 'Overnight Stay Topez Hotel in Kandy', icon: 'fa-hotel', color: '#16a085' },
+          title: { title: 'Overnight Stay Topez Hotel in Kandy', icon: 'fa-hotel', color: '#4A86C8' },
           description: 'Stay overnight in a comfortable star class hotel in Kandy on a Half Board basis.',
           extra: ['Dinner Included', 'Private Room'],
         },
@@ -98,7 +98,7 @@ tour = {
       activities: [
         {
           type: 'Nature',
-          title: { title: 'Royal Botanic Gardens Peradeniya', icon: 'fa-tree', color: '#2ecc71' },
+          title: { title: 'Royal Botanic Gardens Peradeniya', icon: 'fa-tree', color: 'var(--color-success)' },
           description:
             'Walk through one of Asia’s most beautiful botanical gardens featuring orchids, palms, bamboo and tropical plants.',
           image: 'assets/img/5daysTours/himbgjcj6zckm6de1mhe.jpg',
@@ -126,7 +126,7 @@ tour = {
         },
         {
           type: 'Accommodation',
-          title: { title: 'Overnight Stay Oak Ray Ella Gap Hotel or similar - HB Basis in Ella', icon: 'fa-hotel', color: '#16a085' },
+          title: { title: 'Overnight Stay Oak Ray Ella Gap Hotel or similar - HB Basis in Ella', icon: 'fa-hotel', color: '#4A86C8' },
           description: 'Overnight stay in a scenic hill country hotel on Half Board basis.',
           extra: ['Breakfast & Dinner Included', 'Private Room'],
         },
@@ -147,7 +147,7 @@ tour = {
         },
         {
           type: 'Historical Site',
-          title: { title: 'Buduruwagala Temple', icon: 'fa-landmark', color: '#e67e22' },
+          title: { title: 'Buduruwagala Temple', icon: 'fa-landmark', color: 'var(--color-copper)' },
           description:
             'Visit this ancient rock temple complex featuring impressive carved Buddha statues.',
           image: 'assets/img/5daysTours/18.jpg',
@@ -161,7 +161,7 @@ tour = {
         },
         {
           type: 'Accommodation',
-          title: { title: 'Overnight Stay in Yala', icon: 'fa-hotel', color: '#16a085' },
+          title: { title: 'Overnight Stay in Yala', icon: 'fa-hotel', color: '#4A86C8' },
           description: 'Overnight stay in a comfortable safari area hotel with Half Board.',
           extra: ['Breakfast & Dinner Included'],
         },

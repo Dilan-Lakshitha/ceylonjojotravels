@@ -1,9 +1,9 @@
 /* Shared editorial About block — homepage + /about */
 .home-about {
-  --ha-brand: #023a2c;
-  --ha-ink: #0f172a;
-  --ha-muted: #475569;
-  --ha-wash: linear-gradient(165deg, #f3f7f5 0%, #eaf2ef 48%, #f7faf8 100%);
+  --ha-brand: var(--color-primary);
+  --ha-ink: var(--color-text);
+  --ha-muted: var(--color-text-muted);
+  --ha-wash: var(--color-bg);
   padding: clamp(3rem, 6vw, 5.5rem) 0;
   background: var(--ha-wash);
 }
@@ -42,7 +42,8 @@
   margin: 0;
   position: relative;
   overflow: hidden;
-  background: #0a3d32;
+  background: var(--color-primary-dark);
+  border-radius: var(--radius-card);
 }
 
 .home-about__shot--hero {
@@ -97,7 +98,7 @@
   width: 2.5rem;
   height: 2px;
   margin-top: 0.75rem;
-  background: #c9a227;
+  background: var(--color-accent);
 }
 
 .home-about__title {
@@ -120,7 +121,7 @@
   margin: 1.25rem 0 0.5rem;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #023a2c;
+  color: var(--color-text);
 }
 
 .home-about__body {
@@ -136,28 +137,30 @@
   gap: 0.65rem;
   margin-top: 1.15rem;
   padding: 0.9rem 1.4rem;
-  background: var(--ha-brand);
-  color: #fff !important;
+  background: var(--color-cta);
+  color: var(--color-cta-text) !important;
   text-decoration: none !important;
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  border: 1px solid transparent;
+  border: 1px solid rgba(11, 36, 56, 0.12);
+  border-radius: var(--radius-pill);
   transition: background 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
 
 .home-about__cta i {
   font-size: 0.8rem;
+  color: var(--color-cta-text);
   transition: transform 220ms ease;
 }
 
 .home-about__cta:hover,
 .home-about__cta:focus-visible {
-  background: #03503d;
-  color: #fff !important;
+  background: var(--color-cta-hover);
+  color: var(--color-cta-text) !important;
   text-decoration: none !important;
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(2, 58, 44, 0.22);
+  box-shadow: var(--shadow-soft);
   outline: none;
 }
 

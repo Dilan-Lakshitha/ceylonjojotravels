@@ -49,6 +49,59 @@ export class HomePageComponent implements OnInit, OnDestroy {
   userCountry = 'US';
   activeTab: 'multi' | 'day' = 'multi';
   pricesReady = false;
+  destPricesReady = false;
+  private readonly destFilecodes: Record<string, string> = {
+    sigiriya: 'sigiriya-day-tour',
+    ella: 'ella-day-tour',
+    yala: '2-day-ella-yala-private-tour-sri-lanka',
+    kandy: 'kandy-day-tour',
+    dambulla: 'sigiriya-day-tour',
+    galle: 'galle-day-tour',
+  };
+  private destPrices: Record<string, number> = {};
+  /** Lazy guest collage thumbs (former hero collages). */
+  readonly momentShots = [
+    {
+      jpg: 'assets/img/carousel/hero-1-experiences-moments-800.jpg',
+      jpgSrcset:
+        'assets/img/carousel/hero-1-experiences-moments-480.jpg 480w, assets/img/carousel/hero-1-experiences-moments-800.jpg 800w',
+      webpSrcset:
+        'assets/img/carousel/hero-1-experiences-moments-480.webp 480w, assets/img/carousel/hero-1-experiences-moments-800.webp 800w',
+      altKey: 'moments.alt1',
+    },
+    {
+      jpg: 'assets/img/carousel/hero-3-panorama-moments-800.jpg',
+      jpgSrcset:
+        'assets/img/carousel/hero-3-panorama-moments-480.jpg 480w, assets/img/carousel/hero-3-panorama-moments-800.jpg 800w',
+      webpSrcset:
+        'assets/img/carousel/hero-3-panorama-moments-480.webp 480w, assets/img/carousel/hero-3-panorama-moments-800.webp 800w',
+      altKey: 'moments.alt2',
+    },
+    {
+      jpg: 'assets/img/carousel/hero-4-beach-moments-800.jpg',
+      jpgSrcset:
+        'assets/img/carousel/hero-4-beach-moments-480.jpg 480w, assets/img/carousel/hero-4-beach-moments-800.jpg 800w',
+      webpSrcset:
+        'assets/img/carousel/hero-4-beach-moments-480.webp 480w, assets/img/carousel/hero-4-beach-moments-800.webp 800w',
+      altKey: 'moments.alt3',
+    },
+    {
+      jpg: 'assets/img/carousel/hero-5-safari-moments-800.jpg',
+      jpgSrcset:
+        'assets/img/carousel/hero-5-safari-moments-480.jpg 480w, assets/img/carousel/hero-5-safari-moments-800.jpg 800w',
+      webpSrcset:
+        'assets/img/carousel/hero-5-safari-moments-480.webp 480w, assets/img/carousel/hero-5-safari-moments-800.webp 800w',
+      altKey: 'moments.alt4',
+    },
+    {
+      jpg: 'assets/img/carousel/hero-6-temple-moments-800.jpg',
+      jpgSrcset:
+        'assets/img/carousel/hero-6-temple-moments-480.jpg 480w, assets/img/carousel/hero-6-temple-moments-800.jpg 800w',
+      webpSrcset:
+        'assets/img/carousel/hero-6-temple-moments-480.webp 480w, assets/img/carousel/hero-6-temple-moments-800.webp 800w',
+      altKey: 'moments.alt5',
+    },
+  ];
   /** Homepage hero carousel slide (0–5). */
   heroSlideIndex = 0;
   private readonly heroSlideCount = 6;
@@ -110,7 +163,6 @@ export class HomePageComponent implements OnInit, OnDestroy {
   private readonly cdr = inject(ChangeDetectorRef);
   private readonly ngZone = inject(NgZone);
   private sub?: Subscription;
-  private packagesObserver?: IntersectionObserver;
   private pricesLoaded = false;
   private pendingCatalog: { dayTours: TourCatalogItem[]; multiDayTours: TourCatalogItem[] } | null =
     null;
@@ -136,11 +188,12 @@ export class HomePageComponent implements OnInit, OnDestroy {
 
     if (isPlatformBrowser(this.platformId)) {
       this.autoSlide();
-      this.startHeroCarousel();
+      // Hero stays on the LCP slide with dual CTAs; users advance manually.
       // Country lookup is not needed for first paint; defer until idle.
       this.whenIdle(() => {
         this.countryService.detectCountry().then((c) => {
           this.userCountry = c;
+          void this.loadDestinationPrices();
           if (this.pricesLoaded && this.pendingCatalog) {
             void this.applyPrices(this.pendingCatalog);
           }
@@ -153,13 +206,13 @@ export class HomePageComponent implements OnInit, OnDestroy {
         const day = catalog?.dayTours ?? [];
         const multi = catalog?.multiDayTours ?? [];
         this.pendingCatalog = { dayTours: day, multiDayTours: multi };
-        // Paint cards immediately without blocking on N price JSON requests.
-        this.dayTours = this.withoutPrices(day);
-        this.multiDayTours = this.withoutPrices(multi);
+        // SSR + first paint: static US*.json map (same source as price files).
+        this.dayTours = this.withStaticPrices(day);
+        this.multiDayTours = this.withStaticPrices(multi);
+        this.pricesReady = true;
+        this.pricesLoaded = true;
+        this.applyDestinationPricesFromStatic();
         this.cdr.markForCheck();
-        if (isPlatformBrowser(this.platformId)) {
-          this.observePackagesForPrices();
-        }
       },
     });
   }
@@ -178,8 +231,25 @@ export class HomePageComponent implements OnInit, OnDestroy {
     return this.localizedRouter.commandsFor('tours');
   }
 
+  destPrice(key: string): number {
+    return this.destPrices[key] ?? 0;
+  }
+
   setTab(tab: 'multi' | 'day') {
     this.activeTab = tab;
+  }
+
+  private async loadDestinationPrices(): Promise<void> {
+    const entries = Object.entries(this.destFilecodes);
+    const prices = await Promise.all(
+      entries.map(async ([key, filecode]) => {
+        const price = await this.tourPrice.getPersonPrice(filecode, this.userCountry);
+        return [key, price] as const;
+      }),
+    );
+    this.destPrices = Object.fromEntries(prices);
+    this.destPricesReady = true;
+    this.cdr.markForCheck();
   }
 
   nextHeroSlide(event?: Event): void {
@@ -230,15 +300,25 @@ export class HomePageComponent implements OnInit, OnDestroy {
     }
   }
 
-  private withoutPrices(tours: TourCatalogItem[]): PricedTour[] {
+  private withStaticPrices(tours: TourCatalogItem[]): PricedTour[] {
     return tours.map((tour) => {
       const tourId = (tour.filecode || tour.id) as TourId;
       return {
         ...tour,
-        price: 0,
+        price: this.tourPrice.getPartyOfTwoTotalSync(tour.filecode),
         link: this.localizedRouter.tourLinkCommands(tourId),
       };
     });
+  }
+
+  private applyDestinationPricesFromStatic(): void {
+    this.destPrices = Object.fromEntries(
+      Object.entries(this.destFilecodes).map(([key, filecode]) => [
+        key,
+        this.tourPrice.getPartyOfTwoTotalSync(filecode),
+      ]),
+    );
+    this.destPricesReady = true;
   }
 
   private async applyPrices(catalog: {
@@ -264,35 +344,6 @@ export class HomePageComponent implements OnInit, OnDestroy {
         };
       }),
     );
-  }
-
-  private observePackagesForPrices(): void {
-    if (this.packagesObserver || this.pricesLoaded) {
-      return;
-    }
-    const target = document.getElementById('packages');
-    if (!target || typeof IntersectionObserver === 'undefined') {
-      this.whenIdle(() => {
-        if (this.pendingCatalog) {
-          void this.applyPrices(this.pendingCatalog);
-        }
-      });
-      return;
-    }
-    this.packagesObserver = new IntersectionObserver(
-      (entries) => {
-        if (!entries.some((e) => e.isIntersecting)) {
-          return;
-        }
-        this.packagesObserver?.disconnect();
-        this.packagesObserver = undefined;
-        if (this.pendingCatalog) {
-          void this.applyPrices(this.pendingCatalog);
-        }
-      },
-      { rootMargin: '200px 0px' },
-    );
-    this.packagesObserver.observe(target);
   }
 
   private whenIdle(fn: () => void): void {
@@ -341,7 +392,6 @@ export class HomePageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.sub?.unsubscribe();
-    this.packagesObserver?.disconnect();
     this.clearHeroTimer();
     if (this.interval) {
       clearInterval(this.interval);

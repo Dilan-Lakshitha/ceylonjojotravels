@@ -52,6 +52,13 @@
     <h3 class="pdc__title" itemprop="name">{{ title }}</h3>
     <p class="pdc__subtitle" itemprop="description">{{ subtitle }}</p>
 
+    <div class="pdc__meta" *ngIf="duration || (priceReady && displayPrice > 0)">
+      <span class="pdc__duration" *ngIf="duration">{{ duration }}</span>
+      <span class="pdc__price" *ngIf="priceReady && displayPrice > 0">
+        {{ fromLabel }} ${{ displayPrice | number: '1.0-0' }} {{ perPersonLabel }}
+      </span>
+    </div>
+
     <ul class="pdc__highlights" aria-label="Highlights">
       <li *ngFor="let item of highlights.slice(0, 3)">
         <i class="fas" [ngClass]="item.icon" aria-hidden="true"></i>
