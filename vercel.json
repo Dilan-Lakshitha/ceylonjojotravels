@@ -4990,7 +4990,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|webfonts/|css/|.*\\.(xml|txt|json|ico|png|jpg|jpeg|webp|svg|woff2|woff|js|css)$).*)",
+      "source": "/((?!assets/|webfonts/|css/|.*\\.(?:xml|txt|json|ico|png|jpg|jpeg|webp|svg|woff2|woff|js|css)$).*)",
       "destination": "/index.html"
     }
   ],
