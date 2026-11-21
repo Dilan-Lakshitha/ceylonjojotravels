@@ -168,7 +168,8 @@ const vercelPath = path.join(root, 'vercel.json');
 
 const DEFAULT_REWRITES = [
   {
-    source: '/((?!assets/|webfonts/|css/|.*\\.(xml|txt|json|ico|png|jpg|jpeg|webp|svg|woff2|woff|js|css)$).*)',
+    // Non-capturing group (?:…) required — nested capturing groups fail Vercel path-to-regexp.
+    source: '/((?!assets/|webfonts/|css/|.*\\.(?:xml|txt|json|ico|png|jpg|jpeg|webp|svg|woff2|woff|js|css)$).*)',
     destination: '/index.html',
   },
 ];
@@ -257,6 +258,9 @@ function wwwOneHopRedirects(rules) {
 /**
  * GSC “Alternative page with proper canonical tag” for tours ?type=day|multi.
  * Strip filter query params at the edge so Google only keeps clean tours URLs.
+ *
+ * Vercel preserves unmatched query keys on redirect. Setting `type=` (empty) in
+ * the destination removes `type` so `/en/tours?type=day` → `/en/tours` (no loop).
  */
 function buildTourTypeQueryRedirects() {
   const redirects = [];
@@ -266,7 +270,7 @@ function buildTourTypeQueryRedirects() {
       redirects.push({
         source: `/${lang}/${seg}`,
         has: [{ type: 'query', key: 'type', value: type }],
-        destination: `/${lang}/${seg}`,
+        destination: `/${lang}/${seg}?type=`,
         permanent: true,
       });
     }

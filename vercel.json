@@ -1498,7 +1498,7 @@
           "value": "day"
         }
       ],
-      "destination": "/en/tours",
+      "destination": "/en/tours?type=",
       "permanent": true
     },
     {
@@ -1510,7 +1510,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/en/tours",
+      "destination": "/en/tours?type=",
       "permanent": true
     },
     {
@@ -1522,7 +1522,7 @@
           "value": "day"
         }
       ],
-      "destination": "/de/touren",
+      "destination": "/de/touren?type=",
       "permanent": true
     },
     {
@@ -1534,7 +1534,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/de/touren",
+      "destination": "/de/touren?type=",
       "permanent": true
     },
     {
@@ -1546,7 +1546,7 @@
           "value": "day"
         }
       ],
-      "destination": "/fr/circuits",
+      "destination": "/fr/circuits?type=",
       "permanent": true
     },
     {
@@ -1558,7 +1558,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/fr/circuits",
+      "destination": "/fr/circuits?type=",
       "permanent": true
     },
     {
@@ -1570,7 +1570,7 @@
           "value": "day"
         }
       ],
-      "destination": "/it/tour",
+      "destination": "/it/tour?type=",
       "permanent": true
     },
     {
@@ -1582,7 +1582,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/it/tour",
+      "destination": "/it/tour?type=",
       "permanent": true
     },
     {
@@ -1594,7 +1594,7 @@
           "value": "day"
         }
       ],
-      "destination": "/es/tours",
+      "destination": "/es/tours?type=",
       "permanent": true
     },
     {
@@ -1606,7 +1606,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/es/tours",
+      "destination": "/es/tours?type=",
       "permanent": true
     },
     {
@@ -1618,7 +1618,7 @@
           "value": "day"
         }
       ],
-      "destination": "/pl/wycieczki",
+      "destination": "/pl/wycieczki?type=",
       "permanent": true
     },
     {
@@ -1630,7 +1630,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/pl/wycieczki",
+      "destination": "/pl/wycieczki?type=",
       "permanent": true
     },
     {
@@ -1642,7 +1642,7 @@
           "value": "day"
         }
       ],
-      "destination": "/ru/tury",
+      "destination": "/ru/tury?type=",
       "permanent": true
     },
     {
@@ -1654,7 +1654,7 @@
           "value": "multi"
         }
       ],
-      "destination": "/ru/tury",
+      "destination": "/ru/tury?type=",
       "permanent": true
     },
     {

@@ -207,6 +207,16 @@ function assertVercelRootSlugs() {
   if (queryRules.length < langs.length * 2) {
     fail(`expected ${langs.length * 2} ?type= redirects, found ${queryRules.length}`);
   }
+  // Destination must clear `type` (Vercel: empty `type=` strips the param).
+  // A destination equal to the source path alone preserves ?type= and loops forever.
+  for (const rule of queryRules) {
+    const dest = String(rule.destination || '');
+    if (!/[?&]type=(?:&|$)/.test(dest) && !dest.endsWith('?')) {
+      fail(
+        `?type= redirect must strip query (use destination "...?type="); got ${JSON.stringify(rule)}`,
+      );
+    }
+  }
 }
 
 async function assertLiveHtml(routes) {
