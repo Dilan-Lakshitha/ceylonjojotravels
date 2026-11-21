@@ -492,6 +492,12 @@ const wwwOneHopSources = [
  * 2) www one-hop for GSC-critical paths (final URL)
  * 3) www catch-all → apex (unknown paths only)
  * 4) apex redirects
+ *
+ * IMPORTANT (GSC “Page with redirect” chains):
+ * Vercel Dashboard → Domains → www must be “No Redirect”.
+ * A dashboard www→apex redirect runs BEFORE these rules and forces a 2–3 hop
+ * chain (www→apex→canonical). With “No Redirect”, rules below one-hop www
+ * requests straight to the final HTTPS apex URL.
  */
 const redirectsRaw = [
   {

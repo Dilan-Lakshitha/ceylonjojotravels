@@ -8,7 +8,7 @@
       "rating": 5,
       "filecode": "ella-day-tour",
       "image": "assets/img/onedayTour/ella/7.jpeg",
-      "routerLink": "/ella-day-tour",
+      "routerLink": "/en/tours/ella-day-tour",
       "isBestseller": true,
       "isLimited": true
     },
@@ -20,7 +20,7 @@
       "rating": 5,
       "filecode": "galle-day-tour",
       "image": "assets/img/onedayTour/Galle/7.jpg",
-      "routerLink": "/galle-day-tour",
+      "routerLink": "/en/tours/galle-day-tour",
       "isBestseller": true,
       "isLimited": false
     },
@@ -32,8 +32,8 @@
       "rating": 5,
       "filecode": "kandy-day-tour",
       "image": "assets/img/onedayTour/kandy/3.jpg",
-      "routerLink": "/kandy-day-tour",
-      "isBestseller":false,
+      "routerLink": "/en/tours/kandy-day-tour",
+      "isBestseller": false,
       "isLimited": false
     },
     {
@@ -44,7 +44,7 @@
       "rating": 5,
       "filecode": "sigiriya-day-tour",
       "image": "assets/img/onedayTour/Sigiriya/3.jpg",
-      "routerLink": "/sigiriya-day-tour",
+      "routerLink": "/en/tours/sigiriya-day-tour",
       "isBestseller": true,
       "isLimited": false
     }
@@ -59,7 +59,7 @@
       "rating": 5,
       "filecode": "2-day-ella-yala-private-tour-sri-lanka",
       "image": "assets/img/2daysTours/1.jpeg",
-      "routerLink": "/2-day-ella-yala-private-tour-sri-lanka",
+      "routerLink": "/en/tours/2-day-ella-yala-safari",
       "isBestseller": true,
       "isLimited": true
     },
@@ -71,7 +71,7 @@
       "rating": 5,
       "filecode": "2-day-ella-kandy-private-tour-sri-lanka",
       "image": "assets/img/2daysTours/7.jpg",
-      "routerLink": "/2-day-ella-kandy-private-tour-sri-lanka",
+      "routerLink": "/en/tours/2-day-ella-kandy-private-tour",
       "isBestseller": false,
       "isLimited": false
     },
@@ -83,7 +83,7 @@
       "rating": 5,
       "filecode": "4-day-sri-lanka-tour",
       "image": "assets/img/5daysTours/fozjxf01vl9yehvucwn2.jpg",
-      "routerLink": "/4-day-sri-lanka-tour",
+      "routerLink": "/en/tours/4-day-sri-lanka-tour",
       "isBestseller": false,
       "isLimited": false
     },
@@ -95,7 +95,7 @@
       "rating": 5,
       "filecode": "5-day-sri-lanka-tour",
       "image": "assets/img/5daysTours/beqnuxidbmckapjcag2m.jpg",
-      "routerLink": "/5-day-sri-lanka-tour",
+      "routerLink": "/en/tours/5-day-sri-lanka-tour",
       "isBestseller": false,
       "isLimited": true
     },
@@ -107,7 +107,7 @@
       "rating": 5,
       "filecode": "6-day-sri-lanka-private-tour",
       "image": "assets/img/SixdaysTous/1.jpg",
-      "routerLink": "/6-day-sri-lanka-private-tour",
+      "routerLink": "/en/tours/6-day-sri-lanka-private-tour",
       "isBestseller": true,
       "isLimited": true
     },
@@ -119,7 +119,7 @@
       "rating": 5,
       "filecode": "7-day-sri-lanka-tour",
       "image": "assets/img/7daystour/2024-07-27.jpg",
-      "routerLink": "/7-day-sri-lanka-tour",
+      "routerLink": "/en/tours/7-day-sri-lanka-tour",
       "isBestseller": true,
       "isLimited": true
     },
@@ -131,7 +131,7 @@
       "rating": 5,
       "filecode": "10-day-sri-lanka-tour",
       "image": "assets/img/7daystour/lzurk0uk82qqjh6soonh.jpg",
-      "routerLink": "/10-day-sri-lanka-tour",
+      "routerLink": "/en/tours/10-day-sri-lanka-tour",
       "isBestseller": false,
       "isLimited": true
     }

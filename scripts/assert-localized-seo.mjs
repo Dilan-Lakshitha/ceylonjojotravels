@@ -217,6 +217,57 @@ function assertVercelRootSlugs() {
       );
     }
   }
+
+  // GSC “Page with redirect” samples must one-hop to a localized final URL (not stay bare).
+  const apexBySource = new Map(
+    (vercel.redirects || [])
+      .filter((r) => !(r.has || []).some((h) => h.type === 'host'))
+      .map((r) => [r.source, r.destination]),
+  );
+  const pageWithRedirectSamples = [
+    ['/index.html', '/en'],
+    ['/galle-day-tour', '/en/tours/galle-day-tour'],
+    ['/tour-packages', '/en/tours'],
+    ['/our-services', '/en/our-services'],
+    ['/twodaystours', '/en/tours/2-day-ella-kandy-private-tour'],
+    ['/5-day-sri-lanka-tour', '/en/tours/5-day-sri-lanka-tour'],
+    ['/ella-day-tour', '/en/tours/ella-day-tour'],
+    ['/wycieczka-ella', '/pl/wycieczki/wycieczka-ella'],
+    ['/odnodnevnyy-tur-ella', '/ru/tury/odnodnevnyy-tur-ella'],
+  ];
+  for (const [source, expected] of pageWithRedirectSamples) {
+    const dest = String(apexBySource.get(source) || '');
+    const normalized = dest.replace(/^https:\/\/ceylonjojotravels\.com/, '');
+    if (normalized !== expected && !normalized.endsWith(expected)) {
+      fail(`apex redirect for ${source} should be ${expected}, got ${dest || '(missing)'}`);
+    }
+  }
+
+  // www one-hop rules must exist so dashboard “No Redirect” enables single-hop www→final.
+  const wwwFinal = (vercel.redirects || []).filter(
+    (r) =>
+      (r.has || []).some((h) => h.type === 'host' && h.value === 'www.ceylonjojotravels.com') &&
+      String(r.destination).includes('ceylonjojotravels.com/en'),
+  );
+  if (wwwFinal.length < 10) {
+    fail(`expected www one-hop rules to final EN URLs, found ${wwwFinal.length}`);
+  }
+}
+
+/** Related-tour cards must not emit bare root slugs (those are 308s Google keeps re-crawling). */
+function assertDatabaseJsonCanonicalLinks() {
+  const tours = JSON.parse(
+    fs.readFileSync(path.join(root, 'src/app/databaseJson/tours.json'), 'utf8'),
+  );
+  const items = [...(tours.dayTours || []), ...(tours.multiDayTours || [])];
+  for (const item of items) {
+    const link = String(item.routerLink || '');
+    if (!link.startsWith('/en/tours/')) {
+      fail(
+        `databaseJson/tours.json ${item.filecode} routerLink must be /en/tours/… (got ${link})`,
+      );
+    }
+  }
 }
 
 async function assertLiveHtml(routes) {
@@ -369,6 +420,7 @@ async function main() {
   assertSeoJson();
   assertSitemaps(routes);
   assertVercelRootSlugs();
+  assertDatabaseJsonCanonicalLinks();
   assertNoPlaceholders();
   await assertLiveHtml(routes);
 
